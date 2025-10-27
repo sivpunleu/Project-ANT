@@ -19,17 +19,303 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- AOS Animation -->
     <link rel="stylesheet" href="asset/aos-master/dist/aos.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
     <!-- Google Fonts - Khmer -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Hanuman:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap" rel="stylesheet">
+    
 </head>
 <style>
     
 </style>
 <body>
 
- 
+  <!-- ═══════════ TOP BAR ═══════════ -->
+    <div class="top-bar fixed-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="d-flex gap-3">
+                        <a href="tel:+855123456789">
+                            <i class="fas fa-phone"></i> 012 345 678
+                        </a>
+                        <a href="mailto:info@buddhism-society.org">
+                            <i class="fas fa-envelope"></i> info@buddhism-society.org
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="d-flex justify-content-end gap-3 align-items-center">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <span class="text-muted">|</span>
+                        <a href="#">ភាសាខ្មែរ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════ MAIN NAVBAR ═══════════ -->
+    <nav class="navbar navbar-expand-lg main-navbar fixed-top" style="top: 37px;">
+        <div class="container">
+            <!-- Logo & Brand -->
+            <a class="navbar-brand" href="#">
+                 <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
+                <div>
+                    <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
+                    <div style="font-size: 12px; font-family: 'Battambang'; color: var(--text-secondary);">
+                        Buddhism & Society
+                    </div>
+                </div>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <i class="fas fa-bars" style="color: var(--primary-color);"></i>
+            </button>
+
+            <!-- Main Menu -->
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <i class="fas fa-home"></i> ទំព័រដើម
+                        </a>
+                    </li>
+
+                  
+
+                    <!-- Dhamma Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <i class="fas fa-book"></i> ព្រះធម៌
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-book-open"></i> បណ្ណាល័យព្រះធម៌
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-video"></i> វីដេអូធម៌
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-microphone"></i> សំឡេងធម៌
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-calendar-day"></i> ធម៌ប្រចាំថ្ងៃ
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Services -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <i class="fas fa-hands-helping"></i> សេវាកម្ម
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-hand-holding-heart"></i> គម្រោងសង្គម
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-graduation-cap"></i> ការអប់រំ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-heartbeat"></i> សុខភាព
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-leaf"></i> បរិស្ថាន
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Courses -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-chalkboard-teacher"></i> វគ្គបណ្តុះបណ្តាល
+                        </a>
+                    </li>
+
+                    <!-- Events -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-calendar-alt"></i> ព្រឹត្តិការណ៍
+                        </a>
+                    </li>
+  <!-- About Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <i class="fas fa-info-circle"></i> អំពីយើង
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-history"></i> ប្រវត្តិ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-bullseye"></i> បេសកកម្ម
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-users"></i> ក្រុមការងារ
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-handshake"></i> ដៃគូសហការ
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                   
+                 
+                </ul>
+                <!-- Right Side Buttons -->
+
+                <div class="d-flex gap-2 align-items-center">
+                      <!-- Theme Toggle -->
+                    <button class="theme-toggle" onclick="toggleTheme()">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+                       <!-- button search model -->
+                    <button class="btn btn-outline-primary d-none d-lg-block " data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search "></i> ស្វែងរក
+                    </button>
+                  
+
+                    <!-- Login/Register -->
+                    <a href="#" class="btn btn-outline-primary d-none d-lg-block">
+                        <i class="fas fa-user"></i> ចូលប្រើ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<main>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur dicta a voluptates animi! Doloribus repudiandae dignissimos ad laboriosam, vero ratione corporis eligendi ea quidem, laudantium in amet consequatur voluptas asperiores!
+</main>
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>
+                        <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
+                        អំពីពុទ្ធសាសនានិងសង្គម
+                    </h5>
+                    <p style="line-height: 1.8;">
+                        គេហទំព័រដែលផ្តល់នូវការអប់រំ សេវាកម្មសង្គម និងការលើកកម្ពស់គុណតម្លៃសីលធម៌តាមគោលការណ៍ព្រះធម៌ 
+                        ដើម្បីអភិវឌ្ឍន៍សង្គមប្រកបដោយសន្តិភាព និងសុខុមាលភាព។
+                    </p>
+                    <div class="footer-social mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>តំណភ្ជាប់លឿន</h5>
+                    <a href="#"><i class="fas fa-angle-right"></i> ទំព័រដើម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> អំពីយើង</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> សេវាកម្ម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ព្រឹត្តិការណ៍</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ទំនាក់ទំនង</a>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>សេវាកម្ម</h5>
+                    <a href="#"><i class="fas fa-angle-right"></i> គម្រោងសង្គម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ការអប់រំ</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> វគ្គបណ្តុះបណ្តាល</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> អ្នកស្ម័គ្រចិត្ត</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ការបរិច្ចាគ</a>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>ទំនាក់ទំនង</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i>
+                        ភ្នំពេញ, កម្ពុជា
+                    </p>
+                    <p>
+                        <i class="fas fa-phone" style="color: var(--primary-color);"></i>
+                        012 345 678
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope" style="color: var(--primary-color);"></i>
+                        info@buddhism-society.org
+                    </p>
+                    <p>
+                        <i class="fas fa-clock" style="color: var(--primary-color);"></i>
+                        ច័ន្ទ - សុក្រ: 8:00 - 17:00
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">
+                            © 2024 ពុទ្ធសាសនានិងសង្គម. រក្សាសិទ្ធិគ្រប់យ៉ាង។
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end justify-content-center justify-content-md-end d-flex">
+                        <a href="#" class="me-3">គោលការណ៍ឯកជនភាព</a>
+                        <a href="#" class="me-3">លក្ខខណ្ឌប្រើប្រាស់</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- search modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="ស្វែងរកគេហទំព័រ">
+                            <button type="submit" class="btn btn-primary">ស្វែងរក</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Bootstrap JS -->
     <script src="asset/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
