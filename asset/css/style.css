@@ -14,51 +14,45 @@
             --text-secondary: #D1D5DB;
             --border-light: #374151;
         }
+         [data-theme="dark"] body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+        }
         
         * {
             font-family: 'Battambang', sans-serif;
         }
         
         body {
-            padding-top: 120px;
             background: var(--bg-primary);
             color: var(--text-primary);
             transition: all 0.3s ease;
         }
-        
-        [data-theme="dark"] body {
+        /* navbar */
+        .navbar {
             background: var(--bg-primary);
-            color: var(--text-primary);
-        }
-        
-        
-        /* Top Bar */
-        .top-bar {
-            background: #F3F4F6;
             padding: 8px 0;
             font-size: 14px;
             border-bottom: 1px solid var(--border-light);
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         
-        [data-theme="dark"] .top-bar {
+        [data-theme="dark"] .navbar {
             background: #1F2937;
+            border-bottom: 1px solid var(--border-dark);
+            color: var(--text-primary);
+            
         }
         
-        .top-bar a {
+        .navbar a {
             color: var(--text-secondary);
             text-decoration: none;
             transition: color 0.3s;
         }
         
-        .top-bar a:hover {
+        .navbar a:hover {
             color: var(--primary-color);
-        }
-        
-        /* Main Navbar */
-        .main-navbar {
-            background: var(--bg-primary);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
         }
         
         .navbar-brand {
@@ -67,7 +61,7 @@
             gap: 12px;
             font-family: 'Moul', serif;
             color: var(--primary-color) !important;
-            font-size: 20px;
+            font-size: 25px;
         }
         
         .navbar-brand img {
@@ -116,16 +110,19 @@
             align-items: center;
             gap: 12px;
             transition: all 0.3s;
+            color: #111827!important;
+            font-weight: 500;
         }
         
         .dropdown-item:hover {
-            background: rgba(245, 158, 11, 0.1);
-            color: var(--primary-color);
+            background: rgba(187, 241, 50, 0.1)!important;
+            color: var(--primary-color)!important;
             padding-left: 20px;
+            transition: all 0.3s;
         }
         
         .dropdown-item i {
-            color: var(--primary-color);
+            color: var(--primary-color)!important;
             width: 20px;
         }
         
@@ -180,6 +177,7 @@
             background: var(--primary-color)!important;
             color: white!important;
         }
+        
         
         /* Footer */
         footer {
@@ -256,4 +254,7 @@
             transform: rotate(360deg);
         }
        }
+
+
+       
         
