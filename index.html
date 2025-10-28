@@ -27,39 +27,13 @@
     
 </head>
 <style>
-    
+
 </style>
 <body>
 
-  <!-- ═══════════ TOP BAR ═══════════ -->
-    <div class="top-bar fixed-top">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="d-flex gap-3">
-                        <a href="tel:+855123456789">
-                            <i class="fas fa-phone"></i> 012 345 678
-                        </a>
-                        <a href="mailto:info@buddhism-society.org">
-                            <i class="fas fa-envelope"></i> info@buddhism-society.org
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 text-end">
-                    <div class="d-flex justify-content-end gap-3 align-items-center">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-telegram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <span class="text-muted">|</span>
-                        <a href="#">ភាសាខ្មែរ</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- ═══════════ MAIN NAVBAR ═══════════ -->
-    <nav class="navbar navbar-expand-lg main-navbar fixed-top" style="top: 37px;">
+    <nav class="navbar navbar-expand-lg  border-bottom border-light sticky-top py-3 wow animate__slideInDown ">
         <div class="container">
             <!-- Logo & Brand -->
             <a class="navbar-brand" href="#">
@@ -79,16 +53,13 @@
 
             <!-- Main Menu -->
             <div class="collapse navbar-collapse" id="navbarMain">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
                     <!-- Home -->
                     <li class="nav-item">
                         <a class="nav-link active" href="#">
                             <i class="fas fa-home"></i> ទំព័រដើម
                         </a>
                     </li>
-
-                  
-
                     <!-- Dhamma Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
@@ -194,7 +165,7 @@
                 </ul>
                 <!-- Right Side Buttons -->
 
-                <div class="d-flex gap-2 align-items-center">
+                <div class="d-flex gap-2 align-items-center ms-auto">
                       <!-- Theme Toggle -->
                     <button class="theme-toggle" onclick="toggleTheme()">
                         <i class="fas fa-moon" id="themeIcon"></i>
@@ -210,23 +181,23 @@
                         <i class="fas fa-user"></i> ចូលប្រើ
                     </a>
                 </div>
+                
             </div>
         </div>
     </nav>
 
-<main>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur dicta a voluptates animi! Doloribus repudiandae dignissimos ad laboriosam, vero ratione corporis eligendi ea quidem, laudantium in amet consequatur voluptas asperiores!
-</main>
     <!-- ═══════════ FOOTER ═══════════ -->
     <footer>
         <div class="container">
             <div class="row">
                 <!-- About Section -->
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <h5>
-                        <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
-                        អំពីពុទ្ធសាសនានិងសង្គម
-                    </h5>
+                    <div class="d-flex align-items-center">
+                         <i class="fas fa-dharmachakra fs-1 me-3" style="color: var(--primary-color);"></i>
+                        <h5 class="mt-5">
+                            អំពីពុទ្ធសាសនានិងសង្គម
+                        </h5>
+                    </div>
                     <p style="line-height: 1.8;">
                         គេហទំព័រដែលផ្តល់នូវការអប់រំ សេវាកម្មសង្គម និងការលើកកម្ពស់គុណតម្លៃសីលធម៌តាមគោលការណ៍ព្រះធម៌ 
                         ដើម្បីអភិវឌ្ឍន៍សង្គមប្រកបដោយសន្តិភាព និងសុខុមាលភាព។
@@ -323,5 +294,8 @@
     <script src="asset/aos-master/dist/aos.js"></script>
     <!-- Custom JS -->
     <script src="asset/js/script.js"></script>
+    <script>
+  AOS.init();
+</script>
 </body>
 </html>
