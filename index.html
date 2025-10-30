@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="km">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="គេហទំព័រផ្សព្វផ្សាយព្រះធម៌ បង្រៀន អប់រំសីលធម៌ និងចែករំលែកចំណេះដឹងខាងព្រះពុទ្ធសាសនា">
+    <meta name="description"
+        content="គេហទំព័រផ្សព្វផ្សាយព្រះធម៌ បង្រៀន អប់រំសីលធម៌ និងចែករំលែកចំណេះដឹងខាងព្រះពុទ្ធសាសនា">
     <meta name="keywords" content="ពុទ្ធសាសនា, ព្រះធម៌, សង្គម, កម្ពុជា, Buddhism, Cambodia">
-    
+
     <title>ពុទ្ធសាសនានិងសង្គម | Buddhism and Society</title>
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="asset/css/style.css">
     <!-- Theme CSS -->
@@ -21,13 +23,14 @@
     <link rel="stylesheet" href="asset/aos-master/dist/aos.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
+
     <!-- Google Fonts - Khmer -->
-    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/index.css">
+
 </head>
 <style>
-    
     .user-profile {
         color: var(--primary-color);
     }
@@ -35,8 +38,8 @@
     .user-profile:hover {
         color: var(--primary-color);
     }
-
 </style>
+
 <body>
 
 
@@ -45,7 +48,7 @@
         <div class="container">
             <!-- Logo & Brand -->
             <a class="navbar-brand" href="#">
-                 <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
+                <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
                 <div>
                     <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
                     <div style="font-size: 12px; font-family: 'Battambang'; color: var(--text-secondary);">
@@ -104,10 +107,10 @@
                         </a>
                     </li>
 
-                     <li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                             <i class="fas fa-calendar-alt"></i>
-                             ព្រឹត្តិការណ៍
+                            ព្រឹត្តិការណ៍
                         </a>
                         <ul class="dropdown-menu">
                             <li>
@@ -120,18 +123,18 @@
                                     <i class="fas fa-bullseye"></i> វប្បធម៌ខ្មែរ
                                 </a>
                             </li>
-                          
-                          
+
+
                         </ul>
                     </li>
-                      <!-- Services -->
+                    <!-- Services -->
 
                     <li class="nav-item">
                         <a class="nav-link" href="pages/events.html">
                             <i class="fas fa-calendar-alt"></i> កម្មវិធី
                         </a>
                     </li>
-  <!-- About Dropdown -->
+                    <!-- About Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                             <i class="fas fa-info-circle"></i> អំពីយើង
@@ -152,11 +155,11 @@
                                     <i class="fas fa-users"></i> ក្រុមការងារ
                                 </a>
                             </li>
-                            
-                          
+
+
                         </ul>
                     </li>
-                      <!-- Services -->
+                    <!-- Services -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                             <i class="fas fa-hands-helping"></i> ផ្សេងៗ
@@ -174,7 +177,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-heartbeat"></i> 
+                                    <i class="fas fa-heartbeat"></i>
                                 </a>
                             </li>
                             <li>
@@ -184,43 +187,343 @@
                             </li>
                         </ul>
                     </li>
-                   
-                 
+
+
                 </ul>
                 <!-- Right Side Buttons -->
 
                 <div class="d-flex gap-2 align-items-center ms-auto">
-                      <!-- Theme Toggle -->
+                    <!-- Theme Toggle -->
                     <button class="theme-toggle" onclick="toggleTheme()">
                         <i class="fas fa-moon" id="themeIcon"></i>
                     </button>
-                       <!-- button search model -->
-                    <button class="btn btn-outline-primary d-none d-lg-block " data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <!-- button search model -->
+                    <button class="btn btn-outline-primary d-none d-lg-block " data-bs-toggle="modal"
+                        data-bs-target="#searchModal">
                         <i class="fas fa-search "></i> ស្វែងរក
                     </button>
-                  
 
-                   
+
+
                     <!-- User Profile / Login -->
                     <div class="dropdown" id="userSection">
-                        <button class="btn btn-link text-decoration-none dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <button class="btn btn-link text-decoration-none dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown">
                             <i class="bi bi-person-circle fs-5"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="pages/auth/login.html">
-                                <i class="bi bi-box-arrow-in-right me-2"></i>ចូលប្រើ
-                            </a></li>
+                                    <i class="bi bi-box-arrow-in-right me-2"></i>ចូលប្រើ
+                                </a></li>
                             <li><a class="dropdown-item " href="pages/auth/register.html">
-                                <i class="bi bi-person-plus me-2"></i>ចុះឈ្មោះ
-                            </a></li>
+                                    <i class="bi bi-person-plus me-2"></i>ចុះឈ្មោះ
+                                </a></li>
                         </ul>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </nav>
+    <main>
+        <div class="container mt-3">
+            <div class="herobaner rounded-4">
+                <div class="herobaner2"></div>
 
+                <img src="asset/images/482004124_959322823052624_1893634070340754998_n.jpg" alt="">
+                <section class="hero">
+
+                    <div class="hero-content text-start p-5 rounded-5 ">
+
+                        <h1 class="display-4 fw-bold text-warning fs-1 typing text-center mt-5">សូមស្វាគមន៍មកកាន់គេហទំព័រ
+                            ពុទ្ធសាសនា​ និង​​
+                            សង្គម</h1>
+
+                        <h2 class="fw-bold fs-1 text-start text-light mt-4 " style="line-height: 55px;">
+                            ការអប់រំផ្លូវចិត្តគឺជាកត្តាចាំបាច់សម្រាប់ដោះស្រាយបញ្ញាក្នុងជីវិតប្រចាំថ្ងៃ
+                        </h2>
+
+                        <h3 class=" text-light fw-bold text-start mt-3">សីល សមាធិ បញ្ញា</h3>
+
+                        <button class="btn-primary mt-4" id="login">ចាប់ផ្តើមឥឡូវនេះ</button>
+
+                    </div>
+                </section>
+            </div>
+            <nav class="container rounded-5 filter-bar-new bg-dark bg-opacity-75 shadow-lg  py-4 px-5 position-absolute start-50 translate-middle-x z-2 "
+                style="margin-top: -70px;">
+                <div class="row align-items-center gy-3">
+
+                    <div class="col-lg-5">
+                        <div class="d-flex align-items-center">
+                            <a class="nav-link dropdown-toggle text-white fs-5 px-3" href="#">សីល</a>
+
+                            <span class="separator"></span>
+
+                            <a class="nav-link dropdown-toggle text-white fs-5 px-3" href="#">សមាធិ</a>
+
+                            <span class="separator"></span>
+
+                            <a class="nav-link dropdown-toggle text-white fs-5 px-3" href="#">បញ្ញា</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="religion-select"
+                                        class="form-label text-white fw-bold fs-4">ទីតាំងវិបស្សនា</label>
+
+                                    <select class="form-select fw-bold" id="religion-select">
+                                        <option selected>....................</option>
+                                        <option value="1">ពុទ្ធមណ្ឌលកម្ពុជា</option>
+                                        <option value="2">ពុទ្ធមណ្ឌលវិបស្សនាធុរៈ​ ភ្នំឲដុង</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="library-select"
+                                        class="form-label text-white fw-bold fs-4">បណ្ណាល័យព្រះធម៌</label>
+                                    <select class="form-select fw-bold" id="library-select">
+                                        <option selected>....................</option>
+                                        <option value="1">ជម្រើសទី ១</option>
+                                        <option value="2">ជម្រើសទី ២</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mission Section -->
+        <section id="mission" class="py-5 text-center mt-5">
+            <div class="container mt-3">
+                <h2 class="fw-bold text-warning mb-4">គោលបំណង និង ទស្សនៈ</h2>
+                <p class="lead text-muted w-75 mx-auto " style="color: var(--text-secondary) !important;">
+                    ផ្សព្វផ្សាយចំណេះដឹងពុទ្ធសាសនា និងជំរុញសកម្មភាពសង្គមដោយសុភមង្គលនិងការយោគយល់។
+                </p>
+                <div class="mt-5">
+                    <div class="row ">
+                        <div class="col-6">
+                            <div class="card border-0 bg-0 ">
+                                <video class=" rounded shadow" controls>
+                                    <source src="asset/images/Children_Meditating_at_Sunrise.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class=" border-0 bg-0 p-4 mt-3" style=" border-radius: 12px;">
+                                <h5 class="text-success fw-bold mb-3 text-start fs-3">គោលបំណង</h5>
+                                <p class="text-secondary text-start fs-5"
+                                    style="color: var(--text-secondary) !important;;">
+                                    គេហទំព័រ ពុទ្ធសាសនា និង សង្គម មានគោលបំណងក្នុងការផ្សព្វផ្សាយចំណេះដឹងពុទ្ធសាសនា
+                                    ដើម្បីបណ្តុះចិត្តនិងគំនិតឲ្យប្រជាពលរដ្ឋយល់ដឹងអំពីសីលធម៌ ការអនុវត្តភាពអត់ធ្មត់
+                                    មេត្តាករុណា និងសាមគ្គីភាព។
+                                    ជាមួយគ្នានេះ វាក៏ជំរុញឲ្យមានសកម្មភាពសង្គមដូចជា ការជួយជនអត់លទ្ធភាព ការអប់រំយុវជន
+                                    និងការអភិវឌ្ឍសហគមន៍តាមបែបធម៌។
+                                    គោលបំណងសំខាន់គឺបង្កើតសង្គមសុភមង្គល ដែលសុវត្ថិភាព សប្បុរស និងសន្តិភាព
+                                    ដោយមានពុទ្ធធម៌ជាមគ្គុទេសក៍ដឹកនាំចិត្ត។
+                                </p>
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <button class="btn btn-success px-4 py-2 rounded-pill">តាមដាន</button>
+                                    <div class="text-muted small d-flex align-items-center  gap-2 ">
+                                        <a href="#" class="text-decoration-none text-muted "
+                                            style="color: var(--text-secondary) !important;"><i class="bi bi-heart"></i>
+                                            ចូលចិត្ត</a>
+                                        <i class="bi bi-eye ms-3 "
+                                            style="color: var(--text-secondary) !important;">200</i>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features-section bg-light">
+            <div class="container">
+                <h2 class="section-title text-center">លក្ខណៈពិសេសរបស់យើង</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-book"></i></div>
+                            <h5>បណ្ណាល័យអេឡិកត្រូនិក</h5>
+                            <p>រៀនសូត្រធម៌វិន័យ ភាសាបាលី និងអភិធម្ម តាមរយៈវីដេអូ និងអត្ថបទ។</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-users"></i></div>
+                            <h5>វេទិកាសន្ទនា</h5>
+                            <p>ចូលរួមពិភាក្សា ចែករំលែកបទពិសោធន៍ និងសួរសំណួរទៅកាន់ព្រះសង្ឃ។</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                            <h5>បំពេញបុណ្យកុសល</h5>
+                            <p>ចូលរួមបរិច្ចាគ និងស្ម័គ្រចិត្តក្នុងគម្រោងជួយសង្គមនានា។</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Latest News Section -->
+        <section id="news" class="news-section">
+            <div class="container">
+                <h2 class="section-title">ព្រឹត្តិការណ៍ថ្មីៗ</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%238B4513' width='400' height='200'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='24'>កម្មវិធីបុណ្យ</text></svg>"
+                                class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">កម្មវិធីបុណ្យវិសាខបូជា ឆ្នាំ២០២៥</h5>
+                                <p class="card-text">ចូលរួមរំពឹងទុក និងបើកបរ ក្នុងមហោស្រព ដ៏ពិសេស នេះ។</p>
+                                <a href="#" class="btn btn-link">អានបន្ត...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%23A0522D' width='400' height='200'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='24'>ដំណើរកម្ម</text></svg>"
+                                class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">ដំណើរកម្ម សិក្សាវត្តឯម ២០២៥</h5>
+                                <p class="card-text">ដំណើរកម្ម ដែលផ្តល់ឱកាស ឲ្យយុវជនស្វាគមន៍ទស្សនវត្ត។</p>
+                                <a href="#" class="btn btn-link">អានបន្ត...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card news-card">
+                            <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%23654321' width='400' height='200'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='24'>សិក្សា</text></svg>"
+                                class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">វគ្គបណ្តុះបណ្តាល ធម៌វិន័យដ៏ថ្មី</h5>
+                                <p class="card-text">វគ្គបណ្តុះបណ្តាល ពិសេស ដែលផ្តល់ឱកាស ឲ្យរៀនសូត្របង្គោលដៃ។</p>
+                                <a href="#" class="btn btn-link">អានបន្ត...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="bg-light p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card border-0">
+                            <section class="py-5" id="rituals" style="background-color: var(--light-bg);">
+                                <div class="container">
+                                    <h2 class="mb-4" style="font-size: 2.5rem;">កិច្ចពុទ្ធបរិស័ទ</h2>
+                                    <div class="accordion" id="ritualsAccordion">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#ritual1">
+                                                    <i class="fas fa-hands-praying me-2"></i> ឥរិយាបទទូទៅ
+                                                </button>
+                                            </h2>
+                                            <div id="ritual1" class="accordion-collapse collapse show"
+                                                data-bs-parent="#ritualsAccordion">
+                                                <div class="accordion-body">
+                                                    <p><strong>វិធីថ្វាយបង្គំ:</strong> ដង្ហើមយឺត ជើងទៅខាងមុខ ដៃផ្សាយ
+                                                        ព្រលក់នូវថ្ងាស់វាលស្ពាត់ក្នុងលក្ខណៈរីកចម្រើន។</p>
+                                                    <p><strong>វិធីអង្គុយ:</strong> អង្គុយលើលូន ដៃវាងលើជើង ភ្នែកមើលទៅមុខ
+                                                        ឬបិទ។</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#ritual2">
+                                                    <i class="fas fa-gopuram me-2"></i> ពេលចូលក្នុងវត្ត
+                                                </button>
+                                            </h2>
+                                            <div id="ritual2" class="accordion-collapse collapse"
+                                                data-bs-parent="#ritualsAccordion">
+                                                <div class="accordion-body">
+                                                    <h5>✅ ត្រូវធ្វើ:</h5>
+                                                    <ul>
+                                                        <li>ថ្វាយបង្គំឡើងវិញ នៅពេលចូល</li>
+                                                        <li>គោរពព្រះសង្ឃ</li>
+                                                        <li>ដើរឯងស្ងៀម</li>
+                                                    </ul>
+                                                    <h5>❌ មិនត្រូវធ្វើ:</h5>
+                                                    <ul>
+                                                        <li>នៅលើកអាវខ្លី</li>
+                                                        <li>ពេលនិយាយឆ្ងាយៗ</li>
+                                                        <li>ដើរលឿនពេក</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#ritual3">
+                                                    <i class="fas fa-gift me-2"></i> ការប្រគេនទាន
+                                                </button>
+                                            </h2>
+                                            <div id="ritual3" class="accordion-collapse collapse"
+                                                data-bs-parent="#ritualsAccordion">
+                                                <div class="accordion-body">
+                                                    ក្នុងពេលប្រគេនទាន សូមធានាថាបរិយាបោលរបស់អ្នកដែលលម្អិត
+                                                    ព្រមទាំងផ្តល់ដោយបេរីយនៃគមន្ត។ ផ្អើលផ្អើលនូវលទ្ធផលដែលបង្កើតដោយលម្អិត។
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#ritual4">
+                                                    <i class="fas fa-shirt me-2"></i> ការស្លៀកពាក់
+                                                </button>
+                                            </h2>
+                                            <div id="ritual4" class="accordion-collapse collapse"
+                                                data-bs-parent="#ritualsAccordion">
+                                                <div class="accordion-body">
+                                                    <div class="row mt-3">
+                                                        <div class="col-6">
+                                                            <h5 style="color: #27AE60;"><i
+                                                                    class="fas fa-check-circle"></i> ត្រូវ</h5>
+                                                            <p>អាវរលាយ និងកズズុង់សមស្របក្នុងមាត់វត្ត</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <h5 style="color: #E74C3C;"><i
+                                                                    class="fas fa-times-circle"></i> មិនត្រូវ</h5>
+                                                            <p>អាវខ្លី, សាពず, ឬលង្ខិត</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card rounded-2 overflow-hidden p-2">
+                            <img src="asset/images/Gemini_Generated_Image_f2uyrgf2uyrgf2uy.png" alt=""
+                                style="height: 300px; width: 100%; object-fit: cover;">
+                            <h2 class="p-2">តើអ្នកចង់ចូលរួមចំណែកដែរឬទេ?</h2>
+                            <p class="p-2">ចូលរួមជាមួយពួកយើង ក្នុងការផ្សព្វផ្សាយព្រះធម៌ និងជួយសង្គម។</p>
+                            <button class="btn btn-light btn-lg ">ចុះឈ្មោះជាអ្នកស្ម័គ្រចិត្ត</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- ═══════════ FOOTER ═══════════ -->
     <footer>
         <div class="container">
@@ -228,13 +531,13 @@
                 <!-- About Section -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="d-flex align-items-center">
-                         <i class="fas fa-dharmachakra fs-1 me-3" style="color: var(--primary-color);"></i>
+                        <i class="fas fa-dharmachakra fs-1 me-3" style="color: var(--primary-color);"></i>
                         <h5 class="mt-5">
                             អំពីពុទ្ធសាសនានិងសង្គម
                         </h5>
                     </div>
                     <p style="line-height: 1.8;">
-                        គេហទំព័រដែលផ្តល់នូវការអប់រំ សេវាកម្មសង្គម និងការលើកកម្ពស់គុណតម្លៃសីលធម៌តាមគោលការណ៍ព្រះធម៌ 
+                        គេហទំព័រដែលផ្តល់នូវការអប់រំ សេវាកម្មសង្គម និងការលើកកម្ពស់គុណតម្លៃសីលធម៌តាមគោលការណ៍ព្រះធម៌
                         ដើម្បីអភិវឌ្ឍន៍សង្គមប្រកបដោយសន្តិភាព និងសុខុមាលភាព។
                     </p>
                     <div class="footer-social mt-3">
@@ -307,7 +610,8 @@
         </div>
     </footer>
     <!-- search modal -->
-    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body">
@@ -322,7 +626,36 @@
         </div>
     </div>
 
+    <!-- main -->
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.querySelector('.theme-toggle');
 
+            if (body.classList.contains('light-mode')) {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            } else {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            }
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
     <!-- Bootstrap JS -->
     <script src="asset/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
     <!-- AOS Animation -->
@@ -330,7 +663,8 @@
     <!-- Custom JS -->
     <script src="asset/js/script.js"></script>
     <script>
-  AOS.init();
-</script>
+        AOS.init();
+    </script>
 </body>
+
 </html>

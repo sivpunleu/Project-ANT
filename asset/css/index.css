@@ -1,0 +1,102 @@
+.herobaner {
+  height: 600px !important;
+  position: relative !important;
+  overflow: hidden;
+
+}
+
+.herobaner2 {
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right, 
+    rgba(0, 0, 0, 0.849), 
+    rgba(0, 0, 0, 0)
+  );
+  z-index: 2;
+}
+
+.hero-content {
+  position: absolute;
+
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: -650px;
+  margin-right: 450px;
+  z-index: 3;
+
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.typing {
+  border-right: 3px solid #00d0ff;
+  white-space: nowrap;
+  padding: 10px;
+  overflow: hidden;
+  display: inline-block;
+  width: 0;
+  animation: typing 6s steps(50, end) infinite alternate,
+    blink 0.8s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #00d0ff;
+  }
+}
+
+.mt-5 {
+  margin-top: 60px !important;
+}
+.filter-bar-new{
+  width: 1200px!important;
+}
+/* CSS ទាំងនេះគឺសម្រាប់តែអ្វីដែល Bootstrap មិនអាចធ្វើបាន៖
+  1. ហ្វុយ 'Moul' (Font 'Moul')
+  2. ពណ៌ពេល Hover (Hover color)
+  3. ពណ៌របស់ .separator (Separator color)
+*/
+
+/* 1. កំណត់ហ្វុយ 'Moul' សម្រាប់តែ links ទាំងនោះ */
+/* (អ្នកមិនចាំបាច់ Import ទេ ប្រសិនបើអ្នកបាន Import ក្នុង HTML <head> រួចហើយ) */
+
+.nav-link {
+  font-family: 'Moul', cursive;
+}
+
+/* 2. កំណត់ពណ៌លឿង ពេល Hover */
+.nav-link:hover {
+  color: #f7e8a1;
+}
+
+/* 3. កំណត់ពណ៌ទឹកក្រូច សម្រាប់ .separator */
+.separator {
+  width: 2px;
+  height: 25px;
+  background-color: #e67e22; /* ពណ៌ទឹកក្រូច */
+}
