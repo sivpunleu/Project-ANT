@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="គេហទំព័រផ្សព្វផ្សាយព្រះធម៌ បង្រៀន អប់រំសីលធម៌ និងចែករំលែកចំណេះដឹងខាងព្រះពុទ្ធសាសនា">
+    <meta name="keywords" content="ពុទ្ធសាសនា, ព្រះធម៌, សង្គម, កម្ពុជា, Buddhism, Cambodia">
+    
+    <title>ព្រឹត្តិការណ៍ - ពុទ្ធសាសនានិងសង្គម</title>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <!-- events css -->
+    <link rel="stylesheet" href="../asset/css/events.css">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../asset/css/theme.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap1.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="../asset/aos-master/dist/aos.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Google Fonts - Khmer -->
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap" rel="stylesheet">
+    
+</head>
+<style>
+    
+    .user-profile {
+        color: var(--primary-color);
+    }
+
+    .user-profile:hover {
+        color: var(--primary-color);
+    }
+
+</style>
+<body>
+
+
+    <!-- ═══════════ MAIN NAVBAR ═══════════ -->
+    <nav class="navbar navbar-expand-lg  border-bottom border-light sticky-top py-3 wow animate__slideInDown ">
+        <div class="container">
+            <!-- Logo & Brand -->
+            <a class="navbar-brand" href="#">
+                 <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
+                <div>
+                    <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
+                    <div style="font-size: 12px; font-family: 'Battambang'; color: var(--text-secondary);">
+                        Buddhism & Society
+                    </div>
+                </div>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <i class="fas fa-bars" style="color: var(--primary-color);"></i>
+            </button>
+
+            <!-- Main Menu -->
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            <i class="fas fa-home"></i> ទំព័រដើម
+                        </a>
+                    </li>
+                    <!-- Dhamma Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <i class="fas fa-book"></i> ព្រះធម៌
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="../pages/media-library.html">
+                                    <i class="fas fa-book-open"></i> បណ្ណាល័យព្រះធម៌
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-video"></i> វីដេអូធម៌
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-microphone"></i> សំឡេងធម៌
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-calendar-day"></i> ធម៌ប្រចាំថ្ងៃ
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Courses -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-chalkboard-teacher"></i> វគ្គបណ្តុះបណ្តាល
+                        </a>
+                    </li>
+
+                    <!-- Events -->
+                    <li class="nav-item ">
+                        <a class="nav-link active " href="../pages/events.html">
+                            <i class="fas fa-calendar-alt"></i> ព្រឹត្តិការណ៍
+                        </a>
+                    </li>
+  <!-- About Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <i class="fas fa-info-circle"></i> អំពីយើង
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-history"></i> ប្រវត្តិ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-bullseye"></i> បេសកកម្ម
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-users"></i> ក្រុមការងារ
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-handshake"></i> ដៃគូសហការ
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                      <!-- Support -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <i class="fas fa-hands-helping"></i> ផ្សេងៗ
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="../pages/Buddhist Rituals.html">
+                                    <i class="fas fa-hand-holding-heart"></i> កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-graduation-cap"></i> ការអប់រំ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-heartbeat"></i> សុខភាព
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-leaf"></i> បរិស្ថាន
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                   
+                 
+                </ul>
+                <!-- Right Side Buttons -->
+
+                <div class="d-flex gap-2 align-items-center ms-auto">
+                      <!-- Theme Toggle -->
+                    <button class="theme-toggle" onclick="toggleTheme()">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+                       <!-- button search model -->
+                    <button class="btn btn-outline-primary d-none d-lg-block " data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search "></i> ស្វែងរក
+                    </button>
+                  
+
+                   
+                    <!-- User Profile / Login -->
+                    <div class="dropdown" id="userSection">
+                        <button class="btn btn-link text-decoration-none dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-circle fs-5"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="../pages/auth/login.html">
+                                <i class="bi bi-box-arrow-in-right me-2"></i>ចូលប្រើ
+                            </a></li>
+                            <li><a class="dropdown-item " href="../pages/auth/register.html">
+                                <i class="bi bi-person-plus me-2"></i>ចុះឈ្មោះ
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+ <!-- Page Header -->
+    <div class="page-header">
+        <div class="container text-center">
+            <h1 class="page-title">ព្រឹត្តិការណ៍ & កម្មវិធី</h1>
+            <p style="font-size: 18px;">ចូលរួមកម្មវិធីបុណ្យ សកម្មភាពសង្គម និងវគ្គបណ្តុះបណ្តាល</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mb-5">
+        <div class="row">
+            <!-- Left Column - Events -->
+            <div class="col-lg-8">
+                
+                <!-- Filter Section -->
+                <div class="filter-section">
+                    <h5 class="mb-3"><i class="fas fa-filter"></i> ត្រងតាមប្រភេទ</h5>
+                    <div class="filter-tabs">
+                        <button class="filter-tab active" data-filter="all">
+                            <i class="fas fa-th"></i> ទាំងអស់
+                        </button>
+                        <button class="filter-tab" data-filter="religious">
+                            <i class="fas fa-pray"></i> កម្មវិធីបុណ្យ
+                        </button>
+                        <button class="filter-tab" data-filter="social">
+                            <i class="fas fa-heart"></i> សង្គមកម្ម
+                        </button>
+                        <button class="filter-tab" data-filter="education">
+                            <i class="fas fa-graduation-cap"></i> ការអប់រំ
+                        </button>
+                        <button class="filter-tab" data-filter="volunteer">
+                            <i class="fas fa-users"></i> ស្ម័គ្រចិត្ត
+                        </button>
+                        <button class="filter-tab" data-filter="meditation">
+                            <i class="fas fa-spa"></i> សមាធិ
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Calendar View -->
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <div class="calendar-month">
+                            <i class="fas fa-calendar-alt"></i> វិច្ឆិកា 2024
+                        </div>
+                        <div class="calendar-nav">
+                            <button><i class="fas fa-chevron-left"></i></button>
+                            <button><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="calendar-day-header">អា</div>
+                        <div class="calendar-day-header">ច</div>
+                        <div class="calendar-day-header">អ</div>
+                        <div class="calendar-day-header">ព</div>
+                        <div class="calendar-day-header">ព្រ</div>
+                        <div class="calendar-day-header">សុ</div>
+                        <div class="calendar-day-header">ស</div>
+                        
+                        <div class="calendar-day" style="opacity: 0.3"><div class="day-number">29</div></div>
+                        <div class="calendar-day" style="opacity: 0.3"><div class="day-number">30</div></div>
+                        <div class="calendar-day" style="opacity: 0.3"><div class="day-number">31</div></div>
+                        <div class="calendar-day"><div class="day-number">1</div></div>
+                        <div class="calendar-day has-event"><div class="day-number">2</div></div>
+                        <div class="calendar-day"><div class="day-number">3</div></div>
+                        <div class="calendar-day"><div class="day-number">4</div></div>
+                        
+                        <div class="calendar-day has-event"><div class="day-number">5</div></div>
+                        <div class="calendar-day"><div class="day-number">6</div></div>
+                        <div class="calendar-day"><div class="day-number">7</div></div>
+                        <div class="calendar-day has-event"><div class="day-number">8</div></div>
+                        <div class="calendar-day"><div class="day-number">9</div></div>
+                        <div class="calendar-day today has-event"><div class="day-number">10</div></div>
+                        <div class="calendar-day"><div class="day-number">11</div></div>
+                        
+                        <div class="calendar-day"><div class="day-number">12</div></div>
+                        <div class="calendar-day"><div class="day-number">13</div></div>
+                        <div class="calendar-day"><div class="day-number">14</div></div>
+                        <div class="calendar-day has-event"><div class="day-number">15</div></div>
+                        <div class="calendar-day"><div class="day-number">16</div></div>
+                        <div class="calendar-day"><div class="day-number">17</div></div>
+                        <div class="calendar-day has-event"><div class="day-number">18</div></div>
+                        
+                        <div class="calendar-day"><div class="day-number">19</div></div>
+                        <div class="calendar-day has-event"><div class="day-number">20</div></div>
+                        <div class="calendar-day"><div class="day-number">21</div></div>
+                        <div class="calendar-day"><div class="day-number">22</div></div>
+                        <div class="calendar-day has-event"><div class="day-number">23</div></div>
+                        <div class="calendar-day"><div class="day-number">24</div></div>
+                        <div class="calendar-day"><div class="day-number">25</div></div>
+                    </div>
+                </div>
+
+                <!-- Event Cards -->
+                <div class="event-card">
+                    <div class="event-card-horizontal">
+                        <img src="https://picsum.photos/250/300?random=1" alt="Event" class="event-image">
+                        <div class="event-body">
+                            <div>
+                                <span class="event-date-badge">
+                                    <i class="fas fa-calendar"></i> 10 វិច្ឆិកា 2024
+                                </span>
+                                <span class="event-status status-ongoing ms-2">
+                                    <i class="fas fa-circle"></i> កំពុងដំណើរការ
+                                </span>
+                            </div>
+                            <h3 class="event-title">កម្មវិធីបែងចែកអាហារប្រចាំសប្តាហ៍</h3>
+                            <div class="event-meta">
+                                <div class="event-meta-item">
+                                    <i class="fas fa-clock"></i> 8:00 AM - 11:00 AM
+                                </div>
+                                <div class="event-meta-item">
+                                    <i class="fas fa-map-marker-alt"></i> ផ្សារទួលទំពូង
+                                </div>
+                                <div class="event-meta-item">
+                                    <i class="fas fa-users"></i> 50 នាក់
+                                </div>
+                            </div>
+                            <p class="event-description">
+                                ចូលរួមជាស្ម័គ្រចិត្តក្នុងការបែងចែកអាហារជូនប្រជាជនក្រីក្រ និងគ្រួសារដែលខ្វះខាត។ 
+                                កម្មវិធីនេះធ្វើឡើងរាល់ថ្ងៃសៅរ៍ប្រចាំសប្តាហ៍។
+                            </p>
+                            <div class="event-footer">
+                                <div class="event-participants">
+                                    <div class="participant-avatars">
+                                        <img src="https://i.pravatar.cc/32?img=8" class="participant-avatar">
+                                        <img src="https://i.pravatar.cc/32?img=9" class="participant-avatar">
+                                        <img src="https://i.pravatar.cc/32?img=10" class="participant-avatar">
+                                        <img src="https://i.pravatar.cc/32?img=11" class="participant-avatar">
+                                    </div>
+                                    <span class="participant-count">+67 នាក់ទៀត</span>
+                                </div>
+                                <button class="btn btn-primary">
+                                    <i class="fas fa-user-plus"></i> ចុះឈ្មោះ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-card-horizontal">
+                        <img src="https://picsum.photos/250/300?random=4" alt="Event" class="event-image">
+                        <div class="event-body">
+                            <div>
+                                <span class="event-date-badge">
+                                    <i class="fas fa-calendar"></i> 23 វិច្ឆិកា 2024
+                                </span>
+                                <span class="event-status status-full ms-2">
+                                    <i class="fas fa-users"></i> ពេញហើយ
+                                </span>
+                            </div>
+                            <h3 class="event-title">វគ្គបណ្តុះបណ្តាល Leadership តាមធម៌</h3>
+                            <div class="event-meta">
+                                <div class="event-meta-item">
+                                    <i class="fas fa-clock"></i> 2:00 PM - 5:00 PM
+                                </div>
+                                <div class="event-meta-item">
+                                    <i class="fas fa-map-marker-alt"></i> មជ្ឈមណ្ឌលធម៌
+                                </div>
+                                <div class="event-meta-item">
+                                    <i class="fas fa-users"></i> 30/30 នាក់
+                                </div>
+                            </div>
+                            <p class="event-description">
+                                វគ្គបណ្តុះបណ្តាល Leadership skills ដោយផ្អែកលើគោលការណ៍ព្រះធម៌។ 
+                                រៀនពីភាពជាអ្នកដឹកនាំដែលប្រកបដោយមេត្តា ករុណា និងប្រាជ្ញា។
+                            </p>
+                            <div class="event-footer">
+                                <div class="event-participants">
+                                    <div class="participant-avatars">
+                                        <img src="https://i.pravatar.cc/32?img=12" class="participant-avatar">
+                                        <img src="https://i.pravatar.cc/32?img=13" class="participant-avatar">
+                                        <img src="https://i.pravatar.cc/32?img=14" class="participant-avatar">
+                                    </div>
+                                    <span class="participant-count">+27 នាក់ទៀត</span>
+                                </div>
+                                <button class="btn btn-outline-primary" disabled>
+                                    <i class="fas fa-check"></i> ពេញហើយ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More -->
+                <div class="text-center mt-4">
+                    <button class="btn btn-outline-primary btn-lg">
+                        <i class="fas fa-plus-circle"></i> មើលព្រឹត្តិការណ៍ច្រើនទៀត
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Right Sidebar -->
+            <div class="col-lg-4">
+                
+                <!-- Upcoming Events -->
+                <div class="sidebar-card">
+                    <h5 class="sidebar-title">
+                        <i class="fas fa-calendar-check"></i> ព្រឹត្តិការណ៍ខាងមុខ
+                    </h5>
+                    
+                    <div class="upcoming-event-item">
+                        <div class="upcoming-date">
+                            <i class="fas fa-calendar"></i> 10 វិច្ឆិកា - ថ្ងៃនេះ
+                        </div>
+                        <div class="upcoming-title">បែងចែកអាហារប្រចាំសប្តាហ៍</div>
+                    </div>
+
+                    <div class="upcoming-event-item">
+                        <div class="upcoming-date">
+                            <i class="fas fa-calendar"></i> 15 វិច្ឆិកា
+                        </div>
+                        <div class="upcoming-title">វគ្គសមាធិកម្មដ្ឋាន 3 ថ្ងៃ</div>
+                    </div>
+
+                    <div class="upcoming-event-item">
+                        <div class="upcoming-date">
+                            <i class="fas fa-calendar"></i> 18 វិច្ឆិកា
+                        </div>
+                        <div class="upcoming-title">ពិធីបុណ្យកឋិន</div>
+                    </div>
+
+                    <div class="upcoming-event-item">
+                        <div class="upcoming-date">
+                            <i class="fas fa-calendar"></i> 20 វិច្ឆិកា
+                        </div>
+                        <div class="upcoming-title">សម្អាតសហគមន៍</div>
+                    </div>
+
+                    <div class="upcoming-event-item">
+                        <div class="upcoming-date">
+                            <i class="fas fa-calendar"></i> 23 វិច្ឆិកា
+                        </div>
+                        <div class="upcoming-title">វគ្គ Leadership តាមធម៌</div>
+                    </div>
+
+                    <a href="#" class="btn btn-outline-primary w-100 mt-3">
+                        មើលទាំងអស់ <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Create Event -->
+                <div class="sidebar-card" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white;">
+                    <h5 class="sidebar-title" style="color: white;">
+                        <i class="fas fa-plus-circle"></i> បង្កើតព្រឹត្តិការណ៍
+                    </h5>
+                    <p style="font-size: 14px; opacity: 0.9; margin-bottom: 20px;">
+                        មានគម្រោង ឬកម្មវិធីល្អៗ? ចែករំលែកជាមួយសហគមន៍របស់យើង!
+                    </p>
+                    <button class="btn btn-light w-100" data-bs-toggle="modal" data-bs-target="#createEventModal">
+                        <i class="fas fa-plus"></i> បង្កើតឥឡូវនេះ
+                    </button>
+                </div>
+
+                <!-- Event Categories -->
+                <div class="sidebar-card">
+                    <h5 class="sidebar-title">
+                        <i class="fas fa-tags"></i> ប្រភេទព្រឹត្តិការណ៍
+                    </h5>
+                    <div class="d-flex flex-column gap-2">
+                        <div class="d-flex justify-content-between align-items-center p-2 bg-light rounded">
+                            <span><i class="fas fa-pray text-warning"></i> កម្មវិធីបុណ្យ</span>
+                            <span class="badge bg-warning">12</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center p-2 bg-light rounded">
+                            <span><i class="fas fa-heart text-danger"></i> សង្គមកម្ម</span>
+                            <span class="badge bg-danger">18</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center p-2 bg-light rounded">
+                            <span><i class="fas fa-graduation-cap text-primary"></i> ការអប់រំ</span>
+                            <span class="badge bg-primary">8</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center p-2 bg-light rounded">
+                            <span><i class="fas fa-users text-success"></i> ស្ម័គ្រចិត្ត</span>
+                            <span class="badge bg-success">15</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center p-2 bg-light rounded">
+                            <span><i class="fas fa-spa text-info"></i> សមាធិ</span>
+                            <span class="badge bg-info">6</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="sidebar-card">
+                    <h5 class="sidebar-title">
+                        <i class="fas fa-envelope"></i> ទទួលព័ត៌មាន
+                    </h5>
+                    <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">
+                        ចុះឈ្មោះទទួលព័ត៌មានអំពីព្រឹត្តិការណ៍ថ្មីៗ
+                    </p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="អ៊ីម៉ែលរបស់អ្នក" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="fas fa-paper-plane"></i> ចុះឈ្មោះ
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Create Event Modal -->
+    <div class="modal fade" id="createEventModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-plus-circle"></i> បង្កើតព្រឹត្តិការណ៍ថ្មី
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-8 mb-3">
+                                <label class="form-label">ឈ្មោះព្រឹត្តិការណ៍ *</label>
+                                <input type="text" class="form-control" placeholder="ឧទាហរណ៍: កម្មវិធីបែងចែកអាហារ" required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">ប្រភេទ *</label>
+                                <select class="form-select" required>
+                                    <option value="">ជ្រើសរើស...</option>
+                                    <option>កម្មវិធីបុណ្យ</option>
+                                    <option>សង្គមកម្ម</option>
+                                    <option>ការអប់រំ</option>
+                                    <option>ស្ម័គ្រចិត្ត</option>
+                                    <option>សមាធិ</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">ពិពណ៌នា *</label>
+                            <textarea class="form-control" rows="4" placeholder="ពិពណ៌នាលម្អិតអំពីព្រឹត្តិការណ៍..." required></textarea>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">កាលបរិច្ឆេទចាប់ផ្តើម *</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">ពេលវេលា *</label>
+                                <input type="time" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8 mb-3">
+                                <label class="form-label">ទីតាំង *</label>
+                                <input type="text" class="form-control" placeholder="អាសយដ្ឋានពេញលេញ" required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">ចំនួនអ្នកចូលរួម</label>
+                                <input type="number" class="form-control" placeholder="50">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">រូបភាពព្រឹត្តិការណ៍</label>
+                            <input type="file" class="form-control" accept="image/*">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">អ៊ីម៉ែលទំនាក់ទំនង *</label>
+                            <input type="email" class="form-control" placeholder="contact@example.com" required>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                            <label class="form-check-label" for="agreeTerms">
+                                ខ្ញុំយល់ព្រមតាមលក្ខខណ្ឌ និងគោលការណ៍របស់គេហទំព័រ
+                            </label>
+                        </div>
+
+                        <div class="d-flex gap-2 justify-content-end">
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                <i class="fas fa-times"></i> បោះបង់
+                            </button>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-check"></i> បង្កើតព្រឹត្តិការណ៍
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="d-flex align-items-center">
+                         <i class="fas fa-dharmachakra fs-1 me-3" style="color: var(--primary-color);"></i>
+                        <h5 class="mt-5">
+                            អំពីពុទ្ធសាសនានិងសង្គម
+                        </h5>
+                    </div>
+                    <p style="line-height: 1.8;">
+                        គេហទំព័រដែលផ្តល់នូវការអប់រំ សេវាកម្មសង្គម និងការលើកកម្ពស់គុណតម្លៃសីលធម៌តាមគោលការណ៍ព្រះធម៌ 
+                        ដើម្បីអភិវឌ្ឍន៍សង្គមប្រកបដោយសន្តិភាព និងសុខុមាលភាព។
+                    </p>
+                    <div class="footer-social mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>តំណភ្ជាប់លឿន</h5>
+                    <a href="#"><i class="fas fa-angle-right"></i> ទំព័រដើម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> អំពីយើង</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> សេវាកម្ម</a>
+                    <a href="../pages/events.html"><i class="fas fa-angle-right"></i> ព្រឹត្តិការណ៍</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ទំនាក់ទំនង</a>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>សេវាកម្ម</h5>
+                    <a href="#"><i class="fas fa-angle-right"></i> គម្រោងសង្គម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ការអប់រំ</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> វគ្គបណ្តុះបណ្តាល</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> អ្នកស្ម័គ្រចិត្ត</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ការបរិច្ចាគ</a>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>ទំនាក់ទំនង</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i>
+                        ភ្នំពេញ, កម្ពុជា
+                    </p>
+                    <p>
+                        <i class="fas fa-phone" style="color: var(--primary-color);"></i>
+                        012 345 678
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope" style="color: var(--primary-color);"></i>
+                        info@buddhism-society.org
+                    </p>
+                    <p>
+                        <i class="fas fa-clock" style="color: var(--primary-color);"></i>
+                        ច័ន្ទ - សុក្រ: 8:00 - 17:00
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">
+                            © 2024 ពុទ្ធសាសនានិងសង្គម. រក្សាសិទ្ធិគ្រប់យ៉ាង។
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end justify-content-center justify-content-md-end d-flex">
+                        <a href="#" class="me-3">គោលការណ៍ឯកជនភាព</a>
+                        <a href="#" class="me-3">លក្ខខណ្ឌប្រើប្រាស់</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- search modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="ស្វែងរកគេហទំព័រ">
+                            <button type="submit" class="btn btn-primary">ស្វែងរក</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="../asset/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="../asset/aos-master/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="../asset/js/script.js"></script>
+    <script>
+  AOS.init();
+</script>
+
+    <script>
+        // Filter Tabs
+        document.querySelectorAll('.filter-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                console.log('Filter:', filter);
+                // Add filtering logic here
+            });
+        });
+
+        // Calendar Day Click
+        document.querySelectorAll('.calendar-day').forEach(day => {
+            day.addEventListener('click', function() {
+                if (this.classList.contains('has-event')) {
+                    const dayNumber = this.querySelector('.day-number').textContent;
+                    alert('កម្មវិធីនៅថ្ងៃទី ' + dayNumber);
+                    // Show events for this day
+                }
+            });
+        });
+
+        // Upcoming Event Click
+        document.querySelectorAll('.upcoming-event-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const title = this.querySelector('.upcoming-title').textContent;
+                console.log('Clicked:', title);
+                // Scroll to event or show details
+            });
+        });
+
+        // Form Submit
+        document.querySelector('#createEventModal form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('ព្រឹត្តិការណ៍បានបង្កើតដោយជោគជ័យ! គណៈកម្មការនឹងពិនិត្យមើល។');
+            bootstrap.Modal.getInstance(document.getElementById('createEventModal')).hide();
+            this.reset();
+        });
+
+        // Register Button
+        document.querySelectorAll('.event-card .btn-primary:not([disabled])').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const eventCard = this.closest('.event-card');
+                const eventTitle = eventCard.querySelector('.event-title').textContent;
+                
+                if (confirm('តើអ្នកចង់ចុះឈ្មោះចូលរួម "' + eventTitle + '" មែនទេ?')) {
+                    alert('ចុះឈ្មោះជោគជ័យ! អ្នកនឹងទទួលបានអ៊ីម៉ែលបញ្ជាក់។');
+                    
+                    // Update button
+                    this.innerHTML = '<i class="fas fa-check"></i> បានចុះឈ្មោះ';
+                    this.classList.remove('btn-primary');
+                    this.classList.add('btn-success');
+                    
+                    // Update participant count
+                    const countElement = eventCard.querySelector('.participant-count');
+                    const currentCount = parseInt(countElement.textContent.replace(/\D/g, ''));
+                    countElement.textContent = '+' + (currentCount + 1) + ' នាក់ទៀត';
+                }
+            });
+        });
+
+        // Newsletter Form
+        document.querySelector('.sidebar-card form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            alert('អរគុណ! អ្នកនឹងទទួលព័ត៌មានថ្មីៗតាមអ៊ីម៉ែល: ' + email);
+            this.reset();
+        });
+
+        // Calendar Navigation
+        document.querySelectorAll('.calendar-nav button').forEach((btn, index) => {
+            btn.addEventListener('click', function() {
+                const monthElement = document.querySelector('.calendar-month');
+                const currentMonth = monthElement.textContent.trim();
+                
+                if (index === 0) {
+                    console.log('Previous month');
+                    // Load previous month
+                } else {
+                    console.log('Next month');
+                    // Load next month
+                }
+            });
+        });
+
+        // Smooth scroll to events when calendar day clicked
+        document.querySelectorAll('.calendar-day.has-event').forEach(day => {
+            day.addEventListener('click', function() {
+                document.querySelector('.event-card').scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        // Load More Events
+        document.querySelector('.text-center .btn-outline-primary').addEventListener('click', function() {
+            this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> កំពុងផ្ទុក...';
+            
+            setTimeout(() => {
+                alert('គ្មានព្រឹត្តិការណ៍ថ្មីទៀតទេ។ សូមត្រលប់មកពិនិត្យនៅពេលក្រោយ!');
+                this.innerHTML = '<i class="fas fa-plus-circle"></i> មើលព្រឹត្តិការណ៍ច្រើនទៀត';
+            }, 1000);
+        });
+
+        // Highlight today in calendar
+        const today = new Date().getDate();
+        document.querySelectorAll('.calendar-day').forEach(day => {
+            const dayNum = parseInt(day.querySelector('.day-number')?.textContent);
+            if (dayNum === today) {
+                day.classList.add('today');
+            }
+        });
+    </script>
+</body>
+</html>

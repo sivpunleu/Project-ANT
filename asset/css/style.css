@@ -49,6 +49,7 @@
             color: var(--text-secondary);
             text-decoration: none;
             transition: color 0.3s;
+            font-weight: 500;
         }
         
         .navbar a:hover {
