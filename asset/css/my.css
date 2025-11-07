@@ -1,0 +1,58 @@
+*{
+    margin: auto;
+    padding:auto;
+    box-sizing: border-box ;
+}
+  :root {
+            --primary-color: #b87707;
+            --secondary-color: #DC2626;
+            --bg-primary: #FFFFFF;
+            --text-primary: #1F2937;
+            --text-secondary: #6B7280;
+            --border-light: #E5E7EB;
+            --border-dark: #D1D5DB;
+        }
+        
+        [data-theme="dark"] {
+            --bg-primary: #111827;
+            --text-primary: #F9FAFB;
+            --text-secondary: #D1D5DB;
+            --border-light: #374151;
+        }
+         [data-theme="dark"] body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+        }
+        
+        * {
+            font-family: 'Battambang', sans-serif;
+        }
+        
+        body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.title{
+    height: 80vh;
+
+    background-image: url(/asset/img/herobaner.jpg.jpg); ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+    padding :20px !important;
+
+}
+.breadcrumb-link{
+    color: white;
+    text-decoration: none;
+}
+.breadcrumb-item::before {
+    color: white !important;
+  }
+
