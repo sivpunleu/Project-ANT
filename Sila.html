@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="គេហទំព័រផ្សព្វផ្សាយព្រះធម៌ បង្រៀន អប់រំសីលធម៌ និងចែករំលែកចំណេះដឹងខាងព្រះពុទ្ធសាសនា">
+    <meta name="keywords" content="ពុទ្ធសាសនា, ព្រះធម៌, សង្គម, កម្ពុជា, Buddhism, Cambodia">
+
+    <title>ពុទ្ធសាសនានិងសង្គម | Buddhism and Society</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="asset/css/theme.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="asset/bootstrap-5.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="asset/bootstrap-5.3.7/css/bootstrap1.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="asset/aos-master/dist/aos.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Google Fonts - Khmer -->
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="asset/css/sil.css">
+
+</head>
+<style>
+    .user-profile {
+        color: var(--primary-color);
+    }
+
+    .user-profile:hover {
+        color: var(--primary-color);
+    }
+</style>
+<style>
+    #lessonsList .lesson-card {
+        margin-bottom: 1rem;
+        /* 1rem នេះគឺស្មើនឹង mb-3 របស់ Bootstrap ដែរ */
+    }
+
+    /* មិនចាំបាច់ដាក់គម្លាតឲ្យ Card ចុងក្រោយគេ */
+    #lessonsList .lesson-card:last-child {
+        margin-bottom: 0;
+    }
+</style>
+
+<body>
+
+
+    <!-- ═══════════ MAIN NAVBAR ═══════════ -->
+    <nav class="navbar navbar-expand-lg  border-bottom border-light sticky-top py-3 wow animate__slideInDown ">
+        <div class="container">
+            <!-- Logo & Brand -->
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
+                <div>
+                    <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
+                    <div style="font-size: 12px; font-family: 'Battambang'; color: var(--text-secondary);">
+                        Buddhism & Society
+                    </div>
+                </div>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <i class="fas fa-bars" style="color: var(--primary-color);"></i>
+            </button>
+
+            <!-- Main Menu -->
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link " href="../index.html">
+                            <i class="fas fa-home"></i> ទំព័រដើម
+                        </a>
+                    </li>
+                    <!-- Dhamma Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <i class="fas fa-book"></i> ព្រះធម៌
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="pages/media-library.html">
+                                    <i class="fas fa-book-open"></i> បណ្ណាល័យព្រះធម៌
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-video"></i> វីដេអូធម៌
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-microphone"></i> សំឡេងធម៌
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-calendar-day"></i> សំណួរ និង ចម្លើយ
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Courses -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-chalkboard-teacher"></i> ការអប់រំ
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <i class="fas fa-calendar-alt"></i>
+                            ព្រឹត្តិការណ៍
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-history"></i> ពុទ្ធសាសនា
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-bullseye"></i> វប្បធម៌ខ្មែរ
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <!-- Services -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/events.html">
+                            <i class="fas fa-calendar-alt"></i> កម្មវិធី
+                        </a>
+                    </li>
+                    <!-- About Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <i class="fas fa-info-circle"></i> អំពីយើង
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-history"></i> ប្រវត្តិ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-bullseye"></i> បេសកកម្ម
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-users"></i> ក្រុមការងារ
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <!-- Services -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <i class="fas fa-hands-helping"></i> ផ្សេងៗ
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="pages/Buddhist Rituals.html">
+                                    <i class="fas fa-hand-holding-heart"></i> កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-graduation-cap"></i> ចូលរូមស្ម័គ្រចិត្ត
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-heartbeat"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-leaf"></i> បរិស្ថាន
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Right Side Buttons -->
+
+                <div class="d-flex gap-2 align-items-center ms-auto">
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle" onclick="toggleTheme()">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+                    <!-- button search model -->
+                    <button class="btn btn-outline-primary d-none d-lg-block " data-bs-toggle="modal"
+                        data-bs-target="#searchModal">
+                        <i class="fas fa-search "></i> ស្វែងរក
+                    </button>
+
+
+
+                    <!-- User Profile / Login -->
+                    <div class="dropdown" id="userSection">
+                        <button class="btn btn-link text-decoration-none dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown">
+                            <i class="bi bi-person-circle fs-5"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="pages/auth/login.html">
+                                    <i class="bi bi-box-arrow-in-right me-2"></i>ចូលប្រើ
+                                </a></li>
+                            <li><a class="dropdown-item " href="pages/auth/register.html">
+                                    <i class="bi bi-person-plus me-2"></i>ចុះឈ្មោះ
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="mt-5">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Sidebar Filters -->
+                    <div class="col-lg-3 ">
+                        <div class="card border-0 shadow-sm position-sticky " style="top: 120px;">
+                            <div class="card-body ">
+                                <h5 class="card-title mb-3 fs-3">ធម៌សម្រាប់អប់រំមនុស្ស</h5>
+                                <div class="d-grid gap-2">
+                                    <button class="filter-btn active fs-4" data-filter="all">ទាំងអស់</button>
+                                    <button class="filter-btn fs-4" data-filter="sil">សីល</button>
+                                    <button class="filter-btn fs-4" data-filter="samadhi">សមាធិ</button>
+                                    <button class="filter-btn fs-4" data-filter="panna">បញ្ញា</button>
+                                    <button class="filter-btn fs-4" data-filter="discussion">ព្រហ្មវិហារធម៌</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lessons List & Article -->
+                    <div class="col-lg-9 ">
+                        <!-- Lessons List -->
+                        <div id="lessonsList" class="mb-4">
+                            <h5 class="mb-3">មេរៀនថ្មីៗ</h5>
+                            <!-- Lesson 1 -->
+                            <div class="card lesson-card active " data-category="sil" onclick="showArticle(1)">
+                                <div class="card-body">
+                                    <span class="category-badge">សីល</span>
+                                    <h6 class="card-title fs-5">នេះគឺជាការប្រតិបត្តិដើម្បីគ្រប់គ្រងកាយ និង វាចា
+                                        ឲ្យបានស្អាតស្អំ មិនបៀតបៀនខ្លួនឯង និង អ្នកដទៃ។</h6>
+                                    <small class="text-muted">សម្មវាចា | សម្មកម្មន្ដៈ | សម្មាអាជីវៈ</small>
+                                </div>
+                            </div>
+
+                            <!-- Lesson 2 -->
+                            <div class="card lesson-card " data-category="samadhi" onclick="showArticle(2)">
+                                <div class="card-body">
+                                    <span class="category-badge bg-info">សមាធិ</span>
+                                    <h6 class="card-title  fs-5">មូលដ្ឋាននៃការវិធានកម្ម — សមាធិសាលដើម</h6>
+                                    <small class="text-muted">សម្មាវាយាមៈ | សម្មាសតិ​ | សម្មាសមាធិ</small>
+                                </div>
+                            </div>
+
+                            <!-- Lesson 3 -->
+                            <div class="card lesson-card " data-category="panna" onclick="showArticle(3)">
+                                <div class="card-body">
+                                    <span class="category-badge bg-success">បញ្ញា</span>
+                                    <h6 class="card-title fs-5">បញ្ញា គឺសំដៅលើ "ការយល់ដឹង" ឬ "សេចក្តីចេះដឹងច្បាស់លាស់"។
+                                    </h6>
+                                    <small class="text-muted">សម្មាទិដ្ឋិ | សម្មាសង្កប្ប</small>
+                                </div>
+                            </div>
+
+                            <!-- Lesson 4 -->
+                            <div class="card lesson-card " data-category="discussion" onclick="showArticle(4)">
+                                <div class="card-body ">
+                                    <span class="category-badge bg-warning ">ព្រហ្មវិហារធម៌</span>
+                                    <h6 class="card-title fs-5 mb-3">"ព្រហ្មវិហារធម៌" (អានថា ព្រហ្ម-មាក់-វិ-ហារ៉ាក់-ធម៌)
+                                        គឺជាគោលធម៌ដ៏ប្រសើរបំផុត ៤ ប្រការ នៅក្នុងព្រះពុទ្ធសាសនា </h6>
+                                    <small
+                                        class="text-muted text-end​ fs-7 border-top border-1 border-primary ">ព្រហ្មវិហារធម៌មាន
+                                        ៤ យ៉ាងគឺ៖</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Article View -->
+                        <div id="articleView" class="article-view" style="display:none;">
+                            <button class="btn btn-outline-secondary btn-sm mb-3" onclick="backToList()">←
+                                ត្រឡប់ទៅបញ្ជី</button>
+                            <h2 id="articleTitle"></h2>
+                            <p id="articleCategory"
+                                style="color: var(--gold); font-weight: 600; margin-bottom: 1.5rem;">
+                            </p>
+                            <div id="articleContent" style="line-height: 1.9; font-size: 1.05rem;"></div>
+                            <hr class="my-4">
+                            <div class="d-flex justify-content-between">
+                                <small class="text-muted ">ទ្រឹស្ដីព្រះពុទ្ធសាសនា | ព្រះត្រ័យបិដក </small>
+                                <button class="btn btn-primary btn-sm " onclick="backToList()">← ត្រឡប់ទៅបញ្ជី</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-dharmachakra fs-1 me-3" style="color: var(--primary-color);"></i>
+                        <h5 class="mt-5">
+                            អំពីពុទ្ធសាសនានិងសង្គម
+                        </h5>
+                    </div>
+                    <p style="line-height: 1.8;">
+                        គេហទំព័រដែលផ្តល់នូវការអប់រំ សេវាកម្មសង្គម និងការលើកកម្ពស់គុណតម្លៃសីលធម៌តាមគោលការណ៍ព្រះធម៌
+                        ដើម្បីអភិវឌ្ឍន៍សង្គមប្រកបដោយសន្តិភាព និងសុខុមាលភាព។
+                    </p>
+                    <div class="footer-social mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>តំណភ្ជាប់លឿន</h5>
+                    <a href="#"><i class="fas fa-angle-right"></i> ទំព័រដើម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> អំពីយើង</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> សេវាកម្ម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ព្រឹត្តិការណ៍</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ទំនាក់ទំនង</a>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>សេវាកម្ម</h5>
+                    <a href="#"><i class="fas fa-angle-right"></i> គម្រោងសង្គម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ការអប់រំ</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> វគ្គបណ្តុះបណ្តាល</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> អ្នកស្ម័គ្រចិត្ត</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ការបរិច្ចាគ</a>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>ទំនាក់ទំនង</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i>
+                        ភ្នំពេញ, កម្ពុជា
+                    </p>
+                    <p>
+                        <i class="fas fa-phone" style="color: var(--primary-color);"></i>
+                        012 345 678
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope" style="color: var(--primary-color);"></i>
+                        info@buddhism-society.org
+                    </p>
+                    <p>
+                        <i class="fas fa-clock" style="color: var(--primary-color);"></i>
+                        ច័ន្ទ - សុក្រ: 8:00 - 17:00
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">
+                            © 2024 ពុទ្ធសាសនានិងសង្គម. រក្សាសិទ្ធិគ្រប់យ៉ាង។
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end justify-content-center justify-content-md-end d-flex">
+                        <a href="#" class="me-3">គោលការណ៍ឯកជនភាព</a>
+                        <a href="#" class="me-3">លក្ខខណ្ឌប្រើប្រាស់</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- search modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="ស្វែងរកគេហទំព័រ">
+                            <button type="submit" class="btn btn-primary">ស្វែងរក</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const articles = {
+            1: {
+                title: "គោលបំណង ៖ ដើម្បីបង្កើតនូវភាពស្ងប់រម្ងាប់ មិនមានសេចក្តីក្តៅក្រហាយ ឬ វិប្បដិសារី (ការស្តាយក្រោយ)។",
+                category: "សីល (ការប្រតិបត្តិ)",
+                content: `សីល ៥ គឺជា វិន័យ ឬ សិក្ខាបទ (វិន័យសម្រាប់ហ្វឹកហាត់) ចំនួន ៥ ប្រការ ដែលជាមូលដ្ឋានគ្រឹះសម្រាប់គ្រហស្ថ (អ្នកដែលមិនមែនជាព្រះសង្ឃ) ក្នុងព្រះពុទ្ធសាសនា។ ទាំងនេះមិនមែនជា "បញ្ជា" ពីព្រះជាម្ចាស់ទេ ប៉ុន្តែជាការសន្យា ឬ ការតាំងចិត្ត (សមាទាន) ដោយស្ម័គ្រចិត្ត ដើម្បីបណ្តុះបណ្តាលខ្លួនឯង ឲ្យរស់នៅប្រកបដោយសន្តិភាព មិនបៀតបៀនខ្លួនឯង និង អ្នកដទៃ។
+        <br/><br/>
+        <strong>១. បាណាតិបាតា វេរមណី (Pāṇātipātā)</strong> - វៀរចាកការសម្លាប់សត្វ
+អត្ថន័យ ៖ គឺការតាំងចិត្ត មិនយកជីវិតសត្វដទៃ មិនថាជាមនុស្ស ឬ សត្វ (សូម្បីតែសត្វតូចតាច)។
+
+ការពន្យល់ ៖ សិក្ខាបទនេះ បង្រៀនយើងឲ្យមាន មេត្តា (ការស្រឡាញ់) និង ករុណា (ការអាណិតអាសូរ) ដល់គ្រប់ជីវិត។ វារួមបញ្ចូលទាំងការមិនសម្លាប់ដោយផ្ទាល់, មិនបញ្ជាឲ្យគេសម្លាប់, និង មិនត្រេកអរចំពោះការសម្លាប់។
+
+អានិសង្ស (គុណប្រយោជន៍) ៖ ធ្វើឲ្យចិត្តស្ងប់, មិនមានសត្រូវ, មានអាយុវែង, និង បង្កើតបរិយាកាសសន្តិភាពជុំវិញខ្លួន។<br/><br/>
+        <strong>២. អទិន្នាទានា វេរមណី (Adinnādānā) </strong> - វៀរចាកការលួចទ្រព្យគេ
+អត្ថន័យ ៖ គឺការតាំងចិត្ត មិនយករបស់ទ្រព្យដែលម្ចាស់គេមិនបានឲ្យ (ការលួច, ឆក់, ប្លន់, ឆបោក, កេងបន្លំ)។
+
+ការពន្យល់ ៖ សិក្ខាបទនេះ បង្រៀនយើងឲ្យគោរពកម្មសិទ្ធិរបស់ผู้อื่น (ទ្រព្យសម្បត្តិរបស់អ្នកដទៃ) និង ប្រកបរបរដោយ សម្មាអាជីវោ (ការចិញ្ចឹមជីវិតដោយសុចរិត)។ វាគឺអំពីភាពស្មោះត្រង់។
+
+អានិសង្ស ៖ ធ្វើឲ្យគេទុកចិត្ត, មិនមានវិប្បដិសារី (ការស្តាយក្រោយ) ពីការធ្វើខុស, និង អាចរក្សាទ្រព្យសម្បត្តិរបស់ខ្លួនបានគង់វង្ស។<br/><br/>
+        <strong>៣. កាមេសុមិច្ឆាចារា វេរមណី (Kāmesumicchācāra)</strong>  - វៀរចាកការប្រព្រឹត្តខុសក្នុងកាម
+អត្ថន័យ ៖ គឺការតាំងចិត្ត មិនប្រព្រឹត្តខុសខាងផ្លូវភេទ។
+
+ការពន្យល់ ៖ សម្រាប់គ្រហស្ថ នេះមានន័យថា មិនផិតក្បត់នឹងคู่ครอง (ប្តី/ប្រពន្ធ) របស់ខ្លួន, មិនលួចលាក់មានสัมพันธ์ (ទំនាក់ទំនង) ជាមួយប្តី/ប្រពន្ធរបស់អ្នកដទៃ, និង មិនបំពាន (រំលោភ) អ្នកដទៃ។ វាបង្រៀនអំពី ការគោរព និង ការស្មោះត្រង់ ក្នុងទំនាក់ទំនង។
+
+អានិសង្ស ៖ ធ្វើឲ្យគ្រួសារមានសន្តិភាព និង សុភមង្គល, មិនមានសត្រូវដោយសាររឿងស្នេហា, និង បង្កើតបរិយាកាសនៃទំនុកចិត្ត។<br/><br/>
+        <strong>៤. មុសាវាទា វេរមណី (Musāvādā) </strong> - វៀរចាកការនិយាយកុហក
+អត្ថន័យ ៖ គឺការតាំងចិត្ត មិននិយាយពាក្យមិនពិត (កុហក)។
+
+ការពន្យល់ ៖ ឲ្យទូលំទូលាយជាងនេះ វារួមបញ្ចូលទាំងការមិននិយាយ ពាក្យញុះញង់ (បំបែកបំបាក់), មិននិយាយ ពាក្យអាក្រក់ (ជេរប្រមាថ), និង មិននិយាយ ពាក្យរោយរាយ (ឥតប្រយោជន៍)។ វាបង្រៀនយើងឲ្យនិយាយតែ សច្ចវាចា (ពាក្យពិត) ដែលមានប្រយោជន៍ និង និយាយដោយចិត្តមេត្តា។
+
+អានិសង្ស ៖ ធ្វើឲ្យគេជឿទុកចិត្ត, ពាក្យសម្ដីមានទម្ងន់, និង មិនមានទំនាស់ដោយសារការនិយាយស្តី។<br/><br/>
+        <strong>៥. សុរាមេរយមជ្ជប្បមាទដ្ឋានា វេរមណី (Surāmerayamajja) </strong>- វៀរចាកការសេពគ្រឿងស្រវឹង
+អត្ថន័យ ៖ គឺការតាំងចិត្ត មិនសេពគ្រឿងស្រវឹង ឬ គ្រឿងញៀន ដែលនាំឲ្យបាត់បង់សតិ។
+
+ការពន្យល់ ៖ សិក្ខាបទនេះ ត្រូវបានចាត់ទុកថា សំខាន់ណាស់ ព្រោះវាជា «របង» ការពារសីល ៤ ខាងលើ។ ហេតុអ្វី? ព្រោះនៅពេលមនុស្សស្រវឹង ឬ បាត់បង់សតិ (បាត់បង់ អប្បមាទ - ភាពមិនប្រមាទ), ពួកគេងាយនឹងបំពានសីលដទៃទៀតណាស់ (ឧ. ស្រវឹង -> បើកបរបុកគេស្លាប់, ស្រវឹង -> រកเรื่อง (ឈ្លោះប្រកែក), ស្រវឹង -> ផិតក្បត់, ស្រវឹង -> និយាយកុហក)។
+
+អានិសង្ស ៖ ធ្វើឲ្យមាន សតិ (Mindfulness) គ្រប់ពេលវេលា, មានសុខភាពល្អ, មិនខ្ជះខ្ជាយទ្រព្យសម្បត្តិ, និង អាចការពារសីល ៤ ទៀតបានយ៉ាងងាយស្រួល។<br/><br/>
+        
+        <strong>សេចក្តីសង្ខេប ៖</strong>
+        <br/><br/>
+
+ការរក្សា សីល ៥ គឺជាគ្រឹះដំបូងគេបង្អស់នៃ សីល នៅក្នុង ត្រៃសิก្ខា (សីល, សមាធិ, បញ្ញា)។ នៅពេលដែលយើងមានសីល (កាយ និង វាចា ស្អាតស្អំ), ចិត្តរបស់យើងក៏មិនមានវិប្បដិសារី (ក្តៅក្រហាយ)។ ភាពស្ងប់រម្ងាប់នេះហើយ ដែលជាមូលដ្ឋានដ៏ល្អបំផុត សម្រាប់ជំហានបន្ទាប់ គឺការបណ្តុះ សមាធិ។`
+            },
+            2: {
+
+                title: "សមាធិ គឺជាជំហានទី២ ក្នុងត្រៃសិក្ខា (បន្ទាប់ពីសីល)។ បន្ទាប់ពីយើងបានតម្កល់កាយ និង វាចា ឲ្យស្អាតស្អំ (ដោយសីល) ហើយ, ជំហានបន្ទាប់គឺការហ្វឹកហាត់ «ចិត្ត»។",
+                category: "សមាធិ (ការផ្តោតលើក្រោយ)",
+
+                content: `សមាធិ គឺ Concentration (សមាធិ) ឬ ការបណ្តុះបណ្តាលចិត្ត។ នេះគឺជាការហ្វឹកហាត់ចិត្តឲ្យមានភាពស្ងប់, នឹងនរ, និង មានថាមពល។
+
+
+<br/>
+១.គោលបំណង ៖ ដើម្បីឲ្យចិត្តមានកម្លាំង, ស្ងប់ចាកនីវរណធម៌ (ឧបសគ្គរបស់ចិត្ត) ដើម្បីត្រៀមខ្លួនក្នុងការចម្រើនបញ្ញា។<br/>
+
+២.ឧទាហរណ៍ ៖ ការធ្វើសមាធិ (ដូចជា អានាបានស្សតិ - ការដឹងដង្ហើម) ដើម្បីឲ្យចិត្តតាំងនឹងនរ (តាំងមាំ) ក្នុងអារម្មណ៍តែមួយ។<br/><br/>
+<strong>សេចក្ដីលម្អិត៖</strong><br/><br/>
+
+១. តើសមាធិជាអ្វី? (What is Concentration?)<br/>
+        
+ចិត្តរបស់មនុស្សយើង ជាធម្មតា គឺរវើរវាយ, គិតពីអតីតកាល, បារម្ភពីអនាគត, ផ្លាស់ប្តូរពីប្រធានបទមួយទៅមួយ មិនឈប់។ វាដូចជាសត្វស្វាដែលលោតពីមែកឈើមួយទៅមែកឈើមួយ។
+
+សមាធិ គឺជាការហ្វឹកហាត់ ដើម្បី «ចង» ចិត្តដែលរវើរវាយនោះ ឲ្យមកនៅនឹងកន្លែងតែមួយ (អារម្មណ៍តែមួយ)។ នៅពេលចិត្តស្ថិតនៅក្នុងអារម្មណ៍តែមួយបានយូរ វាចាប់ផ្តើមមានភាព នឹងនរ (Stable) និង ស្ងប់ (Calm)។
+        <br/><br/>
+        ២. ឧទាហរណ៍៖ អានាបានស្សតិ (Anapanasati)
+នេះគឺជាវិធីសាស្រ្តធ្វើសមាធិដ៏ពេញនិយមបំផុត ដែលព្រះពុទ្ធទ្រង់បានបង្រៀន។
+
+ការអនុវត្ត ៖ អ្នកគ្រាន់តែអង្គុយក្នុងឥរិយាបថស្រួល (មិនចាំបាច់ពែនភ្នែន) ហើយចាប់ផ្តើមសង្កេត «ដង្ហើម» របស់អ្នក។
+
+ធ្វើដូចម្តេច?
+
+ដឹងថាដង្ហើមចូល... ដឹងថាដង្ហើមចេញ... (មិនបាច់បង្ខំឲ្យវាវែង ឬ ខ្លីទេ)
+
+គ្រាន់តែដឹងវា ដូចជាអ្នកយាមទ្វារ ដែលគ្រាន់តែដឹងថាមានអ្នកណាចូល-ចេញ។
+
+ការពិត ៖ មិនយូរប៉ុន្មាន ចិត្តរបស់អ្នកនឹងរត់ទៅគិតរឿងផ្សេង (រឿងការងារ, រឿងម្ហូប, រឿងអ្នកផ្ទះ...)។
+
+ការហ្វឹកហាត់ ៖ នៅពេលអ្នកដឹងខ្លួនថាចិត្តបានរត់បាត់, កុំខឹងខ្លួនឯង។ នេះជារឿងធម្មតា។ គ្រាន់តែ «នាំ» វាដោយថ្នមៗ ឲ្យត្រឡប់មករកដង្ហើមវិញ។
+
+រាល់ពេលដែលអ្នក «នាំចិត្តត្រឡប់មកវិញ» នោះហើយគឺជាការហ្វឹកហាត់សមាធិ។ យូរៗទៅ ចិត្តនឹងរត់ទៅតិចទៅៗ ហើយនៅជាមួយដង្ហើមបានយូរទៅៗ។ 
+        ដូចគ្នាដែរ នៅពេលដែលអ្នកលេងលូចខ្ពង់កម្ពុងឈានទៅលើលក្ខណៈដ៏ល្អប្រសើរ 
+        ដូច្នេះការផ្តោតលើចិត្តក៏ដូចគ្នាដែរ ដែលវាលម្អិតលក្ខណៈដ៏ល្អប្រសើរនៃ
+        វ័ល្លហាម ដែលដូចឡើងលម្អិតលក្ខណៈលក្ខណៈកម្មកម្ម។<br/><br/>
+        ៣. គោលបំណង៖ ស្ងប់ចាក «នីវរណធម៌» (Nivarana)
+នីវរណធម៌ ៥ គឺជា «ឧបសគ្គ» ឬ «មេរោគ» របស់ចិត្ត ដែលរារាំងមិនឲ្យចិត្តស្ងប់។ វារួមមាន៖
+កាមច្ឆន្ទ (Sensual Desire): ចិត្តដែលរត់តាមការចង់បាន (ចង់បានរូបស្អាត, សំឡេងពីរោះ, ក្លិនក្រអូប...)។
+
+ព្យាបាទ (Ill-will): ចិត្តដែលពោរពេញដោយកំហឹង, ការមិនពេញចិត្ត, ការស្អប់។
+
+ថីនមិទ្ធ (Sloth and Torpor): ចិត្តដែលធុញទ្រាន់, ងងុយគេង, ខ្ជិលច្រអូស, មិនចង់ធ្វើអ្វី។
+
+ឧទ្ធច្ចកុក្កច្ច (Restlessness and Worry): ចិត្តដែលអន្ទះអន្ទែង, គិតច្រើន, វិប្បដិសារី (ស្តាយក្រោយ) ឬ បារម្ភ (អនាគត)។
+
+វិចិកិច្ឆា (Skeptical Doubt): ចិត្តដែលសង្ស័យ, ស្ទាក់ស្ទើរ, មិនដាច់ស្រេច (សង្ស័យលើគ្រូ, លើការអនុវត្ត...)។
+
+នៅពេលអ្នកតាំងចិត្តធ្វើសមាធិ (ឧ. មើលដង្ហើម), អ្នកកំពុង «មិនឲ្យចំណី» ដល់ឧបសគ្គទាំង ៥ នេះ។ ពេលចិត្តស្ងប់លើដង្ហើម, ពេលនោះ កាមច្ឆន្ទ ក៏មិនកើត, ព្យាបាទ ក៏មិនកើត, ភាពងងុយ ក៏បាត់, ការគិតច្រើន ក៏រលត់។
+        
+        នៅពេលអ្នកតាំងចិត្តធ្វើសមាធិ (ឧ. មើលដង្ហើម), អ្នកកំពុង «មិនឲ្យចំណី» ដល់ឧបសគ្គទាំង ៥ នេះ។ ពេលចិត្តស្ងប់លើដង្ហើម, ពេលនោះ កាមច្ឆន្ទ ក៏មិនកើត, ព្យាបាទ ក៏មិនកើត, ភាពងងុយ ក៏បាត់, ការគិតច្រើន ក៏រលត់។
+<br/><br/>
+៤. ដើម្បីត្រៀមខ្លួនចម្រើន «បញ្ញា» (Wisdom)
+នេះគឺជាចំណុចសំខាន់បំផុត។ សមាធិ មិនមែនជាគោលដៅចុងក្រោយទេ។
+
+ឧបមា ៖ បើអ្នកចង់មើលបាតបឹង, តែទឹកបឹងនោះកខ្វក់ ហើយមានរលកទៀត អ្នកនឹងមើលមិនឃើញអ្វីទាំងអស់។
+
+សីល ដូចជាការ «មិនបោះ» របស់កខ្វក់ថ្មីចូលបឹង។
+
+សមាធិ ដូចជាការ «រង់ចាំ» ឲ្យដីល្បាប់ (នីវរណធម៌ ៥) ធ្លាក់ទៅបាត ហើយរលក (ការគិតរវើរវាយ) ក៏រាបស្មើ។
+
+នៅពេលទឹកបឹង ថ្លា និង ស្ងប់ (ចិត្តមានសមាធិ), ពេលនោះ អ្នកអាចមើលឃើញបាតបឹង (សភាវធម៌ពិត) បានយ៉ាងច្បាស់។ ការមើលឃើញច្បាស់នេះហើយ គឺជាការចាប់ផ្តើមនៃ បញ្ញា (ជំហានទី៣)។
+
+សរុបមក, សមាធិ គឺការហ្វឹកហាត់ចិត្តឲ្យមានថាមពល (ដោយការតាំងមាំក្នុងអារម្មណ៍តែមួយ) និង ស្អាត (ដោយការរំងាប់នីវរណធម៌) ដើម្បីប្រើប្រាស់ចិត្តនោះ សម្រាប់ការពិចារណាស្វែងរកសេចក្តីពិត (បញ្ញា)។`
+            },
+            3: {
+                title: "បញ្ញា គឺសំដៅលើ ការយល់ដឹង ឬ សេចក្តីចេះដឹងច្បាស់លាស់។​ ",
+                category: "បញ្ញា (ប្រាជ្ញា)",
+                content: `អត្ថន័យទូទៅ: នេះមិនមែនគ្រាន់តែជា "ការចេះដឹង" ពីការអាន ឬការស្តាប់ (ដែលហៅថា "សុតមយបញ្ញា" ឬ "ចិន្តាមយបញ្ញា") នោះទេ។ នៅក្នុងព្រះពុទ្ធសាសនា បញ្ញាដ៏ខ្ពស់បំផុត (ហៅថា "ភាវនាមយបញ្ញា") គឺ ការយល់ដឹងច្បាស់នូវសភាវៈពិត នៃធម្មជាតិ។<br/><br/>
+        
+        
+        <br/><br/>
+        <strong>១.គោលបំណង: </strong> — គឺដើម្បីមើលឃើញអ្វីៗតាមការពិត (យថាភូតញាណទស្សនៈ) ដូចជា៖
+
+ឃើញនូវ អនិច្ចំ (ភាពមិនទៀងទាត់, គ្រប់យ៉ាងតែងប្រែប្រួល)
+
+ឃើញនូវ ទុក្ខំ (ភាពមិនអាចឋិតថេរបាន, ភាពមិនពេញចិត្ត)
+
+ឃើញនូវ អនត្តា (ភាពមិនមែនជាតួខ្លួន, គ្មានអ្វីជារបស់ខ្លួនពិតប្រាកដ)<br/>
+        <strong>២. លទ្ធផល: </strong> — នៅពេលបញ្ញាកើតឡើង វាអាច "កាត់ផ្តាច់" ឬ "ដកឫស" នូវកិលេស (សេចក្តីលោភ, សេចក្តីខឹង, ការវង្វេង) ដែលជាឫសគល់នៃសេចក្តីទុក្ខ។
+
+សរុបមក: បញ្ញា គឺជា "ពន្លឺ" ដែលជួយយើងឲ្យឃើញការពិត និងរំដោះខ្លួនយើងចេញពីសេចក្តីទុក្ខ។<br/><br/>
+        <strong>ទំនាក់ទំនងរវាង សមាធិ និង បញ្ញា</strong> <br/>
+        
+        សមាធិ និង បញ្ញា ធ្វើការជាមួយគ្នាដូចជាដៃគូ៖<br/>
+        - សមាធិ គឺជាគ្រឹះ: ចិត្តដែលមានសមាធិ គឺប្រៀបដូចជាទឹកដែល "ស្ងប់" និង "ថ្លា"។<br/>
+
+- បញ្ញា គឺជាការមើលឃើញ: នៅពេលទឹកនោះ "ស្ងប់" និង "ថ្លា"ហើយ យើងទើបអាច "មើលឃើញ" អ្វីដែលនៅបាតស្រះ (ពោលគឺ ឃើញសភាវៈពិត) បានយ៉ាងច្បាស់។<br/>
+
+- បើចិត្តមិនមានសមាធិ (រវើរវាយ) នោះប្រៀបដូចជាទឹកដែលរលក ឬល្អក់ យើងមិនអាចមើលឃើញអ្វីបានច្បាស់ឡើយ ទោះបីយើងព្យាយាមយ៉ាងណាក៏ដោយ។ ដូច្នេះ ទើបគេតែងតែចម្រើនសមាធិ ដើម្បីឲ្យចិត្តមានកម្លាំង រួចទើបយកចិត្តនោះទៅពិចារណា ដើម្បីឲ្យបញ្ញាកើតឡើង។`
+            },
+            4: {
+                title: "ដើម្បីការរស់នៅប្រកបដោយសេចក្ដីសុខ និងសន្តិភាព",
+                category: "ព្រហ្មវិហារធម៌ (គុណធម៌សម្រាប់អ្នកដឹកនាំ)",
+                content: `ធម៌ទាំងនេះក៏ជាគុណធម៌ដែលមនុស្សគ្រប់រូបគួរអប់រំចម្រើនក្នុងចិត្ត<br/><br/>
+        
+        <!-- មានលក្ខណៈសំខាន់ប៉ុណ្ណាក្នុងការពិភាក្សា៖<br/><br/> -->
+        ១. មេត្តា (Metta) អត្ថន័យ៖ សេចក្ដីស្រឡាញ់រាប់អាន, បំណងចង់ឱ្យអ្នកដទៃបានសុខ, ការផ្សាយមេត្រីចិត្តទៅកាន់សព្វសត្វទាំងអស់ដោយស្មើភាព មិនរើសមុខ។<br/><br/>
+        ២. ករុណា (Karuna) អត្ថន័យ៖ សេចក្ដីអាណិតអាសូរ, បំណងចង់ឱ្យអ្នកដទៃរួចចាកផុតពីទុក្ខលំបាក។ គឺនៅពេលឃើញអ្នកដទៃមានទុក្ខ ចិត្តក៏រំជួលចង់ជួយសង្គ្រោះ។<br/><br/>
+        ៣. មុទិតា (Mudita) អត្ថន័យ៖ សេចក្ដីត្រេកអរ, ការមានចិត្តត្រេកអរទៅតាមនៅពេលឃើញអ្នកដទៃបានសុខ បានចម្រើន ឬបានសម្រេចប្រយោជន៍អ្វីមួយ។ ជាធម៌ដែលជួយកម្ចាត់សេចក្ដីច្រណែន (ឥស្សា)។<br/><br/>
+        ៤. ឧបេក្ខា (Upekkha)​ អត្ថន័យ៖ សេចក្ដីតាំងចិត្តជាកណ្ដាល, ការរក្សាចិត្តឱ្យស្ថិតក្នុងភាពស្មើ មិនលម្អៀងដោយសេចក្ដីស្រឡាញ់ (ឆន្ទាគតិ) ឬសេចក្ដីស្អប់ (ទោសាគតិ)។ ជាពិសេសគឺការយល់ច្បាស់ពីច្បាប់កម្ម "សត្វលោកមានកម្មជារបស់ខ្លួន" ដោយមិនត្រេកអរខ្លាំងពេក ឬព្រួយចិត្តខ្លាំងពេកចំពោះអ្វីដែលកើតឡើង។<br/><br/>
+        
+        ពាក្យថា "ព្រហ្មវិហារធម៌" គឺជាគោលធម៌នៅក្នុង ព្រះពុទ្ធសាសនា។
+នេះគឺជាធម៌របស់ ព្រះសម្មាសម្ពុទ្ធ ដែលព្រះអង្គបានបង្រៀន និងសម្តែងទុកមក ដើម្បីឱ្យសត្វលោក ជាពិសេសគឺមនុស្ស (និងព្រហ្ម) យកទៅបដិបត្តិ ដើម្បីការរស់នៅប្រកបដោយសេចក្ដីសុខដ៏ប្រសើរបំផុត។`
+            },
+            5: {
+                title: "ថាលក្ខណៈប្តូរប្រែនៃផ្ទាល់ខ្លួននៅក្នុងច្បាប់សីល",
+                category: "សីល (ព្វន៍ចិត្ត)",
+                content: `សីលគឺជាលក្ខណៈដ៏ល្អប្រសើរដែលលម្អិតលក្ខណៈលម្អិតលក្ខណៈក្នុងលក្ខណៈ។<br/><br/>
+        
+        នៅពេលដែលអ្នករក្សាសីល អ្នកនឹងឈានទៅលើលក្ខណៈលម្អិត
+        ដែលនឹងលម្អិតលក្ខណៈលម្អិតលក្ខណៈក្នុងលក្ខណៈលម្អិត។<br/><br/>
+        
+        ពុទ្ធសាសនាបង្រៀនថាសីលគឺជាលក្ខណៈដ៏សំខាន់សម្រាប់ការលម្អិតលក្ខណៈ
+        ដែលលម្អិតលក្ខណៈលម្អិតលក្ខណៈក្នុងលក្ខណៈលម្អិត។`
+            }
+        };
+
+        function showArticle(id) {
+            const article = articles[id];
+            document.getElementById('articleTitle').textContent = article.title;
+            document.getElementById('articleCategory').textContent = '📌 ' + article.category;
+            document.getElementById('articleContent').innerHTML = article.content;
+            document.getElementById('lessonsList').style.display = 'none';
+            document.getElementById('articleView').style.display = 'block';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function backToList() {
+            document.getElementById('lessonsList').style.display = 'block';
+            document.getElementById('articleView').style.display = 'none';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Filter buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                const filter = this.dataset.filter;
+
+                document.querySelectorAll('.lesson-card').forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="asset/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="asset/aos-master/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="asset/js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

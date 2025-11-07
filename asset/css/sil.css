@@ -1,0 +1,64 @@
+    :root {
+      --gold: #C9A14A;
+      --dark: #2E2A26;
+      --bg: #F7F3EC;
+      --light: #fff;
+    }
+    body {
+      font-family: 'Battambang', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+    }
+    .nav-brand {
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 1px;
+    }
+    .category-badge {
+      display: inline-block;
+      padding: 0.4rem 0.8rem;
+      background: var(--gold);
+      color: var(--light);
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .lesson-card {
+      border: none;
+      border-left: 4px solid var(--gold);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    
+    }
+    .lesson-card:hover {
+      transform: translateX(8px);
+      box-shadow: 0 4px 12px rgba(201, 161, 74, 0.15);
+    }
+    .lesson-card.active {
+      background: rgba(201, 161, 74, 0.08);
+    }
+    .article-view {
+      background: var(--light);
+      padding: 2rem;
+      border-radius: 8px;
+      line-height: 1.8;
+    }
+    .article-view h2 {
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .filter-btn {
+      border: 2px solid var(--gold);
+      color: var(--gold);
+      font-weight: 600;
+    }
+    .filter-btn.active {
+      background: var(--gold);
+      color: var(--light);
+    }
+    .hero-teachings {
+      background: linear-gradient(135deg, rgba(46,42,38,0.05), rgba(201,161,74,0.03));
+      padding: 3rem 0;
+      margin-bottom: 2rem;
+    }
