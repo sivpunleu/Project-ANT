@@ -1,0 +1,250 @@
+.herobaner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 650px;
+}
+
+.herobaner2 {
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0.849),
+      rgba(0, 0, 0, 0));
+  z-index: 2;
+}
+
+.hero-content {
+  position: absolute;
+
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: -650px;
+  margin-right: 450px;
+  z-index: 3;
+
+}
+
+.herobaner img {
+  width: 100%;
+  height: 100%;
+}
+
+.typing {
+  border-right: 3px solid #00d0ff;
+  white-space: nowrap;
+  padding: 10px;
+  overflow: hidden;
+  display: inline-block;
+  width: 0;
+  animation: typing 10s steps(50, end) infinite alternate,
+    blink 0.8s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes blink {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #00d0ff;
+  }
+}
+
+.mt-5 {
+  margin-top: 60px !important;
+}
+
+.filter-bar-new {
+  width: 80% !important;
+}
+
+.nav-link:hover {
+  color: #f7e8a1;
+}
+
+.border-2 {
+  width: 150px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #e67e22;
+}
+
+.separator {
+  width: 2px;
+  height: 25px;
+  background-color: #e67e22;
+}
+
+.scroll-container {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.badge-soft {
+  background-color: #f2f2f4;
+  color: #555;
+  font-weight: 600;
+  border-radius: 12px;
+  font-size: 12px;
+  padding: 6px 10px;
+}
+
+.btn-nav {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  transition: all 0.2s;
+}
+
+.btn-nav:hover {
+  background: #e67e22;
+  color: white;
+  border-color: #6f42c1;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+}
+
+.price small {
+  font-size: 13px;
+  color: #666;
+}
+
+/* From Uiverse.io by cssbuttons-io */ 
+.fancy {
+ background-color: transparent;
+ border: 2px solid #d38900;
+ border-radius: 0;
+ box-sizing: border-box;
+ color: #fff;
+ cursor: pointer;
+ display: inline-block;
+ float: right;
+ font-weight: 700;
+ letter-spacing: 0.05em;
+ margin: 0;
+ outline: none;
+ overflow: visible;
+ padding: 5px;
+ position: relative;
+ text-align: center;
+ text-decoration: none;
+ text-transform: none;
+ transition: all 0.3s ease-in-out;
+ user-select: none;
+ /* font-size: 13px; */
+}
+
+.fancy::before {
+ content: " ";
+ width: 1.5625rem;
+ height: 2px;
+ background: #e67e22;
+ top: 50%;
+ left: 0.8em;
+ position: absolute;
+ transform: translateY(-50%);
+ transform-origin: center;
+ transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+ font-size: 1.125em;
+ line-height: 1.33333em;
+ padding-left: 2em;
+ display: block;
+ text-align: left;
+ transition: all 0.3s ease-in-out;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: rgb(0, 0, 0);
+}
+
+.fancy .top-key {
+ height: 2px;
+ width: 1.5625rem;
+ top: -2px;
+ left: 0.625rem;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+ height: 2px;
+ width: 1.5625rem;
+ right: 1.875rem;
+ bottom: -2px;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+ height: 2px;
+ width: 0.625rem;
+ right: 0.625rem;
+ bottom: -2px;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+ color: white;
+ background: #e67e22;
+}
+
+.fancy:hover::before {
+ width: 0.9375rem;
+ background: white;
+}
+
+.fancy:hover .text {
+ color: white;
+ padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+ left: -2px;
+ width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+ .fancy:hover .bottom-key-2 {
+ right: 0;
+ width: 0;
+}

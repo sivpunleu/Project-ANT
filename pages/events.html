@@ -42,7 +42,7 @@
 <body>
 
 
-    <!-- ═══════════ MAIN NAVBAR ═══════════ -->
+     <!-- ═══════════ MAIN NAVBAR ═══════════ -->
     <nav class="navbar navbar-expand-lg  border-bottom border-light sticky-top py-3 wow animate__slideInDown ">
         <div class="container">
             <!-- Logo & Brand -->
@@ -66,7 +66,7 @@
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
                     <!-- Home -->
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">
+                        <a class="nav-link active" href="../index.html">
                             <i class="fas fa-home"></i> ទំព័រដើម
                         </a>
                     </li>
@@ -93,7 +93,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-calendar-day"></i> ធម៌ប្រចាំថ្ងៃ
+                                    <i class="fas fa-calendar-day"></i> សំណួរ និង ចម្លើយ
                                 </a>
                             </li>
                         </ul>
@@ -102,14 +102,35 @@
                     <!-- Courses -->
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <i class="fas fa-chalkboard-teacher"></i> វគ្គបណ្តុះបណ្តាល
+                            <i class="fas fa-chalkboard-teacher"></i> ការអប់រំ
                         </a>
                     </li>
 
-                    <!-- Events -->
-                    <li class="nav-item ">
-                        <a class="nav-link active " href="../pages/events.html">
-                            <i class="fas fa-calendar-alt"></i> ព្រឹត្តិការណ៍
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <i class="fas fa-calendar-alt"></i>
+                             ព្រឹត្តិការណ៍
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-history"></i> ពុទ្ធសាសនា
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-bullseye"></i> វប្បធម៌ខ្មែរ
+                                </a>
+                            </li>
+                          
+                          
+                        </ul>
+                    </li>
+                      <!-- Services -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/events.html">
+                            <i class="fas fa-calendar-alt"></i> កម្មវិធី
                         </a>
                     </li>
   <!-- About Dropdown -->
@@ -133,15 +154,11 @@
                                     <i class="fas fa-users"></i> ក្រុមការងារ
                                 </a>
                             </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-handshake"></i> ដៃគូសហការ
-                                </a>
-                            </li>
+                            
+                          
                         </ul>
                     </li>
-                      <!-- Support -->
+                      <!-- Services -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                             <i class="fas fa-hands-helping"></i> ផ្សេងៗ
@@ -154,12 +171,12 @@
                             </li>
                             <li>
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-graduation-cap"></i> ការអប់រំ
+                                    <i class="fas fa-graduation-cap"></i> ចូលរូមស្ម័គ្រចិត្ត
                                 </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-heartbeat"></i> សុខភាព
+                                    <i class="fas fa-heartbeat"></i> 
                                 </a>
                             </li>
                             <li>
@@ -186,20 +203,11 @@
                   
 
                    
-                    <!-- User Profile / Login -->
-                    <div class="dropdown" id="userSection">
-                        <button class="btn btn-link text-decoration-none dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                            <i class="bi bi-person-circle fs-5"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="../pages/auth/login.html">
-                                <i class="bi bi-box-arrow-in-right me-2"></i>ចូលប្រើ
-                            </a></li>
-                            <li><a class="dropdown-item " href="../pages/auth/register.html">
-                                <i class="bi bi-person-plus me-2"></i>ចុះឈ្មោះ
-                            </a></li>
-                        </ul>
-                    </div>
+                    <!-- User Profile -->
+                    <a href="#" class="user-profile">
+                        <img src="../asset/images/img-profile/user-profile.png" alt="" class="img-f" style="width: 50px; " height="50px">
+                    </a>
+                   
                 </div>
                 
             </div>

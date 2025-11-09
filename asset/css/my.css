@@ -3,7 +3,7 @@
     padding:auto;
     box-sizing: border-box ;
 }
-  :root {
+:root {
             --primary-color: #b87707;
             --secondary-color: #DC2626;
             --bg-primary: #FFFFFF;
@@ -19,34 +19,70 @@
             --text-secondary: #D1D5DB;
             --border-light: #374151;
         }
-         [data-theme="dark"] body {
-            background: var(--bg-primary);
-            color: var(--text-primary);
-        }
-        
-        * {
-            font-family: 'Battambang', sans-serif;
-        }
-        
-        body {
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            transition: all 0.3s ease;
-        }
-a {
-    text-decoration: none;
-    color: inherit;
-}
-.title{
+
+.banner-title{
     height: 80vh;
 
-    background-image: url(/asset/img/herobaner.jpg.jpg); ;
+    background-image: url(/asset/images/herobaner.jpg.jpg); 
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    backdrop-filter: blur(10px);
-    padding :20px !important;
 
+    background-color: rgba(20, 20, 20, 0.619) !important;
+    background-blend-mode: overlay !important;
+    border-radius: 30px !important;
+}
+@media screen and (max-width: 768px) {
+    .banner-title{
+        height: 50vh;
+        background-image: url(/asset/images/herobaner.jpg.jpg); 
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(20, 20, 20, 0.619) !important;
+        background-blend-mode: overlay !important;
+        border-radius: 30px !important;
+        
+    }
+    .banner-title h1{
+        font-size: 24px !important;
+        text-align: center !important;
+        background-image: url(/asset/images/herobaner.jpg.jpg); 
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(20, 20, 20, 0.619) !important;
+        background-blend-mode: overlay !important;
+        border-radius: 30px !important;
+    }
+    
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .banner-title{
+        height: 60vh;
+        background-image: url(/asset/images/herobaner.jpg.jpg); 
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(20, 20, 20, 0.619) !important;
+        background-blend-mode: overlay !important;
+        border-radius: 30px !important;
+    }
+    .banner-title h1{
+        font-size: 36px !important;
+        text-align: center !important;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .banner-title{
+        height: 80vh;
+        background-image: url(/asset/images/herobaner.jpg.jpg); 
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(20, 20, 20, 0.619) !important;
+        background-blend-mode: overlay !important;
+        border-radius: 30px !important;
+    }
+    .banner-title h1{
+        font-size: 42px !important;
+        text-align: center !important;
+    }
 }
 .breadcrumb-link{
     color: white;
@@ -55,4 +91,7 @@ a {
 .breadcrumb-item::before {
     color: white !important;
   }
+.title{
+    color:var(--primary-color);
+}
 
