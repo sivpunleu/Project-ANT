@@ -187,88 +187,9 @@
     border-radius: 50%;
     object-fit: cover;
   }
-  .img-f{
-    border-radius: 50%;
-    object-fit: cover;
+}
+@media (max-width: 575px) {
+  .navbar-brand {
+    font-size: 20px;
   }
-        
-        
-        /* Footer */
-        footer {
-            background: #1F2937;
-            color: #D1D5DB;
-            padding-top: 60px;
-            margin-top: 80px;
-        }
-        
-        footer h5 {
-            color: white;
-            font-family: 'Moul', serif;
-            margin-bottom: 24px;
-            font-size: 18px;
-        }
-        
-        footer a {
-            color: #D1D5DB;
-            text-decoration: none;
-            transition: all 0.3s;
-            display: block;
-            padding: 6px 0;
-        }
-        
-        footer a:hover {
-            color: var(--primary-color);
-            padding-left: 2px;
-        }
-        
-        .footer-social a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            margin-right: 12px;
-            transition: all 0.3s;
-        }
-        
-        .footer-social a:hover {
-            background: var(--primary-color);
-            transform: translateY(-1px);
-            color: white;
-        }
-        
-        .footer-bottom {
-            background: #111827;
-            padding: 24px 0;
-            margin-top: 40px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        /* Mobile Menu Toggle */
-        .navbar-toggler {
-            border: none;
-            padding: 8px;
-        }
-        
-        .navbar-toggler:focus {
-            box-shadow: none;
-        }
-
-        .fa-dharmachakra{
-            animation: fa-dharmachakra 4s infinite linear;
-        }
-        
-       @keyframes fa-dharmachakra{
-        0%{
-            transform: rotate(0deg);
-        }
-        100%{
-            transform: rotate(360deg);
-        }
-       }
-
-
-       
-        
+}
