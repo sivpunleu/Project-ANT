@@ -1,272 +1,288 @@
 :root {
-  --primary-color: #ff9933;
-  --secondary-color: #8b4513;
-  --bg-light: #fff8f0;
-  --bg-dark: #1f2937;
-  --text-dark: #2c1810;
-  --border-color: #ffd699;
-  --success-color: #28a745;
-  --error-color: #dc3545;
-  --shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  --primary-color: #b87707;
+  --secondary-color: #dc2626;
+  --bg-primary: #ffffff;
+  --text-primary: #000000;
+  --text-secondary: #ffff;
+  --bg-secondary: #f3f4f6;
+  --border-light: #e5e7eb;
+  --border-dark: #d1d5db;
+
+  /* FIX: Defined variables for shadows and highlights */
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  --card-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+  --bg-event-day: #fff3e0;
+  --box-shadow: none; /* This was in your original code, but unused by cards */
 }
 
 [data-theme="dark"] {
-  --primary-color: #e2a96f;
-  --secondary-color: #cd853f;
-  --bg-light: #1f2937;
-  --text-dark: #f5f5dc;
-  --border-color: #4a3520;
-  --success-color: #4caf50;
-  --error-color: #ff5252;
-  --shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-}
-[data-theme="dark"] body {
-  background: var(--bg-dark);
-  color: var(--text-dark);
-  border-color: var(--border-color);
+  --bg-primary: #1f2937;
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db;
+  --border-light: #374151;
+  --border-dark: #4b5563;
+  --bg-secondary: #374151;
 
+  /* FIX: Added dark-mode overrides for new variables */
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  --card-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.3);
+  --bg-event-day: #4b3b24;
+  --box-shadow: 0px 10px 15px 0px rgba(255, 255, 255, 0.1);
 }
 
+/* Page Header */
+.page-header {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: var(--text-secondary);
+  padding: 80px 0 60px;
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+}
 
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+  background-size: cover;
+}
 
-  /* Page Header */
-        .page-header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 80px 0 60px;
-            margin-bottom: 50px;
-            position: relative;
-            overflow: hidden;
-        }
+.page-header h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  position: relative;
+}
 
-        .page-header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
-            background-size: cover;
-        }
+/* Filter Section */
+.filter-section {
+  /* FIX: Used variables for background, border, shadow, and text color */
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--card-shadow);
+  color: var(--text-primary);
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
 
-        .page-header h1 {
-            font-size: 3rem;
-            font-weight: 900;
-            margin-bottom: 1rem;
-            position: relative;
-        }
+.filter-section select,
+.filter-section input {
+  /* FIX: Used variable for border */
+  border: 2px solid var(--border-dark);
+  border-radius: 8px;
+  padding: 12px 15px;
+  transition: all 0.3s;
+  /* FIX: Ensure inputs adopt theme colors */
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
 
-        /* Filter Section */
-        .filter-section {
-            background: white;
-            border: 1px solid #E0E0E0;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            color: var(--bg-dark);
+.filter-section select:focus,
+.filter-section input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(184, 119, 7, 0.25); /* Based on primary color */
+}
 
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            margin-bottom: 40px;
-        }
+/* Event Card */
+.event-card {
+  /* FIX: Used variables for background, shadow, and text color */
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: all 0.3s;
+  margin-bottom: 30px;
+  height: 100%;
+}
 
-        .filter-section select,
-        .filter-section input {
-            border: 2px solid #E0E0E0;
-            border-radius: 8px;
-            padding: 12px 15px;
-            transition: all 0.3s;
-        }
+.event-card:hover {
+  transform: translateY(-5px);
+  /* FIX: Used variable for hover shadow */
+  box-shadow: var(--card-shadow-hover);
+}
 
-        .filter-section select:focus,
-        .filter-section input:focus {
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 0.2rem rgba(255, 152, 0, 0.25);
-        }
+.event-card-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  position: relative; /* Added for child absolute positioning */
+}
 
-        /* Event Card */
-        .event-card {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            transition: all 0.3s;
-            margin-bottom: 30px;
-            height: 100%;
-        }
+.event-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--primary-color);
+  color: var(--text-primary); /* This will be black on light, white on dark. Looks intentional. */
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
 
-        .event-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-        }
+.event-date {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: white; /* Leaving as white, as it's a UI element on an image */
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-        .event-card-img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            position: relative;
-        }
+.event-date .day {
+  font-size: 1.5rem;
+  font-weight: 900;
+  /* FIX: Used correct variable */
+  color: #333; /* Hardcoding dark text as this background is always white */
+  line-height: 1;
+}
 
-        .event-badge {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background: var(--primary-color);
-            color: white;
-            padding: 8px 15px;
-            border-radius: 25px;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
+.event-date .month {
+  font-size: 0.85rem;
+  /* FIX: Used correct variable */
+  color: #555; /* Hardcoding dark text as this background is always white */
+}
 
-        .event-date {
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            background: white;
-            padding: 10px 15px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+.event-card-body {
+  padding: 25px;
+}
 
-        .event-date .day {
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: var(--text-dark);
-            line-height: 1;
-        }
+.event-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--text-primary); /* Explicitly set */
+}
 
-        .event-date .month {
-            font-size: 0.85rem;
-            color: var(--text-dark);
-        }
+.event-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  /* FIX: Used variable for border */
+  border-bottom: 1px solid var(--border-light);
+}
 
-        .event-card-body {
-            padding: 25px;
-        }
+.event-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
 
-        .event-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            /* color: var(--text-dark)!important; */
-        }
+.event-meta-item i {
+  color: var(--text-primary); /* This is fine, inherits anyway */
+}
 
-        .event-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-bottom: 15px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #E0E0E0;
-        }
+.event-description {
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
 
-        .event-meta-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: black;
-            font-size: 0.9rem;
-        }
+.event-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-        .event-meta-item i {
-            color: var(--text-dark);
-        }
+.btn-event {
+  background: var(--primary-color);
+  color: var(--text-primary); /* Black on light, White on dark */
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
 
-        .event-description {
-            color: black;
-            line-height: 1.6;
-            margin-bottom: 20px; 
-        }
+.btn-event:hover {
+  background: var(--secondary-color);
+  transform: scale(1.05);
+  /* FIX: Use variable for text on dark background */
+  color: var(--text-secondary);
+}
 
-        .event-cta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+/* Calendar View */
+.calendar-view {
+  /* FIX: Used variables for background, shadow, and text color */
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: var(--card-shadow);
+}
 
-        .btn-event {
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 10px 25px;
-            border-radius: 25px;
-            font-weight: 600;
-            transition: all 0.3s;
-            text-decoration: none;
-            display: inline-block;
-        }
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
 
-        .btn-event:hover {
-            background: var(--secondary-color);
-            transform: scale(1.05);
-            color: white;
-        }
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
 
-        /* Calendar View */
-        .calendar-view {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-        }
+.calendar-day {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: var(--bg-secondary);
+  color: var(--text-primary); /* Ensure text color */
+}
 
-        .calendar-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 30px;
-        }
+.calendar-day:hover {
+  background: var(--primary-color);
+  color: var(--text-primary); /* Black on light, White on dark */
+}
 
-        .calendar-grid {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 10px;
-        }
+.calendar-day.has-event {
+  /* FIX: Used variable for highlight background */
+  background: var(--bg-event-day);
+  position: relative;
+}
 
-        .calendar-day {
-            aspect-ratio: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.3s;
-            background: #F8F9FA;
-        }
+.calendar-day.has-event::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  width: 6px;
+  height: 6px;
+  background: var(--primary-color);
+  border-radius: 50%;
+}
 
-        .calendar-day:hover {
-            background: var(--primary-color);
-            color: white;
-        }
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
 
-        .calendar-day.has-event {
-            background: #FFF3E0;
-            position: relative;
-        }
+  .event-card-img {
+    height: 200px;
+  }
 
-        .calendar-day.has-event::after {
-            content: '';
-            position: absolute;
-            bottom: 5px;
-            width: 6px;
-            height: 6px;
-            background: var(--primary-color);
-            border-radius: 50%;
-        }
-         @media (max-width: 768px) {
-            .page-header h1 {
-                font-size: 2rem;
-            }
-            
-            .event-card-img {
-                height: 200px;
-            }
-
-            .calendar-grid {
-                grid-template-columns: repeat(7, 1fr);
-                gap: 5px;
-            }
-        }
+  .calendar-grid {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+}
