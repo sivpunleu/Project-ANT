@@ -23,6 +23,12 @@
   background: var(--bg-primary);
   color: var(--text-primary);
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
 * {
   font-family: "Battambang", sans-serif;
@@ -88,6 +94,7 @@ body {
   align-items: center;
   gap: 6px;
 }
+
 
 .nav-link:hover {
   background: rgba(245, 158, 11, 0.1);
