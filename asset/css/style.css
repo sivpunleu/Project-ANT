@@ -191,7 +191,12 @@ body {
 
 @media (max-width: 575px) {
   .navbar-brand {
-    font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: 'Moul', serif;
+      color: var(--primary-color) !important;
+      font-size: 25px;
   }
 }
 /* Footer */
