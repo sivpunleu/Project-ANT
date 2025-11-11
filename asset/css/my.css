@@ -12,6 +12,7 @@
             --border-light: #E5E7EB;
             --border-dark: #D1D5DB;
             --shadow-color:#50eaa2;
+            --text-color:rgb(27, 26, 26);
         }
         
         [data-theme="dark"] {
@@ -20,6 +21,8 @@
             --text-secondary: #D1D5DB;
             --border-light: #374151;
             --shadow-color:#50eaa2;
+            --border-dark: #4B5563;
+            --text-color:rgb(214, 213, 213);
         }
 
 .banner-title{
@@ -470,3 +473,42 @@
 .card:hover .icon-hover{
     top: 80%;
 } 
+
+/* state css */
+.stat-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.stat-item .counter {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);}
+
+.stat-item p {
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+.text{
+    color:var(--text-dark) !important; 
+}
+.icon{
+    top:0;
+    width: 60px !important;
+    height: 60px !important;
+    padding: 0 !important;
+    margin-left: 5px !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    border-radius: 50% !important;
+    transition:0.5s all ease-in-out;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    background-color: #0d4cc9 !important;
+    color:white !important;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
