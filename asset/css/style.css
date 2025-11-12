@@ -69,7 +69,6 @@ body {
 .navbar-brand {
   display: flex;
   align-items: center;
-  
   gap: 12px;
   font-family: "Moul", serif;
   color: var(--primary-color) !important;
@@ -98,7 +97,8 @@ body {
 
 
 .nav-link:hover {
-  background: rgba(245, 158, 11, 0.1);
+  background: rgba(162, 223, 7, 0.1) !important;
+  transition: all 0.3s;
   color: var(--primary-color) !important;
 }
 
