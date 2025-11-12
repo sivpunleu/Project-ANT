@@ -427,7 +427,9 @@
                                 <h5 class="fw-bold" style="color: var(--primary-color);">សមាធិ ៥ នាទី</h5>
                                 <p class="text-muted mb-3 flex-grow-1">ចាប់ផ្ដើម​ថ្ងៃ​ថ្មី
                                     ឬ​បញ្ចប់​ថ្ងៃ​របស់​អ្នក​ដោយ​ចិត្ត​ស្ងប់​ក្នុង​រយៈពេល​ត្រឹម ៥ នាទី។</p>
-                                <button class="btn btn-outline-primary w-100 btn-sm">
+
+                                <button class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#meditationModal-5min">
                                     <i class="fas fa-headphones"></i> ស្តាប់ឥឡូវ
                                 </button>
                             </div>
@@ -815,6 +817,34 @@
     <script>
         AOS.init();
     </script>
+    <!-- model Audio Player-->
+    <div class="modal fade" id="meditationModal-5min" tabindex="-1" aria-labelledby="meditationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold" id="meditationModalLabel" style="color: var(--primary-color);">
+                        សមាធិ ៥ នាទី
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center mb-4">សូម​សម្រួល​ឥរិយាបថ និង​ស្វែងរក​ទីតាំង​ស្ងប់ស្ងាត់​ដើម្បី​ចាប់ផ្ដើម។</p>
+
+                    <div class="text-center">
+                        <audio controls class="w-100">
+                            <source src="PATH_TO_YOUR_AUDIO_FILE.mp3" type="audio/mpeg">
+                            កម្មវិធី​បើក​អ៊ីនធឺណិត​របស់​អ្នក មិន​គាំទ្រ​កម្មវិធី​ចាក់​សំឡេង​នេះ​ទេ។
+                        </audio>
+                    </div>
+
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
