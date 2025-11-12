@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ព្រឹត្តិការណ៍ពុទ្ធសាសនា - វិសាខបូជា</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Khmer Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Battambang&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Battambang', sans-serif;
+            background-color: #fffdf8;
+            padding-top: 70px;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 90vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+                url('https://i.pinimg.com/1200x/d5/26/ee/d526eeb506c4487b1c041beb39eb6da5.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .text-golden {
+            color: #c9a227;
+        }
+
+        /* Card Style */
+        .card {
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+        }
+
+        .card:hover .card-title {
+            color: #b78e1a;
+        }
+
+        .card-img-top {
+            height: 220px;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        /* Modal */
+        .bg-golden {
+            background-color: #c9a227;
+        }
+
+        .modal-content {
+            border-radius: 15px;
+        }
+
+        .modal-body img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2e2e2e;
+            color: #f2f2f2;
+            font-size: 0.95rem;
+            padding: 25px 0;
+        }
+
+        footer a {
+            color: #c9a227;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        /* Back to Top */
+        #backToTop {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+        }
+
+        /* Animation */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-text {
+            animation: fadeUp 1.5s ease forwards;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3 animate-text text-golden">រឿងរ៉ាវនិងព្រឹត្តិការណ៍សំខាន់ៗក្នុងពុទ្ធសាសនា
+            </h1>
+            <p class="lead mb-4">ថ្ងៃអនុស្សាវរីយ៍ដ៏សំខាន់នៃព្រះសម្មាសម្បុទ្ធ<br>កំណើត - ត្រាស់ដឹង - បរិនិព្វាន</p>
+            <a href="#events" class="btn btn-warning text-white fw-bold px-4 py-2 rounded-pill">ស្វែងយល់បន្ថែម</a>
+        </div>
+    </section>
+
+
+
+    <!-- Events -->
+    <section id="events" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-golden">ព្រឹត្តិការណ៍ពុទ្ធសាសនាសំខាន់ៗ</h2>
+            <div class="row g-4">
+
+                <!-- Event 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#meakBocheaModal">
+                        <img src="https://i.pinimg.com/736x/ee/22/b6/ee22b6f96c51de33b117d3df8499e666.jpg"
+                            class="card-img-top" alt="មាឃបូជា">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-golden">ពិធីមាឃបូជា</h5>
+                            <p class="card-text">ថៃ្ងទី ១៥ កើតខែមាឃ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#vesakModal">
+                        <img src="https://i.pinimg.com/736x/c8/57/e2/c857e2dbffd08ca78a45a2e20a8fdfe5.jpg"
+                            class="card-img-top" alt="វិសាខបូជា">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-golden">ពិធីវិសាខបូជា</h5>
+                            <p class="card-text">១៥​កើត ខែពិសាខ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#asalhaModal">
+                        <img src="https://i.pinimg.com/736x/f6/ba/f2/f6baf2d4e1abb5a5cb0473ebd0ef819b.jpg"
+                            class="card-img-top" alt="អាសាឡហបូជា">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-golden">ពិធីអាសាឡហបូជា</h5>
+                            <p class="card-text">ថ្ងៃធ្វើបទដ្ឋានធម៌ដំបូង។</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#vassaModal">
+                        <img src="https://i.pinimg.com/564x/b1/89/41/b189415e244be611ad29d2a7a88b96db.jpg"
+                            class="card-img-top" alt="ចូលវស្សា">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-golden">បុណ្យចូលវស្សា</h5>
+                            <p class="card-text">ព្រះសង្ឃស្នាក់នៅវត្តអារាមរយៈ៣ខែ។</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 5 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#kathinaModal">
+                        <img src="https://i.pinimg.com/564x/34/3b/cc/343bcc7603121d99f13f3f70e8cc31df.jpg"
+                            class="card-img-top" alt="កឋិន">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-golden">បុណ្យកឋិន</h5>
+                            <p class="card-text">បរិច្ចាគសម្លៀកបំពាក់ដល់ព្រះសង្ឃបន្ទាប់ពីវស្សា។</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 6 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#pchumBenModal">
+                        <img src="https://i.pinimg.com/1200x/db/2d/b5/db2db5f26918c0a3d559e4d5002aa279.jpg"
+                            class="card-img-top" alt="បុណ្យភ្ជុំបិណ្ឌ">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-golden">បុណ្យភ្ជុំបិណ្ឌ</h5>
+                            <p class="card-text">ឧទ្ទិសអាហារដល់វិញ្ញាណបុព្វបុរស។</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <!-- Meak Bochea -->
+    <div class="modal fade" id="meakBocheaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 rounded-4 shadow-lg">
+                <div class="modal-header bg-golden text-white">
+                    <h5 class="modal-title">ពិធីមាឃបូជា</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+
+                    <div class="row">
+                        <div class="col-6">
+
+                            <img src="https://i.pinimg.com/736x/4e/b1/21/4eb121af5e9c9b945253cda32afbef59.jpg"
+                                class="img-fluid mb-3" alt="Meak Bochea">
+
+                        </div>
+                        <div class="col-6">
+                            <h4>មាឃបូជា</h4>
+                            <!-- icon date -->
+                            <div class="d-flex"> <i class="bi bi-calendar me-2"></i> <span>១៥ កើត ខែមាឃ</span></div>
+                            <h6>ប្រារព្ធហេតុ ៣ យ៉ាង៖</h6>
+                            <ul>
+                                <li>ចតុរង្គសន្និបាត ប្រកបដោយអង្គ៤</li>
+                                <li>ព្រះអង្គទ្រង់សម្តែងនូវឱវាទបាតិមោក្ខ</li>
+                                <li>ទ្រង់ប្រកាសដាក់ជន្មាយុសង្ខារ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>មាឃបូជា ជាពីធីបុណ្យមួយដែលមានសារៈសំខាន់នៅក្នុងព្រះពុទ្ធសាសនា ដែលរួមពិធីបុណ្យមាន: មាឃបូជា ពិសាខបូជា
+                        អាសាឍបូជា និងបុណ្យបវារណា (ចេញវស្សា) ។ បុណ្យមាឃបូជា
+                        ប្រារព្ធឡើងដើម្បីរំលឹកដល់ថៃ្ងដែលព្រះសម្មាសម្ពុទ្ធទ្រង់ប្រកាសបង្កើត ព្រះពុទ្ធសាសនា ឡើងក្នុងលោកនៅ
+                        ប្រទេសឥណ្ឌា កាលពី ៥៨៨ ឆ្នាំមុនគ្រិស្តសករាជ នាថៃ្ងទី ១៥ កើតខែមាឃ
+                        ក្រោយពីការត្រាស់ដឹងរបស់ព្រះអង្គចំនួន ៩ ខែគត់ ។ ការបង្កើត ព្រះពុទ្ធសាសនា
+                        ក្នុងឋានៈជាអង្គការសាសនាមួយនេះ ធ្វើឡើងនៅក្នុងចំណោមព្រះសង្ឃចំនួន ១.២៥០ អង្គ
+                        ជាសមាជិកក្នុងអង្គមហាសន្និបាតមួយដែលបាននិមន្តមកពីគ្រប់ស្រទាប់វណ្ណៈទាំងអស់ ។ នៅក្នុងមហាសន្និបាតនោះ
+                        ព្រះសម្មាសម្ពុទ្ធ ទ្រង់បានប្រកាសនូវគោលការណ៍ចំនួន ១១
+                        ប្រការសម្រាប់ឲ្យសមាជិកមហាសន្និបាតទាំងអស់កាន់យកជាវិថីជីវិត និងសម្រាប់យកទៅផ្សព្វផ្សាយ
+                        ដល់ជនដទៃទៀតឲ្យបានយល់អំពី ពុទ្ធសាសនា ។</p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vesak -->
+    <div class="modal fade" id="vesakModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 rounded-4 shadow-lg">
+                <div class="modal-header bg-golden text-white">
+                    <h5 class="modal-title">ពិធីវិសាខបូជា</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+
+                    <div class="row">
+                        <div class="col-6">
+
+                            <img src="https://i.pinimg.com/736x/5b/91/9e/5b919e3f15d0a67c1074b79cb440e03f.jpg"
+                                class="img-fluid mb-3" alt="Vesak Bochea">
+
+                        </div>
+                        <div class="col-6">
+                            <h4>វិសាខបូជា</h4>
+                            <!-- icon date -->
+                            <div class="d-flex"> <i class="bi bi-calendar me-2"></i> <span>១៥ កើត ខែវិសាខ</span></div>
+                            <h6>ប្រារព្ធហេតុ ៣ យ៉ាង៖</h6>
+                            <ul>
+                                <li>ទ្រង់​ប្រសូត</li>
+                                <li>ទ្រង់ត្រាស់ដឹង​</li>
+                                <li>ទ្រង់ចូល​និព្វាន​។​</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>ការប្រារព្ធពិធីបុណ្យវិសាខបូជា គឺដើម្បីរម្លឹកដល់ព្រឹត្តិការណ៍ដ៏ពិសេស៣យ៉ាងដែរ
+                        ដែលទាក់ទងនឹងព្រះសមា្មសម្ពុទ្ធ គឺការប្រសូត ការត្រាស់ដឹង និង ការចូលព្រះនិព្វាន។ ព្រះពុទ្ធ ប្រសូត
+                        ត្រាស់ដឹង និង ចូលព្រះនិព្វាន ក្នុងថ្ងៃ១៥ ពេញបូណ៌មី ខែវិសាខ តែមួយ ដោយខុសតែឆ្នាំប៉ុណ្ណោះ។
+                        ពិធីបុណ្យវិសាខបូជា នឹងមកដល់នៅថ្ងៃ១៥ ខែវិសាខ ត្រូវនឹងថ្ងៃអាទិត្យ ទី១៥ ខែឧសភា ឆ្នាំ២០២២។
+
+                        ព្រះអង្គ ទ្រង់ប្រសូត ក្នុងព្រៃលុម្ពិនី នៅថ្ងៃសុក្រ «ពេញបូណ៌មី ខែវិសាខ» មុនគ្រិស្តសករាជ៦២៣ឆ្នាំ។
+                        ពេលព្រះអង្គ ប្រសូតចាកឧទរព្រះមាតាភ្លាម ភាពអស្ចារ្យ ក៏កើតឡើង គឺព្រះអង្គ បានយាង៧ជំហាន
+                        ដោយមានផ្កាឈូកទ្រព្រះបាទ ហើយព្រះអង្គ បានលើកដៃចង្អុលទៅទិសខាងលើ រួចបន្លឺឡើងនូវវាចាថា៖«[....]
+                        អាត្មាអញ ជាបុគ្គលប្រសើរផុតគេក្នុងលោក [….] ។ [….] ជាតិនេះ ជាកំណើតចុងក្រោយរបស់អាត្មាអញ អាត្មាអញ
+                        លែងកើតទៀតហើយ»។
+
+                        នៅពេលមានព្រះជន្ម២៩ព្រះវស្សា ព្រះសិទ្ធត្ថ បានលួចយាងទៅសាងផ្នួស។
+                        ក្រោយពីក្លាយខ្លួនជាអ្នកបួសអស់រយៈពេល៦ឆ្នាំ ព្រះអង្គក៏បានត្រាស់ដឹង កា្លយជាព្រះពុទ្ធ នៅថ្ងៃពុធ
+                        «ពេញបូណ៌មី ខែវិសាខ» នាវេលាទៀបភ្លឺ។ ការត្រាស់ដឹង មានន័យថា ការដឹងអ្វីៗគ្រប់យ៉ាង ក្នុងធម្មជាតិ
+                        ឬការដឹងអ្វីៗគ្រប់យ៉ាងនៅក្នុងលោក។ ការត្រាស់ដឹងជាភាសាបាលី ហៅថា សព្វញ្ញុតញ្ញាណ។
+                        ព្រះពុទ្ធ មានព្រះនាមដើមថា សិទ្ធត្ថ (អានថា សិត-ធ័ត) ដែលជាព្រះរាជបុត្រារបស់ព្រះនាង សិរិមហាមាយា
+                        និងព្រះបាទ សុទ្ធោទន៍។ ពេលត្រាស់ដឹងជាព្រះពុទ្ធ ព្រះអង្គ ត្រូវបានគេហៅព្រះនាមជាច្រើនទៀត ដូចជា
+                        ព្រះសម្មាសម្ពុទ្ធ ព្រះសមណគោតម ព្រះជិនស្រី ព្រះសក្យមុនី ព្រះបរមគ្រូ និង ព្រះសាស្តា ជាដើម។
+                        បន្ទាប់ពីត្រាស់ដឹង ព្រះបរមគ្រូនៃយើង បានចំណាយពេលអស់៤៥ព្រះវស្សា ក្នុងយាងសម្តែងធម៌និងប្រោសសត្វលោក។
+                        ដល់ព្រះជន្ម៨០ព្រះវស្សា ព្រះជិនស្រី ទ្រង់ក៏ចូលព្រះនិព្វាន នៅថ្ងៃអង្គារ «ពេញបូណ៌មី ខែវិសាខ»។
+                        ព្រះនិព្វាន គឺជាទីស្ថាននៃបរមសុខ។ គ្មានសេចក្តីសុខណា ស្មើនឹងការដល់ព្រះនិព្វានឡើយ
+                        ហើយក្នុងព្រះពុទ្ធសាសនា ព្រះនិព្វាន គឺជាគោលដៅធំបំផុត សម្រាប់សត្វលោក។ រហូតមកដល់ពេលនេះ ព្រះសក្យមុនី
+                        បានចូលព្រះនិព្វាន (រលត់សង្ខារ) អស់រយៈពេល២៥៦៥ឆ្នាំហើយ។</p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Asalha -->
+    <div class="modal fade" id="asalhaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 rounded-4 shadow-lg">
+                <div class="modal-header bg-golden text-white">
+                    <h5 class="modal-title">ពិធីអាសាឡហបូជា</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p>បុណ្យអាសាឡហបូជា គឺជាថ្ងៃធ្វើបទដ្ឋានធម៌ដំបូង ឲ្យសាវក៥អង្គ។ វាជាថ្ងៃកំណើតនៃសង្ឃដំបូង។</p>
+                    <img src="https://i.pinimg.com/736x/f6/ba/f2/f6baf2d4e1abb5a5cb0473ebd0ef819b.jpg"
+                        class="img-fluid mt-3" alt="Asalha Puja">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vassa -->
+    <div class="modal fade" id="vassaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 rounded-4 shadow-lg">
+                <div class="modal-header bg-golden text-white">
+                    <h5 class="modal-title">បុណ្យចូលវស្សា</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p>ព្រះសង្ឃស្នាក់នៅវត្តអារាមរយៈ៣ខែ ដើម្បីសិក្សាធម៌ និងអនុវត្តសីល។ ពុទ្ធសាសនិកធ្វើបុណ្យបរិច្ចាគ
+                        និងសូត្រធម៌ក្នុងរដូវវស្សា។
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est perferendis deleniti fuga rerum,
+                        nihil commodi neque, magni, distinctio temporibus eveniet enim hic porro officiis laboriosam
+                        earum non illum alias eaque libero ea ipsum? Accusantium architecto veritatis non porro deleniti
+                        et in eveniet, quos, inventore odio quas eligendi. Aliquid rem reprehenderit distinctio
+                        blanditiis sequi possimus odit nemo natus ipsum deleniti quod, nobis ab ex dolorum autem
+                        mollitia enim assumenda nam iste voluptatem incidunt quia nihil. Accusantium possimus
+                        reprehenderit necessitatibus fugit est, excepturi vitae dolores eaque explicabo qui recusandae
+                        iste ipsa et amet delectus cum ex veniam perspiciatis? Ad soluta debitis delectus.
+                    </p>
+                    <img src="https://i.pinimg.com/736x/a4/fb/6f/a4fb6f91ddd418e0c829decbc4893714.jpg"
+                        class="img-fluid mt-3" alt="Vassa Retreat">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kathina -->
+    <div class="modal fade" id="kathinaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 rounded-4 shadow-lg">
+                <div class="modal-header bg-golden text-white">
+                    <h5 class="modal-title">បុណ្យកឋិន</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p>បុណ្យកឋិន ជាពិធីបរិច្ចាគសម្លៀកបំពាក់ថ្មីដល់ព្រះសង្ឃបន្ទាប់ពីរដូវវស្សា។ វាបង្ហាញពីសេចក្ដីស្រឡាញ់
+                        និងការគាំទ្រដល់សាសនា។</p>
+                    <img src="https://i.pinimg.com/564x/34/3b/cc/343bcc7603121d99f13f3f70e8cc31df.jpg"
+                        class="img-fluid mt-3" alt="Kathina Ceremony">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pchum Ben -->
+    <div class="modal fade" id="pchumBenModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 rounded-4 shadow-lg">
+                <div class="modal-header bg-golden text-white">
+                    <h5 class="modal-title">បុណ្យភ្ជុំបិណ្ឌ</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <img src="https://i.pinimg.com/1200x/db/2d/b5/db2db5f26918c0a3d559e4d5002aa279.jpg"
+                        class="img-fluid mt-3" alt="Pchum Ben">
+                    <p>បុណ្យភ្ជុំបិណ្ឌ ជាបុណ្យធំសម្រាប់ឧទ្ទិសអាហារដល់វិញ្ញាណបុព្វបុរស។ ពុទ្ធសាសនិកទៅវត្តធ្វើបុណ្យ
+                        បរិច្ចាគអាហារ និងសូត្រធម៌។</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="mb-2">
+            <a href="#"><i class="bi bi-facebook mx-2"></i></a>
+            <a href="#"><i class="bi bi-youtube mx-2"></i></a>
+            <a href="#"><i class="bi bi-envelope mx-2"></i></a>
+        </div>
+        <p>© ២០២៥ ព្រឹត្តិការណ៍ពុទ្ធសាសនា | រចនាដោយ Guest</p>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="btn btn-warning text-white rounded-circle">
+        ↑
+    </button>
+
+    <script>
+        const btn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            btn.style.display = window.scrollY > 200 ? 'block' : 'none';
+        });
+        btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
