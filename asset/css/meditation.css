@@ -1,0 +1,47 @@
+        :root {
+            --primary-color: #b87707;
+            /* ពណ៌​មាស​ត្នោត */
+            --secondary-color: #dc2626;
+            /* ពណ៌​ក្រហម​ស្រាល */
+            --bg-primary: #ffffff;
+            --text-primary: #000000;
+            --bg-secondary: #f3f4f6;
+            --border-light: #e5e7eb;
+        }
+
+        /* សម្រាប់ Dark Mode (រក្សា​ទុក ព្រោះ​ជា​គំនិត​ល្អ) */
+        [data-theme="dark"] {
+            --bg-primary: #1f2937;
+            --text-primary: #ffffff;
+            --bg-secondary: #374151;
+            --border-light: #374151;
+        }
+
+        [data-theme="dark"] body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+        }
+
+        body {
+            font-family: 'Khmer OS Content', 'Segoe UI', sans-serif;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+        }
+
+        /* រចនាបថ​សម្រាប់​ចំណងជើង​ផ្នែក (Section Title) */
+        .section-title {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            font-weight: bold;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        /* បន្ទាត់​ក្រោម​ចំណងជើង */
+        .section-title-divider {
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            margin: -10px auto 0;
+        }
