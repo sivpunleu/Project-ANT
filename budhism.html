@@ -4,366 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ព្រឹត្តិការណ៍សំខាន់ក្នុងព្រះពុទ្ធសាសនា</title>
+    <title>ព្រឹត្តិការណ៍ពុទ្ធសាសនា - វិសាខបូជា</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css">
-    <!-- Google Fonts - Khmer -->
-    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Khmer Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Battambang&display=swap" rel="stylesheet">
 
     <style>
-        :root {
-            --primary: #d4af37;
-            --secondary: #8b4513;
-            --dark: #2c1810;
-            --light: #fef5e7;
-            --accent: #ff6b35;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Battambang', cursive;
-            background: linear-gradient(135deg, #fef5e7 0%, #f5e6d3 100%);
-            color: var(--dark);
-            overflow-x: hidden;
+            font-family: 'Battambang', sans-serif;
+            background-color: #fffdf8;
+            padding-top: 70px;
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(44, 24, 16, 0.7), rgba(139, 69, 19, 0.8)),
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%238b4513" width="1200" height="600"/><path fill="%23d4af37" opacity="0.1" d="M0 300 Q300 200 600 300 T1200 300 L1200 600 L0 600 Z"/></svg>');
-            background-size: cover;
-            background-position: center;
-            min-height: 60vh;
+            min-height: 90vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+                url('https://i.pinimg.com/1200x/d5/26/ee/d526eeb506c4487b1c041beb39eb6da5.jpg') center/cover no-repeat;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             color: white;
-            position: relative;
-            overflow: hidden;
         }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 1px, transparent 1px);
-            background-size: 50px 50px;
-            animation: movePattern 20s linear infinite;
+        .text-golden {
+            color: #c9a227;
         }
 
-        @keyframes movePattern {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(50px, 50px); }
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            padding: 2rem;
-        }
-
-        .hero h1 {
-            font-family: 'Moul', cursive;
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-            animation: fadeInDown 1s ease-out;
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            animation: fadeInUp 1s ease-out 0.3s both;
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Cards Section */
-        .cards-container {
-            padding: 5rem 0;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .section-title h2 {
-            font-family: 'Moul', cursive;
-            font-size: 2.5rem;
-            color: var(--secondary);
-            margin-bottom: 1rem;
-            position: relative;
-            display: inline-block;
-        }
-
-        .section-title h2::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background: linear-gradient(90deg, transparent, var(--primary), transparent);
-        }
-
-        /* Event Card */
-        .event-card {
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.4s ease;
-            cursor: pointer;
-            height: 100%;
-            position: relative;
-        }
-
-        .event-card:hover {
-            transform: translateY(-15px);
-            box-shadow: 0 20px 50px rgba(139, 69, 19, 0.3);
-        }
-
-        .card-icon-wrapper {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            padding: 3rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .card-icon-wrapper::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-            background-size: 30px 30px;
-        }
-
-        .card-icon {
-            font-size: 4rem;
-            color: white;
-            position: relative;
-            z-index: 2;
-        }
-
-        .card-body {
-            padding: 2rem;
-        }
-
-        .card-date {
-            display: inline-block;
-            padding: 0.5rem 1.2rem;
-            background: linear-gradient(135deg, var(--primary), #c9a335);
-            color: white;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
-
-        .card-title {
-            font-family: 'Moul', cursive;
-            font-size: 1.5rem;
-            color: var(--secondary);
-            margin-bottom: 1rem;
-            line-height: 1.4;
-        }
-
-        .card-description {
-            font-size: 1rem;
-            line-height: 1.6;
-            color: #666;
-            margin-bottom: 1rem;
-        }
-
-        .read-more {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--primary);
-            font-weight: bold;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .read-more:hover {
-            color: var(--secondary);
-            gap: 1rem;
-        }
-
-        /* Modal Customization */
-        .modal-content {
-            border-radius: 20px;
-            border: none;
-            overflow: hidden;
-        }
-
-        .modal-header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            border: none;
-            padding: 2rem;
-        }
-
-        .modal-title {
-            font-family: 'Moul', cursive;
-            font-size: 2rem;
-        }
-
-        .btn-close {
-            filter: brightness(0) invert(1);
-        }
-
-        .modal-body {
-            padding: 2.5rem;
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        .modal-icon {
-            font-size: 5rem;
-            text-align: center;
-            margin-bottom: 2rem;
-            color: var(--primary);
-        }
-
-        .modal-date {
-            display: inline-block;
-            padding: 0.7rem 1.5rem;
-            background: var(--light);
-            color: var(--secondary);
-            border-radius: 25px;
-            font-weight: bold;
-            margin-bottom: 1.5rem;
-            border: 2px solid var(--primary);
-        }
-
-        .modal-text {
-            color: #555;
-            margin-bottom: 1.5rem;
-        }
-
-        .modal-details {
-            background: var(--light);
-            padding: 1.5rem;
+        /* Card Style */
+        .card {
             border-radius: 15px;
-            border-left: 4px solid var(--primary);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .modal-details h5 {
-            color: var(--secondary);
-            font-family: 'Moul', cursive;
-            margin-bottom: 1rem;
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
         }
 
-        .modal-details ul {
-            list-style: none;
-            padding: 0;
+        .card:hover .card-title {
+            color: #b78e1a;
         }
 
-        .modal-details li {
-            padding: 0.5rem 0;
-            padding-left: 1.5rem;
-            position: relative;
+        .card-img-top {
+            height: 220px;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
         }
 
-        .modal-details li::before {
-            content: '🪷';
-            position: absolute;
-            left: 0;
+        /* Modal */
+        .bg-golden {
+            background-color: #c9a227;
         }
 
-        /* Lotus Decoration */
-        .lotus-decoration {
-            text-align: center;
-            margin: 3rem 0;
-            font-size: 3rem;
-            opacity: 0.3;
+        .modal-content {
+            border-radius: 15px;
+        }
+
+        .modal-body img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
 
         /* Footer */
         footer {
-            background: linear-gradient(135deg, var(--dark), var(--secondary));
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 4rem;
+            background-color: #2e2e2e;
+            color: #f2f2f2;
+            font-size: 0.95rem;
+            padding: 25px 0;
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
+        footer a {
+            color: #c9a227;
+            text-decoration: none;
+        }
 
-            .hero p {
-                font-size: 1rem;
-            }
+        footer a:hover {
+            color: #fff;
+        }
 
-            .section-title h2 {
-                font-size: 1.8rem;
-            }
-
-            .card-title {
-                font-size: 1.2rem;
-            }
-
-            .modal-title {
-                font-size: 1.5rem;
-            }
-
-            .modal-body {
-                padding: 1.5rem;
-            }
+        /* Back to Top */
+        #backToTop {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
         }
 
         /* Animation */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease-out;
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
+        .animate-text {
+            animation: fadeUp 1.5s ease forwards;
         }
     </style>
 </head>
@@ -372,417 +123,309 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>ព្រឹត្តិការណ៍សំខាន់ក្នុងព្រះពុទ្ធសាសនា</h1>
-            <p>Important Events in Buddhism</p>
-            <div class="lotus-decoration">🪷</div>
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3 animate-text text-golden">រឿងរ៉ាវនិងព្រឹត្តិការណ៍សំខាន់ៗក្នុងពុទ្ធសាសនា
+            </h1>
+            <p class="lead mb-4">ថ្ងៃអនុស្សាវរីយ៍ដ៏សំខាន់នៃព្រះសម្មាសម្បុទ្ធ<br>កំណើត - ត្រាស់ដឹង - បរិនិព្វាន</p>
+            <a href="#events" class="btn btn-warning text-white fw-bold px-4 py-2 rounded-pill">ស្វែងយល់បន្ថែម</a>
         </div>
     </section>
 
-    <!-- Cards Section -->
-    <section class="cards-container">
+
+
+    <!-- Events -->
+    <section id="events" class="py-5">
         <div class="container">
-            <div class="section-title">
-                <h2>ព្រឹត្តិការណ៍សំខាន់</h2>
-            </div>
-
+            <h2 class="text-center mb-5 text-golden">ព្រឹត្តិការណ៍ពុទ្ធសាសនាសំខាន់ៗ</h2>
             <div class="row g-4">
-                <!-- Card 1: Birth of Buddha -->
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="event-card" data-bs-toggle="modal" data-bs-target="#modal1">
-                        <div class="card-icon-wrapper">
-                            <div class="card-icon">
-                                <i class="bi bi-star-fill"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <span class="card-date">563 មុនគ.ស.</span>
-                            <h3 class="card-title">ការប្រសូត្រព្រះពុទ្ធ</h3>
-                            <p class="card-description">ព្រះពុទ្ធសិទ្ធត្ថៈត្រូវបានប្រសូត្រនៅក្នុងសួនលុម្ពិនីវន័យ...</p>
-                            <a href="#" class="read-more">អានបន្ថែម <i class="bi bi-arrow-right"></i></a>
+
+                <!-- Event 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#meakBocheaModal">
+                        <img src="https://i.pinimg.com/736x/ee/22/b6/ee22b6f96c51de33b117d3df8499e666.jpg"
+                            class="card-img-top" alt="មាឃបូជា">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-golden">ពិធីមាឃបូជា</h5>
+                            <p class="card-text">ថៃ្ងទី ១៥ កើតខែមាឃ</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 2: Enlightenment -->
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="event-card" data-bs-toggle="modal" data-bs-target="#modal2">
-                        <div class="card-icon-wrapper">
-                            <div class="card-icon">
-                                <i class="bi bi-brightness-high-fill"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <span class="card-date">528 មុនគ.ស.</span>
-                            <h3 class="card-title">ការត្រាស់ដឹង</h3>
-                            <p class="card-description">នៅក្រោមដើមឈើពោធិ៍នៅទីក្រុងពោធគយា ព្រះពុទ្ធបានសម្រេចការត្រាស់ដឹងពេញលេញ...</p>
-                            <a href="#" class="read-more">អានបន្ថែម <i class="bi bi-arrow-right"></i></a>
+                <!-- Event 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#vesakModal">
+                        <img src="https://i.pinimg.com/736x/c8/57/e2/c857e2dbffd08ca78a45a2e20a8fdfe5.jpg"
+                            class="card-img-top" alt="វិសាខបូជា">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-golden">ពិធីវិសាខបូជា</h5>
+                            <p class="card-text">១៥​កើត ខែពិសាខ</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 3: First Sermon -->
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="event-card" data-bs-toggle="modal" data-bs-target="#modal3">
-                        <div class="card-icon-wrapper">
-                            <div class="card-icon">
-                                <i class="bi bi-book-fill"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <span class="card-date">528 មុនគ.ស.</span>
-                            <h3 class="card-title">ធម្មចក្កប្បវត្តនសូត្រ</h3>
-                            <p class="card-description">ព្រះពុទ្ធបានបង្កើតធម៌ដំបូងនៅឧទ្យានសត្វ នៅទីក្រុងសារនាថ...</p>
-                            <a href="#" class="read-more">អានបន្ថែម <i class="bi bi-arrow-right"></i></a>
+                <!-- Event 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#asalhaModal">
+                        <img src="https://i.pinimg.com/736x/f6/ba/f2/f6baf2d4e1abb5a5cb0473ebd0ef819b.jpg"
+                            class="card-img-top" alt="អាសាឡហបូជា">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-golden">ពិធីអាសាឡហបូជា</h5>
+                            <p class="card-text">ថ្ងៃធ្វើបទដ្ឋានធម៌ដំបូង។</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 4: Establishment of Sangha -->
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="event-card" data-bs-toggle="modal" data-bs-target="#modal4">
-                        <div class="card-icon-wrapper">
-                            <div class="card-icon">
-                                <i class="bi bi-people-fill"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <span class="card-date">528-527 មុនគ.ស.</span>
-                            <h3 class="card-title">ការបង្កើតសង្ឃ</h3>
-                            <p class="card-description">ការបង្កើតសង្ឃសាសនា ដែលជាសហគមន៍របស់ព្រះភិក្ខុសង្ឃ...</p>
-                            <a href="#" class="read-more">អានបន្ថែម <i class="bi bi-arrow-right"></i></a>
+                <!-- Event 4 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#vassaModal">
+                        <img src="https://i.pinimg.com/564x/b1/89/41/b189415e244be611ad29d2a7a88b96db.jpg"
+                            class="card-img-top" alt="ចូលវស្សា">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-golden">បុណ្យចូលវស្សា</h5>
+                            <p class="card-text">ព្រះសង្ឃស្នាក់នៅវត្តអារាមរយៈ៣ខែ។</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 5: Buddha's Parinirvana -->
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="event-card" data-bs-toggle="modal" data-bs-target="#modal5">
-                        <div class="card-icon-wrapper">
-                            <div class="card-icon">
-                                <i class="bi bi-sunset-fill"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <span class="card-date">483 មុនគ.ស.</span>
-                            <h3 class="card-title">ព្រះបរិនិព្វាន</h3>
-                            <p class="card-description">ព្រះពុទ្ធបានចូលទៅកាន់ព្រះបរិនិព្វាននៅក្នុងទីក្រុងកុសិនារា...</p>
-                            <a href="#" class="read-more">អានបន្ថែម <i class="bi bi-arrow-right"></i></a>
+                <!-- Event 5 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#kathinaModal">
+                        <img src="https://i.pinimg.com/564x/34/3b/cc/343bcc7603121d99f13f3f70e8cc31df.jpg"
+                            class="card-img-top" alt="កឋិន">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-golden">បុណ្យកឋិន</h5>
+                            <p class="card-text">បរិច្ចាគសម្លៀកបំពាក់ដល់ព្រះសង្ឃបន្ទាប់ពីវស្សា។</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 6: First Buddhist Council -->
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="event-card" data-bs-toggle="modal" data-bs-target="#modal6">
-                        <div class="card-icon-wrapper">
-                            <div class="card-icon">
-                                <i class="bi bi-chat-square-text-fill"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <span class="card-date">483 មុនគ.ស.</span>
-                            <h3 class="card-title">សង្គាយនាលើកទី១</h3>
-                            <p class="card-description">បន្ទាប់ពីព្រះពុទ្ធចូលនិព្វាន ព្រះភិក្ខុ៥០០អង្គបានប្រជុំគ្នា...</p>
-                            <a href="#" class="read-more">អានបន្ថែម <i class="bi bi-arrow-right"></i></a>
+                <!-- Event 6 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#pchumBenModal">
+                        <img src="https://i.pinimg.com/1200x/db/2d/b5/db2db5f26918c0a3d559e4d5002aa279.jpg"
+                            class="card-img-top" alt="បុណ្យភ្ជុំបិណ្ឌ">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-golden">បុណ្យភ្ជុំបិណ្ឌ</h5>
+                            <p class="card-text">ឧទ្ទិសអាហារដល់វិញ្ញាណបុព្វបុរស។</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 7: Emperor Ashoka -->
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="event-card" data-bs-toggle="modal" data-bs-target="#modal7">
-                        <div class="card-icon-wrapper">
-                            <div class="card-icon">
-                                <i class="bi bi-globe-asia-australia"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <span class="card-date">268-232 មុនគ.ស.</span>
-                            <h3 class="card-title">រាជ្យកាលស្តេចអសោក</h3>
-                            <p class="card-description">ស្តេចអសោកបានផ្សព្វផ្សាយព្រះពុទ្ធសាសនានៅទូទាំងឥណ្ឌា...</p>
-                            <a href="#" class="read-more">អានបន្ថែម <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 8: Buddhism in Southeast Asia -->
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="event-card" data-bs-toggle="modal" data-bs-target="#modal8">
-                        <div class="card-icon-wrapper">
-                            <div class="card-icon">
-                                <i class="bi bi-compass-fill"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <span class="card-date">គ.ស. ទី៣-៥</span>
-                            <h3 class="card-title">ព្រះពុទ្ធសាសនាមកដល់អាស៊ីអាគ្នេយ៍</h3>
-                            <p class="card-description">ព្រះពុទ្ធសាសនាបានរីករាលដាលមកកាន់អាស៊ីអាគ្នេយ៍...</p>
-                            <a href="#" class="read-more">អានបន្ថែម <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
             </div>
-
-            <div class="lotus-decoration">🪷</div>
         </div>
     </section>
 
     <!-- Modals -->
-    <!-- Modal 1: Birth of Buddha -->
-    <div class="modal fade" id="modal1" tabindex="-1">
+    <!-- Meak Bochea -->
+    <div class="modal fade" id="meakBocheaModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">ការប្រសូត្រព្រះពុទ្ធ</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <div class="modal-content border-0 rounded-4 shadow-lg">
+                <div class="modal-header bg-golden text-white">
+                    <h5 class="modal-title">ពិធីមាឃបូជា</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">
-                    <div class="modal-icon"><i class="bi bi-star-fill"></i></div>
-                    <span class="modal-date">563 មុនគ.ស. (Before Christ Era)</span>
-                    <p class="modal-text">ព្រះពុទ្ធសិទ្ធត្ថៈគោតមៈត្រូវបានប្រសូត្រនៅក្នុងសួនលុម្ពិនីវន័យ ក្នុងព្រះរាជវង្សសាក្យៈ នៅប្រទេសនេប៉ាល់បច្ចុប្បន្ន។ ព្រះមាតុរបស់ព្រះអង្គគឺព្រះនាងមាយាទេវី ហើយព្រះបិតារបស់ព្រះអង្គគឺព្រះមហាក្សត្រសុទ្ធោទនៈ។</p>
-                    
-                    <div class="modal-details">
-                        <h5>សេចក្តីលម្អិត</h5>
-                        <ul>
-                            <li>ការប្រសូត្រនេះត្រូវបានចាត់ទុកជាព្រឹត្តិការណ៍អធិប្បាយមួយ ដែលមានបាតុភូតជាច្រើន</li>
-                            <li>ព្រះនាងមាយាទេវីបានប្រសូត្រព្រះអង្គនៅពេលធ្វើដំណើរទៅកាន់ផ្ទះបិតារបស់ព្រះនាង</li>
-                            <li>តាមរឿងព្រេង ព្រះអង្គបានដើរចំនួន៧ជំហាន បន្ទាប់ពីកើតមក</li>
-                            <li>ឈ្មោះដើមរបស់ព្រះអង្គគឺ សិទ្ធត្ថៈ ដែលមានន័យថា "អ្នកដែលសម្រេចគោលបំណង"</li>
-                        </ul>
+                <div class="modal-body p-4">
+
+                    <div class="row">
+                        <div class="col-6">
+
+                            <img src="https://i.pinimg.com/736x/4e/b1/21/4eb121af5e9c9b945253cda32afbef59.jpg"
+                                class="img-fluid mb-3" alt="Meak Bochea">
+
+                        </div>
+                        <div class="col-6">
+                            <h4>មាឃបូជា</h4>
+                            <!-- icon date -->
+                            <div class="d-flex"> <i class="bi bi-calendar me-2"></i> <span>១៥ កើត ខែមាឃ</span></div>
+                            <h6>ប្រារព្ធហេតុ ៣ យ៉ាង៖</h6>
+                            <ul>
+                                <li>ចតុរង្គសន្និបាត ប្រកបដោយអង្គ៤</li>
+                                <li>ព្រះអង្គទ្រង់សម្តែងនូវឱវាទបាតិមោក្ខ</li>
+                                <li>ទ្រង់ប្រកាសដាក់ជន្មាយុសង្ខារ</li>
+                            </ul>
+                        </div>
                     </div>
+                    <p>មាឃបូជា ជាពីធីបុណ្យមួយដែលមានសារៈសំខាន់នៅក្នុងព្រះពុទ្ធសាសនា ដែលរួមពិធីបុណ្យមាន: មាឃបូជា ពិសាខបូជា
+                        អាសាឍបូជា និងបុណ្យបវារណា (ចេញវស្សា) ។ បុណ្យមាឃបូជា
+                        ប្រារព្ធឡើងដើម្បីរំលឹកដល់ថៃ្ងដែលព្រះសម្មាសម្ពុទ្ធទ្រង់ប្រកាសបង្កើត ព្រះពុទ្ធសាសនា ឡើងក្នុងលោកនៅ
+                        ប្រទេសឥណ្ឌា កាលពី ៥៨៨ ឆ្នាំមុនគ្រិស្តសករាជ នាថៃ្ងទី ១៥ កើតខែមាឃ
+                        ក្រោយពីការត្រាស់ដឹងរបស់ព្រះអង្គចំនួន ៩ ខែគត់ ។ ការបង្កើត ព្រះពុទ្ធសាសនា
+                        ក្នុងឋានៈជាអង្គការសាសនាមួយនេះ ធ្វើឡើងនៅក្នុងចំណោមព្រះសង្ឃចំនួន ១.២៥០ អង្គ
+                        ជាសមាជិកក្នុងអង្គមហាសន្និបាតមួយដែលបាននិមន្តមកពីគ្រប់ស្រទាប់វណ្ណៈទាំងអស់ ។ នៅក្នុងមហាសន្និបាតនោះ
+                        ព្រះសម្មាសម្ពុទ្ធ ទ្រង់បានប្រកាសនូវគោលការណ៍ចំនួន ១១
+                        ប្រការសម្រាប់ឲ្យសមាជិកមហាសន្និបាតទាំងអស់កាន់យកជាវិថីជីវិត និងសម្រាប់យកទៅផ្សព្វផ្សាយ
+                        ដល់ជនដទៃទៀតឲ្យបានយល់អំពី ពុទ្ធសាសនា ។</p>
+
+
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 2: Enlightenment -->
-    <div class="modal fade" id="modal2" tabindex="-1">
+    <!-- Vesak -->
+    <div class="modal fade" id="vesakModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">ការត្រាស់ដឹង</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <div class="modal-content border-0 rounded-4 shadow-lg">
+                <div class="modal-header bg-golden text-white">
+                    <h5 class="modal-title">ពិធីវិសាខបូជា</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">
-                    <div class="modal-icon"><i class="bi bi-brightness-high-fill"></i></div>
-                    <span class="modal-date">528 មុនគ.ស. (Before Christ Era)</span>
-                    <p class="modal-text">នៅក្រោមដើមឈើពោធិ៍នៅទីក្រុងពោធគយា (ឥណ្ឌា) ព្រះពុទ្ធបានសម្រេចការត្រាស់ដឹងពេញលេញ ហើយបានក្លាយជាព្រះពុទ្ធ។ ព្រះអង្គបានឈ្នះលើមារជិតនិងបានយល់ដឹងអំពីធម្មជាតិនៃទុក្ខ និងវិធីដោះស្រាយវា។</p>
-                    
-                    <div class="modal-details">
-                        <h5>សេចក្តីលម្អិត</h5>
-                        <ul>
-                            <li>ព្រះអង្គបានអង្គុយសមាធិក្រោមដើមពោធិ៍អស់រយៈពេល៤៩ថ្ងៃ</li>
-                            <li>ក្នុងអំឡុងពេលនោះ ព្រះអង្គត្រូវបានសាកល្បងដោយមារ ប៉ុន្តែបានឈ្នះ</li>
-                            <li>ការត្រាស់ដឹងនេះគឺការយល់ដឹងពេញលេញអំពីអរិយសច្ច៤</li>
-                            <li>ព្រះអង្គបានក្លាយជាព្រះពុទ្ធ ឬ "អ្នកត្រាស់ដឹង"</li>
-                        </ul>
+                <div class="modal-body p-4">
+
+                    <div class="row">
+                        <div class="col-6">
+
+                            <img src="https://i.pinimg.com/736x/5b/91/9e/5b919e3f15d0a67c1074b79cb440e03f.jpg"
+                                class="img-fluid mb-3" alt="Vesak Bochea">
+
+                        </div>
+                        <div class="col-6">
+                            <h4>វិសាខបូជា</h4>
+                            <!-- icon date -->
+                            <div class="d-flex"> <i class="bi bi-calendar me-2"></i> <span>១៥ កើត ខែវិសាខ</span></div>
+                            <h6>ប្រារព្ធហេតុ ៣ យ៉ាង៖</h6>
+                            <ul>
+                                <li>ទ្រង់​ប្រសូត</li>
+                                <li>ទ្រង់ត្រាស់ដឹង​</li>
+                                <li>ទ្រង់ចូល​និព្វាន​។​</li>
+                            </ul>
+                        </div>
                     </div>
+                    <p>ការប្រារព្ធពិធីបុណ្យវិសាខបូជា គឺដើម្បីរម្លឹកដល់ព្រឹត្តិការណ៍ដ៏ពិសេស៣យ៉ាងដែរ
+                        ដែលទាក់ទងនឹងព្រះសមា្មសម្ពុទ្ធ គឺការប្រសូត ការត្រាស់ដឹង និង ការចូលព្រះនិព្វាន។ ព្រះពុទ្ធ ប្រសូត
+                        ត្រាស់ដឹង និង ចូលព្រះនិព្វាន ក្នុងថ្ងៃ១៥ ពេញបូណ៌មី ខែវិសាខ តែមួយ ដោយខុសតែឆ្នាំប៉ុណ្ណោះ។
+                        ពិធីបុណ្យវិសាខបូជា នឹងមកដល់នៅថ្ងៃ១៥ ខែវិសាខ ត្រូវនឹងថ្ងៃអាទិត្យ ទី១៥ ខែឧសភា ឆ្នាំ២០២២។
+
+                        ព្រះអង្គ ទ្រង់ប្រសូត ក្នុងព្រៃលុម្ពិនី នៅថ្ងៃសុក្រ «ពេញបូណ៌មី ខែវិសាខ» មុនគ្រិស្តសករាជ៦២៣ឆ្នាំ។
+                        ពេលព្រះអង្គ ប្រសូតចាកឧទរព្រះមាតាភ្លាម ភាពអស្ចារ្យ ក៏កើតឡើង គឺព្រះអង្គ បានយាង៧ជំហាន
+                        ដោយមានផ្កាឈូកទ្រព្រះបាទ ហើយព្រះអង្គ បានលើកដៃចង្អុលទៅទិសខាងលើ រួចបន្លឺឡើងនូវវាចាថា៖«[....]
+                        អាត្មាអញ ជាបុគ្គលប្រសើរផុតគេក្នុងលោក [….] ។ [….] ជាតិនេះ ជាកំណើតចុងក្រោយរបស់អាត្មាអញ អាត្មាអញ
+                        លែងកើតទៀតហើយ»។
+
+                        នៅពេលមានព្រះជន្ម២៩ព្រះវស្សា ព្រះសិទ្ធត្ថ បានលួចយាងទៅសាងផ្នួស។
+                        ក្រោយពីក្លាយខ្លួនជាអ្នកបួសអស់រយៈពេល៦ឆ្នាំ ព្រះអង្គក៏បានត្រាស់ដឹង កា្លយជាព្រះពុទ្ធ នៅថ្ងៃពុធ
+                        «ពេញបូណ៌មី ខែវិសាខ» នាវេលាទៀបភ្លឺ។ ការត្រាស់ដឹង មានន័យថា ការដឹងអ្វីៗគ្រប់យ៉ាង ក្នុងធម្មជាតិ
+                        ឬការដឹងអ្វីៗគ្រប់យ៉ាងនៅក្នុងលោក។ ការត្រាស់ដឹងជាភាសាបាលី ហៅថា សព្វញ្ញុតញ្ញាណ។
+                        ព្រះពុទ្ធ មានព្រះនាមដើមថា សិទ្ធត្ថ (អានថា សិត-ធ័ត) ដែលជាព្រះរាជបុត្រារបស់ព្រះនាង សិរិមហាមាយា
+                        និងព្រះបាទ សុទ្ធោទន៍។ ពេលត្រាស់ដឹងជាព្រះពុទ្ធ ព្រះអង្គ ត្រូវបានគេហៅព្រះនាមជាច្រើនទៀត ដូចជា
+                        ព្រះសម្មាសម្ពុទ្ធ ព្រះសមណគោតម ព្រះជិនស្រី ព្រះសក្យមុនី ព្រះបរមគ្រូ និង ព្រះសាស្តា ជាដើម។
+                        បន្ទាប់ពីត្រាស់ដឹង ព្រះបរមគ្រូនៃយើង បានចំណាយពេលអស់៤៥ព្រះវស្សា ក្នុងយាងសម្តែងធម៌និងប្រោសសត្វលោក។
+                        ដល់ព្រះជន្ម៨០ព្រះវស្សា ព្រះជិនស្រី ទ្រង់ក៏ចូលព្រះនិព្វាន នៅថ្ងៃអង្គារ «ពេញបូណ៌មី ខែវិសាខ»។
+                        ព្រះនិព្វាន គឺជាទីស្ថាននៃបរមសុខ។ គ្មានសេចក្តីសុខណា ស្មើនឹងការដល់ព្រះនិព្វានឡើយ
+                        ហើយក្នុងព្រះពុទ្ធសាសនា ព្រះនិព្វាន គឺជាគោលដៅធំបំផុត សម្រាប់សត្វលោក។ រហូតមកដល់ពេលនេះ ព្រះសក្យមុនី
+                        បានចូលព្រះនិព្វាន (រលត់សង្ខារ) អស់រយៈពេល២៥៦៥ឆ្នាំហើយ។</p>
+
+
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 3: First Sermon -->
-    <div class="modal fade" id="modal3" tabindex="-1">
+    <!-- Asalha -->
+    <div class="modal fade" id="asalhaModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">ធម្មចក្កប្បវត្តនសូត្រ</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <div class="modal-content border-0 rounded-4 shadow-lg">
+                <div class="modal-header bg-golden text-white">
+                    <h5 class="modal-title">ពិធីអាសាឡហបូជា</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">
-                    <div class="modal-icon"><i class="bi bi-book-fill"></i></div>
-                    <span class="modal-date">528 មុនគ.ស. (Before Christ Era)</span>
-                    <p class="modal-text">ព្រះពុទ្ធបានបង្កើតធម៌ដំបូង (ធម្មចក្កប្បវត្តនសូត្រ) នៅឧទ្យានសត្វ នៅទីក្រុងសារនាថ ប្រទេសឥណ្ឌា។ ព្រះអង្គបានបង្ហាញអរិយសច្ច៤ និងមគ្គា៨ ដល់ពួកតបញ្ចកិន៥នាក់ដែលធ្លាប់ជាមិត្តភក្តិរបស់ព្រះអង្គ។</p>
-                    
-                    <div class="modal-details">
-                        <h5>សេចក្តីលម្អិត</h5>
-                        <ul>
-                            <li>នេះគឺជាការបង្រៀនលើកដំបូងរបស់ព្រះពុទ្ធបន្ទាប់ពីត្រាស់ដឹង</li>
-                            <li>ការបង្រៀននេះនិយាយអំពីអរិយសច្ច៤ (ទុក្ខ កើតទុក្ខ ដាច់ទុក្ខ ផ្លូវដាច់ទុក្ខ)</li>
-                            <li>ព្រះអង្គក៏បានបង្ហាញអំពីមគ្គា៨ (មធ្យោបាយ៨យ៉ាងដើម្បីដាច់ទុក្ខ)</li>
-                            <li>តបញ្ចកិន៥នាក់បានក្លាយជាព្រះសាវ័កដំបូងរបស់ព្រះពុទ្ធ</li>
-                        </ul>
-                    </div>
+                <div class="modal-body p-4">
+                    <p>បុណ្យអាសាឡហបូជា គឺជាថ្ងៃធ្វើបទដ្ឋានធម៌ដំបូង ឲ្យសាវក៥អង្គ។ វាជាថ្ងៃកំណើតនៃសង្ឃដំបូង។</p>
+                    <img src="https://i.pinimg.com/736x/f6/ba/f2/f6baf2d4e1abb5a5cb0473ebd0ef819b.jpg"
+                        class="img-fluid mt-3" alt="Asalha Puja">
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 4: Establishment of Sangha -->
-    <div class="modal fade" id="modal4" tabindex="-1">
+    <!-- Vassa -->
+    <div class="modal fade" id="vassaModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">ការបង្កើតសង្ឃ</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <div class="modal-content border-0 rounded-4 shadow-lg">
+                <div class="modal-header bg-golden text-white">
+                    <h5 class="modal-title">បុណ្យចូលវស្សា</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">
-                    <div class="modal-icon"><i class="bi bi-people-fill"></i></div>
-                    <span class="modal-date">528-527 មុនគ.ស. (Before Christ Era)</span>
-                    <p class="modal-text">ការបង្កើតសង្ឃសាសនា ដែលជាសហគមន៍របស់ព្រះភិក្ខុសង្ឃដែលចង់តាមព្រះពុទ្ធ។ ព្រះអង្គបានបង្កើតវិន័យសង្ឃ និងក្បួនបទដើម្បីគ្រប់គ្រងសង្ឃសាសនា។</p>
-                    
-                    <div class="modal-details">
-                        <h5>សេចក្តីលម្អិត</h5>
-                        <ul>
-                            <li>សង្ឃគឺជាសហគមន៍នៃព្រះភិក្ខុ និងភិក្ខុនី</li>
-                            <li>ព្រះពុទ្ធបានបង្កើតវិន័យសង្ឃ ដែលជាក្បួនបទសម្រាប់ព្រះសង្ឃ</li>
-                            <li>សង្ឃមានតួនាទីសំខាន់ក្នុងការរក្សា និងផ្សព្វផ្សាយព្រះពុទ្ធសាសនា</li>
-                            <li>ព្រះសង្ឃរស់នៅតាមវត្ត និងប្រកាន់ខ្ជាប់នូវសីលវិន័យ</li>
-                        </ul>
-                    </div>
+                <div class="modal-body p-4">
+                    <p>ព្រះសង្ឃស្នាក់នៅវត្តអារាមរយៈ៣ខែ ដើម្បីសិក្សាធម៌ និងអនុវត្តសីល។ ពុទ្ធសាសនិកធ្វើបុណ្យបរិច្ចាគ
+                        និងសូត្រធម៌ក្នុងរដូវវស្សា។
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est perferendis deleniti fuga rerum,
+                        nihil commodi neque, magni, distinctio temporibus eveniet enim hic porro officiis laboriosam
+                        earum non illum alias eaque libero ea ipsum? Accusantium architecto veritatis non porro deleniti
+                        et in eveniet, quos, inventore odio quas eligendi. Aliquid rem reprehenderit distinctio
+                        blanditiis sequi possimus odit nemo natus ipsum deleniti quod, nobis ab ex dolorum autem
+                        mollitia enim assumenda nam iste voluptatem incidunt quia nihil. Accusantium possimus
+                        reprehenderit necessitatibus fugit est, excepturi vitae dolores eaque explicabo qui recusandae
+                        iste ipsa et amet delectus cum ex veniam perspiciatis? Ad soluta debitis delectus.
+                    </p>
+                    <img src="https://i.pinimg.com/736x/a4/fb/6f/a4fb6f91ddd418e0c829decbc4893714.jpg"
+                        class="img-fluid mt-3" alt="Vassa Retreat">
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 5: Buddha's Parinirvana -->
-    <div class="modal fade" id="modal5" tabindex="-1">
+    <!-- Kathina -->
+    <div class="modal fade" id="kathinaModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">ព្រះបរិនិព្វាន</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <div class="modal-content border-0 rounded-4 shadow-lg">
+                <div class="modal-header bg-golden text-white">
+                    <h5 class="modal-title">បុណ្យកឋិន</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">
-                    <div class="modal-icon"><i class="bi bi-sunset-fill"></i></div>
-                    <span class="modal-date">483 មុនគ.ស. (Before Christ Era)</span>
-                    <p class="modal-text">ព្រះពុទ្ធបានចូលទៅកាន់ព្រះបរិនិព្វាននៅក្នុងទីក្រុងកុសិនារា នៅពេលព្រះអាយុ៨០ពស្ស។ នេះគឺជាការចាកចេញពីវដ្តសង្សារចុងក្រោយ។</p>
-                    
-                    <div class="modal-details">
-                        <h5>សេចក្តីលម្អិត</h5>
-                        <ul>
-                            <li>ព្រះពុទ្ធបានចូលនិព្វាននៅពេលមានអាយុ៨០ឆ្នាំ</li>
-                            <li>ព្រះអង្គបានផ្តល់ពាក្យប្រឹក្សាចុងក្រោយដល់ព្រះសាវ័ក</li>
-                            <li>ព្រះពុទ្ធបានចូលនិព្វាននៅក្រោមដើមឈើសាលដ្យូ</li>
-                            <li>ពាក្យចុងក្រោយរបស់ព្រះអង្គគឺ "រាល់សង្ខារមានការរលត់ អ្នកទាំងឡាយចូរប្រឹងប្រែងដោយមិនរេសារ"</li>
-                        </ul>
-                    </div>
+                <div class="modal-body p-4">
+                    <p>បុណ្យកឋិន ជាពិធីបរិច្ចាគសម្លៀកបំពាក់ថ្មីដល់ព្រះសង្ឃបន្ទាប់ពីរដូវវស្សា។ វាបង្ហាញពីសេចក្ដីស្រឡាញ់
+                        និងការគាំទ្រដល់សាសនា។</p>
+                    <img src="https://i.pinimg.com/564x/34/3b/cc/343bcc7603121d99f13f3f70e8cc31df.jpg"
+                        class="img-fluid mt-3" alt="Kathina Ceremony">
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 6: First Buddhist Council -->
-    <div class="modal fade" id="modal6" tabindex="-1">
+    <!-- Pchum Ben -->
+    <div class="modal fade" id="pchumBenModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">សង្គាយនាលើកទី១</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <div class="modal-content border-0 rounded-4 shadow-lg">
+                <div class="modal-header bg-golden text-white">
+                    <h5 class="modal-title">បុណ្យភ្ជុំបិណ្ឌ</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">
-                    <div class="modal-icon"><i class="bi bi-chat-square-text-fill"></i></div>
-                    <span class="modal-date">483 មុនគ.ស. (Before Christ Era)</span>
-                    <p class="modal-text">បន្ទាប់ពីព្រះពុទ្ធចូលនិព្វាន ព្រះភិក្ខុ៥០០អង្គបានប្រជុំគ្នានៅទីក្រុងរាជគ្រឹះ ដើម្បីប្រមូលផ្តុំព្រះធម៌ និងវិន័យរបស់ព្រះពុទ្ធ។</p>
-                    
-                    <div class="modal-details">
-                        <h5>សេចក្តីលម្អិត</h5>
-                        <ul>
-                            <li>ព្រះមហាកស្សបៈជាប្រធាននៃសង្គាយនានេះ</li>
-                            <li>ព្រះភិក្ខុ៥០០អង្គបានប្រមូលផ្តុំព្រះធម៌ និងវិន័យ</li>
-                            <li>ព្រះអានន្ទបានស្តាប់ព្រះធម៌ ហើយព្រះឧបាលីបានស្តាប់វិន័យ</li>
-                            <li>នេះជាការចាប់ផ្តើមនៃការថែរក្សាព្រះធម៌ឱ្យបានត្រឹមត្រូវ</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 7: Emperor Ashoka -->
-    <div class="modal fade" id="modal7" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">រាជ្យកាលស្តេចអសោក</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="modal-icon"><i class="bi bi-globe-asia-australia"></i></div>
-                    <span class="modal-date">268-232 មុនគ.ស. (Before Christ Era)</span>
-                    <p class="modal-text">ស្តេចអសោកមហាក្សត្របានផ្សព្វផ្សាយព្រះពុទ្ធសាសនានៅទូទាំងឥណ្ឌា និងប្រទេសជិតខាង។ ព្រះអង្គជាស្តេចដ៏សំខាន់បំផុតក្នុងប្រវត្តិសាស្ត្រព្រះពុទ្ធសាសនា។</p>
-                    
-                    <div class="modal-details">
-                        <h5>សេចក្តីលម្អិត</h5>
-                        <ul>
-                            <li>ស្តេចអសោកបានប្តូរចិត្តក្រោយពីសង្គ្រាមកាលីង្គា</li>
-                            <li>ព្រះអង្គបានកសាងស្ថូប និងវត្តជាច្រើននៅទូទាំងឥណ្ឌា</li>
-                            <li>ស្តេចអសោកបានផ្ញើព្រះសង្ឃទៅផ្សព្វផ្សាយសាសនានៅប្រទេសផ្សេងៗ</li>
-                            <li>ព្រះអង្គបានសរសេរក្បួនធម៌លើសសរដែកគួរឱ្យកោតសរសើរ</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 8: Buddhism in Southeast Asia -->
-    <div class="modal fade" id="modal8" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">ព្រះពុទ្ធសាសនាមកដល់អាស៊ីអាគ្នេយ៍</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="modal-icon"><i class="bi bi-compass-fill"></i></div>
-                    <span class="modal-date">គ.ស. ទី៣-៥ (3rd-5th Century CE)</span>
-                    <p class="modal-text">ព្រះពុទ្ធសាសនាបានរីករាលដាលមកកាន់អាស៊ីអាគ្នេយ៍ រួមមាន ថៃ មីយ៉ាន់ម៉ា ឡាវ កម្ពុជា និងវៀតណាម។ នេះគឺជាការផ្លាស់ប្តូរសំខាន់មួយក្នុងប្រវត្តិសាស្ត្រនៃតំបន់នេះ។</p>
-                    
-                    <div class="modal-details">
-                        <h5>សេចក្តីលម្អិត</h5>
-                        <ul>
-                            <li>ព្រះពុទ្ធសាសនាបានមកដល់តាមផ្លូវពាណិជ្ជកម្ម និងព្រះសង្ឃ</li>
-                            <li>ប្រទេសនីមួយៗបានរៀបចំព្រះពុទ្ធសាសនាតាមវប្បធម៌ផ្ទាល់ខ្លួន</li>
-                            <li>អង្គរវត្តនៅកម្ពុជាជាស្ថាបត្យកម្មព្រះពុទ្ធសាសនាដ៏អស្ចារ្យ</li>
-                            <li>សព្វថ្ងៃនេះ ព្រះពុទ្ធសាសនាគឺជាសាសនាចម្បងនៅអាស៊ីអាគ្នេយ៍</li>
-                        </ul>
-                    </div>
+                <div class="modal-body p-4">
+                    <img src="https://i.pinimg.com/1200x/db/2d/b5/db2db5f26918c0a3d559e4d5002aa279.jpg"
+                        class="img-fluid mt-3" alt="Pchum Ben">
+                    <p>បុណ្យភ្ជុំបិណ្ឌ ជាបុណ្យធំសម្រាប់ឧទ្ទិសអាហារដល់វិញ្ញាណបុព្វបុរស។ ពុទ្ធសាសនិកទៅវត្តធ្វើបុណ្យ
+                        បរិច្ចាគអាហារ និងសូត្រធម៌។</p>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>🪷 ព្រះពុទ្ធសាសនា - Buddhism 🪷</p>
-            <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">បានបង្កើតដោយក្តីក្រៃលែងចំពោះព្រះរតនត្រ័យ</p>
+    <footer class="text-center">
+        <div class="mb-2">
+            <a href="#"><i class="bi bi-facebook mx-2"></i></a>
+            <a href="#"><i class="bi bi-youtube mx-2"></i></a>
+            <a href="#"><i class="bi bi-envelope mx-2"></i></a>
         </div>
+        <p>© ២០២៥ ព្រឹត្តិការណ៍ពុទ្ធសាសនា | រចនាដោយ Guest</p>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Back to Top -->
+    <button id="backToTop" class="btn btn-warning text-white rounded-circle">
+        ↑
+    </button>
 
     <script>
-        // Fade-in animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
+        const btn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            btn.style.display = window.scrollY > 200 ? 'block' : 'none';
         });
-
-        // Prevent read more link default behavior
-        document.querySelectorAll('.read-more').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-            });
-        });
+        btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
     </script>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
