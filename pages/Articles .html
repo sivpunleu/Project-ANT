@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="km">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="គេហទំព័រផ្សព្វផ្សាយព្រះធម៌ បង្រៀន អប់រំសីលធម៌ និងចែករំលែកចំណេះដឹងខាងព្រះពុទ្ធសាសនា"
+    />
+    <meta
+      name="keywords"
+      content="ពុទ្ធសាសនា, ព្រះធម៌, សង្គម, កម្ពុជា, Buddhism, Cambodia"
+    />
+
+    <title>ព្រឹត្តិការណ៍ - ពុទ្ធសាសនានិងសង្គម</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <!-- events css -->
+    <link rel="stylesheet" href="../asset/css/Articles .css" />
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../asset/css/theme.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap.css" />
+    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap1.css" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="../asset/aos-master/dist/aos.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- Google Fonts - Khmer -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    .user-profile {
+      color: var(--primary-color);
+    }
+
+    .user-profile:hover {
+      color: var(--primary-color);
+    }
+    .news-card{
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .news-card img{
+        border-radius: 10px 10px 0 0;
+        transition: transform 0.2s ease;
+    }
+    .news-card:hover img{
+        transform: scale(1.1);
+    }
+
+  </style>
+  <body>
+   <!-- ═══════════ MAIN NAVBAR ═══════════ -->
+    <header>
+    <nav class="navbar navbar-expand-lg  border-bottom border-light sticky-top py-3 wow animate__slideInDown ">
+        <div class="container">
+            <!-- Logo & Brand -->
+            <a class="navbar-brand" href="#">
+                 <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
+                <div>
+                    <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
+                    <div style="font-size: 12px; font-family: 'Battambang'; color: var(--primary-color);">
+                        Buddhism & Society
+                    </div>
+                </div>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <i class="fas fa-bars" style="color: var(--primary-color);"></i>
+            </button>
+
+            <!-- Main Menu -->
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link " href="../home.html">
+                            ទំព័រដើម
+                        </a>
+                    </li>
+                    <!-- Dhamma Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                           ព្រះធម៌
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="../pages/media-library.html">
+                                    បណ្ណាល័យព្រះធម៌
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    វីដេអូធម៌
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                   សំឡេងធម៌
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                     សំណួរ និង ចម្លើយ
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Courses -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                             ការអប់រំ
+                        </a>
+                    </li>
+
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                           
+                             ព្រឹត្តិការណ៍
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                     ពុទ្ធសាសនា
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    វប្បធម៌ខ្មែរ
+                                </a>
+                            </li>
+                          
+                          
+                        </ul>
+                    </li>
+                      <!-- Services -->
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/events.html">
+                            កម្មវិធី
+                        </a>
+                    </li>
+  <!-- About Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                             អំពីយើង
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    ប្រវត្តិ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    បេសកកម្ម
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    ក្រុមការងារ
+                                </a>
+                            </li>
+                            
+                          
+                        </ul>
+                    </li>
+                      <!-- Services -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                             ផ្សេងៗ
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="../pages/Buddhist Rituals.html">
+                                    កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    ចូលរូមស្ម័គ្រចិត្ត
+                                </a>
+                            </li>
+                          
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                  បរិស្ថាន
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                   
+                 
+                </ul>
+                <!-- Right Side Buttons -->
+
+                <div class="d-flex gap-2 align-items-center ms-auto">
+                      <!-- Theme Toggle -->
+                    <button class="theme-toggle" onclick="toggleTheme()">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+                       <!-- button search model -->
+                    <button class="btn btn-outline-primary d-none d-lg-block " data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search "></i> ស្វែងរក
+                    </button>          
+                    <!-- User Profile -->
+                    <a href="#" class="user-profile">
+                        <img src="../asset/images/img-profile/user-profile.png" alt="" class="img-f" style="width: 50px; " height="50px">
+                    </a>
+                   
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    </header>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <div class="text-center">
+                <h1 class="display-4 fw-bold mb-3">📰 ទំព័រព័ត៌មាន</h1>
+                <p class="lead mb-0">News & Articles</p>
+                <p class="mt-2">ព័ត៌មានពុទ្ធសាសនា | អត្ថបទពន្យល់ធម៌ | ប្រវត្តិពុទ្ធសាសនា</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <div class="d-flex">
+                    <input type="text" class="form-control" placeholder="ស្វែងរកអត្ថបទ... (Search articles...)">
+                    <button type="button">
+                        <i class="fas fa-search me-2"></i>ស្វែងរក
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="category-filter">
+        <div class="container">
+            <div class="text-center">
+                <button class="category-btn active" data-category="all">
+                    <i class="fas fa-th me-2"></i>ទាំងអស់
+                </button>
+                <button class="category-btn" data-category="news">
+                    <i class="fas fa-newspaper me-2"></i>ព័ត៌មានពុទ្ធសាសនា
+                </button>
+                <button class="category-btn" data-category="articles">
+                    <i class="fas fa-book-open me-2"></i>អត្ថបទពន្យល់ធម៌
+                </button>
+                <button class="category-btn" data-category="history">
+                    <i class="fas fa-landmark me-2"></i>ប្រវត្តិពុទ្ធសាសនា
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="container mb-5">
+        <div class="featured-article fade-in-up">
+            <span class="featured-badge">
+                <i class="fas fa-star me-2"></i>អត្ថបទពិសេស
+            </span>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=600&h=400&fit=crop" alt="Featured">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-3">ព្រះពុទ្ធសាសនានិងការអភិវឌ្ឍន៍សង្គមកម្ពុជា</h2>
+                    <div class="card-meta mb-3">
+                        <span><i class="fas fa-calendar-alt me-1"></i>១០ វិច្ឆិកា ២០២៥</span>
+                        <span><i class="fas fa-user me-1"></i>ព្រះអគ្គមហាសេនាបតី ឌិត ធៀន</span>
+                        <span><i class="fas fa-eye me-1"></i>១,២៣៤ ពេលអាន</span>
+                    </div>
+                    <p class="mb-4">ព្រះពុទ្ធសាសនាបានដើរតួនាទីយ៉ាងសំខាន់ក្នុងការកសាងសង្គមកម្ពុជាតាំងពីជាយូរយារមកម្លោះ។ តាមរយៈការបង្រៀនអំពីសីល សមាធិ បញ្ញា ព្រះធម៌បានជួយបង្កើតគុណតម្លៃសីលធម៌ និងការរស់នៅប្រកបដោយសន្តិភាពក្នុងចំណោមប្រជាជនខ្មែរ...</p>
+                    <button class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#readMoreModal">
+                        អានបន្ត <i class="fas fa-arrow-right ms-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="container mb-5">
+        <div class="row g-4" id="newsGrid">
+            <!-- News Card 1 -->
+            <div class="col-lg-4 col-md-6 fade-in-up" data-category="news">
+                <div class="card news-card">
+                    <div class="card-img-wrapper">
+                        <span class="category-badge">ព័ត៌មាន</span>
+                        <img src="https://images.unsplash.com/photo-1604881991720-f91add269bed?w=400&h=300&fit=crop" class="card-img-top" alt="News">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="fas fa-calendar-alt me-1"></i>០៩ វិច្ឆិកា</span>
+                            <span><i class="fas fa-eye me-1"></i>៨៩៥</span>
+                        </div>
+                        <h5 class="card-title">វត្តបទុមវត្តីរៀបចំពិធីបុណ្យកឋិនធំប្រចាំឆ្នាំ</h5>
+                        <p class="card-text">វត្តបទុមវត្តីនឹងរៀបចំពិធីបុណ្យកឋិនធំប្រចាំឆ្នាំ២០២៥ ក្នុងថ្ងៃទី១៥ វិច្ឆិកា ខាងមុខនេះ ដោយមានការចូលរួមពីព្រះសង្ឃ និងពុទ្ធបរិស័ទជាច្រើន...</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#readMoreModal">អានបន្ត <i class="fas fa-arrow-right ms-2"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Card 2 -->
+            <div class="col-lg-4 col-md-6 fade-in-up" data-category="articles">
+                <div class="card news-card">
+                    <div class="card-img-wrapper">
+                        <span class="category-badge">អត្ថបទ</span>
+                        <img src="https://images.unsplash.com/photo-1528318269406-37f8e46c3e1d?w=400&h=300&fit=crop" class="card-img-top" alt="Article">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="fas fa-calendar-alt me-1"></i>០៨ វិច្ឆិកា</span>
+                            <span><i class="fas fa-eye me-1"></i>១,១២៣</span>
+                        </div>
+                        <h5 class="card-title">ការអនុវត្តសមាធិក្នុងជីវិតប្រចាំថ្ងៃ</h5>
+                        <p class="card-text">សមាធិគឺជាការបង្រួមចិត្តឲ្យតាំងស្ងៀម និងប្រមូលផ្តុំចិត្តឲ្យរួមជាមួយ។ ការអនុវត្តសមាធិជាប្រចាំអាចនាំមកនូវអត្ថប្រយោជន៍ជាច្រើនដល់ជីវិត...</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#readMoreModal">អានបន្ត <i class="fas fa-arrow-right ms-2"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Card 3 -->
+            <div class="col-lg-4 col-md-6 fade-in-up" data-category="history">
+                <div class="card news-card">
+                    <div class="card-img-wrapper">
+                        <span class="category-badge">ប្រវត្តិសាស្ត្រ</span>
+                        <img src="https://images.unsplash.com/photo-1563640171-00a8cdbef1d6?w=400&h=300&fit=crop" class="card-img-top" alt="History">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="fas fa-calendar-alt me-1"></i>០៧ វិច្ឆិកា</span>
+                            <span><i class="fas fa-eye me-1"></i>៩៥៦</span>
+                        </div>
+                        <h5 class="card-title">ប្រវត្តិនៃការចូលព្រះពុទ្ធសាសនាមកកម្ពុជា</h5>
+                        <p class="card-text">ព្រះពុទ្ធសាសនាចូលមកកម្ពុជាតាំងពីសតវត្សទី៣ មុនគ.ស តាមរយៈពាណិជ្ជករឥណ្ឌា។ ការផ្សព្វផ្សាយព្រះធម៌បានរីកលូតលាស់យ៉ាងខ្លាំង...</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#readMoreModal">អានបន្ត <i class="fas fa-arrow-right ms-2"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Card 4 -->
+            <div class="col-lg-4 col-md-6 fade-in-up" data-category="news">
+                <div class="card news-card">
+                    <div class="card-img-wrapper">
+                        <span class="category-badge">ព័ត៌មាន</span>
+                        <img src="https://images.unsplash.com/photo-1585647347384-2593bc35786b?w=400&h=300&fit=crop" class="card-img-top" alt="News">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="fas fa-calendar-alt me-1"></i>០៦ វិច្ឆិកា</span>
+                            <span><i class="fas fa-eye me-1"></i>៧៤៥</span>
+                        </div>
+                        <h5 class="card-title">វគ្គបណ្តុះបណ្តាលកម្មដ្ឋានសម្រាប់យុវជន</h5>
+                        <p class="card-text">សាលាបាលីខ្មែរបើកវគ្គបណ្តុះបណ្តាលកម្មដ្ឋានជូនយុវជនដោយឥតគិតថ្លៃ រយៈពេល៣ថ្ងៃ ចាប់ពីថ្ងៃទី២០-២២ វិច្ឆិកា...</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#readMoreModal">អានបន្ត <i class="fas fa-arrow-right ms-2"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Card 5 -->
+            <div class="col-lg-4 col-md-6 fade-in-up" data-category="articles">
+                <div class="card news-card">
+                    <div class="card-img-wrapper">
+                        <span class="category-badge">អត្ថបទ</span>
+                        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&h=300&fit=crop" class="card-img-top" alt="Article">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="fas fa-calendar-alt me-1"></i>០៥ វិច្ឆិកា</span>
+                            <span><i class="fas fa-eye me-1"></i>១,៣៤៥</span>
+                        </div>
+                        <h5 class="card-title">អត្ថន័យនៃសីល៥ និងអត្ថប្រយោជន៍របស់វា</h5>
+                        <p class="card-text">សីល៥គឺជាគោលការណ៍ប្រព្រឹត្តសម្រាប់ពុទ្ធបរិស័ទ ដែលជួយឲ្យមនុស្សរស់នៅប្រកបដោយសុខសន្តិភាព និងមានសីលធម៌ល្អ...</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#readMoreModal">អានបន្ត <i class="fas fa-arrow-right ms-2"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Card 6 -->
+            <div class="col-lg-4 col-md-6 fade-in-up" data-category="history">
+                <div class="card news-card">
+                    <div class="card-img-wrapper">
+                        <span class="category-badge">ប្រវត្តិសាស្ត្រ</span>
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=400&h=300&fit=crop" class="card-img-top" alt="History">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="fas fa-calendar-alt me-1"></i>០៤ វិច្ឆិកា</span>
+                            <span><i class="fas fa-eye me-1"></i>៨៦៧</span>
+                        </div>
+                        <h5 class="card-title">ប្រវត្តិវត្តប្រាសាទអង្គរវត្ត</h5>
+                        <p class="card-text">អង្គរវត្តគឺជាប្រាសាទពុទ្ធសាសនាដ៏ធំបំផុតនៅកម្ពុជា សាងសង់ក្នុងរជ្ជកាលព្រះបាទសូរ្យវរ្ម័នទី២ នៅសតវត្សទី១២...</p>
+                        <!-- Read More Button model -->
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#readMoreModal">អានបន្ត <i class="fas fa-arrow-right ms-2"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Card 7 -->
+            <div class="col-lg-4 col-md-6 fade-in-up" data-category="news">
+                <div class="card news-card">
+                    <div class="card-img-wrapper">
+                        <span class="category-badge">ព័ត៌មាន</span>
+                        <img src="https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?w=400&h=300&fit=crop" class="card-img-top" alt="News">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="fas fa-calendar-alt me-1"></i>០៣ វិច្ឆិកា</span>
+                            <span><i class="fas fa-eye me-1"></i>៦៥៤</span>
+                        </div>
+                        <h5 class="card-title">ពិធីបុណ្យអុំទូកបង្រ្គប់ប្រទីបបង្រ្គន់ព្រះតេជព្រះគុណ</h5>
+                        <p class="card-text">នៅថ្ងៃទី១៤ វិច្ឆិកា នេះ នឹងមានពិធីបុណ្យអុំទូកជាប្រពៃណីប្រចាំឆ្នាំ ដែលពុទ្ធបរិស័ទរាប់រយនាក់នឹងចូលរួម...</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#readMoreModal">អានបន្ត <i class="fas fa-arrow-right ms-2"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Card 8 -->
+            <div class="col-lg-4 col-md-6 fade-in-up" data-category="articles">
+                <div class="card news-card">
+                    <div class="card-img-wrapper">
+                        <span class="category-badge">អត្ថបទ</span>
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" class="card-img-top" alt="Article">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="fas fa-calendar-alt me-1"></i>០២ វិច្ឆិកា</span>
+                            <span><i class="fas fa-eye me-1"></i>១,០៨៩</span>
+                        </div>
+                        <h5 class="card-title">ធម្មតាតាមទស្សនៈព្រះពុទ្ធសាសនា</h5>
+                        <p class="card-text">ធម្មតាគឺជាច្បាប់ធម្មជាតិដែលគ្រប់គ្រងលើសកលលោក។ ការយល់ដឹងអំពីធម្មតានាំឲ្យយើងរស់នៅប្រកបដោយសន្តិភាពចិត្ត...</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#readMoreModal">អានបន្ត <i class="fas fa-arrow-right ms-2"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Card 9 -->
+            <div class="col-lg-4 col-md-6 fade-in-up" data-category="history">
+                <div class="card news-card">
+                    <div class="card-img-wrapper">
+                        <span class="category-badge">ប្រវត្តិសាស្ត្រ</span>
+                        <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=400&h=300&fit=crop" class="card-img-top" alt="History">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="fas fa-calendar-alt me-1"></i>០១ វិច្ឆិកា</span>
+                            <span><i class="fas fa-eye me-1"></i>៩២៣</span>
+                        </div>
+                        <h5 class="card-title">តួនាទីព្រះសង្ឃក្នុងសង្គមខ្មែរបុរាណ</h5>
+                        <p class="card-text">ព្រះសង្ឃបានដើរតួនាទីយ៉ាងសំខាន់ក្នុងការអប់រំ ការថែរក្សាសុខភាព និងការផ្តល់ប្រឹក្សាដល់ប្រជាជនខ្មែរ...</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#readMoreModal">អានបន្ត <i class="fas fa-arrow-right ms-2"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <nav aria-label="Page navigation" class="mt-5">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">១</a></li>
+                <li class="page-item"><a class="page-link" href="#">២</a></li>
+                <li class="page-item"><a class="page-link" href="#">៣</a></li>
+                <li class="page-item"><a class="page-link" href="#">៤</a></li>
+                <li class="page-item"><a class="page-link" href="#">៥</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+
+
+    <!-- Newsletter Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-white mb-4 mb-lg-0">
+                    <h3 class="fw-bold mb-3">
+                        <i class="fas fa-envelope me-2"></i>ចុះឈ្មោះទទួលព័ត៌មាន
+                    </h3>
+                    <p class="mb-0">ទទួលបានព័ត៌មានថ្មីៗអំពីព្រះធម៌ និងកម្មវិធីរបស់យើង</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group" style="border-radius: 50px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
+                        <input type="email" class="form-control border-0 py-3 px-4" placeholder="បញ្ចូលអ៊ីមែលរបស់អ្នក...">
+                        <button class="btn btn-light px-4" type="button">
+                            <i class="fas fa-paper-plane me-2"></i>ចុះឈ្មោះ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+
+
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <!-- About Section -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <i
+                class="fas fa-dharmachakra fs-1 me-3"
+                style="color: var(--primary-color)"
+              ></i>
+              <h5 class="mt-5">អំពីពុទ្ធសាសនានិងសង្គម</h5>
+            </div>
+            <p style="line-height: 1.8">
+              គេហទំព័រដែលផ្តល់នូវការអប់រំ សេវាកម្មសង្គម
+              និងការលើកកម្ពស់គុណតម្លៃសីលធម៌តាមគោលការណ៍ព្រះធម៌
+              ដើម្បីអភិវឌ្ឍន៍សង្គមប្រកបដោយសន្តិភាព និងសុខុមាលភាព។
+            </p>
+            <div class="footer-social mt-3">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-telegram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5>តំណភ្ជាប់លឿន</h5>
+            <a href="#"><i class="fas fa-angle-right"></i> ទំព័រដើម</a>
+            <a href="#"><i class="fas fa-angle-right"></i> អំពីយើង</a>
+            <a href="#"><i class="fas fa-angle-right"></i> សេវាកម្ម</a>
+            <a href="../pages/events.html"
+              ><i class="fas fa-angle-right"></i> ព្រឹត្តិការណ៍</a
+            >
+            <a href="#"><i class="fas fa-angle-right"></i> ទំនាក់ទំនង</a>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>សេវាកម្ម</h5>
+            <a href="#"><i class="fas fa-angle-right"></i> គម្រោងសង្គម</a>
+            <a href="#"><i class="fas fa-angle-right"></i> ការអប់រំ</a>
+            <a href="#"><i class="fas fa-angle-right"></i> វគ្គបណ្តុះបណ្តាល</a>
+            <a href="#"><i class="fas fa-angle-right"></i> អ្នកស្ម័គ្រចិត្ត</a>
+            <a href="#"><i class="fas fa-angle-right"></i> ការបរិច្ចាគ</a>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>ទំនាក់ទំនង</h5>
+            <p>
+              <i
+                class="fas fa-map-marker-alt"
+                style="color: var(--primary-color)"
+              ></i>
+              ភ្នំពេញ, កម្ពុជា
+            </p>
+            <p>
+              <i class="fas fa-phone" style="color: var(--primary-color)"></i>
+              012 345 678
+            </p>
+            <p>
+              <i
+                class="fas fa-envelope"
+                style="color: var(--primary-color)"
+              ></i>
+              info@buddhism-society.org
+            </p>
+            <p>
+              <i class="fas fa-clock" style="color: var(--primary-color)"></i>
+              ច័ន្ទ - សុក្រ: 8:00 - 17:00
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="mb-0">
+                © 2024 ពុទ្ធសាសនានិងសង្គម. រក្សាសិទ្ធិគ្រប់យ៉ាង។
+              </p>
+            </div>
+            <div
+              class="col-md-6 text-center text-md-end justify-content-center justify-content-md-end d-flex"
+            >
+              <a href="#" class="me-3">គោលការណ៍ឯកជនភាព</a>
+              <a href="#" class="me-3">លក្ខខណ្ឌប្រើប្រាស់</a>
+              <a href="#">FAQ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- model read more -->
+    <div class="modal fade" id="readMoreModal" tabindex="-1" aria-labelledby="readMoreModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="readMoreModalLabel">អានបន្ត...</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>ខ្លឹមសារពេញ...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- Bootstrap JS -->
+    <script src="../asset/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="../asset/aos-master/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="../asset/js/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+     <script>
+
+        // Category Filter
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const newsCards = document.querySelectorAll('[data-category]');
+
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const category = btn.getAttribute('data-category');
+
+                newsCards.forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Search Functionality
+        const searchInput = document.querySelector('.search-box input');
+        const searchBtn = document.querySelector('.search-box button');
+
+        function performSearch() {
+            const searchTerm = searchInput.value.toLowerCase();
+            
+            newsCards.forEach(card => {
+                const title = card.querySelector('.card-title').textContent.toLowerCase();
+                const text = card.querySelector('.card-text').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || text.includes(searchTerm) || searchTerm === '') {
+                    card.style.display = 'block';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 10);
+                } else {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+
+        searchBtn.addEventListener('click', performSearch);
+        searchInput.addEventListener('keyup', (e) => {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+        // Smooth scroll to top on pagination click
+        document.querySelectorAll('.pagination .page-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+  </body>
+</html>

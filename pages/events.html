@@ -53,171 +53,183 @@
   </style>
   <body>
     <!-- ═══════════ HEADER ═══════════ -->
-   <!-- ═══════════ MAIN NAVBAR ═══════════ -->
-    <nav class="navbar navbar-expand-lg  border-bottom border-light sticky-top py-3 wow animate__slideInDown ">
-        <div class="container">
-            <!-- Logo & Brand -->
-            <a class="navbar-brand" href="#">
-                 <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
-                <div>
-                    <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
-                    <div style="font-size: 12px; font-family: 'Battambang'; color: var(--text-secondary);">
-                        Buddhism & Society
-                    </div>
-                </div>
-            </a>
-
-            <!-- Mobile Toggle -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-                <i class="fas fa-bars" style="color: var(--primary-color);"></i>
-            </button>
-
-            <!-- Main Menu -->
-            <div class="collapse navbar-collapse" id="navbarMain">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
-                    <!-- Home -->
-                    <li class="nav-item">
-                        <a class="nav-link " href="../home.html">
-                            ទំព័រដើម
-                        </a>
-                    </li>
-                    <!-- Dhamma Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                           ព្រះធម៌
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="../pages/media-library.html">
-                                    បណ្ណាល័យព្រះធម៌
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    វីដេអូធម៌
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                   សំឡេងធម៌
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                     សំណួរ និង ចម្លើយ
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <!-- Courses -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                             ការអប់រំ
-                        </a>
-                    </li>
-
-                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                           
-                             ព្រឹត្តិការណ៍
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                     ពុទ្ធសាសនា
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    វប្បធម៌ខ្មែរ
-                                </a>
-                            </li>
-                          
-                          
-                        </ul>
-                    </li>
-                      <!-- Services -->
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="../pages/events.html">
-                            កម្មវិធី
-                        </a>
-                    </li>
-  <!-- About Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                             អំពីយើង
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    ប្រវត្តិ
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    បេសកកម្ម
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    ក្រុមការងារ
-                                </a>
-                            </li>
-                            
-                          
-                        </ul>
-                    </li>
-                      <!-- Services -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                             ផ្សេងៗ
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="../pages/Buddhist Rituals.html">
-                                    កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    ចូលរូមស្ម័គ្រចិត្ត
-                                </a>
-                            </li>
-                          
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                  បរិស្ថាន
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                   
-                 
-                </ul>
-                <!-- Right Side Buttons -->
-
-                <div class="d-flex gap-2 align-items-center ms-auto">
-                      <!-- Theme Toggle -->
-                    <button class="theme-toggle" onclick="toggleTheme()">
-                        <i class="fas fa-moon" id="themeIcon"></i>
-                    </button>
-                       <!-- button search model -->
-                    <button class="btn btn-outline-primary d-none d-lg-block " data-bs-toggle="modal" data-bs-target="#searchModal">
-                        <i class="fas fa-search "></i> ស្វែងរក
-                    </button>          
-                    <!-- User Profile -->
-                    <a href="#" class="user-profile">
-                        <img src="../asset/images/img-profile/user-profile.png" alt="" class="img-f" style="width: 50px; " height="50px">
-                    </a>
-                   
-                </div>
-                
+    <!-- ═══════════ MAIN NAVBAR ═══════════ -->
+    <nav
+      class="navbar navbar-expand-lg border-bottom border-light sticky-top py-3 wow animate__slideInDown"
+    >
+      <div class="container">
+        <!-- Logo & Brand -->
+        <a class="navbar-brand" href="#">
+          <i
+            class="fas fa-dharmachakra fs-1"
+            style="color: var(--primary-color)"
+          ></i>
+          <div>
+            <div style="font-size: 20px">ពុទ្ធសាសនានិងសង្គម</div>
+            <div
+              style="
+                font-size: 12px;
+                font-family: 'Battambang';
+                color: var(--primary-color);
+              "
+            >
+              Buddhism & Society
             </div>
+          </div>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMain"
+        >
+          <i class="fas fa-bars" style="color: var(--primary-color)"></i>
+        </button>
+
+        <!-- Main Menu -->
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+            <!-- Home -->
+            <li class="nav-item">
+              <a class="nav-link" href="../home.html"> ទំព័រដើម </a>
+            </li>
+            <!-- Dhamma Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                ព្រះធម៌
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../pages/media-library.html">
+                    បណ្ណាល័យព្រះធម៌
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> វីដេអូធម៌ </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> សំឡេងធម៌ </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> សំណួរ និង ចម្លើយ </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Courses -->
+            <li class="nav-item">
+              <a class="nav-link" href="#"> ការអប់រំ </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                ព្រឹត្តិការណ៍
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#"> ពុទ្ធសាសនា </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> វប្បធម៌ខ្មែរ </a>
+                </li>
+              </ul>
+            </li>
+            <!-- Services -->
+
+            <li class="nav-item">
+              <a class="nav-link active" href="../pages/events.html">
+                កម្មវិធី
+              </a>
+            </li>
+            <!-- About Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                អំពីយើង
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#"> ប្រវត្តិ </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> បេសកកម្ម </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> ក្រុមការងារ </a>
+                </li>
+              </ul>
+            </li>
+            <!-- Services -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                ផ្សេងៗ
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../pages/Buddhist Rituals.html"
+                  >
+                    កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> ចូលរូមស្ម័គ្រចិត្ត </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#"> បរិស្ថាន </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Right Side Buttons -->
+
+          <div class="d-flex gap-2 align-items-center ms-auto">
+            <!-- Theme Toggle -->
+            <button class="theme-toggle" onclick="toggleTheme()">
+              <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+            <!-- button search model -->
+            <button
+              class="btn btn-outline-primary d-none d-lg-block"
+              data-bs-toggle="modal"
+              data-bs-target="#searchModal"
+            >
+              <i class="fas fa-search"></i> ស្វែងរក
+            </button>
+            <!-- User Profile -->
+            <a href="#" class="user-profile">
+              <img
+                src="../asset/images/img-profile/user-profile.png"
+                alt=""
+                class="img-f"
+                style="width: 50px"
+                height="50px"
+              />
+            </a>
+          </div>
         </div>
+      </div>
     </nav>
-  
+
     <!-- PAGE HEADER -->
     <div class="page-header">
       <div class="container text-center">
@@ -300,7 +312,7 @@
           <div class="event-card">
             <div class="position-relative">
               <img
-                src="https://storage.googleapis.com/rnk/post/202505/0jidF2TdBxpcDrX89MTWFIrVq8y4Wn9RzW3qgXS6.jpg"
+                src="../asset/images/img-events/វិសាខ.jpg"
                 class="event-card-img"
                 alt="ពិធីបុណ្យវិសាខបូជា"
               />
@@ -343,7 +355,7 @@
           <div class="event-card">
             <div class="position-relative">
               <img
-                src="https://www.csndaily.com/wp-content/uploads/2022/09/official-asset.jpg"
+                src="../asset/images/img-events/ភ្ជុំបិណ្ឌ.jpg"
                 class="event-card-img"
                 alt="ពិធីបុណ្យភ្ជុំបិណ្ឌ"
               />
@@ -386,7 +398,7 @@
           <div class="event-card">
             <div class="position-relative">
               <img
-                src="https://3.bp.blogspot.com/-A5rKL97zTko/Xj04AHV1RXI/AAAAAAABURc/slAK-yrHTvQVKmY5RfWmoYKOvAfV_J6PQCLcBGAsYHQ/s1600/84493436_2483087505293096_3142829532730359808_n.jpg"
+                src="../asset/images/img-events/មាឃបុជា.jpg"
                 class="event-card-img"
                 alt="ពិធីបុណ្យមាឃបូជា"
               />
@@ -420,7 +432,6 @@
                 onclick="setEventDetails('ពិធីបុណ្យមាឃបូជា', '១៥ កើត ខែមាឃ', 'វត្តឧណ្ណាលោម')"
                 >ចុះឈ្មោះ <i class="bi bi-arrow-right"></i
               ></a>
-           
             </div>
           </div>
         </div>
@@ -429,7 +440,7 @@
           <div class="event-card">
             <div class="position-relative">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYVIkUNKCR_Zi9bGZjonTjFHBE4Ns_G545ZQ&s"
+                src="../asset/images/img-events/វិបស្សនា.png"
                 class="event-card-img"
                 alt="វគ្គបណ្តុះបណ្តាលវិបស្សនា"
               />
@@ -471,7 +482,7 @@
           <div class="event-card">
             <div class="position-relative">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfj_SYk75vF8wlXcprCtkvzdhOdLZL5wZVvA&s"
+                src="../asset/images/img-events/សិក្សា.webp"
                 class="event-card-img"
                 alt="វគ្គសិក្សាព្រះធម៌"
               />
@@ -493,61 +504,62 @@
                   <span>មជ្ឈមណ្ឌលសិក្សាព្រះធម៌</span>
                 </div>
               </div>
-                <p class="event-description">
-                    វគ្គសិក្សាព្រះធម៌នេះមានគោលបំណងផ្តល់ចំណេះដឹងជ្រាលជ្រៅ
-                    អំពីព្រះធម៌ និងការអនុវត្តក្នុងជីវិតប្រចាំថ្ងៃ។
-                </p>
-                <a
-                  href="#"
-                  class="btn-event"
-                  data-bs-toggle="modal"
-                  data-bs-target="#registrationModal"
-                  onclick="setEventDetails('វគ្គសិក្សាព្រះធម៌', '០៧ មេសា - ២៨ មេសា', 'មជ្ឈមណ្ឌលសិក្សាព្រះធម៌')"
-                  >ចុះឈ្មោះ <i class="bi bi-arrow-right"></i
-                ></a>
+              <p class="event-description">
+                វគ្គសិក្សាព្រះធម៌នេះមានគោលបំណងផ្តល់ចំណេះដឹងជ្រាលជ្រៅ អំពីព្រះធម៌
+                និងការអនុវត្តក្នុងជីវិតប្រចាំថ្ងៃ។
+              </p>
+              <a
+                href="#"
+                class="btn-event"
+                data-bs-toggle="modal"
+                data-bs-target="#registrationModal"
+                onclick="setEventDetails('វគ្គសិក្សាព្រះធម៌', '០៧ មេសា - ២៨ មេសា', 'មជ្ឈមណ្ឌលសិក្សាព្រះធម៌')"
+                >ចុះឈ្មោះ <i class="bi bi-arrow-right"></i
+              ></a>
             </div>
           </div>
         </div>
-<!-- Event Card 6 -->
-<div class="col-md-6 col-lg-4 mt-5">
-  <div class="event-card">
-    <div class="position-relative">
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNtkzXw41Tufp8_KAk5f62fqI6qD_BXbOPBA&s"
-        class="event-card-img"
-        alt="កម្មវិធីស្ម័គ្រចិត្ត"
-      />
-      <div class="event-date">
-        <div class="day">១៥</div>
-        <div class="month">ឧសភា</div>
-      </div>
-      <div class="event-badge">សកម្មភាពសង្គម</div>
-    </div>
-    <div class="event-card-body">
-      <h3 class="event-title">កម្មវិធីស្ម័គ្រចិត្ត</h3>
-      <div class="event-meta">
-        <div class="event-meta-item">
-          <i class="bi bi-clock"></i>
-          <span>៨:០០ព្រឹក - ១២:០០ថ្ងៃ</span>
+        <!-- Event Card 6 -->
+        <div class="col-md-6 col-lg-4 mt-5">
+          <div class="event-card">
+            <div class="position-relative">
+              <img
+                src="../asset/images/img-events/កម្មវិធីស្ម័គ្រចិត្ត.jpg"
+                class="event-card-img"
+                alt="កម្មវិធីស្ម័គ្រចិត្ត"
+              />
+              <div class="event-date">
+                <div class="day">១៥</div>
+                <div class="month">ឧសភា</div>
+              </div>
+              <div class="event-badge">សកម្មភាពសង្គម</div>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-title">កម្មវិធីស្ម័គ្រចិត្ត</h3>
+              <div class="event-meta">
+                <div class="event-meta-item">
+                  <i class="bi bi-clock"></i>
+                  <span>៨:០០ព្រឹក - ១២:០០ថ្ងៃ</span>
+                </div>
+                <div class="event-meta-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>មជ្ឈមណ្ឌលសិក្សាព្រះធម៌</span>
+                </div>
+              </div>
+              <p class="event-description">
+                ចូលរួមជាអ្នកស្ម័គ្រចិត្តក្នុងសកម្មភាពសង្គម និងជួយសហគមន៍۔
+              </p>
+              <a
+                href="#"
+                class="btn-event"
+                data-bs-toggle="modal"
+                data-bs-target="#registrationModal"
+                onclick="setEventDetails('កម្មវិធីស្ម័គ្រចិត្ត', '១៥ ឧសភា', 'មជ្ឈមណ្ឌលសិក្សាព្រះធម៌')"
+                >ចុះឈ្មោះ <i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
         </div>
-        <div class="event-meta-item">
-          <i class="bi bi-geo-alt"></i>
-          <span>មជ្ឈមណ្ឌលសិក្សាព្រះធម៌</span>
-        </div>
-      </div>
-        <p class="event-description">
-            ចូលរួមជាអ្នកស្ម័គ្រចិត្តក្នុងសកម្មភាពសង្គម និងជួយសហគមន៍۔
-        </p>
-        <a
-          href="#"
-          class="btn-event"
-          data-bs-toggle="modal"
-          data-bs-target="#registrationModal"
-          onclick="setEventDetails('កម្មវិធីស្ម័គ្រចិត្ត', '១៥ ឧសភា', 'មជ្ឈមណ្ឌលសិក្សាព្រះធម៌')"
-          >ចុះឈ្មោះ <i class="bi bi-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
       </div>
       <!-- PAGINATION -->
       <nav aria-label="Page navigation" class="mt-5">
@@ -565,7 +577,7 @@
       </nav>
 
       <!-- UPCOMING HIGHLIGHTS -->
-       <!-- ព័ត៌មានលម្អិត use modal -->
+      <!-- ព័ត៌មានលម្អិត use modal -->
       <section class="mt-5 mb-5">
         <h3 class="fw-bold mb-4 text-center">កម្មវិធីពិសេសខាងមុខ</h3>
         <div class="row g-4">
@@ -583,7 +595,13 @@
                 <p>
                   វគ្គបណ្តុះបណ្តាលវិបស្សនាយ៉ាងជ្រាលជ្រៅ ដោយការណែនាំពីគ្រូពិសេស។
                 </p>
-               <button class="btn-event" data-bs-toggle="modal" data-bs-target="#eventDetailsModal">ព័ត៌មានលម្អិត</button>
+                <button
+                  class="btn-event"
+                  data-bs-toggle="modal"
+                  data-bs-target="#eventDetailsModal"
+                >
+                  ព័ត៌មានលម្អិត
+                </button>
               </div>
             </div>
           </div>
@@ -599,7 +617,13 @@
                 <h5 class="fw-bold">វគ្គសិក្សាព្រះធម៌</h5>
                 <p class="text-muted">រៀងរាល់ថ្ងៃអាទិត្យ</p>
                 <p>សិក្សាព្រះធម៌ជាមួយអ្នកជំនាញ ពីមូលដ្ឋានដល់កម្រិតខ្ពស់។</p>
-                <button class="btn-event" data-bs-toggle="modal" data-bs-target="#eventDetailsModal">ព័ត៌មានលម្អិត</button>
+                <button
+                  class="btn-event"
+                  data-bs-toggle="modal"
+                  data-bs-target="#eventDetailsModal2"
+                >
+                  ព័ត៌មានលម្អិត
+                </button>
               </div>
             </div>
           </div>
@@ -615,7 +639,13 @@
                 <h5 class="fw-bold">កម្មវិធីស្ម័គ្រចិត្ត</h5>
                 <p class="text-muted">ជារៀងរាល់ខែ</p>
                 <p>ចូលរួមជាអ្នកស្ម័គ្រចិត្តក្នុងសកម្មភាពសង្គម និងជួយសហគមន៍។</p>
-                <button class="btn-event" data-bs-toggle="modal" data-bs-target="#eventDetailsModal">ព័ត៌មានលម្អិត</button>
+                <button
+                  class="btn-event"
+                  data-bs-toggle="modal"
+                  data-bs-target="#eventDetailsModal"
+                >
+                  ព័ត៌មានលម្អិត
+                </button>
               </div>
             </div>
           </div>
@@ -645,8 +675,6 @@
         </div>
       </section>
     </div>
-
-
 
     <!-- ═══════════ FOOTER ═══════════ -->
     <footer>
@@ -1017,7 +1045,7 @@
         </div>
       </div>
     </div>
-    <!-- ព័ត៌មានលម្អិត modal -->
+    <!-- ព័ត៌មានលម្អិតវិបស្សនា modal -->
     <div
       class="modal fade"
       id="eventDetailsModal"
@@ -1025,7 +1053,7 @@
       aria-labelledby="eventDetailsModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="eventDetailsModalLabel">
@@ -1039,17 +1067,63 @@
             ></button>
           </div>
           <div class="modal-body">
+            <h6 class="fw-bold">
+              ពុទ្ធមណ្ឌលវិបស្សនាធុរៈ នៃព្រះរាជាណាចក្រកម្ពុជា
+              នឹងបើកវគ្គបដិបត្តិវិបស្សនាវគ្គខ្លី
+            </h6>
             <p>
-              ព័ត៌មានលម្អិតអំពីកម្មវិធីនេះនឹងត្រូវបានបញ្ចូលនៅទីនេះ។
-              សូមរង់ចាំព័ត៌មានបន្ថែមពីពួកយើង។
-              
+              ព្រះភិក្ខុរេវតៈ ណាត រត្តណា សមាជិកការិយាល័យរដ្ឋបាល
+              បានមានថេរដីកាប្រាប់សារព័ត៌មានឌីជីថល​​ថ្មីៗថា
+              វគ្គបដិបត្តិវិបស្សនាវគ្គខ្លីនេះ ធ្វើឡើងផ្ដោតលើការអប់រំផ្លូវចិត្ត
+              តាមបែបព្រះពុទ្ធសាសនា មានសមថកម្មដ្ឋាន និងវិបស្សនាកម្មដ្ឋាន។
+              «ពុទ្ធមណ្ឌលវិបស្សនាធុរៈ ចង់ឱ្យប្រជាជនខ្មែរយើង
+              បានស្វែងយល់ពីការអប់រំផ្លូវចិត្ត តាមបែបព្រះពុទ្ធសាសនា»។
+              នេះជាការបញ្ជាក់បន្ថែមរបស់ព្រះភិក្ខុ ណាត រត្តណា។
+              អ្នក​ដែលមាន​ចំណាប់អារម្មណ៍ អាច​ចុះឈ្មោះតាម Google Form
+              https://forms.gle/53QiCTwdAzuXusiW9 ​
+              រហូត​ដល់កាលបរិច្ឆេទ​ចុងក្រោយ​ នា​ថ្ងៃទី​១៥ ខែមករា។
+              សិក្ខាកាម​​ដែល​បាន​ចុះឈ្មោះ ត្រូវ​តម្រូវឱ្យនិមន្ត
+              និង​អញ្ជើញទៅ​កាន់ពុទ្ធមណ្ឌលវិបស្សនាធុរៈ នាព្រឹក​ថ្ងៃទី​៣១ ខែមករា
+              ដែលមានទីតាំងស្ថិតក្នុងឃុំផ្សារដែក ស្រុកពញាឮ ខេត្តកណ្ដាល
+              (ជិតភ្នំឧដុង្គ)។ វគ្គវិបស្សនានេះ ទទួលសិក្ខាកាម ប្រមាណ១៦០-១៧០
+              ដោយ​មិនមាន​ការ​តម្រូវឱ្យបង់ប្រាក់នោះឡើយ ប៉ុន្តែសិក្ខាកាម
+              អាចបរិច្ចាគតាមសទ្ធា៕
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ព័ត៌មានលម្អិតសិក្សាព្រះធម៍ modal -->
+    <div
+      class="modal fade"
+      id="eventDetailsModal2"
+      tabindex="-1"
+      aria-labelledby="eventDetailsModalLabel2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="eventDetailsModalLabel2">ព័ត៌មានលម្អិត</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              ការបញ្ជាក់បន្ថែមរបស់ព្រះភិក្ខុ ណាត រត្តណា។
+              អ្នក​ដែលមាន​ចំណាប់អារម្មណ៍ អាច​ចុះឈ្មោះតាម Google Form
+              https://forms.gle/53QiCTwdAzuXusiW9 ​រហូត​ដល់កាលបរិច្ឆេទ​ចុងក្រោយ​ នា
+              ថ្ងៃទី​១៥ ខែមករា។
             </p>
           </div>
         </div>
       </div>
     </div>
 
-    
 
     <!-- Bootstrap JS -->
     <script src="../asset/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
