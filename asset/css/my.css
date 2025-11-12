@@ -394,7 +394,7 @@
 .accordion-body{
     padding: 1rem 1.25rem;
     background: transparent !important;
-    color: var(--text-secondary) !important;
+    color: var(--text-color) !important;
     border-top: 1px solid rgba(16,24,40,0.04);
     font-size: 0.98rem;
     line-height: 1.6;
