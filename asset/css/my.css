@@ -48,6 +48,7 @@
     /* border-radius: 30px !important; */
     border-radius: 10px !important;
 }
+
 @media screen and (max-width: 768px) {
     .banner-title{
     
