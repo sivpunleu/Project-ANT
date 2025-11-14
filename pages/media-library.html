@@ -1,923 +1,921 @@
 <!DOCTYPE html>
 <html lang="km">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="គេហទំព័រផ្សព្វផ្សាយព្រះធម៌ បង្រៀន អប់រំសីលធម៌ និងចែករំលែកចំណេះដឹងខាងព្រះពុទ្ធសាសនា"
+    />
+    <meta
+      name="keywords"
+      content="ពុទ្ធសាសនា, ព្រះធម៌, សង្គម, កម្ពុជា, Buddhism, Cambodia"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="គេហទំព័រផ្សព្វផ្សាយព្រះធម៌ បង្រៀន អប់រំសីលធម៌ និងចែករំលែកចំណេះដឹងខាងព្រះពុទ្ធសាសនា">
-    <meta name="keywords" content="ពុទ្ធសាសនា, ព្រះធម៌, សង្គម, កម្ពុជា, Buddhism, Cambodia">
-
-    <title>បណ្ណាល័យព្រះធម៌ </title>
+    <title>បណ្ណាល័យព្រះធម៌</title>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/style.css" />
     <!-- events css -->
-    <link rel="stylesheet" href="../asset/css/medai-library.css">
+    <link rel="stylesheet" href="../asset/css/medai-library.css" />
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="../asset/css/theme.css">
+    <link rel="stylesheet" href="../asset/css/theme.css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap.css">
-    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap1.css">
+    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap.css" />
+    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap1.css" />
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <!-- AOS Animation -->
-    <link rel="stylesheet" href="../asset/aos-master/dist/aos.css">
+    <link rel="stylesheet" href="../asset/aos-master/dist/aos.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
 
     <!-- Google Fonts - Khmer -->
-    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap"
-        rel="stylesheet">
-
-</head>
-<style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
     .user-profile {
-        color: var(--primary-color);
+      color: var(--primary-color);
     }
 
     .user-profile:hover {
-        color: var(--primary-color);
+      color: var(--primary-color);
     }
-</style>
+    .nav-pills .nav-link {
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--primary-color);
+    }
 
-<body>
+    .nav-pills .nav-link.active {
+      background-color: var(--primary-color);
+      color: var(--text-secondary);
+    }
+    .nav-pills .nav-link {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 0.25rem;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+    }
+    .nav-pills .nav-link:hover,
+    .nav-pills .nav-link.active {
+      background: #fff;
+      color: #764ba2;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .book-card {
+      border-radius: 15px;
+      overflow: hidden;
+      color: var(--primary-color);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .book-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+    .book-cover {
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      color: #fff;
+    }
+    .book-info {
+      padding: 1.5rem;
+    }
+    .book-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+      min-height: 2.5rem;
+    }
+    .book-author {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+    .book-category {
+      display: inline-block;
+      background: #e8f0fe;
+      color: #1967d2;
+      padding: 0.25rem 0.75rem;
+      border-radius: 15px;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+    .btn-read {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1.5rem;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+    }
+    .btn-read:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(118, 75, 162, 0.4);
+      color: #fff;
+    }
+    .search-box {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 15px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .search-input {
+      border-radius: 25px;
+      padding: 0.75rem 1.5rem;
+      border: 2px solid #e0e0e0;
+    }
+    .search-input:focus {
+      border-color: #764ba2;
+      box-shadow: 0 0 0 0.2rem rgba(118, 75, 162, 0.25);
+    }
+  </style>
+
+  <body>
     <!-- ═══════════ MAIN NAVBAR ═══════════ -->
-    <nav class="navbar navbar-expand-lg  border-bottom border-light sticky-top py-3 wow animate__slideInDown ">
-        <div class="container">
-            <!-- Logo & Brand -->
-            <a class="navbar-brand" href="#">
-                <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
-                <div>
-                    <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
-                    <div style="font-size: 12px; font-family: 'Battambang'; color: var(--primary-color);">
-                        Buddhism & Society
-                    </div>
-                </div>
-            </a>
+    <nav
+      class="navbar navbar-expand-lg border-bottom border-light sticky-top py-3 wow animate__slideInDown"
+    >
+      <div class="container">
+        <!-- Logo & Brand -->
+        <a class="navbar-brand" href="#">
+          <i
+            class="fas fa-dharmachakra fs-1"
+            style="color: var(--primary-color)"
+          ></i>
+          <div>
+            <div style="font-size: 20px">ពុទ្ធសាសនានិងសង្គម</div>
+            <div
+              style="
+                font-size: 12px;
+                font-family: 'Battambang';
+                color: var(--primary-color);
+              "
+            >
+              Buddhism & Society
+            </div>
+          </div>
+        </a>
 
-            <!-- Mobile Toggle -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-                <i class="fas fa-bars" style="color: var(--primary-color);"></i>
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMain"
+        >
+          <i class="fas fa-bars" style="color: var(--primary-color)"></i>
+        </button>
+
+        <!-- Main Menu -->
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+            <!-- Home -->
+            <li class="nav-item">
+              <a class="nav-link" href="../home.html"> ទំព័រដើម </a>
+            </li>
+            <!-- Dhamma Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                ព្រះធម៌
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../pages/media-library.html">
+                    បណ្ណាល័យព្រះធម៌
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> វីដេអូធម៌ </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> សំឡេងធម៌ </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> សំណួរ និង ចម្លើយ </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Courses -->
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/education.html"> ការអប់រំ </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                ព្រឹត្តិការណ៍
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../pages/buddism.html">
+                    ពុទ្ធសាសនា
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> វប្បធម៌ខ្មែរ </a>
+                </li>
+              </ul>
+            </li>
+            <!-- Services -->
+
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/events.html"> កម្មវិធី </a>
+            </li>
+            <!-- About Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                អំពីយើង
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../pages/history.html">
+                    ប្រវត្តិ
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../pages/mission.html">
+                    បេសកកម្ម
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../pages/team.html">
+                    ក្រុមការងារ
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- Services -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                ផ្សេងៗ
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../pages/Buddhist Rituals.html"
+                  >
+                    កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> ចូលរូមស្ម័គ្រចិត្ត </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> បរិស្ថាន </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Right Side Buttons -->
+
+          <div class="d-flex gap-2 align-items-center ms-auto">
+            <!-- Theme Toggle -->
+            <button class="theme-toggle" onclick="toggleTheme()">
+              <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+            <!-- button search model -->
+            <button
+              class="btn btn-outline-primary d-none d-lg-block"
+              data-bs-toggle="modal"
+              data-bs-target="#searchModal"
+            >
+              <i class="fas fa-search"></i> ស្វែងរក
             </button>
 
-            <!-- Main Menu -->
-            <div class="collapse navbar-collapse" id="navbarMain">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
-                    <!-- Home -->
-                    <li class="nav-item">
-                        <a class="nav-link " href="../home.html">
-                            ទំព័រដើម
-                        </a>
-                    </li>
-                    <!-- Dhamma Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            ព្រះធម៌
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="../pages/media-library.html">
-                                    បណ្ណាល័យព្រះធម៌
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    វីដេអូធម៌
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    សំឡេងធម៌
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    សំណួរ និង ចម្លើយ
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <!-- Courses -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            ការអប់រំ
-                        </a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                          
-                             ព្រឹត្តិការណ៍
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                     ពុទ្ធសាសនា
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    វប្បធម៌ខ្មែរ
-                                </a>
-                            </li>
-
-
-                        </ul>
-                    </li>
-                    <!-- Services -->
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/events.html">
-                           កម្មវិធី
-                        </a>
-                    </li>
-                    <!-- About Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            អំពីយើង
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    ប្រវត្តិ
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                   បេសកកម្ម
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                   ក្រុមការងារ
-                                </a>
-                            </li>
-
-
-                        </ul>
-                    </li>
-                    <!-- Services -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                           ផ្សេងៗ
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="../pages/Buddhist Rituals.html">
-                                     កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                     ចូលរូមស្ម័គ្រចិត្ត
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    បរិស្ថាន
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-
-                </ul>
-                <!-- Right Side Buttons -->
-
-                <div class="d-flex gap-2 align-items-center ms-auto">
-                    <!-- Theme Toggle -->
-                    <button class="theme-toggle" onclick="toggleTheme()">
-                        <i class="fas fa-moon" id="themeIcon"></i>
-                    </button>
-                    <!-- button search model -->
-                    <button class="btn btn-outline-primary d-none d-lg-block " data-bs-toggle="modal"
-                        data-bs-target="#searchModal">
-                        <i class="fas fa-search "></i> ស្វែងរក
-                    </button>
-
-
-
-                    <!-- User Profile -->
-                    <a href="#" class="user-profile">
-                        <img src="../asset/images/img-profile/user-profile.png" alt="" class="img-f"
-                            style="width: 50px; " height="50px">
-                    </a>
-
-                </div>
-
-            </div>
+            <!-- User Profile -->
+            <a href="#" class="user-profile">
+              <img
+                src="../asset/images/img-profile/user-profile.png"
+                alt=""
+                class="img-f"
+                style="width: 50px"
+                height="50px"
+              />
+            </a>
+          </div>
         </div>
+      </div>
     </nav>
 
- <!-- PAGE HEADER -->
-    <div class="page-header">
+    <main>
+      <!-- PAGE HEADER -->
+      <div class="page-header">
         <div class="container text-center">
-            <h1><i class="fas fa-book-open"></i> បណ្ណាល័យព្រះធម៌</h1>
-            <p class="lead">ចំណេះដឹងពុទ្ធសាសនា សៀវភៅ អត្ថបទ និងធនធានសិក្សា</p>
+          <h1><i class="fas fa-book-open"></i> បណ្ណាល័យព្រះធម៌</h1>
+          <p class="lead">ចំណេះដឹងពុទ្ធសាសនា សៀវភៅ អត្ថបទ និងធនធានសិក្សា</p>
         </div>
-    </div>
+      </div>
 
-    <!-- SEARCH SECTION -->
-    <div class="container">
-        <div class="search-section">
+      <section>
+        <div class="container my-5">
+          <!-- Search Box -->
+          <div class="search-box">
             <div class="row align-items-center">
-                <div class="col-lg-9">
-                    <input type="text" class="form-control search-input" placeholder="ស្វែងរកសៀវភៅ អត្ថបទ អ្នកនិពន្ធ...">
-                </div>
-                <div class="col-lg-3 text-end mt-3 mt-lg-0">
-                    <button class="btn-search w-100">
-                        <i class="bi bi-search"></i> ស្វែងរក
-                    </button>
-                </div>
+              <div class="col-md-10">
+                <input
+                  type="text"
+                  class="form-control search-input"
+                  placeholder="ស្វែងរកសៀវភៅ ឬអត្ថបទ..."
+                />
+              </div>
+              <div class="col-md-2 mt-3 mt-md-0">
+                <button class="btn btn-read w-100">
+                  <i class="fas fa-search"></i> ស្វែងរក
+                </button>
+              </div>
             </div>
+          </div>
+
+          <!-- ប្រភេទសៀវភៅ -->
+          <h5 class="text-white mb-3">ប្រភេទសៀវភៅ</h5>
+          <nav
+            class="nav nav-pills flex-column flex-lg-row mb-4"
+            id="categoryTabs"
+          >
+            <a class="nav-link active" href="#" data-category="all">ទាំងអស់</a>
+            <a class="nav-link" href="#" data-category="sutras">ធម៌សូត្រ</a>
+            <a class="nav-link" href="#" data-category="general">ចំណេះទូរទៅ</a>
+            <a class="nav-link" href="#" data-category="education">ធម៌អប់រំ</a>
+            <a class="nav-link" href="#" data-category="history"
+              >ប្រវត្តិនានា</a
+            >
+            <a class="nav-link" href="#" data-category="tripitaka"
+              >ព្រះត្រៃបិដក</a
+            >
+          </nav>
+
+          <!-- Books Grid -->
+          <div
+            class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-5"
+            id="booksContainer"
+          >
+            <!-- book sutras -->
+            <div class="col book-item" data-category="sutras">
+              <div class="book-card">
+                <div class="book-cover">
+                  <img
+                    src="../asset/images/book/ប្រជុំភាណវរ.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px; width: 250px"
+                  />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">ប្រជុំភាណវរ</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col book-item" data-category="sutras">
+              <div class="book-card">
+                <div class="book-cover">
+                  <img
+                    src="../asset/images/book/ធម្មបទ.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px; width: 250px"
+                  />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">ព្រះធម្មបទ</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col book-item" data-category="sutras">
+              <div class="book-card">
+                <div class="book-cover">
+                  <img
+                    src="../asset/images/book/នមស្សការ.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px; width: 250px"
+                  />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">ធម៏នមស្សការ</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col book-item" data-category="sutras">
+              <div class="book-card">
+                <div class="book-cover">
+                  <img
+                    src="../asset/images/book/គិហិបត្តិបត្តិឮ.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px; width: 250px"
+                  />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">គិហិបត្តិបត្តិ</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col book-item" data-category="sutras">
+              <div class="book-card">
+                <div class="book-cover">
+                  <img
+                    src="../asset/images/book/ធម៌សូធ្យនមស្ការបែបសម័យទំនើប.png"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px; width: 250px"
+                  />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">ធម៌សូធ្យនមស្ការបែបសម័យទំនើប</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col book-item" data-category="sutras">
+              <div class="book-card">
+                <div class="book-cover">
+                  <img
+                    src="../asset/images/book/មង្គលសូត្រ.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px; width: 250px"
+                  />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">មង្គលសូត្រ</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col book-item" data-category="sutras">
+              <div class="book-card">
+                <div class="book-cover">
+                  <img
+                    src="../asset/images/book/ឋានសូត្រ.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px; width: 250px"
+                  />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">ឋានសូត្រ</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col book-item" data-category="sutras">
+              <div class="book-card">
+                <div class="book-cover">
+                  <img
+                    src="../asset/images/book/ធម្មចក្កប្បវត្តនសូត្រ.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px; width: 250px"
+                  />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">ធម្មចក្កប្បវត្តនសូត្រ</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col book-item" data-category="sutras">
+              <div class="book-card">
+                <div class="book-cover">
+                  <img
+                    src="../asset/images/book/សតិបដ្ឋានសូត្រ.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px; width: 250px"
+                  />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">សតិបដ្ឋានសូត្រ</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col book-item" data-category="sutras">
+              <div class="book-card">
+                <div class="book-cover">
+                  <img
+                    src="../asset/images/book/មហាសមយសូត្រ.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px; width: 250px"
+                  />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">មហាសមយសូត្រ</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- book general -->
+            <div class="col book-item" data-category="general">
+              <div class="book-card">
+                <div class="book-cover">
+                <img src="../asset/images/book/ទស្សនវិជ្ជា.jpg" alt="" class="img-fluid" style="height: 250px; width: 250px" />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">ទស្សនវិជ្ជា</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col book-item" data-category="general">
+              <div class="book-card">
+                <div class="book-cover">
+                  <img
+                    src="../asset/images/book/សុភមង្គលជីវិត.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px; width: 250px"
+                  />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">សុភមង្គលជីវិត</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col book-item" data-category="general">
+              <div class="book-card">
+                <div class="book-cover">
+                  <img
+                    src="../asset/images/book/សុភមង្គលជីវិត.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px; width: 250px"
+                  />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">សុភមង្គលជីវិត</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col book-item" data-category="general">
+              <div class="book-card">
+                <div class="book-cover">
+                  <img
+                    src="../asset/images/book/សុភមង្គលជីវិត.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px; width: 250px"
+                  />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">សុភមង្គលជីវិត</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col book-item" data-category="general">
+              <div class="book-card">
+                <div class="book-cover">
+                  <img
+                    src="../asset/images/book/សុភមង្គលជីវិត.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px; width: 250px"
+                  />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">សុភមង្គលជីវិត</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col book-item" data-category="general">
+              <div class="book-card">
+                <div class="book-cover">
+                  <img
+                    src="../asset/images/book/សុភមង្គលជីវិត.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px; width: 250px"
+                  />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">សុភមង្គលជីវិត</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col book-item" data-category="general">
+              <div class="book-card">
+                <div class="book-cover">
+                  <img
+                    src="../asset/images/book/សុភមង្គលជីវិត.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px; width: 250px"
+                  />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">សុភមង្គលជីវិត</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col book-item" data-category="general">
+              <div class="book-card">
+                <div class="book-cover">
+                  <img
+                    src="../asset/images/book/សុភមង្គលជីវិត.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px; width: 250px"
+                  />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">សុភមង្គលជីវិត</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col book-item" data-category="general">
+              <div class="book-card">
+                <div class="book-cover">
+                  <img
+                    src="../asset/images/book/សុភមង្គលជីវិត.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px; width: 250px"
+                  />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">សុភមង្គលជីវិត</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col book-item" data-category="general">
+              <div class="book-card">
+                <div class="book-cover">
+                  <img
+                    src="../asset/images/book/សុភមង្គលជីវិត.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px; width: 250px"
+                  />
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">សុភមង្គលជីវិត</h6>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+<!-- book education -->
+            <div class="col book-item" data-category="education">
+              <div class="book-card">
+                <div class="book-cover">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">ធម៌សម្រាប់កុមារ</h6>
+                  <p class="book-author">
+                    <i class="fas fa-user"></i> អ្នកនិពន្ធជាច្រើន
+                  </p>
+                  <span class="book-category">ធម៌អប់រំ</span>
+                  <p class="text-muted small">
+                    រៀនធម៌តាមរបៀបងាយស្រួលសម្រាប់កុមារ...
+                  </p>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col book-item" data-category="history">
+              <div class="book-card">
+                <div class="book-cover">
+                  <i class="fas fa-landmark"></i>
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">ប្រវត្តិព្រះពុទ្ធសាសនា</h6>
+                  <p class="book-author">
+                    <i class="fas fa-user"></i> ប្រវត្តិវិទូ
+                  </p>
+                  <span class="book-category">ប្រវត្តិនានា</span>
+                  <p class="text-muted small">
+                    ការរីកចម្រើននៃព្រះពុទ្ធសាសនានៅកម្ពុជា និងតំបន់...
+                  </p>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col book-item" data-category="tripitaka">
+              <div class="book-card">
+                <div class="book-cover">
+                  <i class="fas fa-book"></i>
+                </div>
+                <div class="book-info">
+                  <h6 class="book-title">សុត្តន្តបិដក</h6>
+                  <p class="book-author">
+                    <i class="fas fa-user"></i> ព្រះត្រៃបិដក
+                  </p>
+                  <span class="book-category">ព្រះត្រៃបិដក</span>
+                  <p class="text-muted small">
+                    ព្រះសូត្រដ៏មានតម្លៃពីព្រះត្រៃបិដក...
+                  </p>
+                  <button class="btn btn-read w-100">
+                    <i class="fas fa-book-reader"></i> អានឥឡូវ
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div class="container mt-5">
-        <div class="row">
-            <!-- SIDEBAR FILTERS -->
-            <div class="col-lg-3">
-                <div class="filter-sidebar">
-                    <div class="filter-title">
-                        <i class="bi bi-funnel"></i> តម្រង
-                    </div>
-
-                    <!-- Category Filter -->
-                    <div class="filter-group">
-                        <h6><i class="bi bi-bookmark"></i> ប្រធានបទ</h6>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="topic1">
-                            <label class="form-check-label" for="topic1">សមាធិកម្ម</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="topic2">
-                            <label class="form-check-label" for="topic2">សីលធម៌</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="topic3">
-                            <label class="form-check-label" for="topic3">វិបស្សនា</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="topic4">
-                            <label class="form-check-label" for="topic4">ប្រវត្តិសាស្ត្រ</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="topic5">
-                            <label class="form-check-label" for="topic5">តម្រិះតម្រុយ</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="topic6">
-                            <label class="form-check-label" for="topic6">ធម្មបទ</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="topic7">
-                            <label class="form-check-label" for="topic7">ជីវប្រវត្តិព្រះពុទ្ធ</label>
-                        </div>
-                    </div>
-
-                    <!-- Language Filter -->
-                    <div class="filter-group">
-                        <h6><i class="bi bi-translate"></i> ភាសា</h6>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="language" id="lang1" checked>
-                            <label class="form-check-label" for="lang1">ភាសាខ្មែរ</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="language" id="lang2">
-                            <label class="form-check-label" for="lang2">ភាសាបាលី</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="language" id="lang3">
-                            <label class="form-check-label" for="lang3">អង់គ្លេស</label>
-                        </div>
-                    </div>
-
-                    <!-- Format Filter -->
-                    <div class="filter-group">
-                        <h6><i class="bi bi-file-earmark"></i> ទម្រង់</h6>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="format1">
-                            <label class="form-check-label" for="format1">PDF</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="format2">
-                            <label class="form-check-label" for="format2">អេឡិចត្រូនិច</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="format3">
-                            <label class="form-check-label" for="format3">អានលើបណ្តាញ</label>
-                        </div>
-                    </div>
-
-                    <button class="btn btn-outline-primary w-100">
-                        <i class="bi bi-arrow-clockwise"></i> កំណត់ឡើងវិញ
-                    </button>
-                </div>
-
-                <!-- Stats Cards -->
-                <div class="stats-card mt-4">
-                    <i class="fas fa-book"></i>
-                    <h3>១,២៥៨</h3>
-                    <p>សៀវភៅ និង អត្ថបទ</p>
-                </div>
-            </div>
-
-            <!-- MAIN CONTENT AREA -->
-            <div class="col-lg-9">
-                <!-- Category Tabs -->
-                <div class="category-tabs">
-                    <ul class="nav nav-pills justify-content-center" id="categoryTabs">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#all">គ្រប់ប្រភេទ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#new">ថ្មីៗបំផុត</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#popular">ពេញនិយម</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#classic">គ្លាស៊ិក</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Featured Content -->
-                <div class="featured-section">
-                    <span class="featured-badge">
-                        <i class="fas fa-star"></i> ផ្តល់អនុសាសន៍
-                    </span>
-                    <div class="row align-items-center">
-                        <div class="col-md-4">
-                            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800" class="img-fluid rounded" alt="Featured Book">
-                        </div>
-                        <div class="col-md-8">
-                            <h3 class="fw-bold mb-3">មូលដ្ឋានពុទ្ធសាសនា</h3>
-                            <p class="text-muted mb-3">
-                                <i class="bi bi-person"></i> ព្រះធម្មវិសុទ្ធី | 
-                                <i class="bi bi-calendar"></i> ២០២៤
-                            </p>
-                            <p class="mb-4">
-                                សៀវភៅនេះផ្តល់នូវចំណេះដឹងមូលដ្ឋានអំពីពុទ្ធសាសនា ចាប់ពីប្រវត្តិព្រះពុទ្ធ គោលការណ៍សំខាន់ៗ រហូតដល់ការអនុវត្តក្នុងជីវិតប្រចាំថ្ងៃ។ សមស្របសម្រាប់អ្នកចាប់ផ្តើមរៀនពុទ្ធសាសនា។
-                            </p>
-                            <div class="d-flex gap-2">
-                                <a href="#" class="btn-view">
-                                    <i class="bi bi-eye"></i> មើល
-                                </a>
-                                <a href="#" class="btn btn-outline-primary">
-                                    <i class="bi bi-download"></i> ទាញយក
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sort Options -->
-                <div class="d-flex justify-content-between align-items-center mb-4">
-                    <h5 class="fw-bold mb-0">កំពុងបង្ហាញ ១-៩ ពី ១៥៨ លទ្ធផល</h5>
-                    <select class="form-select" style="width: auto;">
-                        <option>ថ្មីៗបំផុត</option>
-                        <option>ចំណាប់អារម្មណ៍បំផុត</option>
-                        <option>មើលច្រើនបំផុត</option>
-                        <option>ឈ្មោះ A-Z</option>
-                    </select>
-                </div>
-
-                <!-- Media Grid -->
-                <div class="row">
-                    <!-- Media Card 1 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="media-card">
-                            <div class="position-relative">
-                                <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800" class="media-card-img" alt="Book">
-                                <span class="media-badge">សៀវភៅ</span>
-                                <div class="media-actions">
-                                    <button class="action-btn" onclick="toggleFavorite(this)">
-                                        <i class="bi bi-heart"></i>
-                                    </button>
-                                    <button class="action-btn">
-                                        <i class="bi bi-bookmark"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="media-card-body">
-                                <h5 class="media-title">ដំណើរជីវិតតាមព្រះធម៌</h5>
-                                <div class="media-author">
-                                    <i class="bi bi-person-circle"></i>
-                                    <span>ព្រះមហាសុវណ្ណវជិរោ</span>
-                                </div>
-                                <p class="media-description">
-                                    ការណែនាំគ្រប់ជ្រុងជ្រោយអំពីរបៀបអនុវត្តព្រះធម៌ក្នុងជីវិតប្រចាំថ្ងៃ ដើម្បីបង្កើតសុភមង្គល និងសន្តិភាពផ្ទាល់ខ្លួន។
-                                </p>
-                                <div class="media-meta">
-                                    <div class="media-stats">
-                                        <span><i class="bi bi-eye"></i> ៨៥២</span>
-                                        <span><i class="bi bi-heart"></i> ១២៣</span>
-                                    </div>
-                                    <a href="#" class="btn-view" data-bs-toggle="modal" data-bs-target="#viewModal" onclick="setMediaDetails('ដំណើរជីវិតតាមព្រះធម៌', 'ព្រះមហាសុវណ្ណវជិរោ', 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800')">មើល</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Media Card 2 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="media-card">
-                            <div class="position-relative">
-                                <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800" class="media-card-img" alt="Book">
-                                <span class="media-badge">សៀវភៅ</span>
-                                <div class="media-actions">
-                                    <button class="action-btn" onclick="toggleFavorite(this)">
-                                        <i class="bi bi-heart"></i>
-                                    </button>
-                                    <button class="action-btn">
-                                        <i class="bi bi-bookmark"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="media-card-body">
-                                <h5 class="media-title">សមាធិកម្មសម្រាប់អ្នកចាប់ផ្តើម</h5>
-                                <div class="media-author">
-                                    <i class="bi bi-person-circle"></i>
-                                    <span>គ្រូអាចារ្យ ធម្មរតនៈ</span>
-                                </div>
-                                <p class="media-description">
-                                    ការណែនាំពីបច្ចេកទេសសមាធិកម្មសាមញ្ញ និងមានប្រសិទ្ធភាព សម្រាប់អ្នកដែលចាប់ផ្តើមអនុវត្តសមាធិ។
-                                </p>
-                                <div class="media-meta">
-                                    <div class="media-stats">
-                                        <span><i class="bi bi-eye"></i> ១,២៣៥</span>
-                                        <span><i class="bi bi-heart"></i> ២៨៩</span>
-                                    </div>
-                                    <a href="#" class="btn-view" data-bs-toggle="modal" data-bs-target="#viewModal" onclick="setMediaDetails('សមាធិកម្មសម្រាប់អ្នកចាប់ផ្តើម', 'គ្រូអាចារ្យ ធម្មរតនៈ', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800')">មើល</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Media Card 3 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="media-card">
-                            <div class="position-relative">
-                                <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800" class="media-card-img" alt="Book">
-                                <span class="media-badge">សៀវភៅ</span>
-                                <div class="media-actions">
-                                    <button class="action-btn" onclick="toggleFavorite(this)">
-                                        <i class="bi bi-heart"></i>
-                                    </button>
-                                    <button class="action-btn">
-                                        <i class="bi bi-bookmark"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="media-card-body">
-                                <h5 class="media-title">មហាសតិបដ្ឋានសូត្រ</h5>
-                                <div class="media-author">
-                                    <i class="bi bi-person-circle"></i>
-                                    <span>ព្រះពុទ្ធ (បកប្រែ)</span>
-                                </div>
-                                <p class="media-description">
-                                    សូត្រមហាសតិបដ្ឋានគឺជាគម្ពីរសំខាន់បំផុតនៃវិបស្សនាភាវនា ដែលព្រះពុទ្ធបានទ្រង់បង្រៀនអំពីការកំណត់សតិ។
-                                </p>
-                                <div class="media-meta">
-                                    <div class="media-stats">
-                                        <span><i class="bi bi-eye"></i> ២,១៤៥</span>
-                                        <span><i class="bi bi-heart"></i> ៤៥៦</span>
-                                    </div>
-                                    <a href="#" class="btn-view" data-bs-toggle="modal" data-bs-target="#viewModal" onclick="setMediaDetails('មហាសតិបដ្ឋានសូត្រ', 'ព្រះពុទ្ធ (បកប្រែ)', 'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800')">មើល</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Media Card 4 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="media-card">
-                            <div class="position-relative">
-                                <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=800" class="media-card-img" alt="Book">
-                                <span class="media-badge">សៀវភៅ</span>
-                                <div class="media-actions">
-                                    <button class="action-btn" onclick="toggleFavorite(this)">
-                                        <i class="bi bi-heart"></i>
-                                    </button>
-                                    <button class="action-btn">
-                                        <i class="bi bi-bookmark"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="media-card-body">
-                                <h5 class="media-title">ប្រវត្តិព្រះពុទ្ធសាសនាកម្ពុជា</h5>
-                                <div class="media-author">
-                                    <i class="bi bi-person-circle"></i>
-                                    <span>សម្តេចព្រះសង្ឃរាជ</span>
-                                </div>
-                                <p class="media-description">
-                                    ការស្រាវជ្រាវយ៉ាងលម្អិតអំពីប្រវត្តិសាស្ត្រពុទ្ធសាសនានៅកម្ពុជា តាំងពីសម័យបុរាណរហូតដល់បច្ចុប្បន្ន។
-                                </p>
-                                <div class="media-meta">
-                                    <div class="media-stats">
-                                        <span><i class="bi bi-eye"></i> ៦៧៨</span>
-                                        <span><i class="bi bi-heart"></i> ១៩៨</span>
-                                    </div>
-                                    <a href="#" class="btn-view" data-bs-toggle="modal" data-bs-target="#viewModal" onclick="setMediaDetails('ប្រវត្តិព្រះពុទ្ធសាសនាកម្ពុជា', 'សម្តេចព្រះសង្ឃរាជ', 'https://images.unsplash.com/photo-1532012197267-da84d127e765?w=800')">មើល</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Media Card 5 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="media-card">
-                            <div class="position-relative">
-                                <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=800" class="media-card-img" alt="Book">
-                                <span class="media-badge">សៀវភៅ</span>
-                                <div class="media-actions">
-                                    <button class="action-btn" onclick="toggleFavorite(this)">
-                                        <i class="bi bi-heart"></i>
-                                    </button>
-                                    <button class="action-btn">
-                                        <i class="bi bi-bookmark"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="media-card-body">
-                                <h5 class="media-title">គោលការណ៍អព្យាក្រឹត</h5>
-                                <div class="media-author">
-                                    <i class="bi bi-person-circle"></i>
-                                    <span>ព្រះមហាវិរវង្សោ</span>
-                                </div>
-                                <p class="media-description">
-                                    ការពន្យល់អំពីគោលការណ៍អព្យាក្រឹតនៃពុទ្ធសាសនា និងរបៀបអនុវត្តវាក្នុងជីវិតប្រចាំថ្ងៃ។
-                                </p>
-                                <div class="media-meta">
-                                    <div class="media-stats">
-                                        <span><i class="bi bi-eye"></i> ៩៤៥</span>
-                                        <span><i class="bi bi-heart"></i> ២១២</span>
-                                    </div>
-                                    <a href="#" class="btn-view" data-bs-toggle="modal" data-bs-target="#viewModal" onclick="setMediaDetails('គោលការណ៍អព្យាក្រឹត', 'ព្រះមហាវិរវង្សោ', 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=800')">មើល</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Media Card 6 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="media-card">
-                            <div class="position-relative">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800" class="media-card-img" alt="Book">
-                                <span class="media-badge">សៀវភៅ</span>
-                                <div class="media-actions">
-                                    <button class="action-btn" onclick="toggleFavorite(this)">
-                                        <i class="bi bi-heart"></i>
-                                    </button>
-                                    <button class="action-btn">
-                                        <i class="bi bi-bookmark"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="media-card-body">
-                                <h5 class="media-title">ពុទ្ធសាសនានិងវិទ្យាសាស្ត្រ</h5>
-                                <div class="media-author">
-                                    <i class="bi bi-person-circle"></i>
-                                    <span>ប្រធានបណ្ឌិត ធម្មសារី</span>
-                                </div>
-                                <p class="media-description">
-                                    ការស្រាវជ្រាវអំពីទំនាក់ទំនងរវាងគោលការណ៍ពុទ្ធសាសនា និងការរកឃើញវិទ្យាសាស្ត្រទំនើប។
-                                </p>
-                                <div class="media-meta">
-                                    <div class="media-stats">
-                                        <span><i class="bi bi-eye"></i> ១,៥៦៧</span>
-                                        <span><i class="bi bi-heart"></i> ៣៤៥</span>
-                                    </div>
-                                    <a href="#" class="btn-view" data-bs-toggle="modal" data-bs-target="#viewModal" onclick="setMediaDetails('ពុទ្ធសាសនានិងវិទ្យាសាស្ត្រ', 'ប្រធានបណ្ឌិត ធម្មសារី', 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800')">មើល</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Media Card 7 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="media-card">
-                            <div class="position-relative">
-                                <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=800" class="media-card-img" alt="Book">
-                                <span class="media-badge">សៀវភៅ</span>
-                                <div class="media-actions">
-                                    <button class="action-btn" onclick="toggleFavorite(this)">
-                                        <i class="bi bi-heart"></i>
-                                    </button>
-                                    <button class="action-btn">
-                                        <i class="bi bi-bookmark"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="media-card-body">
-                                <h5 class="media-title">ធម្មបទដ្ឋកថា</h5>
-                                <div class="media-author">
-                                    <i class="bi bi-person-circle"></i>
-                                    <span>ព្រះពុទ្ធឃោសាចារ្យ</span>
-                                </div>
-                                <p class="media-description">
-                                    អត្ថាធិប្បាយលម្អិតនៃធម្មបទ ដែលជាគម្ពីរសំខាន់បំផុតមួយក្នុងពុទ្ធសាសនា។
-                                </p>
-                                <div class="media-meta">
-                                    <div class="media-stats">
-                                        <span><i class="bi bi-eye"></i> ១,៨៩២</span>
-                                        <span><i class="bi bi-heart"></i> ៥៦៧</span>
-                                    </div>
-                                    <a href="#" class="btn-view" data-bs-toggle="modal" data-bs-target="#viewModal" onclick="setMediaDetails('ធម្មបទដ្ឋកថា', 'ព្រះពុទ្ធឃោសាចារ្យ', 'https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=800')">មើល</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Media Card 8 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="media-card">
-                            <div class="position-relative">
-                                <img src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?w=800" class="media-card-img" alt="Book">
-                                <span class="media-badge">សៀវភៅ</span>
-                                <div class="media-actions">
-                                    <button class="action-btn" onclick="toggleFavorite(this)">
-                                        <i class="bi bi-heart"></i>
-                                    </button>
-                                    <button class="action-btn">
-                                        <i class="bi bi-bookmark"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="media-card-body">
-                                <h5 class="media-title">មេត្តាករុណាក្នុងការរស់នៅ</h5>
-                                <div class="media-author">
-                                    <i class="bi bi-person-circle"></i>
-                                    <span>គ្រូធម្មាភិរតនោ</span>
-                                </div>
-                                <p class="media-description">
-                                    ការពន្យល់ពីសារៈសំខាន់នៃមេត្តាករុណា និងរបៀបអនុវត្តវាក្នុងជីវិតប្រចាំថ្ងៃរបស់យើង។
-                                </p>
-                                <div class="media-meta">
-                                    <div class="media-stats">
-                                        <span><i class="bi bi-eye"></i> ៧៨៩</span>
-                                        <span><i class="bi bi-heart"></i> ១៨៥</span>
-                                    </div>
-                                    <a href="#" class="btn-view" data-bs-toggle="modal" data-bs-target="#viewModal" onclick="setMediaDetails('មេត្តាករុណាក្នុងការរស់នៅ', 'គ្រូធម្មាភិរតនោ', 'https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?w=800')">មើល</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Media Card 9 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="media-card">
-                            <div class="position-relative">
-                                <img src="https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=800" class="media-card-img" alt="Book">
-                                <span class="media-badge">សៀវភៅ</span>
-                                <div class="media-actions">
-                                    <button class="action-btn" onclick="toggleFavorite(this)">
-                                        <i class="bi bi-heart​​ "></i>
-                                    </button>
-                                    <button class="action-btn">
-                                        <i class="bi bi-bookmark"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="media-card-body">
-                                <h5 class="media-title">កាលាមសូត្រ</h5>
-                                <div class="media-author">
-                                    <i class="bi bi-person-circle"></i>
-                                    <span>ព្រះពុទ្ធ (បកប្រែ)</span>
-                                </div>
-                                <p class="media-description">
-                                    សូត្រដែលព្រះពុទ្ធបង្រៀនអំពីការប្រើប្រាស់បញ្ញាក្នុងការពិចារណា និងការទទួលយកសេចក្តីពិត។
-                                </p>
-                                <div class="media-meta">
-                                    <div class="media-stats">
-                                        <span><i class="bi bi-eye"></i> ១,៣៤៥</span>
-                                        <span><i class="bi bi-heart"></i> ៣៩៨</span>
-                                    </div>
-                                    <a href="#" class="btn-view" data-bs-toggle="modal" data-bs-target="#viewModal" onclick="setMediaDetails('កាលាមសូត្រ', 'ព្រះពុទ្ធ (បកប្រែ)', 'https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=800')">មើល</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PAGINATION -->
-                <nav aria-label="Page navigation" class="mt-5">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1">មុន</a>
-                        </li>
-                        <li class="page-item active"><a class="page-link" href="#">១</a></li>
-                        <li class="page-item"><a class="page-link" href="#">២</a></li>
-                        <li class="page-item"><a class="page-link" href="#">៣</a></li>
-                        <li class="page-item"><a class="page-link" href="#">៤</a></li>
-                        <li class="page-item"><a class="page-link" href="#">៥</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">បន្ទាប់</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-
-    <!-- VIEW MODAL -->
-    <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title fw-bold" id="viewModalLabel">
-                        <i class="fas fa-book-open" style="color: var(--primary-color);"></i>
-                        <span id="modalTitle">ចំណងជើង</span>
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-4">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img id="modalImage" src="img" class="img-fluid rounded shadow-sm mb-3" alt="Book Cover">
-                            <div class="d-grid gap-2">
-                                <button class="btn btn-primary">
-                                    <i class="bi bi-download"></i> ទាញយក PDF
-                                </button>
-                                <button class="btn btn-outline-primary">
-                                    <i class="bi bi-book"></i> អានលើបណ្តាញ
-                                </button>
-                                <button class="btn btn-outline-secondary">
-                                    <i class="bi bi-share"></i> ចែករំលែក
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <h4 class="fw-bold mb-3" id="modalTitleFull">ចំណងជើងពេញ</h4>
-                            <p class="text-muted mb-3">
-                                <i class="bi bi-person-circle"></i> អ្នកនិពន្ធ: <span id="modalAuthor">អ្នកនិពន្ធ</span>
-                            </p>
-                            
-                            <div class="mb-4">
-                                <h6 class="fw-bold">ព័ត៌មានលម្អិត</h6>
-                                <table class="table table-borderless">
-                                    <tr>
-                                        <td width="150"><strong>ប្រភេទ:</strong></td>
-                                        <td>សៀវភៅ ព្រះធម៌</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>ភាសា:</strong></td>
-                                        <td>ភាសាខ្មែរ</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>ចំនួនទំព័រ:</strong></td>
-                                        <td>២៥៨ ទំព័រ</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>ឆ្នាំបោះពុម្ព:</strong></td>
-                                        <td>២០២៤</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>ទម្រង់:</strong></td>
-                                        <td>PDF, ePub</td>
-                                    </tr>
-                                </table>
-                            </div>
-
-                            <div class="mb-4">
-                                <h6 class="fw-bold">សង្ខេប</h6>
-                                <p style="text-align: justify;">
-                                    សៀវភៅនេះផ្តល់នូវចំណេះដឹងសំខាន់ៗអំពីពុទ្ធសាសនា និងរបៀបអនុវត្តព្រះធម៌ក្នុងជីវិតប្រចាំថ្ងៃ។ 
-                                    វាគឺជាធនធានដ៏ល្អសម្រាប់អ្នកដែលចង់សិក្សាយល់ដឹងពីគោលការណ៍ពុទ្ធសាសនា និងអនុវត្តវា
-                                    ដើម្បីបង្កើតសុភមង្គល និងសន្តិភាពក្នុងជីវិត។
-                                </p>
-                            </div>
-
-                            <div class="mb-4">
-                                <h6 class="fw-bold">ប្រធានបទ</h6>
-                                <div class="d-flex flex-wrap gap-2">
-                                    <span class="badge bg-secondary">សមាធិកម្ម</span>
-                                    <span class="badge bg-secondary">ព្រះធម៌</span>
-                                    <span class="badge bg-secondary">សីលធម៌</span>
-                                    <span class="badge bg-secondary">ជីវិតប្រចាំថ្ងៃ</span>
-                                </div>
-                            </div>
-
-                            <div class="alert alert-info border-0">
-                                <i class="bi bi-info-circle"></i> 
-                                <strong>សម្គាល់:</strong> សៀវភៅនេះអាចទាញយកដោយឥតគិតថ្លៃសម្រាប់គោលបំណងសិក្សា និងការអនុវត្តធម៌។
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
- 
-
- 
+      </section>
+    </main>
 
     <!-- ═══════════ FOOTER ═══════════ -->
     <footer>
+      <div class="container">
+        <div class="row">
+          <!-- About Section -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <i
+                class="fas fa-dharmachakra fs-1 me-3"
+                style="color: var(--primary-color)"
+              ></i>
+              <h5 class="mt-5">អំពីពុទ្ធសាសនានិងសង្គម</h5>
+            </div>
+            <p style="line-height: 1.8">
+              គេហទំព័រដែលផ្តល់នូវការអប់រំ សេវាកម្មសង្គម
+              និងការលើកកម្ពស់គុណតម្លៃសីលធម៌តាមគោលការណ៍ព្រះធម៌
+              ដើម្បីអភិវឌ្ឍន៍សង្គមប្រកបដោយសន្តិភាព និងសុខុមាលភាព។
+            </p>
+            <div class="footer-social mt-3">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-telegram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5>តំណភ្ជាប់លឿន</h5>
+            <a href="#"><i class="fas fa-angle-right"></i> ទំព័រដើម</a>
+            <a href="#"><i class="fas fa-angle-right"></i> អំពីយើង</a>
+            <a href="#"><i class="fas fa-angle-right"></i> សេវាកម្ម</a>
+            <a href="../pages/events.html"
+              ><i class="fas fa-angle-right"></i> ព្រឹត្តិការណ៍</a
+            >
+            <a href="#"><i class="fas fa-angle-right"></i> ទំនាក់ទំនង</a>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>សេវាកម្ម</h5>
+            <a href="#"><i class="fas fa-angle-right"></i> គម្រោងសង្គម</a>
+            <a href="#"><i class="fas fa-angle-right"></i> ការអប់រំ</a>
+            <a href="#"><i class="fas fa-angle-right"></i> វគ្គបណ្តុះបណ្តាល</a>
+            <a href="#"><i class="fas fa-angle-right"></i> អ្នកស្ម័គ្រចិត្ត</a>
+            <a href="#"><i class="fas fa-angle-right"></i> ការបរិច្ចាគ</a>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>ទំនាក់ទំនង</h5>
+            <p>
+              <i
+                class="fas fa-map-marker-alt"
+                style="color: var(--primary-color)"
+              ></i>
+              ភ្នំពេញ, កម្ពុជា
+            </p>
+            <p>
+              <i class="fas fa-phone" style="color: var(--primary-color)"></i>
+              012 345 678
+            </p>
+            <p>
+              <i
+                class="fas fa-envelope"
+                style="color: var(--primary-color)"
+              ></i>
+              info@buddhism-society.org
+            </p>
+            <p>
+              <i class="fas fa-clock" style="color: var(--primary-color)"></i>
+              ច័ន្ទ - សុក្រ: 8:00 - 17:00
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
         <div class="container">
-            <div class="row">
-                <!-- About Section -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="d-flex align-items-center">
-                        <i class="fas fa-dharmachakra fs-1 me-3" style="color: var(--primary-color);"></i>
-                        <h5 class="mt-5">
-                            អំពីពុទ្ធសាសនានិងសង្គម
-                        </h5>
-                    </div>
-                    <p style="line-height: 1.8;">
-                        គេហទំព័រដែលផ្តល់នូវការអប់រំ សេវាកម្មសង្គម និងការលើកកម្ពស់គុណតម្លៃសីលធម៌តាមគោលការណ៍ព្រះធម៌
-                        ដើម្បីអភិវឌ្ឍន៍សង្គមប្រកបដោយសន្តិភាព និងសុខុមាលភាព។
-                    </p>
-                    <div class="footer-social mt-3">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-telegram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-
-                <!-- Quick Links -->
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>តំណភ្ជាប់លឿន</h5>
-                    <a href="#"><i class="fas fa-angle-right"></i> ទំព័រដើម</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> អំពីយើង</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> សេវាកម្ម</a>
-                    <a href="../pages/events.html"><i class="fas fa-angle-right"></i> ព្រឹត្តិការណ៍</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> ទំនាក់ទំនង</a>
-                </div>
-
-                <!-- Services -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>សេវាកម្ម</h5>
-                    <a href="#"><i class="fas fa-angle-right"></i> គម្រោងសង្គម</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> ការអប់រំ</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> វគ្គបណ្តុះបណ្តាល</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> អ្នកស្ម័គ្រចិត្ត</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> ការបរិច្ចាគ</a>
-                </div>
-
-                <!-- Contact -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>ទំនាក់ទំនង</h5>
-                    <p>
-                        <i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i>
-                        ភ្នំពេញ, កម្ពុជា
-                    </p>
-                    <p>
-                        <i class="fas fa-phone" style="color: var(--primary-color);"></i>
-                        012 345 678
-                    </p>
-                    <p>
-                        <i class="fas fa-envelope" style="color: var(--primary-color);"></i>
-                        info@buddhism-society.org
-                    </p>
-                    <p>
-                        <i class="fas fa-clock" style="color: var(--primary-color);"></i>
-                        ច័ន្ទ - សុក្រ: 8:00 - 17:00
-                    </p>
-                </div>
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="mb-0">
+                © 2024 ពុទ្ធសាសនានិងសង្គម. រក្សាសិទ្ធិគ្រប់យ៉ាង។
+              </p>
             </div>
-        </div>
-
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center text-md-start">
-                        <p class="mb-0">
-                            © 2024 ពុទ្ធសាសនានិងសង្គម. រក្សាសិទ្ធិគ្រប់យ៉ាង។
-                        </p>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end justify-content-center justify-content-md-end d-flex">
-                        <a href="#" class="me-3">គោលការណ៍ឯកជនភាព</a>
-                        <a href="#" class="me-3">លក្ខខណ្ឌប្រើប្រាស់</a>
-                        <a href="#">FAQ</a>
-                    </div>
-                </div>
+            <div
+              class="col-md-6 text-center text-md-end justify-content-center justify-content-md-end d-flex"
+            >
+              <a href="#" class="me-3">គោលការណ៍ឯកជនភាព</a>
+              <a href="#" class="me-3">លក្ខខណ្ឌប្រើប្រាស់</a>
+              <a href="#">FAQ</a>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
-    <!-- search modal -->
-    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <form>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="ស្វែងរកគេហទំព័រ">
-                            <button type="submit" class="btn btn-primary">ស្វែងរក</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     <!-- Bootstrap JS -->
     <script src="../asset/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
@@ -926,129 +924,56 @@
     <!-- Custom JS -->
     <script src="../asset/js/script.js"></script>
     <script>
-  AOS.init();
-</script>
- <script>
-        // Theme Toggle Function
-        function toggleTheme() {
-            const html = document.documentElement;
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            
-            const icon = document.getElementById('themeIcon');
-            if (newTheme === 'dark') {
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
-            } else {
-                icon.classList.remove('fa-sun');
-                icon.classList.add('fa-moon');
-            }
-        }
-
-        // Load saved theme
-        document.addEventListener('DOMContentLoaded', function() {
-            const savedTheme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-            
-            const icon = document.getElementById('themeIcon');
-            if (savedTheme === 'dark') {
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
-            }
-        });
-
-        // Toggle Favorite
-        function toggleFavorite(button) {
-            button.classList.toggle('favorited');
-            const icon = button.querySelector('i');
-            if (button.classList.contains('favorited')) {
-                icon.classList.remove('bi-heart');
-                icon.classList.add('bi-heart-fill');
-            } else {
-                icon.classList.remove('bi-heart-fill');
-                icon.classList.add('bi-heart');
-            }
-        }
-
-        // Set Media Details in Modal
-        function setMediaDetails(title, author, image) {
-            document.getElementById('modalTitle').textContent = title;
-            document.getElementById('modalTitleFull').textContent = title;
-            document.getElementById('modalAuthor').textContent = author;
-            document.getElementById('modalImage').src = image;
-        }
-
-        // Category Tabs
-        document.querySelectorAll('#categoryTabs .nav-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelectorAll('#categoryTabs .nav-link').forEach(l => l.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Add animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.media-card').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            card.style.transition = 'all 0.6s ease';
-            observer.observe(card);
-        });
-
-        // Filter functionality
-        document.querySelectorAll('.filter-group input[type="checkbox"]').forEach(checkbox => {
-            checkbox.addEventListener('change', function() {
-                console.log('Filter changed:', this.id, this.checked);
-                // Add your filter logic here
-            });
-        });
-
-        // Search functionality
-        document.querySelector('.btn-search').addEventListener('click', function() {
-            const searchTerm = document.querySelector('.search-input').value;
-            console.log('Searching for:', searchTerm);
-            // Add your search logic here
-        });
-
-        // Reset filters
-        document.querySelector('.btn-outline-primary').addEventListener('click', function() {
-            document.querySelectorAll('.filter-group input[type="checkbox"]').forEach(checkbox => {
-                checkbox.checked = false;
-            });
-            document.querySelector('#cat1').checked = true;
-            document.querySelector('#lang1').checked = true;
-        });
+      AOS.init();
     </script>
-</body>
+    <script>
+      // Category filtering
+      const categoryLinks = document.querySelectorAll(
+        "#categoryTabs .nav-link"
+      );
+      const bookItems = document.querySelectorAll(".book-item");
 
+      categoryLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          // Update active state
+          categoryLinks.forEach((l) => l.classList.remove("active"));
+          link.classList.add("active");
+
+          const category = link.dataset.category;
+
+          // Filter books
+          bookItems.forEach((item) => {
+            if (category === "all" || item.dataset.category === category) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+
+      // Search functionality
+      const searchInput = document.querySelector(".search-input");
+      searchInput.addEventListener("input", (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+
+        bookItems.forEach((item) => {
+          const title = item
+            .querySelector(".book-title")
+            .textContent.toLowerCase();
+          const author = item
+            .querySelector(".book-author")
+            .textContent.toLowerCase();
+
+          if (title.includes(searchTerm) || author.includes(searchTerm)) {
+            item.style.display = "block";
+          } else {
+            item.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
