@@ -458,6 +458,7 @@
     }
 }
 
+
 /* MISSIONS SECTION START */
 .card{
     background-color: var(--bg-primary) !important;
@@ -589,6 +590,10 @@
 /* MISSION SECTION END */
 
 /* TEAM SECTION START */
+.img{
+    
+    object-fit: cover;
+}
 .badge-soft{
     position: absolute;
     top: 0px;
