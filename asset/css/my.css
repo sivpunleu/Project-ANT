@@ -144,7 +144,230 @@
     color: #f17024 !important;
 }
 
-    /* Timeline Container */
+  
+
+/* MISSIONS SECTION START */
+.card{
+    background-color: var(--bg-primary) !important;
+    color:var(--text-primary) !important;
+    box-shadow: 1px 6px 6px var(--border-light) !important;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card:hover{
+    box-shadow: 1px 6px 12px var(--border-dark) !important;  
+}
+
+    @keyframes imghover {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.05);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.card-img-top:hover{
+    animation: imghover 1s ease;   
+}
+/* Enhanced accordion styles (replace selection) */
+
+.accordion-item{
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0)) , var(--bg-primary);
+    color: var(--text-primary) !important;
+    border-radius: 12px;
+    border: 1px solid rgba(16,24,40,0.06);
+    box-shadow: 0 8px 20px rgba(16,24,40,0.06);
+    overflow: hidden;
+    transition: transform .28s ease, box-shadow .28s ease, background-color .28s ease;
+    -webkit-backdrop-filter: blur(6px) saturate(120%);
+    backdrop-filter: blur(6px) saturate(120%);
+    background-clip: padding-box;
+}
+
+/* lift on hover for a subtle 3D effect */
+.accordion-item:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(16,24,40,0.12);
+}
+
+/* button header */
+.accordion-button{
+    width: 100%;
+    padding: 1rem 1.25rem;
+    background: transparent !important;
+    color: var(--text-primary) !important;
+    border: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+    transition: color .22s ease, background-color .22s ease;
+}
+.accordion-header{
+    color: var(--text-primary) !important;
+}
+
+/* active/expanded state */
+.accordion-button:not(.collapsed){
+    color: var(--primary-color) !important;
+    background: linear-gradient(90deg, rgba(184,119,7,0.06), rgba(220,38,38,0.02)) !important;
+}
+
+/* keep the default chevron but animate rotation */
+.accordion-button::after{
+    transition: transform .28s ease;
+    filter: drop-shadow(0 1px 0 rgba(0,0,0,0.02));
+}
+
+/* rotate chevron when open (Bootstrap applies .collapsed to closed buttons) */
+.accordion-button:not(.collapsed)::after{
+    transform: rotate(-180deg);
+}
+
+/* content area */
+.accordion-body{
+    padding: 1rem 1.25rem;
+    background: transparent !important;
+    color: var(--text-color) !important;
+    border-top: 1px solid rgba(16,24,40,0.04);
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+/* focus ring for accessibility */
+.accordion-button:focus{
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(184,119,7,0.10);
+    border-radius: 8px;
+}
+
+/* respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce){
+    .accordion-item,
+    .accordion-button,
+    .accordion-button::after{
+        transition: none !important;
+    }
+}
+
+/* Dark theme: make accordion background transparent and adjust borders/shadow for better contrast */
+[data-theme="dark"] .accordion-item{
+    background: transparent !important;
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 0 8px 24px rgba(2,6,23,0.6);
+    -webkit-backdrop-filter: blur(6px) saturate(120%);
+    backdrop-filter: blur(6px) saturate(120%);
+}
+[data-theme="dark"] .accordion-body{
+    border-top-color: rgba(255,255,255,0.04);
+}
+[data-theme="dark"] .accordion-button:focus{
+    box-shadow: 0 0 0 4px rgba(184,119,7,0.12);
+}
+
+
+/* MISSION SECTION END */
+
+/* TEAM SECTION START */
+.img{
+    
+    object-fit: cover;
+}
+.badge-soft{
+    position: absolute;
+    top: 0px;
+    left: -10px !important;
+
+}
+.btn-style{
+    width: 40px !important;
+    height: 40px !important;
+    padding: 0 !important;
+    margin-left: 5px !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    border-radius: 50% !important;
+    transition:0.5s all ease-in-out;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    background-color: #565759 !important;
+}
+.btn-style:hover{
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.icon-hover{
+    position:absolute;
+    top: 100%;
+    transition: all 0.3s ease-in-out;
+    left: 50%;
+    transform: translateX(-50%);
+
+} 
+.card:hover .icon-hover{
+    top: 80%;
+} 
+
+/* state css */
+.stats-card{
+    background-color: var(--bg-primary);
+    box-shadow: 1px 6px 6px 1px var(--border-light) !important;
+}
+.stats-card:hover{
+    box-shadow: 1px 6px 12px var(--border-dark) !important;  
+}
+.stat-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.stat-item .counter {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);}
+
+.stat-item p {
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+.text{
+    color:var(--text-dark) !important; 
+}
+.icon{
+    top:-30px;
+    width: 60px !important;
+    height: 60px !important;
+    padding: 0 !important;
+    margin-left: 5px !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    border-radius: 50% !important;
+    transition:0.5s all ease-in-out;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    background-color: #0d4cc9 !important;
+    color:white !important;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+    /* ITMELINE START */
+
+  /* Timeline Container */
 .timeline-container {
     position: relative;
     padding: 80px 0;
@@ -466,225 +689,4 @@
     .timeline-content p {
         font-size: 1rem;
     }
-}
-
-
-/* MISSIONS SECTION START */
-.card{
-    background-color: var(--bg-primary) !important;
-    color:var(--text-primary) !important;
-    box-shadow: 1px 6px 6px var(--border-light) !important;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card:hover{
-    box-shadow: 1px 6px 12px var(--border-dark) !important;  
-}
-
-    @keyframes imghover {
-  0%{
-    transform: scale(1);
-  }
-  50%{
-    transform: scale(1.05);
-  }
-  100%{
-    transform: scale(1);
-  }
-}
-.card-img-top:hover{
-    animation: imghover 1s ease;   
-}
-/* Enhanced accordion styles (replace selection) */
-
-.accordion-item{
-    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0)) , var(--bg-primary);
-    color: var(--text-primary) !important;
-    border-radius: 12px;
-    border: 1px solid rgba(16,24,40,0.06);
-    box-shadow: 0 8px 20px rgba(16,24,40,0.06);
-    overflow: hidden;
-    transition: transform .28s ease, box-shadow .28s ease, background-color .28s ease;
-    -webkit-backdrop-filter: blur(6px) saturate(120%);
-    backdrop-filter: blur(6px) saturate(120%);
-    background-clip: padding-box;
-}
-
-/* lift on hover for a subtle 3D effect */
-.accordion-item:hover{
-    transform: translateY(-6px);
-    box-shadow: 0 18px 40px rgba(16,24,40,0.12);
-}
-
-/* button header */
-.accordion-button{
-    width: 100%;
-    padding: 1rem 1.25rem;
-    background: transparent !important;
-    color: var(--text-primary) !important;
-    border: 0;
-    font-weight: 600;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    cursor: pointer;
-    transition: color .22s ease, background-color .22s ease;
-}
-.accordion-header{
-    color: var(--text-primary) !important;
-}
-
-/* active/expanded state */
-.accordion-button:not(.collapsed){
-    color: var(--primary-color) !important;
-    background: linear-gradient(90deg, rgba(184,119,7,0.06), rgba(220,38,38,0.02)) !important;
-}
-
-/* keep the default chevron but animate rotation */
-.accordion-button::after{
-    transition: transform .28s ease;
-    filter: drop-shadow(0 1px 0 rgba(0,0,0,0.02));
-}
-
-/* rotate chevron when open (Bootstrap applies .collapsed to closed buttons) */
-.accordion-button:not(.collapsed)::after{
-    transform: rotate(-180deg);
-}
-
-/* content area */
-.accordion-body{
-    padding: 1rem 1.25rem;
-    background: transparent !important;
-    color: var(--text-color) !important;
-    border-top: 1px solid rgba(16,24,40,0.04);
-    font-size: 0.98rem;
-    line-height: 1.6;
-}
-
-/* focus ring for accessibility */
-.accordion-button:focus{
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(184,119,7,0.10);
-    border-radius: 8px;
-}
-
-/* respect reduced motion preferences */
-@media (prefers-reduced-motion: reduce){
-    .accordion-item,
-    .accordion-button,
-    .accordion-button::after{
-        transition: none !important;
-    }
-}
-
-/* Dark theme: make accordion background transparent and adjust borders/shadow for better contrast */
-[data-theme="dark"] .accordion-item{
-    background: transparent !important;
-    border: 1px solid rgba(255,255,255,0.06);
-    box-shadow: 0 8px 24px rgba(2,6,23,0.6);
-    -webkit-backdrop-filter: blur(6px) saturate(120%);
-    backdrop-filter: blur(6px) saturate(120%);
-}
-[data-theme="dark"] .accordion-body{
-    border-top-color: rgba(255,255,255,0.04);
-}
-[data-theme="dark"] .accordion-button:focus{
-    box-shadow: 0 0 0 4px rgba(184,119,7,0.12);
-}
-
-
-/* MISSION SECTION END */
-
-/* TEAM SECTION START */
-.img{
-    
-    object-fit: cover;
-}
-.badge-soft{
-    position: absolute;
-    top: 0px;
-    left: -10px !important;
-
-}
-.btn-style{
-    width: 40px !important;
-    height: 40px !important;
-    padding: 0 !important;
-    margin-left: 5px !important;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none !important;
-    border-radius: 50% !important;
-    transition:0.5s all ease-in-out;
-    backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px) !important;
-    background-color: rgba(255, 255, 255, 0.1) !important;
-    background-color: #565759 !important;
-}
-.btn-style:hover{
-    transform: scale(1.2);
-    background-color: rgba(255, 255, 255, 0.3) !important;
-}
-
-.icon-hover{
-    position:absolute;
-    top: 100%;
-    transition: all 0.3s ease-in-out;
-    left: 50%;
-    transform: translateX(-50%);
-
-} 
-.card:hover .icon-hover{
-    top: 80%;
-} 
-
-/* state css */
-.stats-card{
-    background-color: var(--bg-primary);
-    box-shadow: 1px 6px 6px 1px var(--border-light) !important;
-}
-.stats-card:hover{
-    box-shadow: 1px 6px 12px var(--border-dark) !important;  
-}
-.stat-item {
-  text-align: center;
-  padding: 20px;
-}
-
-.stat-item .counter {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--primary-color);}
-
-.stat-item p {
-  font-size: 1.1rem;
-  margin-top: 5px;
-}
-.text{
-    color:var(--text-dark) !important; 
-}
-.icon{
-    top:-30px;
-    width: 60px !important;
-    height: 60px !important;
-    padding: 0 !important;
-    margin-left: 5px !important;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none !important;
-    border-radius: 50% !important;
-    transition:0.5s all ease-in-out;
-    backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px) !important;
-    background-color: #0d4cc9 !important;
-    color:white !important;
-    left: 50%;
-    transform: translateX(-50%);
-
 }
