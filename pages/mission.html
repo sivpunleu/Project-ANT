@@ -78,188 +78,176 @@
 </style>
 
 <body>
-    <!-- ═══════════ MAIN NAVBAR ═══════════ -->
-    <nav class="navbar navbar-expand-lg border-bottom border-light sticky-top py-3 wow animate__slideInDown">
-        <div class="container">
-            <!-- Logo & Brand -->
-            <a class="navbar-brand" href="#">
-                <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color)"></i>
-                <div>
-                    <div style="font-size: 20px">ពុទ្ធសាសនានិងសង្គម</div>
-                    <div style="
-                font-size: 12px;
-                font-family: 'Battambang';
-                color: var(--text-secondary);
-              ">
-                        Buddhism & Society
+    <header class=" sticky-top">
+        <!-- ═══════════ MAIN NAVBAR ═══════════ -->
+        <nav class="navbar navbar-expand-lg  border-bottom border-light py-3 wow animate__slideInDown ">
+            <div class="container">
+                <!-- Logo & Brand -->
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
+                    <div>
+                        <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
+                        <div style="font-size: 12px; font-family: 'Battambang'; color: var(--primary-color);">
+                            Buddhism & Society
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            <!-- Mobile Toggle -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-                <i class="fas fa-bars" style="color: var(--primary-color)"></i>
-            </button>
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                    <i class="fas fa-bars" style="color: var(--primary-color);"></i>
+                </button>
 
-            <!-- Main Menu -->
-            <div class="collapse navbar-collapse" id="navbarMain">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
-                    <!-- Home -->
-                    <li class="nav-item">
-                        <a class="nav-link active" href="../index.html">
-                            <i class="fas fa-home"></i> ទំព័រដើម
-                        </a>
-                    </li>
-                    <!-- Dhamma Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            <i class="fas fa-book"></i> ព្រះធម៌
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="pages/media-library.html">
-                                    <i class="fas fa-book-open"></i> បណ្ណាល័យព្រះធម៌
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-video"></i> វីដេអូធម៌
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-microphone"></i> សំឡេងធម៌
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-calendar-day"></i> សំណួរ និង ចម្លើយ
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                <!-- Main Menu -->
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../home.html">
+                                ទំព័រដើម
+                            </a>
+                        </li>
+                        <!-- Dhamma Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                ព្រះធម៌
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="../pages/media-library.html">
+                                        បណ្ណាល័យព្រះធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        វីដេអូធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        សំឡេងធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        សំណួរ និង ចម្លើយ
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
 
-                    <!-- Courses -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="fas fa-chalkboard-teacher"></i> ការអប់រំ
-                        </a>
-                    </li>
+                        <!-- Courses -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/education.html">
+                                ការអប់រំ
+                            </a>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            <i class="fas fa-calendar-alt"></i>
-                            ព្រឹត្តិការណ៍
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-history"></i> ពុទ្ធសាសនា
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-bullseye"></i> វប្បធម៌ខ្មែរ
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- Services -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../pages/events.html" data-bs-toggle="dropdown">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/events.html">
-                            <i class="fas fa-calendar-alt"></i> កម្មវិធី
-                        </a>
-                    </li>
-                    <!-- About Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            <i class="fas fa-info-circle"></i> អំពីយើង
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="pages/about/history.html">
-                                    <i class="fas fa-history"></i> ប្រវត្តិ
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-bullseye"></i> បេសកកម្ម
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-users"></i> ក្រុមការងារ
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- Services -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            <i class="fas fa-hands-helping"></i> ផ្សេងៗ
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="pages/Buddhist Rituals.html">
-                                    <i class="fas fa-hand-holding-heart"></i>
-                                    កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-graduation-cap"></i> ចូលរូមស្ម័គ្រចិត្ត
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-heartbeat"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-leaf"></i> បរិស្ថាន
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- Right Side Buttons -->
+                                ព្រឹត្តិការណ៍
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        ពុទ្ធសាសនា
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        វប្បធម៌ខ្មែរ
+                                    </a>
+                                </li>
 
-                <div class="d-flex gap-2 align-items-center ms-auto">
-                    <!-- Theme Toggle -->
-                    <button class="theme-toggle" onclick="toggleTheme()">
-                        <i class="fas fa-moon" id="themeIcon"></i>
-                    </button>
-                    <!-- button search model -->
-                    <button class="btn btn-outline-primary d-none d-lg-block" data-bs-toggle="modal"
-                        data-bs-target="#searchModal">
-                        <i class="fas fa-search"></i> ស្វែងរក
-                    </button>
 
-                    <!-- User Profile / Login -->
-                    <div class="dropdown" id="userSection">
-                        <button class="btn btn-link text-decoration-none dropdown-toggle" type="button"
-                            data-bs-toggle="dropdown">
-                            <i class="bi bi-person-circle fs-5"></i>
+                            </ul>
+                        </li>
+                        <!-- Services -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/events.html">
+                                កម្មវិធី
+                            </a>
+                        </li>
+                        <!-- About Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                អំពីយើង
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="../pages/history.html">
+                                        ប្រវត្តិ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../pages/mission.html">
+                                        បេសកកម្ម
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../pages/team.html">
+                                        ក្រុមការងារ
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                ផ្សេងៗ
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="../pages/Buddhist Rituals.html">
+                                        កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        ចូលរូមស្ម័គ្រចិត្ត
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        បរិស្ថាន
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                    <!-- Right Side Buttons -->
+
+                    <div class="d-flex gap-2 align-items-center ms-auto">
+                        <!-- Theme Toggle -->
+                        <button class="theme-toggle" onclick="toggleTheme()">
+                            <i class="fas fa-moon" id="themeIcon"></i>
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li>
-                                <a class="dropdown-item" href="pages/auth/login.html">
-                                    <i class="bi bi-box-arrow-in-right me-2"></i>ចូលប្រើ
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="pages/auth/register.html">
-                                    <i class="bi bi-person-plus me-2"></i>ចុះឈ្មោះ
-                                </a>
-                            </li>
-                        </ul>
+                        <!-- button search model -->
+                        <button class="btn btn-outline-primary d-none d-lg-block " data-bs-toggle="modal"
+                            data-bs-target="#searchModal">
+                            <i class="fas fa-search "></i> ស្វែងរក
+                        </button>
+
+
+
+                        <!-- User Profile -->
+                        <a href="#" class="user-profile">
+                            <img src="../asset/images/img-profile/user-profile.png" alt="" class="img-f"
+                                style="width: 50px; " height="50px">
+                        </a>
+
                     </div>
+
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     
     <!-- ═══════════ PAGE CONTENT ═══════════ -->
     <main>
@@ -268,13 +256,13 @@
                 <div class="herobanner">
                     <div class="banner-title d-flex justify-content-center align-items-center flex-column">
                         <h1 class="text-white my-3 fw-bolder animate__animated animate__fadeInDown"
-                            style="font-size: 48px">
+                            style="font-size: 48px; color:#b87707 !important">
                             បេសកកម្មរបស់យើង​
                         </h1>
                         <h1 class="text-white fw-lighter animate__animated animate__fadeInDown" style="font-size: 24px">
                             ការចែករំលែកព្រះធម៌ និងការអនុវត្តសមាធិ
                         </h1>
-                        <nav class="m-0" aria-label="breadcrumb">
+                        <nav class="m-0 breadcrumb" aria-label="breadcrumb">
                             <ol class="breadcrumb my-3">
                                 <li class="breadcrumb-item animate__animated animate__fadeInUp fs-5 fw-medium">
                                     <a class="breadcrumb-link text-white text-decoration-none"
@@ -285,7 +273,7 @@
                                         href="history.html">ប្រវត្តិ</a>
                                 </li>
                                 <li class="breadcrumb-item animate__animated animate__fadeInUp activec fs-5 fw-medium"
-                                    aria-current="page" style="color: #50eaa2">
+                                    aria-current="page" style="color:  #b87707">
                                     បេសកកម្ម
                                 </li>
                             </ol>
@@ -298,10 +286,10 @@
         <section class="py-5">
             <div class="container">
                 <div class="text-center py-5" data-aos="fade-up" data-aos-duration="1000">
-                    <h1 class="fw-bold" style="color: #50eaa2">
+                    <h1 class="fw-bold title " >
                         គោលដៅ និង បេសកកម្មចម្បងរបស់យើង
                     </h1>
-                    <p class="fs-5" style="text-align: justify; max-width: 750px">
+                    <p class="fs-5 m-auto" style="text-align: justify; max-width: 750px">
                         គោលដៅ និង បេសកកម្មចម្បងរបស់យើង យើងមាន បេសកកម្មច្បាស់លាស់ ក្នុងការ
                         ផ្តល់ការអប់រំព្រះធម៌ប្រកបដោយគុណភាព​ ដែលបង្រៀនដោយសាស្រ្តាចារ្យ
                         ព្រះសង្ឃប្រកបដោយចំំំំំណេះចំនាញ និងភាពងាយស្រួល ដោយ ឥតគិតថ្លៃ ដល់
@@ -443,7 +431,7 @@
                         </div>
                         <div class="row my-5" data-aos="fade-up" data-aos-duration="1000">
                             <div class="category">
-                                <h3 class="fw-bold fs-1 text-center my-5" style="color: #50eaa2" data-aos="fade-up "
+                                <h3 class="fw-bold fs-1 text-center my-5 title" data-aos="fade-up "
                                     data-aos-duration="1000">
                                     គោលដៅយុទ្ធសាស្ត្ររបស់យើង
                                 </h3>
@@ -546,7 +534,7 @@
                  <section class="my-5">
                     <div class="card bg-body-secondary shadow-none">
                         <div class="card-body text-center py-4" data-aos="fade-up" data-aos-duration="1000">
-                        <h3 class="fw-bold mb-4" style="color: #50eaa2">
+                        <h3 class="fw-bold mb-4 title" >
                             ចូលរួមជាមួយយើងក្នុងការធ្វើឲ្យបេសកកម្មនេះក្លាយជាការពិត!
                         </h3>
                         <p class="fs-5 text-secondary " style="text-align: justify; max-width: 750px">មិនថាតាមរយៈការសិក្សា ការបរិច្ចាគ ឬការងារស្ម័គ្រចិត្ត, ការចូលរួមរបស់អ្នក គឺការរួមចំណែកដ៏ធំធេងក្នុងការកសាងសង្គមដ៏ល្អប្រសើរមួយ។</p>
@@ -562,7 +550,7 @@
                     </div>
                  </section>
 
-                <div class="row my-5" data-aos="fade-up" data-aos-duration="1000">
+                <div class="row my-5 g-5 justify-content-center align-items-center d-flex" data-aos="fade-up" data-aos-duration="1000">
                     <div class="col-lg-2 col-md-6">
                         <div class="card justify-content-center align-items-center d-flex p-5 border-0 shadow-none" data-aos="fade-right" data-aos-delay="100">
                             <img src="	https://metropolitanhost.com/themes/templatemoster/html/gautama/assets/img/clients/1.png"
@@ -588,7 +576,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6">
-                        <div class="card justify-content-center align-items-center d-flex p-5 border-0 shadow-none" data-aos="fade-right" data-aos-delay="500">
+                        <div class="card justify-content-center align-items-center d-flex text-center  p-5 border-0 shadow-none" data-aos="fade-right" data-aos-delay="500">
                             <img src="https://metropolitanhost.com/themes/templatemoster/html/gautama/assets/img/clients/5.png"
                                 alt="image" />
                         </div>
