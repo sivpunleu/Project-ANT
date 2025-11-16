@@ -29,6 +29,47 @@
     
 </head>
 <style>
+    :root {
+  --primary-color: #b87707;
+  --secondary-color: #dc2626;
+  --bg-primary: #ffffff;
+  --text-primary: #000000;
+  --text-secondary: #ffff;
+  --bg-secondary: #f3f4f6;
+  --border-light: #e5e7eb;
+  --border-dark: #d1d5db;
+  --box-shadow: none;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1f2937;
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db;
+  --border-light: #374151;
+  --border-dark: #4b5563;
+  --bg-secondary: #374151;
+  --box-shadow: 0px 10px 15px 0px rgba(255, 255, 255, 0.1);
+}
+[data-theme="dark"] body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Battambang", sans-serif;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
     
     .user-profile {
         color: var(--primary-color);
@@ -42,6 +83,7 @@
 <body>
    
       <!-- ═══════════ MAIN NAVBAR ═══════════ -->
+       <header>
     <nav class="navbar navbar-expand-lg  border-bottom border-light sticky-top py-3 wow animate__slideInDown ">
         <div class="container">
             <!-- Logo & Brand -->
@@ -49,7 +91,7 @@
                  <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
                 <div>
                     <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
-                    <div style="font-size: 12px; font-family: 'Battambang'; color: var(--text-secondary);">
+                    <div style="font-size: 12px; font-family: 'Battambang'; color: var(--primary-color);">
                         Buddhism & Society
                     </div>
                 </div>
@@ -65,7 +107,7 @@
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
                     <!-- Home -->
                     <li class="nav-item">
-                        <a class="nav-link active" href="../home.html">
+                        <a class="nav-link" href="../home.html">
                           ទំព័រដើម
                         </a>
                     </li>
@@ -100,7 +142,7 @@
 
                     <!-- Courses -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="../pages/education.html">
                             ការអប់រំ
                         </a>
                     </li>
@@ -112,7 +154,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="../pages/buddism.html">
                                     ពុទ្ធសាសនា
                                 </a>
                             </li>
@@ -139,17 +181,17 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="../pages/history.html">
                                     ប្រវត្តិ
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="../pages/mission.html">
                                    បេសកកម្ម
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="../pages/team.html">
                                    ក្រុមការងារ
                                 </a>
                             </li>
@@ -205,6 +247,7 @@
             </div>
         </div>
     </nav>
+    </header>
 
 <!-- HERO -->
     <section class="hero-section">
@@ -217,13 +260,7 @@
                     </p>
                     <div class="d-flex gap-3 flex-wrap">
                         <span style="background: rgba(255,255,255,0.2); padding: 10px 20px; border-radius: 50px;">
-                            <i class="fas fa-video"></i> មានវីដេអូបង្រៀន
-                        </span>
-                        <span style="background: rgba(255,255,255,0.2); padding: 10px 20px; border-radius: 50px;">
                             <i class="fas fa-certificate"></i> មានវិញ្ញាបនប័ត្រ
-                        </span>
-                        <span style="background: rgba(255,255,255,0.2); padding: 10px 20px; border-radius: 50px;">
-                            <i class="fas fa-book-reader"></i> ឧទាហរណ៍ជាក់ស្តែង
                         </span>
                     </div>
                 </div>
@@ -241,7 +278,6 @@
             <div class="progress-bar-custom">
                 <div class="progress-fill" id="progressBar" style="width: 0%"></div>
             </div>
-            <small class="text-secondary">បញ្ចប់មេរៀនដើម្បីទទួលវិញ្ញាបនប័ត្រ</small>
         </div>
     </div>
 
@@ -273,13 +309,10 @@
                 <button class="ritual-pill" data-section="mistakes">
                     <i class="fas fa-exclamation-triangle"></i> កំហុសញឹកញាប់
                 </button>
-                <button class="ritual-pill" data-section="quiz">
-                    <i class="fas fa-question-circle"></i> តេស្ត
-                </button>
             </div>
         </div>
     </div>
-
+<main>
     <!-- MAIN CONTENT -->
     <div class="container mb-5">
         
@@ -1046,251 +1079,8 @@
             </div>
         </div>
 
-        <!-- QUIZ SECTION -->
-        <div class="ritual-section" id="quiz">
-            <h2 class="section-title">
-                <i class="fas fa-graduation-cap"></i> តេស្តវាយតម្លៃចំណេះដឹង
-            </h2>
-
-            <p style="font-size: 16px; margin-bottom: 24px;">
-                សូមឆ្លើយសំណួរ 10 ខាងក្រោមដើម្បីវាយតម្លៃការយល់ដឹងរបស់អ្នក។ ត្រូវការពិន្ទុ 80% ដើម្បីទទួលវិញ្ញាបនប័ត្រ។
-            </p>
-
-            <div class="quiz-card">
-                <div class="quiz-question">
-                    <span style="color: var(--primary-color); font-weight: 700;">សំណួរទី១:</span> 
-                    តើការថ្វាយបង្គំ ៥ ចំណុច សមរម្យសម្រាប់អ្នកណា?
-                </div>
-                <div class="quiz-option" data-answer="correct">
-                    A. បុរស និងស្រីទូទៅ
-                </div>
-                <div class="quiz-option">
-                    B. គ្រាន់តែបុរស
-                </div>
-                <div class="quiz-option">
-                    C. គ្រាន់តែស្រី
-                </div>
-                <div class="quiz-option">
-                    D. គ្រាន់តែកុមារ
-                </div>
-            </div>
-
-            <div class="quiz-card">
-                <div class="quiz-question">
-                    <span style="color: var(--primary-color); font-weight: 700;">សំណួរទី២:</span> 
-                    តើអ្វីជារបស់មិនគួរប្រគេនដល់ព្រះសង្ឃ?
-                </div>
-                <div class="quiz-option">
-                    A. ផ្កា និងទៀន
-                </div>
-                <div class="quiz-option">
-                    B. អាហារបរិសុទ្ធ
-                </div>
-                <div class="quiz-option" data-answer="correct">
-                    C. គ្រឿងស្រវឹង និងគ្រឿងញៀន
-                </div>
-                <div class="quiz-option">
-                    D. សៀវភៅព្រះធម៌
-                </div>
-            </div>
-
-            <div class="quiz-card">
-                <div class="quiz-question">
-                    <span style="color: var(--primary-color); font-weight: 700;">សំណួរទី៣:</span> 
-                    តើបុរសគួរស្លៀកអ្វីពេលចូលវត្ត?
-                </div>
-                <div class="quiz-option" data-answer="correct">
-                    A. អាវពណ៌ស្រាល និងខោវែង
-                </div>
-                <div class="quiz-option">
-                    B. អាវកាត់ និងខោខ្លី
-                </div>
-                <div class="quiz-option">
-                    C. អាវពណ៌ភ្លឺ
-                </div>
-                <div class="quiz-option">
-                    D. ទាំងអស់ខាងលើ
-                </div>
-            </div>
-
-            <div class="quiz-card">
-                <div class="quiz-question">
-                    <span style="color: var(--primary-color); font-weight: 700;">សំណួរទី៤:</span> 
-                    តើគួរនិយាយអ្វីពេលជួបព្រះសង្ឃ?
-                </div>
-                <div class="quiz-option" data-answer="correct">
-                    A. សូមពុទ្ធាធិដ្ឋាន
-                </div>
-                <div class="quiz-option">
-                    B. សួស្តី
-                </div>
-                <div class="quiz-option">
-                    C. Hello
-                </div>
-                <div class="quiz-option">
-                    D. មិនចាំបាច់និយាយ
-                </div>
-            </div>
-
-            <div class="quiz-card">
-                <div class="quiz-question">
-                    <span style="color: var(--primary-color); font-weight: 700;">សំណួរទី៥:</span> 
-                    តើអ្វីមិនគួរធ្វើពេលចូលវត្ត?
-                </div>
-                <div class="quiz-option">
-                    A. ថ្វាយបង្គំព្រះពុទ្ធរូប
-                </div>
-                <div class="quiz-option">
-                    B. រក្សាសំឡេងស្ងាត់
-                </div>
-                <div class="quiz-option" data-answer="correct">
-                    C. លេងទូរស័ព្ទក្នុងវិហារ
-                </div>
-                <div class="quiz-option">
-                    D. ស្តាប់ធម៌ទេសនា
-                </div>
-            </div>
-
-            <div class="quiz-card">
-                <div class="quiz-question">
-                    <span style="color: var(--primary-color); font-weight: 700;">សំណួរទី៦:</span> 
-                    តើការប្រគេនទានគួរប្រើដៃប៉ុន្មាន?
-                </div>
-                <div class="quiz-option">
-                    A. ដៃម្ខាង
-                </div>
-                <div class="quiz-option" data-answer="correct">
-                    B. ដៃទាំងពីរ
-                </div>
-                <div class="quiz-option">
-                    C. អាស្រ័យលើទំហំទេយ្យទាន
-                </div>
-                <div class="quiz-option">
-                    D. មិនសំខាន់
-                </div>
-            </div>
-
-            <div class="quiz-card">
-                <div class="quiz-question">
-                    <span style="color: var(--primary-color); font-weight: 700;">សំណួរទី៧:</span> 
-                    តើពេលណាគួរប្រគេនអាហារដល់ព្រះសង្ឃ?
-                </div>
-                <div class="quiz-option" data-answer="correct">
-                    A. មុនរសៀល (មុន 12:00 ថ្ងៃត្រង់)
-                </div>
-                <div class="quiz-option">
-                    B. គ្រប់ពេល
-                </div>
-                <div class="quiz-option">
-                    C. បន្ទាប់ពីរសៀល
-                </div>
-                <div class="quiz-option">
-                    D. ពេលយប់
-                </div>
-            </div>
-
-            <div class="quiz-card">
-                <div class="quiz-question">
-                    <span style="color: var(--primary-color); font-weight: 700;">សំណួរទី៨:</span> 
-                    តើធ្វើដូចម្តេចពេលជួបព្រះសង្ឃតាមផ្លូវ?
-                </div>
-                <div class="quiz-option">
-                    A. ដើរបន្តដោយមិនខ្វល់ខ្វាយ
-                </div>
-                <div class="quiz-option" data-answer="correct">
-                    B. ឈប់ និងសំពះ
-                </div>
-                <div class="quiz-option">
-                    C. ឆ្លងមុខលឿនៗ
-                </div>
-                <div class="quiz-option">
-                    D. ហៅព្រះសង្ឃខ្លាំងៗ
-                </div>
-            </div>
-
-            <div class="quiz-card">
-                <div class="quiz-question">
-                    <span style="color: var(--primary-color); font-weight: 700;">សំណួរទី៩:</span> 
-                    តើស្រីគួរស្លៀកអ្វីពេលចូលវត្ត?
-                </div>
-                <div class="quiz-option" data-answer="correct">
-                    A. សំពត់ និងអាវគ្របស្មា
-                </div>
-                <div class="quiz-option">
-                    B. សម្លៀកបំពាក់ខ្លីៗ
-                </div>
-                <div class="quiz-option">
-                    C. សម្លៀកបំពាក់តឹង
-                </div>
-                <div class="quiz-option">
-                    D. អ្វីក៏បានគ្រប់យ៉ាង
-                </div>
-            </div>
-
-            <div class="quiz-card">
-                <div class="quiz-question">
-                    <span style="color: var(--primary-color); font-weight: 700;">សំណួរទី១០:</span> 
-                    តើធ្វើដូចម្តេចបន្ទាប់ពីប្រគេនទាន?
-                </div>
-                <div class="quiz-option">
-                    A. ចាកចេញភ្លាម
-                </div>
-                <div class="quiz-option" data-answer="correct">
-                    B. រង់ចាំអនុមោទនា និងថ្វាយបង្គំ
-                </div>
-                <div class="quiz-option">
-                    C. និយាយរឿងផ្សេងៗ
-                </div>
-                <div class="quiz-option">
-                    D. ថតរូប
-                </div>
-            </div>
-
-
-            <div class="text-center mt-4">
-                <button class="btn btn-primary btn-lg" id="submitQuiz">
-                    <i class="fas fa-check-circle"></i> ដាក់ស្នើលទ្ធផល
-                </button>
-                <button class="btn btn-outline-secondary btn-lg ms-2" id="resetQuiz">
-                    <i class="fas fa-redo"></i> ធ្វើម្តងទៀត
-                </button>
-            </div>
-
-            <div id="quizResult" class="mt-4" style="display: none;">
-                <div class="info-box">
-                    <div class="info-box-title">
-                        <i class="fas fa-trophy"></i> លទ្ធផល
-                    </div>
-                    <div id="scoreDisplay" style="font-size: 24px; font-weight: 700; margin: 16px 0;"></div>
-                    <p id="resultMessage" style="margin: 0;"></p>
-                </div>
-            </div>
-        </div>
-
-        <!-- CERTIFICATE SECTION -->
-        <div class="ritual-section" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; border: none;">
-            <h2 style="color: white; margin-bottom: 20px;">
-                <i class="fas fa-certificate"></i> ទទួលវិញ្ញាបនប័ត្រ
-            </h2>
-            <p style="font-size: 18px; opacity: 0.95; margin-bottom: 24px;">
-                បន្ទាប់ពីបញ្ចប់តេស្តដោយទទួលបានពិន្ទុ 80% ឡើងទៅ អ្នកនឹងទទួលបានវិញ្ញាបនប័ត្រកិច្ចវិន័យពុទ្ធបរិស័ទ 
-                ដែលអាចទាញយក និងប្រើប្រាស់បាន។
-            </p>
-            <button class="btn btn-light btn-lg" id="certificateBtn" disabled>
-                <i class="fas fa-lock"></i> បញ្ចប់តេស្តដើម្បីទទួលវិញ្ញាបនប័ត្រ
-            </button>
-            <div class="mt-3" style="opacity: 0.9;">
-                <small>
-                    <i class="fas fa-info-circle"></i> វិញ្ញាបនប័ត្រនឹងមានឈ្មោះរបស់អ្នក និងកាលបរិច្ឆេទបញ្ចប់
-                </small>
-            </div>
-        </div>
-
     </div>
-
-  
-
- 
+</main>
 
     <!-- ═══════════ FOOTER ═══════════ -->
     <footer>
