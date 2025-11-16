@@ -3,19 +3,19 @@
     padding:auto;
     box-sizing: border-box ;
 }
-:root {
-            --primary-color: #b87707;
-            --secondary-color: #DC2626;
-            --bg-primary: #FFFFFF;
-            --text-primary: #1F2937;
-            --text-secondary: #70757e;
-            --border-light: #E5E7EB;
-            --border-dark: #D1D5DB;
-            --shadow-color:#50eaa2;
-            --text-color:rgb(27, 26, 26);
-        }
+:root{
+  --primary-color: #b87707;
+  --secondary-color: #DC2626;
+  --bg-primary: #FFFFFF;
+  --text-primary: #1F2937;
+  --text-secondary: #70757e;
+  --border-light: #E5E7EB;
+  --border-dark: #D1D5DB;
+  --shadow-color:#50eaa2;
+  --text-color:rgb(27, 26, 26);
+}
         
-        [data-theme="dark"] {
+[data-theme="dark"] {
             --bg-primary: #111827;
             --text-primary: #F9FAFB;
             --text-secondary: #D1D5DB;
@@ -35,21 +35,18 @@
     padding: 16px;
     width: auto;
   }
-
-  .card {
-    border-radius: 12px;
-    padding: 16px;
-    background-color: var(--bg-primary);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  }
+.card{
+  background-color: var(--bg-primary) !important;
+  
+}
 
   .icon {
-    width: 44px;
-    height: 44px;
+  width: 44px;
+  height: 44px;
   }
 
   .map-wrapper iframe {
-    height: 320px;
+  height: 320px;
   }
 
   .title { font-size: 1.05rem; }
@@ -89,7 +86,7 @@
 
   .card {
     border-radius: 20px;
-    background-color: var(--bg-primary);
+    background-color: var(--bg-primary) !important;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.08);
     padding: 24px;
   }
@@ -148,4 +145,16 @@
   .map-wrapper iframe {
     height: 360px;
   }
+}
+.input-group{
+  background-color: var(--bg-primary) !important;
+
+}
+.form-control{
+  background-color: var(--bg-primary) !important;
+  color: var(--text-color) !important;
+
+}
+.placeholder{
+  color:var(--text-color) !important;
 }
