@@ -4,16 +4,19 @@
       --bg: #F7F3EC;
       --light: #fff;
     }
+
     body {
       font-family: 'Battambang', system-ui, sans-serif;
       background: var(--bg);
       color: var(--dark);
     }
+
     .nav-brand {
       font-weight: 700;
       color: var(--gold);
       letter-spacing: 1px;
     }
+
     .category-badge {
       display: inline-block;
       padding: 0.4rem 0.8rem;
@@ -24,41 +27,184 @@
       font-weight: 600;
       margin-bottom: 0.5rem;
     }
+
     .lesson-card {
       border: none;
       border-left: 4px solid var(--gold);
       transition: all 0.3s ease;
       cursor: pointer;
-    
+
     }
+
     .lesson-card:hover {
       transform: translateX(8px);
       box-shadow: 0 4px 12px rgba(201, 161, 74, 0.15);
     }
+
     .lesson-card.active {
       background: rgba(201, 161, 74, 0.08);
     }
+
     .article-view {
       background: var(--light);
       padding: 2rem;
       border-radius: 8px;
       line-height: 1.8;
     }
+
     .article-view h2 {
       color: var(--gold);
       margin-bottom: 1rem;
     }
+
     .filter-btn {
       border: 2px solid var(--gold);
       color: var(--gold);
       font-weight: 600;
     }
+
     .filter-btn.active {
       background: var(--gold);
       color: var(--light);
     }
+
     .hero-teachings {
-      background: linear-gradient(135deg, rgba(46,42,38,0.05), rgba(201,161,74,0.03));
+      background: linear-gradient(135deg, rgba(46, 42, 38, 0.05), rgba(201, 161, 74, 0.03));
       padding: 3rem 0;
       margin-bottom: 2rem;
+    }
+
+    /* slide */
+
+    .testimonial-card1 {
+      background: linear-gradient(135deg, #2d2d44 0%, #3d3d54 100%);
+      border: 1px solid #4d4d64;
+      border-radius: 15px;
+      height: 400px;
+      /* បានបង្កើនកម្ពស់បន្តិចដើម្បីឱ្យសមនឹងអត្ថបទ */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .image-conte {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .slide {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.641);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .overlay1 {
+      position: absolute;
+      margin-top: 250px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      /* background-color: rgba(0, 0, 0, 0.641); */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .over-slide {
+      color: white;
+      font-size: 1.1rem;
+      /* បានកែសម្រួលទំហំអក្សរ */
+      font-weight: 600;
+      text-align: center;
+      padding: 20px;
+      line-height: 1.7;
+      /* បានកែសម្រួលគម្លាតបន្ទាត់ */
+    }
+
+    .over-slide strong {
+      color: #a78bfa;
+      /* ធ្វើឱ្យចំណងជើងមានពណ៌លេចធ្លោ */
+      font-size: 1.3rem;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+
+    .activity-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    /* ធ្វើឱ្យ Label របស់ Radio Button អាចចុចបានស្រួល */
+    .form-check-label {
+      cursor: pointer;
+    }
+
+    /* លាក់សំណួរទាំងអស់ (Steps) ជាលំនាំដើម */
+    .quiz-step {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    /* បង្ហាញតែសំណួរដែល "active" */
+    .quiz-step.active {
+      display: block;
+      opacity: 1;
+    }
+
+    /* ធ្វើឱ្យ Label របស់ Radio មើលទៅដូចប៊ូតុង */
+    .form-check-label {
+      cursor: pointer;
+      display: block;
+      padding: 10px 15px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      transition: background-color 0.2s, border-color 0.2s;
+    }
+
+    /* ពេល user hover */
+    .form-check-label:hover {
+      background-color: #002e62;
+      /* ពណ៌ប្រផេះស្រាល */
+      border-color: #988900;
+      color: white;
+    }
+
+    /* ពេល user ជ្រើសរើស (checked) */
+    .form-check-input:checked+.form-check-label {
+      background-color: #002c6f;
+      /* ពណ៌ខៀវស្រាល (Primary light) */
+      border-color: #0d6efd;
+      /* ពណ៌ខៀវ (Primary) */
+      font-weight: 500;
+    }
+
+    /* លាក់ Radio Button ដើម */
+    .form-check-input {
+      display: none;
     }
