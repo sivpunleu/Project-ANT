@@ -39,6 +39,19 @@
     .user-profile:hover {
         color: var(--primary-color);
     }
+
+    .hero {
+        min-height: 90vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+            url('../asset/images/kimhak/f8b6f01252baanner.jpg') center/cover no-repeat;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        border-radius: 10px;
+    }
 </style>
 
 <body>
@@ -217,7 +230,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="display-4 fw-bold mb-3 animate-text text-light">
-                    រឿងរ៉ាវនិងព្រឹត្តិការណ៍សំខាន់ៗក្នុងពុទ្ធសាសនា
+                    វប្បធម៌ប្រពៃណីខ្មែរ
                 </h1>
                 <p class="lead mb-4"></p>
                 <a href="#events" class="btn btn-warning text-white fw-bold px-4 py-2 rounded-pill">ស្វែងយល់បន្ថែម</a>
@@ -226,162 +239,174 @@
 
 
 
-        <!-- Events -->
-        <section id="events" class="py-10">
-            <div class="container">
-                <h2 class="text-center mb-5 text-golden">ព្រឹត្តិការណ៍ពុទ្ធសាសនាសំខាន់ៗ</h2>
-                <div class="row g-4">
 
-                    <!-- Event 1 -->
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal"
-                            data-bs-target="#meakBocheaModal">
-                            <img src="https://i.pinimg.com/736x/ee/22/b6/ee22b6f96c51de33b117d3df8499e666.jpg"
-                                class="card-img-top" alt="មាឃបូជា">
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-golden">បុណ្យមាឃបូជា</h5>
-                                <p class="card-text">ថៃ្ងទី ១៥ កើតខែមាឃ</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Event 2 -->
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#vesakModal">
-                            <img src="https://i.pinimg.com/736x/c8/57/e2/c857e2dbffd08ca78a45a2e20a8fdfe5.jpg"
-                                class="card-img-top" alt="វិសាខបូជា">
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-golden">បុណ្យវិសាខបូជា</h5>
-                                <p class="card-text">១៥​កើត ខែពិសាខ</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Event 3 -->
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#AsalhaModal">
-                            <img src="/asset/images/kimhak/e61d1284f421eef4655100088b63897d.jpg" class="card-img-top"
-                                alt="អាសាឡ្ហបូជា">
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-golden">បុណ្យអាសាឡ្ហបូជា</h5>
-                                <p class="card-text">១៥កើត ខែអាសាឍ</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Event 4 -->
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#vassaModal">
-                            <img src="/asset/images/kimhak/8d3d9bc7ba8583f0d818c40d536587ba.jpg" class="card-img-top"
-                                alt="ចូលវស្សា">
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-golden">បុណ្យចូលវស្សា</h5>
-                                <p class="card-text">ចាប់ថ្ងៃ១រោច ខែទុតិយាអាសាឍ ដល់ទី១៥កើត ខែអស្សុជ</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Event 5 -->
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal"
-                            data-bs-target="#kathinaModal">
-                            <img src="/asset/images/kimhak/kathina.jpg" class="card-img-top" alt="កឋិន">
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-golden">បុណ្យកឋិន</h5>
-                                <p class="card-text">ចាប់​ពីថ្ងៃ​១​រោច ខែអស្សុជ ដល់​ថ្ងៃ​១៥​កើត ខែ​ក​ក្តិ​ក</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
 
 
         <!-- Events story-->
         <section id="event-story" class="py-10">
             <div class="container">
-                <h2 class="text-center mb-5 text-golden">រឿងរ៉ាវល្បីៗ</h2>
-                <div class="row g-4">
+                <h2 class="text-center mb-5 text-golden fw-bold">បុណ្យប្រពៃណី</h2>
 
-                    <!-- story1 -->
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal"
-                            data-bs-target="#eventstoryModal">
-                            <img src="/asset/images/kimhak/chakhku.jpg" class="card-img-top" alt="story1">
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-golden">រឿងព្រះចក្ខុបាលត្ថេរ</h5>
-                                <p class="card-text">ធម៌ទាំងឡាយ មានចិត្តជាប្រធាន</p>
+
+
+
+
+
+
+
+                <!-- story4 -->
+                <div class="container">
+                    <div class="row g-4 align-items-center mb-4">
+                        <!-- Image Column -->
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal"
+                                data-bs-target="#vassaModal">
+                                <img src="https://i.pinimg.com/1200x/d7/71/2b/d7712b1682c99fbe193c2c94476ab264.jpg"
+                                    class="img-fluid rounded-4" style="height: 300px; width: 100%; object-fit: cover;"
+                                    alt="បុណ្យអុំទូក">
+
+                            </div>
+
+                            <div class="card h-100 border-0 shadow-sm d-flex flex-row" data-bs-toggle="modal"
+                                data-bs-target="#AsalhaModal">
+
+                                <div class="card-body text-center ps-4">
+                                    <h5 class="card-title text-golden">បុណ្យអុំទូក</h5>
+                                    <p class="card-text">ចុះកាលបរិច្ឆេទ៖ ឆ្នាំ ១៨៧៣
+                                        ឈ្មោះ​ផ្លូវការណ៍៖ ព្រះរាជពិធីបុណ្យអុំទូក បណ្ដែតប្រទីប អកអំបុក និង សំពះព្រះខែ
+                                        ឈ្មោះហៅកាត់៖ បុណ្យអុំទូក
+                                        ថ្ងៃចាប់ផ្ដើម និង ថ្ងៃបញ្ចប់៖ ថ្ងៃ​១៤កើត ១៥កើត ដល់​ថ្ងៃ ១រោច ខែ​ក​ក្តិ​ក
+                                        ប្រារព្ធដោយ៖ ជនជាតិខ្មែរ
+                                        ប្រារព្ធលើកដំបូង៖ ក្នុងរាជ​ព្រះបាទ នរោត្តម
+                                        ប្រវត្តិទេវៈកថា៖ ហិណ្ឌូសាសនា និង ពុទ្ធសាសនា...</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- story 2 -->
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#story2Modal">
-                            <img src="/asset/images/kimhak/mara2.jpg" class="card-img-top" alt="story2">
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-golden">ព្រះពុទ្ធផ្ចាញ់មារ</h5>
-                                <p class="card-text">ទានបារមី</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- story 3 -->
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#AsalhaModal">
-                            <img src="/asset/images/kimhak/tevateat.jpg" class="card-img-top"
-                                alt="អាសាឡ្ហបូជា">
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-golden">រឿងទេវទត្ត</h5>
-                                <p class="card-text">ទោសបំបែកសង្ឃ</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- story 4 -->
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#vassaModal">
-                            <img src="/asset/images/kimhak/a23ed59831327b5d1a82NALA.jpg" class="card-img-top"
-                                alt="nala">
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-golden">រឿងដំរីំនាឡាគិរី</h5>
-                                <p class="card-text">មេត្តាបារមី</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- story 5 -->
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal"
-                            data-bs-target="#kathinaModal">
-                            <img src="/asset/images/kimhak/d3e27f9f5132a7cbfb58CHEANU.jpg" class="card-img-top" alt="កឋិន">
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-golden">រឿងជានក</h5>
-                                <p class="card-text">វិរិយបារមី</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- story 6 -->
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal"
-                            data-bs-target="#kathinaModal">
-                            <img src="/asset/images/kimhak/b6be7c1c311aac64228b9aSOCHEATA.jpg" class="card-img-top" alt="កឋិន">
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-golden">រឿងនាងសុជាតា</h5>
-                                <p class="card-text">ថ្វាយបាយស​</p>
-                            </div>
-                        </div>
-                    </div>
-
 
                 </div>
+
+                <!-- story5 -->
+                <div class="container">
+                    <div class="row g-4 align-items-center mb-4">
+                        <!-- Image Column -->
+                        <div class="col-12 col-md-6">
+
+                        </div>
+                        <div class="col-6">
+
+                            <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal"
+                                data-bs-target="#vassaModal">
+                                <img src="https://i.pinimg.com/736x/6f/c7/f4/6fc7f4d31d558e01a0f84071196d47fb.jpg"
+                                    class="img-fluid rounded-4" style="height: 300px; width: 100%; object-fit: cover;"
+                                    alt="បុណ្យអុំទូក">
+
+                            </div>
+
+                            <div class="card h-100 border-0 shadow-sm d-flex flex-row" data-bs-toggle="modal"
+                                data-bs-target="#AsalhaModal">
+
+                                <div class="card-body text-center ps-4">
+                                    <h5 class="card-title text-golden">បុណ្យចូលឆ្នាំថ្មី</h5>
+                                    <p class="card-text">គឺជាពិធីបុណ្យ​ចូលឆ្នាំថ្មីរបស់កម្ពុជា ដែលកំណត់តាម
+                                        ប្រតិទិនពុទ្ធសាសនា (Buddhist calendar) តាមដំណើរគោលចររបស់ ព្រះចន្ទ
+                                        ដែលរាប់តាមរង្វាស់នៃឆ្នាំ ចន្ទគតិ (Lunar calendar) នៅក្នុងវប្បធម៌របស់កម្ពុជា
+                                        ពិធីបុណ្យនេះត្រូវបានគេហៅថា ពិធីបុណ្យ គិម្ហៈរដូវ "បុណ្យរដូវក្ដៅ" (The Hot Season)
+                                        នៃវិស្សមកាលតូច (Small vacations) ដែលបានមកពីអរិយធម៌ នៃវប្បធម៌ ប្រទេសឥណ្ឌា
+                                        ដែលហៅថ្ងៃចូលឆ្នាំថ្មីថា "សង្ក្រាន្ត" (Sangkranta) ដែលពាក្យ សង្ក្រាន្ត ជាភាសាដើម
+                                        នៃពាក្យ (សំស្ក្រឹត-Sanskrit) ដែលត្រូវបានប្រជាជនកម្ពុជា ឱ្យនិយមន័យថា...</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- story4 -->
+                <div class="container">
+                    <div class="row g-4 align-items-center mb-4">
+                        <!-- Image Column -->
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal"
+                                data-bs-target="#vassaModal">
+                                <img src="https://i.pinimg.com/1200x/a5/21/2f/a5212f056a07d767ed904210fdc3a6b1.jpg"
+                                    class="img-fluid rounded-4" style="height: 300px; width: 100%; object-fit: cover;"
+                                    alt="បុណ្យអុំទូក">
+
+                            </div>
+
+                            <div class="card h-100 border-0 shadow-sm d-flex flex-row" data-bs-toggle="modal"
+                                data-bs-target="#AsalhaModal">
+
+                                <div class="card-body text-center ps-4">
+                                    <h5 class="card-title text-golden">ពិធីបុណ្យភ្ជុំបិណ្ឌ</h5>
+                                    <p class="card-text">គឺជាពិធីបុណ្យ​នឹករលឹកសាច់ញាតិដែលបានស្លាប់របស់ជនជាតិខ្មែរ
+                                        ដែលកំណត់តាម ប្រតិទិនពុទ្ធសាសនា តាមដំណើរគោលចររបស់ព្រះចន្ទដែលរាប់តាមរង្វាស់នៃឆ្នាំ
+                                        ចន្ទគតិ នៅក្នុងប្រពៃណីរបស់កម្ពុជា ពិធីបុណ្យនេះត្រូវបានគេហៅថា "ពិធីសែនដូនតា
+                                        ដែលមានប្រវត្តិតាំងពី សម័យមុនអង្គរមកម៉្លេះ ដែលជួបប្រទះនៅសិលាចរឹក ចារឹកនៅស.វទី៩
+                                        ក្នុងរាជព្រះបាទ វ៉ាន់ឆាតដែលបានរៀបរាប់ខ្លះៗអំពីការចាប់បាយបិណ្ឌ ដែលពូនជាដុំ
+                                        ហើយបានផ្ដាំឱ្យព្រះកឹង មានន័យថា...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="container">
+                    <div class="row g-4 align-items-center mb-4">
+                        <!-- Image Column -->
+                        <div class="col-12 col-md-6">
+
+                        </div>
+                        <div class="col-6">
+
+                            <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal"
+                                data-bs-target="#vassaModal">
+                                <img src="https://i.pinimg.com/736x/56/67/4d/56674d0f7718c92730e61b49c55ad31e.jpg"
+                                    class="img-fluid rounded-4" style="height: 300px; width: 100%; object-fit: cover;"
+                                    alt="បុណ្យអុំទូក">
+
+                            </div>
+
+                            <div class="card h-100 border-0 shadow-sm d-flex flex-row" data-bs-toggle="modal"
+                                data-bs-target="#AsalhaModal">
+
+                                <div class="card-body text-center ps-4">
+                                    <h5 class="card-title text-golden">ព្រះរាជពិធីបុណ្យច្រត់ព្រះនង្គ័ល</h5>
+                                    <p class="card-text">គឺជាព្រះរាជពិធីបុណ្យប្រពៃណីជាតិកម្ពុជាមួយ ដែលប្រារព្ធឡើងនៅថ្ងៃ
+                                        ៤រោច រៀងរាល់ខែ ពិសាខ ត្រូវនិងខែ (ឧសភា) ដែលកំណត់តាម ប្រតិទិនពុទ្ធសាសនា (Buddhist
+                                        calendar) តាមដំណើរគោលចររបស់ ព្រះចន្ទ ដែលរាប់តាមរង្វាស់នៃឆ្នាំ ចន្ទគតិ (Lunar
+                                        calendar) នៅក្នុងវប្បធម៌របស់កម្ពុជា ពិធីបុណ្យនេះត្រូវបានគេហៅថា
+                                        ពិធីបុណ្យចាប់ផ្ដើមនូវរដូវដាំដុះ (Festival begins the growing season)
+                                        ដែលស្ថាប័នព្រះបរមរាជវាំង និង រៀបចំឱ្យមានកិច្ចភ្ជួរព្រះស្រែដើម្បីជានិមិត្តរូប
+                                        ក្នុងការចាប់ផ្ដើមរបរកសិកម្ម...</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
         </section>
+
+
 
 
 
@@ -393,6 +418,7 @@
 
 
         <!-- Modals -->
+
         <!-- Meak Bochea -->
         <div class="modal fade" id="meakBocheaModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
