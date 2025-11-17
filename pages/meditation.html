@@ -28,6 +28,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../asset/css/meditation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
 
 </head>
 <style>
@@ -215,16 +216,25 @@
         <div id="hero" class="d-flex align-items-center justify-content-center p-5 text-center text-white"
             style="background: linear-gradient(135deg, rgba(139, 115, 85, 0.8), rgba(212, 175, 135, 0.8)), url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80'); background-size: cover; background-position: center; min-height: 500px;">
             <div class="container">
-                <h1 class="display-4 fw-bold mb-3"> សមាធិ៖ ផ្លូវទៅកាន់សន្តិភាព</h1>
+                <h1 class="display-4 fw-bold mb-3  animate__pulse"> សមាធិ៖ ផ្លូវទៅកាន់សន្តិភាព</h1>
                 <p class="fs-4 mb-4 opacity-75">ស្វែងយល់ពីសមាធិ និងរៀនពីរបៀបអភិវឌ្ឍ និងថែរក្សាផ្លូវចិត្ត</p>
+
                 <a href="#types"
                     class="btn btn-light btn-lg rounded-pill shadow-sm px-5 py-3 fw-bold">ស្វែងយល់បន្ថែម</a>
+
+                <div class="mt-5">
+                    <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
+                        <li class="breadcrumb-item text-dark" aria-current="page">សមាធិ</li>
+                        <li class="breadcrumb-item"><a href="../pages/Sila.html">សីល</a></li>
+                        <li class="breadcrumb-item"><a href="../pages/vipassana.html">វិបស្សនា</a></li>
+                    </ol>
+                </div>
             </div>
         </div>
         <section id="intro" class="py-5">
             <div class="container">
                 <div class="row align-items-center g-5">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-right">
                         <h2 class="section-title text-start mb-4">តើសមាធិពិតជាអ្វី?</h2>
                         <div class="section-title-divider ms-0 mb-4" style="margin-top: -15px;"></div>
 
@@ -238,7 +248,7 @@
                         <p class="fs-5">ការ​អនុវត្ត​សមាធិ​ជួយ​ឲ្យ​ដង្ហើម​របស់​យើង​មាន​ភាព​រលូន ឈាន​ដល់​តុល្យភាព
                             និង​ផ្តល់​នូវ​សន្តិភាព​ផ្លូវចិត្ត​ដ៏​ស៊ីជម្រៅ។</p>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="zoom-in-left">
 
                         <div class="rounded-4 p-5 text-white text-center shadow d-flex flex-column align-items-center justify-content-center"
                             style="background: linear-gradient(135deg, #D4AF87, #8B7355); min-height: 300px;">
@@ -258,7 +268,7 @@
 
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-4">
-                        <div class="card shadow-sm border-2 h-100 text-center p-4 rounded-4"
+                        <div class="card shadow-sm border-2 h-100 text-center p-4 rounded-4" data-aos="zoom-in-right"
                             style="--bs-border-color: var(--secondary-color);">
                             <div class="card-body">
                                 <i class="fas fa-wind display-4 mb-3" style="color: var(--primary-color);"></i>
@@ -268,7 +278,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="zoom-in-down">
                         <div class="card shadow-sm border-2 h-100 text-center p-4 rounded-4"
                             style="--bs-border-color: var(--secondary-color);">
                             <div class="card-body">
@@ -279,7 +289,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="zoom-in-left">
                         <div class="card shadow-sm border-2 h-100 text-center p-4 rounded-4"
                             style="--bs-border-color: var(--secondary-color);">
                             <div class="card-body">
@@ -300,11 +310,12 @@
                 <div class="section-title-divider mx-auto mb-5"></div>
 
                 <div class="row g-5 align-items-center mb-5 pb-lg-3">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-duration="3000">
                         <img src="../asset/images/vannda_img/meditation_pictures.jpg"
                             class="img-fluid rounded-4 shadow-lg" alt="ការរៀបចំកន្លែងសមាធិ">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                         <div class="badge rounded-pill fs-5 mb-3 px-3 py-2"
                             style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
                             ជំហានទី១</div>
@@ -319,11 +330,12 @@
                 </div>
 
                 <div class="row g-5 align-items-center mb-5 pb-lg-3">
-                    <div class="col-md-6 order-md-2">
+                    <div class="col-md-6 order-md-2" data-aos="fade-up-left">
                         <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80"
                             class="img-fluid rounded-4 shadow-lg" alt="ឥរិយាបថអង្គុយសមាធិ">
                     </div>
-                    <div class="col-md-6 order-md-1">
+                    <div class="col-md-6 order-md-1" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                        data-aos-delay="300" data-aos-offset="0">
                         <div class="badge rounded-pill fs-5 mb-3 px-3 py-2"
                             style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
                             ជំហានទី២</div>
@@ -338,11 +350,11 @@
                 </div>
 
                 <div class="row g-5 align-items-center">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                         <img src="../asset/images/vannda_img/focus_to_do_meditation.jpg"
                             class="img-fluid rounded-4 shadow-lg" alt="ការផ្ចង់អារម្មណ៍លើដង្ហើម">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-anchor-placement="top-center">
                         <div class="badge rounded-pill fs-5 mb-3 px-3 py-2"
                             style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
                             ជំហានទី៣</div>
@@ -358,21 +370,22 @@
             </div>
         </section>
 
-        <section id="benefits" class="py-5 bg-light">
+        <section id="benefits" class="py-5 ">
             <div class="container">
                 <h2 class="section-title text-center mb-4">អត្ថប្រយោជន៍ដ៏អស្ចារ្យនៃសមាធិ</h2>
                 <div class="section-title-divider mx-auto mb-5"></div>
-                <p class="text-center fs-5 mb-5 col-lg-8 mx-auto">ការ​អនុវត្ត​សមាធិ​ជា​ប្រចាំ
+                <p class="text-center fs-2 mb-5 col-lg-8 mx-auto">ការ​អនុវត្ត​សមាធិ​ជា​ប្រចាំ
                     មិន​ត្រឹមតែ​ជួយ​ឲ្យ​ចិត្ត​ស្ងប់​តែ​មួយ​ពេល​នោះ​ទេ
                     តែ​វា​ផ្ដល់​អត្ថប្រយោជន៍​យ៉ាង​ជ្រាលជ្រៅ​ដល់​សុខភាព។</p>
 
                 <div class="row g-4 mb-5">
                     <div class="col-md-6 col-lg-4">
-                        <div class="card shadow-sm border-0 text-center p-4 rounded-3 h-100">
-                            <div class="card-body">
+                        <div class="card shadow-sm border-0 text-center p-4 rounded-3 h-100"
+                            style="background: rgba(139, 115, 85, 0.05); --bs-border-color: var(--primary-color);">
+                            <div class="card-body fs-5" style="color: var(--text-primary);">
                                 <div class="display-4 mb-3" style="color: var(--primary-color);"><i
                                         class="fas fa-brain"></i></div>
-                                <h5 class="fw-bold" style="color: var(--primary-color);">អត្ថប្រយោជន៍ផ្លូវចិត្ត</h5>
+                                <h5 class="fw-bold" style="color: var(--text-primary);">អត្ថប្រយោជន៍ផ្លូវចិត្ត</h5>
                                 <p><strong>កាត់បន្ថយភាពតានតឹង៖</strong> ជួយ​កាត់បន្ថយ​អ័រម៉ូន​ស្ត្រេស (Cortisol)
                                     ធ្វើ​ឲ្យ​មាន​អារម្មណ៍​ធូរ​ស្រាល។</p>
                                 <p><strong>បង្កើនស្ថិរភាពអារម្មណ៍៖</strong>
@@ -381,23 +394,25 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <div class="card shadow-sm border-0 text-center p-4 rounded-3 h-100">
-                            <div class="card-body">
+                        <div class="card shadow-sm border-0 text-center p-4 rounded-3 h-100"
+                            style="background: rgba(139, 115, 85, 0.05); --bs-border-color: var(--primary-color);">
+                            <div class="card-body fs-5" style="color: var(--text-primary);">
                                 <div class="display-4 mb-3" style="color: var(--primary-color);"><i
                                         class="fas fa-heart-pulse"></i></div>
-                                <h5 class="fw-bold" style="color: var(--primary-color);">អត្ថប្រយោជន៍ផ្លូវកាយ</h5>
+                                <h5 class="fw-bold" style="color: var(--text-primary);">អត្ថប្រយោជន៍ផ្លូវកាយ</h5>
                                 <p><strong>ជួយដល់ការគេង៖</strong> ជួយ​រំសាយ​គំនិត​អវិជ្ជមាន
                                     ធ្វើ​ឲ្យ​ងាយ​គេង​លក់​ស្កប់ស្កល់។</p>
                                 <p><strong>គាំទ្របេះដូង៖</strong> អាច​ជួយ​បញ្ចុះ​សម្ពាធ​ឈាម (Lower Blood Pressure)។</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card shadow-sm border-0 text-center p-4 rounded-3 h-100">
-                            <div class="card-body">
+                    <div class="col-md-6 col-lg-4 ">
+                        <div class="card shadow-sm border-0 text-center p-4 rounded-3 h-100"
+                            style="background: rgba(139, 115, 85, 0.05); --bs-border-color: var(--primary-color);">
+                            <div class="card-body fs-5" style="color: var(--text-primary);">
                                 <div class="display-4 mb-3" style="color: var(--primary-color);"><i
                                         class="fas fa-lightbulb"></i></div>
-                                <h5 class="fw-bold" style="color: var(--primary-color);">អត្ថប្រយោជន៍ផ្លូវបញ្ញា</h5>
+                                <h5 class="fw-bold">អត្ថប្រយោជន៍ផ្លូវបញ្ញា</h5>
                                 <p><strong>ការយល់ដឹងពីខ្លួនឯង៖</strong> អាច​ឲ្យ​យើង​សង្កេត​មើល​គំនិត
                                     និង​អារម្មណ៍​របស់​ខ្លួនឯង។</p>
                                 <p><strong>អភិវឌ្ឍបញ្ញា៖</strong> អភិវឌ្ឍ​បញ្ញា​ក្នុង​ការ​ដោះស្រាយ​បញ្ហា​ជីវិត។</p>
@@ -418,30 +433,35 @@
                 <h4 class="text-center mb-4 fw-bold" style="color: var(--primary-color);">សម្រាប់អ្នកចាប់ផ្ដើម</h4>
                 <div class="row g-4 mb-5">
                     <div class="col-md-6 col-lg-4">
-                        <div class="card shadow-sm border-0 p-4 rounded-4 h-100">
+                        <div class="card shadow-sm border-0 p-4 rounded-4 h-100"
+                            style="background-color: var(--bg-secondary);">
                             <div class="card-body d-flex flex-column">
                                 <div class="d-flex align-items-center justify-content-center rounded-circle text-white mb-3"
                                     style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
                                     <i class="fas fa-play fs-5"></i>
                                 </div>
                                 <h5 class="fw-bold" style="color: var(--primary-color);">សមាធិ ៥ នាទី</h5>
-                                <p class="text-muted mb-3 flex-grow-1">ចាប់ផ្ដើម​ថ្ងៃ​ថ្មី
+                                <p class=" mb-3 flex-grow-1" style="color: var(--text-primary);">ចាប់ផ្ដើម​ថ្ងៃ​ថ្មី
                                     ឬ​បញ្ចប់​ថ្ងៃ​របស់​អ្នក​ដោយ​ចិត្ត​ស្ងប់​ក្នុង​រយៈពេល​ត្រឹម ៥ នាទី។</p>
-                                <button class="btn btn-outline-primary w-100 btn-sm">
+
+                                <button class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#meditationModal-5min">
                                     <i class="fas fa-headphones"></i> ស្តាប់ឥឡូវ
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <div class="card shadow-sm border-0 p-4 rounded-4 h-100">
+                        <div class="card shadow-sm border-0 p-4 rounded-4 h-100"
+                            style="background-color: var(--bg-secondary);">
                             <div class="card-body d-flex flex-column">
                                 <div class="d-flex align-items-center justify-content-center rounded-circle text-white mb-3"
                                     style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
                                     <i class="fas fa-play fs-5"></i>
                                 </div>
                                 <h5 class="fw-bold" style="color: var(--primary-color);">សមាធិដង្ហើម ១០ នាទី</h5>
-                                <p class="text-muted mb-3 flex-grow-1">ហ្វឹកហាត់​ការ​ផ្ចង់​អារម្មណ៍​របស់​អ្នក
+                                <p class=" mb-3 flex-grow-1" style="color: var(--text-primary);">
+                                    ហ្វឹកហាត់​ការ​ផ្ចង់​អារម្មណ៍​របស់​អ្នក
                                     ដោយ​ការ​សង្កេត​ដង្ហើម​ចេញចូល។</p>
                                 <button class="btn btn-outline-primary w-100 btn-sm">
                                     <i class="fas fa-headphones"></i> ស្តាប់ឥឡូវ
@@ -450,14 +470,16 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <div class="card shadow-sm border-0 p-4 rounded-4 h-100">
+                        <div class="card shadow-sm border-0 p-4 rounded-4 h-100"
+                            style="background-color: var(--bg-secondary);">
                             <div class="card-body d-flex flex-column">
                                 <div class="d-flex align-items-center justify-content-center rounded-circle text-white mb-3"
                                     style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
                                     <i class="fas fa-play fs-5"></i>
                                 </div>
                                 <h5 class="fw-bold" style="color: var(--primary-color);">សមាធិមេត្តា ៨ នាទី</h5>
-                                <p class="text-muted mb-3 flex-grow-1">បណ្ដុះ​នូវ​សេចក្ដី​ស្រឡាញ់
+                                <p class="mb-3 flex-grow-1" style="color: var(--text-primary);">
+                                    បណ្ដុះ​នូវ​សេចក្ដី​ស្រឡាញ់
                                     និង​ការ​អាណិត​អាសូរ​ដល់​ខ្លួនឯង។</p>
                                 <button class="btn btn-outline-primary w-100 btn-sm">
                                     <i class="fas fa-headphones"></i> ស្តាប់ឥឡូវ
@@ -471,14 +493,15 @@
                 </h4>
                 <div class="row g-4 mb-5">
                     <div class="col-md-6 col-lg-4">
-                        <div class="card shadow-sm border-0 p-4 rounded-4 h-100">
+                        <div class="card shadow-sm border-0 p-4 rounded-4 h-100"
+                            style="background-color: var(--bg-secondary);">
                             <div class="card-body d-flex flex-column">
                                 <div class="d-flex align-items-center justify-content-center rounded-circle text-white mb-3"
                                     style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
                                     <i class="fas fa-play fs-5"></i>
                                 </div>
                                 <h5 class="fw-bold" style="color: var(--primary-color);">សមាធិសម្រាប់ការគេង</h5>
-                                <p class="text-muted mb-3 flex-grow-1">ជួយ​រំសាយ​គំនិត
+                                <p class=" mb-3 flex-grow-1" style="color: var(--text-primary);">ជួយ​រំសាយ​គំនិត
                                     និង​រៀបចំ​រាងកាយ​ឲ្យ​បាន​សម្រាក​មុន​ពេល​ចូល​គេង។</p>
                                 <button class="btn btn-outline-primary w-100 btn-sm">
                                     <i class="fas fa-headphones"></i> ស្តាប់ឥឡូវ
@@ -487,14 +510,15 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <div class="card shadow-sm border-0 p-4 rounded-4 h-100">
+                        <div class="card shadow-sm border-0 p-4 rounded-4 h-100"
+                            style="background-color: var(--bg-secondary);">
                             <div class="card-body d-flex flex-column">
                                 <div class="d-flex align-items-center justify-content-center rounded-circle text-white mb-3"
                                     style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
                                     <i class="fas fa-play fs-5"></i>
                                 </div>
                                 <h5 class="fw-bold" style="color: var(--primary-color);">សមាធិស្កេនរាងកាយ</h5>
-                                <p class="text-muted mb-3 flex-grow-1">
+                                <p class="mb-3 flex-grow-1" style="color: var(--primary-color);">
                                     ជួយ​កាត់បន្ថយ​ភាព​តានតឹង​ដែល​កកកុញ​នៅ​ក្នុង​រាងកាយ។</p>
                                 <button class="btn btn-outline-primary w-100 btn-sm">
                                     <i class="fas fa-headphones"></i> ស្តាប់ឥឡូវ
@@ -503,14 +527,16 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <div class="card shadow-sm border-0 p-4 rounded-4 h-100">
+                        <div class="card shadow-sm border-0 p-4 rounded-4 h-100"
+                            style="background-color: var(--bg-secondary);">
                             <div class="card-body d-flex flex-column">
                                 <div class="d-flex align-items-center justify-content-center rounded-circle text-white mb-3"
                                     style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
                                     <i class="fas fa-play fs-5"></i>
                                 </div>
                                 <h5 class="fw-bold" style="color: var(--primary-color);">សមាធិសម្រួលអារម្មណ៍ ១៥នាទី</h5>
-                                <p class="text-muted mb-3 flex-grow-1">សមាធិ​ស៊ីជម្រៅ​សម្រាប់​ការ​ផ្ដោត​អារម្មណ៍
+                                <p class=" mb-3 flex-grow-1" style="color: var(--primary-color);">
+                                    សមាធិ​ស៊ីជម្រៅ​សម្រាប់​ការ​ផ្ដោត​អារម្មណ៍
                                     និង​រំលាយ​សម្ពាធ។</p>
                                 <button class="btn btn-outline-primary w-100 btn-sm">
                                     <i class="fas fa-headphones"></i> ស្តាប់ឥឡូវ
@@ -522,7 +548,7 @@
             </div>
         </section>
 
-        <section class="py-5 bg-light">
+        <section class="py-5">
             <div class="container">
                 <h2 class="section-title text-center mb-4">ទស្សនៈអប់រំចិត្ត</h2>
                 <div class="section-title-divider mx-auto mb-5"></div>
@@ -534,8 +560,8 @@
                         <div class="card border-0 border-start border-5 rounded-3 h-100"
                             style="background: rgba(139, 115, 85, 0.05); --bs-border-color: var(--primary-color);">
                             <div class="card-body p-4 d-flex align-items-center">
-                                <blockquote class="blockquote mb-0" style="color: var(--primary-color);">
-                                    <span class="display-4 lh-1 me-2" style="color: var(--secondary-color);">"</span>
+                                <blockquote class="blockquote mb-0" style="color: var(--text-primary);">
+                                    <span class="display-4 lh-1 me-2" style="color: var(--text-primary);">"</span>
                                     ចិត្ត​ស្ងប់ ជា​ប្រភព​នៃ​សេចក្ដីសុខ។
                                 </blockquote>
                             </div>
@@ -545,8 +571,8 @@
                         <div class="card border-0 border-start border-5 rounded-3 h-100"
                             style="background: rgba(139, 115, 85, 0.05); --bs-border-color: var(--primary-color);">
                             <div class="card-body p-4 d-flex align-items-center">
-                                <blockquote class="blockquote mb-0" style="color: var(--primary-color);">
-                                    <span class="display-4 lh-1 me-2" style="color: var(--secondary-color);">"</span>
+                                <blockquote class="blockquote mb-0" style="color: var(--text-primary);">
+                                    <span class="display-4 lh-1 me-2" style="color: var(--text-primary);">"</span>
                                     អតីតកាល​កន្លង​ផុត​ទៅ​ហើយ, អនាគត​មិន​ទាន់​មក​ដល់​។
                                     អ្វី​ដែល​អ្នក​មាន​ពិត​ប្រាកដ​គឺ​ខណៈ​បច្ចុប្បន្ន​នេះ។
                                 </blockquote>
@@ -557,8 +583,8 @@
                         <div class="card border-0 border-start border-5 rounded-3 h-100"
                             style="background: rgba(139, 115, 85, 0.05); --bs-border-color: var(--primary-color);">
                             <div class="card-body p-4 d-flex align-items-center">
-                                <blockquote class="blockquote mb-0" style="color: var(--primary-color);">
-                                    <span class="display-4 lh-1 me-2" style="color: var(--secondary-color);">"</span>
+                                <blockquote class="blockquote mb-0" style="color: var(--text-primary);">
+                                    <span class="display-4 lh-1 me-2" style="color: var(--text-primary);">"</span>
                                     សន្តិភាព​កើត​ចេញ​ពី​ខាង​ក្នុង​។ ចូរ​កុំ​ស្វែងរក​វា​នៅ​ខាង​ក្រៅ។
                                 </blockquote>
                             </div>
@@ -568,8 +594,8 @@
                         <div class="card border-0 border-start border-5 rounded-3 h-100"
                             style="background: rgba(139, 115, 85, 0.05); --bs-border-color: var(--primary-color);">
                             <div class="card-body p-4 d-flex align-items-center">
-                                <blockquote class="blockquote mb-0" style="color: var(--primary-color);">
-                                    <span class="display-4 lh-1 me-2" style="color: var(--secondary-color);">"</span>
+                                <blockquote class="blockquote mb-0" style="color: var(--text-primary);">
+                                    <span class="display-4 lh-1 me-2" style="color: var(--text-primary);">"</span>
                                     ដូច​ការ​ហាត់ប្រាណ​សម្រាប់​សាច់ដុំ, សមាធិ គឺ​ជា​ការ​ហាត់ប្រាណ​សម្រាប់​ខួរក្បាល។
                                 </blockquote>
                             </div>
@@ -579,8 +605,8 @@
                         <div class="card border-0 border-start border-5 rounded-3 h-100"
                             style="background: rgba(139, 115, 85, 0.05); --bs-border-color: var(--primary-color);">
                             <div class="card-body p-4 d-flex align-items-center">
-                                <blockquote class="blockquote mb-0" style="color: var(--primary-color);">
-                                    <span class="display-4 lh-1 me-2" style="color: var(--secondary-color);">"</span>
+                                <blockquote class="blockquote mb-0" style="color: var(--text-primary);">
+                                    <span class="display-4 lh-1 me-2" style="color: var(--text-primary);">"</span>
                                     ចិត្ត​ដែល​បាន​ហ្វឹកហាត់​ល្អ​ហើយ នាំ​មក​នូវ​សេចក្ដីសុខ។
                                 </blockquote>
                             </div>
@@ -590,8 +616,8 @@
                         <div class="card border-0 border-start border-5 rounded-3 h-100"
                             style="background: rgba(139, 115, 85, 0.05); --bs-border-color: var(--primary-color);">
                             <div class="card-body p-4 d-flex align-items-center">
-                                <blockquote class="blockquote mb-0" style="color: var(--primary-color);">
-                                    <span class="display-4 lh-1 me-2" style="color: var(--secondary-color);">"</span>
+                                <blockquote class="blockquote mb-0" style="color: var(--text-primary);">
+                                    <span class="display-4 lh-1 me-2" style="color: var(--text-primary);">"</span>
                                     ភាព​ស្ងប់​នៃ​ចិត្ត គឺ​ជា​លទ្ធផល​នៃ​ការ​បណ្ដុះ (អនុវត្ត)
                                     មិនមែន​ជា​លទ្ធផល​នៃ​ការ​ទន្ទឹង​រង់ចាំ​ទេ។
                                 </blockquote>
@@ -657,49 +683,62 @@
             </div>
         </section>
 
-        <section id="contact" class="py-5 bg-light">
+        <section id="contact" class="py-5">
             <div class="container">
                 <h2 class="section-title text-center mb-4">ចូលរួមវគ្គសិក្សាសមាធិ</h2>
                 <div class="section-title-divider mx-auto mb-5"></div>
+                <p class="fs-2 text-center mb-5 col-lg-8 mx-auto" style="color: var(--text-primary);">
+                    សូម​បំពេញ​ទម្រង់​បែបបទ​ខ្លីៗ​នេះ
+                    ដើម្បី​សាកសួរ​ព័ត៌មាន​លម្អិត​បន្ថែម ឬ​ចុះឈ្មោះ​ចូលរួម។</p>
 
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3">
-                        <p class="text-center mb-4 fs-5">សូម​បំពេញ​ទម្រង់​បែបបទ​ខ្លីៗ​នេះ
-                            ដើម្បី​សាកសួរ​ព័ត៌មាន​លម្អិត​បន្ថែម ឬ​ចុះឈ្មោះ​ចូលរួម។</p>
-                        <form class="needs-validation" novalidate>
-                            <div class="mb-3">
-                                <label for="name" class="form-label">ឈ្មោះ</label>
-                                <input type="text" class="form-control rounded-3" id="name"
-                                    placeholder="បំពេញ​ឈ្មោះ​របស់​អ្នក" required
-                                    style="border-color: var(--secondary-color);">
-                            </div>
 
-                            <div class="mb-3">
-                                <label for="email" class="form-label">អ៊ីមែល</label>
-                                <input type="email" class="form-control rounded-3" id="email"
-                                    placeholder="បំពេញ​អ៊ីមែល​របស់​អ្នក" required
-                                    style="border-color: var(--secondary-color);">
-                            </div>
+                <div class="row d-flex justify-content-between">
+                    <div class="col-6">
+                        <div class="card">
+                            <img src="../asset/images/vannda_img/សមាធិ.png" alt="meditation" class="card-img">
+                        </div>
+                    </div>
+                    <div class="col-6 ">
+                        <div class="card p-3">
 
-                            <div class="mb-3">
-                                <label for="phone" class="form-label">លេខទូរស័ព្ទ (បើ​មាន)</label>
-                                <input type="tel" class="form-control rounded-3" id="phone"
-                                    placeholder="បំពេញ​លេខទូរស័ព្ទ​របស់​អ្នក"
-                                    style="border-color: var(--secondary-color);">
-                            </div>
+                            <form class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">ឈ្មោះ</label>
+                                    <input type="text" class="form-control rounded-3" id="name"
+                                        placeholder="បំពេញ​ឈ្មោះ​របស់​អ្នក" required
+                                        style="border-color: var(--secondary-color);">
+                                </div>
 
-                            <div class="mb-3">
-                                <label for="message" class="form-label">សារ</label>
-                                <textarea class="form-control rounded-3" id="message" rows="4"
-                                    placeholder="វាយ​បញ្ចូល​សារ ឬ​សំណួរ​របស់​អ្នក" required
-                                    style="border-color: var(--secondary-color);"></textarea>
-                            </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">អ៊ីមែល</label>
+                                    <input type="email" class="form-control rounded-3" id="email"
+                                        placeholder="បំពេញ​អ៊ីមែល​របស់​អ្នក" required
+                                        style="border-color: var(--secondary-color);">
+                                </div>
 
-                            <button type="submit" class="btn btn-lg w-100 text-white rounded-pill shadow-sm fw-bold"
-                                style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); padding: 15px 40px;">
-                                <i class="fas fa-paper-plane"></i> ផ្ញើសារ
-                            </button>
-                        </form>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">លេខទូរស័ព្ទ (បើ​មាន)</label>
+                                    <input type="tel" class="form-control rounded-3" id="phone"
+                                        placeholder="បំពេញ​លេខទូរស័ព្ទ​របស់​អ្នក"
+                                        style="border-color: var(--secondary-color);">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">សារ</label>
+                                    <textarea class="form-control rounded-3" id="message" rows="1"
+                                        placeholder="វាយ​បញ្ចូល​សារ ឬ​សំណួរ​របស់​អ្នក" required
+                                        style="border-color: var(--secondary-color);"></textarea>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <a href=""></a>
+                                    <button type="submit" class="btn btn-lg  text-white rounded-pill shadow-sm "
+                                        style="background: linear-gradient(100deg,  var(--primary-color), var(--secondary-color)); font-size: 18px;">
+                                        <i class="fas fa-paper-plane" style="font-size: 10px  !important;"></i> ផ្ញើសារ
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -815,6 +854,34 @@
     <script>
         AOS.init();
     </script>
+    <!-- model Audio Player-->
+    <div class="modal fade" id="meditationModal-5min" tabindex="-1" aria-labelledby="meditationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold" id="meditationModalLabel" style="color: var(--primary-color);">
+                        សមាធិ ៥ នាទី
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center mb-4">សូម​សម្រួល​ឥរិយាបថ និង​ស្វែងរក​ទីតាំង​ស្ងប់ស្ងាត់​ដើម្បី​ចាប់ផ្ដើម។</p>
+
+                    <div class="text-center">
+                        <audio controls class="w-100">
+                            <source src="PATH_TO_YOUR_AUDIO_FILE.mp3" type="audio/mpeg">
+                            កម្មវិធី​បើក​អ៊ីនធឺណិត​របស់​អ្នក មិន​គាំទ្រ​កម្មវិធី​ចាក់​សំឡេង​នេះ​ទេ។
+                        </audio>
+                    </div>
+
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

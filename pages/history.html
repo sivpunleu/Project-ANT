@@ -79,189 +79,176 @@
 </style>
 
 <body>
-
-    <!-- ═══════════ MAIN NAVBAR ═══════════ -->
-    <nav class="navbar navbar-expand-lg  border-bottom border-light sticky-top py-3 wow animate__slideInDown ">
-        <div class="container">
-            <!-- Logo & Brand -->
-            <a class="navbar-brand" href="#">
-                <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
-                <div>
-                    <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
-                    <div style="font-size: 12px; font-family: 'Battambang'; color: var(--text-secondary);">
-                        Buddhism & Society
+    <header class=" sticky-top">
+        <!-- ═══════════ MAIN NAVBAR ═══════════ -->
+        <nav class="navbar navbar-expand-lg  border-bottom border-light py-3 wow animate__slideInDown ">
+            <div class="container">
+                <!-- Logo & Brand -->
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
+                    <div>
+                        <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
+                        <div style="font-size: 12px; font-family: 'Battambang'; color: var(--primary-color);">
+                            Buddhism & Society
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            <!-- Mobile Toggle -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-                <i class="fas fa-bars" style="color: var(--primary-color);"></i>
-            </button>
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                    <i class="fas fa-bars" style="color: var(--primary-color);"></i>
+                </button>
 
-            <!-- Main Menu -->
-            <div class="collapse navbar-collapse" id="navbarMain">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
-                    <!-- Home -->
-                    <li class="nav-item">
-                        <a class="nav-link active" href="../index.html">
-                            <i class="fas fa-home"></i> ទំព័រដើម
-                        </a>
-                    </li>
-                    <!-- Dhamma Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            <i class="fas fa-book"></i> ព្រះធម៌
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="pages/media-library.html">
-                                    <i class="fas fa-book-open"></i> បណ្ណាល័យព្រះធម៌
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-video"></i> វីដេអូធម៌
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-microphone"></i> សំឡេងធម៌
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-calendar-day"></i> សំណួរ និង ចម្លើយ
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                <!-- Main Menu -->
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../home.html">
+                                ទំព័រដើម
+                            </a>
+                        </li>
+                        <!-- Dhamma Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                ព្រះធម៌
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="../pages/media-library.html">
+                                        បណ្ណាល័យព្រះធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        វីដេអូធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        សំឡេងធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        សំណួរ និង ចម្លើយ
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
 
-                    <!-- Courses -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="fas fa-chalkboard-teacher"></i> ការអប់រំ
-                        </a>
-                    </li>
+                        <!-- Courses -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/education.html">
+                                ការអប់រំ
+                            </a>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            <i class="fas fa-calendar-alt"></i>
-                            ព្រឹត្តិការណ៍
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-history"></i> ពុទ្ធសាសនា
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-bullseye"></i> វប្បធម៌ខ្មែរ
-                                </a>
-                            </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../pages/events.html" data-bs-toggle="dropdown">
 
-
-                        </ul>
-                    </li>
-                    <!-- Services -->
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/events.html">
-                            <i class="fas fa-calendar-alt"></i> កម្មវិធី
-                        </a>
-                    </li>
-                    <!-- About Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            <i class="fas fa-info-circle"></i> អំពីយើង
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="pages/about/history.html">
-                                    <i class="fas fa-history"></i> ប្រវត្តិ
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-bullseye"></i> បេសកកម្ម
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-users"></i> ក្រុមការងារ
-                                </a>
-                            </li>
+                                ព្រឹត្តិការណ៍
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        ពុទ្ធសាសនា
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        វប្បធម៌ខ្មែរ
+                                    </a>
+                                </li>
 
 
-                        </ul>
-                    </li>
-                    <!-- Services -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            <i class="fas fa-hands-helping"></i> ផ្សេងៗ
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="pages/Buddhist Rituals.html">
-                                    <i class="fas fa-hand-holding-heart"></i> កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-graduation-cap"></i> ចូលរូមស្ម័គ្រចិត្ត
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-heartbeat"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-leaf"></i> បរិស្ថាន
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                            </ul>
+                        </li>
+                        <!-- Services -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/events.html">
+                                កម្មវិធី
+                            </a>
+                        </li>
+                        <!-- About Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                អំពីយើង
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="../pages/history.html">
+                                        ប្រវត្តិ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../pages/mission.html">
+                                        បេសកកម្ម
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../pages/team.html">
+                                        ក្រុមការងារ
+                                    </a>
+                                </li>
 
 
-                </ul>
-                <!-- Right Side Buttons -->
+                            </ul>
+                        </li>
 
-                <div class="d-flex gap-2 align-items-center ms-auto">
-                    <!-- Theme Toggle -->
-                    <button class="theme-toggle" onclick="toggleTheme()">
-                        <i class="fas fa-moon" id="themeIcon"></i>
-                    </button>
-                    <!-- button search model -->
-                    <button class="btn btn-outline-primary d-none d-lg-block " data-bs-toggle="modal"
-                        data-bs-target="#searchModal">
-                        <i class="fas fa-search "></i> ស្វែងរក
-                    </button>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                ផ្សេងៗ
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="../pages/Buddhist Rituals.html">
+                                        កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        ចូលរូមស្ម័គ្រចិត្ត
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        បរិស្ថាន
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
 
 
+                    </ul>
+                    <!-- Right Side Buttons -->
 
-                    <!-- User Profile / Login -->
-                    <div class="dropdown" id="userSection">
-                        <button class="btn btn-link text-decoration-none dropdown-toggle" type="button"
-                            data-bs-toggle="dropdown">
-                            <i class="bi bi-person-circle fs-5"></i>
+                    <div class="d-flex gap-2 align-items-center ms-auto">
+                        <!-- Theme Toggle -->
+                        <button class="theme-toggle" onclick="toggleTheme()">
+                            <i class="fas fa-moon" id="themeIcon"></i>
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="pages/auth/login.html">
-                                    <i class="bi bi-box-arrow-in-right me-2"></i>ចូលប្រើ
-                                </a></li>
-                            <li><a class="dropdown-item " href="pages/auth/register.html">
-                                    <i class="bi bi-person-plus me-2"></i>ចុះឈ្មោះ
-                                </a></li>
-                        </ul>
-                    </div>
-                </div>
+                        <!-- button search model -->
+                        <button class="btn btn-outline-primary d-none d-lg-block " data-bs-toggle="modal"
+                            data-bs-target="#searchModal">
+                            <i class="fas fa-search "></i> ស្វែងរក
+                        </button>
 
+
+
+                        <!-- User Profile -->
+                        <a href="#" class="user-profile">
+                            <img src="../asset/images/img-profile/user-profile.png" alt="" class="img-f"
+                                style="width: 50px; " height="50px">
+                        </a>
+
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- ═══════════ PAGE CONTENT ═══════════ -->
     <main>
@@ -270,18 +257,18 @@
                 <div class="herobanner ">
                     <div class="banner-title d-flex justify-content-center align-items-center flex-column">
                         <h1 class="text-white my-3 fw-bolder animate__animated  animate__fadeInDown"
-                            style="font-size: 48px ;">ប្រវត្តិពុទ្ធសាសនា​ <span class="" style="color:#50eaa2;">
+                            style="font-size: 48px ;">ប្រវត្តិពុទ្ធសាសនា​ <span class="" style="color: #b87707;">
                                 និងសង្គម</span></h1>
                         <h1 class="text-white fw-lighter animate__animated  animate__fadeInDown"
                             style="font-size: 24px ;">ដំណើរនៃការផ្សព្វផ្សាយព្រះធម៌ និងការបង្កើតសហគមន៍</h1>
-                        <nav class="m-0" aria-label="breadcrumb">
+                        <nav class="m-0 breadcrumb" aria-label="breadcrumb">
                             <ol class="breadcrumb my-3">
                                 <li class="breadcrumb-item  animate__animated animate__fadeInUp  fs-5 fw-medium">
                                     <a class="breadcrumb-link  text-white text-decoration-none"
                                         href="/index.html">ទំព័រដើម</a>
                                 </li>
                                 <li class="breadcrumb-item animate__animated animate__fadeInUp  activec fs-5  fw-medium "
-                                    aria-current="page" style="color:#50eaa2;">ប្រវត្តិ</li>
+                                    aria-current="page" style="color: #b87707;">ប្រវត្តិ</li>
                             </ol>
                         </nav>
                     </div>
@@ -289,9 +276,9 @@
                 </div>             
             </div>
             <section class=" container-fluid">
-                <div class="video-banner">
+                <div class="video-banner d-flex justify-content-center align-items-center flex-column">
                     <div class="d-flex justify-content-center align-items-center flex-column text-white">
-                        <h1 class="fw-bolder fs-1 mt-4"  style="font-size: 48px !important; text-align: justify;max-width:750px;">                   
+                        <h1 class="fw-bolder fs-1 "  style="font-size: 48px !important; text-align:center;max-width:750px;">                   
                         Watch our community enjoy <span class="ms-5">our weekly events live</span>
                         </h1>
                         <button class="btn  btn-lg01 border-0">
@@ -310,212 +297,134 @@
         <div class="container">
            
             <section class="mt-5 ">
-                <div class=" text-center my-5" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="fw-bold title ">ប្រវត្តិពុទ្ធសាសនានិងសង្គម</h2>
-                    <p class="fs-5" style="text-align: justify; max-width: 750px;">ចាប់ពីការចាប់ផ្តើមតូចមួយក្នុងឆ្នាំ
+                <div class="text-center my-5" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="fw-bold title">ប្រវត្តិពុទ្ធសាសនានិងសង្គម</h2>
+                    <p class="fs-5 m-auto" style=" text-align: justify; max-width: 750px;">
+                        ចាប់ពីការចាប់ផ្តើមតូចមួយក្នុងឆ្នាំ
                         2018 រហូតដល់ក្លាយជាសហគមន៍ធំមួយដែលមានសមាជិកជាងប្រាំពាន់នាក់ នេះគឺជាដំណើរនៃការលះបង់ ការរៀនសូត្រ
-                        និងការអភិវឌ្ឍន៍របស់ Buddhism & Society។</p>
+                        និងការអភិវឌ្ឍន៍របស់ Buddhism & Society។
+                    </p>
                 </div>
             </section>
-             <!-- Timeline -->
-    <section class="timeline-container">
-        <div class="container">
-            <!-- 2018 - Left -->
-            <div class="timeline-item left">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="timeline-year">2018</div>
-                        <div class="timeline-date">ខែតុលា 2018</div>
+    <!-- Timeline Section -->
+            <section class="timeline-container mt-15">
+                <div class="container">
+                    <!-- 2018 - Left -->
+                    <div class="timeline-item left">
+                        <div class="timeline-info">
+                            <div class="timeline-year">2018</div>
+                            <div class="timeline-date">ខែតុលា 2018</div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-content">
+                            <h3 class="title ">ការចាប់ផ្តើម</h3>
+                            <p>Buddhism Society ត្រូវបានបង្កើតឡើងដោយក្រុមព្រះសង្ឃ និងអ្នកជឿជាក់ដែលមានចក្ខុវិស័យក្នុងការធ្វើឲ្យព្រះធម៌អាចចូលប្រើបានតាមប្រព័ន្ធអនឡាញ។ យើងចាប់ផ្តើមដោយវគ្គសិក្សា 5 និងសមាជិក 50 នាក់។</p>
+                        </div>
                     </div>
-                </div>
-                <div class="timeline-dot"></div>
-                <div class="timeline-line"></div>
-                <div class="timeline-content-wrapper">
-                    <div class="timeline-content">
-                        <h3>ការចាប់ផ្តើម</h3>
-                        <p>Buddhism Society ត្រូវបានបង្កើតឡើងដោយក្រុមព្រះសង្ឃ និងអ្នកជឿជាក់ដែលមានចក្ខុវិស័យក្នុងការធ្វើឲ្យព្រះធម៌អាចចូលប្រើបានតាមប្រព័ន្ធអនឡាញ។ យើងចាប់ផ្តើមដោយវគ្គសិក្សា 5 និងសមាជិក 50 នាក់។</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- 2019 - Right -->
-            <div class="timeline-item right">
-                <div class="row justify-content-end">
-                    <div class="col-lg-6">
-                        <div class="timeline-year">2019</div>
-                        <div class="timeline-date">មីនា 2019</div>
+                    <!-- 2019 - Right -->
+                    <div class="timeline-item right">
+                        <div class="timeline-info">
+                            <div class="timeline-year">2019</div>
+                            <div class="timeline-date">មីនា 2019</div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-content">
+                            <h3 class="title">ការពង្រីកមាតិកា</h3>
+                            <p>បង្កើតបណ្ណាល័យឌីជីថល និងចាប់ផ្តើមផលិតវីដេអូធម៌ទេសនា។ សមាជិកកើនឡើងដល់ 500 នាក់ ហើយមានវគ្គសិក្សាជាង 20។</p>
+                        </div>
                     </div>
-                </div>
-                <div class="timeline-dot"></div>
-                <div class="timeline-line"></div>
-                <div class="timeline-content-wrapper">
-                    <div class="timeline-content">
-                        <h3>ការពង្រីកមាតិកា</h3>
-                        <p>បង្កើតបណ្ណាល័យឌីជីថល និងចាប់ផ្តើមផលិតវីដេអូធម៌ទេសនា។ សមាជិកកើនឡើងដល់ 500 នាក់ ហើយមានវគ្គសិក្សាជាង 20។</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- 2020 - Left -->
-            <div class="timeline-item left">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="timeline-year">2020</div>
-                        <div class="timeline-date">មករា 2020</div>
+                    <!-- 2020 - Left -->
+                    <div class="timeline-item left">
+                        <div class="timeline-info">
+                            <div class="timeline-year">2020</div>
+                            <div class="timeline-date">មករា 2020</div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-content">
+                            <h3 class="title">វគ្គសិក្សាជំនាញ</h3>
+                            <p>បង្កើតវគ្គសិក្សាភាសាបាលី និងអភិធម្ម ដែលទទួលបានការស្វាគមន៍យ៉ាងទូលំទូលាយ។ ក្នុងអំឡុងពេល COVID-19 យើងបានពង្រីកសេវាកម្មអនឡាញយ៉ាងខ្លាំង។</p>
+                        </div>
                     </div>
-                </div>
-                <div class="timeline-dot"></div>
-                <div class="timeline-line"></div>
-                <div class="timeline-content-wrapper">
-                    <div class="timeline-content">
-                        <h3>វគ្គសិក្សាជំនាញ</h3>
-                        <p>បង្កើតវគ្គសិក្សាភាសាបាលី និងអភិធម្ម ដែលទទួលបានការស្វាគមន៍យ៉ាងទូលំទូលាយ។ ក្នុងអំឡុងពេល COVID-19 យើងបានពង្រីកសេវាកម្មអនឡាញយ៉ាងខ្លាំង។</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- 2021 - Right -->
-            <div class="timeline-item right">
-                <div class="row justify-content-end">
-                    <div class="col-lg-6">
-                        <div class="timeline-year">2021</div>
-                        <div class="timeline-date">កក្កដា 2021</div>
+                    <!-- 2021 - Right -->
+                    <div class="timeline-item right">
+                        <div class="timeline-info">
+                            <div class="timeline-year">2021</div>
+                            <div class="timeline-date">កក្កដា 2021</div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-content">
+                            <h3 class="title">សហគមន៍ពង្រីក</h3>
+                            <p>បង្កើតវេទិកាសហគមន៍ និងមុខងារ "សួរព្រះសង្ឃ"។ រៀបចំព្រឹត្តិការណ៍ធម៌ទេសនាអនឡាញប្រចាំសប្តាហ៍ ដែលមានអ្នកចូលរួមរាប់ពាន់នាក់។</p>
+                        </div>
                     </div>
-                </div>
-                <div class="timeline-dot"></div>
-                <div class="timeline-line"></div>
-                <div class="timeline-content-wrapper">
-                    <div class="timeline-content">
-                        <h3>សហគមន៍ពង្រីក</h3>
-                        <p>បង្កើតវេទិកាសហគមន៍ និងមុខងារ "សួរព្រះសង្ឃ"។ រៀបចំព្រឹត្តិការណ៍ធម៌ទេសនាអនឡាញប្រចាំសប្តាហ៍ ដែលមានអ្នកចូលរួមរាប់ពាន់នាក់។</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- 2022 - Left -->
-            <div class="timeline-item left">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="timeline-year">2022</div>
-                        <div class="timeline-date">កញ្ញា 2022</div>
+                    <!-- 2022 - Left -->
+                    <div class="timeline-item left">
+                        <div class="timeline-info">
+                            <div class="timeline-year">2022</div>
+                            <div class="timeline-date">កញ្ញា 2022</div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-content">
+                            <h3 class="title">ការទទួលស្គាល់</h3>
+                            <p>ទទួលបានការទទួលស្គាល់ជាស្ថាប័នអប់រំព្រះធម៌លំដាប់តំបន់។ ចាប់ផ្តើមកម្មវិធីវិញ្ញាបនប័ត្រសម្រាប់សិស្សានុសិស្សដែលបញ្ចប់វគ្គសិក្សា។</p>
+                        </div>
                     </div>
-                </div>
-                <div class="timeline-dot"></div>
-                <div class="timeline-line"></div>
-                <div class="timeline-content-wrapper">
-                    <div class="timeline-content">
-                        <h3>ការទទួលស្គាល់</h3>
-                        <p>ទទួលបានការទទួលស្គាល់ជាស្ថាប័នអប់រំព្រះធម៌លំដាប់តំបន់។ ចាប់ផ្តើមកម្មវិធីវិញ្ញាបនប័ត្រសម្រាប់សិស្សានុសិស្សដែលបញ្ចប់វគ្គសិក្សា។</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- 2023 - Right -->
-            <div class="timeline-item right">
-                <div class="row justify-content-end">
-                    <div class="col-lg-6">
-                        <div class="timeline-year">2023</div>
-                        <div class="timeline-date">ឧសភា 2023</div>
+                    <!-- 2023 - Right -->
+                    <div class="timeline-item right">
+                        <div class="timeline-info">
+                            <div class="timeline-year">2023</div>
+                            <div class="timeline-date">ឧសភា 2023</div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-content">
+                            <h3 class="title">សហគមន៍សកល</h3>
+                            <p>ពង្រីកទៅកាន់ប្រទេសជិតខាង និងមានសមាជិកជាង 5,000 នាក់។ បង្កើតក្រុមសិក្សាជាច្រើនដើម្បីគាំទ្រការអនុវត្តផ្ទាល់ខ្លួន។</p>
+                        </div>
                     </div>
-                </div>
-                <div class="timeline-dot"></div>
-                <div class="timeline-line"></div>
-                <div class="timeline-content-wrapper">
-                    <div class="timeline-content">
-                        <h3>សហគមន៍សកល</h3>
-                        <p>ពង្រីកទៅកាន់ប្រទេសជិតខាង និងមានសមាជិកជាង 5,000 នាក់។ បង្កើតក្រុមសិក្សាជាច្រើនដើម្បីគាំទ្រការអនុវត្តផ្ទាល់ខ្លួន។</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- 2024 - Left -->
-            <div class="timeline-item left">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="timeline-year">2024</div>
-                        <div class="timeline-date">កុម្ភៈ 2024</div>
+                    <!-- 2024 - Left -->
+                    <div class="timeline-item left">
+                        <div class="timeline-info">
+                            <div class="timeline-year">2024</div>
+                            <div class="timeline-date">កុម្ភៈ 2024</div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-content">
+                            <h3 class="title">បច្ចេកវិទ្យាថ្មី</h3>
+                            <p>ដាក់ឲ្យដំណើរការកម្មវិធីទូរស័ព្ទ និងវេទិកាថ្មីដែលមានមុខងារកម្រិតខ្ពស់។ ចាប់ផ្តើមគម្រោង AI ជំនួយការសម្រាប់ការរៀនភាសាបាលី។</p>
+                        </div>
                     </div>
-                </div>
-                <div class="timeline-dot"></div>
-                <div class="timeline-line"></div>
-                <div class="timeline-content-wrapper">
-                    <div class="timeline-content">
-                        <h3>បច្ចេកវិទ្យាថ្មី</h3>
-                        <p>ដាក់ឲ្យដំណើរការកម្មវិធីទូរស័ព្ទ និងវេទិកាថ្មីដែលមានមុខងារកម្រិតខ្ពស់។ ចាប់ផ្តើមគម្រោង AI ជំនួយការសម្រាប់ការរៀនភាសាបាលី។</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- 2025 - Right -->
-            <div class="timeline-item right">
-                <div class="row justify-content-end">
-                    <div class="col-lg-6">
-                        <div class="timeline-year">2025</div>
-                        <div class="timeline-date">វិច្ឆិកា 2025</div>
+                    <!-- 2025 - Right -->
+                    <div class="timeline-item right">
+                        <div class="timeline-info">
+                            <div class="timeline-year">2025</div>
+                            <div class="timeline-date">វិច្ឆិកា 2025</div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-content">
+                            <h3 class="title">ឥឡូវនេះ និងអនាគត</h3>
+                            <p>បន្តពង្រីកកម្មវិធីសិក្សា បង្កើតដៃគូថ្មី និងរៀបចំព្រឹត្តិការណ៍ជាច្រើន។ គោលដៅគឺធ្វើឲ្យព្រះធម៌អាចចូលប្រើបានសម្រាប់មនុស្សទាំងអស់។</p>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-dot"></div>
-                <div class="timeline-line"></div>
-                <div class="timeline-content-wrapper">
-                    <div class="timeline-content">
-                        <h3>ឥឡូវនេះ និងអនាគត</h3>
-                        <p>បន្តពង្រីកកម្មវិធីសិក្សា បង្កើតដៃគូថ្មី និងរៀបចំព្រឹត្តិការណ៍ជាច្រើន។ គោលដៅគឺធ្វើឲ្យព្រះធម៌អាចចូលប្រើបានសម្រាប់មនុស្សទាំងអស់។</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
     <!-- Milestones -->
-    <section class="milestones-section">
-        <div class="container">
-            <h2 class="section-title">ចំណុចសំខាន់ៗ</h2>
-            <div class="row g-4">
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="milestone-card">
-                        <div class="milestone-icon">👥</div>
-                        <div class="milestone-number">5,000+</div>
-                        <p class="mb-0 text-muted">សិស្សានុសិស្ស</p>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="milestone-card">
-                        <div class="milestone-icon">📚</div>
-                        <div class="milestone-number">120+</div>
-                        <p class="mb-0 text-muted">វគ្គសិក្សា</p>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="milestone-card">
-                        <div class="milestone-icon">🎥</div>
-                        <div class="milestone-number">500+</div>
-                        <p class="mb-0 text-muted">វីដេអូ</p>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="milestone-card">
-                        <div class="milestone-icon">📅</div>
-                        <div class="milestone-number">200+</div>
-                        <p class="mb-0 text-muted">ព្រឹត្តិការណ៍</p>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="milestone-card">
-                        <div class="milestone-icon">🏆</div>
-                        <div class="milestone-number">1,000+</div>
-                        <p class="mb-0 text-muted">វិញ្ញាបនប័ត្រ</p>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="milestone-card">
-                        <div class="milestone-icon">🌍</div>
-                        <div class="milestone-number">15+</div>
-                        <p class="mb-0 text-muted">ប្រទេស</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   
             
         </div>
     </main>
