@@ -5,14 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>វីដេអូធម៌ទេសនា</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="../asset/css/dhammaVideo.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../asset/css/style.css">
-    <link rel="stylesheet" href="../asset/css/theme.css">
+    <link rel="stylesheet" href="../asset/css/dhammaVideo.css">
     <!-- Theme CSS -->
     <link rel="stylesheet" href="../asset/css/theme.css">
     <!-- Bootstrap CSS -->
@@ -28,6 +23,8 @@
     <!-- Google Fonts - Khmer -->
     <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="../asset/css/sil.css">
 
 </head>
 
@@ -57,7 +54,7 @@
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
                         <!-- Home -->
                         <li class="nav-item">
-                            <a class="nav-link active" href="home.html">
+                            <a class="nav-link active" href="../home.html">
                                 ទំព័រដើម
                             </a>
                         </li>
@@ -68,22 +65,22 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" href="pages/media-library.html">
+                                    <a class="dropdown-item" href="media-library.html">
                                         បណ្ណាល័យព្រះធម៌
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="pages/video.html">
+                                    <a class="dropdown-item" href="dhammaVideo.html">
                                         វីដេអូធម៌
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="dhammaAudio.html">
                                         សំឡេងធម៌
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="">
                                         សំណួរ និង ចម្លើយ
                                     </a>
                                 </li>
@@ -92,24 +89,23 @@
 
                         <!-- Courses -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="education.html">
                                 ការអប់រំ
                             </a>
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-
                                 ព្រឹត្តិការណ៍
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="buddism.html">
                                         ពុទ្ធសាសនា
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="culture.html">
                                         វប្បធម៌ខ្មែរ
                                     </a>
                                 </li>
@@ -120,7 +116,7 @@
                         <!-- Services -->
 
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/events.html">
+                            <a class="nav-link" href="events.html">
                                 កម្មវិធី
                             </a>
                         </li>
@@ -131,17 +127,17 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="history.html">
                                         ប្រវត្តិ
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="mission.html">
                                         បេសកកម្ម
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="team.html">
                                         ក្រុមការងារ
                                     </a>
                                 </li>
@@ -156,17 +152,17 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" href="pages/Buddhist Rituals.html">
+                                    <a class="dropdown-item" href="Buddhist Rituals.html">
                                         កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="volunteer.html">
                                         ចូលរូមស្ម័គ្រចិត្ត
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="">
                                         បរិស្ថាន
                                     </a>
                                 </li>
@@ -191,7 +187,7 @@
 
 
                         <!-- User Profile -->
-                        <a href="pages/auth/user_profile.html" class="user-profile">
+                        <a href="../pages/auth/userProfile.html" class="user-profile">
                             <img src="../asset/images/img-profile/user-profile.png" alt="" class="img-f"
                                 style="width: 50px; " height="50px">
                         </a>
@@ -203,39 +199,40 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <!-- Navigation Tabs -->
-            <div class="nav-tabs-container z-3 top-25">
-                <div class="container">
-                    <div class="d-flex flex-wrap justify-content-center gap-2 py-3">
-                        <button class="nav-tab active" onclick="switchTab('all')">
-                            <i class="fas fa-dharmachakra me-2"></i>ព្រះធម៌ទាំងអស់
-                        </button>
-                        <button class="nav-tab" onclick="switchTab('education')">
-                            <i class="fas fa-graduation-cap me-2"></i>អប់រំចិត្ត
-                        </button>
-                        <button class="nav-tab" onclick="switchTab('ceremony')">
-                            <i class="fas fa-hands-praying me-2"></i>កម្មវិធីបុណ្យនានា
-                        </button>
-                        <button class="nav-tab" onclick="switchTab('vipassana')">
-                            <i class="fas fa-om me-2"></i>វិបស្សនាកម្មដ្ឋាន
-                        </button>
-                        <button class="nav-tab" onclick="switchTab('abhidhamma')">
-                            <i class="fas fa-book-reader me-2"></i>ព្រះអភិធម្ម
-                        </button>
-                        <button class="nav-tab" onclick="switchTab('sutta')">
-                            <i class="fas fa-scroll me-2"></i>ព្រះសូត្រ
-                        </button>
-                        <button class="nav-tab" onclick="switchTab('vinaya')">
-                            <i class="fas fa-balance-scale me-2"></i>ព្រះវិន័យ
-                        </button>
-                        <button class="nav-tab" onclick="switchTab('favorites')">
-                            <i class="fas fa-heart me-2"></i>សំណព្វ
-                        </button>
-                    </div>
-                </div>
+    <!-- Navigation Tabs -->
+    <div class="nav-tabs-container position-sticky top-25 bg-body">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center gap-2 py-3">
+                <button class="nav-tab active" onclick="switchTab('all')">
+                    <i class="fas fa-dharmachakra me-2"></i>ព្រះធម៌ទាំងអស់
+                </button>
+                <button class="nav-tab" onclick="switchTab('education')">
+                    <i class="fas fa-graduation-cap me-2"></i>អប់រំចិត្ត
+                </button>
+                <button class="nav-tab" onclick="switchTab('ceremony')">
+                    <i class="fas fa-hands-praying me-2"></i>កម្មវិធីបុណ្យនានា
+                </button>
+                <button class="nav-tab" onclick="switchTab('vipassana')">
+                    <i class="fas fa-om me-2"></i>វិបស្សនាកម្មដ្ឋាន
+                </button>
+                <button class="nav-tab" onclick="switchTab('abhidhamma')">
+                    <i class="fas fa-book-reader me-2"></i>ព្រះអភិធម្ម
+                </button>
+                <button class="nav-tab" onclick="switchTab('sutta')">
+                    <i class="fas fa-scroll me-2"></i>ព្រះសូត្រ
+                </button>
+                <button class="nav-tab" onclick="switchTab('vinaya')">
+                    <i class="fas fa-balance-scale me-2"></i>ព្រះវិន័យ
+                </button>
+                <button class="nav-tab" onclick="switchTab('favorites')">
+                    <i class="fas fa-heart me-2"></i>សំណព្វ
+                </button>
             </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="dhamma-video-section">
 
             <!-- Content -->
             <div class="container my-5">
@@ -245,19 +242,19 @@
 
                     <!-- Stats -->
                     <div class="row g-3 mb-4">
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-lg-3">
                             <div class="stats-card">
                                 <div class="stat-number" id="totalVideos">55</div>
                                 <div class="stat-label">វីដេអូទាំងអស់</div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-lg-3">
                             <div class="stats-card">
                                 <div class="stat-number">150K+</div>
                                 <div class="stat-label">អ្នកទស្សនា</div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-lg-3">
                             <div class="stats-card">
                                 <div class="stat-number">6</div>
                                 <div class="stat-label">ប្រធានបទ</div>
@@ -336,6 +333,12 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Floating Favorites Button -->
+            <button class="favorites-btn" onclick="switchTab('favorites')">
+                <i class="fas fa-heart"></i>
+                <span class="favorites-badge d-none" id="favoritesBadge">0</span>
+            </button>
         </section>
     </main>
 
@@ -729,5 +732,4 @@
         init();
     </script>
 </body>
-
 </html>
