@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>សំឡេងធម៌ទេសនា - Dhamma Audio Library</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/dhammaAudio.css">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../asset/css/theme.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap1.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="../asset/aos-master/dist/aos.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Google Fonts - Khmer -->
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../asset/css/sil.css">
+</head>
+
+<body>
+    <header class=" sticky-top">
+        <!-- ═══════════ MAIN NAVBAR ═══════════ -->
+        <nav class="navbar navbar-expand-lg  border-bottom border-light py-3 wow animate__slideInDown ">
+            <div class="container">
+                <!-- Logo & Brand -->
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
+                    <div>
+                        <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
+                        <div style="font-size: 12px; font-family: 'Battambang'; color: var(--primary-color);">
+                            Buddhism & Society
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                    <i class="fas fa-bars" style="color: var(--primary-color);"></i>
+                </button>
+
+                <!-- Main Menu -->
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../home.html">
+                                ទំព័រដើម
+                            </a>
+                        </li>
+                        <!-- Dhamma Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="dhamma.html" data-bs-toggle="dropdown">
+                                ព្រះធម៌
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="media-library.html">
+                                        បណ្ណាល័យព្រះធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="dhammaVideo.html">
+                                        វីដេអូធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        សំឡេងធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        សំណួរ និង ចម្លើយ
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Courses -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="education.html">
+                                ការអប់រំ
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="events.html" data-bs-toggle="dropdown">
+
+                                ព្រឹត្តិការណ៍
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="buddism.html">
+                                        ពុទ្ធសាសនា
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="culture.html">
+                                        វប្បធម៌ខ្មែរ
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <!-- Services -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/events.html">
+                                កម្មវិធី
+                            </a>
+                        </li>
+                        <!-- About Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                អំពីយើង
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        ប្រវត្តិ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        បេសកកម្ម
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        ក្រុមការងារ
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                ផ្សេងៗ
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="pages/Buddhist Rituals.html">
+                                        កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        ចូលរូមស្ម័គ្រចិត្ត
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        បរិស្ថាន
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                    <!-- Right Side Buttons -->
+
+                    <div class="d-flex gap-2 align-items-center ms-auto">
+                        <!-- Theme Toggle -->
+                        <button class="theme-toggle" onclick="toggleTheme()">
+                            <i class="fas fa-moon" id="themeIcon"></i>
+                        </button>
+                        <!-- button search model -->
+                        <button class="btn btn-outline-primary d-none d-lg-block " data-bs-toggle="modal"
+                            data-bs-target="#searchModal">
+                            <i class="fas fa-search "></i> ស្វែងរក
+                        </button>
+
+
+
+                        <!-- User Profile -->
+                        <a href="pages/auth/user_profile.html" class="user-profile">
+                            <img src="../asset/images/img-profile/user-profile.png" alt="" class="img-f"
+                                style="width: 50px; " height="50px">
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="my-5 container">
+            <input type="text" class="form-control search-input" id="searchInput"
+                placeholder="🔍 ស្វែងរកសំឡេងធម៌..." onkeyup="searchAudio()">
+        </div>
+
+        <div id="hero" class="d-flex align-items-center justify-content-center p-5 text-center text-white"
+            style="background: linear-gradient(135deg, rgba(139, 115, 85, 0.8), rgba(212, 175, 135, 0.8)), url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80'); background-size: cover; background-position: center; min-height: 500px;">
+            <div class="container">
+                <h1 class="display-4 fw-bold mb-3  animate__pulse">សំឡេងធម៌ទេសនា</h1>
+                <p class="fs-4 mb-4 opacity-75">ស្តាប់ព្រះធម៌ដើម្បីអភិវឌ្ឍន៍ចិត្ត និងប្រាជ្ញា</p>
+            </div>
+        </div>
+        <section>
+            <div class="container my-5">
+                <div class="mb-5">
+                    <h2 class="section-title"><i class="fas fa-graduation-cap me-2"></i>អប់រំចិត្ត</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="ព្យាបាល ជម្ងឺ ផ្លូវចិត្ត">
+                            <div class="audio-card position-relative">
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="audio-title">ព្យាបាល ជម្ងឺ ផ្លូវចិត្ត</h5>
+                                    <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                </div>
+                                <span class="badge-category mb-2">អប់រំចិត្ត</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>42:00</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="ស្ដាប់ធម៌អប់រំផ្លូវចិត្ត">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">ស្ដាប់ធម៌អប់រំផ្លូវចិត្ត</h5>
+                                <span class="badge-category mb-2">អប់រំចិត្ត</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>35:20</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="កាត់ចិត្តចំពោះរឿងកន្លងហួស">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">កាត់ចិត្តចំពោះរឿងកន្លងហួស</h5>
+                                <span class="badge-category mb-2">អប់រំចិត្ត</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>28:15</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <h2 class="section-title"><i class="fas fa-hands-praying me-2"></i>កម្មវិធីបុណ្យនានា</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="ពិធីបុណ្យចូលឆ្នាំខ្មែរ">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">ពិធីបុណ្យចូលឆ្នាំខ្មែរ</h5>
+                                <span class="badge-category mb-2">កម្មវិធីបុណ្យ</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>55:30</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="ពិធីបុណ្យភ្ជុំបិណ្ឌ">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">ពិធីបុណ្យភ្ជុំបិណ្ឌ</h5>
+                                <span class="badge-category mb-2">កម្មវិធីបុណ្យ</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>48:20</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="បុណ្យកឋិនទាន">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">បុណ្យកឋិនទាន</h5>
+                                <span class="badge-category mb-2">កម្មវិធីបុណ្យ</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>60:00</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <h2 class="section-title"><i class="fas fa-om me-2"></i>វិបស្សនាកម្មដ្ឋាន</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="ជឿលើអំពើខ្លួនឯង">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">ជឿលើអំពើខ្លួនឯង</h5>
+                                <span class="badge-category mb-2">វិបស្សនាកម្មដ្ឋាន</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>50:00</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="ដឹងខ្យល់">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">ដឹងខ្យល់</h5>
+                                <span class="badge-category mb-2">វិបស្សនាកម្មដ្ឋាន</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>46:15</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="របៀបធ្វើសមាធិ">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">របៀបធ្វើសមាធិ</h5>
+                                <span class="badge-category mb-2">វិបស្សនាកម្មដ្ឋាន</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>44:00</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <h2 class="section-title"><i class="fas fa-book-reader me-2"></i>ព្រះអភិធម្ម</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="សិក្សាព្រះអភិធម្ម">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">សិក្សាព្រះអភិធម្ម (ភាគ១)</h5>
+                                <span class="badge-category mb-2">ព្រះអភិធម្ម</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>65:00</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="បដិបត្តិព្រះអភិធម្ម">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">បដិបត្តិព្រះអភិធម្ម</h5>
+                                <span class="badge-category mb-2">ព្រះអភិធម្ម</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>70:00</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="យល់ពីជីវិតពិត">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">យល់ពីជីវិតពិតតាមអភិធម្ម</h5>
+                                <span class="badge-category mb-2">ព្រះអភិធម្ម</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>52:00</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <h2 class="section-title"><i class="fas fa-scroll me-2"></i>ព្រះសូត្រ</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="សិក្សាព្រះសូត្រ">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">សិក្សាព្រះសូត្រ ភាគ១</h5>
+                                <span class="badge-category mb-2">ព្រះសូត្រ</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>35:00</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="មង្គល ៣៨ ប្រការ">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">មង្គល ៣៨ ប្រការ</h5>
+                                <span class="badge-category mb-2">ព្រះសូត្រ</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>38:00</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="ទេសនាអំពីមង្គលគាថា">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">ទេសនាអំពីមង្គលគាថា</h5>
+                                <span class="badge-category mb-2">ព្រះសូត្រ</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>42:30</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <h2 class="section-title"><i class="fas fa-balance-scale me-2"></i>ព្រះវិន័យ</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="សិក្សាព្រះវិន័យ">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">សិក្សាព្រះវិន័យ ភាគ១</h5>
+                                <span class="badge-category mb-2">ព្រះវិន័យ</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>58:00</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="បដិបត្តិព្រះវិន័យ">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">បដិបត្តិព្រះវិន័យ</h5>
+                                <span class="badge-category mb-2">ព្រះវិន័យ</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>62:00</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="យល់ពីជីវិតពិត">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">យល់ពីជីវិតពិតតាមវិន័យ</h5>
+                                <span class="badge-category mb-2">ព្រះវិន័យ</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>54:00</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <h2 class="section-title"><i class="fas fa-leaf me-2"></i>ធម្មជាតិ និងបរិស្ថាន</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="ការគោរពធម្មជាតិ">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">ការគោរពធម្មជាតិ</h5>
+                                <span class="badge-category mb-2">ធម្មជាតិ</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>30:00</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="ការអភិរក្សបរិស្ថាន">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">ការអភិរក្សបរិស្ថាន</h5>
+                                <span class="badge-category mb-2">ធម្មជាតិ</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>33:45</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="ការគោរពសត្វ">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">ការគោរពសត្វ</h5>
+                                <span class="badge-category mb-2">ធម្មជាតិ</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>29:30</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <h2 class="section-title"><i class="fas fa-heartbeat me-2"></i>សុខភាព និងចិត្តសាស្ត្រ</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="សុខភាព និងចិត្តសាស្ត្រ">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">សុខភាព និងចិត្តសាស្ត្រ</h5>
+                                <span class="badge-category mb-2">សុខភាព</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>40:00</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="ចិត្តសាស្ត្រ និងការគ្រប់គ្រងស្ត្រេស">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">ចិត្តសាស្ត្រ និងការគ្រប់គ្រងស្ត្រេស</h5>
+                                <span class="badge-category mb-2">សុខភាព</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>45:15</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="ការថែរក្សាសុខភាពចិត្ត">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">ការថែរក្សាសុខភាពចិត្ត</h5>
+                                <span class="badge-category mb-2">សុខភាព</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>38:40</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-5">
+                    <h2 class="section-title"><i class="fas fa-thumbs-up me-2"></i>សំឡេងធម៌ពេញនិយម</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="សំឡេងធម៌ពេញនិយម ១">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">សំឡេងធម៌ពេញនិយម ១</h5>
+                                <span class="badge-category mb-2">ពេញនិយម</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>48:00</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="សំឡេងធម៌ពេញនិយម ២">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">សំឡេងធម៌ពេញនិយម ២</h5>
+                                <span class="badge-category mb-2">ពេញនិយម</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>52:30</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="សំឡេងធម៌ពេញនិយម ៣">
+                            <div class="audio-card position-relative">
+                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <h5 class="audio-title">សំឡេងធម៌ពេញនិយម ៣</h5>
+                                <span class="badge-category mb-2">ពេញនិយម</span>
+                                <audio controls>
+                                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>45:15</small>
+                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
+                                        onclick="showDownloadMessage()"><i
+                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-lg-4 col-md-6 mb-4" bis_skin_checked="1">
+                    <div class="d-flex align-items-center" bis_skin_checked="1">
+                        <i class="fas fa-dharmachakra fs-1 me-3" style="color: var(--primary-color)"></i>
+                        <h5 class="mt-4">អំពីពុទ្ធសាសនានិងសង្គម</h5>
+                    </div>
+                    <p style="line-height: 1.8">
+                        គេហទំព័រដែលផ្តល់នូវការអប់រំ សេវាកម្មសង្គម
+                        និងការលើកកម្ពស់គុណតម្លៃសីលធម៌តាមគោលការណ៍ព្រះធម៌
+                        ដើម្បីអភិវឌ្ឍន៍សង្គមប្រកបដោយសន្តិភាព និងសុខុមាលភាព។
+                    </p>
+                    <div class="footer-social mt-3" bis_skin_checked="1">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>តំណភ្ជាប់លឿន</h5>
+                    <a href="#"><i class="fas fa-angle-right"></i> ទំព័រដើម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> អំពីយើង</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> សេវាកម្ម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ព្រឹត្តិការណ៍</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ទំនាក់ទំនង</a>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>សេវាកម្ម</h5>
+                    <a href="#"><i class="fas fa-angle-right"></i> គម្រោងសង្គម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ការអប់រំ</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> វគ្គបណ្តុះបណ្តាល</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> អ្នកស្ម័គ្រចិត្ត</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ការបរិច្ចាគ</a>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>ទំនាក់ទំនង</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i>
+                        ភ្នំពេញ, កម្ពុជា
+                    </p>
+                    <p>
+                        <i class="fas fa-phone" style="color: var(--primary-color);"></i>
+                        012 345 678
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope" style="color: var(--primary-color);"></i>
+                        info@buddhism-society.org
+                    </p>
+                    <p>
+                        <i class="fas fa-clock" style="color: var(--primary-color);"></i>
+                        ច័ន្ទ - សុក្រ: 8:00 - 17:00
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">
+                            © 2024 ពុទ្ធសាសនានិងសង្គម. រក្សាសិទ្ធិគ្រប់យ៉ាង។
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end justify-content-center justify-content-md-end d-flex">
+                        <a href="#" class="me-3">គោលការណ៍ឯកជនភាព</a>
+                        <a href="#" class="me-3">លក្ខខណ្ឌប្រើប្រាស់</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Theme Toggle
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+
+            const icon = document.querySelector('#themeToggle i');
+            icon.className = newTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+
+            localStorage.setItem('theme', newTheme);
+        }
+
+        // Load saved theme
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            const icon = document.querySelector('#themeToggle i');
+            icon.className = savedTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+
+            loadFavorites();
+        });
+
+        // Search Functionality
+        function searchAudio() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const audioItems = document.querySelectorAll('.audio-item');
+
+            audioItems.forEach(item => {
+                const title = item.getAttribute('data-title').toLowerCase();
+                if (title.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Favorite Toggle
+        function toggleFavorite(element) {
+            element.classList.toggle('favorited');
+            saveFavorites();
+        }
+
+        // Save Favorites to localStorage
+        function saveFavorites() {
+            const favorites = [];
+            document.querySelectorAll('.favorite-icon.favorited').forEach(icon => {
+                const card = icon.closest('.audio-item');
+                const title = card.getAttribute('data-title');
+                favorites.push(title);
+            });
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+        }
+
+        // Load Favorites from localStorage
+        function loadFavorites() {
+            const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+            favorites.forEach(title => {
+                const card = document.querySelector(`.audio-item[data-title="${title}"]`);
+                if (card) {
+                    card.querySelector('.favorite-icon').classList.add('favorited');
+                }
+            });
+        }
+
+        // Back to Top Button
+        window.addEventListener('scroll', () => {
+            const backToTop = document.getElementById('backToTop');
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Download Message
+        function showDownloadMessage() {
+            alert('មុខងារទាញយកនឹងត្រូវបានបន្ថែមនៅពេលក្រោយ។ សូមអរគុណ!');
+        }
+
+        // Pause other audio players when one starts playing
+        document.addEventListener('play', function (e) {
+            const audios = document.getElementsByTagName('audio');
+            for (let i = 0; i < audios.length; i++) {
+                if (audios[i] !== e.target) {
+                    audios[i].pause();
+                }
+            }
+        }, true);
+    </script>
+</body>
+</html>
