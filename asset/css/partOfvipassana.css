@@ -3,8 +3,14 @@
             border: none;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            background-color: #fff;
+            background: #c99700;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .back-button a{
+            text-decoration: none;
+        }
+        .back-button a:hover{
+            color: white;
         }
         .principle-card:hover {
             transform: translateY(-5px);
