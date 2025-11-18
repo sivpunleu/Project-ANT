@@ -52,17 +52,7 @@
   margin-bottom: 1rem;
 }
 
-/* Search Section */
-.search-section {
-  background: var(--bg-primary);
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  margin-top: -80px;
-  position: relative;
-  z-index: 10;
-  border: 1px solid var(--border-light);
-}
+
 
 [data-theme="dark"] .search-section {
   background: #1f2937;
@@ -86,7 +76,7 @@
 }
 
 [data-theme="dark"] .search-input {
-  background: #111827;
+  background:var(--text-secondary);
 }
 
 .btn-search {
@@ -152,15 +142,8 @@
   transition: all 0.3s;
 }
 
-.category-tabs .nav-link:hover {
-  background: rgba(184, 119, 7, 0.1);
-  color: var(--primary-color);
-}
 
-.category-tabs .nav-link.active {
-  background: var(--primary-color);
-  color: white;
-}
+
 
 /* Filter Sidebar */
 .filter-sidebar {
