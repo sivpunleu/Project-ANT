@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>វីដេអូធម៌ទេសនា</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/dhammaVideo.css">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../asset/css/theme.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap1.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="../asset/aos-master/dist/aos.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Google Fonts - Khmer -->
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../asset/css/sil.css">
+
+    <style>
+        main {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .video-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease;
+        }
+
+        .video-card:hover {
+            transform: scale(1.02);
+        }
+
+        .video-thumbnail img {
+            width: 100%;
+            display: block;
+        }
+
+        .video-info {
+            padding: 10px;
+        }
+
+        .video-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 0 5px;
+            color: #333;
+        }
+
+        .video-channel {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <header class=" sticky-top">
+        <!-- ═══════════ MAIN NAVBAR ═══════════ -->
+        <nav class="navbar navbar-expand-lg  border-bottom border-light py-3 wow animate__slideInDown ">
+            <div class="container">
+                <!-- Logo & Brand -->
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
+                    <div>
+                        <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
+                        <div style="font-size: 12px; font-family: 'Battambang'; color: var(--primary-color);">
+                            Buddhism & Society
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                    <i class="fas fa-bars" style="color: var(--primary-color);"></i>
+                </button>
+
+                <!-- Main Menu -->
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../home.html">
+                                ទំព័រដើម
+                            </a>
+                        </li>
+                        <!-- Dhamma Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                ព្រះធម៌
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="media-library.html">
+                                        បណ្ណាល័យព្រះធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="dhammaVideo.html">
+                                        វីដេអូធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="dhammaAudio.html">
+                                        សំឡេងធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="">
+                                        សំណួរ និង ចម្លើយ
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Courses -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="education.html">
+                                ការអប់រំ
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                ព្រឹត្តិការណ៍
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="buddism.html">
+                                        ពុទ្ធសាសនា
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="culture.html">
+                                        វប្បធម៌ខ្មែរ
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <!-- Services -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">
+                                កម្មវិធី
+                            </a>
+                        </li>
+                        <!-- About Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                អំពីយើង
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="history.html">
+                                        ប្រវត្តិ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="mission.html">
+                                        បេសកកម្ម
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="team.html">
+                                        ក្រុមការងារ
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                ផ្សេងៗ
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="Buddhist Rituals.html">
+                                        កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="volunteer.html">
+                                        ចូលរូមស្ម័គ្រចិត្ត
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="">
+                                        បរិស្ថាន
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                    <!-- Right Side Buttons -->
+
+                    <div class="d-flex gap-2 align-items-center ms-auto">
+                        <!-- Theme Toggle -->
+                        <button class="theme-toggle" onclick="toggleTheme()">
+                            <i class="fas fa-moon" id="themeIcon"></i>
+                        </button>
+                        <!-- button search model -->
+                        <button class="btn btn-outline-primary d-none d-lg-block " data-bs-toggle="modal"
+                            data-bs-target="#searchModal">
+                            <i class="fas fa-search "></i> ស្វែងរក
+                        </button>
+
+
+
+                        <!-- User Profile -->
+                        <a href="../pages/auth/userProfile.html" class="user-profile">
+                            <img src="../asset/images/img-profile/user-profile.png" alt="" class="img-f"
+                                style="width: 50px; " height="50px">
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- <h1>កម្រងវិឌីអូ</h1> -->
+
+        <h2>មេរៀនថ្នាក់ដំបូង</h2>
+        <div class="video-grid">
+            <a href="watch.html?video=NQ10pFwqDq4" class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/NQ10pFwqDq4/hqdefault.jpg" alt="Video thumbnail">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">មេរៀនថ្នាក់ដំបូង ភាគទី ១</p>
+                    <p class="video-channel">San Sochea Official</p>
+                </div>
+            </a>
+
+            <a href="watch.html?video=W9GGynyqpHc" class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/W9GGynyqpHc/hqdefault.jpg" alt="Video thumbnail">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">មេរៀនថ្នាក់ដំបូង ភាគទី ២</p>
+                    <p class="video-channel">San Sochea Official</p>
+                </div>
+            </a>
+
+            <a href="watch3.html?video=3ISYpux5ioM" class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/3ISYpux5ioM/hqdefault.jpg" alt="Video thumbnail">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">មេរៀនថ្មី ភាគទី ១</p>
+                    <p class="video-channel">San Sochea Official</p>
+                </div>
+            </a>
+
+            <a href="watch4.html?video=62FoOmH42KI" class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/62FoOmH42KI/hqdefault.jpg" alt="Video thumbnail">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">មេរៀនថ្មី ភាគទី ១</p>
+                    <p class="video-channel">San Sochea Official</p>
+                </div>
+            </a>
+        </div>
+
+        <h2> មេរៀនសតិបដ្ឋាន</h2>
+        <div class="video-grid">
+            <a href="watch2.html?video=hIRCMTsbnuY" class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/hIRCMTsbnuY/hqdefault.jpg" alt="Video thumbnail">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">មេរៀនសតិបដ្ឋាន</p>
+                    <p class="video-channel">San Sochea Official</p>
+                </div>
+            </a>
+
+            <a href="watch5.html?video=LambI5toDLw" class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/LambI5toDLw/hqdefault.jpg" alt="Video thumbnail">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">មេរៀនថ្មី ភាគទី ១</p>
+                    <p class="video-channel">Ku sopheap</p>
+                </div>
+            </a>
+
+            <a href="watch6.html?video=h07ucor1agI" class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/h07ucor1agI/hqdefault.jpg" alt="Video thumbnail">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">មេរៀនថ្មី ភាគទី ១</p>
+                    <p class="video-channel"> Ku sopheap</p>
+                </div>
+            </a>
+
+
+        </div>
+    </main>
+
+
+
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-lg-4 col-md-6 mb-4" bis_skin_checked="1">
+                    <div class="d-flex align-items-center" bis_skin_checked="1">
+                        <i class="fas fa-dharmachakra fs-1 me-3" style="color: var(--primary-color)"></i>
+                        <h5 class="mt-4">អំពីពុទ្ធសាសនានិងសង្គម</h5>
+                    </div>
+                    <p style="line-height: 1.8">
+                        គេហទំព័រដែលផ្តល់នូវការអប់រំ សេវាកម្មសង្គម
+                        និងការលើកកម្ពស់គុណតម្លៃសីលធម៌តាមគោលការណ៍ព្រះធម៌
+                        ដើម្បីអភិវឌ្ឍន៍សង្គមប្រកបដោយសន្តិភាព និងសុខុមាលភាព។
+                    </p>
+                    <div class="footer-social mt-3" bis_skin_checked="1">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>តំណភ្ជាប់លឿន</h5>
+                    <a href="#"><i class="fas fa-angle-right"></i> ទំព័រដើម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> អំពីយើង</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> សេវាកម្ម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ព្រឹត្តិការណ៍</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ទំនាក់ទំនង</a>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>សេវាកម្ម</h5>
+                    <a href="#"><i class="fas fa-angle-right"></i> គម្រោងសង្គម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ការអប់រំ</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> វគ្គបណ្តុះបណ្តាល</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> អ្នកស្ម័គ្រចិត្ត</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ការបរិច្ចាគ</a>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>ទំនាក់ទំនង</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i>
+                        ភ្នំពេញ, កម្ពុជា
+                    </p>
+                    <p>
+                        <i class="fas fa-phone" style="color: var(--primary-color);"></i>
+                        012 345 678
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope" style="color: var(--primary-color);"></i>
+                        info@buddhism-society.org
+                    </p>
+                    <p>
+                        <i class="fas fa-clock" style="color: var(--primary-color);"></i>
+                        ច័ន្ទ - សុក្រ: 8:00 - 17:00
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">
+                            © 2024 ពុទ្ធសាសនានិងសង្គម. រក្សាសិទ្ធិគ្រប់យ៉ាង។
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end justify-content-center justify-content-md-end d-flex">
+                        <a href="#" class="me-3">គោលការណ៍ឯកជនភាព</a>
+                        <a href="#" class="me-3">លក្ខខណ្ឌប្រើប្រាស់</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Theme Toggle
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+
+            const icon = document.querySelector('#themeToggle i');
+            icon.className = newTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+
+            localStorage.setItem('theme', newTheme);
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        if (savedTheme === 'dark') {
+            document.querySelector('#themeToggle i').className = 'fas fa-sun';
+        }
+
+
+
+    </script>
+</body>
+
+</html>
