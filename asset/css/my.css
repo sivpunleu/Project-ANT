@@ -35,6 +35,7 @@
     background-blend-mode: overlay !important;
     /* border-radius: 30px !important; */
     border-radius: 10px !important;
+    text-shadow: 0 0 50px hsla(0, 0, 0, .4) !important;
 }
 .video-banner{
     background-image: url(/asset/images/history_banner-images.webp);

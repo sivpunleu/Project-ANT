@@ -27,7 +27,7 @@
     <!-- Google Fonts - Khmer -->
     <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="asset/css/index.css">
+    <link rel="stylesheet" href="asset/css/home.css">
 
 </head>
 <style>
@@ -82,7 +82,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="pages/dhammaVideo.html">
                                         វីដេអូធម៌
                                     </a>
                                 </li>
@@ -92,7 +92,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="pages/questionandanwser.html">
                                         សំណួរ និង ចម្លើយ
                                     </a>
                                 </li>
@@ -101,7 +101,7 @@
 
                         <!-- Courses -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="pages/education.html">
                                 ការអប់រំ
                             </a>
                         </li>
@@ -118,7 +118,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="pages/culture.html">
                                         វប្បធម៌ខ្មែរ
                                     </a>
                                 </li>
@@ -140,17 +140,17 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="pages/history.html">
                                         ប្រវត្តិ
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="pages/mission.html">
                                         បេសកកម្ម
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="pages/team.html">
                                         ក្រុមការងារ
                                     </a>
                                 </li>
@@ -170,13 +170,13 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="pages/volunteer.html">
                                         ចូលរូមស្ម័គ្រចិត្ត
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
-                                        បរិស្ថាន
+                                    <a class="dropdown-item" href="pages/contact.html">
+                                        ទំនាក់ទំនង
                                     </a>
                                 </li>
                             </ul>
@@ -200,7 +200,7 @@
 
 
                         <!-- User Profile -->
-                        <a href="#" class="user-profile">
+                        <a href="pages/auth/user_profile.html" class="user-profile">
                             <img src="asset/images/img-profile/user-profile.png" alt="" class="img-f"
                                 style="width: 50px; " height="50px">
                         </a>
@@ -211,6 +211,8 @@
             </div>
         </nav>
     </header>
+
+    <!-- ═══════════ HERO SECTION ═══════════ -->
     <main>
         <div>
             <div class="herobaner">
@@ -227,12 +229,14 @@
                             សង្គម</h1>
 
                         <h2 class="fw-bold fs-1 text-start text-light mt-4 px-2 " style="line-height: 55px;">
-                            ការអប់រំផ្លូវចិត្តគឺជាកត្តាចាំបាច់សម្រាប់ដោះស្រាយបញ្ញាក្នុងជីវិតប្រចាំថ្ងៃ
+                            ការអប់រំផ្លូវចិត្តគឺជាកត្តាចាំបាច់
+                            <br class="d-md-none">សម្រាប់ដោះស្រាយបញ្ញាក្នុងជីវិតប្រចាំថ្ងៃ
                         </h2>
 
-                        <h3 class=" text-light fw-bold text-start mt-3 px-2">សីល សមាធិ បញ្ញា</h3>
+                        <h3 class=" text-light fw-bold text-start mt-3 px-2 mb-5">សីល សមាធិ បញ្ញា</h3>
+                        <a href="pages/Sila.html"
+                            class="btn-primary mt-4 ms-2  text-decoration-none text-light">ចាប់ផ្តើមឥឡូវនេះ</a>
 
-                        <button class="btn-primary mt-4 ms-2" id="login">ចាប់ផ្តើមឥឡូវនេះ</button>
 
                     </div>
                 </section>
@@ -357,6 +361,16 @@
                                         data-aos-delay="500">
                                         <img src="https://storage.googleapis.com/rnk/post/202505/0jidF2TdBxpcDrX89MTWFIrVq8y4Wn9RzW3qgXS6.jpg"
                                             class="card-img-top" alt="ពិធីបុណ្យវិសាខបូជា">
+                                        <div class="position-absolute top-0 end-0 p-2 d-flex gap-1">
+                                            <button class="btn btn-light btn-sm rounded-circle shadow-sm" type="button"
+                                                data-bs-toggle="modal" data-bs-target="#saveModal">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-sm rounded-circle shadow-sm" type="button"
+                                                data-bs-toggle="modal" data-bs-target="#saveModal">
+                                                <i class="bi bi-bookmark"></i>
+                                            </button>
+                                        </div>
 
                                         <div class="card-body p-4 d-flex flex-column">
                                             <h5 class="card-title fw-bold mb-3">ពិធីបុណ្យវិសាខបូជា</h5>
@@ -389,6 +403,16 @@
                                         data-aos-delay="700">
                                         <img src="https://www.csndaily.com/wp-content/uploads/2022/09/official-asset.jpg"
                                             class="card-img-top" alt="ពិធីបុណ្យភ្ជុំបិណ្ឌ">
+                                        <div class="position-absolute top-0 end-0 p-2 d-flex gap-1">
+                                            <button class="btn btn-light btn-sm rounded-circle shadow-sm" type="button"
+                                                data-bs-toggle="modal" data-bs-target="#saveModal">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-sm rounded-circle shadow-sm" type="button"
+                                                data-bs-toggle="modal" data-bs-target="#saveModal">
+                                                <i class="bi bi-bookmark"></i>
+                                            </button>
+                                        </div>
                                         <div class="card-body p-4 d-flex flex-column">
                                             <h5 class="card-title fw-bold mb-3">ពិធីបុណ្យភ្ជុំបិណ្ឌ</h5>
                                             <div class="d-flex justify-content-between text-muted small mb-2">
@@ -418,6 +442,16 @@
                                         data-aos-delay="800">
                                         <img src="https://3.bp.blogspot.com/-A5rKL97zTko/Xj04AHV1RXI/AAAAAAABURc/slAK-yrHTvQVKmY5RfWmoYKOvAfV_J6PQCLcBGAsYHQ/s1600/84493436_2483087505293096_3142829532730359808_n.jpg"
                                             class="card-img-top" alt="ពិធីបុណ្យមាឃបូជា">
+                                        <div class="position-absolute top-0 end-0 p-2 d-flex gap-1">
+                                            <button class="btn btn-light btn-sm rounded-circle shadow-sm" type="button"
+                                                data-bs-toggle="modal" data-bs-target="#saveModal">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-sm rounded-circle shadow-sm" type="button"
+                                                data-bs-toggle="modal" data-bs-target="#saveModal">
+                                                <i class="bi bi-bookmark"></i>
+                                            </button>
+                                        </div>
                                         <div class="card-body p-4 d-flex flex-column">
                                             <h5 class="card-title fw-bold mb-3">ពិធីបុណ្យមាឃបូជា</h5>
                                             <div class="d-flex justify-content-between text-muted small mb-2">
@@ -447,6 +481,16 @@
                                         data-aos-delay="900">
                                         <img src="https://theirrawaddydolphin.com/storage/photos/news/article/2025/September/Irrawaddy%20Thumbnail.jpg"
                                             class="card-img-top" alt="ពិធីបុណ្យកឋិនទាន">
+                                        <div class="position-absolute top-0 end-0 p-2 d-flex gap-1">
+                                            <button class="btn btn-light btn-sm rounded-circle shadow-sm" type="button"
+                                                data-bs-toggle="modal" data-bs-target="#saveModal">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-sm rounded-circle shadow-sm" type="button"
+                                                data-bs-toggle="modal" data-bs-target="#saveModal">
+                                                <i class="bi bi-bookmark"></i>
+                                            </button>
+                                        </div>
                                         <div class="card-body p-4 d-flex flex-column">
                                             <h5 class="card-title fw-bold mb-3">ពិធីបុណ្យកឋិនទាន</h5>
                                             <div class="d-flex justify-content-between text-muted small mb-2">
@@ -480,6 +524,16 @@
                                         data-aos-delay="500">
                                         <img src="https://3.bp.blogspot.com/-A5rKL97zTko/Xj04AHV1RXI/AAAAAAABURc/slAK-yrHTvQVKmY5RfWmoYKOvAfV_J6PQCLcBGAsYHQ/s1600/84493436_2483087505293096_3142829532730359808_n.jpg"
                                             class="card-img-top" alt="ពិធីបុណ្យមាឃបូជា">
+                                        <div class="position-absolute top-0 end-0 p-2 d-flex gap-1">
+                                            <button class="btn btn-light btn-sm rounded-circle shadow-sm" type="button"
+                                                data-bs-toggle="modal" data-bs-target="#saveModal">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-sm rounded-circle shadow-sm" type="button"
+                                                data-bs-toggle="modal" data-bs-target="#saveModal">
+                                                <i class="bi bi-bookmark"></i>
+                                            </button>
+                                        </div>
                                         <div class="card-body p-4 d-flex flex-column">
                                             <h5 class="card-title fw-bold mb-3">ពិធីបុណ្យមាឃបូជា</h5>
                                             <div class="d-flex justify-content-between text-muted small mb-2">
@@ -508,6 +562,16 @@
                                         data-aos-delay="600">
                                         <img src="https://3.bp.blogspot.com/-A5rKL97zTko/Xj04AHV1RXI/AAAAAAABURc/slAK-yrHTvQVKmY5RfWmoYKOvAfV_J6PQCLcBGAsYHQ/s1600/84493436_2483087505293096_3142829532730359808_n.jpg"
                                             class="card-img-top" alt="ពិធីបុណ្យមាឃបូជា">
+                                        <div class="position-absolute top-0 end-0 p-2 d-flex gap-1">
+                                            <button class="btn btn-light btn-sm rounded-circle shadow-sm" type="button"
+                                                data-bs-toggle="modal" data-bs-target="#saveModal">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-sm rounded-circle shadow-sm" type="button"
+                                                data-bs-toggle="modal" data-bs-target="#saveModal">
+                                                <i class="bi bi-bookmark"></i>
+                                            </button>
+                                        </div>
                                         <div class="card-body p-4 d-flex flex-column">
                                             <h5 class="card-title fw-bold mb-3">ពិធីបុណ្យមាឃបូជា</h5>
                                             <div class="d-flex justify-content-between text-muted small mb-2">
@@ -536,6 +600,16 @@
                                         data-aos-delay="700">
                                         <img src="https://3.bp.blogspot.com/-A5rKL97zTko/Xj04AHV1RXI/AAAAAAABURc/slAK-yrHTvQVKmY5RfWmoYKOvAfV_J6PQCLcBGAsYHQ/s1600/84493436_2483087505293096_3142829532730359808_n.jpg"
                                             class="card-img-top" alt="ពិធីបុណ្យមាឃបូជា">
+                                        <div class="position-absolute top-0 end-0 p-2 d-flex gap-1">
+                                            <button class="btn btn-light btn-sm rounded-circle shadow-sm" type="button"
+                                                data-bs-toggle="modal" data-bs-target="#saveModal">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-sm rounded-circle shadow-sm" type="button"
+                                                data-bs-toggle="modal" data-bs-target="#saveModal">
+                                                <i class="bi bi-bookmark"></i>
+                                            </button>
+                                        </div>
                                         <div class="card-body p-4 d-flex flex-column">
                                             <h5 class="card-title fw-bold mb-3">ពិធីបុណ្យមាឃបូជា</h5>
                                             <div class="d-flex justify-content-between text-muted small mb-2">
@@ -757,7 +831,8 @@
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="card course-card h-100">
-                            <img src="asset/images/Monk-at-Kompong-Chrey.webp" class="card-img-top" alt="ភាសាបាលី">
+                            <img src="https://s3.ams.com.kh/education/2023/09/Pic_cover-scaled.jpg" class="card-img-top"
+                                alt="ភាសាបាលី">
                             <div class="card-body">
                                 <h5 class="card-title">សិក្សាភាសាបាលី (ថ្នាក់ដំបូង)</h5>
                                 <p class="card-text">ស្វែងយល់ពីឫសគល់នៃព្រះធម៌ តាមរយៈការសិក្សាភាសាបាលី
@@ -981,7 +1056,7 @@
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="testimonial-card">
-                            <img src="asset/images/vannda_img/vanndaprofile.jpg" alt="User 1"
+                            <img src="asset/images/vannda_img/tong.jpg" alt="User 1"
                                 style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid white;">
                             <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
                             <p class="title">
@@ -1054,12 +1129,7 @@
                                                 <div class="d-flex justify-content-between text-muted small mb-2">
                                                     <span><i class="bi bi-calendar-event"></i> ១៥ កើត ខែមាឃ</span>
                                                 </div>
-                                                <a class="fancy" href="#">
-                                                    <span class="top-key"></span>
-                                                    <span class="text">អានបន្ថែម</span>
-                                                    <span class="bottom-key-1"></span>
-                                                    <span class="bottom-key-2"></span>
-                                                </a>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -1082,12 +1152,7 @@
                                                 <div class="d-flex justify-content-between text-muted small mb-2">
                                                     <span><i class="bi bi-calendar-event"></i> ១៥ កើត ខែមាឃ</span>
                                                 </div>
-                                                <a class="fancy" href="#">
-                                                    <span class="top-key"></span>
-                                                    <span class="text">អានបន្ថែម</span>
-                                                    <span class="bottom-key-1"></span>
-                                                    <span class="bottom-key-2"></span>
-                                                </a>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -1110,12 +1175,7 @@
                                                 <div class="d-flex justify-content-between text-muted small mb-2">
                                                     <span><i class="bi bi-calendar-event"></i> ១៥ កើត ខែមាឃ</span>
                                                 </div>
-                                                <a class="fancy " href="#">
-                                                    <span class="top-key"></span>
-                                                    <span class="text ">អានបន្ថែម</span>
-                                                    <span class="bottom-key-1"></span>
-                                                    <span class="bottom-key-2"></span>
-                                                </a>
+                                                
                                             </div>
                                         </div>
                                     </div>

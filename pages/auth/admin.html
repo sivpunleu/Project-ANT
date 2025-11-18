@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Profile - គណនីអ្នកគ្រប់គ្រង</title>
+    <link href="httpshttps://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../../asset/css/theme.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../asset/bootstrap-5.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="../../asset/bootstrap-5.3.7/css/bootstrap1.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="../../asset/aos-master/dist/aos.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Google Fonts - Khmer -->
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../asset/css/index.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../asset/css/style.css">
+    <link rel="stylesheet" href="../../asset/css/admin.css">
+    
+
+</head>
+
+<body>
+    <header class=" sticky-top">
+        <!-- ═══════════ MAIN NAVBAR ═══════════ -->
+        <nav class="navbar navbar-expand-lg  border-bottom border-light py-3 wow animate__slideInDown ">
+            <div class="container">
+                <!-- Logo & Brand -->
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
+                    <div>
+                        <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
+                        <div style="font-size: 12px; font-family: 'Battambang'; color: var(--primary-color);">
+                            Buddhism & Society
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                    <i class="fas fa-bars" style="color: var(--primary-color);"></i>
+                </button>
+
+                <!-- Main Menu -->
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../../home.html">
+                                ទំព័រដើម
+                            </a>
+                        </li>
+                        <!-- Dhamma Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                ព្រះធម៌
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="../media-library.html">
+                                        បណ្ណាល័យព្រះធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        វីដេអូធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        សំឡេងធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        សំណួរ និង ចម្លើយ
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Courses -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                ការអប់រំ
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+
+                                ព្រឹត្តិការណ៍
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        ពុទ្ធសាសនា
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        វប្បធម៌ខ្មែរ
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <!-- Services -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/events.html">
+                                កម្មវិធី
+                            </a>
+                        </li>
+                        <!-- About Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                អំពីយើង
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        ប្រវត្តិ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        បេសកកម្ម
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        ក្រុមការងារ
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                ផ្សេងៗ
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="pages/Buddhist Rituals.html">
+                                        កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        ចូលរូមស្ម័គ្រចិត្ត
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        បរិស្ថាន
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                    <!-- Right Side Buttons -->
+
+                    <div class="d-flex gap-2 align-items-center ms-auto">
+                        <!-- Theme Toggle -->
+                        <button class="theme-toggle" onclick="toggleTheme()">
+                            <i class="fas fa-moon" id="themeIcon"></i>
+                        </button>
+                        <!-- button search model -->
+                        <button class="btn btn-outline-primary d-none d-lg-block " data-bs-toggle="modal"
+                            data-bs-target="#searchModal">
+                            <i class="fas fa-search "></i> ស្វែងរក
+                        </button>
+
+
+
+                        <!-- User Profile -->
+                        <a href="#" class="user-profile">
+                            <img src="../../asset/images/img-profile/user-profile.png" alt="" class="img-f"
+                                style="width: 50px; " height="50px">
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ═══════════ MAIN CONTENT ═══════════ -->
+    <main>
+        <section class="admin-profile py-5">
+            <!-- Toast Container -->
+            <div class="toast-container position-fixed top-0 end-0 p-3" id="adminProfile"></div>
+
+            <div class="container profile-container">
+                <div class="card profile-card">
+                    <!-- Profile Header -->
+                    <div class="profile-header">
+                        <div class="avatar-wrapper">
+                            <img src="../../asset/images/img-profile/user-profile.png"
+                                alt="Avatar" class="avatar-img" id="avatarImg">
+                            <label for="avatarInput" class="avatar-upload">
+                                <i class="fas fa-camera"></i>
+                            </label>
+                            <input type="file" id="avatarInput" accept="image/*" style="display: none;">
+                        </div>
+                        <h3 id="userName">អ្នកគ្រប់គ្រងប្រព័ន្ធ</h3>
+                        <span class="admin-badge">
+                            <i class="fas fa-crown me-2"></i>ADMINISTRATOR
+                        </span>
+                        <p class="mb-0 mt-3"><i class="fas fa-envelope me-2"></i> admin@system.com</p>
+                    </div>
+
+                    <div class="card-body p-4">
+                        <div class="row">
+                            <!-- Sidebar Navigation -->
+                            <div class="col-md-3">
+                                <div class="nav flex-column nav-pills" role="tablist">
+                                    <button class="nav-link active text-start" data-bs-toggle="pill"
+                                        data-bs-target="#dashboard" type="button">
+                                        <i class="fas fa-tachometer-alt me-2"></i> ផ្ទាំងគ្រប់គ្រង
+                                    </button>
+                                    <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#profile"
+                                        type="button">
+                                        <i class="fas fa-user me-2"></i> ព័ត៌មានផ្ទាល់ខ្លួន
+                                    </button>
+                                    <button class="nav-link text-start" data-bs-toggle="pill"
+                                        data-bs-target="#permissions" type="button">
+                                        <i class="fas fa-user-shield me-2"></i> សិទ្ធិចូលប្រើ
+                                    </button>
+                                    <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#password"
+                                        type="button">
+                                        <i class="fas fa-lock me-2"></i> ពាក្យសម្ងាត់
+                                    </button>
+                                    <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#security"
+                                        type="button">
+                                        <i class="fas fa-shield-alt me-2"></i> សុវត្ថិភាព
+                                    </button>
+                                    <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#audit"
+                                        type="button">
+                                        <i class="fas fa-clipboard-list me-2"></i> ប្រវត្តិសកម្មភាព
+                                    </button>
+                                    <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#system"
+                                        type="button">
+                                        <i class="fas fa-cogs me-2"></i> ប្រព័ន្ធ
+                                    </button>
+                                    <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#backup"
+                                        type="button">
+                                        <i class="fas fa-database me-2"></i> ទិន្នន័យ
+                                    </button>
+                                    <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#reports"
+                                        type="button">
+                                        <i class="fas fa-chart-bar me-2"></i> របាយការណ៍
+                                    </button>
+                                    <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#users"
+                                        type="button">
+                                        <i class="fas fa-users-cog me-2"></i> អ្នកប្រើប្រាស់
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Tab Content -->
+                            <div class="col-md-9">
+                                <div class="tab-content">
+                                    <!-- Dashboard Tab -->
+                                    <div class="tab-pane fade show active" id="dashboard">
+                                        <h4><i class="fas fa-chart-line me-2"></i> ស្ថិតិទូទៅ</h4>
+
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="stat-card">
+                                                    <h3><i class="fas fa-users me-2"></i>1,247</h3>
+                                                    <p>អ្នកប្រើប្រាស់សរុប</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="stat-card">
+                                                    <h3><i class="fas fa-user-clock me-2"></i>89</h3>
+                                                    <p>អ្នកប្រើប្រាស់អនឡាញ</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="stat-card">
+                                                    <h3><i class="fas fa-exclamation-triangle me-2"></i>12</h3>
+                                                    <p>ព័ត៌មានរបាយការណ៍</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <h4 class="mt-4"><i class="fas fa-history me-2"></i> សកម្មភាពថ្មីៗ</h4>
+
+                                        <div class="activity-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <strong>អ្នកប្រើប្រាស់ថ្មី បានចុះឈ្មោះ</strong>
+                                                    <p class="text-muted mb-0 mt-1">សុខ សំណាង បានចុះឈ្មោះក្នុងប្រព័ន្ធ
+                                                    </p>
+                                                </div>
+                                                <small class="text-muted">5 នាទីមុន</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="activity-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <strong>កែប្រែសិទ្ធិអ្នកប្រើប្រាស់</strong>
+                                                    <p class="text-muted mb-0 mt-1">អ្នកបានកែប្រែសិទ្ធិរបស់ "វិទ្យា
+                                                        ច័ន្ទ"</p>
+                                                </div>
+                                                <small class="text-muted">1 ម៉ោងមុន</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="activity-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <strong>លុបទិន្នន័យ</strong>
+                                                    <p class="text-muted mb-0 mt-1">បានលុបរបាយការណ៍ចាស់ចំនួន 45</p>
+                                                </div>
+                                                <small class="text-muted">2 ម៉ោងមុន</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="activity-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <strong>ធ្វើបច្ចុប្បន្នភាពប្រព័ន្ធ</strong>
+                                                    <p class="text-muted mb-0 mt-1">បានធ្វើបច្ចុប្បន្នភាពប្រព័ន្ធទៅកំណែ
+                                                        2.5.1</p>
+                                                </div>
+                                                <small class="text-muted">5 ម៉ោងមុន</small>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Profile Tab -->
+                                    <div class="tab-pane fade" id="profile">
+                                        <h4><i class="fas fa-user-edit me-2"></i> កែប្រែព័ត៌មានផ្ទាល់ខ្លួន</h4>
+                                        <form id="profileForm">
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <label class="form-label">ឈ្មោះពេញ</label>
+                                                    <input type="text" class="form-control"
+                                                        value="អ្នកគ្រប់គ្រងប្រព័ន្ធ" id="fullName">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label">តួនាទី</label>
+                                                    <input type="text" class="form-control" value="Super Administrator"
+                                                        id="role" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">អ៊ីមែល</label>
+                                                <input type="email" class="form-control" value="admin@system.com"
+                                                    id="email">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">លេខទូរស័ព្ទ</label>
+                                                <input type="tel" class="form-control" value="+855 10 123 456"
+                                                    id="phone">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">នាយកដ្ឋាន</label>
+                                                <select class="form-select" id="department">
+                                                    <option selected>IT & System Administration</option>
+                                                    <option>Operations</option>
+                                                    <option>Security</option>
+                                                </select>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">
+                                                <i class="fas fa-save me-2"></i> រក្សាទុក
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                    <!-- Permissions Tab -->
+                                    <div class="tab-pane fade" id="permissions">
+                                        <h4><i class="fas fa-user-shield me-2"></i> សិទ្ធិចូលប្រើប្រព័ន្ធ</h4>
+
+                                        <div class="alert alert-info">
+                                            <i class="fas fa-info-circle me-2"></i>
+                                            អ្នកមានសិទ្ធិគ្រប់គ្រងពេញលេញលើប្រព័ន្ធទាំងអស់
+                                        </div>
+
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                <h6 class="mb-3">ការគ្រប់គ្រងអ្នកប្រើប្រាស់</h6>
+                                                <span class="permission-badge permission-read">អាន</span>
+                                                <span class="permission-badge permission-write">សរសេរ</span>
+                                                <span class="permission-badge permission-delete">លុប</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                <h6 class="mb-3">ការកំណត់ប្រព័ន្ធ</h6>
+                                                <span class="permission-badge permission-read">អាន</span>
+                                                <span class="permission-badge permission-write">សរសេរ</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h6 class="mb-3">របាយការណ៍ និងវិភាគ</h6>
+                                                <span class="permission-badge permission-read">អាន</span>
+                                                <span class="permission-badge permission-write">នាំចេញ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Password Tab -->
+                                    <div class="tab-pane fade" id="password">
+                                        <h4><i class="fas fa-key me-2"></i> ផ្លាស់ប្តូរពាក្យសម្ងាត់</h4>
+                                        <form id="passwordForm">
+                                            <div class="mb-3">
+                                                <label class="form-label">ពាក្យសម្ងាត់បច្ចុប្បន្ន</label>
+                                                <input type="password" class="form-control" id="currentPassword">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">ពាក្យសម្ងាត់ថ្មី</label>
+                                                <input type="password" class="form-control" id="newPassword">
+                                                <div class="password-strength mt-2" id="strengthBar"></div>
+                                                <small class="text-muted" id="strengthText"></small>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">បញ្ជាក់ពាក្យសម្ងាត់ថ្មី</label>
+                                                <input type="password" class="form-control" id="confirmPassword">
+                                            </div>
+                                            <div class="alert alert-warning">
+                                                <i class="fas fa-exclamation-triangle me-2"></i>
+                                                ពាក្យសម្ងាត់របស់អ្នកគ្រប់គ្រងត្រូវមានសុវត្ថិភាពខ្ពស់ (យ៉ាងតិច 12 តួអក្សរ
+                                                ចំលែកគ្នា)
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">
+                                                <i class="fas fa-check me-2"></i> ផ្លាស់ប្តូរ
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                    <!-- Security Tab -->
+                                    <div class="tab-pane fade" id="security">
+                                        <h4><i class="fas fa-shield-alt me-2"></i> ការកំណត់សុវត្ថិភាព</h4>
+
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <h6>Two-Factor Authentication</h6>
+                                                        <small
+                                                            class="text-muted">បន្ថែមសុវត្ថិភាពបន្ថែមទៀតដល់គណនីរបស់អ្នក</small>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" checked
+                                                            id="twoFactorSwitch">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <h6>IP Whitelisting</h6>
+                                                        <small class="text-muted">អនុញ្ញាតតែ IP
+                                                            ដែលបានអនុម័តប៉ុណ្ណោះ</small>
+                                                    </div>
+                                                    <button class="btn btn-outline-primary btn-sm"
+                                                        data-bs-toggle="modal" data-bs-target="#ipModal">
+                                                        <i class="fas fa-cog me-1"></i> កំណត់
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <h6>Session Timeout</h6>
+                                                        <small class="text-muted">កំណត់ពេលវេលាផុតកំណត់សម័យ</small>
+                                                    </div>
+                                                    <select class="form-select w-auto">
+                                                        <option>15 នាទី</option>
+                                                        <option selected>30 នាទី</option>
+                                                        <option>1 ម៉ោង</option>
+                                                        <option>4 ម៉ោង</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <h6>ប្រវត្តិការចូល</h6>
+                                                        <small class="text-muted">មើលស្ថានភាពការចូលរបស់អ្នក</small>
+                                                    </div>
+                                                    <button class="btn btn-outline-primary btn-sm"
+                                                        data-bs-toggle="modal" data-bs-target="#loginHistoryModal">
+                                                        <i class="fas fa-eye me-1"></i> មើល
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Audit Log Tab -->
+                                    <div class="tab-pane fade" id="audit">
+                                        <h4><i class="fas fa-clipboard-list me-2"></i> ប្រវត្តិសកម្មភាពអ្នកគ្រប់គ្រង
+                                        </h4>
+
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>សកម្មភាព</th>
+                                                                <th>ព័ត៌មានលម្អិត</th>
+                                                                <th>IP Address</th>
+                                                                <th>ពេលវេលា</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><span class="badge bg-success">ចូល</span></td>
+                                                                <td>ចូលប្រើប្រាស់ប្រព័ន្ធដោយជោគជ័យ</td>
+                                                                <td>192.168.1.100</td>
+                                                                <td>2024-11-09 08:30 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="badge bg-warning">កែប្រែ</span></td>
+                                                                <td>កែប្រែសិទ្ធិអ្នកប្រើប្រាស់ ID: 1234</td>
+                                                                <td>192.168.1.100</td>
+                                                                <td>2024-11-09 07:45 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="badge bg-danger">លុប</span></td>
+                                                                <td>លុបរបាយការណ៍ចាស់ចំនួន 45</td>
+                                                                <td>192.168.1.100</td>
+                                                                <td>2024-11-09 06:20 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="badge bg-info">បង្កើត</span></td>
+                                                                <td>បង្កើតគណនីអ្នកប្រើប្រាស់ថ្មី</td>
+                                                                <td>192.168.1.100</td>
+                                                                <td>2024-11-08 04:15 PM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span class="badge bg-primary">កំណត់</span></td>
+                                                                <td>កែប្រែការកំណត់ប្រព័ន្ធ</td>
+                                                                <td>192.168.1.100</td>
+                                                                <td>2024-11-08 02:30 PM</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- System Settings Tab -->
+                                    <div class="tab-pane fade" id="system">
+                                        <h4><i class="fas fa-cogs me-2"></i> ការកំណត់ប្រព័ន្ធ</h4>
+
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                <h6 class="mb-3">ព័ត៌មានប្រព័ន្ធ</h6>
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2">
+                                                        <small class="text-muted">កំណែប្រព័ន្ធ:</small>
+                                                        <strong class="d-block">v2.5.1</strong>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2">
+                                                        <small class="text-muted">កាលបរិច្ឆេទធ្វើបច្ចុប្បន្នភាព:</small>
+                                                        <strong class="d-block">2024-11-01</strong>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2">
+                                                        <small class="text-muted">Server Status:</small>
+                                                        <strong class="d-block text-success"><i
+                                                                class="fas fa-circle me-1"></i>Online</strong>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2">
+                                                        <small class="text-muted">Database Status:</small>
+                                                        <strong class="d-block text-success"><i
+                                                                class="fas fa-circle me-1"></i>Connected</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                <h6 class="mb-3">ការកំណត់ទូទៅ</h6>
+
+                                                <div class="mb-3">
+                                                    <label class="form-label">ឈ្មោះប្រព័ន្ធ</label>
+                                                    <input type="text" class="form-control" value="Admin Portal System">
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label class="form-label">Timezone</label>
+                                                    <select class="form-select">
+                                                        <option selected>Asia/Phnom_Penh (UTC+7)</option>
+                                                        <option>Asia/Bangkok (UTC+7)</option>
+                                                        <option>Asia/Singapore (UTC+8)</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label class="form-label">ភាសាលំនាំដើម</label>
+                                                    <select class="form-select">
+                                                        <option selected>ភាសាខ្មែរ</option>
+                                                        <option>English</option>
+                                                        <option>中文</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <div>
+                                                        <strong>Maintenance Mode</strong>
+                                                        <p class="text-muted mb-0 small">
+                                                            បិទប្រព័ន្ធជាបណ្តោះអាសន្នសម្រាប់ថែទាំ</p>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="maintenanceSwitch">
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <strong>Debug Mode</strong>
+                                                        <p class="text-muted mb-0 small">បង្ហាញព័ត៌មានកំហុសលម្អិត</p>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="debugSwitch">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                <h6 class="mb-3">Email Configuration</h6>
+
+                                                <div class="mb-3">
+                                                    <label class="form-label">SMTP Server</label>
+                                                    <input type="text" class="form-control" value="smtp.gmail.com">
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Port</label>
+                                                        <input type="number" class="form-control" value="587">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Encryption</label>
+                                                        <select class="form-select">
+                                                            <option>None</option>
+                                                            <option selected>TLS</option>
+                                                            <option>SSL</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <button class="btn btn-outline-primary btn-sm">
+                                                    <i class="fas fa-paper-plane me-2"></i>ផ្ញើអ៊ីមែលសាកល្បង
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h6 class="mb-3 text-danger">Danger Zone</h6>
+
+                                                <button class="btn btn-outline-warning mb-2 w-100"
+                                                    onclick="clearCache()">
+                                                    <i class="fas fa-broom me-2"></i>Clear System Cache
+                                                </button>
+
+                                                <button class="btn btn-outline-danger w-100" data-bs-toggle="modal"
+                                                    data-bs-target="#resetSystemModal">
+                                                    <i class="fas fa-redo me-2"></i>Reset System Settings
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <button class="btn btn-primary mt-3" onclick="showSystemChanges(event)">
+                                            <i class="fas fa-save me-2"></i>រក្សាទុកការកំណត់
+                                        </button>
+                                    </div>
+
+                                    <!-- Backup & Data Tab -->
+                                    <div class="tab-pane fade" id="backup">
+                                        <h4><i class="fas fa-database me-2"></i> គ្រប់គ្រងទិន្នន័យ</h4>
+
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                <h6 class="mb-3">ការបម្រុងទុកទិន្នន័យ</h6>
+
+                                                <div class="alert alert-info">
+                                                    <i class="fas fa-info-circle me-2"></i>
+                                                    <strong>ការបម្រុងទុកចុងក្រោយ:</strong> 2024-11-09 06:00 AM
+                                                </div>
+
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <div>
+                                                        <strong>ការបម្រុងទុកស្វ័យប្រវត្តិ</strong>
+                                                        <p class="text-muted mb-0 small">បម្រុងទុកទិន្នន័យរៀងរាល់ថ្ងៃ
+                                                        </p>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" checked
+                                                            id="autoBackupSwitch">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label class="form-label">ពេលវេលាបម្រុងទុក</label>
+                                                    <select class="form-select">
+                                                        <option>រៀងរាល់ 6 ម៉ោងម្តង</option>
+                                                        <option>រៀងរាល់ 12 ម៉ោងម្តង</option>
+                                                        <option selected>រៀងរាល់ថ្ងៃម្តង</option>
+                                                        <option>រៀងរាល់សប្តាហ៍ម្តង</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="d-grid gap-2">
+                                                    <button class="btn btn-primary" onclick="createBackup()">
+                                                        <i
+                                                            class="fas fa-cloud-upload-alt me-2"></i>បង្កើតការបម្រុងទុកឥឡូវនេះ
+                                                    </button>
+                                                    <button class="btn btn-outline-primary">
+                                                        <i class="fas fa-download me-2"></i>ទាញយកការបម្រុងទុក
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                <h6 class="mb-3">ប្រវត្តិការបម្រុងទុក</h6>
+
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>ឯកសារ</th>
+                                                                <th>ទំហំ</th>
+                                                                <th>កាលបរិច្ឆេទ</th>
+                                                                <th>សកម្មភាព</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><i
+                                                                        class="fas fa-file-archive me-2 text-primary"></i>backup_2024_11_09.zip
+                                                                </td>
+                                                                <td>256 MB</td>
+                                                                <td>2024-11-09 06:00 AM</td>
+                                                                <td>
+                                                                    <button class="btn btn-sm btn-outline-primary me-1">
+                                                                        <i class="fas fa-download"></i>
+                                                                    </button>
+                                                                    <button class="btn btn-sm btn-outline-success me-1">
+                                                                        <i class="fas fa-undo"></i>
+                                                                    </button>
+                                                                    <button class="btn btn-sm btn-outline-danger">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><i
+                                                                        class="fas fa-file-archive me-2 text-primary"></i>backup_2024_11_08.zip
+                                                                </td>
+                                                                <td>254 MB</td>
+                                                                <td>2024-11-08 06:00 AM</td>
+                                                                <td>
+                                                                    <button class="btn btn-sm btn-outline-primary me-1">
+                                                                        <i class="fas fa-download"></i>
+                                                                    </button>
+                                                                    <button class="btn btn-sm btn-outline-success me-1">
+                                                                        <i class="fas fa-undo"></i>
+                                                                    </button>
+                                                                    <button class="btn btn-sm btn-outline-danger">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><i
+                                                                        class="fas fa-file-archive me-2 text-primary"></i>backup_2024_11_07.zip
+                                                                </td>
+                                                                <td>251 MB</td>
+                                                                <td>2024-11-07 06:00 AM</td>
+                                                                <td>
+                                                                    <button class="btn btn-sm btn-outline-primary me-1">
+                                                                        <i class="fas fa-download"></i>
+                                                                    </button>
+                                                                    <button class="btn btn-sm btn-outline-success me-1">
+                                                                        <i class="fas fa-undo"></i>
+                                                                    </button>
+                                                                    <button class="btn btn-sm btn-outline-danger">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h6 class="mb-3">ស្តារទិន្នន័យពីការបម្រុងទុក</h6>
+
+                                                <div class="alert alert-warning">
+                                                    <i class="fas fa-exclamation-triangle me-2"></i>
+                                                    <strong>ការព្រមាន:</strong>
+                                                    ការស្តារទិន្នន័យនឹងជំនួសទិន្នន័យបច្ចុប្បន្នទាំងអស់។
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label class="form-label">ជ្រើសរើសឯកសារបម្រុងទុក</label>
+                                                    <input type="file" class="form-control" accept=".zip">
+                                                </div>
+
+                                                <button class="btn btn-warning">
+                                                    <i class="fas fa-upload me-2"></i>ស្តារទិន្នន័យ
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Reports Tab -->
+                                    <div class="tab-pane fade" id="reports">
+                                        <h4><i class="fas fa-chart-bar me-2"></i> របាយការណ៍និងស្ថិតិ</h4>
+
+                                        <div class="row mb-4">
+                                            <div class="col-md-3">
+                                                <div class="stat-card">
+                                                    <h3><i class="fas fa-eye me-2"></i>45.2K</h3>
+                                                    <p>ចំនួនមើលសរុប</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="stat-card">
+                                                    <h3><i class="fas fa-mouse-pointer me-2"></i>12.8K</h3>
+                                                    <p>ចំនួនចុច</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="stat-card">
+                                                    <h3><i class="fas fa-clock me-2"></i>8:45</h3>
+                                                    <p>ពេលវេលាមធ្យម</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="stat-card">
+                                                    <h3><i class="fas fa-percentage me-2"></i>67%</h3>
+                                                    <p>អត្រាប្រើប្រាស់</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <h6 class="mb-0">របាយការណ៍ប្រចាំថ្ងៃ</h6>
+                                                    <div>
+                                                        <button class="btn btn-sm btn-outline-primary me-2">
+                                                            <i class="fas fa-filter me-1"></i>Filter
+                                                        </button>
+                                                        <button class="btn btn-sm btn-primary">
+                                                            <i class="fas fa-download me-1"></i>Export
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <div class="col-md-4">
+                                                        <label class="form-label">ចាប់ផ្តើមពី</label>
+                                                        <input type="date" class="form-control" value="2024-11-01">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label class="form-label">ដល់</label>
+                                                        <input type="date" class="form-control" value="2024-11-09">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label class="form-label">ប្រភេទ</label>
+                                                        <select class="form-select">
+                                                            <option selected>ទាំងអស់</option>
+                                                            <option>អ្នកប្រើប្រាស់</option>
+                                                            <option>ប្រតិបត្តិការ</option>
+                                                            <option>សុវត្ថិភាព</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>កាលបរិច្ឆេទ</th>
+                                                                <th>អ្នកប្រើប្រាស់ថ្មី</th>
+                                                                <th>សកម្មភាព</th>
+                                                                <th>កំហុស</th>
+                                                                <th>Status</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>2024-11-09</td>
+                                                                <td>45</td>
+                                                                <td>1,234</td>
+                                                                <td>3</td>
+                                                                <td><span class="badge bg-success">ល្អ</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2024-11-08</td>
+                                                                <td>52</td>
+                                                                <td>1,456</td>
+                                                                <td>1</td>
+                                                                <td><span class="badge bg-success">ល្អ</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2024-11-07</td>
+                                                                <td>38</td>
+                                                                <td>1,089</td>
+                                                                <td>8</td>
+                                                                <td><span class="badge bg-warning">មធ្យម</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2024-11-06</td>
+                                                                <td>41</td>
+                                                                <td>1,312</td>
+                                                                <td>2</td>
+                                                                <td><span class="badge bg-success">ល្អ</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2024-11-05</td>
+                                                                <td>36</td>
+                                                                <td>998</td>
+                                                                <td>12</td>
+                                                                <td><span class="badge bg-danger">មានបញ្ហា</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h6 class="mb-3">រៀបចំរបាយការណ៍ផ្ទាល់ខ្លួន</h6>
+
+                                                <div class="row mb-3">
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">ឈ្មោះរបាយការណ៍</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="របាយការណ៍ប្រចាំខែ">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">ប្រភេទទិន្នន័យ</label>
+                                                        <select class="form-select" multiple style="height: 120px;">
+                                                            <option selected>អ្នកប្រើប្រាស់</option>
+                                                            <option selected>សកម្មភាព</option>
+                                                            <option>ការចូល</option>
+                                                            <option>កំហុស</option>
+                                                            <option>ប្រតិបត្តិការ</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <button class="btn btn-primary">
+                                                    <i class="fas fa-plus me-2"></i>បង្កើតរបាយការណ៍
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- User Management Tab -->
+                                    <div class="tab-pane fade" id="users">
+                                        <h4><i class="fas fa-users-cog me-2"></i> គ្រប់គ្រងអ្នកប្រើប្រាស់</h4>
+
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <div class="input-group" style="max-width: 400px;">
+                                                        <span class="input-group-text"><i
+                                                                class="fas fa-search"></i></span>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="ស្វែងរកអ្នកប្រើប្រាស់...">
+                                                    </div>
+                                                    <button class="btn btn-primary" data-bs-toggle="modal"
+                                                        data-bs-target="#addUserModal">
+                                                        <i class="fas fa-user-plus me-2"></i>បន្ថែមអ្នកប្រើប្រាស់
+                                                    </button>
+                                                </div>
+
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>អ្នកប្រើប្រាស់</th>
+                                                                <th>អ៊ីមែល</th>
+                                                                <th>តួនាទី</th>
+                                                                <th>ស្ថានភាព</th>
+                                                                <th>ចុះឈ្មោះ</th>
+                                                                <th>សកម្មភាព</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <img src="https://ui-avatars.com/api/?name=Sok+Pisey&size=32&background=6366f1&color=fff"
+                                                                            class="rounded-circle me-2" width="32"
+                                                                            height="32">
+                                                                        <strong>សុខ ពិសី</strong>
+                                                                    </div>
+                                                                </td>
+                                                                <td>pisey@example.com</td>
+                                                                <td><span class="badge bg-primary">អ្នកគ្រប់គ្រង</span>
+                                                                </td>
+                                                                <td><span class="badge bg-success">សកម្ម</span></td>
+                                                                <td>2024-01-15</td>
+                                                                <td>
+                                                                    <button class="btn btn-sm btn-outline-primary me-1"
+                                                                        title="កែប្រែ">
+                                                                        <i class="fas fa-edit"></i>
+                                                                    </button>
+                                                                    <button class="btn btn-sm btn-outline-danger"
+                                                                        title="លុប">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <img src="https://ui-avatars.com/api/?name=Veasna+Chan&size=32&background=10b981&color=fff"
+                                                                            class="rounded-circle me-2" width="32"
+                                                                            height="32">
+                                                                        <strong>វាសនា ច័ន្ទ</strong>
+                                                                    </div>
+                                                                </td>
+                                                                <td>veasna@example.com</td>
+                                                                <td><span class="badge bg-info">អ្នកកែប្រែ</span></td>
+                                                                <td><span class="badge bg-success">សកម្ម</span></td>
+                                                                <td>2024-03-22</td>
+                                                                <td>
+                                                                    <button class="btn btn-sm btn-outline-primary me-1"
+                                                                        title="កែប្រែ">
+                                                                        <i class="fas fa-edit"></i>
+                                                                    </button>
+                                                                    <button class="btn btn-sm btn-outline-danger"
+                                                                        title="លុប">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <img src="https://ui-avatars.com/api/?name=Dara+Pov&size=32&background=f59e0b&color=fff"
+                                                                            class="rounded-circle me-2" width="32"
+                                                                            height="32">
+                                                                        <strong>ដារា ពៅ</strong>
+                                                                    </div>
+                                                                </td>
+                                                                <td>dara@example.com</td>
+                                                                <td><span class="badge bg-secondary">អ្នកមើល</span></td>
+                                                                <td><span class="badge bg-warning">រង់ចាំ</span></td>
+                                                                <td>2024-10-18</td>
+                                                                <td>
+                                                                    <button class="btn btn-sm btn-outline-primary me-1"
+                                                                        title="កែប្រែ">
+                                                                        <i class="fas fa-edit"></i>
+                                                                    </button>
+                                                                    <button class="btn btn-sm btn-outline-danger"
+                                                                        title="លុប">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <img src="https://ui-avatars.com/api/?name=Sophal+Kim&size=32&background=8b5cf6&color=fff"
+                                                                            class="rounded-circle me-2" width="32"
+                                                                            height="32">
+                                                                        <strong>សុផល គឹម</strong>
+                                                                    </div>
+                                                                </td>
+                                                                <td>sophal@example.com</td>
+                                                                <td><span class="badge bg-info">អ្នកកែប្រែ</span></td>
+                                                                <td><span class="badge bg-danger">បិទ</span></td>
+                                                                <td>2024-08-05</td>
+                                                                <td>
+                                                                    <button class="btn btn-sm btn-outline-primary me-1"
+                                                                        title="កែប្រែ">
+                                                                        <i class="fas fa-edit"></i>
+                                                                    </button>
+                                                                    <button class="btn btn-sm btn-outline-danger"
+                                                                        title="លុប">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <nav>
+                                                    <ul class="pagination justify-content-center mb-0 mt-3">
+                                                        <li class="page-item disabled">
+                                                            <a class="page-link" href="#"><i
+                                                                    class="fas fa-chevron-left"></i></a>
+                                                        </li>
+                                                        <li class="page-item active"><a class="page-link" href="#">1</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#"><i
+                                                                    class="fas fa-chevron-right"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h6 class="mb-3">ស្ថានភាពអ្នកប្រើប្រាស់</h6>
+                                                        <div class="mb-2 d-flex justify-content-between">
+                                                            <span><i
+                                                                    class="fas fa-circle text-success me-2"></i>សកម្ម</span>
+                                                            <strong>856</strong>
+                                                        </div>
+                                                        <div class="mb-2 d-flex justify-content-between">
+                                                            <span><i
+                                                                    class="fas fa-circle text-warning me-2"></i>រង់ចាំ</span>
+                                                            <strong>234</strong>
+                                                        </div>
+                                                        <div class="mb-2 d-flex justify-content-between">
+                                                            <span><i
+                                                                    class="fas fa-circle text-danger me-2"></i>បិទ</span>
+                                                            <strong>157</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h6 class="mb-3">តួនាទី</h6>
+                                                        <div class="mb-2 d-flex justify-content-between">
+                                                            <span><i
+                                                                    class="fas fa-user-shield text-primary me-2"></i>អ្នកគ្រប់គ្រង</span>
+                                                            <strong>12</strong>
+                                                        </div>
+                                                        <div class="mb-2 d-flex justify-content-between">
+                                                            <span><i
+                                                                    class="fas fa-user-edit text-info me-2"></i>អ្នកកែប្រែ</span>
+                                                            <strong>145</strong>
+                                                        </div>
+                                                        <div class="mb-2 d-flex justify-content-between">
+                                                            <span><i
+                                                                    class="fas fa-user text-secondary me-2"></i>អ្នកមើល</span>
+                                                            <strong>1,090</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4><i class="fas fa-database me-2"></i> គ្រប់គ្រងទិន្នន័យ</h4>
+
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h6 class="mb-3">ការបម្រុងទុកទិន្នន័យ</h6>
+
+                                    <div class="alert alert-info">
+                                        <i class="fas fa-info-circle me-2"></i>
+                                        <strong>ការបម្រុងទុកចុងក្រោយ:</strong> 2024-11-09 06:00 AM
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <div>
+                                            <strong>ការបម្រុងទុកស្វ័យប្រវត្តិ</strong>
+                                            <p class="text-muted mb-0 small">បម្រុងទុកទិន្នន័យរៀងរាល់ថ្ងៃ</p>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" checked id="autoBackupSwitch">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">ពេលវេលាបម្រុងទុក</label>
+                                        <select class="form-select">
+                                            <option>រៀងរាល់ 6 ម៉ោងម្តង</option>
+                                            <option>រៀងរាល់ 12 ម៉ោងម្តង</option>
+                                            <option selected>រៀងរាល់ថ្ងៃម្តង</option>
+                                            <option>រៀងរាល់សប្តាហ៍ម្តង</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-primary" onclick="createBackup()">
+                                            <i class="fas fa-cloud-upload-alt me-2"></i>បង្កើតការបម្រុងទុកឥឡូវនេះ
+                                        </button>
+                                        <button class="btn btn-outline-primary">
+                                            <i class="fas fa-download me-2"></i>ទាញយកការបម្រុងទុក
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h6 class="mb-3">ប្រវត្តិការបម្រុងទុក</h6>
+
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>ឯកសារ</th>
+                                                    <th>ទំហំ</th>
+                                                    <th>កាលបរិច្ឆេទ</th>
+                                                    <th>សកម្មភាព</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><i
+                                                            class="fas fa-file-archive me-2 text-primary"></i>backup_2024_11_09.zip
+                                                    </td>
+                                                    <td>256 MB</td>
+                                                    <td>2024-11-09 06:00 AM</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-outline-primary me-1">
+                                                            <i class="fas fa-download"></i>
+                                                        </button>
+                                                        <button class="btn btn-sm btn-outline-success me-1">
+                                                            <i class="fas fa-undo"></i>
+                                                        </button>
+                                                        <button class="btn btn-sm btn-outline-danger">
+                                                            <i class="fas fa-trash"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i
+                                                            class="fas fa-file-archive me-2 text-primary"></i>backup_2024_11_08.zip
+                                                    </td>
+                                                    <td>254 MB</td>
+                                                    <td>2024-11-08 06:00 AM</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-outline-primary me-1">
+                                                            <i class="fas fa-download"></i>
+                                                        </button>
+                                                        <button class="btn btn-sm btn-outline-success me-1">
+                                                            <i class="fas fa-undo"></i>
+                                                        </button>
+                                                        <button class="btn btn-sm btn-outline-danger">
+                                                            <i class="fas fa-trash"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i
+                                                            class="fas fa-file-archive me-2 text-primary"></i>backup_2024_11_07.zip
+                                                    </td>
+                                                    <td>251 MB</td>
+                                                    <td>2024-11-07 06:00 AM</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-outline-primary me-1">
+                                                            <i class="fas fa-download"></i>
+                                                        </button>
+                                                        <button class="btn btn-sm btn-outline-success me-1">
+                                                            <i class="fas fa-undo"></i>
+                                                        </button>
+                                                        <button class="btn btn-sm btn-outline-danger">
+                                                            <i class="fas fa-trash"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="mb-3">ស្តារទិន្នន័យពីការបម្រុងទុក</h6>
+
+                                    <div class="alert alert-warning">
+                                        <i class="fas fa-exclamation-triangle me-2"></i>
+                                        <strong>ការព្រមាន:</strong> ការស្តារទិន្នន័យនឹងជំនួសទិន្នន័យបច្ចុប្បន្នទាំងអស់។
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">ជ្រើសរើសឯកសារបម្រុងទុក</label>
+                                        <input type="file" class="form-control" accept=".zip">
+                                    </div>
+
+                                    <button class="btn btn-warning">
+                                        <i class="fas fa-upload me-2"></i>ស្តារទិន្នន័យ
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Login History Modal -->
+            <div class="modal fade" id="loginHistoryModal" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"><i class="fas fa-history me-2"></i>ប្រវត្តិការចូល</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table login-history-table">
+                                <thead>
+                                    <tr>
+                                        <th>ឧបករណ៍</th>
+                                        <th>ទីតាំង</th>
+                                        <th>IP Address</th>
+                                        <th>ពេលវេលា</th>
+                                        <th>ស្ថានភាព</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fas fa-desktop me-2"></i>Windows PC</td>
+                                        <td>Phnom Penh, KH</td>
+                                        <td>192.168.1.100</td>
+                                        <td>2024-11-09 08:30 AM</td>
+                                        <td><span class="badge bg-success">ជោគជ័យ</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fas fa-mobile-alt me-2"></i>iPhone 14</td>
+                                        <td>Phnom Penh, KH</td>
+                                        <td>192.168.1.105</td>
+                                        <td>2024-11-08 07:15 PM</td>
+                                        <td><span class="badge bg-success">ជោគជ័យ</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fas fa-laptop me-2"></i>MacBook Pro</td>
+                                        <td>Unknown</td>
+                                        <td>103.45.67.89</td>
+                                        <td>2024-11-08 02:45 PM</td>
+                                        <td><span class="badge bg-danger">បរាជ័យ</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IP Whitelist Modal -->
+            <div class="modal fade" id="ipModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"><i class="fas fa-network-wired me-2"></i>គ្រប់គ្រង IP Whitelist</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label class="form-label">បន្ថែម IP Address</label>
+                                <input type="text" class="form-control" placeholder="192.168.1.100">
+                            </div>
+                            <div class="alert alert-info">
+                                <strong>IP Addresses ដែលបានអនុម័ត:</strong>
+                                <ul class="mt-2 mb-0">
+                                    <li>192.168.1.100 - Office Network</li>
+                                    <li>192.168.1.105 - Mobile Network</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                            <button type="button" class="btn btn-primary">បន្ថែម IP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add User Modal -->
+            <div class="modal fade" id="addUserModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"><i class="fas fa-user-plus me-2"></i>បន្ថែមអ្នកប្រើប្រាស់ថ្មី</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label class="form-label">ឈ្មោះពេញ</label>
+                                <input type="text" class="form-control" placeholder="សុខ សំណាង">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">អ៊ីមែល</label>
+                                <input type="email" class="form-control" placeholder="user@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">តួនាទី</label>
+                                <select class="form-select">
+                                    <option>អ្នកគ្រប់គ្រង</option>
+                                    <option selected>អ្នកកែប្រែ</option>
+                                    <option>អ្នកមើល</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">ពាក្យសម្ងាត់</label>
+                                <input type="password" class="form-control" placeholder="••••••••">
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="sendEmailCheck" checked>
+                                <label class="form-check-label" for="sendEmailCheck">
+                                    ផ្ញើអ៊ីមែលស្វាគមន៍
+                                </label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បោះបង់</button>
+                            <button type="button" class="btn btn-primary"
+                                onclick="addUser()">បន្ថែមអ្នកប្រើប្រាស់</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Changes Review Modal -->
+            <div class="modal fade" id="changesModal" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header bg-primary text-white">
+                            <h5 class="modal-title"><i class="fas fa-clipboard-check me-2"></i>ពិនិត្យមើលការផ្លាស់ប្តូរ
+                            </h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="alert alert-info">
+                                <i class="fas fa-info-circle me-2"></i>
+                                សូមពិនិត្យមើលការផ្លាស់ប្តូរមុនពេលរក្សាទុក
+                            </div>
+
+                            <div id="changesList">
+                                <!-- Changes will be dynamically added here -->
+                            </div>
+
+                            <div class="mt-3 p-3"
+                                style="background: rgba(220, 38, 38, 0.05); border-radius: 12px; border-left: 4px solid var(--primary-color);">
+                                <strong><i class="fas fa-exclamation-triangle me-2 text-warning"></i>សំខាន់:</strong>
+                                <p class="mb-0 mt-2 text-muted">
+                                    ការផ្លាស់ប្តូរទាំងនេះនឹងមានប្រសិទ្ធភាពភ្លាមៗបន្ទាប់ពីរក្សាទុក។</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                <i class="fas fa-times me-2"></i>បោះបង់
+                            </button>
+                            <button type="button" class="btn btn-primary" onclick="confirmSave()">
+                                <i class="fas fa-check me-2"></i>បញ្ជាក់ & រក្សាទុក
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reset System Modal -->
+            <div class="modal fade" id="resetSystemModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-danger text-white">
+                            <h5 class="modal-title"><i
+                                    class="fas fa-exclamation-triangle me-2"></i>បញ្ជាក់ការកំណត់ប្រព័ន្ធឡើងវិញ</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>តើអ្នកប្រាកដថាចង់កំណត់ប្រព័ន្ធឡើងវិញទេ?</strong></p>
+                            <p class="text-muted">សកម្មភាពនេះនឹង:</p>
+                            <ul class="text-muted">
+                                <li>កំណត់ការកំណត់ទាំងអស់ទៅតម្លៃលំនាំដើម</li>
+                                <li>រក្សាទុកទិន្នន័យអ្នកប្រើប្រាស់</li>
+                                <li>ចាំបាច់ការចូលឡើងវិញ</li>
+                            </ul>
+                            <div class="mb-3">
+                                <label class="form-label">វាយបញ្ចូល "RESET" ដើម្បីបញ្ជាក់</label>
+                                <input type="text" class="form-control" id="resetConfirmInput" placeholder="RESET">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បោះបង់</button>
+                            <button type="button" class="btn btn-danger" onclick="confirmReset()">កំណត់ឡើងវិញ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-lg-4 col-md-6 mb-4" bis_skin_checked="1">
+                    <div class="d-flex align-items-center" bis_skin_checked="1">
+                        <i class="fas fa-dharmachakra fs-1 me-3" style="color: var(--primary-color)"></i>
+                        <h5 class="mt-4">អំពីពុទ្ធសាសនានិងសង្គម</h5>
+                    </div>
+                    <p style="line-height: 1.8">
+                        គេហទំព័រដែលផ្តល់នូវការអប់រំ សេវាកម្មសង្គម
+                        និងការលើកកម្ពស់គុណតម្លៃសីលធម៌តាមគោលការណ៍ព្រះធម៌
+                        ដើម្បីអភិវឌ្ឍន៍សង្គមប្រកបដោយសន្តិភាព និងសុខុមាលភាព។
+                    </p>
+                    <div class="footer-social mt-3" bis_skin_checked="1">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>តំណភ្ជាប់លឿន</h5>
+                    <a href="#"><i class="fas fa-angle-right"></i> ទំព័រដើម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> អំពីយើង</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> សេវាកម្ម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ព្រឹត្តិការណ៍</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ទំនាក់ទំនង</a>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>សេវាកម្ម</h5>
+                    <a href="#"><i class="fas fa-angle-right"></i> គម្រោងសង្គម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ការអប់រំ</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> វគ្គបណ្តុះបណ្តាល</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> អ្នកស្ម័គ្រចិត្ត</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ការបរិច្ចាគ</a>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>ទំនាក់ទំនង</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i>
+                        ភ្នំពេញ, កម្ពុជា
+                    </p>
+                    <p>
+                        <i class="fas fa-phone" style="color: var(--primary-color);"></i>
+                        012 345 678
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope" style="color: var(--primary-color);"></i>
+                        info@buddhism-society.org
+                    </p>
+                    <p>
+                        <i class="fas fa-clock" style="color: var(--primary-color);"></i>
+                        ច័ន្ទ - សុក្រ: 8:00 - 17:00
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">
+                            © 2024 ពុទ្ធសាសនានិងសង្គម. រក្សាសិទ្ធិគ្រប់យ៉ាង។
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end justify-content-center justify-content-md-end d-flex">
+                        <a href="#" class="me-3">គោលការណ៍ឯកជនភាព</a>
+                        <a href="#" class="me-3">លក្ខខណ្ឌប្រើប្រាស់</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="../../asset/js/admin.js"></script>
+    <script src="../../asset/js/script.js"></script>
+</body>
+
+</html>

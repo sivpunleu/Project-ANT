@@ -1,0 +1,604 @@
+.herobaner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 650px;
+}
+
+.herobaner2 {
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0.819),
+      rgba(0, 0, 0, 0.226));
+  z-index: 2;
+}
+
+.hero-content {
+  position: absolute;
+
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: -650px;
+  margin-right: 450px;
+  z-index: 3;
+
+}
+
+.herobaner img {
+  width: 100%;
+  height: 100%;
+}
+
+.typing {
+  border-right: 3px solid #00d0ff;
+  white-space: nowrap;
+  padding: 10px;
+  overflow: hidden;
+  display: inline-block;
+  width: 0;
+  animation: typing 10s steps(50, end) infinite alternate,
+    blink 0.8s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes blink {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #00d0ff;
+  }
+}
+
+.mt-5 {
+  margin-top: 60px !important;
+}
+
+.filter-bar-new {
+  width: 90% !important;
+}
+
+.nav-link:hover {
+  color: #f7e8a1;
+}
+
+.border-2 {
+  width: 150px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #e67e22;
+}
+
+.separator {
+  width: 2px;
+  height: 25px;
+  background-color: #e67e22;
+}
+
+.scroll-container {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.badge-soft {
+  background-color: #f2f2f4;
+  color: #555;
+  font-weight: 600;
+  border-radius: 12px;
+  font-size: 12px;
+  padding: 6px 10px;
+}
+
+.btn-nav {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  transition: all 0.2s;
+}
+
+.btn-nav:hover {
+  background: #e67e22;
+  color: white;
+  border-color: #6f42c1;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+}
+
+.price small {
+  font-size: 13px;
+  color: #666;
+}
+
+/* slide */
+
+.testimonial-card1 {
+  background: linear-gradient(135deg, #2d2d44 0%, #3d3d54 100%);
+  border: 1px solid #4d4d64;
+  border-radius: 15px;
+  height: 350px;
+  /* បានបង្កើនកម្ពស់បន្តិចដើម្បីឱ្យសមនឹងអត្ថបទ */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.image-conte {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.641);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.over-slide {
+  color: white;
+  font-size: 1.1rem;
+  /* បានកែសម្រួលទំហំអក្សរ */
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.7;
+  /* បានកែសម្រួលគម្លាតបន្ទាត់ */
+}
+
+.over-slide strong {
+  color: #a78bfa;
+  /* ធ្វើឱ្យចំណងជើងមានពណ៌លេចធ្លោ */
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* កំណត់ទំហំសម្រាប់តែអេក្រង់ទូរស័ព្ទ (តូចជាង 768px) */
+@media (max-width: 767.98px) {
+  h2.fs-1 {
+    font-size: 1.2rem !important;
+    /* ប្តូរទំហំអក្សរឱ្យតូចជាងមុន (អ្នកអាចលៃតម្រូវលេខ 1.8rem នេះ) */
+    line-height: 1.2 !important;
+    /* ប្តូរកម្ពស់បន្ទាត់ឱ្យសមស្របតាមអក្សរ */
+  }
+}
+
+/* customer */
+.testimonial-card {
+  /* (អ្នកអាចមាន Style ទាំងនេះរួចហើយ តែខ្ញុំសុំបន្ថែម transition) */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.testimonial-card:hover {
+  background-color: #b87707;
+  /* ពណ៌ខៀវ (Bootstrap Primary) */
+  color: #ffffff;
+  /* ធ្វើឱ្យអត្ថបទ <p> និងអត្ថបទផ្សេងទៀត ពណ៌ស */
+}
+
+
+.testimonial-card:hover .name,
+.testimonial-card:hover .title,
+.testimonial-card:hover .quote-icon i {
+  color: #ffffff;
+}
+
+.stats-section.bg-light {
+  background-color: #f4f7fc !important;
+}
+
+.stat-item {
+  padding-top: 30px;
+  /* បង្កើតช่องว่างឱ្យ Icon */
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+  /* ពណ៌ខៀវ (Bootstrap Primary) */
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  /* ទំហំ Icon (fa) ខាងក្នុង */
+  position: absolute;
+  top: 0;
+  /* នៅលើสุด */
+  left: 50%;
+  /* ទៅស្តាំ 50% */
+  transform: translateX(-50%);
+  /* រុញមកឆ្វេងវិញ 50% (ដើម្បីឱ្យនៅចំកណ្តាល) */
+  z-index: 2;
+  /* ឱ្យវានៅពីលើ Card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item .card {
+  padding-top: 4rem !important;
+}
+
+/* From Uiverse.io by cssbuttons-io */
+.fancy {
+  background-color: transparent;
+  border: 2px solid #d38900;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  /* font-size: 13px; */
+}
+
+.fancy::before {
+  content: " ";
+  width: 1.5625rem;
+  height: 2px;
+  background: #e67e22;
+  top: 50%;
+  left: 0.8em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: #e8e8e8;
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: #e8e8e8;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: #e8e8e8;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+  color: white;
+  background: #e67e22;
+}
+
+.fancy:hover::before {
+  width: 0.9375rem;
+  background: white;
+}
+
+.fancy:hover .text {
+  color: white;
+  padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+  left: -2px;
+  width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0;
+}
+
+/* new */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+.section-title h2 {
+  font-size: 2.2rem;
+  position: relative;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* បន្ទាត់ពីក្រោមចំណងជើង (ដូចក្នុងរូបគំរូរបស់អ្នក) */
+.section-title h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #ffc107;
+  /* ពណ៌មាស */
+  margin: 10px auto 0;
+}
+
+
+.stats-section {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.stat-item .icon {
+  font-size: 3rem;
+  color: #ffc107;
+  /* ពណ៌មាស */
+  margin-bottom: 15px;
+}
+
+.stat-item .counter {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.stat-item p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* ----------------------------------
+         * 2. ផ្នែកសិក្សាព្រះធម៌ (Featured Courses)
+         * ---------------------------------- */
+.courses-section {
+  padding: 60px 0;
+}
+
+.course-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.course-card .card-body {
+  padding: 25px;
+}
+
+.course-card .card-title {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #333;
+  font-weight: bold;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
+}
+
+
+/* ----------------------------------
+         * 3. អត្ថបទ/ព័ត៌មាន (Latest Articles)
+         * ---------------------------------- */
+.articles-section {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+/* (ប្រើរចនាប័ទ្ម .course-card ដូចគ្នា) */
+.article-card {
+  /* អាចប្រើ .course-card បាន */
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+}
+
+.article-card .card-meta {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+
+/* ----------------------------------
+         * 4. ការអំពាវនាវឱ្យចូលរួម (CTAs)
+         * ---------------------------------- */
+.cta-section {
+  padding: 80px 0;
+  background-color: #343a40;
+  /* ពណ៌ផ្ទៃក្រោយងងឹត */
+  color: #ffffff;
+  text-align: center;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  color: #f1f1f1;
+}
+
+.cta-section .btn {
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  margin: 10px;
+  min-width: 220px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.cta-section .btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-cta-donate {
+  background-color: #ffc107;
+  /* មាស */
+  color: #333;
+}
+
+.btn-cta-volunteer {
+  background-color: transparent;
+  border: 2px solid #ffc107;
+  color: #ffc107;
+}
+
+.btn-cta-forum {
+  background-color: #0d6efd;
+  /* ខៀវ */
+  color: #ffffff;
+}
+
+.testimonials-section {
+  padding: 60px 0;
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.testimonial-card .quote-icon {
+  font-size: 1.5rem;
+  color: #ffc107;
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.testimonial-card .name {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.testimonial-card .title {
+  font-size: 0.9rem;
+  color: #777;
+}

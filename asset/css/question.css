@@ -1,0 +1,39 @@
+        .card-top {
+            height: 210px;
+            /* កំណត់ទំហំ card លើ */
+        }
+
+        .custom-card-wrapper {
+            background: #c99700;
+            border-radius: 15px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .custom-card {
+            position: absolute;
+            inset: 8px;
+            background: #002366;
+            border-radius: 15px;
+            transition: 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Gold version */
+        .gold-card .custom-card {
+            background: #c99700;
+            color: #222;
+        }
+
+        .custom-card-wrapper:hover .custom-card {
+            inset: 0;
+        }
+
+        .faq-hub-icon {
+            font-size: 2.7rem;
+            margin-bottom: 0.7rem;
+        }

@@ -57,7 +57,9 @@
   margin-bottom: 1rem;
   position: relative;
 }
-
+.active{
+  background-color: var(--bg-secondary)!important;
+}
 /* Filter Section */
 .filter-section {
   /* FIX: Used variables for background, border, shadow, and text color */

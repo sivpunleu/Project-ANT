@@ -1,0 +1,64 @@
+/* CSS បន្ថែមសម្រាប់ Cards ថ្មី */
+.principle-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    background-color: #c9a42e;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.principle-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(201, 164, 46, 0.15);
+}
+
+.principle-card .card-body {
+    padding: 2rem;
+}
+
+.back-button a {
+    text-decoration: none;
+}
+
+.back-button a:hover {
+    color: white;
+}
+
+.principle-card i {
+    font-size: 2.5rem;
+    color: #c9a42e;
+    margin-bottom: 15px;
+}
+
+.cta-card {
+    background-color: #fff8eb;
+    /* ពណ៌ផ្ទៃស្រាលជាងមុន */
+    border: 1px solid #c9a42e;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.btn-custom-gold {
+    background-color: #c9a42e;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom-gold:hover {
+    background-color: #b38f20;
+    color: white;
+}
+
+.header-image {
+    width: 1200px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}

@@ -28,15 +28,16 @@
         .card {
             border: none;
             border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             height: 100%;
-            /* ធានាថា Card មានកម្ពស់ស្មើគ្នា */
+          
+            
         }
 
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 8px 16px rgb(72, 70, 0);
         }
 
         .card-icon {
@@ -49,4 +50,24 @@
         .card-title {
             font-weight: 700;
             color: #333;
+        }
+
+        .diamond-card-image {
+            transition: transform 0.3s ease;
+            animation: float-anim 5s ease-in-out infinite;
+        }
+
+        @keyframes float-anim {
+            0% {
+                transform: translateY(0);
+
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
         }

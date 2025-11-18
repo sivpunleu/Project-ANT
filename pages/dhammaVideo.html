@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>វីដេអូធម៌ទេសនា</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/dhammaVideo.css">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../asset/css/theme.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap1.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="../asset/aos-master/dist/aos.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Google Fonts - Khmer -->
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../asset/css/sil.css">
+
+</head>
+
+<body>
+    <header class=" sticky-top">
+        <!-- ═══════════ MAIN NAVBAR ═══════════ -->
+        <nav class="navbar navbar-expand-lg  border-bottom border-light py-3 wow animate__slideInDown ">
+            <div class="container">
+                <!-- Logo & Brand -->
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
+                    <div>
+                        <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
+                        <div style="font-size: 12px; font-family: 'Battambang'; color: var(--primary-color);">
+                            Buddhism & Society
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                    <i class="fas fa-bars" style="color: var(--primary-color);"></i>
+                </button>
+
+                <!-- Main Menu -->
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../home.html">
+                                ទំព័រដើម
+                            </a>
+                        </li>
+                        <!-- Dhamma Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                ព្រះធម៌
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="media-library.html">
+                                        បណ្ណាល័យព្រះធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="dhammaVideo.html">
+                                        វីដេអូធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="dhammaAudio.html">
+                                        សំឡេងធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="">
+                                        សំណួរ និង ចម្លើយ
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Courses -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="education.html">
+                                ការអប់រំ
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                ព្រឹត្តិការណ៍
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="buddism.html">
+                                        ពុទ្ធសាសនា
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="culture.html">
+                                        វប្បធម៌ខ្មែរ
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <!-- Services -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">
+                                កម្មវិធី
+                            </a>
+                        </li>
+                        <!-- About Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                អំពីយើង
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="history.html">
+                                        ប្រវត្តិ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="mission.html">
+                                        បេសកកម្ម
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="team.html">
+                                        ក្រុមការងារ
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                ផ្សេងៗ
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="Buddhist Rituals.html">
+                                        កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="volunteer.html">
+                                        ចូលរូមស្ម័គ្រចិត្ត
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="">
+                                        បរិស្ថាន
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                    <!-- Right Side Buttons -->
+
+                    <div class="d-flex gap-2 align-items-center ms-auto">
+                        <!-- Theme Toggle -->
+                        <button class="theme-toggle" onclick="toggleTheme()">
+                            <i class="fas fa-moon" id="themeIcon"></i>
+                        </button>
+                        <!-- button search model -->
+                        <button class="btn btn-outline-primary d-none d-lg-block " data-bs-toggle="modal"
+                            data-bs-target="#searchModal">
+                            <i class="fas fa-search "></i> ស្វែងរក
+                        </button>
+
+
+
+                        <!-- User Profile -->
+                        <a href="../pages/auth/userProfile.html" class="user-profile">
+                            <img src="../asset/images/img-profile/user-profile.png" alt="" class="img-f"
+                                style="width: 50px; " height="50px">
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <div class="nav-tabs-container position-sticky top-25 bg-body">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center gap-2 py-3">
+                <button class="nav-tab active" onclick="switchTab('all')">
+                    <i class="fas fa-dharmachakra me-2"></i>ព្រះធម៌ទាំងអស់
+                </button>
+                <button class="nav-tab" onclick="switchTab('education')">
+                    <i class="fas fa-graduation-cap me-2"></i>អប់រំចិត្ត
+                </button>
+                <button class="nav-tab" onclick="switchTab('ceremony')">
+                    <i class="fas fa-hands-praying me-2"></i>កម្មវិធីបុណ្យនានា
+                </button>
+                <button class="nav-tab" onclick="switchTab('vipassana')">
+                    <i class="fas fa-om me-2"></i>វិបស្សនាកម្មដ្ឋាន
+                </button>
+                <button class="nav-tab" onclick="switchTab('abhidhamma')">
+                    <i class="fas fa-book-reader me-2"></i>ព្រះអភិធម្ម
+                </button>
+                <button class="nav-tab" onclick="switchTab('sutta')">
+                    <i class="fas fa-scroll me-2"></i>ព្រះសូត្រ
+                </button>
+                <button class="nav-tab" onclick="switchTab('vinaya')">
+                    <i class="fas fa-balance-scale me-2"></i>ព្រះវិន័យ
+                </button>
+                <button class="nav-tab" onclick="switchTab('favorites')">
+                    <i class="fas fa-heart me-2"></i>សំណព្វ
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="dhamma-video-section">
+
+            <!-- Content -->
+            <div class="container my-5">
+                <!-- All Videos Tab -->
+                <div id="all" class="tab-content-custom active">
+                    <h2 class="section-title">ព្រះធម៌ទាំងអស់</h2>
+
+                    <!-- Stats -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4 col-lg-3">
+                            <div class="stats-card">
+                                <div class="stat-number" id="totalVideos">55</div>
+                                <div class="stat-label">វីដេអូទាំងអស់</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="stats-card">
+                                <div class="stat-number">150K+</div>
+                                <div class="stat-label">អ្នកទស្សនា</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="stats-card">
+                                <div class="stat-number">6</div>
+                                <div class="stat-label">ប្រធានបទ</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Search -->
+                    <div class="mb-4">
+                        <input type="text" id="searchInput" class="form-control search-input"
+                            placeholder="🔍 ស្វែងរកវីដេអូធម៌ទេសនា...">
+                    </div>
+
+                    <!-- Sort -->
+                    <div class="d-flex justify-content-center align-items-center gap-3 mb-4">
+                        <label style="color: var(--text-secondary);">តម្រៀបតាម:</label>
+                        <select id="sortSelect" class="form-select sort-select" style="width: auto;">
+                            <option value="default">លំដាប់ធម្មតា</option>
+                            <option value="views-desc">ចំនួនមើលច្រើន</option>
+                            <option value="views-asc">ចំនួនមើលតិច</option>
+                            <option value="duration-desc">រយៈពេលវែង</option>
+                            <option value="duration-asc">រយៈពេលខ្លី</option>
+                            <option value="title">តាមឈ្មោះ</option>
+                        </select>
+                    </div>
+
+                    <div class="row g-4" id="allVideosContainer"></div>
+                </div>
+
+                <!-- Education Tab -->
+                <div id="education" class="tab-content-custom">
+                    <h2 class="section-title">អប់រំចិត្ត</h2>
+                    <div class="row g-4" id="educationVideosContainer"></div>
+                </div>
+
+                <!-- Ceremony Tab -->
+                <div id="ceremony" class="tab-content-custom">
+                    <h2 class="section-title">កម្មវិធីបុណ្យនានា</h2>
+                    <div class="row g-4" id="ceremonyVideosContainer"></div>
+                </div>
+
+                <!-- Vipassana Tab -->
+                <div id="vipassana" class="tab-content-custom">
+                    <h2 class="section-title">វិបស្សនាកម្មដ្ឋាន</h2>
+                    <div class="row g-4" id="vipassanaVideosContainer"></div>
+                </div>
+
+                <!-- Abhidhamma Tab -->
+                <div id="abhidhamma" class="tab-content-custom">
+                    <h2 class="section-title">ព្រះអភិធម្ម</h2>
+                    <div class="row g-4" id="abhidhammaVideosContainer"></div>
+                </div>
+
+                <!-- Sutta Tab -->
+                <div id="sutta" class="tab-content-custom">
+                    <h2 class="section-title">ព្រះសូត្រ</h2>
+                    <div class="row g-4" id="suttaVideosContainer"></div>
+                </div>
+
+                <!-- Vinaya Tab -->
+                <div id="vinaya" class="tab-content-custom">
+                    <h2 class="section-title">ព្រះវិន័យ</h2>
+                    <div class="row g-4" id="vinayaVideosContainer"></div>
+                </div>
+
+                <!-- Favorites Tab -->
+                <div id="favorites" class="tab-content-custom">
+                    <h2 class="section-title">វីដេអូសំណព្វ</h2>
+                    <div class="row g-4" id="favoritesVideosContainer">
+                        <div class="col-12">
+                            <p class="text-center py-5" style="color: var(--text-secondary); font-size: 1.2rem;">
+                                <i class="fas fa-heart d-block mb-3" style="font-size: 3rem; opacity: 0.5;"></i>
+                                មិនមានវីដេអូសំណព្វនៅឡើយទេ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Floating Favorites Button -->
+            <button class="favorites-btn" onclick="switchTab('favorites')">
+                <i class="fas fa-heart"></i>
+                <span class="favorites-badge d-none" id="favoritesBadge">0</span>
+            </button>
+        </section>
+    </main>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-lg-4 col-md-6 mb-4" bis_skin_checked="1">
+                    <div class="d-flex align-items-center" bis_skin_checked="1">
+                        <i class="fas fa-dharmachakra fs-1 me-3" style="color: var(--primary-color)"></i>
+                        <h5 class="mt-4">អំពីពុទ្ធសាសនានិងសង្គម</h5>
+                    </div>
+                    <p style="line-height: 1.8">
+                        គេហទំព័រដែលផ្តល់នូវការអប់រំ សេវាកម្មសង្គម
+                        និងការលើកកម្ពស់គុណតម្លៃសីលធម៌តាមគោលការណ៍ព្រះធម៌
+                        ដើម្បីអភិវឌ្ឍន៍សង្គមប្រកបដោយសន្តិភាព និងសុខុមាលភាព។
+                    </p>
+                    <div class="footer-social mt-3" bis_skin_checked="1">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>តំណភ្ជាប់លឿន</h5>
+                    <a href="#"><i class="fas fa-angle-right"></i> ទំព័រដើម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> អំពីយើង</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> សេវាកម្ម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ព្រឹត្តិការណ៍</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ទំនាក់ទំនង</a>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>សេវាកម្ម</h5>
+                    <a href="#"><i class="fas fa-angle-right"></i> គម្រោងសង្គម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ការអប់រំ</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> វគ្គបណ្តុះបណ្តាល</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> អ្នកស្ម័គ្រចិត្ត</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ការបរិច្ចាគ</a>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>ទំនាក់ទំនង</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i>
+                        ភ្នំពេញ, កម្ពុជា
+                    </p>
+                    <p>
+                        <i class="fas fa-phone" style="color: var(--primary-color);"></i>
+                        012 345 678
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope" style="color: var(--primary-color);"></i>
+                        info@buddhism-society.org
+                    </p>
+                    <p>
+                        <i class="fas fa-clock" style="color: var(--primary-color);"></i>
+                        ច័ន្ទ - សុក្រ: 8:00 - 17:00
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">
+                            © 2024 ពុទ្ធសាសនានិងសង្គម. រក្សាសិទ្ធិគ្រប់យ៉ាង។
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end justify-content-center justify-content-md-end d-flex">
+                        <a href="#" class="me-3">គោលការណ៍ឯកជនភាព</a>
+                        <a href="#" class="me-3">លក្ខខណ្ឌប្រើប្រាស់</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Theme Toggle
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+
+            const icon = document.querySelector('#themeToggle i');
+            icon.className = newTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+
+            localStorage.setItem('theme', newTheme);
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        if (savedTheme === 'dark') {
+            document.querySelector('#themeToggle i').className = 'fas fa-sun';
+        }
+
+        // Convert YouTube URL to embed URL
+        function getYouTubeEmbedUrl(url) {
+            let videoId = '';
+            if (url.includes('youtube.com/watch?v=')) {
+                videoId = url.split('v=')[1].split('&')[0];
+            } else if (url.includes('youtu.be/')) {
+                videoId = url.split('youtu.be/')[1].split('?')[0];
+            } else if (url.includes('youtube.com/embed/')) {
+                return url;
+            }
+            return `https://www.youtube.com/embed/${videoId}`;
+        }
+
+        const allVideos = [
+            { url: "https://www.youtube.com/watch?v=wJsVlUcTjB4", title: "ព្យាបាល ជម្ងឺ ផ្លូវចិត្ត", category: "education", views: 25000, duration: 42 },
+            { url: "https://www.youtube.com/watch?v=woi1fYpjgHU", title: "ស្ដាប់ធម៌អប់រំផ្លូវចិត្ត", category: "education", views: 25000, duration: 42 },
+            { url: "https://www.youtube.com/watch?v=md9Gd7YhvsU", title: "កាត់ចិត្តចំពោះរឿងកន្លងហួស", category: "education", views: 31000, duration: 38 },
+            { url: "https://www.youtube.com/watch?v=VZapaX9ywIw", title: "មនុស្សមិនដូចគ្នា", category: "education", views: 28000, duration: 16 },
+            { url: "https://www.youtube.com/watch?v=JDO17PH7osY", title: "កុំតូចចិត្តបើកើតមកក្រ", category: "education", views: 19000, duration: 35 },
+            { url: "https://www.youtube.com/watch?v=hkrAxEFoSS8", title: "មានជីវិត ត្រូវចេះតស៊ូ", category: "education", views: 75000, duration: 61 },
+            { url: "https://www.youtube.com/watch?v=3G-Dng5v6gA", title: "ហត់និងជីវិត ជួបតែទុក្ខ", category: "education", views: 19000, duration: 35 },
+            { url: "https://www.youtube.com/watch?v=E-eRHNlb-Tc", title: "រៀនអប់រំ ផ្លូវចិត្ត", category: "education", views: 19000, duration: 35 },
+            { url: "https://www.youtube.com/watch?v=4qX-Ni09fk0", title: "ពិធីបុណ្យចូលឆ្នាំខ្មែរ", category: "ceremony", views: 45000, duration: 55 },
+            { url: "https://www.youtube.com/watch?v=nLo-YzuxmeU", title: "ពិធីបុណ្យភ្ជុំបិណ្ឌ", category: "ceremony", views: 38000, duration: 48 },
+            { url: "https://www.youtube.com/watch?v=4KbvnQfHgM0", title: "បុណ្យកឋិនទាន", category: "ceremony", views: 52000, duration: 60 },
+            { url: "https://www.youtube.com/watch?v=F2Rt8iFh8fo", title: "បុណ្យវិសាខបូជា", category: "ceremony", views: 48000, duration: 52 },
+            { url: "https://www.youtube.com/watch?v=Pc_Xqy-3fZ8", title: "បុណ្យមាឃបូជា", category: "ceremony", views: 45000, duration: 55 },
+            { url: "https://www.youtube.com/watch?v=bdYU5Fr52Jc", title: "បុណ្យកតញ្ញូកតវេទី", category: "ceremony", views: 38000, duration: 48 },
+            { url: "https://www.youtube.com/watch?v=uskAxlkzVRo", title: "បុណ្យបច្ច័យបួន", category: "ceremony", views: 52000, duration: 60 },
+            { url: "https://www.youtube.com/watch?v=WE-UA5Byquc", title: "បុណ្យទក្ខិណានុប្បទាន", category: "ceremony", views: 48000, duration: 52 },
+            { url: "https://www.youtube.com/watch?v=jnpUkJnoh8k", title: "បុណ្យឈាបនកិច្ច", category: "ceremony", views: 45000, duration: 55 },
+            { url: "https://www.youtube.com/watch?v=f8OYD1dXeys", title: "បុណ្យ​ ៧​ថ្ងៃ", category: "ceremony", views: 38000, duration: 48 },
+            { url: "https://www.youtube.com/watch?v=lz1HpRjq83M", title: "ពិធីបុណ្យ ១០០ថ្ងៃ", category: "ceremony", views: 52000, duration: 60 },
+            { url: "https://www.youtube.com/watch?v=6xjae8xYRTw", title: "ពិធីបុណ្យពុទ្ធាភិសេក", category: "ceremony", views: 48000, duration: 52 },
+            { url: "https://www.youtube.com/watch?v=_r98q8hraYs", title: "ពិធីបុណ្យឆ្លងចេតិយ", category: "ceremony", views: 48000, duration: 52 },
+            { url: "https://www.youtube.com/watch?v=MBsDLcFr0Po", title: "ពិធីបុណ្យបញ្ចុះខណ្ឌសីមា", category: "ceremony", views: 48000, duration: 52 },
+            { url: "https://www.youtube.com/watch?v=vtlACMF9qh8", title: "បុណ្យចម្រើនព្រះជន្ម", category: "ceremony", views: 48000, duration: 52 },
+            { url: "https://www.youtube.com/watch?v=d6BrNV-7EiU", title: "ជឿលើអំពើខ្លួនឯង | បឋមវិបស្សនា", category: "vipassana", views: 35000, duration: 50 },
+            { url: "https://www.youtube.com/watch?v=U-K-20PJ8Kg", title: "ដឹងខ្យល់ | បឋមវិបស្សនា", category: "vipassana", views: 29000, duration: 46 },
+            { url: "https://www.youtube.com/watch?v=EL0FM3jGzgU", title: "របៀបធ្វើសមាធិ", category: "vipassana", views: 32000, duration: 44 },
+            { url: "https://www.youtube.com/watch?v=P9gUidMLodc", title: "របៀបចម្រើន អានាបាណស្សតិ និង​ វិបស្សនាកម្មដ្ឋាន", category: "vipassana", views: 27000, duration: 48 },
+            { url: "https://www.youtube.com/watch?v=gdoYPgDXYkY", title: "មេត្តាធម៌", category: "vipassana", views: 35000, duration: 50 },
+            { url: "https://www.youtube.com/watch?v=LJNpA8DDiBI", title: "ខ្យល់រលត់ ចិត្តឧបេក្ខា", category: "vipassana", views: 29000, duration: 46 },
+            { url: "https://www.youtube.com/watch?v=TdKKa3KkLjk", title: "អានាបាណស្សតិកម្មដ្ឋាន", category: "vipassana", views: 32000, duration: 44 },
+            { url: "https://www.youtube.com/watch?v=QMOaAAjjmYE", title: "សតិប្បដ្ឋាន", category: "vipassana", views: 27000, duration: 48 },
+            { url: "https://www.youtube.com/watch?v=G2u-MJSjvRI", title: "សិក្សាព្រះអភិធម្ម បរិច្ឆេទទី១​ (ភាគ ០១)", category: "abhidhamma", views: 22000, duration: 65 },
+            { url: "https://www.youtube.com/watch?v=4TMvhyHOVDY", title: "សិក្សាព្រះអភិធម្ម បរិច្ឆេទទី១ (ភាគ ០២)", category: "abhidhamma", views: 18000, duration: 58 },
+            { url: "https://www.youtube.com/watch?v=fWlIEDejCtc", title: "សិក្សាព្រះអភិធម្ម បរិច្ឆេទទី១ (ភាគ ០៣)", category: "abhidhamma", views: 16000, duration: 52 },
+            { url: "https://www.youtube.com/watch?v=Jg6y9HA0ZeE", title: "បដិបត្តិ ព្រះអភិធម្ម", category: "abhidhamma", views: 24000, duration: 70 },
+            { url: "https://www.youtube.com/watch?v=2cXiCd4LdHk", title: "សិក្សាអភិធម្មយល់ពីជីវិតពិត", category: "abhidhamma", views: 22000, duration: 65 },
+            { url: "https://www.youtube.com/watch?v=_afHyjJ3y4c", title: "ហេតុអ្វីត្រូវរៀនអភិធម្ម", category: "abhidhamma", views: 18000, duration: 58 },
+            { url: "https://www.youtube.com/watch?v=uNSUrhgdrP0", title: "មេរៀនព្រះអភិធម្ម ចេតសិក", category: "abhidhamma", views: 16000, duration: 52 },
+            { url: "https://www.youtube.com/watch?v=NAeECybB6js", title: "ជួយខ្លួនឯង", category: "abhidhamma", views: 24000, duration: 70 },
+            { url: "https://www.youtube.com/watch?v=_D3bV2UIvBU", title: "សិក្សាព្រះសូត្រ ភាគ១", category: "sutta", views: 40000, duration: 35 },
+            { url: "https://www.youtube.com/watch?v=wywQ0KXyqb4", title: "បុគ្គលពាល មានលក្ខណៈ ៣យ៉ាង", category: "sutta", views: 36000, duration: 32 },
+            { url: "https://www.youtube.com/watch?v=vlq4nN3NsjU", title: "មង្គល​ ៣៨ ប្រការ", category: "sutta", views: 33000, duration: 38 },
+            { url: "https://www.youtube.com/watch?v=zCi4doJteAs", title: "ទេសនាអំពីមង្គលគាថាទី (១)", category: "sutta", views: 42000, duration: 55 },
+            { url: "https://www.youtube.com/watch?v=tbKoM6EJ6u4", title: "ទេសនាអំពីមង្គលគាថាទី (២)", category: "sutta", views: 42000, duration: 55 },
+            { url: "https://www.youtube.com/watch?v=Pq5PKxuEv5M", title: "ទេសនាអំពីមង្គលគាថាទី (៣)", category: "sutta", views: 42000, duration: 55 },
+            { url: "https://www.youtube.com/watch?v=in3mSMKcqwI", title: "ទេសនាអំពីមង្គលគាថាទី (៤)", category: "sutta", views: 42000, duration: 55 },
+            { url: "https://www.youtube.com/watch?v=ss3iEOjcAeY", title: "ទេសនាអំពីមង្គលគាថាទី (៥)", category: "sutta", views: 42000, duration: 55 },
+            { url: "https://www.youtube.com/watch?v=GVa7EnRzAj8", title: "ពាក្យថា សីល", category: "vinaya", views: 30000, duration: 40 },
+            { url: "https://www.youtube.com/watch?v=k6wFASLhFHs", title: "សិក្សាព្រះ​វិន័យ​ កម្មក្ខន្ធក", category: "vinaya", views: 26000, duration: 42 },
+            { url: "https://www.youtube.com/watch?v=5nDsUhs7eVw", title: "វិន័យក្នុងព្រះពុទ្ធសាសនា", category: "vinaya", views: 21000, duration: 68 },
+            { url: "https://www.youtube.com/watch?v=Jh-OLdkmFY4", title: "ភិក្ខុមានវស្សាប៉ុន្មានទើបបំបួសសាមណេរបាន", category: "vinaya", views: 28000, duration: 45 },
+            { url: "https://www.youtube.com/watch?v=ZXEkEgeFZNI", title: "បញ្ហាលោកវាយស្គរ", category: "vinaya", views: 30000, duration: 40 },
+            { url: "https://www.youtube.com/watch?v=Bzebs3z8lJU", title: "សាមណេរមានអធិដ្ឋានចីវរដែរទេ", category: "vinaya", views: 26000, duration: 42 },
+            { url: "https://www.youtube.com/watch?v=W_YyupUvLGo", title: "អត្ថន័យនៃការដាក់ពិន្ទុចីវរ", category: "vinaya", views: 21000, duration: 68 },
+            { url: "https://www.youtube.com/watch?v=ZipXabtx9Lc", title: "បញ្ហាក្រាលកឋិន-វិនយាចារ្យ", category: "vinaya", views: 28000, duration: 45 }
+        ];
+
+        let favorites = [];
+        let currentSort = 'default';
+
+        function getCategoryLabel(category) {
+            const labels = {
+                education: 'អប់រំចិត្ត',
+                ceremony: 'កម្មវិធីបុណ្យ',
+                vipassana: 'វិបស្សនាកម្មដ្ឋាន',
+                abhidhamma: 'ព្រះអភិធម្ម',
+                sutta: 'ព្រះសូត្រ',
+                vinaya: 'ព្រះវិន័យ'
+            };
+            return labels[category] || category;
+        }
+
+        function formatViews(views) {
+            return views >= 1000 ? (views / 1000).toFixed(0) + 'K' : views;
+        }
+
+        function createVideoCard(video, index) {
+            const isFavorited = favorites.includes(index);
+            const embedUrl = getYouTubeEmbedUrl(video.url);
+
+            return `
+                <div class="col-md-6 col-lg-4">
+                    <div class="video-card">
+                        <i class="fas fa-heart favorite-icon ${isFavorited ? 'favorited' : ''}" 
+                           onclick="toggleFavorite(${index})"
+                           id="fav-${index}"></i>
+                        <div class="video-container">
+                            <iframe src="${embedUrl}" 
+                                    allowfullscreen 
+                                    loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                        </div>
+                        <h5 class="video-title">${video.title}</h5>
+                        <span class="badge-category mb-2 d-inline-block">${getCategoryLabel(video.category)}</span>
+                        <div class="d-flex gap-3 small mb-2" style="color: var(--text-secondary);">
+                            <span><i class="fas fa-eye me-1"></i>${formatViews(video.views)}</span>
+                            <span><i class="fas fa-clock me-1"></i>${video.duration} នាទី</span>
+                        </div>
+                        <div class="d-flex gap-1 mb-2" data-video-index="${index}">
+                            ${[1, 2, 3, 4, 5].map(star =>
+                `<i class="fas fa-star star ${star <= (video.rating || 0) ? 'active' : ''}" 
+                                    onclick="rateVideo(${index}, ${star})"></i>`
+            ).join('')}
+                        </div>
+                        <button class="share-btn btn btn-sm w-100" onclick="shareVideo(${index}, '${video.title.replace(/'/g, "\\'")}')">
+                            <i class="fas fa-share-alt me-2"></i>ចែករំលែក
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function toggleFavorite(index) {
+            if (favorites.includes(index)) {
+                favorites = favorites.filter(f => f !== index);
+            } else {
+                favorites.push(index);
+            }
+            updateFavoritesBadge();
+            updateAllIcons();
+            if (document.getElementById('favorites').classList.contains('active')) {
+                renderFavorites();
+            }
+        }
+
+        function updateAllIcons() {
+            allVideos.forEach((video, index) => {
+                const icons = document.querySelectorAll(`#fav-${index}`);
+                icons.forEach(icon => {
+                    if (favorites.includes(index)) {
+                        icon.classList.add('favorited');
+                    } else {
+                        icon.classList.remove('favorited');
+                    }
+                });
+            });
+        }
+
+        function updateFavoritesBadge() {
+            const badge = document.getElementById('favoritesBadge');
+            badge.textContent = favorites.length;
+            badge.classList.toggle('d-none', favorites.length === 0);
+        }
+
+        function renderVideos(container, videos) {
+            if (videos.length === 0) {
+                container.innerHTML = `
+                    <div class="col-12">
+                        <p class="text-center py-5" style="color: var(--text-secondary);">
+                            <i class="fas fa-video-slash d-block mb-3" style="font-size: 3rem; opacity: 0.5;"></i>
+                            មិនមានវីដេអូនៅឡើយទេ
+                        </p>
+                    </div>
+                `;
+                return;
+            }
+
+            let sortedVideos = [...videos];
+            if (currentSort !== 'default') {
+                sortedVideos.sort((a, b) => {
+                    switch (currentSort) {
+                        case 'views-desc': return b.views - a.views;
+                        case 'views-asc': return a.views - b.views;
+                        case 'duration-desc': return b.duration - a.duration;
+                        case 'duration-asc': return a.duration - b.duration;
+                        case 'title': return a.title.localeCompare(b.title);
+                        default: return 0;
+                    }
+                });
+            }
+
+            container.innerHTML = sortedVideos.map((video, i) =>
+                createVideoCard(video, video.originalIndex !== undefined ? video.originalIndex : i)
+            ).join('');
+        }
+
+        function rateVideo(videoIndex, rating) {
+            allVideos[videoIndex].rating = rating;
+            const stars = document.querySelectorAll(`[data-video-index="${videoIndex}"] .star`);
+            stars.forEach((star, index) => {
+                if (index < rating) {
+                    star.classList.add('active');
+                } else {
+                    star.classList.remove('active');
+                }
+            });
+            showNotification(`អ្នកបានផ្តល់ពិន្ទុ ${rating} ផ្កាយ`);
+        }
+
+        function shareVideo(index, title) {
+            if (navigator.share) {
+                navigator.share({
+                    title: title,
+                    url: window.location.href
+                }).catch(() => { });
+            } else {
+                navigator.clipboard.writeText(window.location.href);
+                showNotification('បានចម្លងតំណភ្ជាប់');
+            }
+        }
+
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.innerHTML = `<i class="fas fa-check-circle me-2"></i>${message}`;
+            document.body.appendChild(notification);
+            setTimeout(() => notification.remove(), 3000);
+        }
+
+        function renderFavorites() {
+            const container = document.getElementById('favoritesVideosContainer');
+            if (favorites.length === 0) {
+                container.innerHTML = `
+                    <div class="col-12">
+                        <p class="text-center py-5" style="color: var(--text-secondary);">
+                            <i class="fas fa-heart d-block mb-3" style="font-size: 3rem; opacity: 0.5;"></i>
+                            មិនមានវីដេអូសំណព្វនៅឡើយទេ
+                        </p>
+                    </div>
+                `;
+            } else {
+                const favoriteVideos = favorites.map(i => ({ ...allVideos[i], originalIndex: i }));
+                renderVideos(container, favoriteVideos);
+            }
+        }
+
+        function switchTab(tabName) {
+            document.querySelectorAll('.nav-tab').forEach(tab => tab.classList.remove('active'));
+            event.target.closest('.nav-tab').classList.add('active');
+
+            document.querySelectorAll('.tab-content-custom').forEach(content => content.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+
+            if (tabName === 'favorites') renderFavorites();
+        }
+
+        function init() {
+            renderVideos(document.getElementById('allVideosContainer'), allVideos);
+
+            const categories = ['education', 'ceremony', 'vipassana', 'abhidhamma', 'sutta', 'vinaya'];
+            categories.forEach(cat => {
+                const filtered = allVideos.map((v, i) => ({ ...v, originalIndex: i })).filter(v => v.category === cat);
+                renderVideos(document.getElementById(cat + 'VideosContainer'), filtered);
+            });
+
+            document.getElementById('searchInput').addEventListener('input', (e) => {
+                const searchTerm = e.target.value.toLowerCase();
+                const filtered = allVideos.map((v, i) => ({ ...v, originalIndex: i })).filter(v =>
+                    v.title.toLowerCase().includes(searchTerm)
+                );
+                renderVideos(document.getElementById('allVideosContainer'), filtered);
+            });
+
+            document.getElementById('sortSelect').addEventListener('change', (e) => {
+                currentSort = e.target.value;
+                const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+                const filtered = searchTerm ?
+                    allVideos.map((v, i) => ({ ...v, originalIndex: i })).filter(v => v.title.toLowerCase().includes(searchTerm)) :
+                    allVideos.map((v, i) => ({ ...v, originalIndex: i }));
+                renderVideos(document.getElementById('allVideosContainer'), filtered);
+            });
+
+            document.getElementById('totalVideos').textContent = allVideos.length;
+            updateFavoritesBadge();
+        }
+
+        init();
+    </script>
+</body>
+</html>
