@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="asset/aos-master/dist/aos.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
 
     <!-- Google Fonts - Khmer -->
     <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap"
@@ -34,11 +36,14 @@
 <body>
     <header class="sticky-top">
         <!-- ═══════════ MAIN NAVBAR ═══════════ -->
-        <nav class="navbar navbar-expand-lg  border-bottom border-light  py-3 wow animate__slideInDown ">
+        <!-- Added a background and shadow for better visibility -->
+        <nav class="navbar navbar-expand-lg bg-light shadow-sm border-bottom border-light py-3">
             <div class="container">
+
                 <!-- Logo & Brand -->
-                <a class="navbar-brand" href="#">
-                    <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <!-- Icon: Added me-3 for spacing -->
+                    <i class="fas fa-dharmachakra fs-1 me-3" style="color: var(--primary-color);"></i>
                     <div>
                         <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
                         <div style="font-size: 12px; font-family: 'Battambang'; color: var(--text-primary);">
@@ -48,22 +53,25 @@
                 </a>
 
                 <!-- Mobile Toggle -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                    aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars" style="color: var(--primary-color);"></i>
                 </button>
-
-                <div class="d-flex justify-content-end align-items-center ">
-                    <a href="pages/auth/register.html" class="btn btn-outline-primary d-none d-lg-block me-3">ចុះឈ្មោះ</a>
-
-                    <a href="pages/auth/login.html" class="btn btn-outline-primary d-none d-lg-block">ចូលគណនី</a>
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <div class="navbar-nav ms-auto align-items-lg-center">
+                        <a href="pages/auth/register.html"
+                            class="btn btn-outline-primary mt-3 mt-lg-0 me-lg-3">ចុះឈ្មោះ</a>
+                        <a href="pages/auth/login.html" class="btn btn-outline-primary mt-3 mt-lg-0 ">ចូលគណនី</a>
+                    </div>
                 </div>
+
             </div>
         </nav>
     </header>
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1>ពុទ្ធសាសនា និងសង្គម</h1>
+                <h1 class="animate__animated animate__pulse ">ពុទ្ធសាសនា និងសង្គម</h1>
                 <p>"មាគ៌ានៃព្រះធម៌ ឆ្ពោះទៅកាន់សន្តិភាពក្នុងសង្គម។"</p>
                 <div>
                     <button class="btn-cta">
@@ -83,7 +91,7 @@
 
                 <div class="row g-4 justify-content-center">
 
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
                         <a href="pages/auth/register.html" class="card-link-wrapper">
                             <div class="feature-card">
                                 <div class="feature-icon"><i class="bi bi-journal-text"></i></div>
@@ -93,7 +101,7 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
                         <a href="pages/auth/register.html" class="card-link-wrapper">
                             <div class="feature-card">
                                 <div class="feature-icon"><i class="bi bi-people-fill"></i></div>
@@ -103,7 +111,7 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="700">
                         <a href="pages/auth/register.html" class="card-link-wrapper">
                             <div class="feature-card">
                                 <div class="feature-icon"><i class="bi bi-book-half"></i></div>
@@ -113,7 +121,7 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="800">
                         <a href="pages/auth/register.html" class="card-link-wrapper">
                             <div class="feature-card">
                                 <div class="feature-icon"><i class="bi bi-person-check-fill"></i></div>
@@ -131,7 +139,7 @@
         <section class="herosection ">
             <div class="container">
                 <div class="row g-5 align-items-center">
-                    <div class="col-6">
+                    <div class="col-sm-12 col-md-6" data-aos="fade-right">
                         <div class="about-text ">
                             <h2 class="text-light">គោលបំណងរបស់យើង</h2>
                             <p class="fs-5 text-light">គេហទំព័រ "ពុទ្ធសាសនា និងសង្គម"
@@ -145,7 +153,7 @@
                                 រស់នៅប្រកបដោយសន្តិភាព ការយោគយល់គ្នាទៅវិញទៅមក និងសុខុមាលភាព។</p>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-12 col-md-6" data-aos="fade-left">
                         <div class="about-image">
                             <img src="asset/images/vannda_img/Monk-at-Kompong-Chrey.webp" alt=""
                                 class="card-img rounded-2">

@@ -142,110 +142,139 @@
   font-size: 13px;
   color: #666;
 }
+
 /* slide */
 
-        .testimonial-card1 {
-            background: linear-gradient(135deg, #2d2d44 0%, #3d3d54 100%);
-            border: 1px solid #4d4d64;
-            border-radius: 15px;
-            height: 350px; /* បានបង្កើនកម្ពស់បន្តិចដើម្បីឱ្យសមនឹងអត្ថបទ */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            backdrop-filter: blur(10px);
-            position: relative;
-            overflow: hidden;
-        }
+.testimonial-card1 {
+  background: linear-gradient(135deg, #2d2d44 0%, #3d3d54 100%);
+  border: 1px solid #4d4d64;
+  border-radius: 15px;
+  height: 350px;
+  /* បានបង្កើនកម្ពស់បន្តិចដើម្បីឱ្យសមនឹងអត្ថបទ */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
 
-        .image-conte {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            overflow: hidden;
-        }
+.image-conte {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
-        .slide {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 10px;
-            display: block;
-        }
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
 
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.641);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
-            padding: 20px;
-        }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.641);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 20px;
+}
 
-        .over-slide {
-            color: white;
-            font-size: 1.1rem; /* បានកែសម្រួលទំហំអក្សរ */
-            font-weight: 600;
-            text-align: center;
-            padding: 20px;
-            line-height: 1.7; /* បានកែសម្រួលគម្លាតបន្ទាត់ */
-        }
+.over-slide {
+  color: white;
+  font-size: 1.1rem;
+  /* បានកែសម្រួលទំហំអក្សរ */
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.7;
+  /* បានកែសម្រួលគម្លាតបន្ទាត់ */
+}
 
-        .over-slide strong {
-             color: #a78bfa; /* ធ្វើឱ្យចំណងជើងមានពណ៌លេចធ្លោ */
-             font-size: 1.3rem;
-             display: block;
-             margin-bottom: 15px;
-        }
+.over-slide strong {
+  color: #a78bfa;
+  /* ធ្វើឱ្យចំណងជើងមានពណ៌លេចធ្លោ */
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* កំណត់ទំហំសម្រាប់តែអេក្រង់ទូរស័ព្ទ (តូចជាង 768px) */
+@media (max-width: 767.98px) {
+  h2.fs-1 {
+    font-size: 1.2rem !important;
+    /* ប្តូរទំហំអក្សរឱ្យតូចជាងមុន (អ្នកអាចលៃតម្រូវលេខ 1.8rem នេះ) */
+    line-height: 1.2 !important;
+    /* ប្តូរកម្ពស់បន្ទាត់ឱ្យសមស្របតាមអក្សរ */
+  }
+}
+
 /* customer */
-  .testimonial-card {
-    /* (អ្នកអាចមាន Style ទាំងនេះរួចហើយ តែខ្ញុំសុំបន្ថែម transition) */
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
+.testimonial-card {
+  /* (អ្នកអាចមាន Style ទាំងនេះរួចហើយ តែខ្ញុំសុំបន្ថែម transition) */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-  .testimonial-card:hover {
-    background-color: #b87707; /* ពណ៌ខៀវ (Bootstrap Primary) */
-    color: #ffffff; /* ធ្វើឱ្យអត្ថបទ <p> និងអត្ថបទផ្សេងទៀត ពណ៌ស */
-  }
+.testimonial-card:hover {
+  background-color: #b87707;
+  /* ពណ៌ខៀវ (Bootstrap Primary) */
+  color: #ffffff;
+  /* ធ្វើឱ្យអត្ថបទ <p> និងអត្ថបទផ្សេងទៀត ពណ៌ស */
+}
 
 
-  .testimonial-card:hover .name,
-  .testimonial-card:hover .title,
-  .testimonial-card:hover .quote-icon i {
-    color: #ffffff;
-  }
+.testimonial-card:hover .name,
+.testimonial-card:hover .title,
+.testimonial-card:hover .quote-icon i {
+  color: #ffffff;
+}
 
-  .stats-section.bg-light {
-    background-color: #f4f7fc !important;
-  }
-  .stat-item {
-    padding-top: 30px; /* បង្កើតช่องว่างឱ្យ Icon */
-  }
-  .stat-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #0d6efd; /* ពណ៌ខៀវ (Bootstrap Primary) */
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem; /* ទំហំ Icon (fa) ខាងក្នុង */
-    position: absolute;
-    top: 0; /* នៅលើสุด */
-    left: 50%; /* ទៅស្តាំ 50% */
-    transform: translateX(-50%); /* រុញមកឆ្វេងវិញ 50% (ដើម្បីឱ្យនៅចំកណ្តាល) */
-    z-index: 2; /* ឱ្យវានៅពីលើ Card */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  .stat-item .card {
-    padding-top: 4rem !important;
-  }
+.stats-section.bg-light {
+  background-color: #f4f7fc !important;
+}
+
+.stat-item {
+  padding-top: 30px;
+  /* បង្កើតช่องว่างឱ្យ Icon */
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+  /* ពណ៌ខៀវ (Bootstrap Primary) */
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  /* ទំហំ Icon (fa) ខាងក្នុង */
+  position: absolute;
+  top: 0;
+  /* នៅលើสุด */
+  left: 50%;
+  /* ទៅស្តាំ 50% */
+  transform: translateX(-50%);
+  /* រុញមកឆ្វេងវិញ 50% (ដើម្បីឱ្យនៅចំកណ្តាល) */
+  z-index: 2;
+  /* ឱ្យវានៅពីលើ Card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item .card {
+  padding-top: 4rem !important;
+}
+
 /* From Uiverse.io by cssbuttons-io */
 .fancy {
   background-color: transparent;

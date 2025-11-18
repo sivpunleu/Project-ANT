@@ -27,7 +27,8 @@
     <!-- Google Fonts - Khmer -->
     <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../asset/css/question.css">
+
+    <link rel="stylesheet" href="../asset/css/sil.css">
 
 </head>
 <style>
@@ -39,18 +40,46 @@
         color: var(--primary-color);
     }
 </style>
+<style>
+    body {
+        font-family: "Khmer OS Content", "Noto Sans Khmer", system-ui, sans-serif;
+    }
+
+    .book-title,
+    .accordion-button {
+        font-family: "Moul", "Noto Serif Khmer", serif;
+        font-weight: 700;
+    }
+
+    /* ពណ៌សម្រាប់ប៊ូតុងចែករំលែក */
+    .share-btn.fb {
+        background: #1877f2;
+        color: white;
+    }
+
+    .share-btn {
+        background: #1877f2;
+        color: white;
+    }
+
+    .share-btn.tg {
+        background: #229ed9;
+        color: white;
+    }
+</style>
 
 <body>
-    <header class=" sticky-top">
+
+    <header class="sticky-top">
         <!-- ═══════════ MAIN NAVBAR ═══════════ -->
-        <nav class="navbar navbar-expand-lg  border-bottom border-light py-3 wow animate__slideInDown ">
+        <nav class="navbar navbar-expand-lg  border-bottom border-light  py-3 wow animate__slideInDown ">
             <div class="container">
                 <!-- Logo & Brand -->
                 <a class="navbar-brand" href="#">
                     <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
                     <div>
                         <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
-                        <div style="font-size: 12px; font-family: 'Battambang'; color: var(--primary-color);">
+                        <div style="font-size: 12px; font-family: 'Battambang'; color: var(--text-secondary);">
                             Buddhism & Society
                         </div>
                     </div>
@@ -66,13 +95,13 @@
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
                         <!-- Home -->
                         <li class="nav-item">
-                            <a class="nav-link" href="../home.html">
+                            <a class="nav-link " href="../pages/../home.html">
                                 ទំព័រដើម
                             </a>
                         </li>
                         <!-- Dhamma Dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                                 ព្រះធម៌
                             </a>
                             <ul class="dropdown-menu">
@@ -107,7 +136,7 @@
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
 
                                 ព្រឹត្តិការណ៍
                             </a>
@@ -135,7 +164,7 @@
                         </li>
                         <!-- About Dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle" href="mission.html" data-bs-toggle="dropdown">
                                 អំពីយើង
                             </a>
                             <ul class="dropdown-menu">
@@ -200,9 +229,9 @@
 
 
                         <!-- User Profile -->
-                         <a href="../pages/auth/user_profile.html" class="user-profile rounded-5">
-                            <img src="../asset/images/img-profile/user-profile.png" alt=""
-                                class="img-f rounded-5 overflow-hidden" style="width: 50px; " height="50px">
+                        <a href="#" class="user-profile">
+                            <img src="../asset/images/img-profile/user-profile.png" alt="" class="img-f"
+                                style="width: 50px; " height="50px">
                         </a>
 
                     </div>
@@ -212,135 +241,149 @@
         </nav>
     </header>
     <main>
-        <div class="container my-5">
-            <h1 class="text-center mb-5" style="font-family: 'Koulen', cursive; color: #c9a42e;">
-                កម្រងសំណួរចម្លើយ
-            </h1>
-            <div class="row my-5 g-4">
-
-                <div class="col-md-4 col-12">
-                    <a href="General.html" class="text-decoration-none text-dark">
-                        <div class="custom-card-wrapper card-top">
-                            <div class="custom-card text-light">
-                                <i class="fas fa-question-circle faq-hub-icon"></i>
-                                <h5 class="card-title">សំណួរទូទៅ</h5>
-                                <p class="card-text">សំណួរផ្សេងៗទាក់ទង...</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-12">
-                    <a href="partofvipassana.html" class="text-decoration-none text-dark">
-                        <div class="custom-card-wrapper card-top">
-                            <div class="custom-card text-light">
-                                <i class="fas fa-spa faq-hub-icon"></i>
-                                <h5 class="card-title">ផ្នែកវិបស្សនា</h5>
-                                <p class="card-text">សំណួរផ្នែកវិបស្សនា...</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-12">
-                    <a href="partofmeditation.html" class="text-decoration-none text-dark">
-                        <div class="custom-card-wrapper card-top">
-                            <div class="custom-card text-light">
-                                <i class="fas fa-brain faq-hub-icon"></i>
-                                <h5 class="card-title">ផ្នែកសមាធិ</h5>
-                                <p class="card-text">សំណួរពាក់ព័ន្ធសមាធិ...</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-            <div class="row my-5">
-                <div class="col-md-4 col-12">
-                    <a href="partOfSila.html" class="text-decoration-none text-dark">
-                        <div class="custom-card-wrapper card-top">
-                            <div class="custom-card text-light">
-                                <i class="fas fa-balance-scale faq-hub-icon"></i>
-                                <h5 class="card-title">ផ្នែកសីល</h5>
-                                <p class="card-text text-center">សំណួរទាក់ទងនឹងការរក្សាសីល, សីល ៥, សីល ៨ និងគុណធម៌ <br> ក្នុងសង្គម។</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-12">
-                    <a href="Triple.html" class="text-decoration-none text-dark">
-                        <div class="custom-card-wrapper card-top">
-                            <div class="custom-card text-light">
-                                <i class="fas fa-gem faq-hub-icon"></i>
-                                <h5 class="card-title">ផ្នែក ព្រះរតនត្រ័យ</h5>
-                                <p class="card-text text-center">ស្វែងយល់ពីអត្ថន័យ និងគុណរបស់ ព្រះពុទ្ធ ព្រះធម៌ និង  <br> ព្រះសង្ឃ។</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-12">
-                    <a href="kamma.html" class="text-decoration-none text-dark">
-                        <div class="custom-card-wrapper card-top">
-                            <div class="custom-card text-light">
-                                <i class="fas fa-sync-alt faq-hub-icon"></i>
-                                <h5 class="card-title">ផ្នែក កម្ម និង ផល</h5>
-                                <p class="card-text text-center">សំណួរចម្លើយអំពី បុណ្យ បាប អំពើល្អ អាក្រក់ និងផលនៃការប្រព្រឹត្ត។</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-12">
-                    <a href="Traditions.html" class="text-decoration-none text-dark">
-                        <div class="custom-card-wrapper card-top">
-                            <div class="custom-card text-light">
-                                <i class="fas fa-calendar-alt faq-hub-icon"></i>
-                                <h5 class="card-title">ផ្នែក ពិធីបុណ្យ និង ប្រពៃណី</h5>
-                                <p class="card-text">ស្វែងយល់ពីអត្ថន័យនៃពិធីបុណ្យធំៗ ដូចជា ភ្ជុំបិណ្ឌ វិសាខបូជា
-                                    និងចូលឆ្នាំ។
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-6 col-12">
-                    <a href="Daily_Life.html" class="text-decoration-none text-dark">
-                        <div class="custom-card-wrapper card-top">
-                            <div class="custom-card text-light">
-                                <i class="fas fa-briefcase faq-hub-icon"></i>
-                                <h5 class="card-title">ផ្នែក ការអនុវត្តក្នុងជីវិត</h5>
-                                <p class="card-text">របៀបយកព្រះធម៌មកប្រើប្រាស់ប្រចាំថ្ងៃ ក្នុងការសិក្សា ការងារ
-                                    និងការរស់នៅ។
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
+        <div class="container mt-5">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../pages/media-library.html">បណ្ណាល័យ</a></li>
+                    <li class="breadcrumb-item"><a href="../pages/mental-healteh.html">ពុទ្ធសាសនា និង សុខភាពចិត្ត</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">ព្រះធម៌ក្នុងជីវិត</li>
+                </ol>
+            </nav>
         </div>
-    </main>
+        <section class=" container">
 
+            <div class="row g-4 g-lg-5">
+                <div class="col-lg-5">
+                    <img src="../asset/images/vannda_img/ព្រះអភិធម្មក្នុងជីវិតប្រថ្ងៃ.png" alt="គម្របសៀវភៅ ព្រះធម៌ក្នុងជីវិតប្រចាំថ្ងៃ"
+                        class="img-fluid rounded shadow-sm w-100" />
+                </div>
+
+                <div class="col-lg-7">
+                    <h1 class="book-title display-6">ព្រះធម៌ក្នុងជីវិតប្រចាំថ្ងៃ</h1>
+                    <p class="fs-5 text-muted">រៀបរៀងដោយ៖ លោកគ្រូ សុភ័គ</p>
+                    <p class="lead">
+                        សៀវភៅនេះបកស្រាយធម៌ដ៏សាមញ្ញ ដាក់ជាអនុវត្តក្នុងថ្ងៃខ្លួនឯង ដើម្បីបង្កើនសុខទុក្ខ
+                        និងការយល់ដឹងខាងក្នុង។
+                    </p>
+
+                    <div class="cta-wrap d-flex flex-wrap align-items-center gap-2 mb-4">
+                        <a class="btn share-btn " href="book.pdf" download>
+                            <i class="bi bi-download me-2"></i> ទាញយក PDF (10MB)
+                        </a>
+                        <a class="btn btn-outline-primary btn-md" href="reader.html">
+                            <i class="bi bi-book me-2"></i> អានអនឡាញ
+                        </a>
+                    </div>
+
+                    <div class="share mb-4">
+                        <span class="me-2">ចែករំលែក៖</span>
+                        <a class="btn btn-sm share-btn fb" href="#"><i class="bi bi-facebook me-1"></i> Facebook</a>
+                        <a class="btn btn-sm share-btn tg" href="#"><i class="bi bi-telegram me-1"></i> Telegram</a>
+                    </div>
+
+                    <ul class="list-unstyled border-top pt-3">
+                        <li><strong>គ្រឹះស្ថានបោះពុម្ព៖</strong> វត្តអារាម A</li>
+                        <li><strong>ឆ្នាំបោះពុម្ព៖</strong> 2023</li>
+                        <li><strong>ចំនួនទំព័រ៖</strong> 180 ទំព័រ</li>
+                        <li><strong>ភាសា៖</strong> ភាសាខ្មែរ</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="row mt-5">
+            <div class="col-lg-10 mx-auto">
+                <h2>មាតិកាសង្ខេប / បុព្វកថា</h2>
+                <p>
+                    សៀវភៅ “ព្រះធម៌ក្នុងជីវិតប្រចាំថ្ងៃ” ផ្តោតលើការបំភ្លឺចិត្តតាមរយៈការអនុវត្តធម៌ក្នុងសភាពធម្មតា
+                    ដូចជាការដើរតាមសមាធិ ការអប់រំចិត្ត និងការអភិវឌ្ឍមេត្តាករុណា។
+                </p>
+                <p>
+                    អ្នកអាននឹងទទួលបានឧបករណ៍ជាក់ស្តែង សម្រាប់បើកចិត្ត ទប់ស្កាត់អារម្មណ៍អវិជ្ជា
+                    និងកសាងសន្តិភាពខាងក្នុងក្នុងកាលៈទេសៈផ្សេងៗ។
+                </p>
+
+                <div class="accordion mt-4" id="tocAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                មាតិកា (Table of Contents)
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#tocAccordion">
+                            <div class="accordion-body">
+                                <ol class="toc">
+                                    <li>បុព្វកថា</li>
+                                    <li>ជំពូក១: ការយល់អំពីទុក្ខ</li>
+                                    <li>ជំពូក២: សមាធិប្រចាំថ្ងៃ</li>
+                                    <li>ជំពូក៣: មេត្តាករុណាក្នុងទំនាក់ទំនង</li>
+                                    <li>ជំពូក៤: អនុវត្តក្នុងការងារ</li>
+                                    <li>ជំពូក៥: សរុប និងអនុសាសន៍</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <div class="container">
+                <h2 class="text-center mb-4">សៀវភៅពាក់ព័ន្ធ</h2>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://i.imgur.com/k6wR9wJ.png" class="card-img-top" alt="ធម្មទេសនា និង សុភាសិត">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">ធម្មទេសនា និង សុភាសិត</h5>
+                                <a href="#" class="btn btn-outline-primary mt-auto">មើលលម្អិត</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://i.imgur.com/yA0x6Bv.png" class="card-img-top"
+                                alt="វត្តអារាមកាលពីព្រេងនាយ">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">វត្តអារាមកាលពីព្រេងនាយ</h5>
+                                <a href="#" class="btn btn-outline-primary mt-auto">មើលលម្អិត</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://i.imgur.com/w2Yx7Pq.png" class="card-img-top" alt="សីលវិន័យសាមណេរ">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">សីលវិន័យសាមណេរ</h5>
+                                <a href="#" class="btn btn-outline-primary mt-auto">មើលលម្អិត</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- ═══════════ FOOTER ═══════════ -->
     <footer>
         <div class="container">
             <div class="row">
                 <!-- About Section -->
-                <div class="col-lg-4 col-md-6 mb-4" bis_skin_checked="1">
-                    <div class="d-flex align-items-center" bis_skin_checked="1">
-                        <i class="fas fa-dharmachakra fs-1 me-3" style="color: var(--primary-color)"></i>
-                        <h5 class="mt-4">អំពីពុទ្ធសាសនានិងសង្គម</h5>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-dharmachakra fs-1 me-3" style="color: var(--primary-color);"></i>
+                        <h5 class="mt-5">
+                            អំពីពុទ្ធសាសនានិងសង្គម
+                        </h5>
                     </div>
-                    <p style="line-height: 1.8">
-                        គេហទំព័រដែលផ្តល់នូវការអប់រំ សេវាកម្មសង្គម
-                        និងការលើកកម្ពស់គុណតម្លៃសីលធម៌តាមគោលការណ៍ព្រះធម៌
+                    <p style="line-height: 1.8;">
+                        គេហទំព័រដែលផ្តល់នូវការអប់រំ សេវាកម្មសង្គម និងការលើកកម្ពស់គុណតម្លៃសីលធម៌តាមគោលការណ៍ព្រះធម៌
                         ដើម្បីអភិវឌ្ឍន៍សង្គមប្រកបដោយសន្តិភាព និងសុខុមាលភាព។
                     </p>
-                    <div class="footer-social mt-3" bis_skin_checked="1">
+                    <div class="footer-social mt-3">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-telegram"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
@@ -409,7 +452,22 @@
             </div>
         </div>
     </footer>
-
+    <!-- search modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="ស្វែងរកគេហទំព័រ">
+                            <button type="submit" class="btn btn-primary">ស្វែងរក</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap JS -->
     <script src="../asset/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
     <!-- AOS Animation -->
@@ -419,6 +477,9 @@
     <script>
         AOS.init();
     </script>
+
+
+
 </body>
 
 </html>
