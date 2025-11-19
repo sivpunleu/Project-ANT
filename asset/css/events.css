@@ -200,7 +200,7 @@
 
 .btn-event {
   background: var(--primary-color);
-  color: var(--text-primary); /* Black on light, White on dark */
+  color: var(--text-secondary); /* Black on light, White on dark */
   border: none;
   padding: 10px 25px;
   border-radius: 25px;
