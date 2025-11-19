@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="គេហទំព័រចែករំលែកចំណេះដឹងព្រះពុទ្ធសាសនា សម្រាប់ការថែទាំសុខភាពផ្លូវចិត្ត ការកាត់បន្ថយស្ត្រេស និងការស្វែងរកសន្តិភាពខាងក្នុង">
+    <meta name="keywords" content="ពុទ្ធសាសនា, ព្រះធម៌, សុខភាពផ្លូវចិត្ត, សមាធិ, Cambodia, Buddhism, Mental Health">
+
+    <title>ពុទ្ធសាសនា​ និង​សុខភាពផ្លូវចិត្ត | Buddhism and Mental Health</title>
+
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/theme.css">
+    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../asset/aos-master/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../asset/css/sil.css">
+
+</head>
+<style>
+    .user-profile {
+        color: var(--primary-color);
+    }
+
+    .user-profile:hover {
+        color: var(--primary-color);
+    }
+</style>
+<style>
+    body {
+        font-family: "Khmer OS Content", "Noto Sans Khmer", system-ui, sans-serif;
+    }
+
+    .book-title,
+    .accordion-button {
+        font-family: "Moul", "Noto Serif Khmer", serif;
+        font-weight: 700;
+    }
+
+    /* ពណ៌សម្រាប់ប៊ូតុងចែករំលែក */
+    .share-btn.fb {
+        background: #1877f2;
+        color: white;
+    }
+
+    .share-btn {
+        background: #1877f2;
+        color: white;
+    }
+
+    .share-btn.tg {
+        background: #229ed9;
+        color: white;
+    }
+</style>
+
+<body>
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg  border-bottom border-light  py-3 wow animate__slideInDown ">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
+                    <div>
+                        <div style="font-size: 20px;">ពុទ្ធសាសនា​ និង​សុខភាពផ្លូវចិត្ត</div>
+                        <div style="font-size: 12px; font-family: 'Battambang'; color: var(--text-secondary);">
+                            Buddhism & Mental Health
+                        </div>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                    <i class="fas fa-bars" style="color: var(--primary-color);"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link " href="../pages/../home.html">
+                                ទំព័រដើម
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                ព្រះធម៌
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="../pages/media-library.html">
+                                        បណ្ណាល័យព្រះធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../pages/dhammaVideo.html">
+                                        វីដេអូធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        សំឡេងធម៌
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../pages/questionandanwser.html">
+                                        សំណួរ និង ចម្លើយ
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/education.html">
+                                ការអប់រំ
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+
+                                ព្រឹត្តិការណ៍
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        ពុទ្ធសាសនា
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../pages/culture.html">
+                                        វប្បធម៌ខ្មែរ
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/events.html">
+                                កម្មវិធី
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="mission.html" data-bs-toggle="dropdown">
+                                អំពីយើង
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="../pages/history.html">
+                                        ប្រវត្តិ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../pages/mission.html">
+                                        បេសកកម្ម
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../pages/team.html">
+                                        ក្រុមការងារ
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                ផ្សេងៗ
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="../pages/Buddhist Rituals.html">
+                                        កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../pages/volunteer.html">
+                                        ចូលរូមស្ម័គ្រចិត្ត
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../pages/contact.html">
+                                        ទំនាក់ទំនង
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                    <div class="d-flex gap-2 align-items-center ms-auto">
+                        <button class="theme-toggle" onclick="toggleTheme()">
+                            <i class="fas fa-moon" id="themeIcon"></i>
+                        </button>
+                        <button class="btn btn-outline-primary d-none d-lg-block " data-bs-toggle="modal"
+                            data-bs-target="#searchModal">
+                            <i class="fas fa-search "></i> ស្វែងរក
+                        </button>
+
+
+
+                        <a href="../pages/auth/userProfile.html" class="user-profile">
+                            <img src="../asset/images/img-profile/user-profile.png" alt="" class="img-f"
+                                style="width: 50px; " height="50px">
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-5">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../pages/media-library.html">បណ្ណាល័យ</a></li>
+                    <li class="breadcrumb-item"><a href="../pages/dhammaINDailyLife.html">ព្រះធម៌ក្នុងជីវិត</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">ពុទ្ធសាសនា​ និង​សុខភាពផ្លូវចិត្ត</li>
+                </ol>
+            </nav>
+        </div>
+        <section class=" container">
+
+            <div class="row g-4 g-lg-5">
+                <div class="col-lg-5">
+                    <img src="../asset/images/vannda_img/ពុទ្ធសាសនានិងសង្គម.png"
+                        alt="គម្របសៀវភៅ ពុទ្ធសាសនា​ និង​សុខភាពផ្លូវចិត្ត" class="img-fluid rounded shadow-sm w-100" />
+                </div>
+
+                <div class="col-lg-7">
+                    <h1 class="book-title display-6">ពុទ្ធសាសនា​ និង​សុខភាពផ្លូវចិត្ត</h1>
+                    <p class="fs-5 text-muted">រៀបរៀងដោយ៖ លោកគ្រូ សុភ័គ</p>
+                    <p class="lead">
+                        សៀវភៅនេះ បង្ហាញពីគោលការណ៍ព្រះពុទ្ធសាសនា សម្រាប់ការយល់ដឹងពីចិត្ត
+                        ការគ្រប់គ្រងស្ត្រេស និងការកសាងសន្តិភាពខាងក្នុង ដើម្បីលើកកម្ពស់សុខុមាលភាពផ្លូវចិត្ត។
+                    </p>
+
+                    <div class="cta-wrap d-flex flex-wrap align-items-center gap-2 mb-4">
+                        <a class="btn share-btn " href="book.pdf" download>
+                            <i class="bi bi-download me-2"></i> ទាញយក PDF (10MB)
+                        </a>
+                        <a class="btn btn-outline-primary btn-md" href="reader.html">
+                            <i class="bi bi-book me-2"></i> អានអនឡាញ
+                        </a>
+                    </div>
+
+                    <div class="share mb-4">
+                        <span class="me-2">ចែករំលែក៖</span>
+                        <a class="btn btn-sm share-btn fb" href="www.facebook.com"><i class="bi bi-facebook me-1"></i> Facebook</a>
+                        <a class="btn btn-sm share-btn tg" href="telegrame.com"><i class="bi bi-telegram me-1"></i> Telegram</a>
+                    </div>
+
+                    <ul class="list-unstyled border-top pt-3">
+                        <li><strong>គ្រឹះស្ថានបោះពុម្ព៖</strong> វត្តអារាម A</li>
+                        <li><strong>ឆ្នាំបោះពុម្ព៖</strong> 2023</li>
+                        <li><strong>ចំនួនទំព័រ៖</strong> 180 ទំព័រ</li>
+                        <li><strong>ភាសា៖</strong> ភាសាខ្មែរ</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="row mt-5">
+            <div class="col-lg-10 mx-auto">
+                <h2>មាតិកាសង្ខេប / បុព្វកថា</h2>
+                <p>
+                    សៀវភៅ “ពុទ្ធសាសនា​ និង​សុខភាពផ្លូវចិត្ត” ផ្តោតលើការបំភ្លឺពីទំនាក់ទំនងរវាងការអនុវត្តធម៌
+                    និងសុខុមាលភាពផ្លូវចិត្ត។ តាមរយៈការចម្រើនសតិ (Mindfulness) និងសមាធិ
+                    យើងអាចរៀនស្គាល់ពីមូលហេតុនៃស្ត្រេស ការថប់បារម្ភ និងភាពតានតឹង។
+                </p>
+                <p>
+                    អ្នកអាននឹងទទួលបានឧបករណ៍ជាក់ស្តែង សម្រាប់គ្រប់គ្រងអារម្មណ៍អវិជ្ជមាន
+                    អភិវឌ្ឍមេត្តាករុណាចំពោះខ្លួនឯង
+                    និងកសាងសន្តិភាពផ្លូវចិត្តប្រកបដោយនិរន្តរភាព។
+                </p>
+
+                <div class="accordion mt-4" id="tocAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                មាតិកា (Table of Contents)
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#tocAccordion">
+                            <div class="accordion-body">
+                                <ol class="toc">
+                                    <li>បុព្វកថា</li>
+                                    <li>ជំពូក១: ការយល់ដឹងពីចិត្ត និង អារម្មណ៍</li>
+                                    <li>ជំពូក២: សមាធិដើម្បីកាត់បន្ថយស្ត្រេស និងការថប់បារម្ភ</li>
+                                    <li>ជំពូក៣: ការអនុវត្តមេត្តាករុណាចំពោះខ្លួនឯង</li>
+                                    <li>ជំពូក៤: ការគ្រប់គ្រងអារម្មណ៍អវិជ្ជមាន (ខឹង, ខ្លាច, សោកសៅ)</li>
+                                    <li>ជំពូក៥: កសាងសន្តិភាពផ្លូវចិត្តយូរអង្វែង</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <div class="container">
+                <h2 class="text-center mb-4">សៀវភៅពាក់ព័ន្ធ</h2>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://i.imgur.com/k6wR9wJ.png" class="card-img-top" alt="ថាមពលនៃសតិ">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">ថាមពលនៃសតិ</h5>
+                                <a href="#" class="btn btn-outline-primary mt-auto">មើលលម្អិត</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://i.imgur.com/yA0x6Bv.png" class="card-img-top"
+                                alt="ចិត្តស្ងប់ក្នុងយុគសម័យថ្មី">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">ចិត្តស្ងប់ក្នុងយុគសម័យថ្មី</h5>
+                                <a href="#" class="btn btn-outline-primary mt-auto">មើលលម្អិត</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://i.imgur.com/w2Yx7Pq.png" class="card-img-top"
+                                alt="ផ្លូវទៅកាន់ការផ្ដាច់ទុក្ខ">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">ផ្លូវទៅកាន់ការផ្ដាច់ទុក្ខ</h5>
+                                <a href="#" class="btn btn-outline-primary mt-auto">មើលលម្អិត</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-dharmachakra fs-1 me-3" style="color: var(--primary-color);"></i>
+                        <h5 class="mt-5">
+                            អំពីពុទ្ធសាសនា​ និង​សុខភាពផ្លូវចិត្ត
+                        </h5>
+                    </div>
+                    <p style="line-height: 1.8;">
+                        គេហទំព័រដែលផ្តល់នូវការអប់រំ និងការណែនាំផ្អែកលើព្រះធម៌
+                        ដើម្បីអភិវឌ្ឍន៍សុខភាពផ្លូវចិត្ត និងស្វែងរកសន្តិភាពក្នុងជីវិត។
+                    </p>
+                    <div class="footer-social mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>តំណភ្ជាប់លឿន</h5>
+                    <a href="#"><i class="fas fa-angle-right"></i> ទំព័រដើម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> អំពីយើង</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> សេវាកម្ម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ព្រឹត្តិការណ៍</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ទំនាក់ទំនង</a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>សេវាកម្ម</h5>
+                    <a href="#"><i class="fas fa-angle-right"></i> គម្រោងសង្គម</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ការអប់រំ</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> វគ្គបណ្តុះបណ្តាល</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> អ្នកស្ម័គ្រចិត្ត</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> ការបរិច្ចាគ</a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>ទំនាក់ទំនង</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i>
+                        ភ្នំពេញ, កម្ពុជា
+                    </p>
+                    <p>
+                        <i class="fas fa-phone" style="color: var(--primary-color);"></i>
+                        012 345 678
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope" style="color: var(--primary-color);"></i>
+                        info@buddhism-mentalhealth.org
+                    </p>
+                    <p>
+                        <i class="fas fa-clock" style="color: var(--primary-color);"></i>
+                        ច័ន្ទ - សុក្រ: 8:00 - 17:00
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">
+                            © 2024 ពុទ្ធសាសនា​ និង​សុខភាពផ្លូវចិត្ត. រក្សាសិទ្ធិគ្រប់យ៉ាង។
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end justify-content-center justify-content-md-end d-flex">
+                        <a href="#" class="me-3">គោលការណ៍ឯកជនភាព</a>
+                        <a href="#" class="me-3">លក្ខខណ្ឌប្រើប្រាស់</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="ស្វែងរកគេហទំព័រ">
+                            <button type="submit" class="btn btn-primary">ស្វែងរក</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../asset/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
+    <script src="../asset/aos-master/dist/aos.js"></script>
+    <script src="../asset/js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
