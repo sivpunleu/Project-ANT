@@ -1,6 +1,7 @@
 /* Hero Section */
         .hero-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/asset/images/img-events/photo_2025-11-20_14-44-42.jpg') no-repeat center center;
+            background-size: cover;
             padding: 250px 0;
             color: white;
             position: relative;
@@ -14,7 +15,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-           background-image: url('/asset/images/img-events/photo_2025-11-20_14-44-42.jpg');
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/asset/images/img-events/photo_2025-11-20_14-44-42.jpg') no-repeat center center;
             background-size: cover;
             opacity: 0.3;
         }
