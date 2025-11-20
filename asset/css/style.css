@@ -7,7 +7,10 @@
   --bg-secondary: #f3f4f6;
   --border-light: #e5e7eb;
   --border-dark: #d1d5db;
-  --box-shadow: none;
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  --card-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+  --bg-event-day: #fff3e0;
+  --box-shadow: none; /* This was in your original code, but unused by cards */
 }
 
 [data-theme="dark"] {
@@ -18,6 +21,9 @@
   --border-dark: #4b5563;
   --bg-secondary: #374151;
   --box-shadow: 0px 10px 15px 0px rgba(255, 255, 255, 0.1);
+  --card-shadow: 0 4px 15px rgba(255, 255, 255, 0.08);
+  --card-shadow-hover: 0 8px 25px rgba(255, 255, 255, 0.15);
+  --bg-event-day: #fff3e0;
 }
 [data-theme="dark"] body {
   background: var(--bg-primary);
@@ -48,7 +54,9 @@ body {
   transition: all 0.3s ease;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
+@media screen  {
+  
+}
 [data-theme="dark"] .navbar {
   background: #1f2937;
   border-bottom: 1px solid var(--border-dark);
