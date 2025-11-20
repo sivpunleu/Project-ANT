@@ -10,7 +10,7 @@
   --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   --card-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
   --bg-event-day: #fff3e0;
-  --box-shadow: none; /* This was in your original code, but unused by cards */
+  --box-shadow: none; 
 }
 
 [data-theme="dark"] {
@@ -227,7 +227,6 @@ footer {
 
 footer h5 {
   color: var(--text-secondary);
-  font-family: "Moul", serif;
   margin-bottom: 24px;
   font-size: 18px;
 }
