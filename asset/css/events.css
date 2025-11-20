@@ -102,7 +102,10 @@
   margin-bottom: 30px;
   height: 100%;
 }
-
+.card{
+    box-shadow: var(--card-shadow);
+    border-radius: 15px;
+}
 .event-card:hover {
   transform: translateY(-5px);
   /* FIX: Used variable for hover shadow */
@@ -114,6 +117,10 @@
   height: 250px;
   object-fit: cover;
   position: relative; /* Added for child absolute positioning */
+}
+.page-item a{
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 .event-badge {
