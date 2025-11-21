@@ -50,7 +50,7 @@
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
                         <!-- Home -->
                         <li class="nav-item">
-                            <a class="nav-link active" href="../home.html">
+                            <a class="nav-link" href="../home.html">
                                 ទំព័រដើម
                             </a>
                         </li>
@@ -197,11 +197,11 @@
     </header>
 
     <!-- Navigation Tabs -->
-    <div class="bg-body-tertiary sticky-top" style="top: 76px; z-index: 20;">
+    <div class="nav-tabs-custom sticky-top py-3" style="top: 76px; z-index: 20;">
         <div class="container">
-            <ul class="nav nav-tabs-custom py-3" id="videoTabs" role="tablist">
+            <ul class="nav nav-tabs-custom d-flex justify-content-between align-items-center fs-5" id="videoTabs" role="tablist">
                 <li class="nav-item">
-                    <button class="nav-link active text-center" data-bs-toggle="tab" data-bs-target="#all">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#all">
                         <i class="fas fa-dharmachakra me-2"></i>ព្រះធម៌ទាំងអស់
                     </button>
                 </li>
@@ -245,17 +245,17 @@
     </div>
 
     <!-- Main Content -->
-    <main class="container my-5">
-        <div class="tab-content text-center" id="videoTabsContent">
+    <main class="container">
+        <div class="tab-content" id="videoTabsContent">
             <!-- All Videos Tab -->
             <div class="tab-pane fade show active" id="all">
-                <h2 class="section-title text-center">ព្រះធម៌ទាំងអស់</h2>
+                <h2 class="section-title text-center my-5">ព្រះធម៌ទាំងអស់</h2>
 
                 <!-- Stats -->
                 <div class="row g-3 mb-4">
                     <div class="col-md-4">
                         <div class="stats-card">
-                            <div class="stat-number" id="totalVideos">55</div>
+                            <div class="stat-number" id="totalVideos">18</div>
                             <div class="stat-label">វីដេអូទាំងអស់</div>
                         </div>
                     </div>
@@ -289,48 +289,48 @@
                     </div>
                 </div>
 
-                <div class="row g-4 py-3 fs-4" id="allVideos"></div>
+                <div class="row g-5" id="allVideos"></div>
             </div>         
 
             <!-- Education Tab -->
             <div class="tab-pane fade" id="education">
-                <h1 class="section-title text-center fs-1 my-5">អប់រំចិត្ត</h1>
+                <h1 class="section-title">អប់រំចិត្ត</h1>
                 <div class="row g-4" id="educationVideos"></div>
             </div>
 
             <!-- Ceremony Tab -->
             <div class="tab-pane fade" id="ceremony">
-                <h1 class="section-title text-center fs-1 my-5">កម្មវិធីបុណ្យនានា</h1>
+                <h1 class="section-title">កម្មវិធីបុណ្យនានា</h1>
                 <div class="row g-4" id="ceremonyVideos"></div>
             </div>
 
             <!-- Vipassana Tab -->
             <div class="tab-pane fade" id="vipassana">
-                <h1 class="section-title text-center fs-1 my-5">វិបស្សនាកម្មដ្ឋាន</h1>
+                <h1 class="section-title">វិបស្សនាកម្មដ្ឋាន</h1>
                 <div class="row g-4" id="vipassanaVideos"></div>
             </div>
 
             <!-- Abhidhamma Tab -->
             <div class="tab-pane fade" id="abhidhamma">
-                <h1 class="section-title text-center fs-1 my-5">ព្រះអភិធម្ម</h1>
+                <h1 class="section-title">ព្រះអភិធម្ម</h1>
                 <div class="row g-4" id="abhidhammaVideos"></div>
             </div>
 
             <!-- Sutta Tab -->
             <div class="tab-pane fade" id="sutta">
-                <h1 class="section-title text-center fs-1 my-5">ព្រះសូត្រ</h1>
+                <h1 class="section-title">ព្រះសូត្រ</h1>
                 <div class="row g-4" id="suttaVideos"></div>
             </div>
 
             <!-- Vinaya Tab -->
             <div class="tab-pane fade" id="vinaya">
-                <h1 class="section-title text-center fs-1 my-5">ព្រះវិន័យ</h1>
+                <h1 class="section-title">ព្រះវិន័យ</h1>
                 <div class="row g-4" id="vinayaVideos"></div>
             </div>
 
             <!-- Favorites Tab -->
             <div class="tab-pane fade" id="favorites">
-                <h1 class="section-title text-center fs-1 my-5">វីដេអូសំណព្វ</h1>
+                <h1 class="section-title">វីដេអូសំណព្វ</h1>
                 <div class="row g-4" id="favoritesVideos">
                     <div class="col-12 text-center py-5">
                         <i class="fas fa-heart" style="font-size: 3rem; opacity: 0.3; color: var(--text-secondary);"></i>
@@ -341,11 +341,6 @@
         </div>
     </main>
 
-    <!-- Floating Favorites Button -->
-    <button class="favorites-btn" data-bs-toggle="tab" data-bs-target="#favorites">
-        <i class="fas fa-heart fs-4"></i>
-        <span class="favorites-badge d-none" id="favoritesBadge">0</span>
-    </button>
 
     <!-- ═══════════ FOOTER ═══════════ -->
     <footer>
@@ -433,7 +428,7 @@
     </footer>
 
     <!-- search modal -->
-    <!-- <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel"
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -447,7 +442,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script>
@@ -481,58 +476,26 @@
             { url: "https://www.youtube.com/watch?v=wJsVlUcTjB4", title: "ព្យាបាល ជម្ងឺ ផ្លូវចិត្ត", category: "education", views: 25000, duration: 42, rating: 0 },
             { url: "https://www.youtube.com/watch?v=woi1fYpjgHU", title: "ស្ដាប់ធម៌អប់រំផ្លូវចិត្ត", category: "education", views: 25000, duration: 42, rating: 0 },
             { url: "https://www.youtube.com/watch?v=md9Gd7YhvsU", title: "កាត់ចិត្តចំពោះរឿងកន្លងហួស", category: "education", views: 31000, duration: 38, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=VZapaX9ywIw", title: "មនុស្សមិនដូចគ្នា", category: "education", views: 28000, duration: 16, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=JDO17PH7osY", title: "កុំតូចចិត្តបើកើតមកក្រ", category: "education", views: 19000, duration: 35, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=hkrAxEFoSS8", title: "មានជីវិត ត្រូវចេះតស៊ូ", category: "education", views: 75000, duration: 61, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=3G-Dng5v6gA", title: "ហត់និងជីវិត ជួបតែទុក្ខ", category: "education", views: 19000, duration: 35, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=E-eRHNlb-Tc", title: "រៀនអប់រំ ផ្លូវចិត្ត", category: "education", views: 19000, duration: 35, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=4qX-Ni09fk0", title: "ពិធីបុណ្យចូលឆ្នាំខ្មែរ", category: "ceremony", views: 45000, duration: 55, rating: 0 },
+
             { url: "https://www.youtube.com/watch?v=nLo-YzuxmeU", title: "ពិធីបុណ្យភ្ជុំបិណ្ឌ", category: "ceremony", views: 38000, duration: 48, rating: 0 },
             { url: "https://www.youtube.com/watch?v=4KbvnQfHgM0", title: "បុណ្យកឋិនទាន", category: "ceremony", views: 52000, duration: 60, rating: 0 },
             { url: "https://www.youtube.com/watch?v=F2Rt8iFh8fo", title: "បុណ្យវិសាខបូជា", category: "ceremony", views: 48000, duration: 52, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=Pc_Xqy-3fZ8", title: "បុណ្យមាឃបូជា", category: "ceremony", views: 45000, duration: 55, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=bdYU5Fr52Jc", title: "បុណ្យកតញ្ញូកតវេទី", category: "ceremony", views: 38000, duration: 48, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=uskAxlkzVRo", title: "បុណ្យបច្ច័យបួន", category: "ceremony", views: 52000, duration: 60, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=WE-UA5Byquc", title: "បុណ្យទក្ខិណានុប្បទាន", category: "ceremony", views: 48000, duration: 52, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=jnpUkJnoh8k", title: "បុណ្យឈាបនកិច្ច", category: "ceremony", views: 45000, duration: 55, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=f8OYD1dXeys", title: "បុណ្យ​ ៧​ថ្ងៃ", category: "ceremony", views: 38000, duration: 48, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=lz1HpRjq83M", title: "ពិធីបុណ្យ ១០០ថ្ងៃ", category: "ceremony", views: 52000, duration: 60, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=6xjae8xYRTw", title: "ពិធីបុណ្យពុទ្ធាភិសេក", category: "ceremony", views: 48000, duration: 52, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=_r98q8hraYs", title: "ពិធីបុណ្យឆ្លងចេតិយ", category: "ceremony", views: 48000, duration: 52, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=MBsDLcFr0Po", title: "ពិធីបុណ្យបញ្ចុះខណ្ឌសីមា", category: "ceremony", views: 48000, duration: 52, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=vtlACMF9qh8", title: "បុណ្យចម្រើនព្រះជន្ម", category: "ceremony", views: 48000, duration: 52, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=d6BrNV-7EiU", title: "ជឿលើអំពើខ្លួនឯង | បឋមវិបស្សនា", category: "vipassana", views: 35000, duration: 50, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=U-K-20PJ8Kg", title: "ដឹងខ្យល់ | បឋមវិបស្សនា", category: "vipassana", views: 29000, duration: 46, rating: 0 },
+            
+            { url: "https://www.youtube.com/watch?v=U-K-20PJ8Kg", title: "បឋមវិបស្សនា", category: "vipassana", views: 29000, duration: 46, rating: 0 },
             { url: "https://www.youtube.com/watch?v=EL0FM3jGzgU", title: "របៀបធ្វើសមាធិ", category: "vipassana", views: 32000, duration: 44, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=P9gUidMLodc", title: "របៀបចម្រើន អានាបាណស្សតិ និង​ វិបស្សនាកម្មដ្ឋាន", category: "vipassana", views: 27000, duration: 48, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=gdoYPgDXYkY", title: "មេត្តាធម៌", category: "vipassana", views: 35000, duration: 50, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=LJNpA8DDiBI", title: "ខ្យល់រលត់ ចិត្តឧបេក្ខា", category: "vipassana", views: 29000, duration: 46, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=TdKKa3KkLjk", title: "អានាបាណស្សតិកម្មដ្ឋាន", category: "vipassana", views: 32000, duration: 44, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=QMOaAAjjmYE", title: "សតិប្បដ្ឋាន", category: "vipassana", views: 27000, duration: 48, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=G2u-MJSjvRI", title: "សិក្សាព្រះអភិធម្ម បរិច្ឆេទទី១​ (ភាគ ០១)", category: "abhidhamma", views: 22000, duration: 65, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=4TMvhyHOVDY", title: "សិក្សាព្រះអភិធម្ម បរិច្ឆេទទី១ (ភាគ ០២)", category: "abhidhamma", views: 18000, duration: 58, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=fWlIEDejCtc", title: "សិក្សាព្រះអភិធម្ម បរិច្ឆេទទី១ (ភាគ ០៣)", category: "abhidhamma", views: 16000, duration: 52, rating: 0 },
+            { url: "https://www.youtube.com/watch?v=P9gUidMLodc", title: "អានាបាណស្សតិ", category: "vipassana", views: 27000, duration: 48, rating: 0 },
+            
+            { url: "https://www.youtube.com/watch?v=4TMvhyHOVDY", title: "សិក្សាព្រះអភិធម្ម (ភាគ ០២)", category: "abhidhamma", views: 18000, duration: 58, rating: 0 },
+            { url: "https://www.youtube.com/watch?v=fWlIEDejCtc", title: "សិក្សាព្រះអភិធម្ម (ភាគ ០៣)", category: "abhidhamma", views: 16000, duration: 52, rating: 0 },
             { url: "https://www.youtube.com/watch?v=Jg6y9HA0ZeE", title: "បដិបត្តិ ព្រះអភិធម្ម", category: "abhidhamma", views: 24000, duration: 70, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=2cXiCd4LdHk", title: "សិក្សាអភិធម្មយល់ពីជីវិតពិត", category: "abhidhamma", views: 22000, duration: 65, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=_afHyjJ3y4c", title: "ហេតុអ្វីត្រូវរៀនអភិធម្ម", category: "abhidhamma", views: 18000, duration: 58, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=uNSUrhgdrP0", title: "មេរៀនព្រះអភិធម្ម ចេតសិក", category: "abhidhamma", views: 16000, duration: 52, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=NAeECybB6js", title: "ជួយខ្លួនឯង", category: "abhidhamma", views: 24000, duration: 70, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=_D3bV2UIvBU", title: "សិក្សាព្រះសូត្រ ភាគ១", category: "sutta", views: 40000, duration: 35, rating: 0 },
+
             { url: "https://www.youtube.com/watch?v=wywQ0KXyqb4", title: "បុគ្គលពាល មានលក្ខណៈ ៣យ៉ាង", category: "sutta", views: 36000, duration: 32, rating: 0 },
             { url: "https://www.youtube.com/watch?v=vlq4nN3NsjU", title: "មង្គល​ ៣៨ ប្រការ", category: "sutta", views: 33000, duration: 38, rating: 0 },
             { url: "https://www.youtube.com/watch?v=zCi4doJteAs", title: "ទេសនាអំពីមង្គលគាថាទី (១)", category: "sutta", views: 42000, duration: 55, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=tbKoM6EJ6u4", title: "ទេសនាអំពីមង្គលគាថាទី (២)", category: "sutta", views: 42000, duration: 55, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=Pq5PKxuEv5M", title: "ទេសនាអំពីមង្គលគាថាទី (៣)", category: "sutta", views: 42000, duration: 55, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=in3mSMKcqwI", title: "ទេសនាអំពីមង្គលគាថាទី (៤)", category: "sutta", views: 42000, duration: 55, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=ss3iEOjcAeY", title: "ទេសនាអំពីមង្គលគាថាទី (៥)", category: "sutta", views: 42000, duration: 55, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=GVa7EnRzAj8", title: "ពាក្យថា សីល", category: "vinaya", views: 30000, duration: 40, rating: 0 },
+
             { url: "https://www.youtube.com/watch?v=k6wFASLhFHs", title: "សិក្សាព្រះ​វិន័យ​ កម្មក្ខន្ធក", category: "vinaya", views: 26000, duration: 42, rating: 0 },
             { url: "https://www.youtube.com/watch?v=5nDsUhs7eVw", title: "វិន័យក្នុងព្រះពុទ្ធសាសនា", category: "vinaya", views: 21000, duration: 68, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=Jh-OLdkmFY4", title: "ភិក្ខុមានវស្សាប៉ុន្មានទើបបំបួសសាមណេរបាន", category: "vinaya", views: 28000, duration: 45, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=ZXEkEgeFZNI", title: "បញ្ហាលោកវាយស្គរ", category: "vinaya", views: 30000, duration: 40, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=Bzebs3z8lJU", title: "សាមណេរមានអធិដ្ឋានចីវរដែរទេ", category: "vinaya", views: 26000, duration: 42, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=W_YyupUvLGo", title: "អត្ថន័យនៃការដាក់ពិន្ទុចីវរ", category: "vinaya", views: 21000, duration: 68, rating: 0 },
-            { url: "https://www.youtube.com/watch?v=ZipXabtx9Lc", title: "បញ្ហាក្រាលកឋិន-វិនយាចារ្យ", category: "vinaya", views: 28000, duration: 45, rating: 0 }
+            { url: "https://www.youtube.com/watch?v=Jh-OLdkmFY4", title: "ភិក្ខុបំបួសសាមណេរ", category: "vinaya", views: 28000, duration: 45, rating: 0 },
         ];
 
         let favorites = [];
@@ -558,7 +521,7 @@
                         </div>
                         <h5 class="video-title">${video.title}</h5>
                         <span class="badge-category mb-2">${getCatLabel(video.category)}</span>
-                        <div class="d-flex gap-3 small mb-2" style="color: var(--text-secondary);">
+                        <div class="d-flex gap-3 small mb-2">
                             <span><i class="fas fa-eye me-1"></i>${formatViews(video.views)}</span>
                             <span><i class="fas fa-clock me-1"></i>${video.duration} នាទី</span>
                         </div>
