@@ -10,7 +10,7 @@
   --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   --card-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
   --bg-event-day: #fff3e0;
-  --box-shadow: none; 
+  --box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="dark"] {
