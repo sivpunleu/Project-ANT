@@ -1,1193 +1,1476 @@
 <!DOCTYPE html>
 <html lang="km">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="គេហទំព័រផ្សព្វផ្សាយព្រះធម៌ បង្រៀន អប់រំសីលធម៌ និងចែករំលែកចំណេះដឹងខាងព្រះពុទ្ធសាសនា">
-    <meta name="keywords" content="ពុទ្ធសាសនា, ព្រះធម៌, សង្គម, កម្ពុជា, Buddhism, Cambodia">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="គេហទំព័រផ្សព្វផ្សាយព្រះធម៌ បង្រៀន អប់រំសីលធម៌ និងចែករំលែកចំណេះដឹងខាងព្រះពុទ្ធសាសនា"
+    />
+    <meta
+      name="keywords"
+      content="ពុទ្ធសាសនា, ព្រះធម៌, សង្គម, កម្ពុជា, Buddhism, Cambodia"
+    />
+
     <title>ព្រឹត្តិការណ៍ - ពុទ្ធសាសនានិងសង្គម</title>
-    
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/style.css" />
     <!-- events css -->
-    <link rel="stylesheet" href="../asset/css/Buddhist-Rituals.css">
+    <link rel="stylesheet" href="../asset/css/Buddhist-Rituals.css" />
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="../asset/css/theme.css">
+    <link rel="stylesheet" href="../asset/css/theme.css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap.css">
-    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap1.css">
+    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap.css" />
+    <link rel="stylesheet" href="../asset/bootstrap-5.3.7/css/bootstrap1.css" />
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <!-- AOS Animation -->
-    <link rel="stylesheet" href="../asset/aos-master/dist/aos.css">
+    <link rel="stylesheet" href="../asset/aos-master/dist/aos.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
     <!-- Google Fonts - Khmer -->
-    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap" rel="stylesheet">
-    
-</head>
-<style>
-    :root {
-  --primary-color: #b87707;
-  --secondary-color: #dc2626;
-  --bg-primary: #ffffff;
-  --text-primary: #000000;
-  --text-secondary: #ffff;
-  --bg-secondary: #f3f4f6;
-  --border-light: #e5e7eb;
-  --border-dark: #d1d5db;
-  --box-shadow: none;
-}
-
-[data-theme="dark"] {
-  --bg-primary: #1f2937;
-  --text-primary: #ffffff;
-  --text-secondary: #d1d5db;
-  --border-light: #374151;
-  --border-dark: #4b5563;
-  --bg-secondary: #374151;
-  --box-shadow: 0px 10px 15px 0px rgba(255, 255, 255, 0.1);
-}
-[data-theme="dark"] body {
-  background: var(--bg-primary);
-  color: var(--text-primary);
-}
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-* {
-  font-family: "Battambang", sans-serif;
-}
-
-body {
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  transition: all 0.3s ease;
-}
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
     .user-profile {
-        color: var(--primary-color);
-        transition: color 0.3s ease;
-
+      color: var(--primary-color);
+      transition: color 0.3s ease;
     }
 
     .user-profile:hover {
-        color: var(--primary-color);
-        text-decoration: none;
-
+      color: var(--primary-color);
+      text-decoration: none;
     }
-
-</style>
-<body>
-   
-      <!-- ═══════════ MAIN NAVBAR ═══════════ -->
-       <header>
-    <nav class="navbar navbar-expand-lg  border-bottom border-light sticky-top py-3 wow animate__slideInDown ">
+  </style>
+  <body>
+    <!-- ═══════════ MAIN NAVBAR ═══════════ -->
+    <header class="sticky-top">
+      <nav
+        class="navbar navbar-expand-lg border-bottom border-light sticky-top py-3 wow animate__slideInDown"
+      >
         <div class="container">
-            <!-- Logo & Brand -->
-            <a class="navbar-brand" href="#">
-                 <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
-                <div>
-                    <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
-                    <div style="font-size: 12px; font-family: 'Battambang'; color: var(--primary-color);">
-                        Buddhism & Society
-                    </div>
-                </div>
-            </a>
-
-            <!-- Mobile Toggle -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-                <i class="fas fa-bars" style="color: var(--primary-color);"></i>
-            </button>
-
-            <!-- Main Menu -->
-            <div class="collapse navbar-collapse" id="navbarMain">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
-                    <!-- Home -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="../home.html">
-                          ទំព័រដើម
-                        </a>
-                    </li>
-                    <!-- Dhamma Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            ព្រះធម៌
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="../pages/media-library.html">
-                                    បណ្ណាល័យព្រះធម៌
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    វីដេអូធម៌
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    សំឡេងធម៌
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    សំណួរ និង ចម្លើយ
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <!-- Courses -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/education.html">
-                            ការអប់រំ
-                        </a>
-                    </li>
-
-                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                           
-                             ព្រឹត្តិការណ៍
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="../pages/buddism.html">
-                                    ពុទ្ធសាសនា
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="../pages/culture.html">
-                                    វប្បធម៌ខ្មែរ
-                                </a>
-                            </li>
-                          
-                          
-                        </ul>
-                    </li>
-                      <!-- Services -->
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/events.html">
-                            កម្មវិធី
-                        </a>
-                    </li>
-  <!-- About Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            អំពីយើង
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="../pages/history.html">
-                                    ប្រវត្តិ
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="../pages/mission.html">
-                                   បេសកកម្ម
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="../pages/team.html">
-                                   ក្រុមការងារ
-                                </a>
-                            </li>
-                            
-                          
-                        </ul>
-                    </li>
-                      <!-- Services -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            ផ្សេងៗ
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="../pages/Buddhist Rituals.html">
-                                    កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="../pages/volunteer.html">
-                                    ចូលរូមស្ម័គ្រចិត្ត
-                                </a>
-                            </li>
-                           
-                            <li>
-                                <a class="dropdown-item" href="../pages/contact.html">
-                                   ទាក់ទំនង
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                   
-                 
-                </ul>
-                <!-- Right Side Buttons -->
-
-                <div class="d-flex gap-2 align-items-center ms-auto">
-                      <!-- Theme Toggle -->
-                    <button class="theme-toggle" onclick="toggleTheme()">
-                        <i class="fas fa-moon" id="themeIcon"></i>
-                    </button>
-                       <!-- button search model -->
-                    <button class="btn btn-outline-primary d-none d-lg-block " data-bs-toggle="modal" data-bs-target="#searchModal">
-                        <i class="fas fa-search "></i> ស្វែងរក
-                    </button>          
-                    <!-- User Profile -->
-                     
-                    <a href="../pages/auth/user_profile.html" class="user-profile">
-                        <img src="../asset/images/img-profile/user-profile.png" alt="" class="img-f" style="width: 50px; " height="50px">
-                    </a>
-                   
-                </div>
-                
+          <!-- Logo & Brand -->
+          <a class="navbar-brand" href="../home.html">
+            <i
+              class="fas fa-dharmachakra fs-1"
+              style="color: var(--primary-color)"
+            ></i>
+            <div>
+              <div style="font-size: 20px">ពុទ្ធសាសនានិងសង្គម</div>
+              <div
+                style="
+                  font-size: 12px;
+                  font-family: 'Battambang';
+                  color: var(--primary-color);
+                "
+              >
+                Buddhism & Society
+              </div>
             </div>
+          </a>
+
+          <!-- Mobile Toggle -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMain"
+          >
+            <i class="fas fa-bars" style="color: var(--primary-color)"></i>
+          </button>
+
+          <!-- Main Menu -->
+          <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+              <!-- Home -->
+              <li class="nav-item">
+                <a class="nav-link" href="../home.html"> ទំព័រដើម </a>
+              </li>
+              <!-- Dhamma Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  ព្រះធម៌
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../pages/media-library.html">
+                      បណ្ណាល័យព្រះធម៌
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/dhammaVideo.html">
+                      វីដេអូធម៌
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/dhammaAudio.html">
+                      សំឡេងធម៌
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../pages/questionandanwser.html"
+                    >
+                      សំណួរ និង ចម្លើយ
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Courses -->
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/education.html">
+                  ការអប់រំ
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  ព្រឹត្តិការណ៍
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../pages/buddism.html">
+                      ពុទ្ធសាសនា
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/culture.html">
+                      វប្បធម៌ខ្មែរ
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Services -->
+
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/events.html"> កម្មវិធី </a>
+              </li>
+              <!-- About Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  អំពីយើង
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../pages/history.html">
+                      ប្រវត្តិ
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/mission.html">
+                      បេសកកម្ម
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/team.html">
+                      ក្រុមការងារ
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Services -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  ផ្សេងៗ
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../pages/Buddhist Rituals.html"
+                    >
+                      កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/volunteer.html">
+                      ចូលរូមស្ម័គ្រចិត្ត
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="../pages/contact.html">
+                      ទាក់ទំនង
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Right Side Buttons -->
+
+            <div class="d-flex gap-2 align-items-center ms-auto">
+              <!-- Theme Toggle -->
+              <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon" id="themeIcon"></i>
+              </button>
+              <!-- button search model -->
+              <button
+                class="btn btn-outline-primary d-none d-lg-block"
+                data-bs-toggle="modal"
+                data-bs-target="#searchModal"
+              >
+                <i class="fas fa-search"></i> ស្វែងរក
+              </button>
+              <!-- User Profile -->
+
+              <a href="../pages/auth/userProfile.html" class="user-profile">
+                <img
+                  src="../asset/images/img-profile/user-profile.png"
+                  alt=""
+                  class="img-f"
+                  style="width: 50px"
+                  height="50px"
+                />
+              </a>
+            </div>
+          </div>
         </div>
-    </nav>
+      </nav>
     </header>
 
-<!-- HERO -->
+    <!-- HERO -->
     <section class="hero-section">
-        <div class="container hero-content">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <h1 class="hero-title">កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ</h1>
-                    <p style="font-size: 20px; margin-bottom: 32px; opacity: 0.95;">
-                        មគ្គុទ្ទេសក៍ពេញលេញអំពីឥរិយាបថ និងការប្រព្រឹត្តត្រឹមត្រូវចំពោះព្រះសង្ឃ
-                    </p>
-                    <div class="d-flex gap-3 flex-wrap">
-                        <span style="background: rgba(255,255,255,0.2); padding: 10px 20px; border-radius: 50px;">
-                            <i class="fas fa-certificate"></i> មានវិញ្ញាបនប័ត្រ
-                        </span>
-                    </div>
-                </div>
-            </div>
+      <div class="container hero-content">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h1 class="hero-title">កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ</h1>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- PROGRESS BAR -->
     <div class="container mt-4">
-        <div class="progress-container">
-            <div class="d-flex justify-content-between align-items-center mb-2">
-                <span style="font-weight: 600;">វឌ្ឍនភាពការរៀន</span>
-                <span id="progressPercent" style="color: var(--primary-color); font-weight: 700;">0%</span>
-            </div>
-            <div class="progress-bar-custom">
-                <div class="progress-fill" id="progressBar" style="width: 0%"></div>
-            </div>
+      <div class="progress-container">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span style="font-weight: 600">វឌ្ឍនភាពការរៀន</span>
+          <span
+            id="progressPercent"
+            style="color: var(--primary-color); font-weight: 700"
+            >0%</span
+          >
         </div>
+        <div class="progress-bar-custom">
+          <div class="progress-fill" id="progressBar" style="width: 0%"></div>
+        </div>
+      </div>
     </div>
 
     <!-- NAVIGATION PILLS -->
     <div class="container">
-        <div class="ritual-nav">
-            <div class="ritual-nav-pills">
-                <button class="ritual-pill active" data-section="overview">
-                    <i class="fas fa-home"></i> ទូទៅ
-                </button>
-                <button class="ritual-pill" data-section="greeting">
-                    <i class="fas fa-hand-holding-heart"></i> ការថ្វាយបង្គំ
-                </button>
-                <button class="ritual-pill" data-section="temple">
-                    <i class="fas fa-gopuram"></i> ពេលចូលវត្ត
-                </button>
-                <button class="ritual-pill" data-section="clothing">
-                    <i class="fas fa-tshirt"></i> ការស្លៀកពាក់
-                </button>
-                <button class="ritual-pill" data-section="language">
-                    <i class="fas fa-comments"></i> ភាសានិយាយ
-                </button>
-                <button class="ritual-pill" data-section="offering">
-                    <i class="fas fa-gift"></i> ការប្រគេនទាន
-                </button>
-                <button class="ritual-pill" data-section="examples">
-                    <i class="fas fa-lightbulb"></i> ឧទាហរណ៍
-                </button>
-                <button class="ritual-pill" data-section="mistakes">
-                    <i class="fas fa-exclamation-triangle"></i> កំហុសញឹកញាប់
-                </button>
-            </div>
+      <div class="ritual-nav">
+        <div class="ritual-nav-pills">
+          <button class="ritual-pill active" data-section="overview">
+            <i class="fas fa-home"></i> ទូទៅ
+          </button>
+          <button class="ritual-pill" data-section="greeting">
+            <i class="fas fa-hand-holding-heart"></i> ការថ្វាយបង្គំ
+          </button>
+          <button class="ritual-pill" data-section="temple">
+            <i class="fas fa-gopuram"></i> ពេលចូលវត្ត
+          </button>
+          <button class="ritual-pill" data-section="clothing">
+            <i class="fas fa-tshirt"></i> ការស្លៀកពាក់
+          </button>
+          <button class="ritual-pill" data-section="language">
+            <i class="fas fa-comments"></i> ភាសានិយាយ
+          </button>
+          <button class="ritual-pill" data-section="offering">
+            <i class="fas fa-gift"></i> ការប្រគេនទាន
+          </button>
+          <button class="ritual-pill" data-section="examples">
+            <i class="fas fa-lightbulb"></i> ឧទាហរណ៍
+          </button>
+          <button class="ritual-pill" data-section="mistakes">
+            <i class="fas fa-exclamation-triangle"></i> កំហុសញឹកញាប់
+          </button>
         </div>
+      </div>
     </div>
-<main>
-    <!-- MAIN CONTENT -->
-    <div class="container mb-5">
-        
+    <main>
+      <!-- MAIN CONTENT -->
+      <div class="container mb-5">
         <!-- OVERVIEW -->
         <div class="ritual-section" id="overview">
-            <h2 class="section-title">
-                <i class="fas fa-info-circle"></i> គោលការណ៍ទូទៅ
-            </h2>
-            
-            <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">
-                ការប្រព្រឹត្តកិច្ចវិន័យត្រឹមត្រូវចំពោះព្រះសង្ឃគឺជាការបង្ហាញពីការគោរព និងជាការថែរក្សាប្រពៃណីពុទ្ធសាសនា។ 
-                វាជួយឱ្យយើងសម្រេចបុណ្យកុសល និងអភិវឌ្ឍសីលធម៌របស់ខ្លួន។
+          <h2 class="section-title">
+            <i class="fas fa-info-circle"></i> គោលការណ៍ទូទៅ
+          </h2>
+
+          <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px">
+            ការប្រព្រឹត្តកិច្ចវិន័យត្រឹមត្រូវចំពោះព្រះសង្ឃគឺជាការបង្ហាញពីការគោរព
+            និងជាការថែរក្សាប្រពៃណីពុទ្ធសាសនា។ វាជួយឱ្យយើងសម្រេចបុណ្យកុសល
+            និងអភិវឌ្ឍសីលធម៌របស់ខ្លួន។
+          </p>
+
+          <div class="info-box">
+            <div class="info-box-title">
+              <i class="fas fa-lightbulb"></i> ហេតុអ្វីបានជាសំខាន់?
+            </div>
+            <p style="margin: 0; line-height: 1.7">
+              កិច្ចវិន័យពុទ្ធបរិស័ទមិនមែនជាការរឹតបន្តឹងទេ
+              ប៉ុន្តែជាការបង្ហាញនូវការគោរព និងការថែរក្សាប្រពៃណីដ៏ល្អរបស់ជាតិ។
+              ការអនុវត្តត្រឹមត្រូវនឹងនាំមកនូវសេចក្តីសុខ និងសន្តិភាពក្នុងចិត្ត
+              ព្រមទាំងជាគំរូល្អដល់កូនចៅជំនាន់ក្រោយ។
             </p>
+          </div>
 
-            <div class="info-box">
-                <div class="info-box-title">
-                    <i class="fas fa-lightbulb"></i> ហេតុអ្វីបានជាសំខាន់?
-                </div>
-                <p style="margin: 0; line-height: 1.7;">
-                    កិច្ចវិន័យពុទ្ធបរិស័ទមិនមែនជាការរឹតបន្តឹងទេ ប៉ុន្តែជាការបង្ហាញនូវការគោរព និងការថែរក្សាប្រពៃណីដ៏ល្អរបស់ជាតិ។ 
-                    ការអនុវត្តត្រឹមត្រូវនឹងនាំមកនូវសេចក្តីសុខ និងសន្តិភាពក្នុងចិត្ត ព្រមទាំងជាគំរូល្អដល់កូនចៅជំនាន់ក្រោយ។
+          <h3 class="section-subtitle">
+            <i class="fas fa-star"></i> អត្ថប្រយោជន៍នៃការអនុវត្ត
+          </h3>
+
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div
+                class="text-center p-4"
+                style="
+                  background: var(--bg-secondary);
+                  border-radius: 16px;
+                  border: 2px solid var(--border-color);
+                  height: 100%;
+                "
+              >
+                <div style="font-size: 48px; margin-bottom: 16px">📿</div>
+                <h5>សម្រេចបុណ្យកុសលធំ</h5>
+                <p class="text-secondary">
+                  ការប្រព្រឹត្តត្រឹមត្រូវនាំមកបុណ្យកុសល និងជីវិតប្រសើរ
                 </p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div
+                class="text-center p-4"
+                style="
+                  background: var(--bg-secondary);
+                  border-radius: 16px;
+                  border: 2px solid var(--border-color);
+                  height: 100%;
+                "
+              >
+                <div style="font-size: 48px; margin-bottom: 16px">🌟</div>
+                <h5>ជាគំរូល្អ</h5>
+                <p class="text-secondary">
+                  ដល់កូនចៅជំនាន់ក្រោយក្នុងការថែរក្សាប្រពៃណី
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div
+                class="text-center p-4"
+                style="
+                  background: var(--bg-secondary);
+                  border-radius: 16px;
+                  border: 2px solid var(--border-color);
+                  height: 100%;
+                "
+              >
+                <div style="font-size: 48px; margin-bottom: 16px">🏛️</div>
+                <h5>ថែរក្សាវប្បធម៌</h5>
+                <p class="text-secondary">និងប្រពៃណីជាតិដ៏ថ្លៃថ្នូរ</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="section-subtitle mt-4">
+            <i class="fas fa-list-check"></i> គោលការណ៍ចម្បង ៥ យ៉ាង
+          </h3>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div class="timeline-content">
+                <h5 style="color: var(--primary-color); margin-bottom: 10px">
+                  ១. ការគោរព (Respect)
+                </h5>
+                <p class="mb-0">
+                  បង្ហាញការគោរពដោយគំនិត សំដី និងកាយវិការត្រឹមត្រូវ
+                </p>
+              </div>
             </div>
 
-            <h3 class="section-subtitle">
-                <i class="fas fa-star"></i> អត្ថប្រយោជន៍នៃការអនុវត្ត
-            </h3>
-            
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <div class="text-center p-4" style="background: var(--bg-secondary); border-radius: 16px; border: 2px solid var(--border-color); height: 100%;">
-                        <div style="font-size: 48px; margin-bottom: 16px;">📿</div>
-                        <h5>សម្រេចបុណ្យកុសលធំ</h5>
-                        <p class="text-secondary">ការប្រព្រឹត្តត្រឹមត្រូវនាំមកបុណ្យកុសល និងជីវិតប្រសើរ</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="text-center p-4" style="background: var(--bg-secondary); border-radius: 16px; border: 2px solid var(--border-color); height: 100%;">
-                        <div style="font-size: 48px; margin-bottom: 16px;">🌟</div>
-                        <h5>ជាគំរូល្អ</h5>
-                        <p class="text-secondary">ដល់កូនចៅជំនាន់ក្រោយក្នុងការថែរក្សាប្រពៃណី</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="text-center p-4" style="background: var(--bg-secondary); border-radius: 16px; border: 2px solid var(--border-color); height: 100%;">
-                        <div style="font-size: 48px; margin-bottom: 16px;">🏛️</div>
-                        <h5>ថែរក្សាវប្បធម៌</h5>
-                        <p class="text-secondary">និងប្រពៃណីជាតិដ៏ថ្លៃថ្នូរ</p>
-                    </div>
-                </div>
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fas fa-praying-hands"></i>
+              </div>
+              <div class="timeline-content">
+                <h5 style="color: var(--primary-color); margin-bottom: 10px">
+                  ២. ការថ្វាយបង្គំ (Worship)
+                </h5>
+                <p class="mb-0">
+                  ថ្វាយបង្គំដោយចិត្តស្មោះស្ម័គ្រ និងមិនមែនសម្រាប់បង្ហាញ
+                </p>
+              </div>
             </div>
 
-            <h3 class="section-subtitle mt-4">
-                <i class="fas fa-list-check"></i> គោលការណ៍ចម្បង ៥ យ៉ាង
-            </h3>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h5 style="color: var(--primary-color); margin-bottom: 10px;">១. ការគោរព (Respect)</h5>
-                        <p class="mb-0">បង្ហាញការគោរពដោយគំនិត សំដី និងកាយវិការត្រឹមត្រូវ</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-praying-hands"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h5 style="color: var(--primary-color); margin-bottom: 10px;">២. ការថ្វាយបង្គំ (Worship)</h5>
-                        <p class="mb-0">ថ្វាយបង្គំដោយចិត្តស្មោះស្ម័គ្រ និងមិនមែនសម្រាប់បង្ហាញ</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-hands-helping"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h5 style="color: var(--primary-color); margin-bottom: 10px;">៣. ការគាំទ្រ (Support)</h5>
-                        <p class="mb-0">គាំទ្រការងារព្រះសង្ឃដោយទេយ្យទាន និងកិច្ចការស្ម័គ្រចិត្ត</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-book-open"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h5 style="color: var(--primary-color); margin-bottom: 10px;">៤. ការស្តាប់ (Listening)</h5>
-                        <p class="mb-0">ស្តាប់ព្រះធម៌ទេសនាដោយយកចិត្តទុកដាក់ និងអនុវត្តតាម</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h5 style="color: var(--primary-color); margin-bottom: 10px;">៥. ការថែរក្សា (Protection)</h5>
-                        <p class="mb-0">ថែរក្សាកិត្តិនាម និងប្រពៃណីពុទ្ធសាសនា</p>
-                    </div>
-                </div>
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <div class="timeline-content">
+                <h5 style="color: var(--primary-color); margin-bottom: 10px">
+                  ៣. ការគាំទ្រ (Support)
+                </h5>
+                <p class="mb-0">
+                  គាំទ្រការងារព្រះសង្ឃដោយទេយ្យទាន និងកិច្ចការស្ម័គ្រចិត្ត
+                </p>
+              </div>
             </div>
+
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fas fa-book-open"></i>
+              </div>
+              <div class="timeline-content">
+                <h5 style="color: var(--primary-color); margin-bottom: 10px">
+                  ៤. ការស្តាប់ (Listening)
+                </h5>
+                <p class="mb-0">
+                  ស្តាប់ព្រះធម៌ទេសនាដោយយកចិត្តទុកដាក់ និងអនុវត្តតាម
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="timeline-content">
+                <h5 style="color: var(--primary-color); margin-bottom: 10px">
+                  ៥. ការថែរក្សា (Protection)
+                </h5>
+                <p class="mb-0">ថែរក្សាកិត្តិនាម និងប្រពៃណីពុទ្ធសាសនា</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- GREETING SECTION -->
         <div class="ritual-section" id="greeting">
-            <h2 class="section-title">
-                <i class="fas fa-praying-hands"></i> របៀបថ្វាយបង្គំ
-            </h2>
+          <h2 class="section-title">
+            <i class="fas fa-praying-hands"></i> របៀបថ្វាយបង្គំ
+          </h2>
 
-            <div class="info-box">
-                <div class="info-box-title">
-                    <i class="fas fa-info-circle"></i> សារៈសំខាន់នៃការថ្វាយបង្គំ
-                </div>
-                <p style="margin: 0; line-height: 1.7;">
-                    ការថ្វាយបង្គំគឺជាការបង្ហាញនូវភាពទាបទន់ និងការគោរពយ៉ាងជ្រាលជ្រៅចំពោះព្រះរត្នត្រ័យ។ 
-                    វាជួយឱ្យចិត្តយើងស្ងប់ស្ងាត់ និងរៀបចំខ្លួនសម្រាប់ការស្តាប់ព្រះធម៌។
-                </p>
+          <div class="info-box">
+            <div class="info-box-title">
+              <i class="fas fa-info-circle"></i> សារៈសំខាន់នៃការថ្វាយបង្គំ
             </div>
+            <p style="margin: 0; line-height: 1.7">
+              ការថ្វាយបង្គំគឺជាការបង្ហាញនូវភាពទាបទន់
+              និងការគោរពយ៉ាងជ្រាលជ្រៅចំពោះព្រះរត្នត្រ័យ។
+              វាជួយឱ្យចិត្តយើងស្ងប់ស្ងាត់ និងរៀបចំខ្លួនសម្រាប់ការស្តាប់ព្រះធម៌។
+            </p>
+          </div>
 
-            <div class="steps-container">
-                <div class="step-item">
-                    <div class="step-number">១</div>
-                    <div class="step-content">
-                        <div class="list-item">
-                            <i class="fas fa-check list-icon"></i>
-                            <span>សម្លៀកបំពាក់ប្រពៃណីខ្មែរ (កាន់តែល្អ)</span>
-                        </div>
-                        <hr style="margin: 16px 0;">
-                        <div class="list-item" style="background: rgba(239, 68, 68, 0.05);">
-                            <i class="fas fa-times list-icon" style="color: var(--warning-color);"></i>
-                            <span>មិនគួរស្លៀកសម្លៀកបំពាក់តឹង ឬខ្លីពេក</span>
-                        </div>
-                        <div class="list-item" style="background: rgba(239, 68, 68, 0.05);">
-                            <i class="fas fa-times list-icon" style="color: var(--warning-color);"></i>
-                            <span>មិនគួរស្លៀកស្រោមជើង (ខោជើងខ្លី)</span>
-                        </div>
-                        <div class="list-item" style="background: rgba(239, 68, 68, 0.05);">
-                            <i class="fas fa-times list-icon" style="color: var(--warning-color);"></i>
-                            <span>មិនគួរស្លៀកអាវខ្សែ ឬអាវមិនគ្របស្មា</span>
-                        </div>
-                        <div class="list-item" style="background: rgba(239, 68, 68, 0.05);">
-                            <i class="fas fa-times list-icon" style="color: var(--warning-color);"></i>
-                            <span>មិនគួរពាក់គ្រឿងលម្អច្រើនពេក</span>
-                        </div>
-                    </div>
+          <div class="steps-container">
+            <div class="step-item">
+              <div class="step-number">១</div>
+              <div class="step-content">
+                <div class="list-item">
+                  <i class="fas fa-check list-icon"></i>
+                  <span>សម្លៀកបំពាក់ប្រពៃណីខ្មែរ (កាន់តែល្អ)</span>
                 </div>
+                <hr style="margin: 16px 0" />
+                <div
+                  class="list-item"
+                  style="background: rgba(239, 68, 68, 0.05)"
+                >
+                  <i
+                    class="fas fa-times list-icon"
+                    style="color: var(--warning-color)"
+                  ></i>
+                  <span>មិនគួរស្លៀកសម្លៀកបំពាក់តឹង ឬខ្លីពេក</span>
+                </div>
+                <div
+                  class="list-item"
+                  style="background: rgba(239, 68, 68, 0.05)"
+                >
+                  <i
+                    class="fas fa-times list-icon"
+                    style="color: var(--warning-color)"
+                  ></i>
+                  <span>មិនគួរស្លៀកស្រោមជើង (ខោជើងខ្លី)</span>
+                </div>
+                <div
+                  class="list-item"
+                  style="background: rgba(239, 68, 68, 0.05)"
+                >
+                  <i
+                    class="fas fa-times list-icon"
+                    style="color: var(--warning-color)"
+                  ></i>
+                  <span>មិនគួរស្លៀកអាវខ្សែ ឬអាវមិនគ្របស្មា</span>
+                </div>
+                <div
+                  class="list-item"
+                  style="background: rgba(239, 68, 68, 0.05)"
+                >
+                  <i
+                    class="fas fa-times list-icon"
+                    style="color: var(--warning-color)"
+                  ></i>
+                  <span>មិនគួរពាក់គ្រឿងលម្អច្រើនពេក</span>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <h3 class="section-subtitle mt-4">
-                <i class="fas fa-palette"></i> ពណ៌សមរម្យ
-            </h3>
+          <h3 class="section-subtitle mt-4">
+            <i class="fas fa-palette"></i> ពណ៌សមរម្យ
+          </h3>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="example-card">
-                        <h5 style="color: var(--success-color); margin-bottom: 16px;">
-                            <i class="fas fa-check-circle"></i> ពណ៌ល្អ
-                        </h5>
-                        <div class="d-flex flex-wrap gap-2">
-                            <span style="background: white; color: #333; padding: 8px 16px; border-radius: 20px; border: 2px solid #ddd;">⚪ ស</span>
-                            <span style="background: #f5f5dc; padding: 8px 16px; border-radius: 20px;">🟡 ក្រែម</span>
-                            <span style="background: #fadadd; padding: 8px 16px; border-radius: 20px;">🌸 ផ្កាឈូក</span>
-                            <span style="background: #e6e6fa; padding: 8px 16px; border-radius: 20px;">💜 ស្វាយស្រាល</span>
-                            <span style="background: #b0e0e6; padding: 8px 16px; border-radius: 20px;">🔵 ខៀវស្រាល</span>
-                        </div>
-                    </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="example-card">
+                <h5 style="color: var(--success-color); margin-bottom: 16px">
+                  <i class="fas fa-check-circle"></i> ពណ៌ល្អ
+                </h5>
+                <div class="d-flex flex-wrap gap-2">
+                  <span
+                    style="
+                      background: white;
+                      color: #333;
+                      padding: 8px 16px;
+                      border-radius: 20px;
+                      border: 2px solid #ddd;
+                    "
+                    >⚪ ស</span
+                  >
+                  <span
+                    style="
+                      background: #f5f5dc;
+                      padding: 8px 16px;
+                      border-radius: 20px;
+                    "
+                    >🟡 ក្រែម</span
+                  >
+                  <span
+                    style="
+                      background: #fadadd;
+                      padding: 8px 16px;
+                      border-radius: 20px;
+                    "
+                    >🌸 ផ្កាឈូក</span
+                  >
+                  <span
+                    style="
+                      background: #e6e6fa;
+                      padding: 8px 16px;
+                      border-radius: 20px;
+                    "
+                    >💜 ស្វាយស្រាល</span
+                  >
+                  <span
+                    style="
+                      background: #b0e0e6;
+                      padding: 8px 16px;
+                      border-radius: 20px;
+                    "
+                    >🔵 ខៀវស្រាល</span
+                  >
                 </div>
-                <div class="col-md-6">
-                    <div class="example-card">
-                        <h5 style="color: var(--warning-color); margin-bottom: 16px;">
-                            <i class="fas fa-times-circle"></i> ពណ៌មិនសមរម្យ
-                        </h5>
-                        <div class="d-flex flex-wrap gap-2">
-                            <span style="background: #ff0000; color: white; padding: 8px 16px; border-radius: 20px;">🔴 ក្រហមភ្លឺ</span>
-                            <span style="background: #000000; color: white; padding: 8px 16px; border-radius: 20px;">⚫ ខ្មៅ</span>
-                            <span style="background: #ff6600; color: white; padding: 8px 16px; border-radius: 20px;">🟠 ទឹកក្រូចភ្លឺ</span>
-                            <span style="background: #ff1493; color: white; padding: 8px 16px; border-radius: 20px;">🌺 ផ្កាឈូកភ្លឺ</span>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="col-md-6">
+              <div class="example-card">
+                <h5 style="color: var(--warning-color); margin-bottom: 16px">
+                  <i class="fas fa-times-circle"></i> ពណ៌មិនសមរម្យ
+                </h5>
+                <div class="d-flex flex-wrap gap-2">
+                  <span
+                    style="
+                      background: #ff0000;
+                      color: white;
+                      padding: 8px 16px;
+                      border-radius: 20px;
+                    "
+                    >🔴 ក្រហមភ្លឺ</span
+                  >
+                  <span
+                    style="
+                      background: #000000;
+                      color: white;
+                      padding: 8px 16px;
+                      border-radius: 20px;
+                    "
+                    >⚫ ខ្មៅ</span
+                  >
+                  <span
+                    style="
+                      background: #ff6600;
+                      color: white;
+                      padding: 8px 16px;
+                      border-radius: 20px;
+                    "
+                    >🟠 ទឹកក្រូចភ្លឺ</span
+                  >
+                  <span
+                    style="
+                      background: #ff1493;
+                      color: white;
+                      padding: 8px 16px;
+                      border-radius: 20px;
+                    "
+                    >🌺 ផ្កាឈូកភ្លឺ</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- LANGUAGE SECTION -->
         <div class="ritual-section" id="language">
-            <h2 class="section-title">
-                <i class="fas fa-comments"></i> ភាសានិយាយត្រឹមត្រូវ
-            </h2>
+          <h2 class="section-title">
+            <i class="fas fa-comments"></i> ភាសានិយាយត្រឹមត្រូវ
+          </h2>
 
-            <div class="info-box">
-                <div class="info-box-title">
-                    <i class="fas fa-language"></i> សារៈសំខាន់នៃការប្រើពាក្យ
-                </div>
-                <p style="margin: 0; line-height: 1.7;">
-                    ពាក្យសម្តីគឺជាឧបករណ៍បង្ហាញការគោរព។ ការប្រើពាក្យត្រឹមត្រូវបង្ហាញពីកម្រិតវប្បធម៌ និងការអប់រំរបស់យើង។
-                </p>
+          <div class="info-box">
+            <div class="info-box-title">
+              <i class="fas fa-language"></i> សារៈសំខាន់នៃការប្រើពាក្យ
+            </div>
+            <p style="margin: 0; line-height: 1.5">
+              ពាក្យសម្តីគឺជាឧបករណ៍បង្ហាញការគោរព។
+              ការប្រើពាក្យត្រឹមត្រូវបង្ហាញពីកម្រិតវប្បធម៌ និងការអប់រំរបស់យើង។
+            </p>
+          </div>
+
+          <div class="do-dont-grid">
+            <div class="do-card">
+              <div class="card-header">
+                <i class="fas fa-check-circle"></i> ពាក្យគួរប្រើ
+              </div>
+              <div class="list-item">
+                <i class="fas fa-quote-left list-icon"></i>
+                <span>"សូមពុទ្ធាធិដ្ឋាន" - ពេលជួបព្រះសង្ឃ</span>
+              </div>
+              <div class="list-item">
+                <i class="fas fa-quote-left list-icon"></i>
+                <span>"សូមព្រះករុណា" - ពេលសុំអ្វីមួយ</span>
+              </div>
+              <div class="list-item">
+                <i class="fas fa-quote-left list-icon"></i>
+                <span>"សូមថ្វាយបង្គំ" - ពេលចាប់ផ្តើមនិយាយ</span>
+              </div>
+              <div class="list-item">
+                <i class="fas fa-quote-left list-icon"></i>
+                <span>"ខ្ញុំព្រះករុណា សូមថ្វាយបង្គំលា" - ពេលលា</span>
+              </div>
+              <div class="list-item">
+                <i class="fas fa-quote-left list-icon"></i>
+                <span>"សូមព្រះអង្គសុខសប្បាយ" - សួរសុខទុក្ខ</span>
+              </div>
+              <div class="list-item">
+                <i class="fas fa-quote-left list-icon"></i>
+                <span>"សូមអនុមោទនា" - បន្ទាប់ពីបានបុណ្យ</span>
+              </div>
+              <div class="list-item">
+                <i class="fas fa-quote-left list-icon"></i>
+                <span>"សូមព្រះអង្គទទួលយកនូវទេយ្យទាន" - ពេលប្រគេន</span>
+              </div>
             </div>
 
-            <div class="do-dont-grid">
-                <div class="do-card">
-                    <div class="card-header">
-                        <i class="fas fa-check-circle"></i> ពាក្យគួរប្រើ
-                    </div>
-                    <div class="list-item">
-                        <i class="fas fa-quote-left list-icon"></i>
-                        <span>"សូមពុទ្ធាធិដ្ឋាន" - ពេលជួបព្រះសង្ឃ</span>
-                    </div>
-                    <div class="list-item">
-                        <i class="fas fa-quote-left list-icon"></i>
-                        <span>"សូមព្រះករុណា" - ពេលសុំអ្វីមួយ</span>
-                    </div>
-                    <div class="list-item">
-                        <i class="fas fa-quote-left list-icon"></i>
-                        <span>"សូមថ្វាយបង្គំ" - ពេលចាប់ផ្តើមនិយាយ</span>
-                    </div>
-                    <div class="list-item">
-                        <i class="fas fa-quote-left list-icon"></i>
-                        <span>"ខ្ញុំព្រះករុណា សូមថ្វាយបង្គំលា" - ពេលលា</span>
-                    </div>
-                    <div class="list-item">
-                        <i class="fas fa-quote-left list-icon"></i>
-                        <span>"សូមព្រះអង្គសុខសប្បាយ" - សួរសុខទុក្ខ</span>
-                    </div>
-                    <div class="list-item">
-                        <i class="fas fa-quote-left list-icon"></i>
-                        <span>"សូមអនុមោទនា" - បន្ទាប់ពីបានបុណ្យ</span>
-                    </div>
-                    <div class="list-item">
-                        <i class="fas fa-quote-left list-icon"></i>
-                        <span>"សូមព្រះអង្គទទួលយកនូវទេយ្យទាន" - ពេលប្រគេន</span>
-                    </div>
-                </div>
+            <div class="dont-card">
+              <div class="card-header">
+                <i class="fas fa-times-circle"></i> មិនគួរនិយាយ
+              </div>
+              <div class="list-item">
+                <i class="fas fa-times list-icon"></i>
+                <span>ពាក្យមិនគោរព ឬលេងសើច</span>
+              </div>
+              <div class="list-item">
+                <i class="fas fa-times list-icon"></i>
+                <span>ពាក្យបន្ទោស ឬរិះគន់</span>
+              </div>
+              <div class="list-item">
+                <i class="fas fa-times list-icon"></i>
+                <span>ពាក្យពាណិជ្ជកម្ម ឬលក់ទំនិញ</span>
+              </div>
+              <div class="list-item">
+                <i class="fas fa-times list-icon"></i>
+                <span>សំណួរមិនសមរម្យអំពីជីវិតផ្ទាល់ខ្លួន</span>
+              </div>
+              <div class="list-item">
+                <i class="fas fa-times list-icon"></i>
+                <span>និយាយគ្មានសេចក្តី ឬច្រើនពេក</span>
+              </div>
+              <div class="list-item">
+                <i class="fas fa-times list-icon"></i>
+                <span>និយាយដោយសំឡេងខ្លាំង</span>
+              </div>
+              <div class="list-item">
+                <i class="fas fa-times list-icon"></i>
+                <span>និយាយអំពីអ្នកដទៃមិនល្អ</span>
+              </div>
+            </div>
+          </div>
 
-                <div class="dont-card">
-                    <div class="card-header">
-                        <i class="fas fa-times-circle"></i> មិនគួរនិយាយ
-                    </div>
-                    <div class="list-item">
-                        <i class="fas fa-times list-icon"></i>
-                        <span>ពាក្យមិនគោរព ឬលេងសើច</span>
-                    </div>
-                    <div class="list-item">
-                        <i class="fas fa-times list-icon"></i>
-                        <span>ពាក្យបន្ទោស ឬរិះគន់</span>
-                    </div>
-                    <div class="list-item">
-                        <i class="fas fa-times list-icon"></i>
-                        <span>ពាក្យពាណិជ្ជកម្ម ឬលក់ទំនិញ</span>
-                    </div>
-                    <div class="list-item">
-                        <i class="fas fa-times list-icon"></i>
-                        <span>សំណួរមិនសមរម្យអំពីជីវិតផ្ទាល់ខ្លួន</span>
-                    </div>
-                    <div class="list-item">
-                        <i class="fas fa-times list-icon"></i>
-                        <span>និយាយគ្មានសេចក្តី ឬច្រើនពេក</span>
-                    </div>
-                    <div class="list-item">
-                        <i class="fas fa-times list-icon"></i>
-                        <span>និយាយដោយសំឡេងខ្លាំង</span>
-                    </div>
-                    <div class="list-item">
-                        <i class="fas fa-times list-icon"></i>
-                        <span>និយាយអំពីអ្នកដទៃមិនល្អ</span>
-                    </div>
-                </div>
+          <h3 class="section-subtitle mt-4">
+            <i class="fas fa-comment-dots"></i> របៀបសួរសំណួរ
+          </h3>
+
+          <div class="example-card">
+            <div class="example-scenario">
+              <h6 style="color: var(--primary-color); font-weight: 700">
+                <i class="fas fa-check"></i> វិធីត្រឹមត្រូវ:
+              </h6>
+              <p class="mb-0">
+                "សូមព្រះករុណា ខ្ញុំព្រះករុណាមានសំណួរមួយចង់សួរ។
+                តើខ្ញុំអាចសួរបានទេ?"
+                <br />រង់ចាំព្រះសង្ឃឆ្លើយយល់ព្រម បន្ទាប់មកសួរដោយគោរព។
+              </p>
             </div>
 
-            <h3 class="section-subtitle mt-4">
-                <i class="fas fa-comment-dots"></i> របៀបសួរសំណួរ
-            </h3>
-
-            <div class="example-card">
-                <div class="example-scenario">
-                    <h6 style="color: var(--primary-color); font-weight: 700;">
-                        <i class="fas fa-check"></i> វិធីត្រឹមត្រូវ:
-                    </h6>
-                    <p class="mb-0">
-                        "សូមព្រះករុណា ខ្ញុំព្រះករុណាមានសំណួរមួយចង់សួរ។ តើខ្ញុំអាចសួរបានទេ?" 
-                        <br>រង់ចាំព្រះសង្ឃឆ្លើយយល់ព្រម បន្ទាប់មកសួរដោយគោរព។
-                    </p>
-                </div>
-
-                <div class="example-scenario">
-                    <h6 style="color: var(--warning-color); font-weight: 700;">
-                        <i class="fas fa-times"></i> វិធីមិនត្រឹមត្រូវ:
-                    </h6>
-                    <p class="mb-0">
-                        សួរភ្លាមៗដោយមិនសុំការអនុញ្ញាត ឬសួរសំណួរច្រើនពេកក្នុងពេលតែមួយ។
-                    </p>
-                </div>
+            <div class="example-scenario">
+              <h6 style="color: var(--warning-color); font-weight: 700">
+                <i class="fas fa-times"></i> វិធីមិនត្រឹមត្រូវ:
+              </h6>
+              <p class="mb-0">
+                សួរភ្លាមៗដោយមិនសុំការអនុញ្ញាត ឬសួរសំណួរច្រើនពេកក្នុងពេលតែមួយ។
+              </p>
             </div>
+          </div>
 
-            <div class="info-box mt-4">
-                <div class="info-box-title">
-                    <i class="fas fa-info-circle"></i> គន្លឹះសំខាន់
-                </div>
-                <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
-                    <li>និយាយយឺតៗ និងច្បាស់លាស់</li>
-                    <li>ប្រើភាសាគោរព និងទន់ភ្លន់</li>
-                    <li>ស្តាប់ព្រះសង្ឃនិយាយដោយយកចិត្តទុកដាក់</li>
-                    <li>កុំនិយាយលើសពី 2-3 នាទីក្នុងមួយពេល</li>
-                    <li>ប្រសិនបើព្រះសង្ឃសូមឱ្យឈប់ សូមឈប់ភ្លាមៗ</li>
-                </ul>
+          <div class="info-box mt-4">
+            <div class="info-box-title">
+              <i class="fas fa-info-circle"></i> គន្លឹះសំខាន់
             </div>
+            <ul style="margin: 0; padding-left: 20px; line-height: 1.8">
+              <li>និយាយយឺតៗ និងច្បាស់លាស់</li>
+              <li>ប្រើភាសាគោរព និងទន់ភ្លន់</li>
+              <li>ស្តាប់ព្រះសង្ឃនិយាយដោយយកចិត្តទុកដាក់</li>
+              <li>កុំនិយាយលើសពី 2-3 នាទីក្នុងមួយពេល</li>
+              <li>ប្រសិនបើព្រះសង្ឃសូមឱ្យឈប់ សូមឈប់ភ្លាមៗ</li>
+            </ul>
+          </div>
         </div>
 
         <!-- OFFERING SECTION -->
         <div class="ritual-section" id="offering">
-            <h2 class="section-title">
-                <i class="fas fa-gift"></i> ការប្រគេនទានត្រឹមត្រូវ
-            </h2>
+          <h2 class="section-title">
+            <i class="fas fa-gift"></i> ការប្រគេនទានត្រឹមត្រូវ
+          </h2>
 
-            <div class="info-box">
-                <div class="info-box-title">
-                    <i class="fas fa-heart"></i> អត្ថន័យនៃការប្រគេនទាន
+          <div class="info-box">
+            <div class="info-box-title">
+              <i class="fas fa-heart"></i> អត្ថន័យនៃការប្រគេនទាន
+            </div>
+            <p style="margin: 0; line-height: 1.7">
+              ការប្រគេនទានគឺជាការអភិវឌ្ឍគុណធម៌ចាកទាន។ វាជួយយើងកាត់បន្ថយលោភៈ
+              និងបង្កើតកុសលធំ។ សំខាន់គឺចិត្តស្មោះស្ម័គ្រ មិនមែនតម្លៃទេយ្យទានទេ។
+            </p>
+          </div>
+
+          <h3 class="section-subtitle">
+            <i class="fas fa-hand-holding-heart"></i> លំដាប់ធ្វើការប្រគេនទាន
+          </h3>
+
+          <div class="steps-container">
+            <div class="step-item">
+              <div class="step-number">១</div>
+              <div class="step-content">
+                <div class="step-title">រៀបចំទេយ្យទាន</div>
+                <div class="step-description">
+                  រៀបចំទេយ្យទានឱ្យបានស្អាត និងសមរម្យ។ ប្រសិនបើជាអាហារ
+                  ត្រូវតែបរិសុទ្ធ និងសមរម្យសម្រាប់ព្រះសង្ឃ។
                 </div>
-                <p style="margin: 0; line-height: 1.7;">
-                    ការប្រគេនទានគឺជាការអភិវឌ្ឍគុណធម៌ចាកទាន។ វាជួយយើងកាត់បន្ថយលោភៈ និងបង្កើតកុសលធំ។ 
-                    សំខាន់គឺចិត្តស្មោះស្ម័គ្រ មិនមែនតម្លៃទេយ្យទានទេ។
-                </p>
+              </div>
             </div>
 
-            <h3 class="section-subtitle">
-                <i class="fas fa-hand-holding-heart"></i> លំដាប់ធ្វើការប្រគេនទាន
-            </h3>
-
-            <div class="steps-container">
-                <div class="step-item">
-                    <div class="step-number">១</div>
-                    <div class="step-content">
-                        <div class="step-title">រៀបចំទេយ្យទាន</div>
-                        <div class="step-description">
-                            រៀបចំទេយ្យទានឱ្យបានស្អាត និងសមរម្យ។ ប្រសិនបើជាអាហារ ត្រូវតែបរិសុទ្ធ និងសមរម្យសម្រាប់ព្រះសង្ឃ។
-                        </div>
-                    </div>
+            <div class="step-item">
+              <div class="step-number">២</div>
+              <div class="step-content">
+                <div class="step-title">ថ្វាយបង្គំមុន</div>
+                <div class="step-description">
+                  ថ្វាយបង្គំព្រះសង្ឃ ៣ ដង មុននឹងប្រគេនទាន។
+                  នេះជាការបង្ហាញនូវការគោរព។
                 </div>
-
-                <div class="step-item">
-                    <div class="step-number">២</div>
-                    <div class="step-content">
-                        <div class="step-title">ថ្វាយបង្គំមុន</div>
-                        <div class="step-description">
-                            ថ្វាយបង្គំព្រះសង្ឃ ៣ ដង មុននឹងប្រគេនទាន។ នេះជាការបង្ហាញនូវការគោរព។
-                        </div>
-                    </div>
-                </div>
-
-                <div class="step-item">
-                    <div class="step-number">៣</div>
-                    <div class="step-content">
-                        <div class="step-title">ប្រគេនដោយគោរព</div>
-                        <div class="step-description">
-                            <strong>ប្រើដៃទាំងពីរ</strong> លើកទេយ្យទាន។ កុំប្រើដៃមួយ។ ត្រូវអង្គុយទាបជាងព្រះសង្ឃ។
-                            និយាយថា "សូមព្រះអង្គទទួលយកនូវទេយ្យទាន"
-                        </div>
-                    </div>
-                </div>
-
-                <div class="step-item">
-                    <div class="step-number">៤</div>
-                    <div class="step-content">
-                        <div class="step-title">រង់ចាំព្រះសង្ឃទទួល</div>
-                        <div class="step-description">
-                            កុំដាក់ទេយ្យទានចុះភ្លាម។ រង់ចាំឱ្យព្រះសង្ឃលើកដៃទទួល។ នេះបង្ហាញពីការគោរព។
-                        </div>
-                    </div>
-                </div>
-
-                <div class="step-item">
-                    <div class="step-number">៥</div>
-                    <div class="step-content">
-                        <div class="step-title">រង់ចាំអនុមោទនា</div>
-                        <div class="step-description">
-                            បន្ទាប់ពីប្រគេន សូមរង់ចាំព្រះសង្ឃអនុមោទនា (ប្រទានពរ)។ 
-                            នេះជាចំណែកសំខាន់នៃការប្រគេនទាន។
-                        </div>
-                    </div>
-                </div>
-
-                <div class="step-item">
-                    <div class="step-number">៦</div>
-                    <div class="step-content">
-                        <div class="step-title">ថ្វាយបង្គំម្តងទៀត</div>
-                        <div class="step-description">
-                            ថ្វាយបង្គំ ៣ ដង ដោយការដឹងគុណចំពោះព្រះសង្ឃ។ និយាយថា "សូមអនុមោទនា"
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
 
-            <h3 class="section-subtitle mt-4">
-                <i class="fas fa-gifts"></i> ប្រភេទទេយ្យទានសមរម្យ
-            </h3>
-
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <div class="do-card">
-                        <div class="card-header">
-                            <i class="fas fa-check-circle"></i> គួរប្រគេន
-                        </div>
-                        <div class="list-item">
-                            <i class="fas fa-check list-icon"></i>
-                            <span>បាយ ចំណីអាហារបរិសុទ្ធ</span>
-                        </div>
-                        <div class="list-item">
-                            <i class="fas fa-check list-icon"></i>
-                            <span>ផ្កា និងទៀន</span>
-                        </div>
-                        <div class="list-item">
-                            <i class="fas fa-check list-icon"></i>
-                            <span>ថ្នាំពេទ្យ និងសម្ភារៈសុខភាព</span>
-                        </div>
-                        <div class="list-item">
-                            <i class="fas fa-check list-icon"></i>
-                            <span>សៀវភៅព្រះធម៌</span>
-                        </div>
-                        <div class="list-item">
-                            <i class="fas fa-check list-icon"></i>
-                            <span>ទឹក ភេសជ្ជៈ (មិនមានជាតិស្ករច្រើន)</span>
-                        </div>
-                        <div class="list-item">
-                            <i class="fas fa-check list-icon"></i>
-                            <span>សម្លៀកបំពាក់ព្រះសង្ឃ (ចីវរ)</span>
-                        </div>
-                        <div class="list-item">
-                            <i class="fas fa-check list-icon"></i>
-                            <span>លុយសម្រាប់កសាងវត្ត</span>
-                        </div>
-                    </div>
+            <div class="step-item">
+              <div class="step-number">៣</div>
+              <div class="step-content">
+                <div class="step-title">ប្រគេនដោយគោរព</div>
+                <div class="step-description">
+                  <strong>ប្រើដៃទាំងពីរ</strong> លើកទេយ្យទាន។ កុំប្រើដៃមួយ។
+                  ត្រូវអង្គុយទាបជាងព្រះសង្ឃ។ និយាយថា
+                  "សូមព្រះអង្គទទួលយកនូវទេយ្យទាន"
                 </div>
-
-                <div class="col-md-6 mb-3">
-                    <div class="dont-card">
-                        <div class="card-header">
-                            <i class="fas fa-ban"></i> មិនគួរប្រគេន
-                        </div>
-                        <div class="list-item">
-                            <i class="fas fa-times list-icon"></i>
-                            <span>គ្រឿងស្រវឹង (ស្រា, ស្រាបៀរ)</span>
-                        </div>
-                        <div class="list-item">
-                            <i class="fas fa-times list-icon"></i>
-                            <span>គ្រឿងញៀន (បារី, កញ្ឆា)</span>
-                        </div>
-                        <div class="list-item">
-                            <i class="fas fa-times list-icon"></i>
-                            <span>របស់មិនបរិសុទ្ធ</span>
-                        </div>
-                        <div class="list-item">
-                            <i class="fas fa-times list-icon"></i>
-                            <span>គ្រឿងលេងល្បែង</span>
-                        </div>
-                        <div class="list-item">
-                            <i class="fas fa-times list-icon"></i>
-                            <span>អាហារមិនសមស្រប (សាច់, ត្រី បន្ទាប់ពីរសៀល)</span>
-                        </div>
-                        <div class="list-item">
-                            <i class="fas fa-times list-icon"></i>
-                            <span>គ្រឿងសម្អាង</span>
-                        </div>
-                        <div class="list-item">
-                            <i class="fas fa-times list-icon"></i>
-                            <span>របស់ដែលមានគោលបំណងមិនល្អ</span>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
 
-            <div class="info-box mt-4" style="background: linear-gradient(135deg, #f093fb15 0%, #f5576c15 100%); border-left-color: #f5576c;">
-                <div class="info-box-title" style="color: #f5576c;">
-                    <i class="fas fa-exclamation-triangle"></i> ចំណាំពិសេស
+            <div class="step-item">
+              <div class="step-number">៤</div>
+              <div class="step-content">
+                <div class="step-title">រង់ចាំព្រះសង្ឃទទួល</div>
+                <div class="step-description">
+                  កុំដាក់ទេយ្យទានចុះភ្លាម។ រង់ចាំឱ្យព្រះសង្ឃលើកដៃទទួល។
+                  នេះបង្ហាញពីការគោរព។
                 </div>
-                <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
-                    <li><strong>ពេលវេលាសមរម្យ:</strong> ប្រគេនអាហារមុនរសៀល (មុន 12:00 ថ្ងៃត្រង់)</li>
-                    <li><strong>បន្ទាប់ពីរសៀល:</strong> ប្រគេនបានតែទឹក ភេសជ្ជៈ និងរបស់ប្រើប្រាស់ប៉ុណ្ណោះ</li>
-                    <li><strong>សម្រាប់ស្រី:</strong> កុំប្រគេនដោយប៉ះដៃព្រះសង្ឃ ត្រូវដាក់លើក្រណាត់</li>
-                    <li><strong>គុណភាព:</strong> ប្រគេនរបស់ដែលអ្នកខ្លួនឯងប្រើបាន កុំប្រគេនរបស់ហួសកាលកំណត់</li>
-                </ul>
+              </div>
             </div>
+
+            <div class="step-item">
+              <div class="step-number">៥</div>
+              <div class="step-content">
+                <div class="step-title">រង់ចាំអនុមោទនា</div>
+                <div class="step-description">
+                  បន្ទាប់ពីប្រគេន សូមរង់ចាំព្រះសង្ឃអនុមោទនា (ប្រទានពរ)។
+                  នេះជាចំណែកសំខាន់នៃការប្រគេនទាន។
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">៦</div>
+              <div class="step-content">
+                <div class="step-title">ថ្វាយបង្គំម្តងទៀត</div>
+                <div class="step-description">
+                  ថ្វាយបង្គំ ៣ ដង ដោយការដឹងគុណចំពោះព្រះសង្ឃ។ និយាយថា
+                  "សូមអនុមោទនា"
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="section-subtitle mt-4">
+            <i class="fas fa-gifts"></i> ប្រភេទទេយ្យទានសមរម្យ
+          </h3>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="do-card">
+                <div class="card-header">
+                  <i class="fas fa-check-circle"></i> គួរប្រគេន
+                </div>
+                <div class="list-item">
+                  <i class="fas fa-check list-icon"></i>
+                  <span>បាយ ចំណីអាហារបរិសុទ្ធ</span>
+                </div>
+                <div class="list-item">
+                  <i class="fas fa-check list-icon"></i>
+                  <span>ផ្កា និងទៀន</span>
+                </div>
+                <div class="list-item">
+                  <i class="fas fa-check list-icon"></i>
+                  <span>ថ្នាំពេទ្យ និងសម្ភារៈសុខភាព</span>
+                </div>
+                <div class="list-item">
+                  <i class="fas fa-check list-icon"></i>
+                  <span>សៀវភៅព្រះធម៌</span>
+                </div>
+                <div class="list-item">
+                  <i class="fas fa-check list-icon"></i>
+                  <span>ទឹក ភេសជ្ជៈ (មិនមានជាតិស្ករច្រើន)</span>
+                </div>
+                <div class="list-item">
+                  <i class="fas fa-check list-icon"></i>
+                  <span>សម្លៀកបំពាក់ព្រះសង្ឃ (ចីវរ)</span>
+                </div>
+                <div class="list-item">
+                  <i class="fas fa-check list-icon"></i>
+                  <span>លុយសម្រាប់កសាងវត្ត</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <div class="dont-card">
+                <div class="card-header">
+                  <i class="fas fa-ban"></i> មិនគួរប្រគេន
+                </div>
+                <div class="list-item">
+                  <i class="fas fa-times list-icon"></i>
+                  <span>គ្រឿងស្រវឹង (ស្រា, ស្រាបៀរ)</span>
+                </div>
+                <div class="list-item">
+                  <i class="fas fa-times list-icon"></i>
+                  <span>គ្រឿងញៀន (បារី, កញ្ឆា)</span>
+                </div>
+                <div class="list-item">
+                  <i class="fas fa-times list-icon"></i>
+                  <span>របស់មិនបរិសុទ្ធ</span>
+                </div>
+                <div class="list-item">
+                  <i class="fas fa-times list-icon"></i>
+                  <span>គ្រឿងលេងល្បែង</span>
+                </div>
+                <div class="list-item">
+                  <i class="fas fa-times list-icon"></i>
+                  <span>អាហារមិនសមស្រប (សាច់, ត្រី បន្ទាប់ពីរសៀល)</span>
+                </div>
+                <div class="list-item">
+                  <i class="fas fa-times list-icon"></i>
+                  <span>គ្រឿងសម្អាង</span>
+                </div>
+                <div class="list-item">
+                  <i class="fas fa-times list-icon"></i>
+                  <span>របស់ដែលមានគោលបំណងមិនល្អ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="info-box mt-4"
+            style="
+              background: linear-gradient(135deg, #f093fb15 0%, #f5576c15 100%);
+              border-left-color: #f5576c;
+            "
+          >
+            <div class="info-box-title" style="color: #f5576c">
+              <i class="fas fa-exclamation-triangle"></i> ចំណាំពិសេស
+            </div>
+            <ul style="margin: 0; padding-left: 20px; line-height: 1.8">
+              <li>
+                <strong>ពេលវេលាសមរម្យ:</strong> ប្រគេនអាហារមុនរសៀល (មុន 12:00
+                ថ្ងៃត្រង់)
+              </li>
+              <li>
+                <strong>បន្ទាប់ពីរសៀល:</strong> ប្រគេនបានតែទឹក ភេសជ្ជៈ
+                និងរបស់ប្រើប្រាស់ប៉ុណ្ណោះ
+              </li>
+              <li>
+                <strong>សម្រាប់ស្រី:</strong> កុំប្រគេនដោយប៉ះដៃព្រះសង្ឃ
+                ត្រូវដាក់លើក្រណាត់
+              </li>
+              <li>
+                <strong>គុណភាព:</strong> ប្រគេនរបស់ដែលអ្នកខ្លួនឯងប្រើបាន
+                កុំប្រគេនរបស់ហួសកាលកំណត់
+              </li>
+            </ul>
+          </div>
         </div>
 
         <!-- PRACTICAL EXAMPLES -->
         <div class="ritual-section" id="examples">
-            <h2 class="section-title">
-                <i class="fas fa-lightbulb"></i> ឧទាហរណ៍ជាក់ស្តែង
-            </h2>
+          <h2 class="section-title">
+            <i class="fas fa-lightbulb"></i> ឧទាហរណ៍ជាក់ស្តែង
+          </h2>
 
-            <div class="info-box">
-                <div class="info-box-title">
-                    <i class="fas fa-book-reader"></i> រៀនពីស្ថានការណ៍ពិត
-                </div>
-                <p style="margin: 0;">
-                    ឧទាហរណ៍ទាំងនេះជួយឱ្យអ្នកយល់កាន់តែច្បាស់អំពីការអនុវត្តក្នុងជីវិតប្រចាំថ្ងៃ។
-                </p>
+          <div class="info-box">
+            <div class="info-box-title">
+              <i class="fas fa-book-reader"></i> រៀនពីស្ថានការណ៍ពិត
+            </div>
+            <p style="margin: 0">
+              ឧទាហរណ៍ទាំងនេះជួយឱ្យអ្នកយល់កាន់តែច្បាស់អំពីការអនុវត្តក្នុងជីវិតប្រចាំថ្ងៃ។
+            </p>
+          </div>
+
+          <h3 class="section-subtitle">
+            <i class="fas fa-1"></i> ស្ថានការណ៍ទី១: ចូលវត្តលើកដំបូង
+          </h3>
+
+          <div class="example-card">
+            <div class="example-scenario">
+              <h6 style="color: var(--primary-color); font-weight: 700">
+                📍 ស្ថានការណ៍:
+              </h6>
+              <p>
+                នរណាម្នាក់ចូលវត្តលើកដំបូង ចង់ថ្វាយបង្គំព្រះសង្ឃ
+                ប៉ុន្តែមិនដឹងធ្វើយ៉ាងម្តេច។
+              </p>
             </div>
 
-            <h3 class="section-subtitle">
-                <i class="fas fa-1"></i> ស្ថានការណ៍ទី១: ចូលវត្តលើកដំបូង
-            </h3>
+            <div
+              class="example-scenario"
+              style="border-left-color: var(--success-color)"
+            >
+              <h6 style="color: var(--success-color); font-weight: 700">
+                <i class="fas fa-check-circle"></i> វិធីត្រឹមត្រូវ:
+              </h6>
+              <ol style="margin: 0; padding-left: 20px; line-height: 1.8">
+                <li>ដោះស្បែកជើងនៅទ្វារវត្ត</li>
+                <li>សំពះ និងដើរចូលទៅវិហារដោយស្ងាត់ៗ</li>
+                <li>ថ្វាយបង្គំព្រះពុទ្ធរូប ៣ ដង</li>
+                <li>រកកន្លែងអង្គុយពត្យាឃាត់</li>
+                <li>សួរព្រះសង្ឃថា "សូមព្រះករុណា តើខ្ញុំអាចសួរអ្វីមួយបានទេ?"</li>
+                <li>បន្ទាប់ពីចាក់សេចក្តី ថ្វាយបង្គំលា</li>
+              </ol>
+            </div>
+          </div>
 
-            <div class="example-card">
-                <div class="example-scenario">
-                    <h6 style="color: var(--primary-color); font-weight: 700;">📍 ស្ថានការណ៍:</h6>
-                    <p>នរណាម្នាក់ចូលវត្តលើកដំបូង ចង់ថ្វាយបង្គំព្រះសង្ឃ ប៉ុន្តែមិនដឹងធ្វើយ៉ាងម្តេច។</p>
-                </div>
+          <h3 class="section-subtitle mt-4">
+            <i class="fas fa-2"></i> ស្ថានការណ៍ទី២: ប្រគេនអាហារព្រះសង្ឃ
+          </h3>
 
-                <div class="example-scenario" style="border-left-color: var(--success-color);">
-                    <h6 style="color: var(--success-color); font-weight: 700;">
-                        <i class="fas fa-check-circle"></i> វិធីត្រឹមត្រូវ:
-                    </h6>
-                    <ol style="margin: 0; padding-left: 20px; line-height: 1.8;">
-                        <li>ដោះស្បែកជើងនៅទ្វារវត្ត</li>
-                        <li>សំពះ និងដើរចូលទៅវិហារដោយស្ងាត់ៗ</li>
-                        <li>ថ្វាយបង្គំព្រះពុទ្ធរូប ៣ ដង</li>
-                        <li>រកកន្លែងអង្គុយពត្យាឃាត់</li>
-                        <li>សួរព្រះសង្ឃថា "សូមព្រះករុណា តើខ្ញុំអាចសួរអ្វីមួយបានទេ?"</li>
-                        <li>បន្ទាប់ពីចាក់សេចក្តី ថ្វាយបង្គំលា</li>
-                    </ol>
-                </div>
+          <div class="example-card">
+            <div class="example-scenario">
+              <h6 style="color: var(--primary-color); font-weight: 700">
+                📍 ស្ថានការណ៍:
+              </h6>
+              <p>
+                អ្នកចង់ប្រគេនបាយព្រឹកដល់ព្រះសង្ឃ
+                ប៉ុន្តែមិនប្រាកដថាធ្វើយ៉ាងម្តេច។
+              </p>
             </div>
 
-            <h3 class="section-subtitle mt-4">
-                <i class="fas fa-2"></i> ស្ថានការណ៍ទី២: ប្រគេនអាហារព្រះសង្ឃ
-            </h3>
+            <div
+              class="example-scenario"
+              style="border-left-color: var(--success-color)"
+            >
+              <h6 style="color: var(--success-color); font-weight: 700">
+                <i class="fas fa-check-circle"></i> វិធីត្រឹមត្រូវ:
+              </h6>
+              <ol style="margin: 0; padding-left: 20px; line-height: 1.8">
+                <li>ទៅដល់វត្តមុន 11:00 ព្រឹក</li>
+                <li>រៀបចំអាហារឱ្យបានស្អាត និងបរិសុទ្ធ</li>
+                <li>ថ្វាយបង្គំព្រះសង្ឃមុន</li>
+                <li>
+                  និយាយថា "សូមព្រះអង្គទទួលយកនូវទេយ្យទានដោយក្តីមេត្តាករុណា"
+                </li>
+                <li>ប្រើដៃទាំងពីរលើកបាត្រអាហារ</li>
+                <li>រង់ចាំព្រះសង្ឃអនុមោទនា</li>
+                <li>ថ្វាយបង្គំដោយដឹងគុណ ៣ ដង</li>
+              </ol>
+            </div>
+          </div>
 
-            <div class="example-card">
-                <div class="example-scenario">
-                    <h6 style="color: var(--primary-color); font-weight: 700;">📍 ស្ថានការណ៍:</h6>
-                    <p>អ្នកចង់ប្រគេនបាយព្រឹកដល់ព្រះសង្ឃ ប៉ុន្តែមិនប្រាកដថាធ្វើយ៉ាងម្តេច។</p>
-                </div>
+          <h3 class="section-subtitle mt-4">
+            <i class="fas fa-3"></i> ស្ថានការណ៍ទី៣: ជួបព្រះសង្ឃតាមផ្លូវ
+          </h3>
 
-                <div class="example-scenario" style="border-left-color: var(--success-color);">
-                    <h6 style="color: var(--success-color); font-weight: 700;">
-                        <i class="fas fa-check-circle"></i> វិធីត្រឹមត្រូវ:
-                    </h6>
-                    <ol style="margin: 0; padding-left: 20px; line-height: 1.8;">
-                        <li>ទៅដល់វត្តមុន 11:00 ព្រឹក</li>
-                        <li>រៀបចំអាហារឱ្យបានស្អាត និងបរិសុទ្ធ</li>
-                        <li>ថ្វាយបង្គំព្រះសង្ឃមុន</li>
-                        <li>និយាយថា "សូមព្រះអង្គទទួលយកនូវទេយ្យទានដោយក្តីមេត្តាករុណា"</li>
-                        <li>ប្រើដៃទាំងពីរលើកបាត្រអាហារ</li>
-                        <li>រង់ចាំព្រះសង្ឃអនុមោទនា</li>
-                        <li>ថ្វាយបង្គំដោយដឹងគុណ ៣ ដង</li>
-                    </ol>
-                </div>
+          <div class="example-card">
+            <div class="example-scenario">
+              <h6 style="color: var(--primary-color); font-weight: 700">
+                📍 ស្ថានការណ៍:
+              </h6>
+              <p>អ្នកកំពុងដើរតាមផ្លូវ ហើយឃើញព្រះសង្ឃដើរមក។</p>
             </div>
 
-            <h3 class="section-subtitle mt-4">
-                <i class="fas fa-3"></i> ស្ថានការណ៍ទី៣: ជួបព្រះសង្ឃតាមផ្លូវ
-            </h3>
-
-            <div class="example-card">
-                <div class="example-scenario">
-                    <h6 style="color: var(--primary-color); font-weight: 700;">📍 ស្ថានការណ៍:</h6>
-                    <p>អ្នកកំពុងដើរតាមផ្លូវ ហើយឃើញព្រះសង្ឃដើរមក។</p>
-                </div>
-
-                <div class="example-scenario" style="border-left-color: var(--success-color);">
-                    <h6 style="color: var(--success-color); font-weight: 700;">
-                        <i class="fas fa-check-circle"></i> វិធីត្រឹមត្រូវ:
-                    </h6>
-                    <ol style="margin: 0; padding-left: 20px; line-height: 1.8;">
-                        <li>ឈប់ដើរ និងឈរនៅម្ខាងផ្លូវ</li>
-                        <li>សំពះដោយគោរព</li>
-                        <li>រង់ចាំឱ្យព្រះសង្ឃដើរកាត់</li>
-                        <li>កុំនិយាយខ្លាំងៗ ឬហៅព្រះសង្ឃ លុះត្រាតែមានសារៈសំខាន់</li>
-                        <li>បន្ទាប់ពីព្រះសង្ឃដើរកាត់ អ្នកអាចដើរបន្ត</li>
-                    </ol>
-                </div>
-
-                <div class="example-scenario" style="border-left-color: var(--warning-color);">
-                    <h6 style="color: var(--warning-color); font-weight: 700;">
-                        <i class="fas fa-times-circle"></i> វិធីមិនត្រឹមត្រូវ:
-                    </h6>
-                    <p style="margin: 0;">
-                        ដើរបន្តដោយមិនខ្វល់ខ្វាយ, ឆ្លងមុខព្រះសង្ឃ, ឬនិយាយរឿងផ្សេងៗខ្លាំងៗ។
-                    </p>
-                </div>
+            <div
+              class="example-scenario"
+              style="border-left-color: var(--success-color)"
+            >
+              <h6 style="color: var(--success-color); font-weight: 700">
+                <i class="fas fa-check-circle"></i> វិធីត្រឹមត្រូវ:
+              </h6>
+              <ol style="margin: 0; padding-left: 20px; line-height: 1.8">
+                <li>ឈប់ដើរ និងឈរនៅម្ខាងផ្លូវ</li>
+                <li>សំពះដោយគោរព</li>
+                <li>រង់ចាំឱ្យព្រះសង្ឃដើរកាត់</li>
+                <li>កុំនិយាយខ្លាំងៗ ឬហៅព្រះសង្ឃ លុះត្រាតែមានសារៈសំខាន់</li>
+                <li>បន្ទាប់ពីព្រះសង្ឃដើរកាត់ អ្នកអាចដើរបន្ត</li>
+              </ol>
             </div>
 
-            <h3 class="section-subtitle mt-4">
-                <i class="fas fa-4"></i> ស្ថានការណ៍ទី៤: មានសំណួរចង់សួរ
-            </h3>
-
-            <div class="example-card">
-                <div class="example-scenario">
-                    <h6 style="color: var(--primary-color); font-weight: 700;">📍 ស្ថានការណ៍:</h6>
-                    <p>អ្នកមានបញ្ហាជីវិត ហើយចង់សួរដំបូន្មានពីព្រះសង្ឃ។</p>
-                </div>
-
-                <div class="example-scenario" style="border-left-color: var(--success-color);">
-                    <h6 style="color: var(--success-color); font-weight: 700;">
-                        <i class="fas fa-check-circle"></i> វិធីត្រឹមត្រូវ:
-                    </h6>
-                    <ol style="margin: 0; padding-left: 20px; line-height: 1.8;">
-                        <li>រកពេលវេលាសមរម្យ (មិនមែនពេលព្រះសង្ឃកំពុងមមាញឹក)</li>
-                        <li>ថ្វាយបង្គំ ៣ ដង</li>
-                        <li>និយាយថា "សូមព្រះករុណា ខ្ញុំមានបញ្ហាមួយចង់ប្រឹក្សា"</li>
-                        <li>ពន្យល់បញ្ហារបស់អ្នកដោយសង្ខេប</li>
-                        <li>ស្តាប់ដំបូន្មានដោយយកចិត្តទុកដាក់</li>
-                        <li>ថ្វាយបង្គំដោយដឹងគុណ</li>
-                    </ol>
-                </div>
+            <div
+              class="example-scenario"
+              style="border-left-color: var(--warning-color)"
+            >
+              <h6 style="color: var(--warning-color); font-weight: 700">
+                <i class="fas fa-times-circle"></i> វិធីមិនត្រឹមត្រូវ:
+              </h6>
+              <p style="margin: 0">
+                ដើរបន្តដោយមិនខ្វល់ខ្វាយ, ឆ្លងមុខព្រះសង្ឃ,
+                ឬនិយាយរឿងផ្សេងៗខ្លាំងៗ។
+              </p>
             </div>
+          </div>
+
+          <h3 class="section-subtitle mt-4">
+            <i class="fas fa-4"></i> ស្ថានការណ៍ទី៤: មានសំណួរចង់សួរ
+          </h3>
+
+          <div class="example-card">
+            <div class="example-scenario">
+              <h6 style="color: var(--primary-color); font-weight: 700">
+                📍 ស្ថានការណ៍:
+              </h6>
+              <p>អ្នកមានបញ្ហាជីវិត ហើយចង់សួរដំបូន្មានពីព្រះសង្ឃ។</p>
+            </div>
+
+            <div
+              class="example-scenario"
+              style="border-left-color: var(--success-color)"
+            >
+              <h6 style="color: var(--success-color); font-weight: 700">
+                <i class="fas fa-check-circle"></i> វិធីត្រឹមត្រូវ:
+              </h6>
+              <ol style="margin: 0; padding-left: 20px; line-height: 1.8">
+                <li>រកពេលវេលាសមរម្យ (មិនមែនពេលព្រះសង្ឃកំពុងមមាញឹក)</li>
+                <li>ថ្វាយបង្គំ ៣ ដង</li>
+                <li>និយាយថា "សូមព្រះករុណា ខ្ញុំមានបញ្ហាមួយចង់ប្រឹក្សា"</li>
+                <li>ពន្យល់បញ្ហារបស់អ្នកដោយសង្ខេប</li>
+                <li>ស្តាប់ដំបូន្មានដោយយកចិត្តទុកដាក់</li>
+                <li>ថ្វាយបង្គំដោយដឹងគុណ</li>
+              </ol>
+            </div>
+          </div>
         </div>
 
         <!-- COMMON MISTAKES -->
         <div class="ritual-section" id="mistakes">
-            <h2 class="section-title">
-                <i class="fas fa-exclamation-triangle"></i> កំហុសញឹកញាប់
-            </h2>
+          <h2 class="section-title">
+            <i class="fas fa-exclamation-triangle"></i> កំហុសញឹកញាប់
+          </h2>
 
-            <div class="info-box" style="background: linear-gradient(135deg, #ff635115 0%, #f5576c15 100%); border-left-color: #ff6351;">
-                <div class="info-box-title" style="color: #ff6351;">
-                    <i class="fas fa-info-circle"></i> ហេតុអ្វីត្រូវស្វែងយល់?
+          <div
+            class="info-box"
+            style="
+              background: linear-gradient(135deg, #ff635115 0%, #f5576c15 100%);
+              border-left-color: #ff6351;
+            "
+          >
+            <div class="info-box-title" style="color: #ff6351">
+              <i class="fas fa-info-circle"></i> ហេតុអ្វីត្រូវស្វែងយល់?
+            </div>
+            <p style="margin: 0; line-height: 1.7">
+              ការស្វែងយល់ពីកំហុសទូទៅជួយយើងជៀសវាង និងអនុវត្តបានត្រឹមត្រូវ។
+              កំហុសទាំងនេះច្រើនតែកើតឡើងដោយសារការមិនដឹង មិនមែនចេតនាអាក្រក់ទេ។
+            </p>
+          </div>
+
+          <div class="example-card mb-4">
+            <h5 style="color: var(--warning-color); margin-bottom: 20px">
+              <i class="fas fa-times-circle"></i> កំហុសទី១:
+              ថ្វាយបង្គំមិនត្រឹមត្រូវ
+            </h5>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div
+                  style="
+                    background: rgba(239, 68, 68, 0.1);
+                    padding: 16px;
+                    border-radius: 12px;
+                    margin-bottom: 16px;
+                  "
+                >
+                  <h6 style="color: var(--warning-color)">❌ មិនត្រឹមត្រូវ:</h6>
+                  <ul style="margin: 8px 0 0 20px">
+                    <li>ថ្វាយបង្គំយឺតពេក ឬលឿនពេក</li>
+                    <li>មិនដាក់ចំពុះថ្នាំងចុះដី</li>
+                    <li>ថ្វាយបង្គំដោយចិត្តអាប់អួរ</li>
+                    <li>មើលទូរស័ព្ទពេលថ្វាយបង្គំ</li>
+                  </ul>
                 </div>
-                <p style="margin: 0; line-height: 1.7;">
-                    ការស្វែងយល់ពីកំហុសទូទៅជួយយើងជៀសវាង និងអនុវត្តបានត្រឹមត្រូវ។ កំហុសទាំងនេះច្រើនតែកើតឡើងដោយសារការមិនដឹង មិនមែនចេតនាអាក្រក់ទេ។
-                </p>
+              </div>
+              <div class="col-md-6">
+                <div
+                  style="
+                    background: rgba(39, 174, 96, 0.1);
+                    padding: 16px;
+                    border-radius: 12px;
+                    margin-bottom: 16px;
+                  "
+                >
+                  <h6 style="color: var(--success-color)">✅ ត្រឹមត្រូវ:</h6>
+                  <ul style="margin: 8px 0 0 20px">
+                    <li>ថ្វាយបង្គំយឺតៗ និងច្បាស់លាស់</li>
+                    <li>ដាក់ចំពុះថ្នាំង ភ្នែក និងដៃទាំង ៥ ចុះដី</li>
+                    <li>ថ្វាយបង្គំដោយចិត្តស្មោះស្ម័គ្រ</li>
+                    <li>ផ្តោតការយកចិត្តទុកដាក់លើការថ្វាយបង្គំ</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="example-card mb-4">
+            <h5 style="color: var(--warning-color); margin-bottom: 20px">
+              <i class="fas fa-times-circle"></i> កំហុសទី២: ការស្លៀកពាក់
+            </h5>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div
+                  style="
+                    background: rgba(239, 68, 68, 0.1);
+                    padding: 16px;
+                    border-radius: 12px;
+                    margin-bottom: 16px;
+                  "
+                >
+                  <h6 style="color: var(--warning-color)">❌ មិនត្រឹមត្រូវ:</h6>
+                  <ul style="margin: 8px 0 0 20px">
+                    <li>ស្លៀកខោខ្លី អាវកាត់</li>
+                    <li>ស្លៀកសម្លៀកបំពាក់ពណ៌ស្រឡះពេក</li>
+                    <li>ស្លៀកសម្លៀកបំពាក់តឹងពេក</li>
+                    <li>ពាក់គ្រឿងលម្អច្រើនពេក</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  style="
+                    background: rgba(39, 174, 96, 0.1);
+                    padding: 16px;
+                    border-radius: 12px;
+                    margin-bottom: 16px;
+                  "
+                >
+                  <h6 style="color: var(--success-color)">✅ ត្រឹមត្រូវ:</h6>
+                  <ul style="margin: 8px 0 0 20px">
+                    <li>ស្លៀកខោវែង អាវដៃវែង</li>
+                    <li>ជ្រើសរើសពណ៌ស្រាល សមរម្យ</li>
+                    <li>ស្លៀកសម្លៀកបំពាក់បិទបាំង</li>
+                    <li>មិនតុបតែងច្រើនពេក</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="example-card mb-4">
+            <h5 style="color: var(--warning-color); margin-bottom: 20px">
+              <i class="fas fa-times-circle"></i> កំហុសទី៣: ការប្រគេនទាន
+            </h5>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div
+                  style="
+                    background: rgba(239, 68, 68, 0.1);
+                    padding: 16px;
+                    border-radius: 12px;
+                    margin-bottom: 16px;
+                  "
+                >
+                  <h6 style="color: var(--warning-color)">❌ មិនត្រឹមត្រូវ:</h6>
+                  <ul style="margin: 8px 0 0 20px">
+                    <li>ប្រគេនដោយប្រើដៃម្ខាង</li>
+                    <li>ប្រគេនមិនបានថ្វាយបង្គំមុន</li>
+                    <li>ប្រគេនរួច ចាកចេញភ្លាម</li>
+                    <li>ប្រគេនរបស់មិនសមរម្យ</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  style="
+                    background: rgba(39, 174, 96, 0.1);
+                    padding: 16px;
+                    border-radius: 12px;
+                    margin-bottom: 16px;
+                  "
+                >
+                  <h6 style="color: var(--success-color)">✅ ត្រឹមត្រូវ:</h6>
+                  <ul style="margin: 8px 0 0 20px">
+                    <li>ប្រើដៃទាំងពីរ</li>
+                    <li>ថ្វាយបង្គំមុននិងក្រោយ</li>
+                    <li>រង់ចាំអនុមោទនា</li>
+                    <li>ប្រគេនរបស់សមរម្យ និងបរិសុទ្ធ</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="example-card mb-4">
+            <h5 style="color: var(--warning-color); margin-bottom: 20px">
+              <i class="fas fa-times-circle"></i> កំហុសទី៤: ឥរិយាបថក្នុងវត្ត
+            </h5>
+
+            <div
+              style="
+                background: rgba(239, 68, 68, 0.1);
+                padding: 20px;
+                border-radius: 12px;
+                margin-bottom: 16px;
+              "
+            >
+              <h6 style="color: var(--warning-color); margin-bottom: 12px">
+                ❌ កំហុសញឹកញាប់:
+              </h6>
+              <ul style="margin: 0 0 0 20px; line-height: 1.8">
+                <li>និយាយខ្លាំងៗក្នុងវិហារ</li>
+                <li>ថតរូបព្រះសង្ឃដោយមិនសុំការអនុញ្ញាត</li>
+                <li>អង្គុយខ្ពស់ជាងព្រះសង្ឃ</li>
+                <li>ឆ្លងមុខព្រះសង្ឃពេលគាត់គង់</li>
+                <li>មិនដោះស្បែកជើងចូលវិហារ</li>
+                <li>ស្រែកហៅកូនក្នុងវត្ត</li>
+              </ul>
             </div>
 
-            <div class="example-card mb-4">
-                <h5 style="color: var(--warning-color); margin-bottom: 20px;">
-                    <i class="fas fa-times-circle"></i> កំហុសទី១: ថ្វាយបង្គំមិនត្រឹមត្រូវ
-                </h5>
-                
-                <div class="row">
-                    <div class="col-md-6">
-                        <div style="background: rgba(239, 68, 68, 0.1); padding: 16px; border-radius: 12px; margin-bottom: 16px;">
-                            <h6 style="color: var(--warning-color);">❌ មិនត្រឹមត្រូវ:</h6>
-                            <ul style="margin: 8px 0 0 20px;">
-                                <li>ថ្វាយបង្គំយឺតពេក ឬលឿនពេក</li>
-                                <li>មិនដាក់ចំពុះថ្នាំងចុះដី</li>
-                                <li>ថ្វាយបង្គំដោយចិត្តអាប់អួរ</li>
-                                <li>មើលទូរស័ព្ទពេលថ្វាយបង្គំ</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div style="background: rgba(39, 174, 96, 0.1); padding: 16px; border-radius: 12px; margin-bottom: 16px;">
-                            <h6 style="color: var(--success-color);">✅ ត្រឹមត្រូវ:</h6>
-                            <ul style="margin: 8px 0 0 20px;">
-                                <li>ថ្វាយបង្គំយឺតៗ និងច្បាស់លាស់</li>
-                                <li>ដាក់ចំពុះថ្នាំង ភ្នែក និងដៃទាំង ៥ ចុះដី</li>
-                                <li>ថ្វាយបង្គំដោយចិត្តស្មោះស្ម័គ្រ</li>
-                                <li>ផ្តោតការយកចិត្តទុកដាក់លើការថ្វាយបង្គំ</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div
+              style="
+                background: rgba(39, 174, 96, 0.1);
+                padding: 20px;
+                border-radius: 12px;
+              "
+            >
+              <h6 style="color: var(--success-color); margin-bottom: 12px">
+                ✅ គួរធ្វើ:
+              </h6>
+              <ul style="margin: 0 0 0 20px; line-height: 1.8">
+                <li>រក្សាសំឡេងស្ងាត់ និងទន់ភ្លន់</li>
+                <li>សុំការអនុញ្ញាតមុនថត</li>
+                <li>អង្គុយទាបជាងព្រះសង្ឃ</li>
+                <li>រង់ចាំព្រះសង្ឃដើរកាត់</li>
+                <li>ដោះស្បែកជើងគ្រប់ពេល</li>
+                <li>រក្សាអារម្មណ៍ស្ងប់ស្ងាត់</li>
+              </ul>
             </div>
+          </div>
 
-            <div class="example-card mb-4">
-                <h5 style="color: var(--warning-color); margin-bottom: 20px;">
-                    <i class="fas fa-times-circle"></i> កំហុសទី២: ការស្លៀកពាក់
-                </h5>
-                
-                <div class="row">
-                    <div class="col-md-6">
-                        <div style="background: rgba(239, 68, 68, 0.1); padding: 16px; border-radius: 12px; margin-bottom: 16px;">
-                            <h6 style="color: var(--warning-color);">❌ មិនត្រឹមត្រូវ:</h6>
-                            <ul style="margin: 8px 0 0 20px;">
-                                <li>ស្លៀកខោខ្លី អាវកាត់</li>
-                                <li>ស្លៀកសម្លៀកបំពាក់ពណ៌ស្រឡះពេក</li>
-                                <li>ស្លៀកសម្លៀកបំពាក់តឹងពេក</li>
-                                <li>ពាក់គ្រឿងលម្អច្រើនពេក</li>
-                                
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div style="background: rgba(39, 174, 96, 0.1); padding: 16px; border-radius: 12px; margin-bottom: 16px;">
-                            <h6 style="color: var(--success-color);">✅ ត្រឹមត្រូវ:</h6>
-                            <ul style="margin: 8px 0 0 20px;">
-                                <li>ស្លៀកខោវែង អាវដៃវែង</li>
-                                <li>ជ្រើសរើសពណ៌ស្រាល សមរម្យ</li>
-                                <li>ស្លៀកសម្លៀកបំពាក់បិទបាំង</li>
-                                <li>មិនតុបតែងច្រើនពេក</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+          <div class="info-box mt-4">
+            <div class="info-box-title">
+              <i class="fas fa-lightbulb"></i> របៀបកែតម្រូវកំហុស
             </div>
-
-            <div class="example-card mb-4">
-                <h5 style="color: var(--warning-color); margin-bottom: 20px;">
-                    <i class="fas fa-times-circle"></i> កំហុសទី៣: ការប្រគេនទាន
-                </h5>
-                
-                <div class="row">
-                    <div class="col-md-6">
-                        <div style="background: rgba(239, 68, 68, 0.1); padding: 16px; border-radius: 12px; margin-bottom: 16px;">
-                            <h6 style="color: var(--warning-color);">❌ មិនត្រឹមត្រូវ:</h6>
-                            <ul style="margin: 8px 0 0 20px;">
-                                <li>ប្រគេនដោយប្រើដៃម្ខាង</li>
-                                <li>ប្រគេនមិនបានថ្វាយបង្គំមុន</li>
-                                <li>ប្រគេនរួច ចាកចេញភ្លាម</li>
-                                <li>ប្រគេនរបស់មិនសមរម្យ</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div style="background: rgba(39, 174, 96, 0.1); padding: 16px; border-radius: 12px; margin-bottom: 16px;">
-                            <h6 style="color: var(--success-color);">✅ ត្រឹមត្រូវ:</h6>
-                            <ul style="margin: 8px 0 0 20px;">
-                                <li>ប្រើដៃទាំងពីរ</li>
-                                <li>ថ្វាយបង្គំមុននិងក្រោយ</li>
-                                <li>រង់ចាំអនុមោទនា</li>
-                                <li>ប្រគេនរបស់សមរម្យ និងបរិសុទ្ធ</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="example-card mb-4">
-                <h5 style="color: var(--warning-color); margin-bottom: 20px;">
-                    <i class="fas fa-times-circle"></i> កំហុសទី៤: ឥរិយាបថក្នុងវត្ត
-                </h5>
-                
-                <div style="background: rgba(239, 68, 68, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 16px;">
-                    <h6 style="color: var(--warning-color); margin-bottom: 12px;">❌ កំហុសញឹកញាប់:</h6>
-                    <ul style="margin: 0 0 0 20px; line-height: 1.8;">
-                        <li>និយាយខ្លាំងៗក្នុងវិហារ</li>
-                        <li>ថតរូបព្រះសង្ឃដោយមិនសុំការអនុញ្ញាត</li>
-                        <li>អង្គុយខ្ពស់ជាងព្រះសង្ឃ</li>
-                        <li>ឆ្លងមុខព្រះសង្ឃពេលគាត់គង់</li>
-                        <li>មិនដោះស្បែកជើងចូលវិហារ</li>
-                        <li>ស្រែកហៅកូនក្នុងវត្ត</li>
-                    </ul>
-                </div>
-
-                <div style="background: rgba(39, 174, 96, 0.1); padding: 20px; border-radius: 12px;">
-                    <h6 style="color: var(--success-color); margin-bottom: 12px;">✅ គួរធ្វើ:</h6>
-                    <ul style="margin: 0 0 0 20px; line-height: 1.8;">
-                        <li>រក្សាសំឡេងស្ងាត់ និងទន់ភ្លន់</li>
-                        <li>សុំការអនុញ្ញាតមុនថត</li>
-                        <li>អង្គុយទាបជាងព្រះសង្ឃ</li>
-                        <li>រង់ចាំព្រះសង្ឃដើរកាត់</li>
-                        <li>ដោះស្បែកជើងគ្រប់ពេល</li>
-                        <li>រក្សាអារម្មណ៍ស្ងប់ស្ងាត់</li>
-                    </ul>
-                </div>
-
-                
-            </div>
-
-            <div class="info-box mt-4">
-                <div class="info-box-title">
-                    <i class="fas fa-lightbulb"></i> របៀបកែតម្រូវកំហុស
-                </div>
-                <p style="margin: 0; line-height: 1.8;">
-                    ប្រសិនបើអ្នកធ្វើកំហុសអ្វីមួយ កុំបារម្ភពេក។ ព្រះសង្ឃយល់ដឹង និងអត់ទោស។ 
-                    សំខាន់គឺថ្វាយបង្គំសុំទោស និងព្យាយាមកែតម្រូវលើកក្រោយ។ 
-                    កុំអាម៉ាស់ពេក ដោយសារវាធ្វើឱ្យអ្នកមិនហ៊ានធ្វើបុណ្យ។
-                </p>
-            </div>
+            <p style="margin: 0; line-height: 1.8">
+              ប្រសិនបើអ្នកធ្វើកំហុសអ្វីមួយ កុំបារម្ភពេក។ ព្រះសង្ឃយល់ដឹង
+              និងអត់ទោស។ សំខាន់គឺថ្វាយបង្គំសុំទោស និងព្យាយាមកែតម្រូវលើកក្រោយ។
+              កុំអាម៉ាស់ពេក ដោយសារវាធ្វើឱ្យអ្នកមិនហ៊ានធ្វើបុណ្យ។
+            </p>
+          </div>
         </div>
-
-    </div>
-</main>
+      </div>
+    </main>
 
     <!-- ═══════════ FOOTER ═══════════ -->
     <footer>
+      <div class="container">
+        <div class="row">
+          <!-- About Section -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <i
+                class="fas fa-dharmachakra fs-1 me-3"
+                style="color: var(--primary-color)"
+              ></i>
+              <h5 class="mt-5">អំពីពុទ្ធសាសនានិងសង្គម</h5>
+            </div>
+            <p style="line-height: 1.8">
+              គេហទំព័រដែលផ្តល់នូវការអប់រំ សេវាកម្មសង្គម
+              និងការលើកកម្ពស់គុណតម្លៃសីលធម៌តាមគោលការណ៍ព្រះធម៌
+              ដើម្បីអភិវឌ្ឍន៍សង្គមប្រកបដោយសន្តិភាព និងសុខុមាលភាព។
+            </p>
+            <div class="footer-social mt-3">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-telegram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5>តំណភ្ជាប់លឿន</h5>
+            <a href="#"><i class="fas fa-angle-right"></i> ទំព័រដើម</a>
+            <a href="#"><i class="fas fa-angle-right"></i> អំពីយើង</a>
+            <a href="#"><i class="fas fa-angle-right"></i> សេវាកម្ម</a>
+            <a href="../pages/events.html"
+              ><i class="fas fa-angle-right"></i> ព្រឹត្តិការណ៍</a
+            >
+            <a href="#"><i class="fas fa-angle-right"></i> ទំនាក់ទំនង</a>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>សេវាកម្ម</h5>
+            <a href="#"><i class="fas fa-angle-right"></i> គម្រោងសង្គម</a>
+            <a href="#"><i class="fas fa-angle-right"></i> ការអប់រំ</a>
+            <a href="#"><i class="fas fa-angle-right"></i> វគ្គបណ្តុះបណ្តាល</a>
+            <a href="#"><i class="fas fa-angle-right"></i> អ្នកស្ម័គ្រចិត្ត</a>
+            <a href="#"><i class="fas fa-angle-right"></i> ការបរិច្ចាគ</a>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>ទំនាក់ទំនង</h5>
+            <p>
+              <i
+                class="fas fa-map-marker-alt"
+                style="color: var(--primary-color)"
+              ></i>
+              ភ្នំពេញ, កម្ពុជា
+            </p>
+            <p>
+              <i class="fas fa-phone" style="color: var(--primary-color)"></i>
+              012 345 678
+            </p>
+            <p>
+              <i
+                class="fas fa-envelope"
+                style="color: var(--primary-color)"
+              ></i>
+              info@buddhism-society.org
+            </p>
+            <p>
+              <i class="fas fa-clock" style="color: var(--primary-color)"></i>
+              ច័ន្ទ - សុក្រ: 8:00 - 17:00
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
         <div class="container">
-            <div class="row">
-                <!-- About Section -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="d-flex align-items-center">
-                         <i class="fas fa-dharmachakra fs-1 me-3" style="color: var(--primary-color);"></i>
-                        <h5 class="mt-5">
-                            អំពីពុទ្ធសាសនានិងសង្គម
-                        </h5>
-                    </div>
-                    <p style="line-height: 1.8;">
-                        គេហទំព័រដែលផ្តល់នូវការអប់រំ សេវាកម្មសង្គម និងការលើកកម្ពស់គុណតម្លៃសីលធម៌តាមគោលការណ៍ព្រះធម៌ 
-                        ដើម្បីអភិវឌ្ឍន៍សង្គមប្រកបដោយសន្តិភាព និងសុខុមាលភាព។
-                    </p>
-                    <div class="footer-social mt-3">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-telegram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-
-                <!-- Quick Links -->
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>តំណភ្ជាប់លឿន</h5>
-                    <a href="#"><i class="fas fa-angle-right"></i> ទំព័រដើម</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> អំពីយើង</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> សេវាកម្ម</a>
-                    <a href="../pages/events.html"><i class="fas fa-angle-right"></i> ព្រឹត្តិការណ៍</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> ទំនាក់ទំនង</a>
-                </div>
-
-                <!-- Services -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>សេវាកម្ម</h5>
-                    <a href="#"><i class="fas fa-angle-right"></i> គម្រោងសង្គម</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> ការអប់រំ</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> វគ្គបណ្តុះបណ្តាល</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> អ្នកស្ម័គ្រចិត្ត</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> ការបរិច្ចាគ</a>
-                </div>
-
-                <!-- Contact -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>ទំនាក់ទំនង</h5>
-                    <p>
-                        <i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i>
-                        ភ្នំពេញ, កម្ពុជា
-                    </p>
-                    <p>
-                        <i class="fas fa-phone" style="color: var(--primary-color);"></i>
-                        012 345 678
-                    </p>
-                    <p>
-                        <i class="fas fa-envelope" style="color: var(--primary-color);"></i>
-                        info@buddhism-society.org
-                    </p>
-                    <p>
-                        <i class="fas fa-clock" style="color: var(--primary-color);"></i>
-                        ច័ន្ទ - សុក្រ: 8:00 - 17:00
-                    </p>
-                </div>
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="mb-0">
+                © 2024 ពុទ្ធសាសនានិងសង្គម. រក្សាសិទ្ធិគ្រប់យ៉ាង។
+              </p>
             </div>
-        </div>
-
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center text-md-start">
-                        <p class="mb-0">
-                            © 2024 ពុទ្ធសាសនានិងសង្គម. រក្សាសិទ្ធិគ្រប់យ៉ាង។
-                        </p>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end justify-content-center justify-content-md-end d-flex">
-                        <a href="#" class="me-3">គោលការណ៍ឯកជនភាព</a>
-                        <a href="#" class="me-3">លក្ខខណ្ឌប្រើប្រាស់</a>
-                        <a href="#">FAQ</a>
-                    </div>
-                </div>
+            <div
+              class="col-md-6 text-center text-md-end justify-content-center justify-content-md-end d-flex"
+            >
+              <a href="#" class="me-3">គោលការណ៍ឯកជនភាព</a>
+              <a href="#" class="me-3">លក្ខខណ្ឌប្រើប្រាស់</a>
+              <a href="#">FAQ</a>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- search modal -->
-    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <form>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="ស្វែងរកគេហទំព័រ">
-                            <button type="submit" class="btn btn-primary">ស្វែងរក</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="searchModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="searchModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="ស្វែងរកគេហទំព័រ"
+                />
+                <button type="submit" class="btn btn-primary">ស្វែងរក</button>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-
 
     <!-- Bootstrap JS -->
     <script src="../asset/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
@@ -1196,204 +1479,243 @@ body {
     <!-- Custom JS -->
     <script src="../asset/js/script.js"></script>
     <script>
-  AOS.init();
-</script>
+      AOS.init();
+    </script>
 
-   <script>
-     // Navigation Pills
-        const sections = ['overview', 'greeting', 'temple', 'clothing', 'language', 'offering', 'examples', 'mistakes', 'quiz'];
-        let visitedSections = new Set();
+    <script>
+      // Navigation Pills
+      const sections = [
+        "overview",
+        "greeting",
+        "temple",
+        "clothing",
+        "language",
+        "offering",
+        "examples",
+        "mistakes",
+        "quiz",
+      ];
+      let visitedSections = new Set();
 
-        document.querySelectorAll('.ritual-pill').forEach(pill => {
-            pill.addEventListener('click', function() {
-                document.querySelectorAll('.ritual-pill').forEach(p => p.classList.remove('active'));
-                this.classList.add('active');
-                
-                const section = this.dataset.section;
-                const element = document.getElementById(section);
-                if (element) {
-                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    visitedSections.add(section);
-                    updateProgress();
-                }
-            });
+      document.querySelectorAll(".ritual-pill").forEach((pill) => {
+        pill.addEventListener("click", function () {
+          document
+            .querySelectorAll(".ritual-pill")
+            .forEach((p) => p.classList.remove("active"));
+          this.classList.add("active");
+
+          const section = this.dataset.section;
+          const element = document.getElementById(section);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+            visitedSections.add(section);
+            updateProgress();
+          }
         });
+      });
 
-        // Update progress
-        function updateProgress() {
-            const progress = (visitedSections.size / sections.length) * 100;
-            document.getElementById('progressBar').style.width = progress + '%';
-            document.getElementById('progressPercent').textContent = Math.round(progress) + '%';
-        }
+      // Update progress
+      function updateProgress() {
+        const progress = (visitedSections.size / sections.length) * 100;
+        document.getElementById("progressBar").style.width = progress + "%";
+        document.getElementById("progressPercent").textContent =
+          Math.round(progress) + "%";
+      }
 
-        // Intersection Observer for auto-tracking
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const sectionId = entry.target.id;
-                    visitedSections.add(sectionId);
-                    updateProgress();
-                    
-                    // Update active pill
-                    document.querySelectorAll('.ritual-pill').forEach(pill => {
-                        pill.classList.remove('active');
-                        if (pill.dataset.section === sectionId) {
-                            pill.classList.add('active');
-                        }
-                    });
+      // Intersection Observer for auto-tracking
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const sectionId = entry.target.id;
+              visitedSections.add(sectionId);
+              updateProgress();
+
+              // Update active pill
+              document.querySelectorAll(".ritual-pill").forEach((pill) => {
+                pill.classList.remove("active");
+                if (pill.dataset.section === sectionId) {
+                  pill.classList.add("active");
                 }
-            });
-        }, { threshold: 0.3 });
-
-        sections.forEach(section => {
-            const element = document.getElementById(section);
-            if (element) observer.observe(element);
-        });
-
-        // Quiz System
-        let selectedAnswers = new Map();
-
-        document.querySelectorAll('.quiz-option').forEach(option => {
-            option.addEventListener('click', function() {
-                const card = this.closest('.quiz-card');
-                const options = card.querySelectorAll('.quiz-option');
-                
-                // Remove previous selections
-                options.forEach(opt => {
-                    opt.classList.remove('correct', 'wrong');
-                    opt.style.pointerEvents = 'auto';
-                });
-                
-                // Mark selection
-                if (this.dataset.answer === 'correct') {
-                    this.classList.add('correct');
-                    selectedAnswers.set(card, true);
-                } else {
-                    this.classList.add('wrong');
-                    selectedAnswers.set(card, false);
-                    // Show correct answer
-                    options.forEach(opt => {
-                        if (opt.dataset.answer === 'correct') {
-                            opt.classList.add('correct');
-                        }
-                    });
-                }
-                
-                // Disable further clicks
-                options.forEach(opt => opt.style.pointerEvents = 'none');
-            });
-        });
-
-        // Submit Quiz
-        document.getElementById('submitQuiz').addEventListener('click', function() {
-            const allCards = document.querySelectorAll('.quiz-card');
-            
-            if (selectedAnswers.size < allCards.length) {
-                alert('សូមឆ្លើយសំណួរទាំងអស់!');
-                return;
+              });
             }
-            
-            let correctCount = 0;
-            selectedAnswers.forEach(isCorrect => {
-                if (isCorrect) correctCount++;
+          });
+        },
+        { threshold: 0.3 }
+      );
+
+      sections.forEach((section) => {
+        const element = document.getElementById(section);
+        if (element) observer.observe(element);
+      });
+
+      // Quiz System
+      let selectedAnswers = new Map();
+
+      document.querySelectorAll(".quiz-option").forEach((option) => {
+        option.addEventListener("click", function () {
+          const card = this.closest(".quiz-card");
+          const options = card.querySelectorAll(".quiz-option");
+
+          // Remove previous selections
+          options.forEach((opt) => {
+            opt.classList.remove("correct", "wrong");
+            opt.style.pointerEvents = "auto";
+          });
+
+          // Mark selection
+          if (this.dataset.answer === "correct") {
+            this.classList.add("correct");
+            selectedAnswers.set(card, true);
+          } else {
+            this.classList.add("wrong");
+            selectedAnswers.set(card, false);
+            // Show correct answer
+            options.forEach((opt) => {
+              if (opt.dataset.answer === "correct") {
+                opt.classList.add("correct");
+              }
             });
-            
-            const percentage = (correctCount / allCards.length) * 100;
-            const resultDiv = document.getElementById('quizResult');
-            const scoreDisplay = document.getElementById('scoreDisplay');
-            const resultMessage = document.getElementById('resultMessage');
-            const certificateBtn = document.getElementById('certificateBtn');
-            
-            scoreDisplay.textContent = `${correctCount}/${allCards.length} (${percentage.toFixed(0)}%)`;
-            
-            if (percentage >= 80) {
-                resultMessage.innerHTML = `
+          }
+
+          // Disable further clicks
+          options.forEach((opt) => (opt.style.pointerEvents = "none"));
+        });
+      });
+
+      // Submit Quiz
+      document
+        .getElementById("submitQuiz")
+        .addEventListener("click", function () {
+          const allCards = document.querySelectorAll(".quiz-card");
+
+          if (selectedAnswers.size < allCards.length) {
+            alert("សូមឆ្លើយសំណួរទាំងអស់!");
+            return;
+          }
+
+          let correctCount = 0;
+          selectedAnswers.forEach((isCorrect) => {
+            if (isCorrect) correctCount++;
+          });
+
+          const percentage = (correctCount / allCards.length) * 100;
+          const resultDiv = document.getElementById("quizResult");
+          const scoreDisplay = document.getElementById("scoreDisplay");
+          const resultMessage = document.getElementById("resultMessage");
+          const certificateBtn = document.getElementById("certificateBtn");
+
+          scoreDisplay.textContent = `${correctCount}/${
+            allCards.length
+          } (${percentage.toFixed(0)}%)`;
+
+          if (percentage >= 80) {
+            resultMessage.innerHTML = `
                     🎉 <strong>ល្អណាស់!</strong> អ្នកមានចំណេះដឹងល្អអំពីកិច្ចវិន័យពុទ្ធបរិស័ទ។ 
                     អ្នកអាចទទួលបានវិញ្ញាបនប័ត្រឥឡូវនេះ!
                 `;
-                certificateBtn.disabled = false;
-                certificateBtn.innerHTML = '<i class="fas fa-download"></i> ទាញយកវិញ្ញាបនប័ត្រ';
-                certificateBtn.onclick = function() {
-                    alert('🎊 សូមអបអរសាទរ! វិញ្ញាបនប័ត្ររបស់អ្នកកំពុងត្រៀមរួចរាល់។\n\nអ្នកបានបញ្ចប់វគ្គសិក្សា "កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ" ដោយជោគជ័យ។');
-                };
-            } else if (percentage >= 60) {
-                resultMessage.innerHTML = `
+            certificateBtn.disabled = false;
+            certificateBtn.innerHTML =
+              '<i class="fas fa-download"></i> ទាញយកវិញ្ញាបនប័ត្រ';
+            certificateBtn.onclick = function () {
+              alert(
+                '🎊 សូមអបអរសាទរ! វិញ្ញាបនប័ត្ររបស់អ្នកកំពុងត្រៀមរួចរាល់។\n\nអ្នកបានបញ្ចប់វគ្គសិក្សា "កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ" ដោយជោគជ័យ។'
+              );
+            };
+          } else if (percentage >= 60) {
+            resultMessage.innerHTML = `
                     👍 <strong>ល្អ!</strong> អ្នកមានចំណេះដឹងមូលដ្ឋានល្អ។ 
                     សូមពិនិត្យមើលមេរៀនម្តងទៀតដើម្បីកែលម្អ និងសាកល្បងថ្មីម្តងទៀត។
                 `;
-            } else {
-                resultMessage.innerHTML = `
+          } else {
+            resultMessage.innerHTML = `
                     📚 <strong>ត្រូវការអានបន្ថែម!</strong> សូមពិនិត្យមើលមេរៀនម្តងទៀត 
                     ហើយធ្វើតេស្តម្តងទៀត។ កុំបារម្ភ! ការរៀនគឺជាដំណើរការ។
                 `;
+          }
+
+          resultDiv.style.display = "block";
+          resultDiv.scrollIntoView({ behavior: "smooth" });
+        });
+
+      // Reset Quiz
+      document
+        .getElementById("resetQuiz")
+        .addEventListener("click", function () {
+          if (confirm("តើអ្នកចង់ធ្វើតេស្តម្តងទៀតមែនទេ?")) {
+            selectedAnswers.clear();
+            document.querySelectorAll(".quiz-option").forEach((option) => {
+              option.classList.remove("correct", "wrong");
+              option.style.pointerEvents = "auto";
+            });
+            document.getElementById("quizResult").style.display = "none";
+            document
+              .querySelector("#quiz")
+              .scrollIntoView({ behavior: "smooth" });
+          }
+        });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+
+      // Animate on scroll
+      const animateElements = document.querySelectorAll(
+        ".ritual-section, .step-item, .example-card"
+      );
+      const animateObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = "0";
+              entry.target.style.transform = "translateY(30px)";
+
+              setTimeout(() => {
+                entry.target.style.transition = "all 0.6s ease";
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+              }, 100);
+
+              animateObserver.unobserve(entry.target);
             }
-            
-            resultDiv.style.display = 'block';
-            resultDiv.scrollIntoView({ behavior: 'smooth' });
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      animateElements.forEach((el) => animateObserver.observe(el));
+
+      // Video play button
+      document.querySelectorAll(".play-button").forEach((button) => {
+        button.addEventListener("click", function () {
+          alert(
+            "វីដេអូបង្រៀននឹងដំណើរការឆាប់ៗនេះ!\n\nសូមទស្សនាវីដេអូពេញលេញនៅលើបណ្តាញសង្គម ឬទំព័រ YouTube របស់យើង។"
+          );
         });
+      });
 
-        // Reset Quiz
-        document.getElementById('resetQuiz').addEventListener('click', function() {
-            if (confirm('តើអ្នកចង់ធ្វើតេស្តម្តងទៀតមែនទេ?')) {
-                selectedAnswers.clear();
-                document.querySelectorAll('.quiz-option').forEach(option => {
-                    option.classList.remove('correct', 'wrong');
-                    option.style.pointerEvents = 'auto';
-                });
-                document.getElementById('quizResult').style.display = 'none';
-                document.querySelector('#quiz').scrollIntoView({ behavior: 'smooth' });
-            }
-        });
+      // Print progress on page unload
+      window.addEventListener("beforeunload", function () {
+        console.log(
+          "Progress:",
+          visitedSections.size + "/" + sections.length + " sections visited"
+        );
+      });
 
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-
-        // Animate on scroll
-        const animateElements = document.querySelectorAll('.ritual-section, .step-item, .example-card');
-        const animateObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '0';
-                    entry.target.style.transform = 'translateY(30px)';
-                    
-                    setTimeout(() => {
-                        entry.target.style.transition = 'all 0.6s ease';
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }, 100);
-                    
-                    animateObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-
-        animateElements.forEach(el => animateObserver.observe(el));
-
-        // Video play button
-        document.querySelectorAll('.play-button').forEach(button => {
-            button.addEventListener('click', function() {
-                alert('វីដេអូបង្រៀននឹងដំណើរការឆាប់ៗនេះ!\n\nសូមទស្សនាវីដេអូពេញលេញនៅលើបណ្តាញសង្គម ឬទំព័រ YouTube របស់យើង។');
-            });
-        });
-
-        // Print progress on page unload
-        window.addEventListener('beforeunload', function() {
-            console.log('Progress:', visitedSections.size + '/' + sections.length + ' sections visited');
-        });
-
-        // Welcome message
-        console.log('🙏 សូមស្វាគមន៍មកកាន់វគ្គសិក្សា "កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ"');
-        console.log('📖 រៀនដោយយកចិត្តទុកដាក់ ហើយអ្នកនឹងទទួលបានចំណេះដឹងដ៏មានតម្លៃ!');
+      // Welcome message
+      console.log(
+        '🙏 សូមស្វាគមន៍មកកាន់វគ្គសិក្សា "កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ"'
+      );
+      console.log(
+        "📖 រៀនដោយយកចិត្តទុកដាក់ ហើយអ្នកនឹងទទួលបានចំណេះដឹងដ៏មានតម្លៃ!"
+      );
     </script>
-   
-
-</body>
+  </body>
 </html>
