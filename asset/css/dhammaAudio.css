@@ -34,7 +34,7 @@
 
 .audio-icon i {
     font-size: 3.5rem;
-    color: white;
+    color: var(--bg-primary);
 }
 
 .audio-title {
@@ -94,7 +94,7 @@ audio {
 }
 
 .search-input:focus {
-    border-color: var(--primary-color);
+    border-color: var(--bg-primary);
     box-shadow: 0 0 0 3px rgba(184, 119, 7, 0.1);
     outline: none;
 }
@@ -102,7 +102,6 @@ audio {
     .audio-icon {
         height: 150px;
     }
-
     .audio-card {
         padding: 1rem;
     }

@@ -47,7 +47,6 @@ document.getElementById('avatarInput').addEventListener('change', function (e) {
         const reader = new FileReader();
         reader.onload = function (e) {
             document.getElementById('avatarImg').src = e.target.result;
-            showToast('រូបភាពត្រូវបានផ្ទុកដោយជោគជ័យ!', 'success');
         };
         reader.readAsDataURL(file);
     }
@@ -66,53 +65,6 @@ document.getElementById('profileForm').addEventListener('submit', function (e) {
     document.querySelectorAll('.form-control').forEach(input => {
         input.classList.remove('is-invalid', 'is-valid');
     });
-
-    let isValid = true;
-
-    // Validate email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        document.getElementById('email').classList.add('is-invalid');
-        showToast('សូមបញ្ចូលអ៊ីមែលឱ្យបានត្រឹមត្រូវ! ត្រូវមាន @ និង domain', 'error');
-        isValid = false;
-    } else {
-        document.getElementById('email').classList.add('is-valid');
-    }
-
-    // Validate phone
-    if (!phone || phone.trim() === '') {
-        document.getElementById('phone').classList.add('is-invalid');
-        showToast('សូមបញ្ចូលលេខទូរស័ព្ទ!', 'warning');
-        isValid = false;
-    } else {
-        document.getElementById('phone').classList.add('is-valid');
-    }
-
-    // Validate names
-    if (!firstName.trim() || !lastName.trim()) {
-        if (!firstName.trim()) document.getElementById('firstName').classList.add('is-invalid');
-        if (!lastName.trim()) document.getElementById('lastName').classList.add('is-invalid');
-        showToast('សូមបញ្ចូលឈ្មោះឱ្យបានគ្រប់គ្រាន់!', 'warning');
-        isValid = false;
-    } else {
-        document.getElementById('firstName').classList.add('is-valid');
-        document.getElementById('lastName').classList.add('is-valid');
-    }
-
-    if (!isValid) {
-        return;
-    }
-
-    document.getElementById('userName').textContent = firstName + ' ' + lastName;
-    document.getElementById('userEmail').textContent = email;
-    showToast('ព័ត៌មានត្រូវបានរក្សាទុកដោយជោគជ័យ!', 'success');
-
-    // Remove validation classes after success
-    setTimeout(() => {
-        document.querySelectorAll('.form-control').forEach(input => {
-            input.classList.remove('is-valid');
-        });
-    }, 2000);
 });
 
 // Password strength checker

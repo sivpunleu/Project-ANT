@@ -14,7 +14,6 @@
     animation: fadeInUp 0.6s ease-out;
     border: 1px solid var(--border-light);
 }
-
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -82,10 +81,9 @@
 
 .avatar-upload {
     position: absolute;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     bottom: 5px;
     right: 5px;
-    background: linear-gradient(135deg, #10b981, #059669);
-    /* Kept green, can change to var(--success-color) */
     color: white;
     width: 45px;
     height: 45px;
@@ -95,7 +93,7 @@
     justify-content: center;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+    box-shadow: 0 4px 12px var(--primary-color);
 }
 
 .avatar-upload:hover {
@@ -108,47 +106,22 @@
     transition: all 0.3s ease;
     font-weight: 500;
     padding: 12px 20px;
-    color: #64748b;
-    /* Use var(--text-secondary) or var(--text-primary) ? */
     border: none;
     background: transparent;
 }
+.nav-pills .nav-link.active {
+    color: var(--bg-primary)!important;
+    background-color: var(--primary-color);
+}
 
 .nav-pills .nav-link:hover {
-    background-color: rgba(227, 138, 5, 0.1);
-    /* Using new primary color */
     transform: translateX(5px);
-    color: var(--dark-color);
+    color: var(--text-secondary);
 
-}
-
-.nav-pills .nav-link.active {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
-    transform: translateX(5px);
-    box-shadow: 0 4px 12px rgba(240, 153, 1, 0.3);
-}
-
-.nav-pills .nav-link i {
-    transition: transform 0.3s ease;
-    color: var(--dark-color);
-}
-
-.nav-pills .nav-link:hover i,
-.nav-pills .nav-link.active i {
-    transform: scale(1.2);
 }
 
 .form-control,
 .form-select {
-    border-radius: 12px;
-    padding: 12px 16px;
-    border: 2px solid var(--border-light);
-    /* Updated */
-    background-color: var(--bg-primary);
-    /* Updated */
-    color: var(--text-primary);
-    /* Updated */
     transition: all 0.3s ease;
 }
 
@@ -158,47 +131,6 @@
     box-shadow: 0 0 0 4px rgba(184, 119, 7, 0.1);
     transform: translateY(-2px);
 }
-
-.form-control.is-invalid {
-    border-color: var(--danger-color);
-}
-
-
-.form-control.is-valid {
-    border-color: var(--success-color);
-}
-
-.invalid-feedback {
-    display: none;
-    color: var(--danger-color);
-    font-size: 0.875rem;
-    margin-top: 0.25rem;
-}
-
-.form-control.is-invalid~.invalid-feedback {
-    display: block;
-}
-
-.btn {
-    border-radius: 12px;
-    padding: 12px 28px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.btn-primary {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
-    /* Added for light-on-dark */
-    border: none;
-    box-shadow: 0 4px 15px rgba(184, 119, 7, 0.3);
-}
-
-.btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(184, 119, 7, 0.4);
-}
-
 .activity-item {
     padding: 20px;
     border-left: 4px solid var(--primary-color);
@@ -283,58 +215,10 @@
     /* Added */
     transition: all 0.3s ease;
 }
-
 .card:hover {
     box-shadow: var(--box-shadow);
     /* Updated */
     transform: translateY(-2px);
-}
-
-[data-theme="dark"] .profile-card {
-    background: var(--bg-primary);
-    color: var(--text-primary);
-    border-color: var(--border-dark);
-    /* Added */
-}
-
-[data-theme="dark"] .card {
-    background: var(--bg-secondary);
-    color: var(--text-primary);
-    border-color: var(--border-light);
-    /* Updated */
-}
-
-[data-theme="dark"] .form-control,
-[data-theme="dark"] .form-select {
-    background-color: var(--bg-secondary);
-    color: var(--text-primary);
-    border-color: var(--border-light);
-}
-
-[data-theme="dark"] .nav-pills .nav-link {
-    color: var(--text-secondary);
-}
-
-[data-theme="dark"] .nav-pills .nav-link:hover {
-    color: var(--primary-color);
-}
-
-[data-theme="dark"] .nav-pills .nav-link.active {
-    color: white;
-    /* Kept white for contrast */
-}
-
-[data-theme="dark"] h4 {
-    color: var(--text-primary);
-}
-
-[data-theme="dark"] .text-muted {
-    color: var(--text-secondary) !important;
-    /* Override bootstrap */
-}
-
-[data-theme="dark"] .activity-item {
-    color: var(--text-secondary);
 }
 
 @media (max-width: 768px) {
