@@ -1,5 +1,34 @@
+        :root {
+            --primary-color: #b87707;
+            --secondary-color: #dc2626;
+            --bg-primary: #ffffff;
+            --text-primary: #000000;
+            --text-secondary: #ffff;
+            --bg-secondary: #f3f4f6;
+            --border-light: #e5e7eb;
+            --border-dark: #d1d5db;
+            --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            --card-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+            --bg-event-day: #fff3e0;
+            --box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #1f2937;
+            --text-primary: #ffffff;
+            --text-secondary: #d1d5db;
+            --border-light: #374151;
+            --border-dark: #4b5563;
+            --bg-secondary: #374151;
+            --box-shadow: 0px 10px 15px 0px rgba(255, 255, 255, 0.1);
+            --card-shadow: 0 4px 15px rgba(255, 255, 255, 0.08);
+            --card-shadow-hover: 0 8px 25px rgba(255, 255, 255, 0.15);
+            --bg-event-day: #fff3e0;
+        }
+
         .card-top {
             height: 210px;
+            color: black;
             /* កំណត់ទំហំ card លើ */
         }
 
@@ -7,13 +36,14 @@
             background: #c99700;
             border-radius: 15px;
             position: relative;
+            border-radius: 20px;
             cursor: pointer;
         }
 
         .custom-card {
             position: absolute;
             inset: 8px;
-            background: #002366;
+            background: var(--bg-primary);
             border-radius: 15px;
             transition: 0.25s ease;
             display: flex;
@@ -21,6 +51,14 @@
             justify-content: center;
             align-items: center;
             padding: 20px;
+        }
+
+        .card-title {
+            color: black;
+        }
+
+        .card-text {
+            color: black;
         }
 
         /* Gold version */
