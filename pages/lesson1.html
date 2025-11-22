@@ -27,61 +27,23 @@
     <link rel="stylesheet" href="../asset/css/sil.css">
 
     <style>
-        main {
-            font-family: Arial, sans-serif;
-            background: #f9f9f9;
-            margin: 0;
-            padding: 20px;
+        body {
+            font-family: 'Battambang', sans-serif !important;
+            font-weight: 400 !important;
+            background-color: #f8f9fa !important;
         }
 
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
+
+        .card:hover {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
         }
 
-        h2 {
-            margin-top: 40px;
+        .card {
+            text-decoration: none !important;
         }
 
-        .video-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 20px;
-        }
-
-        .video-card {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            text-decoration: none;
-            color: inherit;
-            transition: transform 0.2s ease;
-        }
-
-        .video-card:hover {
-            transform: scale(1.02);
-        }
-
-        .video-thumbnail img {
-            width: 100%;
-            display: block;
-        }
-
-        .video-info {
-            padding: 10px;
-        }
-
-        .video-title {
-            font-size: 16px;
-            font-weight: bold;
-            margin: 0 0 5px;
-            color: #333;
-        }
-
-        .video-channel {
-            font-size: 14px;
-            color: #666;
+        .card * {
+            text-decoration: none !important;
         }
     </style>
 </head>
@@ -92,7 +54,7 @@
         <nav class="navbar navbar-expand-lg  border-bottom border-light py-3 wow animate__slideInDown ">
             <div class="container">
                 <!-- Logo & Brand -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="../home.html">
                     <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
                     <div>
                         <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
@@ -112,12 +74,12 @@
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
                         <!-- Home -->
                         <li class="nav-item">
-                            <a class="nav-link active" href="../home.html">
+                            <a class="nav-link" href="../home.html">
                                 ទំព័រដើម
                             </a>
                         </li>
                         <!-- Dhamma Dropdown -->
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown active">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                                 ព្រះធម៌
                             </a>
@@ -138,7 +100,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="">
+                                    <a class="dropdown-item" href=" questionandanwser.html">
                                         សំណួរ និង ចម្លើយ
                                     </a>
                                 </li>
@@ -219,11 +181,7 @@
                                         ចូលរូមស្ម័គ្រចិត្ត
                                     </a>
                                 </li>
-                                <li>
-                                    <a class="dropdown-item" href="">
-                                        បរិស្ថាន
-                                    </a>
-                                </li>
+
                             </ul>
                         </li>
 
@@ -257,93 +215,192 @@
         </nav>
     </header>
 
-    <main>
-        <!-- <h1>កម្រងវិឌីអូ</h1> -->
+    <section class="pb-5">
+        <main>
+            <div class="container ">
+                <!-- <h1>កម្រងវិឌីអូ</h1> -->
 
-        <h2>មេរៀនថ្នាក់ដំបូង</h2>
-        <div class="video-grid">
-            <a href="watch.html?video=NQ10pFwqDq4" class="video-card">
-                <div class="video-thumbnail">
-                    <img src="https://img.youtube.com/vi/NQ10pFwqDq4/hqdefault.jpg" alt="Video thumbnail">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">មេរៀនថ្នាក់ដំបូង ភាគទី ១</p>
-                    <p class="video-channel">San Sochea Official</p>
-                </div>
-            </a>
+                <h2 class="text-center py-8 text-golden fw-bold">កម្រងវិឌីអូមេរៀន</h2>
 
-            <a href="watch.html?video=W9GGynyqpHc" class="video-card">
-                <div class="video-thumbnail">
-                    <img src="https://img.youtube.com/vi/W9GGynyqpHc/hqdefault.jpg" alt="Video thumbnail">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">មេរៀនថ្នាក់ដំបូង ភាគទី ២</p>
-                    <p class="video-channel">San Sochea Official</p>
-                </div>
-            </a>
+                <div class="row mb-5">
+                    <div class="col-3">
+                        <div class="card">
+                            <a
+                                href="https://www.youtube.com/watch?v=NQ10pFwqDq4&list=PLCYIwXZHWqkIyJxYV1r5bSPGTCBP7aa9V">
+                                <img src="https://img.youtube.com/vi/NQ10pFwqDq4/maxresdefault.jpg" class="card-img-top"
+                                    alt="Video thumbnail">
+                                <div class="card-body">
+                                    <h5 class="card-title text-black ">មេរៀនថ្នាក់ដំបូង ចិត្តបរមត្ថ</h5>
+                                    <!-- <p class="card-text text-black">មេរៀនថ្នាក់ដំបូង ភាគទី ២</p> -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
 
-            <a href="watch3.html?video=3ISYpux5ioM" class="video-card">
-                <div class="video-thumbnail">
-                    <img src="https://img.youtube.com/vi/3ISYpux5ioM/hqdefault.jpg" alt="Video thumbnail">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">មេរៀនថ្មី ភាគទី ១</p>
-                    <p class="video-channel">San Sochea Official</p>
-                </div>
-            </a>
+                    <div class="col-3">
+                        <div class="card">
+                            <a
+                                href="https://www.youtube.com/watch?v=hIRCMTsbnuY&list=PLCYIwXZHWqkIo2JAXnJ5U6qK_ZS7eu7Hy">
+                                <img src="https://img.youtube.com/vi/hIRCMTsbnuY/maxresdefault.jpg" class="card-img-top"
+                                    alt="Video thumbnail">
+                                <div class="card-body">
+                                    <h5 class="card-title text-black ">មេរៀនសតិប្បដ្ឋាន</h5>
+                                    <!-- <p class="card-text text-black">មេរៀនថ្នាក់ដំបូង ភាគទី ២</p> -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
 
-            <a href="watch4.html?video=62FoOmH42KI" class="video-card">
-                <div class="video-thumbnail">
-                    <img src="https://img.youtube.com/vi/62FoOmH42KI/hqdefault.jpg" alt="Video thumbnail">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">មេរៀនថ្មី ភាគទី ១</p>
-                    <p class="video-channel">San Sochea Official</p>
-                </div>
-            </a>
-        </div>
-
-        <h2> មេរៀនសតិបដ្ឋាន</h2>
-        <div class="video-grid">
-            <a href="watch2.html?video=hIRCMTsbnuY" class="video-card">
-                <div class="video-thumbnail">
-                    <img src="https://img.youtube.com/vi/hIRCMTsbnuY/hqdefault.jpg" alt="Video thumbnail">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">មេរៀនសតិបដ្ឋាន</p>
-                    <p class="video-channel">San Sochea Official</p>
-                </div>
-            </a>
-
-            <a href="watch5.html?video=LambI5toDLw" class="video-card">
-                <div class="video-thumbnail">
-                    <img src="https://img.youtube.com/vi/LambI5toDLw/hqdefault.jpg" alt="Video thumbnail">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">មេរៀនថ្មី ភាគទី ១</p>
-                    <p class="video-channel">Ku sopheap</p>
-                </div>
-            </a>
-
-            <a href="watch6.html?video=h07ucor1agI" class="video-card">
-                <div class="video-thumbnail">
-                    <img src="https://img.youtube.com/vi/h07ucor1agI/hqdefault.jpg" alt="Video thumbnail">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">មេរៀនថ្មី ភាគទី ១</p>
-                    <p class="video-channel"> Ku sopheap</p>
-                </div>
-            </a>
+                    <div class="col-3">
+                        <div class="card">
+                            <a
+                                href="https://www.youtube.com/watch?v=ZiecgYeNXbY&list=PLCYIwXZHWqkJb5fPnFZKlUSz3kXCZxiqt">
+                                <img src="https://img.youtube.com/vi/ZiecgYeNXbY/maxresdefault.jpg" class="card-img-top"
+                                    alt="Video thumbnail">
+                                <div class="card-body">
+                                    <h5 class="card-title text-black ">មេរៀនព្រះអភិធម្ម ចេតសិក</h5>
+                                    <!-- <p class="card-text text-black">មេរៀនថ្នាក់ដំបូង ភាគទី ២</p> -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <a
+                                href="https://www.youtube.com/watch?v=3ISYpux5ioM&list=PLCYIwXZHWqkIJ3S0fePCkOmDhEZFvl1WM">
+                                <img src="https://img.youtube.com/vi/3ISYpux5ioM/maxresdefault.jpg" class="card-img-top"
+                                    alt="Video thumbnail">
+                                <div class="card-body">
+                                    <h5 class="card-title text-black "> មេរៀនរូបបរមត្ថ</h5>
+                                    <!-- <p class="card-text text-black">មេរៀនថ្នាក់ដំបូង ភាគទី ២</p> -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
 
 
-        </div>
-    </main>
+
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card">
+                            <a
+                                href="https://www.youtube.com/watch?v=ilvuy3-sma0&list=PLCYIwXZHWqkKbGGZU6tOtwrFKoBTVhNPp">
+                                <img src="https://img.youtube.com/vi/ilvuy3-sma0/maxresdefault.jpg" class="card-img-top"
+                                    alt="Video thumbnail">
+                                <div class="card-body">
+                                    <h5 class="card-title text-black "> មេរៀនបរិច្ឆេទទី ៤ វិថីសង្គហៈ</h5>
+                                    <!-- <p class="card-text text-black">មេរៀនថ្នាក់ដំបូង ភាគទី ២</p> -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <a
+                                href="https://www.youtube.com/watch?v=LambI5toDLw&list=PL99_g8oSUvbKWe4ge_Jr7aduiEy4X6am7">
+                                <img src="https://img.youtube.com/vi/LambI5toDLw/maxresdefault.jpg" class="card-img-top"
+                                    alt="Video thumbnail">
+                                <div class="card-body">
+                                    <h5 class="card-title text-black "> សិក្សាបច្ចេកទេសធ្វើសមាធិ</h5>
+                                    <!-- <p class="card-text text-black">មេរៀនថ្នាក់ដំបូង ភាគទី ២</p> -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <a
+                                href="https://www.youtube.com/watch?v=h07ucor1agI&list=PL99_g8oSUvbJgVL5dq8nv2BuiP2EvH9e5">
+                                <img src="https://img.youtube.com/vi/h07ucor1agI/maxresdefault.jpg" class="card-img-top"
+                                    alt="Video thumbnail">
+                                <div class="card-body">
+                                    <h5 class="card-title text-black "> អាហារផ្លូវចិត្ត​ </h5>
+                                    <!-- <p class="card-text text-black">មេរៀនថ្នាក់ដំបូង ភាគទី ២</p> -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <a
+                                href="https://www.youtube.com/watch?v=h07ucor1agI&list=PL99_g8oSUvbJgVL5dq8nv2BuiP2EvH9e5">
+                                <img src="https://img.youtube.com/vi/h07ucor1agI/maxresdefault.jpg" class="card-img-top"
+                                    alt="Video thumbnail">
+                                <div class="card-body">
+                                    <h5 class="card-title text-black "> អាហារផ្លូវចិត្ត​ </h5>
+                                    <!-- <p class="card-text text-black">មេរៀនថ្នាក់ដំបូង ភាគទី ២</p> -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row mt-5">
+                    <div class="col-3">
+                        <div class="card">
+                            <a
+                                href="https://www.youtube.com/watch?v=qk2biAxipFc&list=PLUp8HpUeqdHvfoJSteS86TARiMHQidBpf">
+                                <img src="https://img.youtube.com/vi/qk2biAxipFc/maxresdefault.jpg" class="card-img-top"
+                                    alt="Video thumbnail">
+                                <div class="card-body">
+                                    <h5 class="card-title text-black "> ពុទ្ធសាសនា&ព្រហ្មញ្ញសាសនា </h5>
+                                    <!-- <p class="card-text text-black">មេរៀនថ្នាក់ដំបូង ភាគទី ២</p> -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <a
+                                href="https://www.youtube.com/watch?v=LSGQQktvtyw&list=PLZw_04ZizKhzrUCy4mFIydSzhV7GcNn46">
+                                <img src="https://img.youtube.com/vi/LSGQQktvtyw/maxresdefault.jpg" class="card-img-top"
+                                    alt="Video thumbnail">
+                                <div class="card-body">
+                                    <h5 class="card-title text-black "> ចរិតសន្តិភាពរបស់ពុទ្ធសាសនិក </h5>
+                                    <!-- <p class="card-text text-black">មេរៀនថ្នាក់ដំបូង ភាគទី ២</p> -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <a
+                                href="https://www.youtube.com/watch?v=HYVjLpZlMJo&list=PL8uAQTxmc37_1KwP9If7R77Z_em86-h7y">
+                                <img src="https://img.youtube.com/vi/HYVjLpZlMJo/maxresdefault.jpg" class="card-img-top"
+                                    alt="Video thumbnail">
+                                <div class="card-body">
+                                    <h5 class="card-title text-black "> តើបញ្ញាត្រូវចម្រើនដូចម្តេច? </h5>
+                                    <!-- <p class="card-text text-black">មេរៀនថ្នាក់ដំបូង ភាគទី ២</p> -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card">
+                            <a href="https://www.youtube.com/watch?v=FGYF1DKlts0">
+                                <img src="https://img.youtube.com/vi/FGYF1DKlts0/maxresdefault.jpg" class="card-img-top"
+                                    alt="Video thumbnail">
+                                <div class="card-body">
+                                    <h5 class="card-title text-black "> រៀនធ្វើចិត្តឲ្យត្រជាក់ </h5>
+                                    <!-- <p class="card-text text-black">មេរៀនថ្នាក់ដំបូង ភាគទី ២</p> -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
 
 
 
 
     <!-- ═══════════ FOOTER ═══════════ -->
-    <footer>
+    <footer class="">
         <div class="container">
             <div class="row">
                 <!-- About Section -->
@@ -377,12 +434,9 @@
 
                 <!-- Services -->
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>សេវាកម្ម</h5>
-                    <a href="#"><i class="fas fa-angle-right"></i> គម្រោងសង្គម</a>
+                    <h5>ការងារ</h5>
                     <a href="#"><i class="fas fa-angle-right"></i> ការអប់រំ</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> វគ្គបណ្តុះបណ្តាល</a>
                     <a href="#"><i class="fas fa-angle-right"></i> អ្នកស្ម័គ្រចិត្ត</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> ការបរិច្ចាគ</a>
                 </div>
 
                 <!-- Contact -->

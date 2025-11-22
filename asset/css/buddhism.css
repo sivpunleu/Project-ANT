@@ -31,7 +31,7 @@
 
 /* Hero Section */
 .hero {
-    min-height: 90vh;
+    min-height: 60vh;
     background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
         url('https://i.pinimg.com/1200x/d5/26/ee/d526eeb506c4487b1c041beb39eb6da5.jpg') center/cover no-repeat;
 

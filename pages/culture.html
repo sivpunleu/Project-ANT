@@ -24,6 +24,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+
+
     <link rel="stylesheet" href="../asset/css/buddhism.css">
 
     <!-- Google Fonts - Khmer -->
@@ -41,7 +43,7 @@
     }
 
     .hero {
-        min-height: 90vh;
+        min-height: 60vh;
         background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
             url('../asset/images/kimhak/f8b6f01252baanner.jpg') center/cover no-repeat;
 
@@ -52,6 +54,64 @@
         color: white;
         border-radius: 10px;
     }
+
+
+    @media (max-width: 576px) {
+
+        #event-story .card-text {
+            font-size: 14px !important;
+            line-height: 1.4;
+        }
+
+        #event-story h3,
+        #event-story h5 {
+            font-size: 18px !important;
+        }
+
+        #event-story img {
+            height: 200px !important;
+        }
+
+        .ps-4 {
+            padding-left: 0 !important;
+        }
+
+        .col-6 {
+            width: 100% !important;
+        }
+    }
+
+    @media (min-width: 577px) and (max-width: 992px) {
+
+        #event-story img {
+            height: 250px !important;
+        }
+
+        #event-story .card-text {
+            font-size: 16px !important;
+        }
+
+        #event-story h3,
+        #event-story h5 {
+            font-size: 22px !important;
+        }
+    }
+
+    @media (min-width: 993px) {
+
+        #event-story img {
+            height: 300px !important;
+        }
+
+        #event-story .card-text {
+            font-size: 18px !important;
+        }
+
+        #event-story h3,
+        #event-story h5 {
+            font-size: 26px !important;
+        }
+    }
 </style>
 
 <body>
@@ -60,7 +120,7 @@
         <nav class="navbar navbar-expand-lg  border-bottom border-light py-3 wow animate__slideInDown ">
             <div class="container">
                 <!-- Logo & Brand -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/home.html">
                     <i class="fas fa-dharmachakra fs-1" style="color: var(--primary-color);"></i>
                     <div>
                         <div style="font-size: 20px;">ពុទ្ធសាសនានិងសង្គម</div>
@@ -80,7 +140,7 @@
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
                         <!-- Home -->
                         <li class="nav-item">
-                            <a class="nav-link " href="home.html">
+                            <a class="nav-link " href="/home.html">
                                 ទំព័រដើម
                             </a>
                         </li>
@@ -91,22 +151,22 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" href="pages/media-library.html">
+                                    <a class="dropdown-item" href="/pages/media-library.html">
                                         បណ្ណាល័យព្រះធម៌
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="/pages/dhammaVideo.html">
                                         វីដេអូធម៌
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="/pages/dhammaAudio.html">
                                         សំឡេងធម៌
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="/pages/questionandanwser.html">
                                         សំណួរ និង ចម្លើយ
                                     </a>
                                 </li>
@@ -115,7 +175,7 @@
 
                         <!-- Courses -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="/pages/education.html">
                                 ការអប់រំ
                             </a>
                         </li>
@@ -154,17 +214,17 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="/pages/history.html">
                                         ប្រវត្តិ
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="/pages/mission.html">
                                         បេសកកម្ម
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="/pages/team.html">
                                         ក្រុមការងារ
                                     </a>
                                 </li>
@@ -179,18 +239,18 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" href="pages/Buddhist Rituals.html">
+                                    <a class="dropdown-item" href="/pages/Buddhist Rituals.html">
                                         កិច្ចពុទ្ធបរិស័ទចំពោះព្រះសង្ឃ
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="/pages/volunteer.html">
                                         ចូលរូមស្ម័គ្រចិត្ត
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
-                                        បរិស្ថាន
+                                    <a class="dropdown-item" href="/pages/contact.html">
+                                        ទំនាក់ទំនង
                                     </a>
                                 </li>
                             </ul>
@@ -225,6 +285,8 @@
             </div>
         </nav>
     </header>
+
+
     <main>
         <!-- Hero Section -->
         <section class="hero">
@@ -233,101 +295,123 @@
                     វប្បធម៌ប្រពៃណីខ្មែរ
                 </h1>
                 <p class="lead mb-4"></p>
-                <a href="#events" class="btn btn-warning text-white fw-bold px-4 py-2 rounded-pill">ស្វែងយល់បន្ថែម</a>
+                <a href="#events" class="btn btn-warning text-white fw-bold px-4 py-2 rounded-pill"
+                    style="background-color: #b87707;">ស្វែងយល់បន្ថែម</a>
             </div>
         </section>
-
-
-
 
 
 
         <!-- Events story-->
         <section id="event-story" class="py-10">
             <div class="container">
-                <h2 class="text-center mb-5 text-golden fw-bold">បុណ្យប្រពៃណី</h2>
+                <h2 class="text-center mb-10 text-golden fw-bold" data-aos="fade-up">បុណ្យប្រពៃណី</h2>
 
 
-
-
-
-
-
-
-                <!-- story4 -->
-                <div class="container">
+                <!-- story1 -->
+                <div class="container mb-10">
                     <div class="row g-4 align-items-center mb-4">
                         <!-- Image Column -->
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6" data-aos="fade-right" data-aos-duration="">
                             <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal"
-                                data-bs-target="#vassaModal">
-                                <img src="https://i.pinimg.com/1200x/d7/71/2b/d7712b1682c99fbe193c2c94476ab264.jpg"
+                                data-bs-target="#AsalhaModal">
+                                <img src="/asset/images/kimhak/boat-d7712b1682c99fbe193c2c94476ab264.jpg"
                                     class="img-fluid rounded-4" style="height: 300px; width: 100%; object-fit: cover;"
                                     alt="បុណ្យអុំទូក">
 
                             </div>
 
+                        </div>
+                        <div class="col-6">
+
                             <div class="card h-100 border-0 shadow-sm d-flex flex-row" data-bs-toggle="modal"
                                 data-bs-target="#AsalhaModal">
 
-                                <div class="card-body text-center ps-4">
-                                    <h5 class="card-title text-golden">បុណ្យអុំទូក</h5>
-                                    <p class="card-text">ចុះកាលបរិច្ឆេទ៖ ឆ្នាំ ១៨៧៣
+                                <div class="card-body text-center ps-4 ">
+                                    <h3 class="card-title text-golden fw-bold">បុណ្យអុំទូក</h3>
+                                    <p class="card-text fs-4 text-start">ចុះកាលបរិច្ឆេទ៖ ឆ្នាំ ១៨៧៣
                                         ឈ្មោះ​ផ្លូវការណ៍៖ ព្រះរាជពិធីបុណ្យអុំទូក បណ្ដែតប្រទីប អកអំបុក និង សំពះព្រះខែ
                                         ឈ្មោះហៅកាត់៖ បុណ្យអុំទូក
                                         ថ្ងៃចាប់ផ្ដើម និង ថ្ងៃបញ្ចប់៖ ថ្ងៃ​១៤កើត ១៥កើត ដល់​ថ្ងៃ ១រោច ខែ​ក​ក្តិ​ក
                                         ប្រារព្ធដោយ៖ ជនជាតិខ្មែរ
                                         ប្រារព្ធលើកដំបូង៖ ក្នុងរាជ​ព្រះបាទ នរោត្តម
                                         ប្រវត្តិទេវៈកថា៖ ហិណ្ឌូសាសនា និង ពុទ្ធសាសនា...</p>
+
+                                    <div class="d-flex justify-content-between p-4">
+
+                                        <div class="icon">
+                                            <i class="fa-solid fa-sailboat fs-2" style="color: #b87707;"></i>
+                                            <i class="fa-solid fa-cake-candles ms-3 fs-2" style="color: #b87707;"></i>
+                                            <i class="fa-regular fa-moon ms-3 fs-2" style="color: #b87707;"></i>
+                                        </div>
+                                        <button type="button" class="btn  text-light" style="background-color: #b87707;"
+                                            data-bs-toggle="modal" data-bs-target="#AsalhaModal">read more</button>
+
+                                    </div>
+
                                 </div>
                             </div>
+
                         </div>
+
+
+
                     </div>
 
                 </div>
 
-                <!-- story5 -->
-                <div class="container">
+                <!-- story2 -->
+                <div class="container mb-10">
                     <div class="row g-4 align-items-center mb-4">
                         <!-- Image Column -->
                         <div class="col-12 col-md-6">
-
-                        </div>
-                        <div class="col-6">
-
-                            <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal"
-                                data-bs-target="#vassaModal">
-                                <img src="https://i.pinimg.com/736x/6f/c7/f4/6fc7f4d31d558e01a0f84071196d47fb.jpg"
-                                    class="img-fluid rounded-4" style="height: 300px; width: 100%; object-fit: cover;"
-                                    alt="បុណ្យអុំទូក">
-
-                            </div>
-
                             <div class="card h-100 border-0 shadow-sm d-flex flex-row" data-bs-toggle="modal"
                                 data-bs-target="#AsalhaModal">
 
                                 <div class="card-body text-center ps-4">
-                                    <h5 class="card-title text-golden">បុណ្យចូលឆ្នាំថ្មី</h5>
-                                    <p class="card-text">គឺជាពិធីបុណ្យ​ចូលឆ្នាំថ្មីរបស់កម្ពុជា ដែលកំណត់តាម
+                                    <h5 class="card-title text-golden fs-4 fw-bold">បុណ្យចូលឆ្នាំថ្មី</h5>
+                                    <p class="card-text text-start fs-4">គឺជាពិធីបុណ្យ​ចូលឆ្នាំថ្មីរបស់កម្ពុជា
+                                        ដែលកំណត់តាម
                                         ប្រតិទិនពុទ្ធសាសនា (Buddhist calendar) តាមដំណើរគោលចររបស់ ព្រះចន្ទ
                                         ដែលរាប់តាមរង្វាស់នៃឆ្នាំ ចន្ទគតិ (Lunar calendar) នៅក្នុងវប្បធម៌របស់កម្ពុជា
                                         ពិធីបុណ្យនេះត្រូវបានគេហៅថា ពិធីបុណ្យ គិម្ហៈរដូវ "បុណ្យរដូវក្ដៅ" (The Hot Season)
-                                        នៃវិស្សមកាលតូច (Small vacations) ដែលបានមកពីអរិយធម៌ នៃវប្បធម៌ ប្រទេសឥណ្ឌា
-                                        ដែលហៅថ្ងៃចូលឆ្នាំថ្មីថា "សង្ក្រាន្ត" (Sangkranta) ដែលពាក្យ សង្ក្រាន្ត ជាភាសាដើម
-                                        នៃពាក្យ (សំស្ក្រឹត-Sanskrit) ដែលត្រូវបានប្រជាជនកម្ពុជា ឱ្យនិយមន័យថា...</p>
+                                        នៃវិស្សមកាលតូច ...</p>
+                                    <div class="d-flex justify-content-between p-4">
+
+                                        <div class="icon">
+                                            <i class="fa-solid fa-sailboat fs-2" style="color: #b87707;"></i>
+                                            <i class="fa-solid fa-cake-candles ms-3 fs-2" style="color: #b87707;"></i>
+                                            <i class="fa-regular fa-moon ms-3 fs-2" style="color: #b87707;"></i>
+                                        </div>
+                                        <button type="button" class="btn  text-light" style="background-color: #b87707;"
+                                            data-bs-toggle="modal" data-bs-target="#AsalhaModal">read more</button>
+
+                                    </div>
+
                                 </div>
                             </div>
-
                         </div>
+
+                        <div class="col-6" data-aos="fade-left" data-aos-duration="1000">
+
+                            <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal"
+                                data-bs-target="#vassaModal">
+                                <img src="/asset/images/kimhak/Newyear6fc7f4d31d558e01a0f84071196d47fb.jpg"
+                                    class="img-fluid rounded-4" style="height: 300px; width: 100%; object-fit: cover;"
+                                    alt="បុណ្យអុំទូក">
+
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
 
-                <!-- story4 -->
-                <div class="container">
+                <!-- story3 -->
+                <div class="container mb-10">
                     <div class="row g-4 align-items-center mb-4">
                         <!-- Image Column -->
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6" data-aos="fade-left" data-aos-duration="1000">
                             <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal"
                                 data-bs-target="#vassaModal">
                                 <img src="https://i.pinimg.com/1200x/a5/21/2f/a5212f056a07d767ed904210fdc3a6b1.jpg"
@@ -336,17 +420,32 @@
 
                             </div>
 
+
+                        </div>
+
+                        <div class="col-12 col-md-6">
                             <div class="card h-100 border-0 shadow-sm d-flex flex-row" data-bs-toggle="modal"
                                 data-bs-target="#AsalhaModal">
 
                                 <div class="card-body text-center ps-4">
-                                    <h5 class="card-title text-golden">ពិធីបុណ្យភ្ជុំបិណ្ឌ</h5>
-                                    <p class="card-text">គឺជាពិធីបុណ្យ​នឹករលឹកសាច់ញាតិដែលបានស្លាប់របស់ជនជាតិខ្មែរ
+                                    <h5 class="card-title text-golden fs-4 fw-bold">ពិធីបុណ្យភ្ជុំបិណ្ឌ</h5>
+                                    <p class="card-text fs-4">គឺជាពិធីបុណ្យ​នឹករលឹកសាច់ញាតិដែលបានស្លាប់របស់ជនជាតិខ្មែរ
                                         ដែលកំណត់តាម ប្រតិទិនពុទ្ធសាសនា តាមដំណើរគោលចររបស់ព្រះចន្ទដែលរាប់តាមរង្វាស់នៃឆ្នាំ
                                         ចន្ទគតិ នៅក្នុងប្រពៃណីរបស់កម្ពុជា ពិធីបុណ្យនេះត្រូវបានគេហៅថា "ពិធីសែនដូនតា
                                         ដែលមានប្រវត្តិតាំងពី សម័យមុនអង្គរមកម៉្លេះ ដែលជួបប្រទះនៅសិលាចរឹក ចារឹកនៅស.វទី៩
                                         ក្នុងរាជព្រះបាទ វ៉ាន់ឆាតដែលបានរៀបរាប់ខ្លះៗអំពីការចាប់បាយបិណ្ឌ ដែលពូនជាដុំ
-                                        ហើយបានផ្ដាំឱ្យព្រះកឹង មានន័យថា...</p>
+                                        ហើយបានផ្ដាំឱ្យព្រះកឹង មានន័យថា....</p>
+                                    <div class="d-flex justify-content-between p-4">
+
+                                        <div class="icon">
+                                            <i class="fa-solid fa-sailboat fs-2" style="color: #b87707;"></i>
+                                            <i class="fa-solid fa-cake-candles ms-3 fs-2" style="color: #b87707;"></i>
+                                            <i class="fa-regular fa-moon ms-3 fs-2" style="color: #b87707;"></i>
+                                        </div>
+                                        <button type="button" class="btn  text-light" style="background-color: #b87707;"
+                                            data-bs-toggle="modal" data-bs-target="#AsalhaModal">read more</button>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -360,8 +459,35 @@
                         <!-- Image Column -->
                         <div class="col-12 col-md-6">
 
+                            <div class="card h-100 border-0 shadow-sm d-flex flex-row" data-bs-toggle="modal"
+                                data-bs-target="#AsalhaModal">
+
+                                <div class="card-body text-center ps-4">
+                                    <h5 class="card-title text-golden fs-4 fw-bold">ព្រះរាជពិធីបុណ្យច្រត់ព្រះនង្គ័ល</h5>
+                                    <p class="card-text fs-4 text-start">គឺជាព្រះរាជពិធីបុណ្យប្រពៃណីជាតិកម្ពុជាមួយ
+                                        ដែលប្រារព្ធឡើងនៅថ្ងៃ
+                                        ៤រោច រៀងរាល់ខែ ពិសាខ ត្រូវនិងខែ (ឧសភា) ដែលកំណត់តាម ប្រតិទិនពុទ្ធសាសនា (Buddhist
+                                        calendar) តាមដំណើរគោលចររបស់ ព្រះចន្ទ ដែលរាប់តាមរង្វាស់នៃឆ្នាំ ចន្ទគតិ (Lunar
+                                        calendar) នៅក្នុងវប្បធម៌របស់កម្ពុជា ពិធីបុណ្យនេះត្រូវបានគេហៅថា
+                                        ពិធីបុណ្យចាប់ផ្ដើមនូវរដូវដាំដុះ (Festival begins the growing season)
+                                        ដែលស្ថាប័នព្រះបរមរាជវាំង និង រៀបចំឱ្យមានកិច្ចភ្ជួរព្រះស្រែដើម្បីជានិមិត្តរូប
+                                        ក្នុងការចាប់ផ្ដើមរបរកសិកម្ម...</p>
+                                    <div class="d-flex justify-content-between p-4">
+
+                                        <div class="icon">
+                                            <i class="fa-solid fa-sailboat fs-2" style="color: #b87707;"></i>
+                                            <i class="fa-solid fa-cake-candles ms-3 fs-2" style="color: #b87707;"></i>
+                                            <i class="fa-regular fa-moon ms-3 fs-2" style="color: #b87707;"></i>
+                                        </div>
+                                        <button type="button" class="btn  text-light" style="background-color: #b87707;"
+                                            data-bs-toggle="modal" data-bs-target="#AsalhaModal">read more</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="col-6">
+                        <div class="col-6" data-aos="fade-left" data-aos-duration="">
 
                             <div class="card h-100 border-0 shadow-sm" data-bs-toggle="modal"
                                 data-bs-target="#vassaModal">
@@ -371,20 +497,7 @@
 
                             </div>
 
-                            <div class="card h-100 border-0 shadow-sm d-flex flex-row" data-bs-toggle="modal"
-                                data-bs-target="#AsalhaModal">
 
-                                <div class="card-body text-center ps-4">
-                                    <h5 class="card-title text-golden">ព្រះរាជពិធីបុណ្យច្រត់ព្រះនង្គ័ល</h5>
-                                    <p class="card-text">គឺជាព្រះរាជពិធីបុណ្យប្រពៃណីជាតិកម្ពុជាមួយ ដែលប្រារព្ធឡើងនៅថ្ងៃ
-                                        ៤រោច រៀងរាល់ខែ ពិសាខ ត្រូវនិងខែ (ឧសភា) ដែលកំណត់តាម ប្រតិទិនពុទ្ធសាសនា (Buddhist
-                                        calendar) តាមដំណើរគោលចររបស់ ព្រះចន្ទ ដែលរាប់តាមរង្វាស់នៃឆ្នាំ ចន្ទគតិ (Lunar
-                                        calendar) នៅក្នុងវប្បធម៌របស់កម្ពុជា ពិធីបុណ្យនេះត្រូវបានគេហៅថា
-                                        ពិធីបុណ្យចាប់ផ្ដើមនូវរដូវដាំដុះ (Festival begins the growing season)
-                                        ដែលស្ថាប័នព្រះបរមរាជវាំង និង រៀបចំឱ្យមានកិច្ចភ្ជួរព្រះស្រែដើម្បីជានិមិត្តរូប
-                                        ក្នុងការចាប់ផ្ដើមរបរកសិកម្ម...</p>
-                                </div>
-                            </div>
 
                         </div>
                     </div>
@@ -392,30 +505,8 @@
                 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
             </div>
         </section>
-
-
-
-
-
-
-
-
-
-
-
 
         <!-- Modals -->
 
@@ -538,7 +629,7 @@
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content border-0 rounded-4 shadow-lg">
                     <div class="modal-header bg-golden text-white">
-                        <h5 class="modal-title">អាសាឡ្ហបូជា</h5>
+                        <h5 class="modal-title">បុណ្យអុំទូក</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body p-4">
@@ -546,23 +637,17 @@
                         <div class="row">
                             <div class="col-6">
 
-                                <img src="/asset/images/kimhak/f680419c6ec741889ffb5monk.jpg" class="img-fluid mb-3"
+                                <img src="/asset/images/kimhak/Cambodian_Boat_2017.jpg" class="img-fluid mb-3"
                                     alt="Asalha">
 
                             </div>
                             <div class="col-6">
-                                <h4>អាសាឡ្ហបូជា</h4>
+                                <h4>បុណ្យអុំទូក</h4>
                                 <!-- icon date -->
                                 <div class="d-flex"> <i class="bi bi-calendar me-2"></i> <span>១៥ កើត ខែអាសាឍ</span>
                                 </div>
                                 <h6>ប្រារព្ធហេតុ ៥ យ៉ាង៖</h6>
-                                <ul>
-                                    <li>​ចាប់​បដិសន្ធិ</li>
-                                    <li>ចេញ​ទៅ​សាងផ្នួស</li>
-                                    <li>សម្តែង​ព្រះធម៌ទេសនា​ជា​លើកដំបូង​ប្រោស​បញ្ចវគ្គីយ៍ </li>
-                                    <li>ស្ថាបនា​ភិក្ខុសង្ឃ​ជា​លើកដំបូង</li>
-                                    <li>សម្តែង​យមក​ប្បាដិហារ្យ</li>
-                                </ul>
+                                
                             </div>
                         </div>
                         <p>ពិធីបុណ្យអាសាឡ្ហបូជា គឺជាពិធីបុណ្យព្រះពុទ្ធសាសនាថេរវាទ ដែលជាធម្មតាធ្វើឡើងក្នុងខែកក្កដា [១]
@@ -647,311 +732,14 @@
             </div>
         </div>
 
-        <!-- Kathina -->
-        <div class="modal fade" id="kathinaModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content border-0 rounded-4 shadow-lg">
-                    <div class="modal-header bg-golden text-white">
-                        <h5 class="modal-title">បុណ្យកឋិន</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body p-4">
 
-                        <div class="row">
-                            <div class="col-6">
-
-                                <img src="/asset/images/kimhak/30monk.jpg" class="img-fluid mb-3" alt="Vassa">
-
-                            </div>
-                            <div class="col-6">
-                                <h4>បុណ្យកឋិន</h4>
-                                <!-- icon date -->
-                                <div class="d-flex"> <i class="bi bi-calendar me-2"></i> <span>ចាប់​ពីថ្ងៃ​១​រោច
-                                        ខែអស្សុជ ដល់​ថ្ងៃ​១៥​កើត ខែ​ក​ក្តិ​ក</span></div>
-                                <h6 class="fw-bold">គោលបំណង​៖</h6>
-                                <ul>
-                                    <li>ចៀសវាងការប៉ះពាល់ដល់ដំណាំអ្នកស្រុក</li>
-                                    <li>បង្កើនការយកចិត្តទុកដាក់លើការសិក្សាធម៌</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <p>បុណ្យកឋិន គឺជា​បុណ្យ​១​របស់​ព្រះពុទ្ធសាសនា ដែលមាន​រយៈពេល​២៩​ថ្ងៃ គឺ​ចាប់​ពីថ្ងៃ​១​រោច
-                            ខែអស្សុជ ដល់​ថ្ងៃ​១៥​កើត ខែ​ក​ក្តិ​ក​។ អាច​និយាយបានថា ពុទ្ធបរិស័ទ ចាប់ផ្តើម​ធ្វើបុណ្យ​កឋិន
-                            នៅក្រោយ​ថ្ងៃ​ចេញ​ព្រះវស្សា​។ ការចូល​ព្រះវស្សា​របស់​ព្រះសង្ឃ មាន​រយៈពេល​៣​ខែ​។
-                            ​កឋិន​កាល គឺជា​រដូវ​ដែល​ប្រជា​ពុទ្ធបរិស័ទ នាំយក​សំពត់​ជា​គ្រឿង​ស្លៀកដណ្តប់​របស់​ព្រះសង្ឃ
-                            មាន​ចីពរ​ជាដើម ទៅ​ប្រគេន​ព្រះសង្ឃ​។ បច្ចុប្បន្ន គេ ឃើញ​ពុទ្ធបរិស័ទ
-                            មិន​ត្រឹមតែ​ប្រគេន​ចីវរ​ទេ នៅ​ប្រគេន​ទេយ្យទាន​ផ្សេងៗ​ទៀត ដូចជា គ្រឿង​បរិភោគ និង ថ្នាំសង្កូវ
-                            ជាដើម រួមទាំង​បច្ច័យ​ផងដែរ (​ថវិកា​)​។
-                            ​បើតាម​ព្រះ​វិន័យ វត្ត​មួយ អាច​ប្រារព្ធ​ពិធីបុណ្យ​កឋិន​បានតែ​មួយថ្ងៃ​គត់
-                            ក្នុង​រយៈពេល​២៩​ថ្ងៃនេះ ដោយ​ប្រារព្ធ​នៅ​ថ្ងៃ​ណា​ក៏​បានដែរ តាម​ការរៀបចំ​របស់​គណៈកម្មការ​វត្ត
-                            និង​តាម​ការស្នើសុំ​របស់​ម្ចាស់​កឋិន​។ បុណ្យ​នេះ មិន​ត្រឹមតែ​ជា​បុណ្យ​បែប​ព្រះ​វិន័យ​ទេ
-                            តែ​ថែមទាំង​ក្លាយជា​បុណ្យប្រពៃណី​ខ្មែរ​ផងដែរ​។​
-                            ​ថ្វីដ្បិតតែ​វត្ត​មួយ មិនត្រូវ​បានអនុញ្ញាត​ឲ្យ​ធ្វើបុណ្យ​កឋិន​លើសពី​មួយថ្ងៃ​ក៏ពិតមែន
-                            តែ​វត្ត​មួយ​អាច​ទទួលបាន​កឋិន​ច្រើន​លើសពី​មួយ​បាន​។ វត្ត​ខ្លះ អាចមាន​កឋិន​ច្រើន​ហែ​ចូល
-                            ដោយមាន​ម្ចាស់​ផ្សេងៗ​គ្នា តែ​ពិធី​នេះ​ដាច់ខាត ត្រូវ​រៀបចំ​យ៉ាងណា​ឲ្យ​ចំ​ថ្ងៃ​ជាមួយគ្នា
-                            ដោយ​មិនអាច​ខុស​ថ្ងៃ​គ្នា​បានឡើយ​។ និយាយ​ឲ្យ​ស្រួល​ស្តាប់ គឺ
-                            ក្នុង​មួយ​វត្ត​អាចមាន​កឋិន​ប៉ុន្មាន​ក៏បាន​ដែរ
-                            តែ​ត្រូវ​ប្រារព្ធ​ឡើង​ជាមួយគ្នា​ក្នុង​ថ្ងៃ​តែមួយ​។​
-                            ​អ្វីដែល​គួរ​ឲ្យ​កត់សម្គាល់​នោះ គឺថា បុណ្យកឋិន មិន​ត្រឹមតែ​ទាយក ទាយិកា​នោះទេ ដែល​អាច​ធ្វើបាន
-                            សូម្បីតែ​ព្រះសង្ឃ​ខ្លួនឯង​ផ្ទាល់ ក៏​អាច​ផ្តួចផ្តើម​ធ្វើជា​ម្ចាស់​បុណ្យកឋិន​បានដែរ​៕
-                        </p>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- story modal-->
-
-        <!-- story 1 -->
-
-        <div class="modal fade" id="eventstoryModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content border-0 rounded-4 shadow-lg">
-                    <div class="modal-header bg-golden text-white">
-                        <h5 class="modal-title"></h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body p-4">
-
-                        <div class="row">
-                            <div class="col-6">
-
-                                <img src="/asset/images/kimhak/chakkhu5.jpg" class="img-fluid mb-3" alt="story1">
-
-                            </div>
-                            <div class="col-6">
-                                <h4>រឿងរឿងព្រះចក្ខុបាលត្ថេរ</h4>
-                                <!-- icon date -->
-                                <h6>គាថា</h6>
-                                <p>
-                                    មនោបុព្វង្គមា ធម្មា មនោសេដ្ឋា មនោមយា។ មនសា ចេ បទុដ្ឋេន ភាសតិ វា ករោតិ វា។ តតោ នំ
-                                    ទុក្ខមន្វេតិ ចក្កំវ វហតោ បទំ។
-
-                                </p>
-                                <p>
-                                    ធម៌ទាំងឡាយ មានចិត្តជាប្រធាន... បើបុគ្គលមានចិត្តត្រូវទោសៈប្រទូស្តហើយ សេចក្តីទុក្ខ
-                                    រមែងដេញតាមនូវបុគ្គលនោះ ដូចកង់រថ ដេញតាមស្នាមជើងគោដែលកំពុងអូសរទេះទៅដូច្នោះឯង
-                                </p>
-
-                            </div>
-                        </div>
-                        <p>រឿង ព្រះចក្ខុបាលត្ថេរ (Cakkhupāla Thera) គឺជាអតីតវត្ថុដ៏សំខាន់មួយក្នុងព្រះពុទ្ធសាសនា
-                            ដែលព្រះសម្មាសម្ពុទ្ធជាម្ចាស់ទ្រង់បានលើកយកមកប្រារព្ធទេសនា គាថាទី ១ នៃធម្មបទ
-                            ស្តីអំពីភាពជាប្រធាននៃចិត្ត។ រឿងនេះបានបង្ហាញយ៉ាងច្បាស់អំពីឥទ្ធិពលដ៏ខ្លាំងក្លានៃកម្មផល
-                            ដែលកើតចេញពីចេតនាក្នុងចិត្ត។
-                            ១. អតីតជាតិ៖ គ្រូពេទ្យភ្នែក និងផលនៃកំហឹង
-                            ក្នុងអតីតជាតិ ព្រះចក្ខុបាលត្ថេរធ្លាប់ជា គ្រូពេទ្យភ្នែក ម្នាក់។
-                            លោកបានព្យាបាលភ្នែកស្ត្រីក្រីក្រម្នាក់។ ស្ត្រីនោះបានសន្យានឹងលោកថា បើជាសះស្បើយ
-                            នាងនឹងមកបម្រើលោក។ ក្រោយពេលភ្នែកបានជាសះស្បើយភ្លឺថ្លាហើយ ស្ត្រីនោះបែរជាមិនចង់រក្សាសច្ចា
-                            ដោយខ្លាចបាត់បង់សេរីភាព ក៏បានកុហកគ្រូពេទ្យថា ភ្នែករបស់នាងនៅតែឈឺខ្លាំង។
-                            គ្រូពេទ្យកាលបើដឹងថាខ្លួនត្រូវគេបោកប្រាស់ ក៏កើតសេចក្តី ក្រោធខឹង (ទោសៈ) ជាខ្លាំង
-                            ហើយក៏បានផ្តល់ថ្នាំដែលមានពិសម្យ៉ាងទៅឲ្យនាងលាប ដោយចេតនាអាក្រក់ ដើម្បីធ្វើឲ្យភ្នែកនាង
-                            ខ្វាក់ងងឹត ជាអចិន្ត្រៃយ៍តែម្តង។ កម្មអាក្រក់ (អកុសលកម្ម) ដែលកើតចេញពីចិត្តប្រកបដោយទោសៈនេះហើយ
-                            ដែលបានតាមជាប់ខ្លួនលោកទៅជាតិនាពេលអនាគត។
-                            ២. បច្ចុប្បន្នជាតិ៖ សេចក្តីព្យាយាម និងការទទួលផលកម្ម
-                            ក្នុងជាតិនេះ គ្រូពេទ្យនោះបានមកបួសក្នុងសាសនាហើយមាននាមថា ព្រះចក្ខុបាលត្ថេរ។
-                            លោកបានតាំងចិត្តបដិបត្តិធម៌យ៉ាងម៉ឺងម៉ាត់ ដោយបានតាំងសច្ចាថានឹង មិនដេក (សិង)
-                            រហូតដល់ទៅបីខែក្នុងវស្សា ដើម្បីបំពេញសមណធម៌។
-                            ដោយសារសេចក្តីព្យាយាមនេះ រួមជាមួយនឹងការដល់នូវពេលឲ្យផលនៃ កម្មចាស់
-                            (ដែលធ្លាប់ធ្វើឲ្យស្រ្តីខ្វាក់) រោគភ្នែក ក៏បានកើតឡើងចំពោះលោក។
-                            ទោះបីជាគ្រូពេទ្យបានប្រាប់ឲ្យលោកដេកដើម្បីបន្តក់ថ្នាំក្តី ក៏ព្រះថេរៈនៅតែមិនព្រមដេក
-                            ដោយរក្សាសច្ចា។ ទីបំផុត ភ្នែកទាំងពីររបស់លោកក៏ខ្វាក់ងងឹត។ ប៉ុន្តែនៅពេលដែលភ្នែកលោកខ្វាក់នោះឯង
-                            លោកក៏បានសម្រេចនូវ អរហត្តផល ដ៏ប្រសើរខ្ពស់បំផុត។
-                            ៣. ព្រះពុទ្ធបរមសាស្ដាត្រាស់ធម្មទេសនា
-                            នៅពេលដែលព្រះថេរៈនិមន្តទៅគាល់ព្រះពុទ្ធនៅវត្តជេតពន
-                            ភិក្ខុដទៃបានឃើញព្រះចក្ខុបាលត្ថេរដែលខ្វាក់ហើយ បានចង្រ្កមជាន់ សត្វល្អិត (មេភ្លៀង)
-                            ស្លាប់នៅពេលយប់ ក៏នាំគ្នាទៅទូលព្រះពុទ្ធដោយសេចក្តីសង្ស័យ។
-                            ព្រះពុទ្ធទ្រង់ត្រាស់ថា៖ "ព្រះអរហន្ត មិនមានចេតនាសម្លាប់ ទេ"
-                            ហើយព្រះអង្គក៏បានពន្យល់ពីអតីតកម្មរបស់ព្រះចក្ខុបាលត្ថេរដែលជាដើមហេតុនាំឲ្យលោកត្រូវខ្វាក់ភ្នែក។
-                            បន្ទាប់មក ព្រះអង្គទ្រង់បានត្រាស់នូវគាថាដ៏មានអានុភាពដំបូងបង្អស់នៃធម្មបទថា៖
-                            "ធម៌ទាំងឡាយ មានចិត្តជាប្រធាន... បើបុគ្គលមានចិត្តត្រូវទោសៈប្រទូស្តហើយ សេចក្តីទុក្ខ
-                            រមែងដេញតាមនូវបុគ្គលនោះ ដូចកង់រថ ដេញតាមស្នាមជើងគោដែលកំពុងអូសរទេះទៅដូច្នោះឯង។"</p>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- story 2 -->
-        <div class="modal fade" id="story2Modal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content border-0 rounded-4 shadow-lg">
-                    <div class="modal-header bg-golden text-white">
-                        <h5 class="modal-title"></h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body p-4">
-
-                        <div class="row">
-                            <div class="col-6">
-
-                                <img src="/asset/images/kimhak/mara.jpg" class="img-fluid mb-3" alt="story1">
-
-                            </div>
-                            <div class="col-6">
-                                <h4>ព្រះពុទ្ធផ្ចាញ់មារ</h4>
-                                <!-- icon date -->
-                                <p>
-                                    មារ ជាសភាវៈអាក្រក់តំណាងឲ្យ កិលេស ៣ យ៉ាង៖
-                                    តណ្ហា ទោសៈ មោហៈ
-
-                                </p>
-
-
-                            </div>
-                        </div>
-                        <p>រឿង ព្រះពុទ្ធផ្ចាញ់មារ គឺជាវគ្គដ៏សំខាន់ និងល្បីល្បាញបំផុតមួយក្នុងពុទ្ធប្រវត្តិ ដែលតំណាងឲ្យ
-                            ជ័យជម្នះនៃបញ្ញា លើរាល់ឧបសគ្គខាងផ្លូវចិត្ត
-                            និងផ្លូវកាយមុនពេលព្រះសម្មាសម្ពុទ្ធសមណគោតមទ្រង់ត្រាស់ដឹងជាដាច់ខាត។
-
-                            ១. គង់ក្រោមដើមពោធិ៍ និងការតាំងសច្ចាធិដ្ឋាន
-                            បន្ទាប់ពីព្រះសិទ្ធត្ថគោតមបានបោះបង់ចោលនូវមាគ៌ានៃការធ្វើទុក្ករកិរិយាដ៏តឹងរ៉ឹងអស់រយៈពេល ៦
-                            ឆ្នាំមក ព្រះអង្គក៏បានយាងទៅគង់ក្រោម ដើមពោធិ៍ (ដើមអស្សត្ថៈ) ក្នុងតំបន់ពុទ្ធគយា។
-                            ព្រះអង្គទ្រង់តាំងសច្ចាធិដ្ឋានយ៉ាងមុតមាំថា៖ "បើទោះបីជាសាច់ ស្បែក និងឆ្អឹងរបស់តថាគត
-                            ត្រូវរលួយអស់ទៅក្តី តថាគតនឹងមិនក្រោកចេញពីទីនេះឡើយ ដរាបណាពុំទាន់បានសម្រេចនូវ
-                            អនុត្តរសម្មាសម្ពោធិញាណ (ការត្រាស់ដឹងដ៏ខ្ពង់ខ្ពស់បំផុត) នោះទេ"។
-
-                            ២. មារាធិរាជលើកពលសេនាចូលមក
-                            នៅពេលដែលព្រះសិទ្ធត្ថទ្រង់គង់ស្ងប់ស្ងៀមក្នុងសមាធិយ៉ាងមុតមាំក្រោមដើមពោធិ៍នោះ មារាធិរាជ
-                            (មារជាទេវបុត្រដែលជាបុគ្គលតំណាងឲ្យសេចក្តីស្លាប់, តណ្ហា, និងកិលេស) បានកើតសេចក្តីក្តៅក្រហាយ
-                            និងភ័យខ្លាចថា ព្រះអង្គនឹងត្រាស់ដឹង ហើយចាកផុតពីអំណាចរបស់ខ្លួន។
-
-                            មារក៏បានបញ្ជូនពលសេនាដែលគួរឲ្យខ្លាចគ្រប់ប្រភេទ មានរូបរាងគួរស្អប់ខ្ពើម
-                            កាន់គ្រឿងសស្ត្រាវុធផ្សេងៗ លើកគ្នាចូលមក គំរាមកំហែង ព្រះសិទ្ធត្ថគោតម
-                            ដើម្បីឲ្យព្រះអង្គបោះបង់បល្ល័ង្ក និងការត្រាស់ដឹងចោល។ ប៉ុន្តែព្រះសិទ្ធត្ថនៅតែគង់នៅដោយ
-                            ព្រះទ័យស្ងប់ មិនតក់ស្លុត ឬកម្រើកឡើយ ដោយមានតែ អំណាចនៃមេត្តា របស់ព្រះអង្គប៉ុណ្ណោះ។ ទីបំផុត
-                            អាវុធទាំងឡាយរបស់ពលមារក៏បានក្លាយទៅជាផ្កាឈូកហើយជ្រុះធ្លាក់ទៅវិញ។
-
-                            ៣. មារបញ្ជូនកូនស្រីទាំងបីមកល្បួងលួងលោម
-                            នៅពេលដែលវិធីគំរាមកំហែងបរាជ័យ មារក៏បានប្រើល្បិចបន្តដោយបញ្ជូន កូនស្រីទាំងបីនាក់ របស់ខ្លួន
-                            គឺនាង តណ្ហា អរតី និងរាគៈ (តំណាងឲ្យតណ្ហា, ការមិនត្រេកអរ, និងសេចក្តីត្រេកអរ) ចូលទៅ លួងលោម
-                            ព្រះសិទ្ធត្ថគោតម ជាមួយនឹងកាយវិការ និងមន្តស្នេហ៍ដ៏ស្រស់ស្អាត ដើម្បីបំផ្លាញសមាធិរបស់ព្រះអង្គ។
-
-                            តែដោយព្រះសិទ្ធត្ថបានរំលត់នូវកិលេសក្នុងចិត្តអស់ហើយ ព្រះអង្គក៏មិនរវីរវល់នឹងការល្បួងលោមនោះឡើយ។
-                            ផ្ទុយទៅវិញ នាងមារស្រីទាំងនោះក៏បានប្រែក្លាយទៅជារូបចាស់ជរា អស់ភាពស្រស់ស្អាត
-                            ហើយក៏រត់ខ្ចាត់ខ្ចាយទៅវិញ។
-
-                            ៤. ព្រះពុទ្ធត្រាស់ហៅនាងគង្ហីងព្រះធរណីជាសាក្សី
-                            ជាការព្យាយាមចុងក្រោយ មារក៏បានចូលមក ទាមទារបល្ល័ង្ក
-                            ដោយអះអាងថាខ្លួនមានបុណ្យបារមីច្រើនជាងព្រះសិទ្ធត្ថ ហើយបានសួរព្រះសិទ្ធត្ថថា៖
-                            "តើនរណាជាសាក្សីបញ្ជាក់ ការតាំងសច្ចា និងការសន្សំបុណ្យបារមីរបស់ព្រះអង្គ?"
-
-                            ព្រះសិទ្ធត្ថគោតមមិនមាននរណាម្នាក់ជាសាក្សីក្នុងទីនោះទេ ព្រះអង្គក៏បាន លូកព្រះហស្តស្តាំ
-                            ចុះទៅកាន់ផែនដី (កាយវិការនេះហៅថា ភូមិសម្ផស្សមុទ្រា ឬ មារវិជ័យមុទ្រា) ហើយត្រាស់ហៅ
-                            នាងគង្ហីងព្រះធរណី ឲ្យមកធ្វើជាសាក្សី។
-
-                            នាងគង្ហីងព្រះធរណីក៏បាន ផុសឡើង ពីក្រោមបល្ល័ង្ក ហើយបានបញ្ជាក់ថា៖
-                            ព្រះសិទ្ធត្ថបានបំពេញបុណ្យបារមីអស់រយៈពេល បួនអសង្ខេយ្យនិងមួយសែនកប្ប រួចមកហើយ។ នាងគង្ហីងក៏បាន
-                            ច្បូតសក់ របស់នាងបញ្ចេញទឹកដែលព្រះសិទ្ធត្ថបានច្រូចឧទ្ទិសទៅលើផែនដីរាល់ពេលធ្វើទាន។
-                            ទឹកនេះបានហូរជន់លិចទៅក្នុងជួរពលមារ ហើយបានកម្ចាត់ពលសេនារបស់មារឲ្យរត់ខ្ចាត់ខ្ចាយអស់ទៅ។
-
-                            ៥. ការត្រាស់ដឹង
-                            បន្ទាប់ពីបានផ្ចាញ់មារ និងពលសេនារបស់វាដោយជោគជ័យហើយ
-                            ព្រះសិទ្ធត្ថគោតមទ្រង់ក៏បានសម្រេចនូវការត្រាស់ដឹងនូវ អនុត្តរសម្មាសម្ពោធិញាណ ក្លាយជា
-                            ព្រះសម្មាសម្ពុទ្ធ នៅពេលជិតភ្លឺក្នុងថ្ងៃពេញបូណ៌មីខែវិសាខនោះឯង។</p>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- story 3 -->
-        <div class="modal fade" id="story៣Modal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content border-0 rounded-4 shadow-lg">
-                    <div class="modal-header bg-golden text-white">
-                        <h5 class="modal-title"></h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body p-4">
-
-                        <div class="row">
-                            <div class="col-6">
-
-                                <img src="/asset/images/kimhak/mara.jpg" class="img-fluid mb-3" alt="story1">
-
-                            </div>
-                            <div class="col-6">
-                                <h4>ព្រះពុទ្ធផ្ចាញ់មារ</h4>
-                                <!-- icon date -->
-                                <p>
-                                    មារ ជាសភាវៈអាក្រក់តំណាងឲ្យ កិលេស ៣ យ៉ាង៖
-                                    តណ្ហា ទោសៈ មោហៈ
-
-                                </p>
-
-
-                            </div>
-                        </div>
-                        <p>រឿង ព្រះពុទ្ធផ្ចាញ់មារ គឺជាវគ្គដ៏សំខាន់ និងល្បីល្បាញបំផុតមួយក្នុងពុទ្ធប្រវត្តិ ដែលតំណាងឲ្យ
-                            ជ័យជម្នះនៃបញ្ញា លើរាល់ឧបសគ្គខាងផ្លូវចិត្ត
-                            និងផ្លូវកាយមុនពេលព្រះសម្មាសម្ពុទ្ធសមណគោតមទ្រង់ត្រាស់ដឹងជាដាច់ខាត។
-
-                            ១. គង់ក្រោមដើមពោធិ៍ និងការតាំងសច្ចាធិដ្ឋាន
-                            បន្ទាប់ពីព្រះសិទ្ធត្ថគោតមបានបោះបង់ចោលនូវមាគ៌ានៃការធ្វើទុក្ករកិរិយាដ៏តឹងរ៉ឹងអស់រយៈពេល ៦
-                            ឆ្នាំមក ព្រះអង្គក៏បានយាងទៅគង់ក្រោម ដើមពោធិ៍ (ដើមអស្សត្ថៈ) ក្នុងតំបន់ពុទ្ធគយា។
-                            ព្រះអង្គទ្រង់តាំងសច្ចាធិដ្ឋានយ៉ាងមុតមាំថា៖ "បើទោះបីជាសាច់ ស្បែក និងឆ្អឹងរបស់តថាគត
-                            ត្រូវរលួយអស់ទៅក្តី តថាគតនឹងមិនក្រោកចេញពីទីនេះឡើយ ដរាបណាពុំទាន់បានសម្រេចនូវ
-                            អនុត្តរសម្មាសម្ពោធិញាណ (ការត្រាស់ដឹងដ៏ខ្ពង់ខ្ពស់បំផុត) នោះទេ"។
-
-                            ២. មារាធិរាជលើកពលសេនាចូលមក
-                            នៅពេលដែលព្រះសិទ្ធត្ថទ្រង់គង់ស្ងប់ស្ងៀមក្នុងសមាធិយ៉ាងមុតមាំក្រោមដើមពោធិ៍នោះ មារាធិរាជ
-                            (មារជាទេវបុត្រដែលជាបុគ្គលតំណាងឲ្យសេចក្តីស្លាប់, តណ្ហា, និងកិលេស) បានកើតសេចក្តីក្តៅក្រហាយ
-                            និងភ័យខ្លាចថា ព្រះអង្គនឹងត្រាស់ដឹង ហើយចាកផុតពីអំណាចរបស់ខ្លួន។
-
-                            មារក៏បានបញ្ជូនពលសេនាដែលគួរឲ្យខ្លាចគ្រប់ប្រភេទ មានរូបរាងគួរស្អប់ខ្ពើម
-                            កាន់គ្រឿងសស្ត្រាវុធផ្សេងៗ លើកគ្នាចូលមក គំរាមកំហែង ព្រះសិទ្ធត្ថគោតម
-                            ដើម្បីឲ្យព្រះអង្គបោះបង់បល្ល័ង្ក និងការត្រាស់ដឹងចោល។ ប៉ុន្តែព្រះសិទ្ធត្ថនៅតែគង់នៅដោយ
-                            ព្រះទ័យស្ងប់ មិនតក់ស្លុត ឬកម្រើកឡើយ ដោយមានតែ អំណាចនៃមេត្តា របស់ព្រះអង្គប៉ុណ្ណោះ។ ទីបំផុត
-                            អាវុធទាំងឡាយរបស់ពលមារក៏បានក្លាយទៅជាផ្កាឈូកហើយជ្រុះធ្លាក់ទៅវិញ។
-
-                            ៣. មារបញ្ជូនកូនស្រីទាំងបីមកល្បួងលួងលោម
-                            នៅពេលដែលវិធីគំរាមកំហែងបរាជ័យ មារក៏បានប្រើល្បិចបន្តដោយបញ្ជូន កូនស្រីទាំងបីនាក់ របស់ខ្លួន
-                            គឺនាង តណ្ហា អរតី និងរាគៈ (តំណាងឲ្យតណ្ហា, ការមិនត្រេកអរ, និងសេចក្តីត្រេកអរ) ចូលទៅ លួងលោម
-                            ព្រះសិទ្ធត្ថគោតម ជាមួយនឹងកាយវិការ និងមន្តស្នេហ៍ដ៏ស្រស់ស្អាត ដើម្បីបំផ្លាញសមាធិរបស់ព្រះអង្គ។
-
-                            តែដោយព្រះសិទ្ធត្ថបានរំលត់នូវកិលេសក្នុងចិត្តអស់ហើយ ព្រះអង្គក៏មិនរវីរវល់នឹងការល្បួងលោមនោះឡើយ។
-                            ផ្ទុយទៅវិញ នាងមារស្រីទាំងនោះក៏បានប្រែក្លាយទៅជារូបចាស់ជរា អស់ភាពស្រស់ស្អាត
-                            ហើយក៏រត់ខ្ចាត់ខ្ចាយទៅវិញ។
-
-                            ៤. ព្រះពុទ្ធត្រាស់ហៅនាងគង្ហីងព្រះធរណីជាសាក្សី
-                            ជាការព្យាយាមចុងក្រោយ មារក៏បានចូលមក ទាមទារបល្ល័ង្ក
-                            ដោយអះអាងថាខ្លួនមានបុណ្យបារមីច្រើនជាងព្រះសិទ្ធត្ថ ហើយបានសួរព្រះសិទ្ធត្ថថា៖
-                            "តើនរណាជាសាក្សីបញ្ជាក់ ការតាំងសច្ចា និងការសន្សំបុណ្យបារមីរបស់ព្រះអង្គ?"
-
-                            ព្រះសិទ្ធត្ថគោតមមិនមាននរណាម្នាក់ជាសាក្សីក្នុងទីនោះទេ ព្រះអង្គក៏បាន លូកព្រះហស្តស្តាំ
-                            ចុះទៅកាន់ផែនដី (កាយវិការនេះហៅថា ភូមិសម្ផស្សមុទ្រា ឬ មារវិជ័យមុទ្រា) ហើយត្រាស់ហៅ
-                            នាងគង្ហីងព្រះធរណី ឲ្យមកធ្វើជាសាក្សី។
-
-                            នាងគង្ហីងព្រះធរណីក៏បាន ផុសឡើង ពីក្រោមបល្ល័ង្ក ហើយបានបញ្ជាក់ថា៖
-                            ព្រះសិទ្ធត្ថបានបំពេញបុណ្យបារមីអស់រយៈពេល បួនអសង្ខេយ្យនិងមួយសែនកប្ប រួចមកហើយ។ នាងគង្ហីងក៏បាន
-                            ច្បូតសក់ របស់នាងបញ្ចេញទឹកដែលព្រះសិទ្ធត្ថបានច្រូចឧទ្ទិសទៅលើផែនដីរាល់ពេលធ្វើទាន។
-                            ទឹកនេះបានហូរជន់លិចទៅក្នុងជួរពលមារ ហើយបានកម្ចាត់ពលសេនារបស់មារឲ្យរត់ខ្ចាត់ខ្ចាយអស់ទៅ។
-
-                            ៥. ការត្រាស់ដឹង
-                            បន្ទាប់ពីបានផ្ចាញ់មារ និងពលសេនារបស់វាដោយជោគជ័យហើយ
-                            ព្រះសិទ្ធត្ថគោតមទ្រង់ក៏បានសម្រេចនូវការត្រាស់ដឹងនូវ អនុត្តរសម្មាសម្ពោធិញាណ ក្លាយជា
-                            ព្រះសម្មាសម្ពុទ្ធ នៅពេលជិតភ្លឺក្នុងថ្ងៃពេញបូណ៌មីខែវិសាខនោះឯង។</p>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
 
     </main>
 
     <!-- ═══════════ FOOTER ═══════════ -->
-    <footer>
+    <footer class="mt-5">
         <div class="container">
             <div class="row">
                 <!-- About Section -->
@@ -978,19 +766,15 @@
                     <h5>តំណភ្ជាប់លឿន</h5>
                     <a href="#"><i class="fas fa-angle-right"></i> ទំព័រដើម</a>
                     <a href="#"><i class="fas fa-angle-right"></i> អំពីយើង</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> សេវាកម្ម</a>
                     <a href="#"><i class="fas fa-angle-right"></i> ព្រឹត្តិការណ៍</a>
                     <a href="#"><i class="fas fa-angle-right"></i> ទំនាក់ទំនង</a>
                 </div>
 
                 <!-- Services -->
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>សេវាកម្ម</h5>
-                    <a href="#"><i class="fas fa-angle-right"></i> គម្រោងសង្គម</a>
+                    <h5>ការងារ</h5>
                     <a href="#"><i class="fas fa-angle-right"></i> ការអប់រំ</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> វគ្គបណ្តុះបណ្តាល</a>
                     <a href="#"><i class="fas fa-angle-right"></i> អ្នកស្ម័គ្រចិត្ត</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> ការបរិច្ចាគ</a>
                 </div>
 
                 <!-- Contact -->

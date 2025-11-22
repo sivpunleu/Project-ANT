@@ -1,73 +1,93 @@
-        /* រចនាបឋម (Hero Section) */
-        .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x400.png?text=Education+Banner') no-repeat center center;
-            background-size: cover;
-            color: white;
-            padding: 6rem 1.5rem;
-            text-align: center;
-            border-radius: 0 0 15px 15px;
-            margin-bottom: 2rem;
+        html,
+        body {
+            overflow-x: hidden;
+            /* បិទមិនឱ្យមានការហៀរទៅខាងឆ្វេង ឬស្តាំ */
+            width: 100%;
+            max-width: 100%;
         }
 
-        .hero-section h1 {
-            font-weight: 700;
-            font-size: 3rem;
-        }
-
-        .section-title {
-            font-weight: 700;
-            color: #4a4a4a;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 3px solid #d4af37;
-            /* ពណ៌មាសស្រាល */
-            display: inline-block;
-        }
-
-        /* រចនា Card */
         .card {
             border: none;
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             height: 100%;
-          
-            
-        }
 
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgb(72, 70, 0);
+
         }
 
         .card-icon {
             font-size: 2.5rem;
             color: #d4af37;
-            /* ពណ៌មាស */
+
             margin-bottom: 1rem;
         }
 
-        .card-title {
-            font-weight: 700;
-            color: #333;
+        img {
+            width: 100%;
+            height: 100%;
+
         }
 
-        .diamond-card-image {
-            transition: transform 0.3s ease;
-            animation: float-anim 5s ease-in-out infinite;
-        }
-
-        @keyframes float-anim {
-            0% {
-                transform: translateY(0);
+        @media (max-width: 767.98px) {
+            .section-title {
+                width: 60% !important;
 
             }
 
-            50% {
-                transform: translateY(-15px);
+            .section-title1 {
+                width: 55% !important;
             }
 
-            100% {
-                transform: translateY(0);
-            }
         }
+
+        
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.641);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 10px; */
+  padding: 20px;
+}
+
+.over-slide {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.7;
+}
+
+.over-slide strong {
+  color: #b87707cd;
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 15px;
+}
+@media (min-width: 992px) {
+    .over-slide {
+        font-size: 1.4rem;
+        max-width: 700px; /* កំណត់ទទឹងអក្សរឱ្យស្អាត */
+        margin-top: 250px;
+    }
+
+    .over-slide strong {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+}
