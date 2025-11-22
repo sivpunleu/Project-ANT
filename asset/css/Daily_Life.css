@@ -1,4 +1,5 @@
 /* CSS បន្ថែមសម្រាប់ Cards ថ្មី */
+
 .principle-card {
     border: none;
     border-radius: 10px;
@@ -11,7 +12,10 @@
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(201, 164, 46, 0.15);
 }
-
+.btn-sm{
+    background-color: #b87707;
+    color: white;
+}
 .back-button a {
     text-decoration: none;
 }
@@ -31,7 +35,7 @@
 }
 
 .cta-card {
-    background-color: #fff8eb;
+    background-color: #ffffff;
     /* ពណ៌ផ្ទៃស្រាលជាងមុន */
     border: 1px solid #c9a42e;
     border-radius: 10px;

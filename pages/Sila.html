@@ -225,7 +225,7 @@
         </nav>
     </header>
     <main>
-        <section id="missions" class="mission-section py-5">
+        <section id="missions" class="mission-section ">
             <div class="container">
                 <div class="row justify-content-center text-center mb-5">
                     <div class="col-lg-8" data-aos="fade-up">
@@ -253,7 +253,8 @@
                                             </p>
                                         </div>
                                         <div class="overlay1">
-                                            <a href="meditation.html" class="btn btn-primary btn-lg  z-3">ចូលទៅការបង្រៀន</a>
+                                            <a href="meditation.html"
+                                                class="btn btn-outline-primary btn-lg  z-3">ចូលទៅការបង្រៀន</a>
                                         </div>
                                     </div>
                                 </div>
@@ -275,7 +276,7 @@
                                         </div>
                                         <div class="overlay1">
                                             <a href="meditation.html"
-                                                class="btn btn-primary btn-lg  z-3">ចូលទៅការបង្រៀន</a>
+                                                class="btn btn-outline-primary btn-lg  z-3">ចូលទៅការបង្រៀន</a>
                                         </div>
                                     </div>
                                 </div>
@@ -296,7 +297,7 @@
                                         </div>
                                         <div class="overlay1">
                                             <a href="vipassana.html"
-                                                class="btn btn-primary btn-lg  z-3">ចូលទៅការបង្រៀន</a>
+                                                class="btn btn-outline-primary btn-lg  z-3">ចូលទៅការបង្រៀន</a>
                                         </div>
                                     </div>
                                 </div>
@@ -328,70 +329,226 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="mission-section">
             <div class="container my-5">
                 <h1 class="mb-3">គតិអប់រំ</h1>
-                <div class="card shadow-sm mb-5">
-                    <div class="row g-0">
-                        <div class="col-md-8">
-                            <div class="card-body p-4 rounded-2"
-                                style="background-color: var(--bg-primary); color: var(--text-primary)">
-                                <div class="d-flex align-items-center">
-                                    <i class="bi bi-brightness-high-fill main-card-icon me-3"></i>
-                                    <div>
-                                        <h5 class="card-title fs-4">ពាក្យគតិ៖ បញ្ញា (Paññā)</h5>
-                                        <p class="card-text " style="color: var(--text-primary);">
-                                            "បញ្ញា" មិនមែនគ្រាន់តែជាចំណេះដឹងទេ
-                                            តែជាការយល់ដឹងច្បាស់លាស់អំពីធម្មជាតិនៃសេចក្ដីពិត។
-                                        </p>
-                                    </div>
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100 rounded-2 p-3"
+                            style="background-color: var(--bg-primary); color: var(--text-primary); border: none; box-shadow:var(--box-shadow);">
+
+                            <div class="card-body d-flex flex-column align-items-center text-center">
+
+                                <div class="mb-3">
+                                    <i class="bi bi-brightness-high-fill" style="color:#d68f01; font-size: 3rem;"></i>
                                 </div>
+
+                                <h5 class="card-title fs-5 mb-3">ពាក្យគតិ៖ បញ្ញា (Paññā)</h5>
+
+                                <p class="card-text flex-grow-1">
+                                    "បញ្ញា" មិនមែនគ្រាន់តែជាចំណេះដឹងទេ
+                                    តែជាការយល់ដឹងច្បាស់លាស់អំពីធម្មជាតិនៃសេចក្ដីពិត។
+                                </p>
+
+                                <button type="button" class="btn btn-outline-primary w-100 mt-3" data-bs-toggle="modal"
+                                    data-bs-target="#wordOfTheDayModal">
+                                    <i class="bi bi-book-fill me-2"></i> អានអត្ថបទពេញ
+                                </button>
+
                             </div>
                         </div>
-                        <div class="col-md-4 bg-light d-flex align-items-center justify-content-center p-4">
+                    </div>
+                    <!-- សតិ -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100 rounded-2 p-3"
+                            style="background-color: var(--bg-primary); color: var(--text-primary); border: none; box-shadow:var(--box-shadow)">
 
-                            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                                data-bs-target="#wordOfTheDayModal">
-                                <i class="bi bi-book-fill me-2"></i> អានអត្ថបទពេញ
-                            </button>
+                            <div class="card-body d-flex flex-column align-items-center text-center">
 
+                                <div class="mb-3">
+                                    <i class="bi bi-stopwatch-fill" style="color:#d68f01; font-size: 3rem;"></i>
+                                </div>
+
+                                <h5 class="card-title fs-5 mb-3">ពាក្យគតិ៖ សតិ (Sati)</h5>
+
+                                <p class="card-text flex-grow-1">
+                                    "សតិ" គឺ​ជា​ការ​រឭក​ដឹង​ខ្លួន​ក្នុង​បច្ចុប្បន្នកាល,
+                                    ជា​មូលដ្ឋាន​គ្រឹះ​នៃ​ការ​អប់រំ​ចិត្ត។
+                                </p>
+
+                                <button type="button" class="btn btn-outline-primary w-100 mt-3" data-bs-toggle="modal"
+                                    data-bs-target="#satiModal">
+                                    <i class="bi bi-book-fill me-2"></i> អានអត្ថបទពេញ
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- សម្ពជញ្ញៈ -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100 rounded-2 p-3"
+                            style="background-color: var(--bg-primary); color: var(--text-primary); border: none; box-shadow:var(--box-shadow)">
+
+                            <div class="card-body d-flex flex-column align-items-center text-center">
+
+                                <div class="mb-3">
+                                    <i class="bi bi-lightbulb-fill" style="color: #d68f01; font-size: 3rem;"></i>
+                                </div>
+
+                                <h5 class="card-title fs-5 mb-3">ពាក្យគតិ៖ សម្ពជញ្ញៈ (Sampajañña)</h5>
+
+                                <p class="card-text flex-grow-1">
+                                    "សម្ពជញ្ញៈ" គឺ​ជា​ការ​ដឹង​ខ្លួន​ច្បាស់​លាស់ អម​ដោយ​ការ​យល់​ដឹង​ពី​គោលបំណង។
+                                </p>
+
+                                <button type="button" class="btn btn-outline-primary w-100 mt-3" data-bs-toggle="modal"
+                                    data-bs-target="#sampajannaModal">
+                                    <i class="bi bi-book-fill me-2"></i> អានអត្ថបទពេញ
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ហិរិ -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100 rounded-2 p-3"
+                            style="background-color: var(--bg-primary); color: var(--text-primary); border: none; box-shadow:var(--box-shadow)">
+
+                            <div class="card-body d-flex flex-column align-items-center text-center">
+
+                                <div class="mb-3">
+                                    <i class="bi bi-shield-shaded" style="color: #d68f01; font-size: 3rem;"></i>
+                                </div>
+
+                                <h5 class="card-title fs-5 mb-3">ពាក្យគតិ៖ ហិរិ (Hiri)</h5>
+
+                                <p class="card-text flex-grow-1">
+                                    "ហិរិ" គឺ​ជា​សេចក្ដី​ខ្មាសអៀន​ក្នុង​ចិត្ត​ចំពោះ​អំពើ​បាប ឬ​អំពើ​អាក្រក់។
+                                </p>
+
+                                <button type="button" class="btn btn-outline-primary w-100 mt-3" data-bs-toggle="modal"
+                                    data-bs-target="#hiriModal">
+                                    <i class="bi bi-book-fill me-2"></i> អានអត្ថបទពេញ
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ឱតប្ប -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100 rounded-2 p-3"
+                            style="background-color: var(--bg-primary); color: var(--text-primary); border: none; box-shadow:var(--box-shadow)">
+
+                            <div class="card-body d-flex flex-column align-items-center text-center">
+
+                                <div class="mb-3">
+                                    <i class="bi bi-exclamation-triangle-fill"
+                                        style="color: #ffc107; font-size: 3rem;"></i>
+                                </div>
+
+                                <h5 class="card-title fs-5 mb-3">ពាក្យគតិ៖ ឱតប្ប (Ottappa)</h5>
+
+                                <p class="card-text flex-grow-1">
+                                    "ឱតប្ប" គឺ​ជា​សេចក្ដី​តក់ស្លុត, ខ្លាចរអា​ចំពោះ​ផល​នៃ​អំពើ​បាប
+                                    ឬ​អំពើ​អាក្រក់។
+                                </p>
+
+                                <button type="button" class="btn btn-outline-primary w-100 mt-3" data-bs-toggle="modal"
+                                    data-bs-target="#ottappaModal">
+                                    <i class="bi bi-book-fill me-2"></i> អានអត្ថបទពេញ
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ខន្ដី -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100 rounded-2 p-3"
+                            style="background-color: var(--bg-primary); color: var(--text-primary); border: none; box-shadow:var(--box-shadow)">
+
+                            <div class="card-body d-flex flex-column align-items-center text-center">
+
+                                <div class="mb-3">
+                                    <i class="bi bi-hourglass-split" style="color: #d68f01; font-size: 3rem;"></i>
+                                </div>
+
+                                <h5 class="card-title fs-5 mb-3">ពាក្យគតិ៖ ខន្តី (Khanti)</h5>
+
+                                <p class="card-text flex-grow-1">
+                                    "ខន្តី" គឺជាសេចក្ដីអត់ធន់ អត់ធ្មត់ចំពោះទុក្ខលំបាក និងពាក្យសំដីអ្នកដទៃ
+                                    ដើម្បីរក្សាចិត្តឱ្យស្ងប់។
+                                </p>
+
+                                <button type="button" class="btn btn-outline-primary w-100 mt-3" data-bs-toggle="modal"
+                                    data-bs-target="#khantiModal">
+                                    <i class="bi bi-book-fill me-2"></i> អានអត្ថបទពេញ
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- វិរិយ -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100 rounded-2 p-3"
+                            style="background-color: var(--bg-primary); color: var(--text-primary); border: none; box-shadow:var(--box-shadow)">
+
+                            <div class="card-body d-flex flex-column align-items-center text-center">
+
+                                <div class="mb-3">
+                                    <i class="bi bi-lightning-charge-fill" style="color: #d68f01; font-size: 3rem;"></i>
+                                </div>
+
+                                <h5 class="card-title fs-5 mb-3">ពាក្យគតិ៖ វិរិយ (Viriya)</h5>
+
+                                <p class="card-text flex-grow-1">
+                                    "វិរិយ" គឺជាសេចក្ដីព្យាយាម ការប្រឹងប្រែងតស៊ូមិនរាថយ រហូតដល់សម្រេចផលដែលបានកំណត់។
+                                </p>
+
+                                <button type="button" class="btn btn-outline-primary w-100 mt-3" data-bs-toggle="modal"
+                                    data-bs-target="#viriyaModal">
+                                    <i class="bi bi-book-fill me-2"></i> អានអត្ថបទពេញ
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ឆន្ទ -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100 rounded-2 p-3"
+                            style="background-color: var(--bg-primary); color: var(--text-primary); border: none; box-shadow:var(--box-shadow)">
+
+                            <div class="card-body d-flex flex-column align-items-center text-center">
+
+                                <div class="mb-3">
+                                    <i class="bi bi-star-fill" style="color: #d68f01; font-size: 3rem;"></i>
+                                </div>
+
+                                <h5 class="card-title fs-5 mb-3">ពាក្យគតិ៖ ឆន្ទ (Chanda)</h5>
+
+                                <p class="card-text flex-grow-1">
+                                    "ឆន្ទ" គឺជាសេចក្ដីពេញចិត្ត និងស្រឡាញ់ចង់ធ្វើនូវកិច្ចការណាមួយ
+                                    ជាបឋមនៃផ្លូវទៅរកភាពជោគជ័យ។
+                                </p>
+
+                                <button type="button" class="btn btn-outline-primary w-100 mt-3" data-bs-toggle="modal"
+                                    data-bs-target="#chandaModal">
+                                    <i class="bi bi-book-fill me-2"></i> អានអត្ថបទពេញ
+                                </button>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- សតិ -->
-                <div class="card shadow-sm mb-5">
-                    <div class="row g-0">
-                        <div class="col-md-8">
-                            <div class="card-body p-4 rounded-2"
-                                style="background-color: var(--bg-primary); color: var(--text-primary)">
-                                <div class="d-flex align-items-center">
-                                    <i class="bi bi-stopwatch-fill main-card-icon me-3" style="color: #0d6efd;"></i>
-                                    <div>
-                                        <h5 class="card-title fs-4">ពាក្យគតិ៖ សតិ (Sati)</h5>
-                                        <p class="card-text" style="color: var(--text-primary);">
-                                            "សតិ" គឺ​ជា​ការ​រឭក​ដឹង​ខ្លួន​ក្នុង​បច្ចុប្បន្នកាល,
-                                            ជា​មូលដ្ឋាន​គ្រឹះ​នៃ​ការ​អប់រំ​ចិត្ត។
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 bg-light d-flex align-items-center justify-content-center p-4">
-                            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                                data-bs-target="#satiModal">
-                                <i class="bi bi-book-fill me-2"></i> អានអត្ថបទពេញ
-                            </button>
-                        </div>
-                    </div>
-                </div>
 
+                <!-- model សតិ -->
                 <div class="modal fade" id="satiModal" tabindex="-1" aria-labelledby="satiModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                        <div class="modal-content">
+                        <div class="modal-content"
+                            style="background-color: var(--bg-primary); color: var(--text-primary) ">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="satiModalLabel">
-                                    <i class="bi bi-stopwatch-fill me-2" style="color: #0d6efd;"></i>
+                                    <i class="bi bi-stopwatch-fill me-2" style="color: #d68f01;"></i>
                                     ពាក្យគតិប្រចាំថ្ងៃ៖ សតិ (Sati)
                                 </h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -434,7 +591,8 @@
                                 <h4>ការអនុវត្តក្នុងសង្គម</h4>
                                 <p>តើយើងប្រើ "សតិ" ក្នុងជីវិតប្រចាំថ្ងៃដូចម្ដេច?</p>
 
-                                <blockquote class="blockquote bg-light p-3 rounded">
+                                <blockquote class="blockquote  p-3 rounded"
+                                    style="background-color: var(--bg-primary); color: var(--text-primary) ">
                                     <p class="mb-0">"ពេលកំពុងស្ដាប់មិត្តភក្ដិរៀបរាប់បញ្ហា៖"</p>
                                     <ul class="mb-0">
                                         <li>អ្នក "បាត់សតិ" នឹង​គិត​តែ​ពី​ចង់​ឆ្លើយ​តប, គិត​រឿង​ខ្លួន​ឯង,
@@ -452,10 +610,10 @@
                                 <a href="#" class="btn btn-outline-primary btn-sm mb-1">
                                     <i class="bi bi-lightbulb-fill me-1"></i> សម្ពជញ្ញៈ (Sampajañña)
                                 </a>
-                                <a href="#" class="btn btn-outline-info btn-sm mb-1">
+                                <a href="#" class="btn btn-outline-primary btn-sm mb-1">
                                     <i class="bi bi-flower1 me-1"></i> សមាធិ (Samādhi)
                                 </a>
-                                <a href="#" class="btn btn-outline-success btn-sm mb-1">
+                                <a href="#" class="btn btn-outline-primary btn-sm mb-1">
                                     <i class="bi bi-eye-fill me-1"></i> វិបស្សនា (Vipassanā)
                                 </a>
 
@@ -467,39 +625,16 @@
                     </div>
                 </div>
 
-                <!-- សម្ពជញ្ញៈ -->
-                <div class="card shadow-sm mb-5">
-                    <div class="row g-0">
-                        <div class="col-md-8">
-                            <div class="card-body p-4 rounded-2"
-                                style="background-color: var(--bg-primary); color: var(--text-primary)">
-                                <div class="d-flex align-items-center">
-                                    <i class="bi bi-lightbulb-fill main-card-icon me-3" style="color: #198754;"></i>
-                                    <div>
-                                        <h5 class="card-title fs-4">ពាក្យគតិ៖ សម្ពជញ្ញៈ (Sampajañña)</h5>
-                                        <p class="card-text" style="color: var(--text-primary);">
-                                            "សម្ពជញ្ញៈ" គឺ​ជា​ការ​ដឹង​ខ្លួន​ច្បាស់​លាស់ អម​ដោយ​ការ​យល់​ដឹង​ពី​គោលបំណង។
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 bg-light d-flex align-items-center justify-content-center p-4">
-                            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                                data-bs-target="#sampajannaModal">
-                                <i class="bi bi-book-fill me-2"></i> អានអត្ថបទពេញ
-                            </button>
-                        </div>
-                    </div>
-                </div>
 
+                <!-- model សម្ពជញ្ញៈ -->
                 <div class="modal fade" id="sampajannaModal" tabindex="-1" aria-labelledby="sampajannaModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                        <div class="modal-content">
+                        <div class="modal-content"
+                            style="background-color: var(--bg-primary); color: var(--text-primary) ">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="sampajannaModalLabel">
-                                    <i class="bi bi-lightbulb-fill me-2" style="color: #198754;"></i>
+                                    <i class="bi bi-lightbulb-fill me-2" style="color: #d68f01;"></i>
                                     ពាក្យគតិប្រចាំថ្ងៃ៖ សម្ពជញ្ញៈ (Sampajañña)
                                 </h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -541,7 +676,8 @@
                                 <h4>ការអនុវត្តក្នុងសង្គម</h4>
                                 <p>តើយើងប្រើ "សម្ពជញ្ញៈ" ក្នុងជីវិតប្រចាំថ្ងៃដូចម្ដេច?</p>
 
-                                <blockquote class="blockquote bg-light p-3 rounded">
+                                <blockquote class="blockquote  p-3 rounded"
+                                    style="background-color: var(--bg-primary); color: var(--text-primary) ">
                                     <p class="mb-0">"ពេលកំពុងប្រើបណ្ដាញសង្គម៖"</p>
                                     <ul class="mb-0">
                                         <li>អ្នកប្រើ "សតិ" ដឹង​ថា​ខ្លួន​កំពុង​អូស (Scrolling) មើល​ទូរសព្ទ។</li>
@@ -559,10 +695,10 @@
                                 <a href="#" class="btn btn-outline-primary btn-sm mb-1">
                                     <i class="bi bi-stopwatch-fill me-1"></i> សតិ (Sati)
                                 </a>
-                                <a href="#" class="btn btn-outline-warning btn-sm mb-1">
+                                <a href="#" class="btn btn-outline-primary btn-sm mb-1">
                                     <i class="bi bi-brightness-high-fill me-1"></i> បញ្ញា (Paññā)
                                 </a>
-                                <a href="#" class="btn btn-outline-danger btn-sm mb-1">
+                                <a href="#" class="btn btn-outline-primary btn-sm mb-1">
                                     <i class="bi bi-person-check-fill me-1"></i> វិចារណញ្ញាណ (Discernment)
                                 </a>
                             </div>
@@ -573,36 +709,13 @@
                         </div>
                     </div>
                 </div>
-                <!-- ហិរិ -->
-                <div class="card shadow-sm mb-5">
-                    <div class="row g-0">
-                        <div class="col-md-8">
-                            <div class="card-body p-4 rounded-2"
-                                style="background-color: var(--bg-primary); color: var(--text-primary)">
-                                <div class="d-flex align-items-center">
-                                    <i class="bi bi-shield-shaded main-card-icon me-3" style="color: #dc3545;"></i>
-                                    <div>
-                                        <h5 class="card-title fs-4">ពាក្យគតិ៖ ហិរិ (Hiri)</h5>
-                                        <p class="card-text " style="color: var(--text-primary);">
-                                            "ហិរិ" គឺ​ជា​សេចក្ដី​ខ្មាសអៀន​ក្នុង​ចិត្ត​ចំពោះ​អំពើ​បាប ឬ​អំពើ​អាក្រក់។
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 bg-light d-flex align-items-center justify-content-center p-4">
-                            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                                data-bs-target="#hiriModal">
-                                <i class="bi bi-book-fill me-2"></i> អានអត្ថបទពេញ
-                            </button>
-                        </div>
-                    </div>
-                </div>
 
+                <!-- model ហិរិ -->
                 <div class="modal fade" id="hiriModal" tabindex="-1" aria-labelledby="hiriModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                        <div class="modal-content">
+                        <div class="modal-content"
+                            style="background-color: var(--bg-primary); color: var(--text-primary)">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="hiriModalLabel">
                                     <i class="bi bi-shield-shaded me-2" style="color: #dc3545;"></i>
@@ -647,7 +760,8 @@
                                 <h4>ការអនុវត្តក្នុងសង្គម</h4>
                                 <p>តើ "ហិរិ" ខុស​ពី "ឱតប្ប" ដូចម្ដេច?</p>
 
-                                <blockquote class="blockquote bg-light p-3 rounded">
+                                <blockquote class="blockquote p-3 rounded"
+                                    style="background-color: var(--bg-primary); color: var(--text-primary) ">
                                     <p class="mb-0">"ពេលមានឱកាសកេងបន្លំលុយនៅកន្លែងធ្វើការ៖"</p>
                                     <ul class="mb-0">
                                         <li>អ្នក​គ្មាន "ហិរិ" នឹង​គិត​ថា "មិន​អី​ទេ គ្មាន​អ្នក​ណា​ដឹង"។</li>
@@ -679,38 +793,13 @@
                     </div>
                 </div>
 
-                <!-- ឱតប្ប -->
-                <div class="card shadow-sm mb-5">
-                    <div class="row g-0">
-                        <div class="col-md-8">
-                            <div class="card-body p-4 rounded-2"
-                                style="background-color: var(--bg-primary); color: var(--text-primary)">
-                                <div class="d-flex align-items-center">
-                                    <i class="bi bi-exclamation-triangle-fill main-card-icon me-3"
-                                        style="color: #ffc107;"></i>
-                                    <div>
-                                        <h5 class="card-title fs-4">ពាក្យគតិ៖ ឱតប្ប (Ottappa)</h5>
-                                        <p class="card-text " style="color: var(--text-primary);">
-                                            "ឱតប្ប" គឺ​ជា​សេចក្ដី​តក់ស្លុត, ខ្លាចរអា​ចំពោះ​ផល​នៃ​អំពើ​បាប
-                                            ឬ​អំពើ​អាក្រក់។
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 bg-light d-flex align-items-center justify-content-center p-4">
-                            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                                data-bs-target="#ottappaModal">
-                                <i class="bi bi-book-fill me-2"></i> អានអត្ថបទពេញ
-                            </button>
-                        </div>
-                    </div>
-                </div>
 
+                <!-- model ឱតប្ប -->
                 <div class="modal fade" id="ottappaModal" tabindex="-1" aria-labelledby="ottappaModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                        <div class="modal-content">
+                        <div class="modal-content"
+                            style="background-color: var(--bg-primary); color: var(--text-primary)">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="ottappaModalLabel">
                                     <i class="bi bi-exclamation-triangle-fill me-2" style="color: #ffc107;"></i>
@@ -754,7 +843,8 @@
                                 <h4>ការអនុវត្តក្នុងសង្គម</h4>
                                 <p>តើ "ហិរិ" និង "ឱតប្ប" ធ្វើការ​រួម​គ្នា​ដូចម្ដេច?</p>
 
-                                <blockquote class="blockquote bg-light p-3 rounded">
+                                <blockquote class="blockquote  p-3 rounded"
+                                    style="background-color: var(--bg-primary); color: var(--text-primary) ">
                                     <p class="mb-0">"ពេលមានឱកាសកេងបន្លំលុយ (ត)៖"</p>
                                     <ul class="mb-0">
                                         <li>**ហិរិ (ខ្មាសខ្លួនឯង)៖** "ខ្ញុំ​មិន​ធ្វើ​ទេ
@@ -769,14 +859,16 @@
 
                                 <h4>ប្រធានបទពាក់ព័ន្ធ</h4>
                                 <p>ឱតប្ប ជា​មូលដ្ឋាន​នៃ៖</p>
-                                <a href="#" class="btn btn-outline-danger btn-sm mb-1">
+                                <a href="#" class="btn btn-outline-dark btn-sm mb-1"
+                                    style="color: var(--text-primary);">
                                     <i class="bi bi-shield-shaded me-1"></i> ហិរិ (Hiri)
                                 </a>
-                                <a href="#" class="btn btn-outline-secondary btn-sm mb-1">
+                                <a href="#" class="btn btn-outline-primary btn-sm mb-1">
                                     <i class="bi bi-shield-check me-1"></i> សីល (Sila)
                                 </a>
-                                <a href="#" class="btn btn-outline-dark btn-sm mb-1">
-                                    <i class="bi bi-arrow-repeat me-1"></i> កម្ម (Kamma)
+                                <a href="#" class="btn btn-outline-dark btn-sm mb-1"
+                                    style="color: var(--text-primary);">
+                                    <i class="bi bi-arrow-repeat me-1 "></i> កម្ម (Kamma)
                                 </a>
                             </div>
 
@@ -788,136 +880,241 @@
                 </div>
             </div>
         </section>
-        <section class="mt-5">
-            <div class="container ">
-                <h1 class="mb-3 text-center ">ធម៌សម្រាប់អប់រំមនុស្ស</h1>
-                <div class="row mb-5">
-                    <div class="col-6">
-                        <div class="card">
-                            <img src="../asset/images/vannda_img/Monk-at-Kompong-Chrey.webp" alt="">
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card bg-transparent border-0">
-                            <p class=" fs-3 text-start" style="color: var(--text-primary);">ធម៌សម្រាប់អប់រំមនុស្ស
-                                គឺផ្តោតលើការអនុវត្តជាក់ស្តែង។
-                                វាមិនមែនគ្រាន់តែជាទ្រឹស្តីសម្រាប់ជឿនោះទេ តែជា
-                                ផែនទី សម្រាប់ឱ្យមនុស្សម្នាក់ៗយក ដើម្បីផ្លាស់ប្តូរទម្លាប់អាក្រក់ (កិលេស) មកជាទម្លាប់ល្អ
-                                (គុណធម៌)។ គោលដៅចុងក្រោយ គឺការបង្កើតបុគ្គលម្នាក់ដែលមានទាំង សីលធម៌
-                                រឹងមាំក្នុងការរស់នៅជាមួយអ្នកដទៃ
-                                និងមានទាំង បញ្ញា ភ្លឺថ្លាក្នុងការយល់ដឹងពីជីវិត ដែលនាំទៅរកសេចក្តីសុខស្ងប់ពិតប្រាកដ។</p>
-                            <div class="d-flex align-items-center justify-content-between ">
-                                <div class="text-muted small d-flex align-items-center  gap-2 ">
-                                    <a href="#" class="text-decoration-none text-muted "
-                                        style="color: var(--text-primary) !important;"><i class="bi bi-heart"></i>
-                                        ចូលចិត្ត</a>
-                                    <i class="bi bi-eye ms-3 " style="color: var(--text-primary) !important;">200</i>
+        <section class="mission-section">
+            <div class="container">
+                <div class="row g-4 d-flex justify-content-between">
+                    <div class="col-sm-12 col-md-6 col-lg-8 ">
 
+                        <div class="row g-2 mb-2">
+                            <div class="col-8">
+                                <div class="custom-card">
+                                    <img src="../asset/images/vannda_img/ព្រះសង្ឃ.svg" alt="" class="">
                                 </div>
-                                <a href="vipassana.html" class="btn btn-success px-4 py-2 rounded-pill">តាមដាន</a>
+                            </div>
+                            <div class="col-4">
+                                <div class="custom-card">
+                                    <img src="../asset/images/vannda_img/2.svg" alt="">
+                                </div>
                             </div>
                         </div>
+
+                        <div class="row g-2">
+                            <div class="col-3">
+                                <div class="custom-card">
+                                    <img src="../asset/images/vannda_img/3.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="custom-card">
+                                    <img src="../asset/images/vannda_img/ការអប់រំ.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="custom-card">
+                                    <img src="../asset/images/vannda_img/1.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="sidebar-scroll">
+                            <h4 class="fw-bold mb-3 sticky-top p-2 "
+                                style="background-color: var(--bg-primary); z-index: 10;">
+                                វគ្គសិក្សាពេញនិយម
+                            </h4>
+
+                            <div class="d-flex align-items-center mb-3 p-2 bg-white1 rounded shadow-sm">
+                                <div class="flex-shrink-0 me-4 rounded-2">
+                                    <img src="../asset/images/vannda_img/ព្រះអភិធម្ម.png" alt="រូបតូច"
+                                        class="card-list-item img rounded-2">
+                                </div>
+                                <div class="flex-grow-1 ms-5">
+                                    <h6 class="fw-bold mb-0">មូលដ្ឋានគ្រឹះអភិធម្ម</h6>
+                                    <small class="text-muted icon"><i class="bi bi-book-half icon"></i>
+                                        សិក្សាអំពីចិត្ត និងចេតសិក</small>
+                                    <div class="rating-color">
+                                        <i class="bi bi-star-fill"></i> 5.0 (សិក្ខាកាម ២០០នាក់)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-3 p-2 bg-white1 rounded shadow-sm">
+                                <div class="flex-shrink-0 me-4 rounded-2">
+                                    <img src="../asset/images/vannda_img/បាលី.png" alt="រូបតូច"
+                                        class="card-list-item img rounded-2">
+                                </div>
+                                <div class="flex-grow-1 ms-5">
+                                    <h6 class="fw-bold mb-0">វេយ្យាករណ៍បាលី</h6>
+                                    <small class="text-muted"><i class="bi bi-translate"></i> ថ្នាក់ដំបូង (កម្រិត
+                                        ១)</small>
+                                    <div class="rating-color">
+                                        <i class="bi bi-star-fill"></i> 4.9 (១៥០នាក់)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-3 p-2 bg-white1 rounded shadow-sm">
+                                <div class="flex-shrink-0 me-4 rounded-2">
+                                    <img src="../asset/images/vannda_img/ព្រះពុទ្ធ.svg" alt="រូបតូច"
+                                        class="card-list-item img rounded-2">
+                                </div>
+                                <div class="flex-grow-1 ms-5">
+                                    <h6 class="fw-bold mb-0">ពុទ្ធប្រវត្តិសង្ខេប</h6>
+                                    <small class="text-muted"><i class="bi bi-clock-history"></i>
+                                        ដំណើរជីវិតព្រះពុទ្ធ</small>
+                                    <div class="rating-color">
+                                        <i class="bi bi-star-fill"></i> 4.8 (៣០០នាក់)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-3 p-2 bg-white1 rounded shadow-sm">
+                                <div class="flex-shrink-0 me-4 rounded-2">
+                                    <img src="../asset/images/vannda_img/ព្រះធម៌ក្នុងជីវិត.png" alt="រូបតូច"
+                                        class="card-list-item img rounded-2">
+                                </div>
+                                <div class="flex-grow-1 ms-5">
+                                    <h6 class="fw-bold mb-0">រឿងនិទានធម៌បទ</h6>
+                                    <small class="text-muted"><i class="bi bi-headphones"></i> ស្ដាប់ជាអូឌីយ៉ូ</small>
+                                    <div class="rating-color">
+                                        <i class="bi bi-star-fill"></i> 4.9 (៥០នាក់)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3 p-2 bg-white1 rounded shadow-sm">
+                                <div class="flex-shrink-0 me-4 rounded-2">
+                                    <img src="../asset/images/vannda_img/ព្រះពុទ្ធ.svg" alt="រូបតូច"
+                                        class="card-list-item img rounded-2">
+                                </div>
+                                <div class="flex-grow-1 ms-5">
+                                    <h6 class="fw-bold mb-0">ពុទ្ធប្រវត្តិសង្ខេប</h6>
+                                    <small class="text-muted"><i class="bi bi-clock-history"></i>
+                                        ដំណើរជីវិតព្រះពុទ្ធ</small>
+                                    <div class="rating-color">
+                                        <i class="bi bi-star-fill"></i> 4.8 (៣០០នាក់)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3 p-2 bg-white1 rounded shadow-sm">
+                                <div class="flex-shrink-0 me-4 rounded-2">
+                                    <img src="../asset/images/vannda_img/ព្រះពុទ្ធ.svg" alt="រូបតូច"
+                                        class="card-list-item img rounded-2">
+                                </div>
+                                <div class="flex-grow-1 ms-5">
+                                    <h6 class="fw-bold mb-0">ពុទ្ធប្រវត្តិសង្ខេប</h6>
+                                    <small class="text-muted"><i class="bi bi-clock-history"></i>
+                                        ដំណើរជីវិតព្រះពុទ្ធ</small>
+                                    <div class="rating-color">
+                                        <i class="bi bi-star-fill"></i> 4.8 (៣០០នាក់)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3 p-2 bg-white1 rounded shadow-sm">
+                                <div class="flex-shrink-0 me-4 rounded-2">
+                                    <img src="../asset/images/vannda_img/ព្រះពុទ្ធ.svg" alt="រូបតូច"
+                                        class="card-list-item img rounded-2">
+                                </div>
+                                <div class="flex-grow-1 ms-5">
+                                    <h6 class="fw-bold mb-0">ពុទ្ធប្រវត្តិសង្ខេប</h6>
+                                    <small class="text-muted"><i class="bi bi-clock-history"></i>
+                                        ដំណើរជីវិតព្រះពុទ្ធ</small>
+                                    <div class="rating-color">
+                                        <i class="bi bi-star-fill"></i> 4.8 (៣០០នាក់)
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
-                <div class="row g-4 mt-3">
-                    <!-- Sidebar Filters -->
-                    <div class="col-lg-3 ">
-                        <div class="card border-0 shadow-sm position-sticky " style="top: 120px;">
-                            <div class="card-body ">
-                                <div class="d-grid gap-2">
-                                    <button class="filter-btn active fs-4" data-filter="all">ទាំងអស់</button>
-                                    <button class="filter-btn fs-4" data-filter="sil">សីល</button>
-                                    <button class="filter-btn fs-4" data-filter="samadhi">សមាធិ</button>
-                                    <button class="filter-btn fs-4" data-filter="panna">បញ្ញា</button>
-                                    <button class="filter-btn fs-4" data-filter="discussion">ព្រហ្មវិហារធម៌</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Lessons List & Article -->
-                    <div class="col-lg-9 ">
-                        <div id="lessonsList" class="mb-4">
-                            <h5 class="mb-3" style="color: var(--text-primary);">មេរៀនថ្មីៗ</h5>
-
-                            <div class="card lesson-card active" data-category="sil" onclick="showArticle(1)"
-                                style="background-color: var(--bg-primary);">
-                                <div class="card-body">
-                                    <span class="category-badge"
-                                        style="color: var(--primary-color); font-weight: 600;">សីល</span>
-                                    <h6 class="card-title fs-5" style="color: var(--text-primary);">
-                                        នេះគឺជាការប្រតិបត្តិដើម្បីគ្រប់គ្រងកាយ និង វាចា
-                                        ឲ្យបានស្អាតស្អំ មិនបៀតបៀនខ្លួនឯង និង អ្នកដទៃ។</h6>
-                                    <small class="" style="color: var(--text-primary);">សម្មវាចា | សម្មកម្មន្ដៈ |
-                                        សម្មាអាជីវៈ</small>
-                                </div>
-                            </div>
-
-                            <div class="card lesson-card " data-category="samadhi" onclick="showArticle(2)"
-                                style="background-color: var(--bg-primary);">
-                                <div class="card-body">
-                                    <span class="category-badge bg-info" style="color: white;">សមាធិ</span>
-                                    <h6 class="card-title fs-5" style="color: var(--text-primary);">
-                                        មូលដ្ឋាននៃការវិធានកម្ម — សមាធិសាលដើម</h6>
-                                    <small class="" style="color: var(--text-primary);">សម្មាវាយាមៈ | សម្មាសតិ​ |
-                                        សម្មាសមាធិ</small>
-                                </div>
-                            </div>
-
-                            <div class="card lesson-card " data-category="panna" onclick="showArticle(3)"
-                                style="background-color: var(--bg-primary);">
-                                <div class="card-body">
-                                    <span class="category-badge bg-success" style="color: white;">បញ្ញា</span>
-                                    <h6 class="card-title fs-5" style="color: var(--text-primary);">បញ្ញា គឺសំដៅលើ
-                                        "ការយល់ដឹង" ឬ "សេចក្តីចេះដឹងច្បាស់លាស់"។
-                                    </h6>
-                                    <small class="" style="color: var(--text-primary);">សម្មាទិដ្ឋិ |
-                                        សម្មាសង្កប្ប</small>
-                                </div>
-                            </div>
-
-                            <div class="card lesson-card " data-category="discussion" onclick="showArticle(4)"
-                                style="background-color: var(--bg-primary);">
-                                <div class="card-body ">
-                                    <span class="category-badge bg-warning" style="color: #333;">ព្រហ្មវិហារធម៌</span>
-                                    <h6 class="card-title fs-5 mb-3" style="color: var(--text-primary);">
-                                        "ព្រហ្មវិហារធម៌" (អានថា ព្រហ្ម-មាក់-វិ-ហារ៉ាក់-ធម៌)
-                                        គឺជាគោលធម៌ដ៏ប្រសើរបំផុត ៤ ប្រការ នៅក្នុងព្រះពុទ្ធសាសនា </h6>
-                                    <small class="text-end​ fs-7 border-top border-1 border-primary"
-                                        style="color: var(--text-secondary);">ព្រហ្មវិហារធម៌មាន ៤ យ៉ាងគឺ៖</small>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Article View -->
-
-                        <div id="articleView" class="article-view" style="background-color: var(--bg-primary);">
-                            <button class="btn btn-outline-secondary btn-sm mb-3" onclick="backToList()">←
-                                ត្រឡប់ទៅបញ្ជី</button>
-                            <h2 id="articleTitle"></h2>
-                            <p id="articleCategory"
-                                style="color: var(--gold); font-weight: 600; margin-bottom: 1.5rem;">
-                            </p>
-                            <div id="articleContent" style="line-height: 1.9; font-size: 1.05rem;"></div>
-                            <hr class="my-4">
-                            <div class="d-flex justify-content-between">
-                                <small class="text-muted ">ទ្រឹស្ដីព្រះពុទ្ធសាសនា | ព្រះត្រ័យបិដក </small>
-                                <button class="btn btn-primary btn-sm " onclick="backToList()">← ត្រឡប់ទៅបញ្ជី</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-
         </section>
-        <section class="mt=5">
+        <section class="mission-section">
+            <div class="container">
+                <div class="col-sm-12">
+                    <div id="lessonsList" class="mb-4">
+                        <h5 class="mb-5 fs-2" style="color: var(--text-primary);">មេរៀនថ្មីៗ</h5>
+
+                        <div class="card lesson-card active" data-category="sil" onclick="showArticle(1)"
+                            style="background-color: var(--bg-primary); box-shadow: var(--box-shadow)">
+                            <div class="card-body">
+                                <span class="category-badge"
+                                    style="color: rgb(255, 255, 255); font-weight: 600;">សីល</span>
+                                <h6 class="card-title fs-5" style="color: var(--text-primary);">
+                                    នេះគឺជាការប្រតិបត្តិដើម្បីគ្រប់គ្រងកាយ និង វាចា
+                                    ឲ្យបានស្អាតស្អំ មិនបៀតបៀនខ្លួនឯង និង អ្នកដទៃ។</h6>
+                                <small class="" style="color: var(--text-primary);">សម្មវាចា | សម្មកម្មន្ដៈ |
+                                    សម្មាអាជីវៈ</small>
+                            </div>
+                        </div>
+
+                        <div class="card lesson-card " data-category="samadhi" onclick="showArticle(2)"
+                            style="background-color: var(--bg-primary); box-shadow: var(--box-shadow)">
+                            <div class="card-body">
+                                <span class="category-badge " style="color: white;">សមាធិ</span>
+                                <h6 class="card-title fs-5" style="color: var(--text-primary);">
+                                    មូលដ្ឋាននៃការវិធានកម្ម — សមាធិសាលដើម</h6>
+                                <small class="" style="color: var(--text-primary);">សម្មាវាយាមៈ | សម្មាសតិ​ |
+                                    សម្មាសមាធិ</small>
+                            </div>
+                        </div>
+
+                        <div class="card lesson-card " data-category="panna" onclick="showArticle(3)"
+                            style="background-color: var(--bg-primary); box-shadow: var(--box-shadow)">
+                            <div class="card-body">
+                                <span class="category-badge " style="color: white;">បញ្ញា</span>
+                                <h6 class="card-title fs-5" style="color: var(--text-primary);">បញ្ញា គឺសំដៅលើ
+                                    "ការយល់ដឹង" ឬ "សេចក្តីចេះដឹងច្បាស់លាស់"។
+                                </h6>
+                                <small class="" style="color: var(--text-primary);">សម្មាទិដ្ឋិ |
+                                    សម្មាសង្កប្ប</small>
+                            </div>
+                        </div>
+
+                        <div class="card lesson-card " data-category="discussion" onclick="showArticle(4)"
+                            style="background-color: var(--bg-primary); box-shadow: var(--box-shadow)">
+                            <div class="card-body ">
+                                <span class="category-badge "
+                                    style="color: #b48d00; color: rgb(255, 255, 255)">ព្រហ្មវិហារធម៌</span>
+                                <h6 class="card-title fs-5 mb-3" style="color: var(--text-primary);">
+                                    "ព្រហ្មវិហារធម៌" (អានថា ព្រហ្ម-មាក់-វិ-ហារ៉ាក់-ធម៌)
+                                    គឺជាគោលធម៌ដ៏ប្រសើរបំផុត ៤ ប្រការ នៅក្នុងព្រះពុទ្ធសាសនា </h6>
+                                <small class="text-end​ fs-7 border-top"
+                                    style="color: var(--text-secondary);">ព្រហ្មវិហារធម៌មាន ៤ យ៉ាងគឺ៖</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Article View -->
+
+                    <div id="articleView" class="article-view" style="background-color: var(--bg-primary);">
+                        <button class="btn btn-outline-secondary btn-sm mb-3" onclick="backToList()">←
+                            ត្រឡប់ទៅបញ្ជី</button>
+                        <h2 id="articleTitle"></h2>
+                        <p id="articleCategory" style="color: var(--gold); font-weight: 600; margin-bottom: 1.5rem;">
+                        </p>
+                        <div id="articleContent" style="line-height: 1.9; font-size: 1.05rem;"></div>
+                        <hr class="my-4">
+                        <div class="d-flex justify-content-between">
+                            <small class="text-muted ">ទ្រឹស្ដីព្រះពុទ្ធសាសនា | ព្រះត្រ័យបិដក </small>
+                            <button class="btn btn-primary btn-sm " onclick="backToList()">← ត្រឡប់ទៅបញ្ជី</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mission-section">
             <div class="container">
                 <div class="row mt-5">
                     <div class="col-12">
-                        <div class="card p-5" style="background-color: var(--bg-primary);">
+                        <div class="card p-5 border-0"
+                            style="background-color: var(--bg-primary); box-shadow: var(--box-shadow)">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h2 class="modal-title" id="silaQuizModalLabel" style="color: var(--text-primary);">តេស្តសាកល្បង៖ សីល ៥</h2>
+                                    <h2 class="modal-title" id="silaQuizModalLabel" style="color: var(--text-primary);">
+                                        តេស្តសាកល្បង៖ សីល ៥</h2>
                                 </div>
 
                                 <div class="modal-body" style="color: var(--text-primary);">
@@ -925,7 +1122,7 @@
                                     <div id="quiz-welcome" class="text-center p-3 fs-4">
                                         <p>តេស្តនេះមាន ៦ សំណួរ ដើម្បីសាកល្បងការយល់ដឹងរបស់អ្នកអំពីសីល ៥។</p>
                                         <p>សូមជ្រើសរើសចម្លើយដែលត្រឹមត្រូវបំផុត។</p>
-                                        <button type="button" class="btn btn-primary w-100"
+                                        <button type="button" class="btn btn-outline-primary w-100"
                                             id="startQuizBtn">ចាប់ផ្ដើម</button>
                                     </div>
 
@@ -1091,7 +1288,7 @@
                                             ក្នុងចំណោម <span id="quiz-total" class="fw-bold">6</span> សំណួរ។</n>
                                         </p>
                                         <div id="quiz-feedback" class="mt-3"></div>
-                                        <button type="button" class="btn btn-primary w-100 mt-4"
+                                        <button type="button" class="btn btn-outline-primary w-100 mt-4"
                                             id="restartQuizBtn">សាកល្បងម្ដងទៀត</button>
                                     </div>
 
@@ -1591,7 +1788,7 @@
     <div class="modal fade" id="wordOfTheDayModal" tabindex="-1" aria-labelledby="wordOfTheDayModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
+            <div class="modal-content" style="background-color: var(--bg-primary); color: var(--text-primary) ">
                 <div class="modal-header">
                     <h5 class="modal-title" id="wordOfTheDayModalLabel">
                         <i class="bi bi-brightness-high-fill text-warning me-2"></i>
@@ -1635,7 +1832,8 @@
                     <h4>ការអនុវត្តក្នុងសង្គម</h4>
                     <p>តើយើងប្រើ "បញ្ញា" ក្នុងជីវិតប្រចាំថ្ងៃដូចម្ដេច?</p>
 
-                    <blockquote class="blockquote bg-light p-3 rounded">
+                    <blockquote class="blockquote  p-3 rounded"
+                        style="background-color: var(--bg-primary); color: var(--text-primary) ">
                         <p class="mb-0">"ពេលមានទំនាស់ក្នុងគ្រួសារ៖"</p>
                         <ul class="mb-0">
                             <li>អ្នកប្រើ **"អារម្មណ៍"** នឹងស្រែកតវ៉ា។</li>
@@ -1649,13 +1847,13 @@
 
                     <h4>ប្រធានបទពាក់ព័ន្ធ</h4>
                     <p>ដើម្បីឱ្យ "បញ្ញា" កើតឡើងបាន ត្រូវមានองค์ประกอบផ្សំ៖</p>
-                    <a href="#" class="btn btn-outline-secondary btn-sm mb-1">
+                    <a href="#" class="btn btn-outline-primary btn-sm mb-1">
                         <i class="bi bi-shield-check me-1"></i> សីល (Sila)
                     </a>
-                    <a href="#" class="btn btn-outline-info btn-sm mb-1">
+                    <a href="#" class="btn btn-outline-primary btn-sm mb-1">
                         <i class="bi bi-flower1 me-1"></i> សមាធិ (Samādhi)
                     </a>
-                    <a href="#" class="btn btn-outline-success btn-sm mb-1">
+                    <a href="#" class="btn btn-outline-primary btn-sm mb-1">
                         <i class="bi bi-search me-1"></i> សតិ (Sati)
                     </a>
 
