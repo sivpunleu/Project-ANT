@@ -124,6 +124,9 @@
 .title{
     color:var(--primary-color) !important;
 }
+.text{
+    color:var(--text-color) !important; 
+}
 
 .btn-lg01{
     background-color: #f17024!important;
@@ -151,7 +154,6 @@
 /* MISSIONS SECTION START */
 .card{
     background-color: var(--bg-primary) !important;
-    color:var(--text-primary) !important;
     box-shadow: 1px 6px 6px var(--border-light) !important;
     overflow: hidden;
     display: flex;
@@ -292,6 +294,11 @@
 /* MISSION SECTION END */
 
 /* TEAM SECTION START */
+/* .ant-logo{
+    background-image: url(../images/ANT.png);
+    background-size: cover;
+  
+} */
 .img{
     
     object-fit: cover;
@@ -316,8 +323,8 @@
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
     background-color: rgba(255, 255, 255, 0.1) !important;
-    background-color: #7f7f7f !important;
-    color:rgb(65, 16, 25) !important;
+    background-color: var(--primary-color) !important;
+    color:rgb(35, 9, 14) !important;
 }
 .btn-style:hover{
     transform: scale(1.2);
