@@ -200,7 +200,7 @@
 
 
                         <!-- User Profile -->
-                         <a href="../pages/auth/user_profile.html" class="user-profile rounded-5">
+                        <a href="../pages/auth/user_profile.html" class="user-profile rounded-5">
                             <img src="../asset/images/img-profile/user-profile.png" alt=""
                                 class="img-f rounded-5 overflow-hidden" style="width: 50px; " height="50px">
                         </a>
@@ -212,384 +212,448 @@
         </nav>
     </header>
     <main>
-        <div class="container mt-5">
-           <div class=" mb-5 d-flex justify-content-between align-items-center">
-                <div class="back-button btn btn-outline-primary">
-                    <a href="questionandanwser.html">
-                        <i class="fas fa-arrow-left "></i> ត្រឡប់ទៅ សំណួរ និង ចម្លើយ
-                    </a>
-                </div>
-                <div class="back-button btn btn-outline-primary">
-                    <a href="partofvipassana.html">
-                        សំណួរ និង ចម្លើយ ផ្នែកវិបស្សនា
-                       <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
+        <section class="mission-section">
+            <div class="faq-header text-center">
+                <img src="../asset/images/vannda_img/ការអនុវត្ត.webp" alt="ការអនុវត្ត" class="header-image">
             </div>
 
-            <div class="faq-container">
-                <div class="faq-header text-center">
+        </section>
+        <section class="mission-section">
+            <div class="container">
 
-                    <img src="../asset/images/vannda_img/ការអនុវត្ត.webp" alt="ការអនុវត្ត"
-                        class="header-image">
+                <div class="text-center mb-5">
+                    <h1 class="fw-bold mb-3" style="color: var(--text-dark);">ការអនុវត្តព្រះធម៌ក្នុងជីវិតប្រចាំថ្ងៃ</h1>
+                    <p class="text-muted mb-4">សិល្បៈនៃការរស់នៅប្រកបដោយសតិ និងបញ្ញា</p>
 
-                    
-                    <h1 class="text-center">សំណួរ និង ចម្លើយផ្នែកការអនុវត្ត</h1>
-                    <p class="text-center">របៀបយកព្រះធម៌មកប្រើប្រាស់ក្នុងការសិក្សា ការងារ និងការរស់នៅប្រចាំថ្ងៃ</p>
-                </div>
+                    <div class="search-container mb-5">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="searchInput" class="form-control search-input"
+                            placeholder="ស្វែងរក... (ឧ. ការសិក្សា, ការងារ, គ្រួសារ)">
+                    </div>
 
-                <div class="principles-section mb-5">
-                    <h2 class="text-center mb-4" style="color: #c9a42e; font-weight: 700;">អនុវត្តធម៌ក្នុងគ្រប់កាលៈទេសៈ
-                    </h2>
-                    <div class="row g-4">
-                        <div class="col-md-4">
-                            <div class="card principle-card h-100 text-center">
-                                <div class="card-body bg-light rounded-5">
-                                    <i class="fas fa-book-reader"></i>
-                                    <h5 class="card-title fw-bold">ក្នុងការសិក្សា</h5>
-                                    <p class="card-text">ប្រើ "សតិ" ដើម្បីផ្ចង់អារម្មណ៍ និង "វិរិយៈ"
-                                        ដើម្បីមានការព្យាយាមក្នុងការរៀនសូត្រ។</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card principle-card h-100 text-center">
-                                <div class="card-body bg-light rounded-5">
-                                    <i class="fas fa-briefcase"></i>
-                                    <h5 class="card-title fw-bold">ក្នុងការងារ</h5>
-                                    <p class="card-text">ប្រើ "សម្មាអាជីវោ" (ការងារស្មោះត្រង់) និង "ខន្តី" (ការអត់ធ្មត់)
-                                        ក្នុងកន្លែងធ្វើការ។</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card principle-card h-100 text-center">
-                                <div class="card-body bg-light rounded-5">
-                                    <i class="fas fa-home"></i>
-                                    <h5 class="card-title fw-bold">ក្នុងគ្រួសារ</h5>
-                                    <p class="card-text">ប្រើ "មេត្តា" (សេចក្ដីស្រឡាញ់) និង "កតញ្ញូ" (ការដឹងគុណ)
-                                        ដើម្បីសុភមង្គលក្នុងផ្ទះ។</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="questionandanwser.html" class="btn btn-outline-secondary rounded-pill px-4">
+                            <i class="fas fa-arrow-left me-2"></i> ត្រឡប់ក្រោយ
+                        </a>
                     </div>
                 </div>
 
-                <hr class="my-5" style="border-top: 1px solid #e0e0e0;">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="accordion" id="faqAccordion">
 
-
-                <div class="accordion" id="faqAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q1">
-                                ១. តើរបៀបយកព្រះធម៌មកប្រើប្រាស់ក្នុងជីវិតប្រចាំថ្ងៃ?
-                            </button>
-                        </h2>
-                        <div id="q1" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                ការយកព្រះធម៌មកប្រើប្រាស់ក្នុងជីវិតប្រចាំថ្ងៃ គឺការអនុវត្តគោលការណ៍សំខាន់ៗ ដូចជា សីល
-                                (ការប្រព្រឹត្តល្អ), សមាធិ (ការតម្កល់ចិត្ត) និង បញ្ញា (ការយល់ដឹង)
-                                ទៅក្នុងគ្រប់សកម្មភាពរបស់យើង មិនថាការងារ ការសិក្សា ឬទំនាក់ទំនងឡើយ។
-                                <div class="highlight">
-                                    ព្រះធម៌មិនមែនសម្រាប់តែនៅក្នុងវត្ត ឬពេលសូត្រមន្តទេ
-                                    តែគឺសម្រាប់អនុវត្តគ្រប់ជំហាននៃជីវិត ដើម្បីបង្កើតសេចក្ដីសុខ និងសន្តិភាព។
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q1">
+                                        ១. តើរបៀបយកព្រះធម៌មកប្រើប្រាស់ក្នុងជីវិតប្រចាំថ្ងៃ?
+                                    </button>
+                                </h2>
+                                <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        ការយកព្រះធម៌មកប្រើប្រាស់ក្នុងជីវិតប្រចាំថ្ងៃ គឺការអនុវត្តគោលការណ៍សំខាន់ៗ ដូចជា
+                                        សីល (ការប្រព្រឹត្តល្អ), សមាធិ (ការតម្កល់ចិត្ត) និង បញ្ញា (ការយល់ដឹង)
+                                        ទៅក្នុងគ្រប់សកម្មភាពរបស់យើង។
+                                        <div class="highlight">
+                                            ព្រះធម៌មិនមែនសម្រាប់តែនៅក្នុងវត្ត ឬពេលសូត្រមន្តទេ
+                                            តែគឺសម្រាប់អនុវត្តគ្រប់ជំហាននៃជីវិត ដើម្បីបង្កើតសេចក្ដីសុខ និងសន្តិភាព។
+                                        </div>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q2">
-                                ២. តើរបៀបអនុវត្តព្រះធម៌ក្នុងការសិក្សា?
-                            </button>
-                        </h2>
-                        <div id="q2" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                ការអនុវត្តព្រះធម៌ក្នុងការសិក្សា៖
-                                <div class="practice-box">
-                                    <div class="practice-title">១. សតិ (Mindfulness)</div>
-                                    <p>មានសតិដឹងខ្លួន ផ្ចង់អារម្មណ៍ពេលកំពុងរៀន ជៀសវាងការរវើរវាយ ឬគិតរឿងផ្សេង។</p>
-                                </div>
-                                <div class="practice-box">
-                                    <div class="practice-title">២. វិរិយៈ (Effort)</div>
-                                    <p>មានសេចក្ដីព្យាយាម ឧស្សាហ៍រៀនសូត្រ មិនបាក់ទឹកចិត្តពេលជួបមេរៀនពិបាក។</p>
-                                </div>
-                                <div class="practice-box">
-                                    <div class="practice-title">៣. សម្មាទិដ្ឋិ (Right View)</div>
-                                    <p>យល់ដឹងពីគោលបំណងពិតនៃការសិក្សា គឺដើម្បីចម្រើនបញ្ញា មិនមែនត្រឹមតែប្រឡងយកពិន្ទុទេ។
-                                    </p>
-                                </div>
-                                <div class="practice-box">
-                                    <div class="practice-title">៤. ការគោរព (Respect)</div>
-                                    <p>គោរពគ្រូដែលបានបង្រៀន និងមានទំនាក់ទំនងល្អជាមួយមិត្តរួមថ្នាក់។</p>
-                                </div>
-                                <div class="tip-box">
-                                    <strong>💡 ដំបូន្មាន៖</strong> សិក្សាដើម្បី "បញ្ញា" (Wisdom) មិនមែនត្រឹមតែដើម្បី
-                                    "ចំណេះ" (Knowledge) ទេ។
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q2">
+                                        ២. តើរបៀបអនុវត្តព្រះធម៌ក្នុងការសិក្សា?
+                                    </button>
+                                </h2>
+                                <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        វិធីសាស្ត្ររៀនពូកែតាមបែបព្រះពុទ្ធសាសនា៖
+                                        <div class="practice-box">
+                                            <div class="practice-title"><i class="fas fa-brain me-2"></i>១. សតិ
+                                                (Mindfulness)</div>
+                                            <p>ផ្ចង់អារម្មណ៍ពេលកំពុងរៀន ជៀសវាងការរវើរវាយ ឬលេងទូរស័ព្ទ។</p>
+                                        </div>
+                                        <div class="practice-box">
+                                            <div class="practice-title"><i class="fas fa-fire me-2"></i>២. វិរិយៈ
+                                                (Effort)</div>
+                                            <p>មានសេចក្ដីព្យាយាម ឧស្សាហ៍រៀនសូត្រ មិនបាក់ទឹកចិត្តពេលជួបមេរៀនពិបាក។</p>
+                                        </div>
+                                        <div class="practice-box">
+                                            <div class="practice-title"><i class="fas fa-eye me-2"></i>៣. សម្មាទិដ្ឋិ
+                                                (Right View)</div>
+                                            <p>យល់ដឹងថាការសិក្សាគឺដើម្បីចម្រើនបញ្ញា មិនមែនត្រឹមតែប្រឡងយកពិន្ទុ។</p>
+                                        </div>
+                                        <div class="tip-box">
+                                            <i class="fas fa-lightbulb text-warning mt-1"></i>
+                                            <div><strong>ដំបូន្មាន៖</strong> សិក្សាដើម្បី "បញ្ញា" (Wisdom) យកទៅជួយសង្គម
+                                                មិនមែនត្រឹមតែដើម្បី "ចំណេះ" (Knowledge) ទេ។</div>
+                                        </div>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q3">
-                                ៣. តើរបៀបអនុវត្តព្រះធម៌ក្នុងការងារ?
-                            </button>
-                        </h2>
-                        <div id="q3" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                ការអនុវត្តព្រះធម៌ក្នុងការងារ៖
-                                <div class="practice-box">
-                                    <div class="practice-title">១. សម្មាអាជីវោ (Right Livelihood)</div>
-                                    <p>បំពេញការងារដោយស្មោះត្រង់ ទៀងត្រង់ មិនបោកប្រាស់ ឬកេងបន្លំ។</p>
-                                </div>
-                                <div class="practice-box">
-                                    <div class="practice-title">២. ខន្តី (Patience)</div>
-                                    <p>មានការអត់ធ្មត់ខ្ពស់ ពេលជួបបញ្ហាក្នុងការងារ ឬជាមួយមិត្តរួមការងារ។</p>
-                                </div>
-                                <div class="practice-box">
-                                    <div class="practice-title">៣. មេត្តា (Loving-kindness)</div>
-                                    <p>មានសេចក្ដីរាប់អានល្អ ចេះជួយเหลือមិត្តរួមការងារ និងនិយាយពាក្យល្អៗ។</p>
-                                </div>
-                                <div class="practice-box">
-                                    <div class="practice-title">៤. សតិ (Mindfulness)</div>
-                                    <p>ផ្ចង់អារម្មណ៍លើការងារដែលកំពុងធ្វើ ជួយកាត់បន្ថយកំហុស និងបង្កើនប្រសិទ្ធភាព។</p>
-                                </div>
-                                <div class="tip-box">
-                                    <strong>💡 ដំបូន្មាន៖</strong> ធ្វើការងារដើម្បីផ្ដល់តម្លៃ និងជួយសង្គម
-                                    មិនមែនត្រឹមតែដើម្បីប្រាក់ខែទេ។
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q3">
+                                        ៣. តើរបៀបអនុវត្តព្រះធម៌ក្នុងការងារ?
+                                    </button>
+                                </h2>
+                                <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        ការធ្វើការងារឲ្យមានប្រសិទ្ធភាព និងសប្បាយចិត្ត៖
+                                        <div class="practice-box">
+                                            <div class="practice-title"><i class="fas fa-briefcase me-2"></i>១.
+                                                សម្មាអាជីវោ (Right Livelihood)</div>
+                                            <p>ប្រកបការងារដោយស្មោះត្រង់ ទៀងត្រង់ មិនបោកប្រាស់ ឬកេងបន្លំ។</p>
+                                        </div>
+                                        <div class="practice-box">
+                                            <div class="practice-title"><i class="fas fa-clock me-2"></i>២. ខន្តី
+                                                (Patience)</div>
+                                            <p>មានការអត់ធ្មត់ខ្ពស់ ពេលជួបបញ្ហាក្នុងការងារ ឬជាមួយអតិថិជន។</p>
+                                        </div>
+                                        <div class="practice-box">
+                                            <div class="practice-title"><i class="fas fa-heart me-2"></i>៣. មេត្តា
+                                                (Loving-kindness)</div>
+                                            <p>ចេះជួយយកអាសាគ្នាទៅវិញទៅមក បង្កើតបរិយាកាសល្អក្នុងកន្លែងធ្វើការ។</p>
+                                        </div>
+                                        <div class="tip-box">
+                                            <i class="fas fa-lightbulb text-warning mt-1"></i>
+                                            <div><strong>ដំបូន្មាន៖</strong> ធ្វើការងារដើម្បីផ្ដល់តម្លៃ និងជួយសង្គម
+                                                មិនមែនត្រឹមតែដើម្បីប្រាក់ខែទេ។</div>
+                                        </div>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q4">
-                                ៤. តើរបៀបអនុវត្តព្រះធម៌ក្នុងផ្ទះ?
-                            </button>
-                        </h2>
-                        <div id="q4" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                ការអនុវត្តព្រះធម៌ក្នុងផ្ទះ៖
-                                <div class="practice-box">
-                                    <div class="practice-title">១. កតញ្ញូ (Gratitude)</div>
-                                    <p>គោរព ដឹងគុណ និងជួយមើលថែឪពុកម្ដាយ ឬចាស់ទុំក្នុងគ្រួសារ។</p>
-                                </div>
-                                <div class="practice-box">
-                                    <div class="practice-title">២. សង្គហធម៌ (Helpfulness)</div>
-                                    <p>ចេះជួយទុក្ខធុរៈគ្នាទៅវិញទៅមក ចែករំលែក និងយោគយល់អធ្យាស្រ័យគ្នា។</p>
-                                </div>
-                                <div class="practice-box">
-                                    <div class="practice-title">៣. សច្ចៈ (Truthfulness)</div>
-                                    <p>និយាយពាក្យពិត មិនកុហកបោកប្រាស់សមាជិកគ្រួសារ បង្កើតទំនុកចិត្ត។</p>
-                                </div>
-                                <div class="practice-box">
-                                    <div class="practice-title">៤. មេត្តា (Loving-kindness)</div>
-                                    <p>បង្កើតបរិយាកាសក្នុងផ្ទះឲ្យមានភាពកក់ក្ដៅ មិនប្រើអំពើហិង្សា ឬពាក្យសម្ដីអាក្រក់។</p>
-                                </div>
-                                <div class="tip-box">
-                                    <strong>💡 ដំបូន្មាន៖</strong> ផ្ទះដែលសាងលើព្រះធម៌ គឺជាផ្ទះដែលពោរពេញដោយសន្តិភាព
-                                    និងសុភមង្គល។
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q4">
+                                        ៤. តើរបៀបអនុវត្តព្រះធម៌ក្នុងផ្ទះ?
+                                    </button>
+                                </h2>
+                                <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        កសាងសុភមង្គលក្នុងគ្រួសារតាមផ្លូវធម៌៖
+                                        <div class="practice-box">
+                                            <div class="practice-title">១. កតញ្ញូ (Gratitude)</div>
+                                            <p>គោរព ដឹងគុណ និងជួយមើលថែឪពុកម្ដាយ ឬចាស់ទុំក្នុងគ្រួសារ។</p>
+                                        </div>
+                                        <div class="practice-box">
+                                            <div class="practice-title">២. សង្គហធម៌ (Helpfulness)</div>
+                                            <p>ចេះជួយទុក្ខធុរៈគ្នាទៅវិញទៅមក ចែករំលែក និងយោគយល់អធ្យាស្រ័យ។</p>
+                                        </div>
+                                        <div class="practice-box">
+                                            <div class="practice-title">៣. សច្ចៈ (Truthfulness)</div>
+                                            <p>និយាយពាក្យពិត មិនកុហកបោកប្រាស់សមាជិកគ្រួសារ បង្កើតទំនុកចិត្ត។</p>
+                                        </div>
+                                        <div class="tip-box">
+                                            <i class="fas fa-home text-warning mt-1"></i>
+                                            <div><strong>ដំបូន្មាន៖</strong> ផ្ទះដែលសាងលើព្រះធម៌
+                                                គឺជាផ្ទះដែលពោរពេញដោយសន្តិភាព និងសុភមង្គល។</div>
+                                        </div>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q5">
-                                ៥. តើរបៀបរក្សាសីលក្នុងជីវិតប្រចាំថ្ងៃ?
-                            </button>
-                        </h2>
-                        <div id="q5" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                ការរក្សាសីល (សីល ៥) ក្នុងជីវិតប្រចាំថ្ងៃ គឺជាការបដិបត្តិជាក់ស្ដែង៖
-                                <div class="practice-box">
-                                    <div class="practice-title">១. មិនសម្លាប់</div>
-                                    <p>មានចិត្តមេត្តា មិនបៀតបៀន ឬសម្លាប់សត្វ ទាំងតូចទាំងធំ។</p>
-                                </div>
-                                <div class="practice-box">
-                                    <div class="practice-title">២. មិនលួច</div>
-                                    <p>មានភាពស្មោះត្រង់ មិនយកទ្រព្យសម្បត្តិរបស់អ្នកដទៃដែលគេមិនបានឲ្យ។</p>
-                                </div>
-                                <div class="practice-box">
-                                    <div class="practice-title">៣. មិនប្រព្រឹត្តខុសក្នុងកាម</div>
-                                    <p>ស្មោះត្រង់នឹងដៃគូរបស់ខ្លួន មិនក្បត់ចិត្ត ឬធ្វើឲ្យគ្រួសារគេបែកបាក់។</p>
-                                </div>
-                                <div class="practice-box">
-                                    <div class="practice-title">៤. មិននិយាយកុហក</div>
-                                    <p>និយាយតែពាក្យពិត ពាក្យមានប្រយោជន៍ មិននិយាយបំពាន ឬមុសាវាទ។</p>
-                                </div>
-                                <div class="practice-box">
-                                    <div class="practice-title">៥. មិនសេពគ្រឿងស្រវឹង</div>
-                                    <p>វៀរចាកគ្រឿងស្រវឹង ឬគ្រឿងញៀន ដែលធ្វើឲ្យបាត់បង់សតិ និងបញ្ញា។</p>
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q5">
+                                        ៥. តើរបៀបរក្សាសីលក្នុងជីវិតប្រចាំថ្ងៃ?
+                                    </button>
+                                </h2>
+                                <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        ការរក្សាសីល ៥ ឱ្យបានបរិសុទ្ធ៖
+                                        <div class="practice-box"><strong>១. មិនសម្លាប់:</strong> មានចិត្តមេត្តា
+                                            មិនបៀតបៀនសត្វ។</div>
+                                        <div class="practice-box"><strong>២. មិនលួច:</strong> មានភាពស្មោះត្រង់
+                                            មិនយករបស់គេ។</div>
+                                        <div class="practice-box"><strong>៣. មិនប្រព្រឹត្តខុសក្នុងកាម:</strong>
+                                            ស្មោះត្រង់នឹងដៃគូ។</div>
+                                        <div class="practice-box"><strong>៤. មិននិយាយកុហក:</strong> និយាយតែពាក្យពិត
+                                            និងមានប្រយោជន៍។</div>
+                                        <div class="practice-box"><strong>៥. មិនសេពគ្រឿងស្រវឹង:</strong> វៀរចាកគ្រឿងញៀន
+                                            ដែលធ្វើឲ្យបាត់បង់សតិ។</div>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q6">
-                                ៦. តើរបៀបធ្វើទាន (បរិច្ចាគ) ក្នុងប្រចាំថ្ងៃ?
-                            </button>
-                        </h2>
-                        <div id="q6" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                ការធ្វើទាន (Dāna) មិនមែនមានតែលុយទេ៖
-                                <div class="practice-box">
-                                    <div class="practice-title">១. អាមិសទាន (Material Giving)</div>
-                                    <p>ការបរិច្ចាគទ្រព្យសម្បត្តិ អាហារ សម្លៀកបំពាក់ ដល់អ្នកដែលខ្វះខាត។</p>
-                                </div>
-                                <div class="practice-box">
-                                    <div class="practice-title">២. ធម្មទាន (Giving of Dhamma)</div>
-                                    <p>ការចែករំលែកចំណេះដឹង ផ្ដល់ដំបូន្មានល្អៗ ឬពន្យល់ធម៌ដល់អ្នកដទៃ។</p>
-                                </div>
-                                <div class="practice-box">
-                                    <div class="practice-title">៣. អភ័យទាន (Giving of Fearlessness)</div>
-                                    <p>ការផ្ដល់ការអភ័យទោស មិនចងគំនុំ ធ្វើឲ្យអ្នកដទៃមានអារម្មណ៍សុវត្ថិភាព។</p>
-                                </div>
-                                <div class="tip-box">
-                                    <strong>💡 ដំបូន្មាន៖</strong> ធ្វើទានដោយចិត្តជ្រះថ្លា (ចេតនា) ដោយមិនរំពឹងការតបស្នង
-                                    នោះទើបជាបុណ្យដ៏ធំ។
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q6">
+                                        ៦. តើរបៀបធ្វើទាន (បរិច្ចាគ) ក្នុងប្រចាំថ្ងៃ?
+                                    </button>
+                                </h2>
+                                <div id="q6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        ការធ្វើទានមិនចាំបាច់ទាល់តែមានលុយទេ៖
+                                        <ul>
+                                            <li><strong>អាមិសទាន:</strong> ការបរិច្ចាគទ្រព្យ អាហារ ដល់អ្នកខ្វះខាត។</li>
+                                            <li><strong>ធម្មទាន:</strong> ការចែករំលែកចំណេះដឹង ឬដំបូន្មានល្អៗ។</li>
+                                            <li><strong>អភ័យទាន:</strong> ការផ្ដល់ការអភ័យទោស មិនចងគំនុំ។</li>
+                                        </ul>
+                                        <div class="tip-box">
+                                            <i class="fas fa-gift text-warning mt-1"></i>
+                                            <div><strong>ដំបូន្មាន៖</strong> ធ្វើទានដោយចិត្តជ្រះថ្លា
+                                                ដោយមិនរំពឹងការតបស្នង នោះទើបជាបុណ្យដ៏ធំ។</div>
+                                        </div>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed  fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q7">
-                                ៧. តើរបៀបចម្រើនសតិ ក្នុងប្រចាំថ្ងៃ?
-                            </button>
-                        </h2>
-                        <div id="q7" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                ការចម្រើនសតិ (Mindfulness) ក្នុងប្រចាំថ្ងៃ៖
-                                <div class="practice-box">
-                                    <div class="practice-title">១. ពេលព្រឹក</div>
-                                    <p>ពេលភ្ញាក់ពីគេង ចំណាយពេល ៥-១០ នាទី អង្គុយស្ងៀម ផ្ចង់អារម្មណ៍លើដង្ហើមចេញចូល
-                                        (អានាបានស្សតិ)។</p>
-                                </div>
-                                <div class="practice-box">
-                                    <div class="practice-title">២. ពេលថ្ងៃ</div>
-                                    <p>មានសតិដឹងខ្លួន ពេលដើរ ពេលញ៉ាំអាហារ (ដឹងរសជាតិ) ពេលធ្វើការ។ ពេលចិត្តរវើរវាយ
-                                        ត្រូវដឹង ហើយទាញវាមកវិញ។</p>
-                                </div>
-                                <div class="practice-box">
-                                    <div class="practice-title">៣. ពេលល្ងាច</div>
-                                    <p>មុនពេលចូលគេង ឆ្លៀតពេលរំឭកពីទង្វើក្នុងថ្ងៃ ให้อภัย (អភ័យទោស) ដល់ខ្លួនឯង និងអ្នកដទៃ
-                                        រួចបណ្ដុះមេត្តាចិត្ត។</p>
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q7">
+                                        ៧. តើរបៀបចម្រើនសតិ ក្នុងប្រចាំថ្ងៃ?
+                                    </button>
+                                </h2>
+                                <div id="q7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        គន្លឹះក្នុងការហ្វឹកហាត់ចិត្ត៖
+                                        <div class="practice-box">
+                                            <div class="practice-title">ពេលព្រឹក</div>
+                                            <p>ចំណាយពេល ៥-១០ នាទី អង្គុយស្ងៀម ផ្ចង់អារម្មណ៍លើដង្ហើមចេញចូល។</p>
+                                        </div>
+                                        <div class="practice-box">
+                                            <div class="practice-title">ពេលថ្ងៃ</div>
+                                            <p>មានសតិដឹងខ្លួន ពេលដើរ ពេលញ៉ាំអាហារ (ដឹងរសជាតិ) និងពេលធ្វើការ។</p>
+                                        </div>
+                                        <div class="practice-box">
+                                            <div class="practice-title">ពេលល្ងាច</div>
+                                            <p>រំឭកពីទង្វើក្នុងថ្ងៃ អភ័យទោសដល់ខ្លួនឯងនិងអ្នកដទៃ រួចបណ្ដុះមេត្តាចិត្ត។
+                                            </p>
+                                        </div>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q8">
-                                ៨. តើរបៀបប្រើព្រះធម៌ពេលប្រឈមមុខនឹងបញ្ហា?
-                            </button>
-                        </h2>
-                        <div id="q8" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                ពេលជួបបញ្ហា ឬសេចក្ដីទុក្ខ៖
-                                <div class="practice-box">
-                                    <div class="practice-title">១. ទទួលស្គាល់ (ទុក្ខសច្ច)</div>
-                                    <p>ទទួលស្គាល់ថាបញ្ហា ឬសេចក្ដីទុក្ខ គឺជាផ្នែកមួយនៃជីវិត មិនមែនជារឿងចម្លែកទេ។</p>
-                                </div>
-                                <div class="practice-box">
-                                    <div class="practice-title">២. ស្វែងរកមូលហេតុ (សមុទយសច្ច)</div>
-                                    <p>ប្រើបញ្ញា ពិចារណារកមូលហេតុពិតដែលនាំឲ្យកើតបញ្ហានោះ ដោយមិនបន្ទោសអ្នកដទៃ។</p>
-                                </div>
-                                <div class="practice-box">
-                                    <div class="practice-title">៣. អនុវត្ត (មគ្គសច្ច)</div>
-                                    <p>ប្រើ សតិ, ខន្តី (ការអត់ធ្មត់), និង វិរិយៈ (ការព្យាយាម)
-                                        ដើម្បីដោះស្រាយបញ្ហានោះមួយជំហានម្ដងៗ។</p>
-                                </div>
-                                <div class="tip-box">
-                                    <strong>💡 ដំបូន្មាន៖</strong> យើងមិនអាចគ្រប់គ្រងអ្វីដែលកើតឡើងបានទេ
-                                    តែយើងអាចគ្រប់គ្រង "ប្រតិកម្ម" របស់យើងចំពោះវាបាន។
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q8">
+                                        ៨. តើរបៀបប្រើព្រះធម៌ពេលប្រឈមមុខនឹងបញ្ហា?
+                                    </button>
+                                </h2>
+                                <div id="q8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        ដំណោះស្រាយបញ្ហាតាមអរិយសច្ច ៤៖
+                                        <div class="practice-box"><strong>១. ទទួលស្គាល់ (ទុក្ខ):</strong>
+                                            ហ៊ានទទួលស្គាល់ការពិត ថាបញ្ហាបានកើតឡើងហើយ។</div>
+                                        <div class="practice-box"><strong>២. រកមូលហេតុ (សមុទ័យ):</strong>
+                                            ប្រើបញ្ញាពិចារណារកដើមហេតុ ដោយមិនបន្ទោសអ្នកដទៃ។</div>
+                                        <div class="practice-box"><strong>៣. ដោះស្រាយ (មគ្គ):</strong> ប្រើសតិ
+                                            និងសេចក្តីព្យាយាម ដោះស្រាយមួយជំហានម្តងៗ។</div>
+                                        <div class="tip-box">
+                                            <i class="fas fa-lightbulb text-warning mt-1"></i>
+                                            <div><strong>ដំបូន្មាន៖</strong> យើងមិនអាចគ្រប់គ្រងអ្វីដែលកើតឡើងបានទេ
+                                                តែយើងអាចគ្រប់គ្រង "ប្រតិកម្ម" របស់យើងចំពោះវាបាន។</div>
+                                        </div>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q9">
-                                ៩. តើរបៀបដោះស្រាយជាមួយមនុស្សដែលធ្វើឲ្យយើងខឹង?
-                            </button>
-                        </h2>
-                        <div id="q9" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                ការដោះស្រាយជាមួយមនុស្សដែលធ្វើឲ្យយើងមានទោសៈ (ខឹង)៖
-                                <ul>
-                                    <li><strong>សតិ (Mindfulness):</strong> ដឹងឲ្យទាន់នូវ "កំហឹង"
-                                        ដែលកំពុងកើតឡើងក្នុងចិត្ត។ គ្រាន់តែ "ដឹង" មិនទាន់ "តបត"។</li>
-                                    <li><strong>មេត្តា (Loving-kindness):</strong> ពិចារណាថា គេក៏ជាមនុស្សមានទុក្ខ
-                                        គេធ្វើដូច្នេះព្រោះគេខ្វះការយល់ដឹង។</li>
-                                    <li><strong>อุเบกขา (Equanimity):</strong> បណ្ដុះចិត្តព្រងើយ (មិនមែនព្រងើយកន្តើយ)
-                                        គឺយល់ថា យើងមិនអាចផ្លាស់ប្ដូរគេបានទេ
-                                        តែយើងអាចគ្រប់គ្រងចិត្តយើងមិនឲ្យក្ដៅក្រហាយតាមគេបាន។</li>
-                                    <li><strong>អភ័យ (Forgiveness):</strong> ให้อภัย (អភ័យទោស)
-                                        ដើម្បីសន្តិភាពក្នុងចិត្តរបស់យើងផ្ទាល់ មិនមែនដើម្បីគេទេ។</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q10">
-                                ១០. តើអ្វីជាប្រយោជន៍នៃការអនុវត្តព្រះធម៌ក្នុងជីវិតប្រចាំថ្ងៃ?
-                            </button>
-                        </h2>
-                        <div id="q10" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                ប្រយោជន៍ដ៏ធំបំផុតគឺ៖
-                                <ul>
-                                    <li><strong>សន្តិភាពក្នុងចិត្ត៖</strong> បន្ថយភាពតានតឹង (Stress), ការថប់បារម្ភ,
-                                        និងកំហឹង។</li>
-                                    <li><strong>ទំនាក់ទំនងល្អ៖</strong> ធ្វើឲ្យទំនាក់ទំនងក្នុងគ្រួសារ មិត្តភក្តិ
-                                        និងកន្លែងធ្វើការ កាន់តែចុះសម្រុងគ្នា។</li>
-                                    <li><strong>បញ្ញាចម្រើន៖</strong> ជួយឲ្យយើងយល់ឃើញបញ្ហាកាន់តែច្បាស់
-                                        និងធ្វើការសម្រេចចិត្តបានត្រឹមត្រូវ។</li>
-                                    <li><strong>ជីវិតមានន័យ៖</strong> បង្កើតជីវិតមួយប្រកបដោយគោលបំណង ករុណា
-                                        និងសុភមង្គលពិតប្រាកដ។</li>
-                                </ul>
-                                <div class="highlight">
-                                    <strong>សរុបមក៖</strong> ការអនុវត្តព្រះធម៌ គឺ "សិល្បៈនៃការរស់នៅ"
-                                    ដែលនាំមកនូវសេចក្ដីសុខ ទាំងក្នុងពេលបច្ចុប្បន្ន និងអនាគត។
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q9">
+                                        ៩. តើរបៀបដោះស្រាយជាមួយមនុស្សដែលធ្វើឲ្យយើងខឹង?
+                                    </button>
+                                </h2>
+                                <div id="q9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        វិធីរម្ងាប់កំហឹង៖
+                                        <ul>
+                                            <li><strong>សតិ (Mindfulness):</strong> ដឹងឲ្យទាន់ថា "ខ្ញុំកំពុងខឹង"។
+                                                គ្រាន់តែ "ដឹង" កុំទាន់ "តបត"។</li>
+                                            <li><strong>មេត្តា (Metta):</strong> ពិចារណាថា គេធ្វើដូច្នេះព្រោះគេមានទុក្ខ
+                                                ឬខ្វះការយល់ដឹង។</li>
+                                            <li><strong>ឧបេក្ខា (Equanimity):</strong> យល់ថា យើងមិនអាចផ្លាស់ប្ដូរគេបានទេ
+                                                តែយើងអាចរក្សាចិត្តយើងកុំឲ្យក្ដៅក្រហាយបាន។</li>
+                                        </ul>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q10">
+                                        ១០. តើអ្វីជាប្រយោជន៍នៃការអនុវត្តព្រះធម៌?
+                                    </button>
+                                </h2>
+                                <div id="q10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        ប្រយោជន៍ដ៏ធំបំផុតគឺ៖
+                                        <ul>
+                                            <li><strong>សន្តិភាពក្នុងចិត្ត៖</strong> បន្ថយភាពតានតឹង (Stress) និងកំហឹង។
+                                            </li>
+                                            <li><strong>ទំនាក់ទំនងល្អ៖</strong> ធ្វើឲ្យគ្រួសារ និងកន្លែងធ្វើការ
+                                                កាន់តែចុះសម្រុងគ្នា។</li>
+                                            <li><strong>បញ្ញាចម្រើន៖</strong> ធ្វើការសម្រេចចិត្តបានត្រឹមត្រូវជាងមុន។
+                                            </li>
+                                            <li><strong>ជីវិតមានន័យ៖</strong> រស់នៅដោយមានគោលបំណង និងក្ដីសុខពិតប្រាកដ។
+                                            </li>
+                                        </ul>
+                                        <div class="highlight">
+                                            <strong>សរុបមក៖</strong> ការអនុវត្តព្រះធម៌ គឺ "សិល្បៈនៃការរស់នៅ"
+                                            ដែលនាំមកនូវសេចក្ដីសុខ ទាំងបច្ចុប្បន្ន និងអនាគត។
+                                        </div>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+
+                        <div id="noResult" class="text-center mt-4 d-none">
+                            <img src="https://cdn-icons-png.flaticon.com/512/7486/7486754.png" width="80"
+                                alt="No result">
+                            <p class="text-muted mt-2">មិនមានលទ្ធផលសម្រាប់ការស្វែងរកនេះទេ។</p>
+                        </div>
+
                     </div>
                 </div>
-                <div class="card cta-card text-center mt-5">
-                    <div class="card-body p-5">
-                        <h4 class="card-title fw-bold">ត្រៀមខ្លួនចាប់ផ្ដើមអនុវត្តឬនៅ?</h4>
-                        <p class="card-text my-3">ព្រះធម៌ពិត គឺកើតឡើងពីការអនុវត្ត។ សូមចាប់ផ្ដើមពីចំណុចតូចៗ
-                            ដូចជាការរក្សាសីល ឬការចម្រើនសតិ ៥នាទី ក្នុងមួយថ្ងៃ។</p>
-                        <a href="#q7" class="btn btn-custom-gold">ចាប់ផ្ដើមចម្រើនសតិ</a>
-                    </div>
-                </div>
-
             </div>
-        </div>
+        </section>
+        <section class="mission-section py-5">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold" style="color: #c9a42e;">អនុវត្តធម៌ក្នុងគ្រប់កាលៈទេសៈ</h2>
+                    <div style="width: 60px; height: 3px; background-color: #c9a42e; margin: 10px auto;"></div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card feature-card p-4 text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-bullseye fa-2x" style="color: #c9a42e;"></i>
+                            </div>
+                            <div class="card-body p-0">
+                                <h5 class="card-title fw-bold">ក្នុងការសិក្សា</h5>
+                                <p class="card-text">ប្រើ "សតិ" ដើម្បីផ្ចង់អារម្មណ៍ និង "វិរិយៈ"
+                                    ដើម្បីមានការព្យាយាមក្នុងការរៀនសូត្រ។</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card feature-card p-4 text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-gift fa-2x" style="color: #c9a42e;"></i>
+                            </div>
+                            <div class="card-body p-0">
+                                <h5 class="card-title fw-bold">ក្នុងការងារ</h5>
+                                <p class="card-text">ប្រើ "សម្មាអាជីវោ" (ការងារស្មោះត្រង់) និង "ខន្តី" (ការអត់ធ្មត់)
+                                    ក្នុងកន្លែងធ្វើការ។</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card feature-card p-4 text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-envelope fa-2x" style="color: #c9a42e;"></i>
+                            </div>
+                            <div class="card-body p-0">
+                                <h5 class="card-title fw-bold">ក្នុងគ្រួសារ</h5>
+                                <p class="card-text">ប្រើ "មេត្តា" (សេចក្ដីស្រឡាញ់) និង "កតញ្ញូ" (ការដឹងគុណ)
+                                    ដើម្បីសុភមង្គលក្នុងផ្ទះ។</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mission-section container">
+            <div class="card cta-card text-center mt-5"
+                style="background-color: var(--bg-primary); color:var(--text-primary)">
+                <div class="card-body p-5">
+                    <h4 class="card-title fw-bold">ត្រៀមខ្លួនចាប់ផ្ដើមអនុវត្តឬនៅ?</h4>
+                    <p class="card-text my-3">ព្រះធម៌ពិត គឺកើតឡើងពីការអនុវត្ត។ សូមចាប់ផ្ដើមពីចំណុចតូចៗ
+                        ដូចជាការរក្សាសីល ឬការចម្រើនសតិ ៥នាទី ក្នុងមួយថ្ងៃ។</p>
+                    <a href="#q7" class="btn btn-custom-gold">ចាប់ផ្ដើមចម្រើនសតិ</a>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- ═══════════ FOOTER ═══════════ -->
     <footer>
@@ -731,6 +795,32 @@
     <script src="../asset/js/script.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        document.getElementById('searchInput').addEventListener('keyup', function () {
+            let searchQuery = this.value.toLowerCase();
+            let faqItems = document.querySelectorAll('.filter-item');
+            let hasResult = false;
+
+            faqItems.forEach(function (item) {
+                let questionText = item.querySelector('.accordion-button').innerText.toLowerCase();
+                let answerText = item.querySelector('.accordion-body').innerText.toLowerCase();
+
+                if (questionText.includes(searchQuery) || answerText.includes(searchQuery)) {
+                    item.style.display = 'block';
+                    hasResult = true;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            let noResultMsg = document.getElementById('noResult');
+            if (hasResult) {
+                noResultMsg.classList.add('d-none');
+            } else {
+                noResultMsg.classList.remove('d-none');
+            }
+        });
     </script>
 </body>
 
