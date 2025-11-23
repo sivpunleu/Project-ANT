@@ -213,175 +213,247 @@
     </header>
     <main>
         <div class="container mt-5">
-            <div class=" mb-5 d-flex justify-content-between align-items-center">
-                <div class="back-button btn btn-outline-primary">
-                    <a href="questionandanwser.html">
-                        <i class="fas fa-arrow-left "></i> ត្រឡប់ទៅ សំណួរ និង ចម្លើយ
-                    </a>
-                </div>
-                <div class="back-button btn btn-outline-primary">
-                    <a href="partofvipassana.html">
-                        សំណួរ និង ចម្លើយ ផ្នែកវិបស្សនា
-                       <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
+
 
             <div class="faq-container">
                 <div class="faq-header text-center">
 
-                    <img src="../asset/images/vannda_img/general.jpg" alt="សំណួរទូទៅ"
-                        class="header-image">
-
-                    
-                    <h1  class="text-center">សំណួរ និង ចម្លើយទូទៅ</h1>
-                    <p  class="text-cneter">ស្វែងយល់ពីព័ត៌មាននៃគេហទំព័រ និងរបៀបប្រើប្រាស់របស់វា</p>
+                    <img src="../asset/images/vannda_img/សំណួរចម្លើយ.png" alt="សំណួរទូទៅ" class="header-image">
+                    <div class=" mb-5 d-flex justify-content-between align-items-center p-5">
+                    </div>
                 </div>
+                <section>
+                    <div class="container">
 
-                <div class="principles-section mb-5">
-                    <h2 class="text-center mb-4" style="color: #c9a42e; font-weight: 700;">អំពីគេហទំព័រនេះ</h2>
-                    <div class="row g-4">
-                        <div class="col-md-4">
-                            <div class="card principle-card h-100 text-center">
-                                <div class="card-body bg-light rounded-5">
-                                    <i class="fas fa-bullseye"></i>
-                                    <h5 class="card-title fw-bold">បេសកកម្មរបស់យើង</h5>
-                                    <p class="card-text">ដើម្បីចែករំលែកចំណេះដឹងព្រះធម៌
-                                        និងលើកកម្ពស់គុណតម្លៃសីលធម៌ក្នុងសង្គម។</p>
+                        <div class="text-center mb-5">
+                            <h1 class="fw-bold mb-3" style="color: var(--text-dark);">មជ្ឈមណ្ឌលជំនួយ</h1>
+                            <p class="text-muted mb-4">តើលោកអ្នកកំពុងស្វែងរកចម្លើយអំពីអ្វី?</p>
+
+                            <div class="search-container mb-5">
+                                <i class="fas fa-search search-icon"></i>
+                                <input type="text" id="searchInput" class="form-control search-input"
+                                    placeholder="វាយពាក្យគន្លឹះដើម្បីស្វែងរក... (ឧ. គណនី, ឥតគិតថ្លៃ)">
+                            </div>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="questionandanwser.html" class="btn btn-outline-secondary rounded-pill px-4">
+                                    <i class="fas fa-arrow-left me-2"></i> ត្រឡប់ក្រោយ
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="accordion" id="faqAccordion">
+
+                                    <div class="accordion-item filter-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#q1">
+                                                ១. តើគេហទំព័រ "ពុទ្ធសាសនា និង សង្គម" នេះជាអ្វី?
+                                            </button>
+                                        </h2>
+                                        <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body lh-lg">
+                                                <p>គេហទំព័រ "ពុទ្ធសាសនា និង សង្គម"
+                                                    គឺជាវេទិកាអប់រំមួយដែលមិនស្វែងរកប្រាក់ចំណេញ។
+                                                    គោលបំណងរបស់យើងគឺដើម្បីចែករំលែកចំណេះដឹងព្រះធម៌។</p>
+
+                                                <div
+                                                    class="feedback-section d-flex justify-content-between align-items-center">
+                                                    <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                    <div>
+                                                        <button class="btn-feedback me-2"><i
+                                                                class="far fa-thumbs-up"></i> បាទ/ចាស</button>
+                                                        <button class="btn-feedback"><i class="far fa-thumbs-down"></i>
+                                                            ទេ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item filter-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#q2">
+                                                ២. តើខ្ញុំអាចប្រើប្រាស់ព័ត៌មានដោយឥតគិតថ្លៃ?
+                                            </button>
+                                        </h2>
+                                        <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body lh-lg">
+                                                <p>បាទ/ចាស! ព័ត៌មាន អត្ថបទ និងឯកសារនានាក្នុង "បណ្ណាល័យព្រះធម៌"
+                                                    នៅលើគេហទំព័រនេះ គឺផ្តល់ជូនដោយឥតគិតថ្លៃទាំងស្រុង។</p>
+
+                                                <div
+                                                    class="feedback-section d-flex justify-content-between align-items-center">
+                                                    <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                    <div>
+                                                        <button class="btn-feedback me-2"><i
+                                                                class="far fa-thumbs-up"></i></button>
+                                                        <button class="btn-feedback"><i
+                                                                class="far fa-thumbs-down"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item filter-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#q3">
+                                                ៣. តើខ្ញុំត្រូវបង្កើតគណនី (Account) ដែរឬទេ?
+                                            </button>
+                                        </h2>
+                                        <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body lh-lg">
+                                                <p>មិនចាំបាច់ទេ! ខ្លឹមសារទាំងអស់គឺបើកជាសាធារណៈ (Public)
+                                                    ដោយមិនតម្រូវឲ្យមានការចុះឈ្មោះឡើយ។</p>
+
+                                                <div
+                                                    class="feedback-section d-flex justify-content-between align-items-center">
+                                                    <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                    <div>
+                                                        <button class="btn-feedback me-2"><i
+                                                                class="far fa-thumbs-up"></i></button>
+                                                        <button class="btn-feedback"><i
+                                                                class="far fa-thumbs-down"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item filter-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#q4">
+                                                ៤. តើអត្ថបទមានការរក្សាសិទ្ធិដែរឬទេ?
+                                            </button>
+                                        </h2>
+                                        <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body lh-lg">
+                                                <p>ខ្លឹមសារទាំងឡាយ គឺសម្រាប់ការចែករំលែកចំណេះដឹង (ធម្មទាន)។
+                                                    អ្នកអាចចែករំលែកបាន ប៉ុន្តែសូមដាក់ប្រភពដើម។</p>
+                                                <div
+                                                    class="feedback-section d-flex justify-content-between align-items-center">
+                                                    <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                    <div>
+                                                        <button class="btn-feedback me-2"><i
+                                                                class="far fa-thumbs-up"></i></button>
+                                                        <button class="btn-feedback"><i
+                                                                class="far fa-thumbs-down"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item filter-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#q4">
+                                                ៥. តើព័ត៌មានក្នុងគេហទំព័រនេះ យកមកពីប្រភពណា?
+                                            </button>
+                                        </h2>
+                                        <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body lh-lg">
+                                                <p> អត្ថបទរបស់យើងត្រូវបានដកស្រង់ និងចងក្រងពីប្រភពធំៗ រួមមាន ព្រះត្រៃបិដក
+                                                    (ពុទ្ធវចនៈ),
+                                                    ឱវាទរបស់ព្រះសង្ឃ និងគ្រូបាអាចារ្យល្បីៗ,
+                                                    ព្រមទាំងសៀវភៅអប់រំផ្លូវចិត្តនានា
+                                                    ដើម្បីធានាថាខ្លឹមសារមានភាពត្រឹមត្រូវ និងផ្តល់ប្រយោជន៍។</p>
+                                                <div
+                                                    class="feedback-section d-flex justify-content-between align-items-center">
+                                                    <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                    <div>
+                                                        <button class="btn-feedback me-2"><i
+                                                                class="far fa-thumbs-up"></i></button>
+                                                        <button class="btn-feedback"><i
+                                                                class="far fa-thumbs-down"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div id="noResult" class="text-center mt-4 d-none">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/7486/7486754.png" width="80"
+                                        alt="No result">
+                                    <p class="text-muted mt-2">មិនមានលទ្ធផលសម្រាប់ការស្វែងរកនេះទេ។</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mission-section py-5">
+                    <div class="container">
+
+                        <div class="text-center mb-5">
+                            <h2 class="fw-bold" style="color: #c9a42e;">អំពីគេហទំព័រនេះ</h2>
+                            <div style="width: 60px; height: 3px; background-color: #c9a42e; margin: 10px auto;"></div>
+                        </div>
+
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card feature-card p-4 text-center">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-bullseye fa-2x" style="color: #c9a42e;"></i>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title fw-bold mb-3">បេសកកម្មរបស់យើង</h5>
+                                        <p class="card-text ">ដើម្បីចែករំលែកចំណេះដឹងព្រះធម៌
+                                            និងលើកកម្ពស់គុណតម្លៃសីលធម៌ក្នុងសង្គមខ្មែរ។</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card feature-card p-4 text-center">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-gift fa-2x" style="color: #c9a42e;"></i>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title fw-bold mb-3">ការប្រើប្រាស់ឥតគិតថ្លៃ</h5>
+                                        <p class="card-text ">ខ្លឹមសារ និងមេរៀនទាំងអស់ គឺផ្ដល់ជូនដោយឥតគិតថ្លៃ
+                                            ១០០% សម្រាប់ការសិក្សា។</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card feature-card p-4 text-center">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-envelope fa-2x" style="color: #c9a42e;"></i>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title fw-bold mb-3">ទាក់ទងមកយើង</h5>
+                                        <p class="card-text ">ប្រសិនបើមានចម្ងល់ ឬចង់ចូលរួមចំណែក
+                                            សូមទាក់ទងមកក្រុមការងារយើងខ្ញុំ។</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card principle-card h-100 text-center">
-                                <div class="card-body  bg-light rounded-5">
-                                    <i class="fas fa-gift"></i>
-                                    <h5 class="card-title fw-bold">ការប្រើប្រាស់ឥតគិតថ្លៃ</h5>
-                                    <p class="card-text">ខ្លឹមសារ និងមេរៀនទាំងអស់ គឺផ្ដល់ជូនដោយឥតគិតថ្លៃ
-                                        សម្រាប់ការសិក្សា។</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card principle-card h-100 text-center">
-                                <div class="card-body  bg-light rounded-5">
-                                    <i class="fas fa-envelope"></i>
-                                    <h5 class="card-title fw-bold">ទាក់ទងមកយើង</h5>
-                                    <p class="card-text">ប្រសិនបើមានចម្ងល់ ឬចង់ចូលរួមចំណែក
-                                        សូមទាក់ទងមកក្រុមការងារយើងខ្ញុំ។</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div>
+                </section>
 
-                <hr class="my-5" style="border-top: 1px solid #e0e0e0;">
 
-                <div class="accordion" id="faqAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q1">
-                                ១. តើគេហទំព័រ "ពុទ្ធសាសនា និង សង្គម" នេះជាអ្វី?
-                            </button>
-                        </h2>
-                        <div id="q1" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                គេហទំព័រ "ពុទ្ធសាសនា និង សង្គម" គឺជាវេទិកាអប់រំមួយដែលមិនស្វែងរកប្រាក់ចំណេញ។
-                                គោលបំណងរបស់យើងគឺដើម្បីចែករំលែកចំណេះដឹងអំពីគោលការណ៍ព្រះពុទ្ធសាសនា
-                                និងគុណតម្លៃសីលធម៌សម្រាប់ការរស់នៅក្នុងសង្គម។ យើងមិនមែនជាអង្គការផ្លូវការទេ
-                                តែជាក្រុមការងារស្ម័គ្រចិត្តដែលចង់ផ្សព្វផ្សាយព្រះធម៌។
-                            </div>
+        
+                <section class="mission-section">
+                    <div class="card cta-card text-center mt-5"
+                        style="background-color: var(--bg-primary); color:var(--text-primary)">
+                        <div class="card-body p-5">
+                            <h4 class="card-title fw-bold">ត្រៀមខ្លួនស្វែងយល់បន្ថែមឬនៅ?</h4>
+                            <p class="card-text my-3">យើងមានមោទនភាពដែលបានចែករំលែកចំណេះដឹងទាំងនេះ។
+                                សូមចាប់ផ្ដើមស្វែងយល់ពីគោលធម៌នានា តាមរយៈទំព័រ FAQ ផ្សេងទៀតរបស់យើង។</p>
+                            <a href="../question.html" class="btn btn-custom-gold">ត្រឡប់ទៅ FAQ Hub</a>
                         </div>
                     </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q2">
-                                ២. តើខ្ញុំអាចប្រើប្រាស់ព័ត៌មាននៅលើគេហទំព័របានដោយឥតគិតថ្លៃ?
-                            </button>
-                        </h2>
-                        <div id="q2" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                បាទ/ចាស! ព័ត៌មាន អត្ថបទ និងឯកសារនានាក្នុង "បណ្ណាល័យព្រះធម៌" នៅលើគេហទំព័រនេះ
-                                គឺផ្តល់ជូនដោយឥតគិតថ្លៃទាំងស្រុង សម្រាប់ការសិក្សា និងស្វែងយល់ផ្ទាល់ខ្លួន។
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q3">
-                                ៣. តើអត្ថបទ និងមេរៀនមានការរក្សាសិទ្ធិដែរឬទេ?
-                            </button>
-                        </h2>
-                        <div id="q3" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                ខ្លឹមសារទាំងឡាយ គឺសម្រាប់ការចែករំលែកចំណេះដឹង (ធម្មទាន)។ លោកអ្នកអាចដកស្រង់
-                                ឬចែករំលែកបន្តបាន ប៉ុន្តែសូមមេត្តាដាក់ប្រភពដើម "គេហទំព័រ ពុទ្ធសាសនា និង សង្គម" វិញ
-                                ដើម្បីឲ្យអ្នកដទៃអាចស្វែងរកបាន។
-                                សូមកុំប្រើប្រាស់ខ្លឹមសារទាំងនេះក្នុងគោលបំណងពាណិជ្ជកម្មដោយគ្មានការអនុញ្ញាត។
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q4">
-                                ៤. តើខ្ញុំអាចចូលរួមចំណែកជាមួយគេហទំព័រនេះដោយរបៀបណា?
-                            </button>
-                        </h2>
-                        <div id="q4" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                យើងខ្ញុំពិតជារីករាយចំពោះការចូលរួមរបស់អ្នក! ប្រសិនបើអ្នកមានអត្ថបទល្អៗ
-                                គំនិតថ្មីៗទាក់ទងនឹងព្រះធម៌ និងសង្គម ឬចង់ស្ម័គ្រចិត្តជួយផ្នែកបច្ចេកទេស
-                                សូមទាក់ទងមកយើងខ្ញុំតាមរយៈទំព័រ "ទំនាក់ទំនង"។
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q5">
-                                ៥. តើព័ត៌មានក្នុងគេហទំព័រនេះ យកមកពីប្រភពណា?
-                            </button>
-                        </h2>
-                        <div id="q5" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                អត្ថបទរបស់យើងត្រូវបានដកស្រង់ និងចងក្រងពីប្រភពធំៗ រួមមាន ព្រះត្រៃបិដក (ពុទ្ធវចនៈ),
-                                ឱវាទរបស់ព្រះសង្ឃ និងគ្រូបាអាចារ្យល្បីៗ, ព្រមទាំងសៀវភៅអប់រំផ្លូវចិត្តនានា
-                                ដើម្បីធានាថាខ្លឹមសារមានភាពត្រឹមត្រូវ និងផ្តល់ប្រយោជន៍។
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q6">
-                                ៦. តើខ្ញុំត្រូវបង្កើតគណនី (Account) ដើម្បីអានអត្ថបទដែរឬទេ?
-                            </button>
-                        </h2>
-                        <div id="q6" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                មិនចាំបាច់ទេ! ខ្លឹមសារទាំងអស់នៅលើគេហទំព័រនេះ គឺបើកជាសាធារណៈ (Public)
-                                ដោយមិនតម្រូវឲ្យមានការចុះឈ្មោះ ឬបង្កើតគណនីអ្វីទាំងអស់
-                                ដើម្បីភាពងាយស្រួលដល់អ្នកអានគ្រប់រូប។
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card cta-card text-center mt-5">
-                    <div class="card-body p-5">
-                        <h4 class="card-title fw-bold">ត្រៀមខ្លួនស្វែងយល់បន្ថែមឬនៅ?</h4>
-                        <p class="card-text my-3">យើងមានមោទនភាពដែលបានចែករំលែកចំណេះដឹងទាំងនេះ។
-                            សូមចាប់ផ្ដើមស្វែងយល់ពីគោលធម៌នានា តាមរយៈទំព័រ FAQ ផ្សេងទៀតរបស់យើង។</p>
-                        <a href="../question.html" class="btn btn-custom-gold">ត្រឡប់ទៅ FAQ Hub</a>
-                    </div>
-                </div>
+                </section>
 
             </div>
         </div>
@@ -526,6 +598,33 @@
     <script src="../asset/js/script.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        document.getElementById('searchInput').addEventListener('keyup', function () {
+            let searchQuery = this.value.toLowerCase();
+            let faqItems = document.querySelectorAll('.filter-item');
+            let hasResult = false;
+
+            faqItems.forEach(function (item) {
+                let questionText = item.querySelector('.accordion-button').innerText.toLowerCase();
+                let answerText = item.querySelector('.accordion-body').innerText.toLowerCase();
+
+                if (questionText.includes(searchQuery) || answerText.includes(searchQuery)) {
+                    item.style.display = 'block';
+                    hasResult = true;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            // បង្ហាញសារ "មិនមានលទ្ធផល" បើរកមិនឃើញ
+            let noResultMsg = document.getElementById('noResult');
+            if (hasResult) {
+                noResultMsg.classList.add('d-none');
+            } else {
+                noResultMsg.classList.remove('d-none');
+            }
+        });
     </script>
 </body>
 

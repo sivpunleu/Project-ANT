@@ -25,7 +25,20 @@
             --card-shadow-hover: 0 8px 25px rgba(255, 255, 255, 0.15);
             --bg-event-day: #fff3e0;
         }
+    /* padding 80px */
+    /* សម្រាប់អេក្រង់ទូទៅ (ទូរស័ព្ទ/អេក្រង់តូច) */
+    .mission-section {
+      padding: 40px 0;
+      /* ដាក់ត្រឹម 40px បានហើយកុំឱ្យចង្អៀតពេក */
+    }
 
+    /* សម្រាប់អេក្រង់ធំ (ចាប់ពី Tablet ឬ PC ឡើងទៅ) */
+    @media (min-width: 768px) {
+      .mission-section {
+        padding: 80px 0;
+        /* ដាក់ 80px វិញពេលអេក្រង់ធំ */
+      }
+    }
         .card-top {
             height: 210px;
             color: black;
@@ -75,3 +88,259 @@
             font-size: 2.7rem;
             margin-bottom: 0.7rem;
         }
+
+        /* Topic List Card */
+.topic-item {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-light); /* ស៊ុមស្តើង */
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    
+    text-decoration: none; /* ដកបន្ទាត់ពីក្រោម Link */
+}
+
+/* Dark Mode Border */
+[data-theme="dark"] .topic-item {
+    border-color: var(--border-dark);
+}
+
+/* Hover Effects */
+.topic-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-color: var(--primary-color);
+}
+
+/* Icon Container (Left Side) */
+.topic-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(184, 119, 7, 0.1); /* ពណ៌មាសស្រាល */
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    flex-shrink: 0;
+    margin-right: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.topic-item:hover .topic-icon-wrapper {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* Content Area */
+.topic-content {
+    flex-grow: 1;
+    padding-right: 1rem;
+}
+
+.topic-title {
+    font-family: 'Koulen', cursive;
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+}
+
+.topic-desc {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    opacity: 0.7;
+    margin: 0;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* បង្ហាញតែ 2 បន្ទាត់ */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Arrow Icon (Right Side) */
+.topic-arrow {
+    color: var(--primary-color);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.topic-item:hover .topic-arrow {
+    opacity: 1;
+    transform: translateX(5px); /* រំកិលព្រួញទៅស្តាំ */
+}
+
+/* Hero Slider Container */
+.hero-slider {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-light);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+[data-theme="dark"] .hero-slider {
+    border-color: var(--border-dark);
+}
+
+/* Slide Content Layout */
+.hero-slide-content {
+    padding: 3rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Typography in Slider */
+.hero-title {
+    font-family: 'Koulen', cursive;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-desc {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    opacity: 0.8;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Custom Carousel Indicators (Dots) */
+.carousel-indicators [data-bs-target] {
+    background-color: var(--primary-color);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    opacity: 0.5;
+    border: none;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    width: 25px; /* Active dot stretches */
+    border-radius: 5px;
+}
+
+/* Custom Arrows Colors */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 1.5rem;
+    background-size: 50%;
+}
+
+
+
+/* Hybrid Hero Section */
+.hybrid-hero {
+    background-color: var(--bg-primary);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-light);
+}
+
+[data-theme="dark"] .hybrid-hero {
+    border-color: var(--border-dark);
+}
+
+/* Left Side: Search Area */
+.hero-search-area {
+    padding: 1rem 1rem 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.search-box-wrapper {
+    background: #fff;
+    border: 1px solid var(--border-light);
+    border-radius: 50px;
+    padding: 8px 8px 8px 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .search-box-wrapper {
+    background: #2d3748;
+    border-color: var(--border-dark);
+}
+
+.search-box-wrapper:focus-within {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 20px rgba(184, 119, 7, 0.2);
+}
+
+/* Right Side: Mini Slider */
+.mini-slider-card {
+    border-radius: 1.25rem;
+    overflow: hidden;
+    position: relative;
+    height: 350px; /* កំណត់កម្ពស់ឱ្យសមរម្យ */
+}
+
+.slider-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    padding: 2rem 1.5rem;
+    color: white;
+}
+
+/* Slider Typography */
+.slider-title {
+    font-family: 'Koulen', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffd700; /* Gold text for title */
+}
+/* Right Side: Mini Slider Text Overlay */
+.slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* ឱ្យវាគ្របពេញរូបភាព */
+    
+    /* ប្រើ Flexbox ដើម្បីដាក់អក្សរនៅកណ្តាល */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* ដាក់ឱ្យនៅកណ្តាល បញ្ឈរ (Vertically) */
+    align-items: center;     /* ដាក់ឱ្យនៅកណ្តាល ផ្ដេក (Horizontally) */
+    text-align: center;      /* តម្រឹមអក្សរទៅកណ្តាល */
+    
+    /* ផ្ទៃពណ៌ខ្មៅស្រាលៗ ដើម្បីឱ្យអក្សរមើលឃើញច្បាស់ */
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 2rem;
+}
+
+/* Slider Typography */
+.slider-title {
+    font-family: 'Koulen', cursive;
+    font-size: 1.75rem; /* បង្កើនទំហំបន្តិចឱ្យសមនឹងកណ្តាល */
+    margin-bottom: 0.75rem;
+    color: #ffd700; /* Gold text */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* ដាក់ស្រមោលអក្សរ */
+}
+
+.slider-desc {
+    color: white;
+    font-size: 1rem;
+    max-width: 80%; /* កុំឱ្យអក្សរវែងដល់គែមពេក */
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    opacity: 0.9;
+}
