@@ -2156,10 +2156,10 @@ progress {
   display: block;
   padding: 0;
 }
-.form-control::placeholder {
+/* .form-control::placeholder {
   color: var(--bs-secondary-color);
   opacity: 1;
-}
+} */
 .form-control:disabled {
   background-color: var(--bs-secondary-bg);
   opacity: 1;

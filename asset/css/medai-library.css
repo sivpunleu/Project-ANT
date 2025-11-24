@@ -70,7 +70,7 @@
   font-size: 20px;
   font-weight: 500;
   color: var(--bg-primary)!important;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   margin: 0.25rem;
   border-radius: 25px;
   transition: all 0.3s ease;
