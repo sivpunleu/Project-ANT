@@ -10,7 +10,7 @@
   --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   --card-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
   --bg-event-day: #fff3e0;
-  --box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+  --box-shadow: none; 
 }
 
 [data-theme="dark"] {
@@ -200,22 +200,12 @@ body {
   color: var(--text-secondary) !important;
 }
 .user-profile {
-  width: 51px;
-  height: 51px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   object-fit: cover;
+}
 
-}
-.user-profile img {
-  width: 51px;
-  height: 51px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.user-profile:hover {
-  transform: scale(1.1);
-  transition: all 0.5s;
-} 
 @media (max-width: 575px) {
   .navbar-brand {
       display: flex;
@@ -279,8 +269,18 @@ footer a:hover {
   margin-top: 40px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-
-
+.user-profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  object-fit: cover;
+}
+.user-profile:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+  border: 2px solid var(--primary-color);
+}
 
 /* Mobile Menu Toggle */
 .navbar-toggler {
