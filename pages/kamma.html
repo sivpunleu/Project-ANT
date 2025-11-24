@@ -210,354 +210,445 @@
         </nav>
     </header>
     <main>
-        <div class="container mt-5">
-            <div class=" mb-5 d-flex justify-content-between align-items-center">
-                <div class="back-button btn btn-outline-primary">
-                    <a href="questionandanwser.html">
-                        <i class="fas fa-arrow-left "></i> ត្រឡប់ទៅ សំណួរ និង ចម្លើយ
-                    </a>
+        <section class="mission-section">
+            <div class="faq-header text-center">
+                <img src="../asset/images/vannda_img/កម្មពៀរ.jpg" alt="កម្ម និងផល" class="header-image">
+            </div>
+        </section>
+        <section class="mission-section">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h1 class="fw-bold mb-5" style="color: var(--text-dark);">សំណួរ និង ចម្លើយអំពី កម្ម និង ផល</h1>
+                    <p class="text-muted mb-4">ស្វែងយល់ពីច្បាប់ធម្មជាតិនៃអំពើ និងលទ្ធផល</p>
+
+                    <div class="search-container mb-5">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="searchInput" class="form-control search-input"
+                            placeholder="ស្វែងរក... (ឧ. បុណ្យ, បាប, ផលកម្ម)">
+                    </div>
+
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="questionandanwser.html" class="btn btn-outline-secondary rounded-pill px-4">
+                            <i class="fas fa-arrow-left me-2"></i> ត្រឡប់ក្រោយ
+                        </a>
+                    </div>
                 </div>
-                <div class="back-button btn btn-outline-primary">
-                    <a href="../pages/Traditions.html">
-                        សំណួរ និង ចម្លើយ ផ្នែកពិធីបុណ្យនិងប្រពៃណី
-                       <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="accordion" id="faqAccordion">
+
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q1">
+                                        ១. កម្ម គឺជាអ្វី?
+                                    </button>
+                                </h2>
+                                <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        កម្ម (Kamma) មានន័យថា "ការប្រព្រឹត្ត" "អំពើ" ឬ "ការងារ"។ ក្នុងន័យពុទ្ធសាសនា
+                                        កម្មគឺជាចេតនា (គំនិត) ដែលនាំឱ្យមានការធ្វើសកម្មភាពតាមកាយ វាចា និងចិត្ត។
+                                        កម្មគឺជាច្បាប់ធម្មជាតិដែលពន្យល់ពីហេតុ និងផលនៃជីវិត។
+                                        <div class="highlight">
+                                            <strong>គោលការណ៍សំខាន់:</strong> "ធ្វើល្អ បានល្អ, ធ្វើអាក្រក់ បានអាក្រក់"។
+                                            គ្មានអំពើណាមួយដែលធ្វើហើយ មិនផ្តល់ផលនោះទេ។
+                                        </div>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q2">
+                                        ២. បុណ្យ និងបាប គឺជាអ្វី?
+                                    </button>
+                                </h2>
+                                <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <div class="kamma-box good-box">
+                                            <div class="kamma-title"><i class="fas fa-leaf me-2"></i>បុណ្យ (Puñña) -
+                                                អំពើល្អ</div>
+                                            <p>គឺជាអំពើដែលនាំមកនូវសេចក្តីសុខ ភាពរីករាយ និងផលវិជ្ជមាន ដូចជា៖</p>
+                                            <ul>
+                                                <li>ការធ្វើទាន (ចែករំលែក)</li>
+                                                <li>ការរក្សាសីល (មិនបៀតបៀន)</li>
+                                                <li>ការភាវនា (អប់រំចិត្ត)</li>
+                                                <li>ការជួយសង្គ្រោះអ្នកដទៃ</li>
+                                            </ul>
+                                        </div>
+                                        <div class="kamma-box bad-box">
+                                            <div class="kamma-title"><i class="fas fa-fire me-2"></i>បាប (Pāpa) -
+                                                អំពើអាក្រក់</div>
+                                            <p>គឺជាអំពើដែលនាំមកនូវសេចក្តីទុក្ខ ភាពក្តៅក្រហាយ និងផលអវិជ្ជមាន ដូចជា៖</p>
+                                            <ul>
+                                                <li>ការសម្លាប់សត្វ</li>
+                                                <li>ការលួចទ្រព្យគេ</li>
+                                                <li>ការនិយាយកុហក បោកប្រាស់</li>
+                                                <li>ការប្រព្រឹត្តខុសក្នុងកាម</li>
+                                            </ul>
+                                        </div>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q3">
+                                        ៣. តើផលនៃកម្ម (Vipaka) មានលក្ខណៈដូចម្តេច?
+                                    </button>
+                                </h2>
+                                <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        ផលនៃកម្ម ឬ វិបាក (Vipaka) នឹងផ្តល់មកវិញទៅតាមប្រភេទនៃអំពើ៖
+                                        <div class="kamma-box good-box">
+                                            <strong>ផលនៃកម្មល្អ:</strong>
+                                            <ul>
+                                                <li>ទទួលបានសេចក្តីសុខផ្លូវចិត្ត</li>
+                                                <li>មានសុខភាពល្អ និងរូបសម្បត្តិសមរម្យ</li>
+                                                <li>មានទ្រព្យសម្បត្តិ និងការគោរពរាប់អាន</li>
+                                                <li>កើតក្នុងត្រកូលខ្ពង់ខ្ពស់ ឬទៅកាន់សុខគតិភព</li>
+                                            </ul>
+                                        </div>
+                                        <div class="kamma-box bad-box">
+                                            <strong>ផលនៃកម្មអាក្រក់:</strong>
+                                            <ul>
+                                                <li>ទទួលបានសេចក្តីទុក្ខ និងវិប្បដិសារី (ស្ដាយក្រោយ)</li>
+                                                <li>មានរោគាព្យាធិ ឬអាយុខ្លី</li>
+                                                <li>ក្រីក្រតោកយ៉ាក ឬត្រូវគេស្អប់ខ្ពើម</li>
+                                                <li>កើតក្នុងទីទាប ឬទៅកាន់ទុគ្គតិភព (នរក, ប្រេត...)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q4">
+                                        ៤. តើច្បាប់នៃកម្មដំណើរការយ៉ាងដូចម្តេច?
+                                    </button>
+                                </h2>
+                                <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        ដំណើរការសំខាន់ៗនៃច្បាប់កម្ម៖
+                                        <div class="kamma-box">
+                                            <strong>១. ច្បាប់នៃហេតុនិងផល:</strong> ដាំពូជណា ទទួលផ្លែផ្លានោះ។
+                                            អំពើល្អផ្តល់ផលល្អ អំពើអាក្រក់ផ្តល់ផលអាក្រក់។
+                                        </div>
+                                        <div class="kamma-box">
+                                            <strong>២. ច្បាប់នៃចេតនា (Intention):</strong> ចេតនាគឺជាតួឯកនៃកម្ម។
+                                            បើគ្មានចេតនា (អចេតនា) វាមិនចាត់ទុកជាកម្មពេញលេញនោះទេ។
+                                        </div>
+                                        <div class="kamma-box">
+                                            <strong>៣. ច្បាប់សកល (Universality):</strong>
+                                            ច្បាប់កម្មអនុវត្តចំពោះមនុស្សសត្វទាំងអស់ស្មើៗគ្នា គ្មាននរណាម្នាក់គេចផុតឡើយ
+                                            មិនថាស្តេច ឬអ្នកក្រ។
+                                        </div>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q5">
+                                        ៥. តើកម្មផ្តល់ផលភ្លាមៗដែរឬទេ?
+                                    </button>
+                                </h2>
+                                <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        កម្មមិនចាំបាច់ផ្តល់ផលភ្លាមៗទេ វាអាស្រ័យលើពេលវេលា និងឱកាស៖
+                                        <ul>
+                                            <li><strong>ទិដ្ឋធម្មវេទនីយកម្ម:</strong> កម្មដែលផ្តល់ផលក្នុងជាតិបច្ចុប្បន្ន
+                                                (ភ្លាមៗ ឬក្នុងជាតិនេះ)។</li>
+                                            <li><strong>ឧបបជ្ជវេទនីយកម្ម:</strong> កម្មដែលផ្តល់ផលក្នុងជាតិបន្ទាប់
+                                                (ជាតិក្រោយ)។</li>
+                                            <li><strong>អបរាបរិយវេទនីយកម្ម:</strong>
+                                                កម្មដែលផ្តល់ផលក្នុងជាតិបន្តបន្ទាប់ទៀត (ដរាបណាមិនទាន់និព្វាន)។</li>
+                                        </ul>
+                                        <div class="highlight">
+                                            <strong>ចំណាំ:</strong> ដូចការដាំដើមឈើខ្លះ ត្រូវការពេលច្រើនឆ្នាំទើបចេញផ្លែ
+                                            ឯកម្មខ្លះក៏ត្រូវការពេលវេលាដើម្បីផ្តល់ផលដូចគ្នា។
+                                        </div>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q6">
+                                        ៦. តើអ្វីជា "គរុកម្ម" (កម្មធ្ងន់)?
+                                    </button>
+                                </h2>
+                                <div id="q6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        គរុកម្ម គឺជាកម្មដែលមានទម្ងន់ធ្ងន់បំផុត ដែលនឹងផ្តល់ផលមុនកម្មផ្សេងៗទៀត៖
+                                        <div class="kamma-box bad-box">
+                                            <strong>អកុសលគរុកម្ម (បាបធ្ងន់):</strong> អនន្តរិយកម្ម ៥ យ៉ាង (សម្លាប់ឪពុក,
+                                            សម្លាប់ម្តាយ, សម្លាប់ព្រះអរហន្ត, ធ្វើព្រះពុទ្ធឲ្យចេញឈាម, បំបែកសង្ឃ)។
+                                            ផលគឺធ្លាក់នរកភ្លាម។
+                                        </div>
+                                        <div class="kamma-box good-box">
+                                            <strong>កុសលគរុកម្ម (បុណ្យធ្ងន់):</strong> ការបានសម្រេចឈានសមាបត្តិ
+                                            (សមាធិជាន់ខ្ពស់)។ ផលគឺទៅកើតក្នុងព្រហ្មលោក។
+                                        </div>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q7">
+                                        ៧. តើកម្មអាចកែប្រែបានដែរឬទេ?
+                                    </button>
+                                </h2>
+                                <div id="q7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        យើងមិនអាចលុបបំបាត់កម្មដែលបានធ្វើរួចហើយបានទេ ប៉ុន្តែយើងអាច៖
+                                        <ul>
+                                            <li><strong>ពន្យារពេលផលកម្ម:</strong> ដោយការសន្សំបុណ្យកុសលថ្មីៗឲ្យច្រើន
+                                                ដើម្បីឱ្យផលល្អមានឱកាសផ្តល់ផលមុន។</li>
+                                            <li><strong>បន្ថយឥទ្ធិពល:</strong> ដូចជាការយកអំបិលមួយក្តាប់ (បាប)
+                                                ទៅដាក់ក្នុងទន្លេ (បុណ្យច្រើន) ភាពប្រៃនឹងសាបរលាប។</li>
+                                            <li><strong>កាត់ផ្តាច់ (អហោសិកម្ម):</strong> នៅពេលចូលនិព្វាន
+                                                កម្មទាំងអស់នឹងអស់សុពលភាព។</li>
+                                        </ul>
+                                        <div class="highlight">
+                                            ដូច្នេះ កុំអស់សង្ឃឹម! ចាប់ផ្តើមធ្វើល្អថ្ងៃនេះ ដើម្បីកែប្រែវាសនាថ្ងៃស្អែក។
+                                        </div>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q8">
+                                        ៨. តើការអនុវត្តកម្មក្នុងជីវិតប្រចាំថ្ងៃដូចម្តេច?
+                                    </button>
+                                </h2>
+                                <div id="q8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        ការយល់ដឹងពីកម្ម ជួយឱ្យយើងរស់នៅដោយប្រុងប្រយ័ត្ន៖
+                                        <div class="kamma-box good-box">
+                                            <strong>សកម្មភាពគួរធ្វើ:</strong>
+                                            <ul>
+                                                <li>ជួយសង្គ្រោះ និងមានមេត្តាដល់អ្នកដទៃ</li>
+                                                <li>ប្រកបរបរចិញ្ចឹមជីវិតដោយសុចរិត</li>
+                                                <li>និយាយពាក្យពិត និងពាក្យមានប្រយោជន៍</li>
+                                                <li>អត់ធ្មត់ និងមិនតបតដោយកំហឹង</li>
+                                            </ul>
+                                        </div>
+                                        <div class="kamma-box bad-box">
+                                            <strong>សកម្មភាពគួរជៀសវាង:</strong>
+                                            <ul>
+                                                <li>ការបៀតបៀន ឬធ្វើបាបសត្វ</li>
+                                                <li>ការលួច ឬកេងប្រវ័ញ្ច</li>
+                                                <li>ការនិយាយដើម ឬបំបែកបំបាក់</li>
+                                            </ul>
+                                        </div>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q9">
+                                        ៩. តើលំដាប់នៃការផ្តល់ផលកម្មមានអ្វីខ្លះ?
+                                    </button>
+                                </h2>
+                                <div id="q9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        កម្មនឹងផ្តល់ផលតាមលំដាប់នៃកម្លាំង៖
+                                        <ol>
+                                            <li><strong>គរុកម្ម:</strong> កម្មធ្ងន់ (ផ្តល់ផលមុនគេបង្អស់)។</li>
+                                            <li><strong>អាសន្នកម្ម:</strong> កម្មដែលធ្វើនៅពេលជិតស្លាប់
+                                                (សំខាន់សម្រាប់កំណត់ជាតិកំណើតបន្ទាប់)។</li>
+                                            <li><strong>អាចិណ្ណកម្ម:</strong> កម្មដែលធ្វើជាទម្លាប់ ឬធ្វើញឹកញាប់។</li>
+                                            <li><strong>កដត្តាកម្ម:</strong> កម្មស្រាលៗ ឬកម្មដែលធ្វើដោយមិនសូវមានចេតនា។
+                                            </li>
+                                        </ol>
+                                        <div class="highlight">
+                                            ច្បាប់នៃកម្មគឺយុត្តិធម៌បំផុត គ្មានអ្នកណាអាចសូកប៉ាន់ ឬគេចវេសបានឡើយ។
+                                        </div>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item filter-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#q10">
+                                        ១០. សរុបសេចក្តីអំពីកម្ម
+                                    </button>
+                                </h2>
+                                <div id="q10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        សរុបមក៖
+                                        <ul>
+                                            <li><strong>កម្ម (Action):</strong> គឺស្ថិតនៅលើដៃរបស់យើង
+                                                យើងជាអ្នកកំណត់វាសនាខ្លួនឯង។</li>
+                                            <li><strong>ផល (Result):</strong> ជាអ្វីដែលយើងត្រូវទទួលខុសត្រូវ។</li>
+                                            <li><strong>ការទទួលខុសត្រូវ:</strong> "សត្វលោកមានកម្មជារបស់ខ្លួន មានកម្មជាក
+                                                กํา ណើ ត មានកម្មជាផៅពង្ស មានកម្មជាទីពឹង"។</li>
+                                        </ul>
+                                        <div class="highlight">
+                                            <strong>ដំបូន្មានចុងក្រោយ:</strong> កុំមើលរំលងកម្មតូចតាចថាវាមិនផ្តល់ផល។
+                                            ចូរសន្សំបុណ្យឱ្យបានច្រើន ព្រោះបុណ្យនឹងនាំមកនូវសេចក្តីសុខ។
+                                        </div>
+                                        <div class="feedback-section d-flex justify-content-between align-items-center">
+                                            <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                            <div><button class="btn-feedback me-2"><i
+                                                        class="far fa-thumbs-up"></i></button><button
+                                                    class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="noResult" class="text-center mt-4 d-none">
+                            <img src="https://cdn-icons-png.flaticon.com/512/7486/7486754.png" width="80"
+                                alt="No result">
+                            <p class="text-muted mt-2">មិនមានលទ្ធផលសម្រាប់ការស្វែងរកនេះទេ។</p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
+        </section>
+        <section class="mission-section py-5">
+            <div class="container">
 
-            <div class="faq-container">
-                <div class="faq-header text-center">
-
-                    <img src="../asset/images/vannda_img/កម្មពៀរ.jpg" alt="កម្ម និងផល"
-                        class="header-image">
-
-
-                    <h1 class="text-center">សំណួរ និង ចម្លើយផ្នែកកម្ម និងផល</h1>
-                    <p class="text-center">សំណួរចម្លើយអំពីបុណ្យ បាប អំពើល្អ អាក្រក់ និងផលនៃការប្រព្រឹត្ត</p>
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold" style="color: #c9a42e;">គោលការណ៍នៃកម្ម</h2>
+                    <div style="width: 60px; height: 3px; background-color: #c9a42e; margin: 10px auto;"></div>
                 </div>
 
-                <div class="principles-section mb-5">
-                    <h2 class="text-center mb-4" style="color: #c9a42e; font-weight: 700;">គោលការណ៍នៃកម្ម</h2>
-                    <div class="row g-4">
-                        <div class="col-md-4">
-                            <div class="card principle-card good-karma h-100 text-center">
-                                <div class="card-body  bg-light rounded-5">
-                                    <i class="fas fa-seedling"></i>
-                                    <h5 class="card-title fw-bold">កម្មល្អ (បុណ្យ)</h5>
-                                    <p class="card-text">អំពើដែលប្រកបដោយចេតនាល្អ (ទាន, សីល, ភាវនា)
-                                        តែងនាំមកនូវសេចក្ដីសុខ។</p>
-                                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card feature-card p-4 text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-bullseye fa-2x" style="color: #c9a42e;"></i>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card principle-card bad-karma h-100 text-center">
-                                <div class="card-body bg-light rounded-5">
-                                    <i class="fas fa-fire"></i>
-                                    <h5 class="card-title fw-bold">កម្មអាក្រក់ (បាប)</h5>
-                                    <p class="card-text">អំពើដែលប្រកបដោយលោភៈ ទោសៈ មោហៈ តែងនាំមកនូវសេចក្ដីទុក្ខ។</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card principle-card h-100 text-center">
-                                <div class="card-body bg-light rounded-5">
-                                    <i class="fas fa-balance-scale"></i>
-                                    <h5 class="card-title fw-bold">ផលនៃកម្ម (វិបាក)</h5>
-                                    <p class="card-text">អំពើដែលបានធ្វើ មិនបាត់សូន្យឡើយ តែងតែផ្ដល់ផល មិនយូរមិនឆាប់។</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <hr class="my-5" style="border-top: 1px solid #e0e0e0;">
-
-
-                <div class="accordion" id="faqAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q1">
-                                ១. កម្ម គឺជាអ្វី?
-                            </button>
-                        </h2>
-                        <div id="q1" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                កម្ម (Kamma) មានន័យថា "ការប្រព្រឹត្ត" ឬ "ការងារ"។ វាគឺលក្ខណៈនៃគំនិត ដោយ និងការងារ
-                                របស់មនុស្សដែលបង្កើតលទ្ធផល ឬផល។ កម្មគឺលក្ខណៈសំខាន់នៃព្រះពុទ្ធសាសនា
-                                ដែលពន្យល់ពីមូលហេតុនៃលក្ខណៈខុសគ្នាក្នុងលម្អិតលម្អន់។
-                                <div class="highlight">
-                                    <strong>គោលលេខ:</strong> ជាង្វើគ្រប់វេលា លទ្ធផល ឬផលលម្អិតលម្អន់នឹងមកដល់របស់។
-                                </div>
+                            <div class="card-body p-0">
+                                <h5 class="card-title fw-bold">កម្មល្អ (បុណ្យ)</h5>
+                                <p class="card-text">អំពើដែលប្រកបដោយចេតនាល្អ (ទាន, សីល, ភាវនា)
+                                    តែងនាំមកនូវសេចក្ដីសុខ។</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q2">
-                                ២. បុណ្យ និងបាប គឺជាអ្វី?
-                            </button>
-                        </h2>
-                        <div id="q2" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                <div class="kamma-box good-box">
-                                    <div class="kamma-title">បុណ្យ (Puñña) - អំពើល្អ</div>
-                                    <p>គឺលក្ខណៈនៃការងារ ឬគំនិតល្អ ដែលបង្កើតលទ្ធផលល្អ ដូចជា៖</p>
-                                    <ul>
-                                        <li>ការផ្តល់ ឬបរិច្ចាគ</li>
-                                        <li>ការផ្តល់ជ័យ ឬលម្អិតលម្អន់</li>
-                                        <li>ការរក្សាសីល ឬលក្ខណៈ</li>
-                                        <li>ការបដិបត្តិ ឬលម្អិតលម្អន់</li>
-                                    </ul>
-                                </div>
-                                <div class="kamma-box bad-box">
-                                    <div class="kamma-title">បាប (Pāpa) - អំពើអាក្រក់</div>
-                                    <p>គឺលក្ខណៈនៃការងារ ឬគំនិតអាក្រក់ ដែលបង្កើតលទ្ធផលអាក្រក់ ដូចជា៖</p>
-                                    <ul>
-                                        <li>ការសម្លាប់ ឬធ្វើឱ្យឈឺចាប់</li>
-                                        <li>ការលួច ឬដកប្រាក់មិនបានផ្តល់</li>
-                                        <li>ការលេងលុច ឬល្មម</li>
-                                        <li>ការនិយាយមិនពិត ឬក្លាហាន</li>
-                                    </ul>
-                                </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card p-4 text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-gift fa-2x" style="color: #c9a42e;"></i>
+                            </div>
+                            <div class="card-body p-0">
+                                <h5 class="card-title fw-bold">កម្មអាក្រក់ (បាប)</h5>
+                                <p class="card-text">អំពើដែលប្រកបដោយលោភៈ ទោសៈ មោហៈ តែងនាំមកនូវសេចក្ដីទុក្ខ។</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q3">
-                                ៣. តើផលនៃកម្មឬលទ្ធផលដូចម្តេច?
-                            </button>
-                        </h2>
-                        <div id="q3" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                ផលនៃកម្ម ឬលទ្ធផល (Vipāka) មានទម្រង់ផ្សេងៗ៖
-                                <div class="kamma-box good-box">
-                                    <strong>ផលល្អ (អំពើល្អ):</strong>
-                                    <ul>
-                                        <li>សុខ ឬរីករាយក្នុងលម្អិតលម្អន់</li>
-                                        <li>សុខភាព ឬសុខធម៌</li>
-                                        <li>សមប្ដក្នុងក្រុម និងក្រុម</li>
-                                        <li>ល័ក្ខ ឬលម្អិតលម្អន់ល្អក្នុងលម្អិត</li>
-                                        <li>ឆ្នើម ឬលើលម្អិតលម្អន់ក្នុងលម្អិត</li>
-                                    </ul>
-                                </div>
-                                <div class="kamma-box bad-box">
-                                    <strong>ផលអាក្រក់ (អំពើអាក្រក់):</strong>
-                                    <ul>
-                                        <li>ទុក្ខ ឬឈឺចាប់ក្នុងលម្អិតលម្អន់</li>
-                                        <li>ជម្ងឺ ឬរឺយន្ដ</li>
-                                        <li>មិនសម្បត្ដក្នុងក្រុម និងក្រុម</li>
-                                        <li>អរ្ឋ ឬលម្អិតលម្អន់អាក្រក់ក្នុងលម្អិត</li>
-                                        <li>ស្វាក ឬលើលម្អិតលម្អន់អាក្រក់ក្នុងលម្អិត</li>
-                                    </ul>
-                                </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card p-4 text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-envelope fa-2x" style="color: #c9a42e;"></i>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q4">
-                                ៤. តើច្បាប់ប្រតិដ្ឋាននៃកម្ម គឺដូចម្តេច?
-                            </button>
-                        </h2>
-                        <div id="q4" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                ច្បាប់ប្រតិដ្ឋាននៃកម្ម៖
-                                <div class="kamma-box">
-                                    <strong>១. ប្រតិដ្ឋាននៃលក្ខណៈ (Principle of Action):</strong>
-                                    ការងារ ឬគំនិតល្អនឹងបង្កើតលទ្ធផលល្អ ការងារ ឬគំនិតអាក្រក់នឹងបង្កើតលទ្ធផលអាក្រក់
-                                </div>
-                                <div class="kamma-box">
-                                    <strong>២. ប្រតិដ្ឋាននៃលក្ខណៈ (Principle of Intention):</strong>
-                                    ចេតនា ឬគំនិតគឺការងារ ដូច្នេះលក្ខណៈនៃលក្ខណៈដែលលើលម្អិត
-                                </div>
-                                <div class="kamma-box">
-                                    <strong>៣. ប្រតិដ្ឋាននៃលក្ខណៈ (Principle of Consequence):</strong>
-                                    ផលលម្អិតលម្អន់នឹងមកដល់របស់គ្រាន់តែពេលក្នុងលម្អិតលម្អន់
-                                </div>
-                                <div class="kamma-box">
-                                    <strong>៤. ប្រតិដ្ឋាននៃលក្ខណៈ (Principle of Universality):</strong>
-                                    ច្បាប់នៃកម្មអនុវត្តលើមនុស្សគ្រប់គ្នា ឯង ក្រុម លក្ខណៈ និងលម្អិត
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q5">
-                                ៥. តើកម្មលទ្ធផលឥតក្ដាក់ក្នុងពេលដែលលើលម្អិត?
-                            </button>
-                        </h2>
-                        <div id="q5" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                លទ្ធផលនៃកម្មលើលម្អិតក្នុងពេលផ្សេងៗ៖
-                                <div class="kamma-box">
-                                    <strong>ផលឥតក្ដាក់ក្នុងលម្អិត (Immediate Results):</strong>
-                                    ខ្លះលទ្ធផលលម្អិតលម្អន់មកដល់ក្នុងលម្អិតលម្អន់ដូចគ្នា ឬក្នុងលម្អិត
-                                </div>
-                                <div class="kamma-box">
-                                    <strong>ផលលើលម្អិត (Delayed Results):</strong>
-                                    ខ្លះលទ្ធផលលម្អិតលម្អន់មកដល់ក្នុងលម្អិតលម្អន់ក្រោយ ឬលម្អិតក្រោយ
-                                </div>
-                                <div class="kamma-box">
-                                    <strong>ផលក្នុងលម្អិតក្រោយ (Future Life Results):</strong>
-                                    ខ្លះលទ្ធផលលម្អិតលម្អន់មកដល់ក្នុងលម្អិតលម្អន់ក្រោយ ឬលើលម្អិត
-                                </div>
-                                <div class="highlight">
-                                    លទ្ធផលនៃកម្មឥតក្ដាក់ក្នុងលម្អិតលម្អន់ ប៉ុន្តែលំដាប់ក្នុងលម្អិតលម្អន់ឬលម្អិត។
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q6">
-                                ៦. តើលក្ខណៈខ្ពស់នៃកម្មលទ្ធផលឯក?
-                            </button>
-                        </h2>
-                        <div id="q6" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                លក្ខណៈខ្ពស់នៃកម្ម ដែលបង្កើតលទ្ធផលខ្ពស់៖
-                                <ul>
-                                    <li><strong>ចេតនា:</strong> ចេតនាល្អ ឬច្បាប់ល្អលើលម្អិត</li>
-                                    <li><strong>វត្ថុ:</strong> វត្ថុលើលម្អិត ដូចជាក្រូលម្អិត ឬលម្អិតលម្អន់</li>
-                                    <li><strong>វិធាន:</strong> វិធានល្អ ឬលម្អិតលម្អន់ក្នុងលម្អិត</li>
-                                    <li><strong>ផលលម្អិត:</strong> ផលលម្អិតលម្អន់លើលម្អិត</li>
-                                    <li><strong>ម្តងម្លងលម្អិត:</strong> ម្តងម្លងលម្អិតលម្អន់លើលម្អិត</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q7">
-                                ៧. តើកម្មលម្អិតលម្អន់អាចផ្លាស់ប្តូរបាន?
-                            </button>
-                        </h2>
-                        <div id="q7" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                ល្បាច្បាប់នៃកម្មលម្អិតលម្អន់ត្រូវយល់ដឹង៖
-                                <ul>
-                                    <li><strong>ផលលម្អិតលម្អន់ឥតក្ដាក់:</strong> លទ្ធផលលម្អិតលម្អន់ឥតក្ដាក់ និងមិនឈប់
-                                    </li>
-                                    <li><strong>ផលលម្អិតលម្អន់អាចផ្លាស់ប្តូរ:</strong> ប៉ុន្តែផលលម្អិតលម្អន់អាចប្រែក្លាយ
-                                        ឬក្របាលដោយកម្មល្អ</li>
-                                    <li><strong>កម្មល្អលើលម្អិត:</strong> កម្មល្អ
-                                        ឬលម្អិតលម្អន់អាចក្របាលលទ្ធផលលម្អិតលម្អន់</li>
-                                    <li><strong>ក្របាលលម្អិតលម្អន់:</strong> តាមរយៈលម្អិតលម្អន់ ឬលម្អិតលម្អន់</li>
-                                </ul>
-                                <div class="highlight">
-                                    លយលក្ខណៈ៖ មិនក្រឩលទ្ធផលលម្អិតលម្អន់ ប៉ុន្តែអាចលម្អិតលម្អន់ក្របាលលទ្ធផល។
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q8">
-                                ៨. តើកម្ម ក្នុងជីវិតប្រចាំថ្ងៃ?
-                            </button>
-                        </h2>
-                        <div id="q8" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                កម្មក្នុងជីវិតប្រចាំថ្ងៃ៖
-                                <div class="kamma-box good-box">
-                                    <strong>ឧទាហរណ៍កម្មល្អ៖</strong>
-                                    <ul>
-                                        <li>ជួយមនុស្សដែលលម្អិត ឬរស់នៅ</li>
-                                        <li>មិនលួច ឬដកប្រាក់មិនបានផ្តល់</li>
-                                        <li>និយាយពិត ឬលម្អិតលម្អន់</li>
-                                        <li>រក្សាលក្ខណៈលក្ខណៈ</li>
-                                    </ul>
-                                </div>
-                                <div class="kamma-box bad-box">
-                                    <strong>ឧទាហរណ៍កម្មអាក្រក់៖</strong>
-                                    <ul>
-                                        <li>សម្លាប់ ឬធ្វើឱ្យឈឺចាប់</li>
-                                        <li>លួច ឬដកប្រាក់មិនបានផ្តល់</li>
-                                        <li>និយាយមិនពិត ឬក្លាហាន</li>
-                                        <li>បង្ករ ឬលម្អិតលម្អន់អាក្រក់</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q9">
-                                ៩. តើលំដាប់កម្ម ក្នុងលម្អិតលម្អន់?
-                            </button>
-                        </h2>
-                        <div id="q9" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                លំដាប់នៃកម្ម ក្នុងលម្អិតលម្អន់៖
-                                <ul>
-                                    <li><strong>លម្អិតលម្អន់សម័យ:</strong> កម្មលម្អិតលម្អន់បង្កើតលទ្ធផល</li>
-                                    <li><strong>លម្អិតលម្អន់ក្នុងលម្អិត:</strong> កម្មលម្អិតលម្អន់នឹងបង្កើតលម្អិតលម្អន់
-                                    </li>
-                                    <li><strong>លម្អិតលម្អន់គ្រប់ដង:</strong> កម្មលម្អិតលម្អន់ឥតក្ដាក់ក្នុងលម្អិត</li>
-                                    <li><strong>លម្អិតលម្អន់ដែលលើលម្អិត:</strong> លទ្ធផលលម្អិតលម្អន់មកដល់លើលម្អិត</li>
-                                </ul>
-                                <div class="highlight">
-                                    ច្បាប់នៃកម្មឥតក្ដាក់ ឥតប្រឡោះ និងគ្រប់វេលាក្នុងលម្អិតលម្អន់។
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q10">
-                                ១០. តើលួលក្ខណៈនៃកម្ម?
-                            </button>
-                        </h2>
-                        <div id="q10" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                លក្ខណៈនៃកម្មក្នុងលម្អិតលម្អន់៖
-                                <ul>
-                                    <li><strong>កម្ម (Action):</strong> លក្ខណៈនៃការងារ ឬគំនិត</li>
-                                    <li><strong>កម្មលទ្ធផល (Consequence):</strong> ផលលម្អិតលម្អន់របស់លក្ខណៈ</li>
-                                    <li><strong>កម្មលើលម្អិត (Responsibility):</strong> ទាក់ទងនឹងលក្ខណៈលម្អិត</li>
-                                    <li><strong>កម្មលម្អិត (Discipline):</strong> គ្រប់គ្រងលម្អិតលម្អន់</li>
-                                    <li><strong>កម្មលើលើលម្អិត (Evolution):</strong> អភិវឌ្ឍលម្អិតលម្អន់របស់ខ្លួន</li>
-                                </ul>
-                                <div class="highlight">
-                                    <strong>ឆ្លុងលម្អិត៖</strong> ដោយយល់ដឹងលក្ខណៈលម្អិតលម្អន់នៃលក្ខខណ្ឌ
-                                    យើងអាចបង្កើតលម្អិតលម្អន់ល្អ ហើយក្របាលលម្អិតលម្អន់អាក្រក់។
-                                </div>
+                            <div class="card-body p-0">
+                                <h5 class="card-title fw-bold">កម្មអាក្រក់ (បាប)</h5>
+                                <p class="card-text">អំពើដែលប្រកបដោយលោភៈ ទោសៈ មោហៈ តែងនាំមកនូវសេចក្ដីទុក្ខ។</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card cta-card text-center mt-5">
-                    <div class="card-body p-5">
-                        <h4 class="card-title fw-bold">ត្រៀមខ្លួនសាងអំពើល្អឬនៅ?</h4>
-                        <p class="card-text my-3">យល់ដឹងពីច្បាប់កម្ម និងផល គឺជាជំហានដំបូង។ ការចាប់ផ្ដើមធ្វើល្អ
-                            គឺជាការផ្លាស់ប្ដូរជីវិត។</p>
-                        <a href="#q2" class="btn btn-custom-gold">ស្វែងយល់ពី "បុណ្យ"</a>
-                    </div>
-                </div>
-
             </div>
-        </div>
+        </section>
+        <section class="mission-section container">
+            <div class="card cta-card text-center mt-5"
+                style="background-color: var(--bg-primary); color:var(--text-primary)">
+                <div class="card-body p-5">
+                    <h4 class="card-title fw-bold">ត្រៀមខ្លួនសាងអំពើល្អឬនៅ?</h4>
+                    <p class="card-text my-3">យល់ដឹងពីច្បាប់កម្ម និងផល គឺជាជំហានដំបូង។ ការចាប់ផ្ដើមធ្វើល្អ
+                        គឺជាការផ្លាស់ប្ដូរជីវិត។</p>
+                    <a href="#q2" class="btn btn-custom-gold">ស្វែងយល់ពី "បុណ្យ"</a>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- ═══════════ FOOTER ═══════════ -->
     <footer>
@@ -699,6 +790,32 @@
     <script src="../asset/js/script.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        document.getElementById('searchInput').addEventListener('keyup', function () {
+            let searchQuery = this.value.toLowerCase();
+            let faqItems = document.querySelectorAll('.filter-item');
+            let hasResult = false;
+
+            faqItems.forEach(function (item) {
+                let questionText = item.querySelector('.accordion-button').innerText.toLowerCase();
+                let answerText = item.querySelector('.accordion-body').innerText.toLowerCase();
+
+                if (questionText.includes(searchQuery) || answerText.includes(searchQuery)) {
+                    item.style.display = 'block';
+                    hasResult = true;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            let noResultMsg = document.getElementById('noResult');
+            if (hasResult) {
+                noResultMsg.classList.add('d-none');
+            } else {
+                noResultMsg.classList.remove('d-none');
+            }
+        });
     </script>
 </body>
 

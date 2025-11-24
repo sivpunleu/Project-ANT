@@ -211,255 +211,374 @@
     </header>
     <main>
         <div class="container mt-5">
-            <div class=" mb-5 d-flex justify-content-between align-items-center">
-                <div class="back-button btn btn-outline-primary">
-                    <a href="questionandanwser.html">
-                        <i class="fas fa-arrow-left "></i> ត្រឡប់ទៅ សំណួរ និង ចម្លើយ
-                    </a>
-                </div>
-                <div class="back-button btn btn-outline-primary">
-                    <a href="partofmeditation.html">
-                        សំណួរ និង ចម្លើយ ផ្នែកសមាធិ
-                       <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
             <div class="faq-container">
                 <div class="faq-header text-center">
 
                     <img src="../asset/images/vannda_img/វិបស្សនា.jpg" alt="វិបស្សនា" class="header-image">
-
-
-                    <h1 class=" text-center">សំណួរ និង ចម្លើយផ្នែកវិបស្សនា</h1>
-                    <p class="fs-5 text-center">ស្វែងយល់ពីការបដិបត្តិវិបស្សនា និងការចម្រើនបញ្ញា</p>
                 </div>
+                <section>
+                    <div class="text-center mb-5">
+                        <h1 class="fw-bold mb-3" style="color: var(--text-dark);">សំណួរ និង ចម្លើយអំពី វិបស្សនា</h1>
+                        <p class="text-muted mb-4">ស្វែងយល់បន្ថែមអំពីការបដិបត្តិ និងអត្ថន័យនៃវិបស្សនា</p>
 
-                <div class="principles-section mb-5">
-                    <h2 class="text-center mb-4" style="color: #c9a42e; font-weight: 700;">គោលការណ៍សំខាន់នៃវិបស្សនា</h2>
-                    <div class="row g-4">
-                        <div class="col-md-4">
-                            <div class="card principle-card h-100 text-center">
-                                <div class="card-body bg-light rounded-5">
-                                    <i class="fas fa-wind"></i>
-                                    <h5 class="card-title fw-bold">អនិច្ច (Impermanence)</h5>
-                                    <p class="card-text">អ្វីៗទាំងអស់កើតឡើង រួចក៏រលត់ទៅវិញ។ គ្មានអ្វីដែលឋិតថេរនោះទេ។</p>
+                        <div class="search-container mb-5">
+                            <i class="fas fa-search search-icon"></i>
+                            <input type="text" id="searchInput" class="form-control search-input"
+                                placeholder="ស្វែងរកសំណួរ... (ឧ. សមាធិ, អត្ថប្រយោជន៍)">
+                        </div>
+
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="questionandanwser.html" class="btn btn-outline-secondary rounded-pill px-4">
+                                <i class="fas fa-arrow-left me-2"></i> ត្រឡប់ក្រោយ
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9">
+                            <div class="accordion" id="faqAccordion">
+
+                                <div class="accordion-item filter-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#q1">
+                                            ១. វិបស្សនាគឺជាអ្វី?
+                                        </button>
+                                    </h2>
+                                    <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            វិបស្សនា ឬ "Vipassana" មានន័យថា "ឃើញឡើងវិញ" ឬ "ការយល់ដឹងជ្រាលជ្រៅ"។
+                                            វាជាវិធីសាស្ត្របដិបត្តិដែលផ្តោតលើការសង្កេតលម្អិត
+                                            និងការយល់ដឹងនូវលក្ខណៈនៃវត្ថុ
+                                            មិនថាចាប់ផ្តើមដូចម្តេច ពិចារណាវត្ថុដែលមាន ជាល្អិតល្អន់ និងឆ្លុះបញ្ចាំង។
+                                            វិបស្សនាជួយឲ្យយើងដឹងពិតប្រាកដនូវលក្ខណៈពិតប្រាកដនៃការរស់នៅ៖ អនិច្ច
+                                            (impermanence), ទុក្ខ
+                                            (suffering) និង អនត្តា (non-self)។
+
+                                            <div
+                                                class="feedback-section d-flex justify-content-between align-items-center">
+                                                <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                <div>
+                                                    <button class="btn-feedback me-2"><i
+                                                            class="far fa-thumbs-up"></i></button>
+                                                    <button class="btn-feedback"><i
+                                                            class="far fa-thumbs-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card principle-card h-100 text-center">
-                                <div class="card-body bg-light rounded-5">
-                                    <i class="fas fa-water"></i>
-                                    <h5 class="card-title fw-bold">ទុក្ខ (Suffering)</h5>
-                                    <p class="card-text">ការមិនពេញចិត្ត ឬសេចក្ដីទុក្ខ
-                                        កើតឡើងពីការតោងយជាប់នឹងអ្វីដែលមិនទៀង។
-                                    </p>
+
+                                <div class="accordion-item filter-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#q2">
+                                            ២. តើវិបស្សនាខុសគ្នាដូចម្តេចពីសមាធិ?
+                                        </button>
+                                    </h2>
+                                    <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            <strong>សមាធិ</strong> ជាការផ្តោតចិត្តលើវត្ថុមួយ
+                                            ដូចគ្នាដែលចិត្តរស់ក្នុងលក្ខខណ្ឌមនោគ្គល
+                                            ឬនង្វល់របស់វា។ <strong>វិបស្សនា</strong>
+                                            គឺការសង្កេតឃើញសភាវៈពិតប្រាកដនៃលក្ខខណ្ឌ។
+                                            ទាំងពីរប្រឆាំងគ្នាក៏ប៉ុន្តែលំនឹងដែលតាមរយៈការផ្សំទាំងពីរ
+                                            វាគួរឱ្យធានាលក្ខណៈធម៌។
+                                            <div class="highlight">
+                                                <strong>ឧទាហរណ៍៖</strong> សមាធិ = ផ្តោតលើខ្យល់ដង្ហើម; វិបស្សនា =
+                                                ឃើញថាខ្យល់ដង្ហើម មាន
+                                                អនិច្ច, ផ្លាស់ប្តូរគ្រប់ពេល។
+                                            </div>
+
+                                            <div
+                                                class="feedback-section d-flex justify-content-between align-items-center">
+                                                <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                <div>
+                                                    <button class="btn-feedback me-2"><i
+                                                            class="far fa-thumbs-up"></i></button>
+                                                    <button class="btn-feedback"><i
+                                                            class="far fa-thumbs-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card principle-card h-100 text-center">
-                                <div class="card-body bg-light rounded-5">
-                                    <i class="fas fa-leaf"></i>
-                                    <h5 class="card-title fw-bold">អនត្តា (Non-self)</h5>
-                                    <p class="card-text">មិនមាន "ខ្លួន" ឬ "អញ" ដែលឋិតថេរ និងដាច់ដោយឡែកពីអ្វីផ្សេងទៀតឡើយ។
-                                    </p>
+
+                                <div class="accordion-item filter-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#q3">
+                                            ៣. តើខ្ញុំបង្កើតបដិបត្តិវិបស្សនាដោយរបៀបដូចម្តេច?
+                                        </button>
+                                    </h2>
+                                    <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            វិបស្សនាបដិបត្តិមានលក្ខណៈផ្សេងៗ៖
+                                            <ul>
+                                                <li><strong>វិបស្សនាលើរាងកាយ (Body Scan):</strong>
+                                                    សង្កេតលក្ខណៈរាងកាយលម្អិត
+                                                    ពីលើក្បាលដល់ចុងជើង</li>
+                                                <li><strong>វិបស្សនាលើចិត្ត (Mindfulness):</strong> សង្កេតលក្ខណៈចិត្ត
+                                                    គិតគូរ
+                                                    និងអារម្មណ៍</li>
+                                                <li><strong>វិបស្សនាលើទុក្ខ (Suffering):</strong>
+                                                    សង្កេតលក្ខណៈនៃការរស់នៅដែលមានកង្វល់</li>
+                                                <li><strong>វិបស្សនាលើលក្ខណៈបីយ៉ាង:</strong> សង្កេតលក្ខណៈអនិច្ច
+                                                    (Impermanence),
+                                                    ទុក្ខ (Suffering), អនត្តា (Non-self)</li>
+                                            </ul>
+
+                                            <div
+                                                class="feedback-section d-flex justify-content-between align-items-center">
+                                                <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                <div>
+                                                    <button class="btn-feedback me-2"><i
+                                                            class="far fa-thumbs-up"></i></button>
+                                                    <button class="btn-feedback"><i
+                                                            class="far fa-thumbs-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <hr class="my-5" style="border-top: 1px solid #e0e0e0;">
+                                <div class="accordion-item filter-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#q4">
+                                            ៤. តើវិបស្សនាមានប្រយោជន៍ដូចម្តេច?
+                                        </button>
+                                    </h2>
+                                    <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            វិបស្សនាមានប្រយោជន៍ច្រើនក្នុងពិលក្ខណៈ៖
+                                            <ul>
+                                                <li>ពង្រឹងការយល់ដឹងលម្អិតលម្អន់</li>
+                                                <li>ល្អដល់ការយល់ដឹងធម៌នៅក្នុងក្រុង</li>
+                                                <li>ធ្វើឲ្យយល់លើលក្ខណៈប៉ះពាល់ និងវេទនា</li>
+                                                <li>ចម្រើនបញ្ញា និងប្រាជ្ញា</li>
+                                                <li>សន្តិភាពផ្លូវចិត្ត</li>
+                                                <li>ឈានដល់ការយល់ឃើញនូវសច្ចធម៌ពិត</li>
+                                            </ul>
 
-                <div class="accordion" id="faqAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q1">
-                                ១. វិបស្សនាគឺជាអ្វី?
-                            </button>
-                        </h2>
-                        <div id="q1" class="accordion-collapse collapse " data-bs-parent="#faqAccordion">
-                            <div class="accordion-body fs-5">
-                                វិបស្សនា ឬ "Vipassana" មានន័យថា "ឃើញឡើងវិញ" ឬ "ការយល់ដឹងជ្រាលលម្ពាល់"។
-                                វាជាវិធីសាស្ត្របដិបត្តិដែលផ្តោតលើការសង្កេតលម្អិតលម្អិត និងការយល់ដឹងនូវលក្ខណៈនៃវត្ថុ
-                                មិនថាចាប់ផ្តើមដូចម្តេច ពិចារណាវត្ថុដែលមាន ជាល្អិតល្អន់ និងឆ្លង់ដូច។
-                                វិបស្សនាជួយឲ្យយើងដឹងពិតប្រាកដនូវលក្ខណៈពិតប្រាកដនៃការរស់នៅ៖ អនិច្ច (impermanence)، ទុក្ខ
-                                (suffering) និង អណ្ឌតា (non-self)។
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q2">
-                                ២. តើវិបស្សនាខុសគ្នាដូចម្តេចពីសមាធិ?
-                            </button>
-                        </h2>
-                        <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body fs-5">
-                                <strong>សមាធិ</strong> ជាការផ្តោតចិត្តលើវត្ថុមួយ ដូចគ្នាដែលចិត្តរស់ក្នុងលក្ខខណ្ឌមនោគ្គល
-                                ឬនង្វល់របស់វា។ <strong>វិបស្សនា</strong>
-                                គឺការសង្កេតឃើញស្វាភាវិកលក្ខណៈពិតប្រាកដនៃលក្ខខណ្ឌ។
-                                ទាំងពីរប្រឆាំងគ្នាក៏ប៉ុន្តែលំនឹងដែលតាមរយៈការផ្សំទាំងពីរ វាគួរឱ្យធានាលក្ខណៈធម៌។
-                                <div class="highlight fs-5">
-                                    <strong>ឧទាហរណ៍៖</strong> សមាធិ = ផ្តោតលើលំយោលក្តៅ; វិបស្សនា = ឃើញថាលំយោលក្តៅ មាន
-                                    អនិច្ច, ផ្លាស់ប្តូរពេលពេល
+                                            <div
+                                                class="feedback-section d-flex justify-content-between align-items-center">
+                                                <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                <div>
+                                                    <button class="btn-feedback me-2"><i
+                                                            class="far fa-thumbs-up"></i></button>
+                                                    <button class="btn-feedback"><i
+                                                            class="far fa-thumbs-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q3">
-                                ៣. តើខ្ញុំបង្កើតបដិបត្តិវិបស្សនាដោយរបៀបដូចម្តេច?
-                            </button>
-                        </h2>
-                        <div id="q3" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                វិបស្សនាបដិបត្តិមានលក្ષណៈផ្សេងៗ៖
-                                <ul>
-                                    <li><strong>វិបស្សនាលើលំយោលក្តៅ (Body Scan):</strong> សង្កេតលក្ខណៈរាងកាយលម្អិត
-                                        ពីលើក្បាលដល់ទាប់ជើង</li>
-                                    <li><strong>វិបស្សនាលើចិត្ត (Mindfulness):</strong> សង្កេតលក្ខណៈចិត្ត គិតគូរ
-                                        និងអារម្មណ៍
-                                    </li>
-                                    <li><strong>វិបស្សនាលើមនោគ្គល (Suffering):</strong>
-                                        សង្កេតលក្ខណៈនៃការរស់នៅដែលមានកង្វល់
-                                    </li>
-                                    <li><strong>វិបស្សនាលើលក្ខណៈបីយ៉ាង:</strong> សង្កេតលក្ខណៈអនិច្ច (Impermanence),
-                                        ទុក្ខ
-                                        (Suffering), អណ្ឌតា (Non-self)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                                <div class="accordion-item filter-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#q5">
+                                            ៥. តើត្រូវចំណាយពេលប៉ុន្មានសម្រាប់វិបស្សនា?
+                                        </button>
+                                    </h2>
+                                    <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            មិនមាននិយាមលម្អិតតឹងរឹងមួយដែលកំណត់ពេលវេលាទេ។
+                                            ប៉ុន្តែជាការណែនាំ៖
+                                            <ul>
+                                                <li>អាចចាប់ផ្តើមដោយ ១៥-៣០ នាទីក្នុងមួយថ្ងៃ</li>
+                                                <li>សម្រាប់អ្នកដែលមធ្យម៖ ៣០-៦០ នាទី</li>
+                                                <li>សម្រាប់អ្នកបដិបត្តិខ្លាំង៖ ១-២ ម៉ោងឬលើស</li>
+                                            </ul>
+                                            <div class="highlight">
+                                                <strong>ដំបូន្មាន:</strong> ភាពទៀងទាត់សំខាន់ជាងរយៈពេលយូរតែម្តងម្កាល។
+                                            </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q4">
-                                ៤. តើវិបស្សនាមានប្រយោជន៍ដូចម្តេច?
-                            </button>
-                        </h2>
-                        <div id="q4" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                វិបស្សនាមានប្រយោជន៍ច្រើនក្នុងពិលក្ខណៈ៖
-                                <ul>
-                                    <li>ពង្រឹងការយល់ដឹងលម្អិតលម្អន់</li>
-                                    <li>ល្អផ្តលចូលលក្ខណៈ ធម៌នៅក្នុងក្រុង</li>
-                                    <li>ធ្វើឲ្យវាយលើលក្ខណៈប៉ះពាល់ និងវេទនា</li>
-                                    <li>ចម្រើនបញ្ញា និងប្រាជ្ញា</li>
-                                    <li>សន្តិភាពលក្ខណៈចិត្តវិស្វាស</li>
-                                    <li>មកដល់ការលម្អិតលម្អន់នៃលក្ខណៈពិតប្រាកដ</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed  fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q5">
-                                ៥. តើលេខលម្អិតរបស់វិបស្សនាគឺលេខប៉ុន្មាន?
-                            </button>
-                        </h2>
-                        <div id="q5" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                មិនមាននិយាមលម្អិតតឹងរ៉ាប់រង់មួយដែលសមស្របដែលលេខលម្អិតរបស់វិបស្សនា។
-                                ដូច្នេះលេខលម្អិតលម្អន់៖
-                                <ul>
-                                    <li>អាចចាប់ផ្តើមដោយ ១៥-៣០ នាទីក្នុងមួយថ្ងៃ</li>
-                                    <li>សម្រាប់អ្នកដែលជ្រើសរើលក្ខណៈលម្អិត៖ ៣០-៦០ នាទី</li>
-                                    <li>សម្រាប់អ្នកលម្អិតលម្អន់៖ ១-២ ម៉ោងឬលើស</li>
-                                </ul>
-                                <div class="highlight">
-                                    <strong>ដំបូន្ដៃ:</strong> ធម្មតាអាចហើយកម្មវិធីដោយលម្អិតលម្អន់តែលម្អិតដែលលាក់
+                                            <div
+                                                class="feedback-section d-flex justify-content-between align-items-center">
+                                                <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                <div>
+                                                    <button class="btn-feedback me-2"><i
+                                                            class="far fa-thumbs-up"></i></button>
+                                                    <button class="btn-feedback"><i
+                                                            class="far fa-thumbs-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q6">
-                                ៦. តើខ្ញុំគួរតែបង្កើតវិបស្សនាក្នុងលក្ខណៈជាក្រុម ឬលម្អិតឯកឯង?
-                            </button>
-                        </h2>
-                        <div id="q6" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                ទាំងពីរគឺប្រសើរ៖
-                                <ul>
-                                    <li><strong>ក្នុងក្រុម:</strong> គាំទ្ង អនុপ្រាណ ហើយលក្ខណៈស្ថាបនាលម្អិត</li>
-                                    <li><strong>លម្អិតឯកឯង:</strong> សេរីភាព និងលក្ខណៈផ្ទាល់ខ្លួនលម្អិត</li>
-                                </ul>
-                                <div class="highlight">
-                                    ដាក់ដំបូន្ដៃ៖ ប្រសិនបើលេខលម្អិតលម្អន់ បង្កើតក្នុងក្រុម ដែលមានក្រូរលម្អិតលម្អន់
-                                    ដូច្នេះលម្អិតឯកឯង។
+                                <div class="accordion-item filter-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#q6">
+                                            ៦. តើខ្ញុំគួរតែបដិបត្តិវិបស្សនាជាក្រុម ឬឯកឯង?
+                                        </button>
+                                    </h2>
+                                    <div id="q6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            ទាំងពីរគឺប្រសើរ៖
+                                            <ul>
+                                                <li><strong>ក្នុងក្រុម:</strong> ទទួលបានការគាំទ្រ និងកម្លាំងចិត្ត</li>
+                                                <li><strong>ឯកឯង:</strong> មានសេរីភាព និងភាពស្ងប់ស្ងាត់ផ្ទាល់ខ្លួន</li>
+                                            </ul>
+                                            <div class="highlight">
+                                                ដំបូន្មាន៖ ប្រសិនបើទើបចាប់ផ្តើម គួរចូលរួមក្នុងក្រុមដែលមានគ្រូដឹកនាំ។
+                                            </div>
+
+                                            <div
+                                                class="feedback-section d-flex justify-content-between align-items-center">
+                                                <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                <div>
+                                                    <button class="btn-feedback me-2"><i
+                                                            class="far fa-thumbs-up"></i></button>
+                                                    <button class="btn-feedback"><i
+                                                            class="far fa-thumbs-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+
+                                <div class="accordion-item filter-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#q7">
+                                            ៧. តើមានឧបសគ្គអ្វីខ្លះក្នុងការបដិបត្តិវិបស្សនា?
+                                        </button>
+                                    </h2>
+                                    <div id="q7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            អ្នកបដិបត្តិអាចនឹងជួបប្រទះឧបសគ្គខ្លះៗដូចជា៖
+                                            <ul>
+                                                <li>ការងងុយគេង ឬធុញទ្រាន់</li>
+                                                <li>ចិត្តរាយមាយ គិតរឿងផ្សេងៗ</li>
+                                                <li>ការសង្ស័យក្នុងការបដិបត្តិ</li>
+                                            </ul>
+                                            ប្រសិនបើជួបបញ្ហា សូមប្រឹក្សាយោបល់ជាមួយគ្រូដែលមានបទពិសោធន៍។
+
+                                            <div
+                                                class="feedback-section d-flex justify-content-between align-items-center">
+                                                <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                <div>
+                                                    <button class="btn-feedback me-2"><i
+                                                            class="far fa-thumbs-up"></i></button>
+                                                    <button class="btn-feedback"><i
+                                                            class="far fa-thumbs-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item filter-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#q8">
+                                            ៨. តើលទ្ធផលនៃការបដិបត្តិវិបស្សនាគឺអ្វី?
+                                        </button>
+                                    </h2>
+                                    <div id="q8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            លទ្ធផលនៃការបដិបត្តិអាចនឹងផ្សេងគ្នា៖
+                                            <ul>
+                                                <li><strong>រយៈពេលខ្លី:</strong> មានអារម្មណ៍ស្ងប់ និងមានសតិល្អជាងមុន
+                                                </li>
+                                                <li><strong>រយៈពេលមធ្យម:</strong> យល់ដឹងពីធម៌
+                                                    និងការគ្រប់គ្រងអារម្មណ៍បានល្អ</li>
+                                                <li><strong>រយៈពេលវែង:</strong> សន្តិភាពផ្លូវចិត្ត និងបញ្ញាភ្លឺស្វាង
+                                                </li>
+                                            </ul>
+
+                                            <div
+                                                class="feedback-section d-flex justify-content-between align-items-center">
+                                                <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                <div>
+                                                    <button class="btn-feedback me-2"><i
+                                                            class="far fa-thumbs-up"></i></button>
+                                                    <button class="btn-feedback"><i
+                                                            class="far fa-thumbs-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
+
+                            <div id="noResult" class="text-center mt-4 d-none">
+                                <img src="https://cdn-icons-png.flaticon.com/512/7486/7486754.png" width="80"
+                                    alt="No result">
+                                <p class="text-muted mt-2">មិនមានលទ្ធផលសម្រាប់ការស្វែងរកនេះទេ។</p>
+                            </div>
+
                         </div>
                     </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q7">
-                                ៧. តើមានលក្ខណៈឧបសគ្គក្នុងបង្កើតវិបស្សនា?
-                            </button>
-                        </h2>
-                        <div id="q7" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                អ្នក និយាយថា អ្នកអាចបង្កើតលម្អិតលម្អន់ ប៉ុន្តែមានលក្ខណៈលម្អិតលម្អន់ខ្លះដែលលេខលម្អិត៖
-                                <ul>
-                                    <li>ឧពមលក្ខណៈក្នុងលម្អិតលម្អន់</li>
-                                    <li>អាចក្លែងលម្អិតលម្អន់ផ្សេងទៀត</li>
-                                    <li>អាច្ចឹងលម្អិតលម្អន់ដូច្នេះលម្អិត</li>
-                                </ul>
-                                ប្រសិនបើលេខលម្អិតលម្អន់ប្រឹក្សាយោបល់ក្រូរលម្អិតលម្អន់ដែលមាន។
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q8">
-                                ៨. តើលទ្ធផលលម្អិតលម្អន់នៃវិបស្សនាប្រឹក្សាយោបល់ដូចម្តេច?
-                            </button>
-                        </h2>
-                        <div id="q8" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                លទ្ធផលលម្អិតលម្អន់ប្រឹក្សាយោបល់នឹងផ្សេងគ្នា៖
-                                <ul>
-                                    <li><strong>ខ្លីលម្អិតលម្អន់:</strong> ពង្រឹងលក្ខណៈលម្អិតលម្អន់
-                                        ម្តងក៏ប៉ុន្តែលក្ខណៈលម្អិត</li>
-                                    <li><strong>មិនលម្អិតលម្អន់ដូច្នេះ:</strong> ធម៌លម្អិតលម្អន់រៀងរាល់
-                                        ដូច្នេះលក្ខណៈលម្អិត
-                                    </li>
-                                    <li><strong>ពូលលម្អិតលម្អន់ៃ:</strong> សន្តិភាព លេខលម្អិត ដូច្នេះលក្ខណៈលម្អិត</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card cta-card text-center mt-5">
-                    <div class="card-body p-5 fs-5">
-                        <h4 class="card-title fw-bold">ត្រៀមខ្លួនចាប់ផ្ដើមហើយឬនៅ?</h4>
-                        <p class="card-text my-3">ការយល់ដឹងចាប់ផ្ដើមពីការបដិបត្តិ។ ស្វែងយល់បន្ថែមអំពីវគ្គសិក្សា
-                            ឬចាប់ផ្ដើមសមាធិខ្លីៗថ្ងៃនេះ។</p>
-                        <a href="#" class="btn btn-custom-gold">ស្វែងរកវគ្គសិក្សានៅក្បែរអ្នក</a>
-                    </div>
-                </div>
-
+                </section>
             </div>
         </div>
+        <section class="mission-section py-5">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold" style="color: #c9a42e;">អំពីគេហទំព័រនេះ</h2>
+                    <div style="width: 60px; height: 3px; background-color: #c9a42e; margin: 10px auto;"></div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card feature-card p-4 text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-bullseye fa-2x" style="color: #c9a42e;"></i>
+                            </div>
+                            <div class="card-body p-0">
+                                <h5 class="card-title fw-bold mb-3">បេសកកម្មរបស់យើង</h5>
+                                <p class="card-text ">ដើម្បីចែករំលែកចំណេះដឹងព្រះធម៌
+                                    និងលើកកម្ពស់គុណតម្លៃសីលធម៌ក្នុងសង្គមខ្មែរ។</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card feature-card p-4 text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-gift fa-2x" style="color: #c9a42e;"></i>
+                            </div>
+                            <div class="card-body p-0">
+                                <h5 class="card-title fw-bold mb-3">ការប្រើប្រាស់ឥតគិតថ្លៃ</h5>
+                                <p class="card-text ">ខ្លឹមសារ និងមេរៀនទាំងអស់ គឺផ្ដល់ជូនដោយឥតគិតថ្លៃ
+                                    ១០០% សម្រាប់ការសិក្សា។</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card feature-card p-4 text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-envelope fa-2x" style="color: #c9a42e;"></i>
+                            </div>
+                            <div class="card-body p-0">
+                                <h5 class="card-title fw-bold mb-3">ទាក់ទងមកយើង</h5>
+                                <p class="card-text ">ប្រសិនបើមានចម្ងល់ ឬចង់ចូលរួមចំណែក
+                                    សូមទាក់ទងមកក្រុមការងារយើងខ្ញុំ។</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mission-section container">
+            <div class="card cta-card text-center mt-5"
+                style="background-color: var(--bg-primary); color:var(--text-primary)">
+                <div class="card-body p-5">
+                    <h4 class="card-title fw-bold">ត្រៀមខ្លួនស្វែងយល់បន្ថែមឬនៅ?</h4>
+                    <p class="card-text my-3">យើងមានមោទនភាពដែលបានចែករំលែកចំណេះដឹងទាំងនេះ។
+                        សូមចាប់ផ្ដើមស្វែងយល់ពីគោលធម៌នានា តាមរយៈទំព័រ FAQ ផ្សេងទៀតរបស់យើង។</p>
+                    <a href="../question.html" class="btn btn-custom-gold">ត្រឡប់ទៅ FAQ Hub</a>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- ═══════════ FOOTER ═══════════ -->
     <footer>
@@ -601,6 +720,32 @@
     <script src="../asset/js/script.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        document.getElementById('searchInput').addEventListener('keyup', function () {
+            let searchQuery = this.value.toLowerCase();
+            let faqItems = document.querySelectorAll('.filter-item');
+            let hasResult = false;
+
+            faqItems.forEach(function (item) {
+                let questionText = item.querySelector('.accordion-button').innerText.toLowerCase();
+                let answerText = item.querySelector('.accordion-body').innerText.toLowerCase();
+
+                if (questionText.includes(searchQuery) || answerText.includes(searchQuery)) {
+                    item.style.display = 'block';
+                    hasResult = true;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            let noResultMsg = document.getElementById('noResult');
+            if (hasResult) {
+                noResultMsg.classList.add('d-none');
+            } else {
+                noResultMsg.classList.remove('d-none');
+            }
+        });
     </script>
 </body>
 

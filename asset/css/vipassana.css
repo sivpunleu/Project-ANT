@@ -9,7 +9,7 @@
 
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url('https://wallpapercave.com/wp/wp5240710.jpg');
+        url('../images/vannda_img/hero_vipassana.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -119,14 +119,14 @@
     margin-bottom: 30px;
 }
 
-.nav-link {
+/* .nav-link {
     color: #333;
     border: none;
     border-radius: 8px;
     padding: 10px 20px;
     margin: 0 10px;
     font-weight: 500;
-}
+} */
 
 .tab-content-card {
     /* background-color: #4a7cb9; */
@@ -217,7 +217,7 @@
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
-    background: #2c73df;
+    background: #905900;
 }
 
 .container .card .slide.slide2 .content p {
@@ -271,14 +271,24 @@ img {
 }
 
 .bg-white1:hover {
-    background-color: #b87707 !important;
+    background-color: #aa7a00 !important;
     color: #f8f9fa;
 }
 
 .bg-white1:hover .icon {
-    color: #0257a2 !important;
+    color: #a57700 !important;
+}
+/* កំណត់ពណ៌ពេល Active ទៅជាពណ៌លឿង */
+.nav-pills .nav-link.active {
+    background-color: #dca10c !important; /* ពណ៌លឿង */
+    color: #000 !important; /* ដាក់អក្សរពណ៌ខ្មៅវិញ ដើម្បីឱ្យងាយមើលលើផ្ទៃលឿង */
+    font-weight: bold; /* ដាក់អក្សរដិត */
 }
 
+/* (ជម្រើសបន្ថែម) កំណត់ពណ៌អក្សរធម្មតាពេលមិនទាន់ចុច */
+.nav-pills .nav-link {
+    color: #a27502; /* ពណ៌ទឹកក្រូច/មាស ពេលមិនទាន់ចុច (អាចដូរតាមចិត្ត) */
+}
 
 /* Style for the active sidebar item */
 .list-group-item-action.active {
@@ -389,3 +399,18 @@ img {
     fill: var(--brand-color);
     cursor: pointer;
 }
+
+    /* padding 80px */
+    /* សម្រាប់អេក្រង់ទូទៅ (ទូរស័ព្ទ/អេក្រង់តូច) */
+    .mission-section {
+      padding: 40px 0;
+      /* ដាក់ត្រឹម 40px បានហើយកុំឱ្យចង្អៀតពេក */
+    }
+
+    /* សម្រាប់អេក្រង់ធំ (ចាប់ពី Tablet ឬ PC ឡើងទៅ) */
+    @media (min-width: 768px) {
+      .mission-section {
+        padding: 80px 0;
+        /* ដាក់ 80px វិញពេលអេក្រង់ធំ */
+      }
+    }

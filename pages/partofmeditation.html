@@ -200,7 +200,7 @@
 
 
                         <!-- User Profile -->
-                         <a href="../pages/auth/user_profile.html" class="user-profile rounded-5">
+                        <a href="../pages/auth/user_profile.html" class="user-profile rounded-5">
                             <img src="../asset/images/img-profile/user-profile.png" alt=""
                                 class="img-f rounded-5 overflow-hidden" style="width: 50px; " height="50px">
                         </a>
@@ -213,318 +213,469 @@
     </header>
     <main>
         <div class="container mt-5">
-            <div class=" mb-5 d-flex justify-content-between align-items-center">
-                <div class="back-button btn btn-outline-primary">
-                    <a href="questionandanwser.html">
-                        <i class="fas fa-arrow-left "></i> ត្រឡប់ទៅ សំណួរ និង ចម្លើយ
-                    </a>
-                </div>
-                <div class="back-button btn btn-outline-primary">
-                    <a href="partOfSila.html">
-                        សំណួរ និង ចម្លើយ ផ្នែកសីល
-                       <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
             <div class="faq-container">
                 <div class="faq-header text-center">
 
                     <img src="../asset/images/vannda_img/meditation.jpg" alt="សមាធិ" class="header-image">
-
-                    
-                    <h1 class="text-center">សំណួរ និង ចម្លើយផ្នែកសមាធិ</h1>
-                    <p class="text-center">ស្វែងយល់ពីការបដិបត្តិសមាធិ ការតាំងចិត្ត និងអានាបានស្សតិ</p>
                 </div>
+                <section class="mission-section">
+                    <div class="text-center mb-5">
+                        <h1 class="fw-bold mb-3" style="color: var(--text-dark);">សំណួរ និង ចម្លើយអំពី សមាធិ</h1>
+                        <p class="text-muted mb-4">ស្វែងយល់ពីការផ្តោតចិត្ត និងអានាបានស្សតិ</p>
 
-                <div class="principles-section mb-5">
-                    <h2 class="text-center mb-4" style="color: #c9a42e; font-weight: 700;">គោលការណ៍គ្រឹះនៃការបដិបត្តិ
-                    </h2>
-                    <div class="row g-4">
-                        <div class="col-md-4">
-                            <div class="card principle-card h-100 text-center">
-                                <div class="card-body bg-light rounded-5">
-                                    <i class="fas fa-dot-circle"></i>
-                                    <h5 class="card-title fw-bold">សមាធិ (ការផ្ចង់ចិត្ត)</h5>
-                                    <p class="card-text">ការបង្រួមចិត្តឲ្យមូលតែមួយ មិនរាយមាយ នាំឲ្យកើតសេចក្ដីស្ងប់
-                                        និងថាមពលចិត្ត។</p>
+                        <div class="search-container mb-5">
+                            <i class="fas fa-search search-icon"></i>
+                            <input type="text" id="searchInput" class="form-control search-input"
+                                placeholder="ស្វែងរកសំណួរ... (ឧ. អានាបានស្សតិ, ឧបសគ្គ)">
+                        </div>
+
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="questionandanwser.html" class="btn btn-outline-secondary rounded-pill px-4">
+                                <i class="fas fa-arrow-left me-2"></i> ត្រឡប់ក្រោយ
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9">
+                            <div class="accordion" id="faqAccordion">
+
+                                <div class="accordion-item filter-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#q1">
+                                            ១. សមាធិគឺជាអ្វី?
+                                        </button>
+                                    </h2>
+                                    <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            សមាធិ (Samadhi) មានន័យថា "ឈានដល់ការផ្តោតចិត្ត" ឬ "ការតាំងចិត្តមាំ"។
+                                            វាជាលក្ខណៈនៃចិត្ត ដែលមូលផ្តោតលើវត្ថុមួយ ឬអារម្មណ៍មួយ ដោយគ្មានការរំខាន
+                                            ឬការរាយមាយ។ សមាធិគឺជាផ្នែកសំខាន់មួយនៃផ្លូវក្នុងព្រះពុទ្ធសាសនា
+                                            ដែលនាំឱ្យដល់សេចក្ដីស្ងប់ និងមោក្ខធម៌ (Nirvana)។
+                                            <div class="highlight">
+                                                <strong>ឧទាហរណ៍៖</strong> ដូចពន្លឺឡាស៊ែរដែលផ្តោតលើគោលដៅមួយច្បាស់
+                                                ដោយមិនមានការរំខានពីពន្លឺផ្សេងទៀត។
+                                            </div>
+
+                                            <div
+                                                class="feedback-section d-flex justify-content-between align-items-center">
+                                                <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                <div>
+                                                    <button class="btn-feedback me-2"><i
+                                                            class="far fa-thumbs-up"></i></button>
+                                                    <button class="btn-feedback"><i
+                                                            class="far fa-thumbs-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item filter-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#q2">
+                                            ២. តើសមាធិ និងវិបស្សនាមានទំនាក់ទំនងដូចម្តេច?
+                                        </button>
+                                    </h2>
+                                    <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            សមាធិ និងវិបស្សនាគឺជាផ្នែកដែលចូលរួមគ្នាក្នុងផ្លូវព្រះពុទ្ធសាសនា៖
+                                            <ul>
+                                                <li><strong>សមាធិ:</strong> ផ្តោតលើវត្ថុ ធ្វើឱ្យចិត្តនៅស្ងប់ស្ងាប់
+                                                    (Samatha)</li>
+                                                <li><strong>វិបស្សនា:</strong> សង្កេតលក្ខណៈពិតប្រាកដ ដើម្បីបង្កើតបញ្ញា
+                                                    (Vipassana)</li>
+                                            </ul>
+                                            <div class="highlight">
+                                                សមាធិគឺមូលដ្ឋាននៃវិបស្សនា។ ដោយគ្មានសមាធិដ៏រឹងមាំ
+                                                ចិត្តមិនស្ងប់ស្ងាប់ដើម្បីពិចារណាវិបស្សនាបានល្អទេ។
+                                            </div>
+
+                                            <div
+                                                class="feedback-section d-flex justify-content-between align-items-center">
+                                                <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                <div>
+                                                    <button class="btn-feedback me-2"><i
+                                                            class="far fa-thumbs-up"></i></button>
+                                                    <button class="btn-feedback"><i
+                                                            class="far fa-thumbs-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item filter-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#q3">
+                                            ៣. តើលក្ខណៈនៃសមាធិមានអ្វីខ្លះ?
+                                        </button>
+                                    </h2>
+                                    <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            សមាធិមានកម្រិតផ្សេងៗគ្នា៖
+                                            <div class="step-box">
+                                                <strong>១. សមាធិរូបជ្ឈាន (Rupa Jhana):</strong> សមាធិដែលមានរូបជាអារម្មណ៍
+                                                ប្រកបដោយការពិចារណា និងសេចក្តីសុខ។
+                                            </div>
+                                            <div class="step-box">
+                                                <strong>២. សមាធិអរូបជ្ឈាន (Arupa Jhana):</strong>
+                                                សមាធិដែលគ្មានរូបជាអារម្មណ៍ មានកម្រិតខ្ពស់ជាង។
+                                            </div>
+                                            <div class="step-box">
+                                                <strong>៣. សមាធិលោកុត្តរ (Lokuttara):</strong>
+                                                សមាធិដែលនាំឱ្យដល់ការរួចផុតពីទុក្ខ (មគ្គផល)។
+                                            </div>
+
+                                            <div
+                                                class="feedback-section d-flex justify-content-between align-items-center">
+                                                <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                <div>
+                                                    <button class="btn-feedback me-2"><i
+                                                            class="far fa-thumbs-up"></i></button>
+                                                    <button class="btn-feedback"><i
+                                                            class="far fa-thumbs-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item filter-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#q4">
+                                            ៤. តើរបៀបបង្កើតសមាធិដូចម្តេច?
+                                        </button>
+                                    </h2>
+                                    <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            វិធីបដិបត្តិសមាធិ៖
+                                            <div class="step-box">
+                                                <strong>ជំហានទី ១:</strong> រកទីកន្លែងស្ងប់ស្ងាប់
+                                                និងអង្គុយក្នុងឥរិយាបថស្រួលខ្លួន។
+                                            </div>
+                                            <div class="step-box">
+                                                <strong>ជំហានទី ២:</strong> សម្រួលរាងកាយ និងចិត្តឱ្យធូរស្រាល។
+                                            </div>
+                                            <div class="step-box">
+                                                <strong>ជំហានទី ៣:</strong> យកវត្ថុសម្រាប់ផ្តោតអារម្មណ៍ (កម្មដ្ឋាន)
+                                                ដូចជាដង្ហើម ឬពាក្យបរិកម្ម (ពុទ្ធោ)។
+                                            </div>
+                                            <div class="step-box">
+                                                <strong>ជំហានទី ៤:</strong> ផ្តោតលើវត្ថុនោះដោយទៀងទាត់ រហូតដល់ចិត្តស្ងប់។
+                                            </div>
+                                            <div class="step-box">
+                                                <strong>ជំហានទី ៥:</strong> ព្យាយាមកុំឱ្យមានការរំខានពីការគិតផ្សេងៗ។
+                                            </div>
+
+                                            <div
+                                                class="feedback-section d-flex justify-content-between align-items-center">
+                                                <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                <div>
+                                                    <button class="btn-feedback me-2"><i
+                                                            class="far fa-thumbs-up"></i></button>
+                                                    <button class="btn-feedback"><i
+                                                            class="far fa-thumbs-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item filter-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#q5">
+                                            ៥. តើអានាបានស្សតិគឺជាអ្វី?
+                                        </button>
+                                    </h2>
+                                    <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            អានាបានស្សតិ (Anapanasati) មានន័យថា "ការមានសតិដឹងខ្យល់ដង្ហើម"។
+                                            វាជាវិធីសាស្ត្របដិបត្តិផ្តោតលើខ្យល់ដង្ហើមចូល និងដង្ហើមចេញ។
+                                            វាជាវិធីសាស្ត្របង្កើតសមាធិ
+                                            ដែលសាមញ្ញ ប៉ុន្តែមានប្រសិទ្ធភាពខ្ពស់។
+                                            <div class="highlight">
+                                                អានាបានស្សតិ គឺជាវិធីសាស្ត្រដែលព្រះពុទ្ធទ្រង់សរសើរ
+                                                និងប្រើប្រាស់ច្រើនជាងគេ
+                                                ដើម្បីឈានទៅដល់ការត្រាស់ដឹង។
+                                            </div>
+
+                                            <div
+                                                class="feedback-section d-flex justify-content-between align-items-center">
+                                                <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                <div>
+                                                    <button class="btn-feedback me-2"><i
+                                                            class="far fa-thumbs-up"></i></button>
+                                                    <button class="btn-feedback"><i
+                                                            class="far fa-thumbs-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item filter-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#q6">
+                                            ៦. តើរបៀបបង្កើតអានាបានស្សតិ?
+                                        </button>
+                                    </h2>
+                                    <div id="q6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            វិធីបដិបត្តិអានាបានស្សតិ៖
+                                            <div class="step-box">
+                                                <strong>ដំណាក់កាល ១:</strong> ជ្រើសរើសទីកន្លែងស្ងប់ស្ងាត់ (ព្រៃ,
+                                                ក្រោមដើមឈើ, ឬផ្ទះស្ងាត់)។
+                                            </div>
+                                            <div class="step-box">
+                                                <strong>ដំណាក់កាល ២:</strong> អង្គុយពត់ភ្នែន តាំងខ្លួនឱ្យត្រង់។
+                                            </div>
+                                            <div class="step-box">
+                                                <strong>ដំណាក់កាល ៣:</strong> កំណត់ចិត្តដឹងថា "ចូល" ពេលដកដង្ហើមចូល និង
+                                                "ចេញ" ពេលដកដង្ហើមចេញ។
+                                            </div>
+                                            <div class="step-box">
+                                                <strong>ដំណាក់កាល ៤:</strong> តាមដានខ្យល់ដង្ហើមជាប់រហូត កុំឱ្យដាច់។
+                                            </div>
+                                            <div class="step-box">
+                                                <strong>ដំណាក់កាល ៥:</strong> មិនរវល់នឹងការគិតគូរផ្សេងទៀត
+                                                ក្រៅពីខ្យល់ដង្ហើម។
+                                            </div>
+
+                                            <div
+                                                class="feedback-section d-flex justify-content-between align-items-center">
+                                                <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                <div>
+                                                    <button class="btn-feedback me-2"><i
+                                                            class="far fa-thumbs-up"></i></button>
+                                                    <button class="btn-feedback"><i
+                                                            class="far fa-thumbs-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item filter-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#q7">
+                                            ៧. តើសមាធិមានប្រយោជន៍ដូចម្តេច?
+                                        </button>
+                                    </h2>
+                                    <div id="q7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            សមាធិមានប្រយោជន៍ច្រើន៖
+                                            <ul>
+                                                <li><strong>ពង្រឹងចិត្ត:</strong> ធ្វើឱ្យចិត្តរឹងមាំ មិនងាយរង្គោះរង្គើ។
+                                                </li>
+                                                <li><strong>សន្តិភាព:</strong> ផ្តល់សេចក្តីសុខ និងភាពរីករាយក្នុងចិត្ត។
+                                                </li>
+                                                <li><strong>ចម្រើនបញ្ញា:</strong> ធ្វើឱ្យចិត្តស្ងប់
+                                                    ដើម្បីឱ្យបញ្ញាកើតឡើង។</li>
+                                                <li><strong>គ្រប់គ្រងចិត្ត:</strong> អាចគ្រប់គ្រងអារម្មណ៍មិនល្អបាន។</li>
+                                                <li><strong>មោក្ខធម៌:</strong> ជាផ្លូវនាំទៅរកការរំលត់ទុក្ខ។</li>
+                                            </ul>
+
+                                            <div
+                                                class="feedback-section d-flex justify-content-between align-items-center">
+                                                <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                <div>
+                                                    <button class="btn-feedback me-2"><i
+                                                            class="far fa-thumbs-up"></i></button>
+                                                    <button class="btn-feedback"><i
+                                                            class="far fa-thumbs-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item filter-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#q8">
+                                            ៨. តើគួរធ្វើសមាធិរយៈពេលប៉ុន្មាន?
+                                        </button>
+                                    </h2>
+                                    <div id="q8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            មិនមានច្បាប់កំណត់តឹងរ៉ឹងទេ ប៉ុន្តែជាការណែនាំ៖
+                                            <ul>
+                                                <li><strong>អ្នកចាប់ផ្តើម:</strong> ១៥-៣០ នាទីក្នុងមួយថ្ងៃ។</li>
+                                                <li><strong>អ្នកធ្លាប់បដិបត្តិ:</strong> ៣០-៦០ នាទី។</li>
+                                                <li><strong>អ្នកបដិបត្តិខ្លាំង:</strong> ១-៣ ម៉ោងឬលើសពីនេះ។</li>
+                                            </ul>
+                                            <div class="highlight">
+                                                <strong>ដំបូន្មាន:</strong> ភាពទៀងទាត់ (ធ្វើរាល់ថ្ងៃ)
+                                                សំខាន់ជាងការធ្វើរយៈពេលយូរតែម្តងម្កាល។
+                                            </div>
+
+                                            <div
+                                                class="feedback-section d-flex justify-content-between align-items-center">
+                                                <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                <div>
+                                                    <button class="btn-feedback me-2"><i
+                                                            class="far fa-thumbs-up"></i></button>
+                                                    <button class="btn-feedback"><i
+                                                            class="far fa-thumbs-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item filter-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#q9">
+                                            ៩. តើមានឧបសគ្គអ្វីខ្លះក្នុងការធ្វើសមាធិ?
+                                        </button>
+                                    </h2>
+                                    <div id="q9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            ឧបសគ្គ (នីវរណៈធម៌) ក្នុងការធ្វើសមាធិមាន៖
+                                            <ul>
+                                                <li><strong>ចិត្តរាយមាយ (Uddhacca):</strong> ចិត្តមិននៅស្ងៀម
+                                                    គិតរឿងនេះរឿងនោះ។</li>
+                                                <li><strong>សេចក្តីរសាប់រសល់ (Kukkucca):</strong> ការក្តៅក្រហាយចិត្ត
+                                                    ឬស្តាយក្រោយ។</li>
+                                                <li><strong>សេចក្តីងងុយ (Thina-middha):</strong> ងងុយគេង ឬធុញទ្រាន់។
+                                                </li>
+                                                <li><strong>ការសង្ស័យ (Vicikiccha):</strong> មិនជឿជាក់លើការបដិបត្តិ។
+                                                </li>
+                                                <li><strong>កាមឆន្ទៈ (Kamachanda):</strong>
+                                                    ការជាប់ជំពាក់ក្នុងអារម្មណ៍ផ្សេងៗ។</li>
+                                            </ul>
+                                            <div class="highlight">
+                                                <strong>ដំណោះស្រាយ:</strong> ព្យាយាមដឹងខ្លួន
+                                                និងប្រឹក្សាយោបល់ជាមួយគ្រូដែលមានបទពិសោធន៍។
+                                            </div>
+
+                                            <div
+                                                class="feedback-section d-flex justify-content-between align-items-center">
+                                                <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                <div>
+                                                    <button class="btn-feedback me-2"><i
+                                                            class="far fa-thumbs-up"></i></button>
+                                                    <button class="btn-feedback"><i
+                                                            class="far fa-thumbs-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item filter-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#q10">
+                                            ១០. តើលទ្ធផលនៃសមាធិមានអ្វីខ្លះ?
+                                        </button>
+                                    </h2>
+                                    <div id="q10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            លទ្ធផលនៃការបដិបត្តិអាចនឹងផ្សេងគ្នា៖
+                                            <ul>
+                                                <li><strong>សន្តិភាព:</strong> ទទួលបានសេចក្តីសុខ និងភាពស្រស់ស្រាយ។</li>
+                                                <li><strong>ការផ្តោតអារម្មណ៍:</strong> ធ្វើការងារឬការសិក្សាបានល្អជាងមុន។
+                                                </li>
+                                                <li><strong>បញ្ញា:</strong> យល់ដឹងពីសច្ចធម៌ និងជីវិតពិត។</li>
+                                                <li><strong>មោក្ខធម៌:</strong> ឈានទៅដល់ការរំលត់ទុក្ខជាទីបំផុត។</li>
+                                            </ul>
+
+                                            <div
+                                                class="feedback-section d-flex justify-content-between align-items-center">
+                                                <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                                <div>
+                                                    <button class="btn-feedback me-2"><i
+                                                            class="far fa-thumbs-up"></i></button>
+                                                    <button class="btn-feedback"><i
+                                                            class="far fa-thumbs-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div id="noResult" class="text-center mt-4 d-none">
+                                <img src="https://cdn-icons-png.flaticon.com/512/7486/7486754.png" width="80"
+                                    alt="No result">
+                                <p class="text-muted mt-2">មិនមានលទ្ធផលសម្រាប់ការស្វែងរកនេះទេ។</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="mission-section py-5">
+                    <div class="container">
+
+                        <div class="text-center mb-5">
+                            <h2 class="fw-bold" style="color: #c9a42e;">អំពីគេហទំព័រនេះ</h2>
+                            <div style="width: 60px; height: 3px; background-color: #c9a42e; margin: 10px auto;"></div>
+                        </div>
+
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card feature-card p-4 text-center">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-bullseye fa-2x" style="color: #c9a42e;"></i>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title fw-bold mb-3">សមាធិ (ការផ្ចង់ចិត្ត)</h5>
+                                        <p class="card-text ">ការបង្រួមចិត្តឲ្យមូលតែមួយ មិនរាយមាយ នាំឲ្យកើតសេចក្ដីស្ងប់
+                                            និងថាមពលចិត្ត។</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card principle-card h-100 text-center">
-                                <div class="card-body bg-light rounded-5">
-                                    <i class="fas fa-eye"></i>
-                                    <h5 class="card-title fw-bold">សតិ (ការតាំងចិត្ត)</h5>
-                                    <p class="card-text">ការដឹងខ្លួនច្បាស់ក្នុងពេលបច្ចុប្បន្ន នូវអ្វីដែលកំពុងកើតឡើង
-                                        ទាំងកាយ វិញ្ញាណ និងចិត្ត។</p>
+
+                            <div class="col-md-4">
+                                <div class="card feature-card p-4 text-center">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-gift fa-2x" style="color: #c9a42e;"></i>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title fw-bold mb-3">ការប្រើប្រាស់ឥតគិតថ្លៃ</h5>
+                                        <p class="card-text ">ខ្លឹមសារ និងមេរៀនទាំងអស់ គឺផ្ដល់ជូនដោយឥតគិតថ្លៃ
+                                            ១០០% សម្រាប់ការសិក្សា។</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card principle-card h-100 text-center">
-                                <div class="card-body bg-light rounded-5">
-                                    <i class="fas fa-wind"></i>
-                                    <h5 class="card-title fw-bold">អានាបានស្សតិ (ដង្ហើម)</h5>
-                                    <p class="card-text">ការយកចិត្តទុកដាក់លើដង្ហើមចេញ-ចូល ដែលជាអន្យូងដ៏សាមញ្ញ
-                                        តែមានប្រសិទ្ធភាពបំផុត។</p>
+
+                            <div class="col-md-4">
+                                <div class="card feature-card p-4 text-center">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-envelope fa-2x" style="color: #c9a42e;"></i>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title fw-bold mb-3">អានាបានស្សតិ (ដង្ហើម)</h5>
+                                        <p class="card-text ">ការយកចិត្តទុកដាក់លើដង្ហើមចេញ-ចូល ដែលជាអន្យូងដ៏សាមញ្ញ
+                                            តែមានប្រសិទ្ធភាពបំផុត។</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <hr class="my-5" style="border-top: 1px solid #e0e0e0;">
-
-                <div class="accordion" id="faqAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q1">
-                                ១. សមាធិគឺជាអ្វី?
-                            </button>
-                        </h2>
-                        <div id="q1" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                សមាធិ (Samadhi) មានន័យថា "ឈានដល់ការផ្តោតចិត្ត" ឬ "ស្ថាប័នចិត្ត"។
-                                វាជាលក្ខណៈនៃស្ថាប័នចិត្ត ដែលបង្រួមលម្អិតលម្អន់ ឬផ្តោតលើវត្ថុមួយ ដោយគ្មានការរំខាន
-                                ឬការរខ្ចាប់។ សមាធិគឺជាផ្នែកសំខាន់មួយនៃផ្លូវក្នុងព្រះពុទ្ធសាសនា
-                                ដែលនាំឱ្យដល់សេចក្ដីលម្អិតលម្អន់ និងមោក្ខ (Nirvana)។
-                                <div class="highlight">
-                                    <strong>ឧទាហរណ៍៖</strong> ដូចលទ្ធផលឆ្នូតដែលផ្តោតលើគោលដៅមួយ
-                                    វិនាទីរំខាននៃឧបសគ្គផ្សេងទៀត។
-                                </div>
-                            </div>
+                </section>
+                <section class="mission-section container">
+                    <div class="card cta-card text-center mt-5"
+                        style="background-color: var(--bg-primary); color:var(--text-primary)">
+                        <div class="card-body p-5">
+                            <h4 class="card-title fw-bold">ត្រៀមខ្លួនស្វែងរកភាពស្ងប់ឬនៅ?</h4>
+                            <p class="card-text my-3">ការបដិបត្តិសមាធិ ចាប់ផ្ដើមពីការផ្ចង់ចិត្តសាមញ្ញៗ។
+                                សាកល្បងចាប់ផ្ដើមបដិបត្តិដង្ហើមរបស់អ្នកថ្ងៃនេះ។</p>
+                            <a href="../question.html" class="btn btn-custom-gold">ត្រឡប់ទៅ FAQ Hub</a>
                         </div>
                     </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q2">
-                                ២. តើសមាធិ និងវិបស្សនាមានទំនាក់ទំនងដូចម្តេច?
-                            </button>
-                        </h2>
-                        <div id="q2" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                សមាធិ និងវិបស្សនាគឺជាផ្នែកដែលចូលរួមគ្នាក្នុងផ្លូវព្រះពុទ្ធសាសនា៖
-                                <ul>
-                                    <li><strong>សមាធិ:</strong> ផ្តោតលើវត្ថុ ធ្វើឱ្យចិត្តនៅស្ងប់ស្ងាប់</li>
-                                    <li><strong>វិបស្សនា:</strong> សង្កេតលក្ខណៈពិតប្រាកដ ដែលបង្កើតលម្អិតលម្អន់</li>
-                                </ul>
-                                <div class="highlight">
-                                    សមាធិគឺមូលដ្ឋាននៃវិបស្សនា។ ដោយគ្មានសមាធិដ៏មួង
-                                    ចិត្តមិនស្ងប់ស្ងាប់ដើម្បីឃើញវិបស្សនាបានទេ។
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q3">
-                                ៣. តើលក្ខណៈនៃសមាធិមាន?
-                            </button>
-                        </h2>
-                        <div id="q3" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                សមាធិមានលក្ខណៈវិស័យ៖
-                                <div class="step-box">
-                                    <strong>១. សមាធិលោកៀក (Kama Jhana):</strong> សមាធិក្នុងលោក ដែលមាននឹងគិតគូរ ពិចារណា
-                                    និងរីករាយ
-                                </div>
-                                <div class="step-box">
-                                    <strong>២. សមាធិលោក (Rupajjhana):</strong> សមាធិក្នុងលោក ដែលលម្អិតលម្អន់គ្រប់វាង
-                                    រីករាយ
-                                </div>
-                                <div class="step-box">
-                                    <strong>៣. សមាធិលោក (Arupajjhana):</strong> សមាធិក្នុងលោកគ្មានរូប
-                                    ដែលលម្អិតលម្អន់ខ្ពស់ជាង
-                                </div>
-                                <div class="step-box">
-                                    <strong>៤. សមាធិលោក (Lokottara):</strong> សមាធិលើលោក ដែលនាំឱ្យដល់មោក្ខ
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q4">
-                                ៤. តើរបៀបបង្កើតសមាធិដូចម្តេច?
-                            </button>
-                        </h2>
-                        <div id="q4" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                វិធីបង្កើតសមាធិ៖
-                                <div class="step-box">
-                                    <strong>ជាក់ស្តែង ១:</strong> ស្វាគមន៍ ឬស្ថាប័ននៅលក្ខណៈដ៏ល្អ ដូចជាវត
-                                </div>
-                                <div class="step-box">
-                                    <strong>ជាក់ស្តែង ២:</strong> សុកដូច្នេះនៅក្នុងលក្ខណៈរាងកាយ និងចិត្ត
-                                </div>
-                                <div class="step-box">
-                                    <strong>ជាក់ស្តែង ៣:</strong> យកវត្ថុលម្អិត ដូចលំយោលក្តៅ ឈ្មោះ ឬពណ៌
-                                </div>
-                                <div class="step-box">
-                                    <strong>ជាក់ស្តែង ៤:</strong> ផ្តោតលើវត្ថុដោយទៀងទាត់ រហូតដល់ចិត្តស្ងប់ស្ងាប់
-                                </div>
-                                <div class="step-box">
-                                    <strong>ជាក់ស្តែង ៥:</strong> មិនរំខាននឹងការប៉ះពាល់ ឬការរំខាន
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q5">
-                                ៥. តើអានាបានស្សតិគឺជាអ្វី?
-                            </button>
-                        </h2>
-                        <div id="q5" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                អានាបានស្សតិ (Anapanasati) មានន័យថា "ស្មារតីលើដង្ហើម"។
-                                វាជាវិធីសាស្ត្របដិបត្តិផ្តោតលើលំយោលក្តៅនៃដង្ហើមចូល ដង្ហើមចេញ។ វាជាវិធីសាស្ត្របង្កើតសមាធិ
-                                ដែលសាមញ្ញ ប៉ុន្តែមានប្រសិទ្ធភាពក្នុងការលម្អិតលម្អន់។
-                                <div class="highlight">
-                                    អានាបានស្សតិក្នុងលើកដំបូង របស់ព្រះពុទ្ធ ក្នុងលេខលម្អិតលម្អន់នៃសមាធិ
-                                    ដែលនាំឱ្យដល់មោក្ខលម្អិត។
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q6">
-                                ៦. តើរបៀបបង្កើតអានាបានស្សតិ?
-                            </button>
-                        </h2>
-                        <div id="q6" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                វិធីបង្កើតអានាបានស្សតិ៖
-                                <div class="step-box">
-                                    <strong>ដំណាក់កាល ១:</strong> ជ្រើសរើសលក្ខណៈងាយស្រួល ដូចដង្កូវឬសៀង
-                                </div>
-                                <div class="step-box">
-                                    <strong>ដំណាក់កាល ២:</strong> ផ្តោតលើលំយោលក្តៅ ដង្ហើមចូល ដង្ហើមចេញ
-                                </div>
-                                <div class="step-box">
-                                    <strong>ដំណាក់កាល ៣:</strong> កំណត់ចិត្ត "ចូល" លើដង្ហើមចូល "ចេញ" លើដង្ហើមចេញ
-                                </div>
-                                <div class="step-box">
-                                    <strong>ដំណាក់កាល ៤:</strong> ស្វាគមន៍ផ្តោតលើលំយោលក្តៅ រហូតដល់ស្ងប់ស្ងាប់
-                                </div>
-                                <div class="step-box">
-                                    <strong>ដំណាក់កាល ៥:</strong> មិនរំខាននឹងការគិតគូរផ្សេងទៀត
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q7">
-                                ៧. តើសមាធិមានប្រយោជន៍ដូចម្តេច?
-                            </button>
-                        </h2>
-                        <div id="q7" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                សមាធិមានប្រយោជន៍ច្រើន៖
-                                <ul>
-                                    <li><strong>ពង្រឹងចិត្ត:</strong> ធ្វើឱ្យចិត្តរឹងមាំ មិនរ면្ទរទទួលស្វាគមន៍</li>
-                                    <li><strong>សន្តិភាព:</strong> ឱកាសលស្វាគមន៍ រីករាយ និងងាយស្រួល</li>
-                                    <li><strong>ចម្រើនបញ្ញា:</strong> ដោយចិត្តស្ងប់ស្ងាប់ វិបស្សនាលម្អិត</li>
-                                    <li><strong>គ្រប់គ្រង់ចិត្ត:</strong> ផ្តោតលើវត្ថុដែលលើកកម្ពស់</li>
-                                    <li><strong>មោក្ខ:</strong> ដែលនាំឱ្យដល់សេចក្ដីលម្អិតលម្អន់ នៃលក្ខណៈពិតប្រាកដ</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q8">
-                                ៨. តើលេខលម្អិតលម្អន់របស់សមាធិ គឺប៉ុន្មាននាទី?
-                            </button>
-                        </h2>
-                        <div id="q8" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                មិនមាននិយមលម្អិតតឹងរ៉ាប់រង់ នោះលេខលម្អិតលម្អន់អាច៖
-                                <ul>
-                                    <li><strong>ចាប់ផ្តើម:</strong> ១៥-៣០ នាទីក្នុងមួយថ្ងៃ</li>
-                                    <li><strong>អាចលាក់សមាធិ:</strong> ៣០-៦០ នាទី</li>
-                                    <li><strong>អ្នកលម្អិតលម្អន់:</strong> ១-៣ ម៉ោងឬលើស</li>
-                                </ul>
-                                <div class="highlight">
-                                    <strong>ដំបូន្ដៃ:</strong> ធម្មតាលម្អិតលម្អន់ ដូច្នេះលក្ខណៈ ជាងលេខលម្អិតលម្អន់ប្រវែង
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q9">
-                                ៩. តើមានលក្ខណៈឧបសគ្គក្នុងបង្កើតសមាធិ?
-                            </button>
-                        </h2>
-                        <div id="q9" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                លក្ខណៈឧបសគ្គក្នុងបង្កើតសមាធិ៖
-                                <ul>
-                                    <li><strong>ល្ងង់ផ្លូវ (Wandering Mind):</strong> ចិត្តផ្លាស់ប្តូរចាក់ផ្តើមផ្សេងទៀត
-                                    </li>
-                                    <li><strong>ងេងឹង (Restlessness):</strong> ចិត្តមិនស្ងប់ស្ងាប់ ឬស្ងប់ស្ងាប់</li>
-                                    <li><strong>ក្ដៅខាង (Sleepiness):</strong> ក្ដៅខាង ឬងង៉ាប់ក្នុងលេខលម្អិត</li>
-                                    <li><strong>ការលង្វង់ (Doubt):</strong> មិនមាននឹងលើលម្អិត ឬលេខលម្អិត</li>
-                                    <li><strong>ការខ្មាក់ (Craving):</strong> ចូលចិត្តលើដែលលាក់លម្អិតលម្អន់ផ្សេងទៀត</li>
-                                </ul>
-                                <div class="highlight">
-                                    <strong>ដំណោះស្រាយ:</strong> សូមស្វាគមន៍ធម៌ និងក្រូរលម្អិតលម្អន់ដែលមាន
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item ">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q10">
-                                ១០. តើលទ្ធផលលម្អិតលម្អន់នៃសមាធិប៉ះពាល់ដូចម្តេច?
-                            </button>
-                        </h2>
-                        <div id="q10" class="accordion-collapse collapse fs-5" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                លទ្ធផលលម្អិតលម្អន់នឹងផ្សេងគ្នា រលាក់ផ្តើមលើលើលម្អិត និងលម្អិតលម្អន់៖
-                                <ul>
-                                    <li><strong>សន្តិភាព:</strong> ឱកាសលស្វាគមន៍ និងងាយស្រួល</li>
-                                    <li><strong>ផ្តោតលម្អិត:</strong> ពង្រឹងលម្អិតលម្អន់របស់ចិត្ត</li>
-                                    <li><strong>វិបស្សនា:</strong> ដោយចិត្តស្ងប់ស្ងាប់ ឃើញលក្ខណៈពិតប្រាកដ</li>
-                                    <li><strong>ច្រើននឹង:</strong> ដូច្នេះលម្អិតលម្អន់រលាក់ផ្តើម</li>
-                                    <li><strong>មោក្ខ:</strong> ដែលចម្បងលើនិងលាក់ម៉ាលីលើលម្អិត</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card cta-card text-center mt-5">
-                    <div class="card-body p-5">
-                        <h4 class="card-title fw-bold">ត្រៀមខ្លួនស្វែងរកភាពស្ងប់ឬនៅ?</h4>
-                        <p class="card-text my-3">ការបដិបត្តិសមាធិ ចាប់ផ្ដើមពីការផ្ចង់ចិត្តសាមញ្ញៗ។
-                            សាកល្បងចាប់ផ្ដើមបដិបត្តិដង្ហើមរបស់អ្នកថ្ងៃនេះ។</p>
-                        <a href="#" class="btn btn-custom-gold">ចាប់ផ្ដើមបដិបត្តិ ៥ នាទី</a>
-                    </div>
-                </div>
-
+                </section>
             </div>
         </div>
     </main>
@@ -668,6 +819,32 @@
     <script src="../asset/js/script.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        document.getElementById('searchInput').addEventListener('keyup', function () {
+            let searchQuery = this.value.toLowerCase();
+            let faqItems = document.querySelectorAll('.filter-item');
+            let hasResult = false;
+
+            faqItems.forEach(function (item) {
+                let questionText = item.querySelector('.accordion-button').innerText.toLowerCase();
+                let answerText = item.querySelector('.accordion-body').innerText.toLowerCase();
+
+                if (questionText.includes(searchQuery) || answerText.includes(searchQuery)) {
+                    item.style.display = 'block';
+                    hasResult = true;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            let noResultMsg = document.getElementById('noResult');
+            if (hasResult) {
+                noResultMsg.classList.add('d-none');
+            } else {
+                noResultMsg.classList.remove('d-none');
+            }
+        });
     </script>
 </body>
 

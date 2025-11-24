@@ -200,7 +200,7 @@
 
 
                         <!-- User Profile -->
-                       <a href="../pages/auth/user_profile.html" class="user-profile rounded-5">
+                        <a href="../pages/auth/user_profile.html" class="user-profile rounded-5">
                             <img src="../asset/images/img-profile/user-profile.png" alt=""
                                 class="img-f rounded-5 overflow-hidden" style="width: 50px; " height="50px">
                         </a>
@@ -212,350 +212,304 @@
         </nav>
     </header>
     <main>
-        <div class="container mt-5">
-            <div class=" mb-5 d-flex justify-content-between align-items-center">
-                <div class="back-button btn btn-outline-primary">
-                    <a href="questionandanwser.html">
-                        <i class="fas fa-arrow-left "></i> ត្រឡប់ទៅ សំណួរ និង ចម្លើយ
-                    </a>
+        <section class=" mission-section">
+            <div class="faq-header text-center">
+                <img src="../asset/images/vannda_img/សីល៥.jpg" alt="សីល" class="header-image">
+            </div>
+        </section>
+        <section>
+            <div class="text-center mb-5">
+                <h1 class="fw-bold mb-3" style="color: var(--text-dark);">សំណួរ និង ចម្លើយអំពី សីល</h1>
+                <p class="text-muted mb-4">ស្វែងយល់ពីមូលដ្ឋាននៃសីលធម៌ និងការរស់នៅដ៏ប្រពៃ</p>
+
+                <div class="search-container mb-5">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" class="form-control search-input"
+                        placeholder="ស្វែងរក... (ឧ. សីល ៥, អត្ថប្រយោជន៍)">
                 </div>
-                <div class="back-button btn btn-outline-primary">
-                    <a href="Triple.html">
-                        សំណួរ និង ចម្លើយ ផ្នែកព្រះរតនត្រ័យ
-                       <i class="fa-solid fa-arrow-right"></i>
+
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="questionandanwser.html" class="btn btn-outline-secondary rounded-pill px-4">
+                        <i class="fas fa-arrow-left me-2"></i> ត្រឡប់ក្រោយ
                     </a>
                 </div>
             </div>
 
-            <div class="faq-container">
-                <div class="faq-header text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="accordion" id="faqAccordion">
 
-                    <img src="../asset/images/vannda_img/សីល៥.jpg" alt="សីល" class="header-image">
+                        <div class="accordion-item filter-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#q1">
+                                    ១. សីលគឺជាអ្វី?
+                                </button>
+                            </h2>
+                            <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    សីល (Sila) មានន័យថា "ក្បួន" "លក្ខណៈ" ឬ "ប្រក្រតីភាព"។ វាជាការប្រព្រឹត្ត
+                                    ល្អប្រពៃតាមផ្លូវកាយ និងវាចា។ សីលគឺជាមូលដ្ឋានគ្រឹះនៃព្រះពុទ្ធសាសនា
+                                    ដែលនាំមកនូវសេចក្តីស្ងប់ក្នុងសង្គម។
+                                    <div class="highlight">
+                                        សីល គឺការមិនបៀតបៀនខ្លួនឯង និងមិនបៀតបៀនអ្នកដទៃ។
+                                    </div>
+                                    <div class="feedback-section d-flex justify-content-between align-items-center">
+                                        <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                        <div><button class="btn-feedback me-2"><i
+                                                    class="far fa-thumbs-up"></i></button><button
+                                                class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="accordion-item filter-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#q2">
+                                    ២. សីល ៥ គឺជាអ្វី?
+                                </button>
+                            </h2>
+                            <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    សីល ៥ (Panchashila) គឺជាគោលសីលធម៌សម្រាប់គ្រហស្ថទូទៅ៖
+                                    <div class="precept-box"><strong>១. បាណាតិបាតា:</strong>
+                                        វៀរចាកការសម្លាប់សត្វ។</div>
+                                    <div class="precept-box"><strong>២. អទិន្នាទានា:</strong>
+                                        វៀរចាកការលួចទ្រព្យដែលគេមិនបានឱ្យ។</div>
+                                    <div class="precept-box"><strong>៣. កាមេសុមិច្ឆាចារា:</strong>
+                                        វៀរចាកការប្រព្រឹត្តខុសក្នុងកាម។</div>
+                                    <div class="precept-box"><strong>៤. មុសាវាទា:</strong> វៀរចាកការនិយាយកុហក។
+                                    </div>
+                                    <div class="precept-box"><strong>៥. សុរាមេរយៈ:</strong> វៀរចាកការផឹកស្រា
+                                        និងគ្រឿងស្រវឹង។</div>
 
-                    <h1 class="text-center">សំណួរ និង ចម្លើយផ្នែកសីល</h1>
-                    <p class="text-center">សំណួរទាក់ទងនឹងការរក្សាសីល សីល ៥ សីល ៨ និងគុណធម៌ក្នុងសង្គម</p>
+                                    <div class="feedback-section d-flex justify-content-between align-items-center">
+                                        <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                        <div><button class="btn-feedback me-2"><i
+                                                    class="far fa-thumbs-up"></i></button><button
+                                                class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item filter-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#q3">
+                                    ៣. សីល ៨ គឺជាអ្វី?
+                                </button>
+                            </h2>
+                            <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    សីល ៨ (Uposatha Sila) គឺសម្រាប់អ្នកបដិបត្តិធម៌តឹងរ៉ឹង ជាពិសេសថ្ងៃសីល៖
+                                    <div class="precept-box"><strong>១-៥:</strong> ដូចសីល ៥ (តែខទី៣ ប្តូរជា
+                                        មិនរួមភេទដាច់ខាត)។</div>
+                                    <div class="precept-box"><strong>៦. វិកាលភោជនា:</strong>
+                                        វៀរចាកការបរិភោគអាហារក្នុងពេលវិកាល (ក្រោយថ្ងៃត្រង់)។</div>
+                                    <div class="precept-box"><strong>៧. នច្ចគីតវាទិតៈ...:</strong>
+                                        វៀរចាកការរាំច្រៀង, ស្តាប់ភ្លេង, និងការតុបតែងខ្លួន។</div>
+                                    <div class="precept-box"><strong>៨. ឧច្ចាសយនមហាសយនា:</strong>
+                                        វៀរចាកការដេកលើទីខ្ពស់ ឬពូកដែលប្រណិតពេក។</div>
+
+                                    <div class="feedback-section d-flex justify-content-between align-items-center">
+                                        <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                        <div><button class="btn-feedback me-2"><i
+                                                    class="far fa-thumbs-up"></i></button><button
+                                                class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item filter-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#q4">
+                                    ៤. តើសីល ៥ និងសីល ៨ មានភាពខុសគ្នាដូចម្តេច?
+                                </button>
+                            </h2>
+                            <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <table class="table table-bordered table-custom">
+                                        <thead>
+                                            <tr>
+                                                <th>លក្ខណៈ</th>
+                                                <th>សីល ៥</th>
+                                                <th>សីល ៨</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>គោលដៅ</strong></td>
+                                                <td>សម្រាប់មនុស្សទូទៅ</td>
+                                                <td>សម្រាប់អ្នកបដិបត្តិធម៌/ថ្ងៃសីល</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>កាមគុណ</strong></td>
+                                                <td>ហាមតែការខុសក្នុងកាម (មានគូបាន)</td>
+                                                <td>ហាមដាច់ខាត (ព្រហ្មចរិយា)</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>អាហារ</strong></td>
+                                                <td>ញ៉ាំបានគ្រប់ពេល</td>
+                                                <td>ហាមញ៉ាំក្រោយថ្ងៃត្រង់</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>ការកម្សាន្ត</strong></td>
+                                                <td>បានធម្មតា</td>
+                                                <td>ហាមរាំច្រៀង និងតុបតែងខ្លួន</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="feedback-section d-flex justify-content-between align-items-center">
+                                        <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                        <div><button class="btn-feedback me-2"><i
+                                                    class="far fa-thumbs-up"></i></button><button
+                                                class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item filter-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#q5">
+                                    ៥. តើប្រយោជន៍នៃការរក្សាសីលដូចម្តេច?
+                                </button>
+                            </h2>
+                            <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    ប្រយោជន៍នៃការរក្សាសីលមានច្រើន៖
+                                    <ul>
+                                        <li><strong>ភាពស្អាតស្អំ:</strong> ធ្វើឱ្យកាយនិងចិត្តបរិសុទ្ធ
+                                            គ្មានវិប្បដិសារី (ក្តៅក្រហាយ)។</li>
+                                        <li><strong>ការគោរព:</strong> ទទួលបានការគោរពស្រលាញ់ពីមនុស្សជុំវិញខ្លួន។
+                                        </li>
+                                        <li><strong>សមាធិ:</strong> ជាមូលដ្ឋានគ្រឹះធ្វើឱ្យងាយបានសម្រេចសមាធិ។
+                                        </li>
+                                        <li><strong>សុខគតិភព:</strong> ជាស្ពាននាំទៅកាន់ឋានសួគ៌
+                                            ឬសុខគតិភពក្រោយស្លាប់។</li>
+                                    </ul>
+                                    <div class="feedback-section d-flex justify-content-between align-items-center">
+                                        <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                        <div><button class="btn-feedback me-2"><i
+                                                    class="far fa-thumbs-up"></i></button><button
+                                                class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item filter-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#q6">
+                                    ៦. តើរបៀបរក្សាសីលឱ្យល្អ?
+                                </button>
+                            </h2>
+                            <div id="q6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    គន្លឹះដើម្បីរក្សាសីលឱ្យបានល្អ៖
+                                    <div class="precept-box"><strong>១. ការតាំងចិត្ត (ចេតនា):</strong>
+                                        មានចេតនាច្បាស់លាស់ថានឹងមិនប្រព្រឹត្តខុស។</div>
+                                    <div class="precept-box"><strong>២. សតិ (Mindfulness):</strong>
+                                        មានស្មារតីដឹងខ្លួនជានិច្ច មុននឹងធ្វើ ឬនិយាយអ្វីមួយ។</div>
+                                    <div class="precept-box"><strong>៣. ហិរិ និង ឱត្តប្បៈ:</strong>
+                                        មានការខ្មាសអៀន និងខ្លាចរអា ចំពោះអំពើបាប។</div>
+                                    <div class="precept-box"><strong>៤. សមាគម:</strong> សេពគប់មិត្តល្អ
+                                        ដែលជួយដាស់តឿនគ្នា។</div>
+
+                                    <div class="feedback-section d-flex justify-content-between align-items-center">
+                                        <span>តើចម្លើយនេះមានប្រយោជន៍ទេ?</span>
+                                        <div><button class="btn-feedback me-2"><i
+                                                    class="far fa-thumbs-up"></i></button><button
+                                                class="btn-feedback"><i class="far fa-thumbs-down"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="noResult" class="text-center mt-4 d-none">
+                        <img src="https://cdn-icons-png.flaticon.com/512/7486/7486754.png" width="80" alt="No result">
+                        <p class="text-muted mt-2">មិនមានលទ្ធផលសម្រាប់ការស្វែងរកនេះទេ។</p>
+                    </div>
+
                 </div>
-
-                <div class="principles-section mb-5">
-                    <h2 class="text-center mb-4" style="color: #c9a42e; font-weight: 700;">ប្រភេទនៃសីលសំខាន់ៗ</h2>
-                    <div class="row g-4">
-                        <div class="col-md-4">
-                            <div class="card principle-card h-100 text-center">
-                                <div class="card-body  bg-light rounded-5">
-                                    <i class="fas fa-user-shield"></i>
-                                    <h5 class="card-title fw-bold">សីល ៥ (បញ្ចសីល)</h5>
-                                    <p class="card-text">មូលដ្ឋានគ្រឹះសម្រាប់គ្រហស្ថ
-                                        ក្នុងការរស់នៅប្រចាំថ្ងៃប្រកបដោយសន្តិសុខ។</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card principle-card h-100 text-center">
-                                <div class="card-body bg-light rounded-5">
-                                    <i class="fas fa-calendar-alt"></i>
-                                    <h5 class="card-title fw-bold">សីល ៨ (អដ្ឋសីល)</h5>
-                                    <p class="card-text">សម្រាប់បដិបត្តិឲ្យកាន់តែខ្ពង់ខ្ពស់ ជាពិសេសនៅថ្ងៃឧបោសថសីល
-                                        ដើម្បីដុសខាត់ចិត្ត។</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card principle-card h-100 text-center">
-                                <div class="card-body bg-light rounded-5">
-                                    <i class="fas fa-users"></i>
-                                    <h5 class="card-title fw-bold">គុណធម៌ និង សង្គម</h5>
-                                    <p class="card-text">ការរក្សាសីល នាំមកនូវសន្តិភាពក្នុងចិត្ត
-                                        និងភាពចុះសម្រុងគ្នាក្នុងសង្គម។</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <hr class="my-5" style="border-top: 1px solid #e0e0e0;">
-
-                <div class="accordion fs-4" id="faqAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header ">
-                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q1">
-                                ១. សីលគឺជាអ្វី?
-                            </button>
-                        </h2>
-                        <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                សីល (Sila) មានន័យថា "ក្បួន" "លក្ខណៈ" ឬ "ឧត្តមលក្ខណៈ"។ វាជាលក្ខណៈនៃការប្រព្រឹត្ត
-                                ឬក្បួនដែលគឺល្អ ពិតប្រាកដ និងសម្រម។ សីលគឺផ្នែកសំខាន់នៃផ្លូវព្រះពុទ្ធសាសនា
-                                ដែលបង្កើតមូលដ្ឋាននៃលម្អិតលម្អន់ក្នុងការរស់នៅប្រចាំថ្ងៃ។
-                                <div class="highlight">
-                                    សីលគឺការដាក់ឈាម និងមិនប៉ះពាល់ដល់អ្នកលទ្ធផល រួមទាំងខ្លួនឯង ក្រុម និងសង្គម។
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q2">
-                                ២. សីល ៥ គឺជាអ្វី?
-                            </button>
-                        </h2>
-                        <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                សីល ៥ (Panchashila) គឺលក្ខណៈ ៥ ដែលដូចជាលម្អិតលម្អន់សម្រាប់ឧស្សាហនៃមនុស្សទូទៅ៖
-                                <div class="precept-box">
-                                    <strong>១. មិនសម្លាប់:</strong> មិនសម្លាប់ និង មិនក្តាប់ឆ្នាំសត្វ
-                                </div>
-                                <div class="precept-box">
-                                    <strong>២. មិនលួច:</strong> មិនលួច មិនឈរលម្អិត ឬដកប្រាក់ដែលមិនផ្តល់
-                                </div>
-                                <div class="precept-box">
-                                    <strong>៣. មិនលេងលុច:</strong> មិនលេងលុច មិនល្មម ឬប៉ះពាល់ដល់គូស្វាមី
-                                </div>
-                                <div class="precept-box">
-                                    <strong>៤. មិនកិច្ចនិយាយ:</strong> មិននិយាយក្លាហាន មិនក្លាហាន ឬលេងលុច
-                                </div>
-                                <div class="precept-box">
-                                    <strong>៥. មិនផឹក:</strong> មិនផឹកស្រា មិនរឹលលេង ឬលេងលុច
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q3">
-                                ៣. សីល ៨ គឺជាអ្វី?
-                            </button>
-                        </h2>
-                        <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                សីល ៨ (Ashtangasila) គឺលក្ខណៈ ៨
-                                ដែលដូចជាលម្អិតលម្អន់សម្រាប់ដែលលាក់ឬលើលម្អិតក្នុងលក្ខណៈពិសេស៖
-                                <div class="precept-box">
-                                    <strong>១-៣. សីល ៣ដំបូង:</strong> មិនសម្លាប់ មិនលួច មិនលេងលុច (ដូចសីល ៥)
-                                </div>
-                                <div class="precept-box">
-                                    <strong>៤. មិននិយាយមិនពិត:</strong> មិនក្លាហាន មិនលេងលុច ឬកិច្ចក្លាហាន
-                                </div>
-                                <div class="precept-box">
-                                    <strong>៥. មិនផឹក:</strong> មិនផឹកស្រា (ដូចសីល ៥)
-                                </div>
-                                <div class="precept-box">
-                                    <strong>៦. មិនលេង:</strong> មិនលេងលេង ឬលម្អិតលម្អន់ក្នុងរយៈពេលផាច់មាត
-                                </div>
-                                <div class="precept-box">
-                                    <strong>៧. មិនក្រោម:</strong> មិនក្រោម គ្រូលក្ខណៈ ឬលក្ខណៈដែលលម្អិត
-                                </div>
-                                <div class="precept-box">
-                                    <strong>៨. មិនលើង:</strong> មិនលើងគ្រូលក្ខណៈ ឬលក្ខណៈដែលលើង
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q4">
-                                ៤. តើសីល ៥ និងសីល ៨ មានភាពខុសគ្នាដូចម្តេច?
-                            </button>
-                        </h2>
-                        <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                <table class="table table-custom">
-                                    <thead>
-                                        <tr>
-                                            <th>សីល ៥</th>
-                                            <th>សីល ៨</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>សម្រាប់មនុស្សទូទៅ</td>
-                                            <td>សម្រាប់ដែលលាក់ឬលើលម្អិត</td>
-                                        </tr>
-                                        <tr>
-                                            <td>៥ លក្ខណៈ</td>
-                                            <td>៨ លក្ខណៈ</td>
-                                        </tr>
-                                        <tr>
-                                            <td>មាននិយាយមិនពិត</td>
-                                            <td>មិននិយាយមិនពិត</td>
-                                        </tr>
-                                        <tr>
-                                            <td>អាចលេងលេង</td>
-                                            <td>មិនលេងលេង</td>
-                                        </tr>
-                                        <tr>
-                                            <td>សម្រាប់ដែលរស់នៅលម្អិត</td>
-                                            <td>សម្រាប់ដែលរស់នៅលម្អិតលម្អន់</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q5">
-                                ៥. តើប្រយោជន៍នៃការរក្សាសីលដូចម្តេច?
-                            </button>
-                        </h2>
-                        <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                ប្រយោជន៍នៃការរក្សាសីល៖
-                                <ul>
-                                    <li><strong>ពង្រឹងលក្ខណៈ:</strong> បង្កើតលក្ខណៈល្អនិងសម្រម</li>
-                                    <li><strong>លម្អិតលម្អន់មិនព្រួយបារម្ភ:</strong> មិនខ្វល់ពីលម្អិតលម្អន់របស់ខ្លួន
-                                    </li>
-                                    <li><strong>សម្តីល្អ:</strong> បង្កើតលម្អិតលម្អន់ល្អក្នុងសង្គម</li>
-                                    <li><strong>មូលដ្ឋាននៃលម្អិតលម្អន់:</strong> ជាមូលដ្ឋាននៃសមាធិ និងវិបស្សនា</li>
-                                    <li><strong>មោក្ខ:</strong> នាំឱ្យដល់សេចក្ដីលម្អិតលម្អន់ និងមោក្ខ</li>
-                                    <li><strong>បុណ្យ:</strong> បង្កើតលម្អិតលម្អន់ល្អក្នុងលម្អិតលម្អន់</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q6">
-                                ៦. តើរបៀបរក្សាសីលឱ្យល្អ?
-                            </button>
-                        </h2>
-                        <div id="q6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                របៀបរក្សាសីលឱ្យល្អ៖
-                                <div class="precept-box">
-                                    <strong>១. ដឹងច្បាស់:</strong> យល់ដឹងច្បាស់លាស់នូវលក្ខណៈនីមួយៗ
-                                </div>
-                                <div class="precept-box">
-                                    <strong>២. មានបេសកកម្ម:</strong> មានចេតនាក្នុងការរក្សាលក្ខណៈ
-                                </div>
-                                <div class="precept-box">
-                                    <strong>៣. អនុវត្ត:</strong> អនុវត្តលក្ខណៈក្នុងប្រចាំថ្ងៃ
-                                </div>
-                                <div class="precept-box">
-                                    <strong>៤. សមរម្យ:</strong> មិនលឿងលើលក្ខណៈ គ្រាន់តែរក្សាលក្ខណៈ
-                                </div>
-                                <div class="precept-box">
-                                    <strong>៥. ឈរលម្អិត:</strong> ឈរលម្អិតក្នុងលក្ខណៈរលាក់ផ្តើម
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q7">
-                                ៧. តើប្រសិនបើខ្ញុំធ្វើខុសលក្ខណៈដូចម្តេច?
-                            </button>
-                        </h2>
-                        <div id="q7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                ប្រសិនបើធ្វើខុសលក្ខណៈ៖
-                                <ul>
-                                    <li><strong>ស្គាល់មានលម្អិតលម្អន់:</strong> ស្គាល់មាននូវលម្អិតលម្អន់របស់ខ្លួន</li>
-                                    <li><strong>悔ដឹង:</strong> ដឹងពីលម្អិតលម្អន់របស់ខ្លួន</li>
-                                    <li><strong>បង្កើតលម្អិតលម្អន់:</strong> បង្កើតលម្អិតលម្អន់ឱ្យលើលម្អិត</li>
-                                    <li><strong>ក្របាល:</strong> ក្របាលលម្អិតលម្អន់របស់ខ្លួន</li>
-                                    <li><strong>រក្សាលម្អិតលម្អន់:</strong> រក្សាលក្ខណៈឱ្យលើលម្អិត</li>
-                                </ul>
-                                <div class="highlight">
-                                    <strong>ចំនាប់ខ្លាំង:</strong> មិនមាននូវលម្អិតលម្អន់របស់ខ្លួន ដើម្បីប្រលម្អិតលម្អន់។
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q8">
-                                ៨. តើសីលនឹងគុណធម៌ក្នុងសង្គម?
-                            </button>
-                        </h2>
-                        <div id="q8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                សីលមានលក្ខណៈសំខាន់ក្នុងសង្គម៖
-                                <ul>
-                                    <li><strong>បង្កើតលម្អិតលម្អន់:</strong> បង្កើតលម្អិតលម្អន់ល្អ ពេលពេលក្នុងសង្គម</li>
-                                    <li><strong>សន្តិភាព:</strong> ក្របាលលម្អិតលម្អន់ក្នុងសង្គម ដែលនាំឱ្យដល់សន្តិភាព
-                                    </li>
-                                    <li><strong>ទឹកស្វាយ:</strong> បង្កើតលម្អិតលម្អន់របស់ក្រុម ក្រុម និងលក្ខណៈ</li>
-                                    <li><strong>ការងារល្អ:</strong> បង្កើតលម្អិតលម្អន់របស់ការងារ ចិន្ដា និងលម្អិតលម្អន់
-                                    </li>
-                                    <li><strong>អភិវឌ្ឍន៍:</strong> នាំឱ្យដល់អភិវឌ្ឍន៍របស់សង្គម ក្រុម និងលក្ខណៈ</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q9">
-                                ៩. តើសីលនឹងកម្ម និងផល?
-                            </button>
-                        </h2>
-                        <div id="q9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                សីលមានឆ្ពោះទៅរកកម្ម និងផល៖
-                                <ul>
-                                    <li><strong>កម្មល្អ:</strong> ការរក្សាលក្ខណៈគឺកម្មល្អ</li>
-                                    <li><strong>ផលល្អ:</strong> ផលល្អក្នុងលម្អិតលម្អន់ក្នុងលម្អិតលម្អន់ក្នុងលម្អិត</li>
-                                    <li><strong>បុណ្យ:</strong> ការរក្សាលក្ខណៈ បង្កើតលម្អិតលម្អន់ល្អក្នុងលម្អិត</li>
-                                    <li><strong>ដឹងទ្រាំ:</strong> ឱកាសលស្វាគមន៍ និងងាយស្រួលក្នុងលម្អិត</li>
-                                </ul>
-                                <div class="highlight">
-                                    <strong>វិសាលភាព:</strong> ផលល្អនៃលក្ខណៈ
-                                    មិនមាននូវលម្អិតលម្អន់របស់ក្នុងលម្អិតលម្អន់ក្នុង។
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#q10">
-                                ១០. តើគួរឱ្យដាក់ពេលលម្អិតលម្អន់របស់លក្ខណៈ?
-                            </button>
-                        </h2>
-                        <div id="q10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                ការដាក់ពេលលម្អិតលម្អន់របស់លក្ខណៈ៖
-                                <ul>
-                                    <li><strong>ដូច្នេះលើលម្អិត:</strong> ពេលលម្អិតលម្អន់សម្រាប់ក្រុមលម្អិត គឺលើលម្អិត
-                                    </li>
-                                    <li><strong>លើលម្អិតលម្អន់:</strong> ឱកាសលម្អិតលម្អន់លម្អិតលម្អន់នៃលក្ខណៈ</li>
-                                    <li><strong>ជាប់លាក់:</strong> ត្រូវរក្សាលក្ខណៈ ដោយមានមេរៀនក្នុងលម្អិត</li>
-                                    <li><strong>គ្រប់ពេល:</strong> គ្រប់ពេលលម្អិតលម្អន់ក្នុងលម្អិតលម្អន់</li>
-                                    <li><strong>មូលដ្ឋាន:</strong> ការរក្សាលក្ខណៈគឺមូលដ្ឋាននៃលម្អិតលម្អន់របស់ខ្លួន</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card cta-card text-center mt-5">
-                    <div class="card-body p-5">
-                        <h4 class="card-title fw-bold">ត្រៀមខ្លួនពង្រឹងគុណធម៌ឬនៅ?</h4>
-                        <p class="card-text my-3">ការផ្លាស់ប្ដូរធំ ចាប់ផ្ដើមពីការរក្សាសីលតូចៗ។ សាកល្បងតាំងចិត្តរក្សាសីល
-                            ៥ ឲ្យបានពេញលេញថ្ងៃនេះ។</p>
-                        <a href="#q2" class="btn btn-custom-gold">ស្វែងយល់ពីសីល ៥</a>
-                    </div>
-                </div>
-
             </div>
-        </div>
+        </section>
+        <section class="mission-section py-5">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold" style="color: #c9a42e;">ប្រភេទនៃសីលសំខាន់ៗ</h2>
+                    <div style="width: 60px; height: 3px; background-color: #c9a42e; margin: 10px auto;"></div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card feature-card p-4 text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-bullseye fa-2x" style="color: #c9a42e;"></i>
+                            </div>
+                            <div class="card-body p-0">
+                                <h5 class="card-title fw-bold mb-3">សីល ៥ (បញ្ចសីល)</h5>
+                                <p class="card-text ">មូលដ្ឋានគ្រឹះសម្រាប់គ្រហស្ថ
+                                    ក្នុងការរស់នៅប្រចាំថ្ងៃប្រកបដោយសន្តិសុខ។</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card feature-card p-4 text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-gift fa-2x" style="color: #c9a42e;"></i>
+                            </div>
+                            <div class="card-body p-0">
+                                <h5 class="card-title fw-bold mb-3">សីល ៨ (អដ្ឋសីល)</h5>
+                                <p class="card-text ">សម្រាប់បដិបត្តិឲ្យកាន់តែខ្ពង់ខ្ពស់ ជាពិសេសនៅថ្ងៃឧបោសថសីល
+                                    ដើម្បីដុសខាត់ចិត្ត។</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card feature-card p-4 text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-envelope fa-2x" style="color: #c9a42e;"></i>
+                            </div>
+                            <div class="card-body p-0">
+                                <h5 class="card-title fw-bold mb-3">គុណធម៌ និង សង្គម</h5>
+                                <p class="card-text ">ការរក្សាសីល នាំមកនូវសន្តិភាពក្នុងចិត្ត
+                                    និងភាពចុះសម្រុងគ្នាក្នុងសង្គម។</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mission-section container">
+            <div class="card cta-card text-center mt-5"
+                style="background-color: var(--bg-primary); color:var(--text-primary)">
+                <div class="card-body p-5">
+                    <h4 class="card-title fw-bold">ត្រៀមខ្លួនពង្រឹងគុណធម៌ឬនៅ?</h4>
+                    <p class="card-text my-3">ការផ្លាស់ប្ដូរធំ ចាប់ផ្ដើមពីការរក្សាសីលតូចៗ។ សាកល្បងតាំងចិត្តរក្សាសីល
+                        ៥ ឲ្យបានពេញលេញថ្ងៃនេះ។</p>
+                    <a href="../question.html" class="btn btn-custom-gold">ត្រឡប់ទៅ FAQ Hub</a>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- ═══════════ FOOTER ═══════════ -->
     <footer>
@@ -697,6 +651,32 @@
     <script src="../asset/js/script.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        document.getElementById('searchInput').addEventListener('keyup', function () {
+            let searchQuery = this.value.toLowerCase();
+            let faqItems = document.querySelectorAll('.filter-item');
+            let hasResult = false;
+
+            faqItems.forEach(function (item) {
+                let questionText = item.querySelector('.accordion-button').innerText.toLowerCase();
+                let answerText = item.querySelector('.accordion-body').innerText.toLowerCase();
+
+                if (questionText.includes(searchQuery) || answerText.includes(searchQuery)) {
+                    item.style.display = 'block';
+                    hasResult = true;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            let noResultMsg = document.getElementById('noResult');
+            if (hasResult) {
+                noResultMsg.classList.add('d-none');
+            } else {
+                noResultMsg.classList.remove('d-none');
+            }
+        });
     </script>
 </body>
 
