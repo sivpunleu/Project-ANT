@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Khmer&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 :root {
   --primary-color: #b87707;
   --secondary-color: #dc2626;
@@ -39,7 +40,7 @@
 }
 
 * {
-  font-family: "Battambang", sans-serif;
+ font-family: "Kantumruy Pro", sans-serif;
 }
 
 body {
