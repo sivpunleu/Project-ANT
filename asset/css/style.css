@@ -211,6 +211,10 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
+.user-profile:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
 
 @media (max-width: 575px) {
   .navbar-brand {
@@ -274,18 +278,6 @@ footer a:hover {
   padding: 24px 0;
   margin-top: 40px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-.user-profile {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid var(--primary-color);
-  object-fit: cover;
-}
-.user-profile:hover {
-  transform: scale(1.1);
-  transition: all 0.2s;
-  border: 2px solid var(--primary-color);
 }
 
 /* Mobile Menu Toggle */
