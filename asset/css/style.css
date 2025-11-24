@@ -11,8 +11,8 @@
   --card-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
   --bg-event-day: #fff3e0;
   --box-shadow: none; 
+  --text-color:rgb(27, 26, 26);
 }
-
 [data-theme="dark"] {
   --bg-primary: #1f2937;
   --text-primary: #ffffff;
@@ -24,11 +24,13 @@
   --card-shadow: 0 4px 15px rgba(255, 255, 255, 0.08);
   --card-shadow-hover: 0 8px 25px rgba(255, 255, 255, 0.15);
   --bg-event-day: #fff3e0;
+  --text-color:rgb(214, 213, 213);
 }
 [data-theme="dark"] body {
   background: var(--bg-primary);
   color: var(--text-primary);
 }
+
 *{
   margin: 0;
   padding: 0;
@@ -44,6 +46,10 @@ body {
   background: var(--bg-primary);
   color: var(--text-primary);
   transition: all 0.3s ease;
+}
+/* mao my */
+::placeholder {
+  color: var(--text-color) !important;
 }
 
 /* navbar */
