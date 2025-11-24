@@ -205,12 +205,7 @@ body {
   object-fit: cover;
 
 }
-.user-profile img {
-  width: 51px;
-  height: 51px;
-  border-radius: 50%;
-  object-fit: cover;
-}
+
 .user-profile:hover {
   transform: scale(1.1);
   transition: all 0.5s;
