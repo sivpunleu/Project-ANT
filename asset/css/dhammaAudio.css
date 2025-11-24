@@ -1,3 +1,34 @@
+.hero-banner {
+    position: relative;
+    background-image: url('https://i.pinimg.com/736x/b3/44/c8/b344c85187f8bdaf6f55a8aba334be4e.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    overflow: hidden;
+    height: 650px;
+}
+.hero-banner::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(172, 3, 3, 0.052);
+    backdrop-filter: blur(1px);
+}
+.hero-title {
+    font-size: 54px;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-align: center;
+    padding: 210px 0 30px;
+}
+.hero-subtitle {
+    font-size: 30px;
+    color: var(--text-secondary);
+    text-align: center;
+    opacity: 70%;
+}
 .section-title {
     color: var(--primary-color);
     font-size: 2rem;
@@ -8,7 +39,6 @@
 }
 
 .audio-card {
-    background: var(--bg-primary);
     border-radius: 1rem;
     padding: 1.5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -20,16 +50,30 @@
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(184, 119, 7, 0.2);
 }
+.badge-category {
+    color: var(--text-primary);
+    position: absolute;
+    top: 60%;
+    right: 30px;
+    transform: translateY(-50%);
+    font-size: 12px !important;
+    border: 2px solid var(--bg-primary);
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
 
 .audio-icon {
+    background: var(--primary-color);
     width: 100%;
-    height: 180px;
-    background: linear-gradient(135deg, var(--primary-color), #d4940a);
+    height: 200px;
+    /* background: url(https://i.pinimg.com/736x/45//37/456037bbf7a9d529bd566e96aaf0be01.jpg); */
     border-radius: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
+    object-fit: cover;
 }
 
 .audio-icon i {
