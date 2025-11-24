@@ -1,4 +1,5 @@
-/* Hero Section */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Khmer&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
         .hero-section {
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/asset/images/img-events/photo_2025-11-20_14-44-42.jpg') no-repeat center center;
             background-size: cover;
@@ -6,6 +7,7 @@
             color: white;
             position: relative;
             overflow: hidden;
+            font-family: 'Kantumruy Pro', sans-serif;
         }
 
         .hero-section::before {
@@ -101,7 +103,6 @@
         }
 
         .section-title {
-            font-family: 'Moul', cursive;
             color: var(--primary-color);
             font-size: 32px;
             margin-bottom: 15px;
