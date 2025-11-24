@@ -34,7 +34,7 @@
 </head>
 
 <body>
-    <header class="sticky-top">
+    <header class="sticky-top"> 
         <!-- ═══════════ MAIN NAVBAR ═══════════ -->
         <!-- Added a background and shadow for better visibility -->
         <nav class="navbar navbar-expand-lg bg-light shadow-sm border-bottom border-light py-3">
@@ -84,7 +84,7 @@
             </div>
         </section>
 
-        <section class="features py-5" style="background-color: var(--light);">
+        <section class="features py-5 mission-section" style="background-color: var(--light);">
             <div class="container">
 
                 <h2 class="section-title">ខ្លឹមសារគោលនៃគេហទំព័រ</h2>
@@ -136,7 +136,7 @@
             </div>
         </section>
 
-        <section class="herosection ">
+        <section class="herosection mission-section">
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-sm-12 col-md-6" data-aos="fade-right">
@@ -163,35 +163,43 @@
             </div>
         </section>
 
-        <section class="stats">
+        <section class="stats mission-section">
             <div class="container">
                 <div class="row g-4">
 
                     <div class="col-lg-3 col-md-6">
-                        <div class="stat-box">
+                        <div class="card">
+                            <div class="stat-box">
                             <div class="stat-number" data-target="1250">១,២៥០+</div>
                             <div class="stat-label">អ្នកទទួលផលប្រយោជន៍</div>
                         </div>
+                        </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6">
-                        <div class="stat-box">
+                        <div class="card">
+                            <div class="stat-box">
                             <div class="stat-number" data-target="5000">១០០+</div>
                             <div class="stat-label">គម្រោងបានបញ្ចប់</div>
                         </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stat-box">
-                            <div class="stat-number" data-target="50">៥០+</div>
-                            <div class="stat-label">មជ្ឈមណ្ឌលសមាធិ</div>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6">
-                        <div class="stat-box">
+                       <div class="card">
+                         <div class="stat-box">
+                            <div class="stat-number" data-target="50">៥០+</div>
+                            <div class="stat-label">មជ្ឈមណ្ឌលសមាធិ</div>
+                        </div>
+                       </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="stat-box">
                             <div class="stat-number" data-target="100">១,២០០+</div>
                             <div class="stat-label">អ្នកស្ម័គ្រចិត្ត</div>
+                        </div>
                         </div>
                     </div>
 
@@ -199,17 +207,19 @@
             </div>
         </section>
 
-        <section class="cta">
+        <section class="cta mission-section">
             <div class="container">
                 <h2>ចូលរួមសហគមន៍របស់យើង</h2>
 
                 <p>ទទួលបានអត្ថបទព្រះធម៌ វីដេអូ និងព័ត៌មានអំពីវគ្គសមាធិថ្មីៗ មុនគេ!</p>
-
-                <button class="btn-cta"
+                <a href="pages/auth/register.html" class="btn-cta text-decoration-none"
+                    style="background: rgba(255, 255, 255, 0.2); border: 2px solid #fff; color: #fff;">
+                    <i class="bi bi-envelope-fill"></i>ចុះឈ្មោះឥឡូវនេះ</a>
+                <!-- <button class="btn-cta"
                     style="background: rgba(255, 255, 255, 0.2); border: 2px solid #fff; color: #fff;">
                     <i class="bi bi-envelope-fill"></i>
                     ចុះឈ្មោះឥឡូវនេះ
-                </button>
+                </button> -->
             </div>
         </section>
 

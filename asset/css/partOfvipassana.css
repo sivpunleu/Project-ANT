@@ -148,20 +148,20 @@
         }
 
         
-/* padding 80px */
-/* សម្រាប់អេក្រង់ទូទៅ (ទូរស័ព្ទ/អេក្រង់តូច) */
-.mission-section {
-    padding: 40px 0;
-    /* ដាក់ត្រឹម 40px បានហើយកុំឱ្យចង្អៀតពេក */
-}
-
-/* សម្រាប់អេក្រង់ធំ (ចាប់ពី Tablet ឬ PC ឡើងទៅ) */
-@media (min-width: 768px) {
+    /* padding 80px */
+    /* សម្រាប់អេក្រង់ទូទៅ (ទូរស័ព្ទ/អេក្រង់តូច) */
     .mission-section {
-        padding: 80px 0;
-        /* ដាក់ 80px វិញពេលអេក្រង់ធំ */
+      padding: 40px 0 !important;
+      /* ដាក់ត្រឹម 40px បានហើយកុំឱ្យចង្អៀតពេក */
     }
-}
+
+    /* សម្រាប់អេក្រង់ធំ (ចាប់ពី Tablet ឬ PC ឡើងទៅ) */
+    @media (min-width: 768px) {
+      .mission-section {
+        padding: 80px 0 !important;
+        /* ដាក់ 80px វិញពេលអេក្រង់ធំ */
+      }
+    }
 
 /* 1. Search Box Styling */
 .search-container {
