@@ -205,6 +205,12 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
+.user-profile img {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
 @media (max-width: 575px) {
   .navbar-brand {
