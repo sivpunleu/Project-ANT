@@ -1,7 +1,103 @@
+/* Hero Banner Styles */
+.hero-banner {
+    position: relative;
+    background-image: url('../images/dhamma.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 0 60px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.hero-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35); 
+    backdrop-filter: blur(1px);
+}
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    line-height: 1.8;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 1px solid var(--border-light);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    margin-bottom: 24px;
+    transition: all 0.3s ease;
+}
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+    line-height: 1.6;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 32px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+}
+.btn-hero-primary {
+    padding: 14px 32px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-hero-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px var(--box-shadow);
+}
+
+.btn-hero-secondary {
+    padding: 14px 32px;
+    background: transparent;
+    color: var(--text-secondary);
+    border: 3px solid var(--primary-color);
+    border-radius: 8px;
+
+}
+
+.btn-hero-secondary:hover {
+    background: var(--primary-color);
+}
+
+/* Navigations Tab */
 .nav-tabs-custom {
     background: var(--bg-primary);
     padding: 8px 0;
-    font-size: 20px;
+    font-size: 30px;
 }
 .video-card {
     border-radius: 1rem;

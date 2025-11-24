@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="km">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,10 +23,12 @@
     <link rel="stylesheet" href="../asset/css/sil.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700;900&family=Moul&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-   <header class=" sticky-top">
+    <header class=" sticky-top">
         <!-- ═══════════ MAIN NAVBAR ═══════════ -->
         <nav class="navbar navbar-expand-lg  border-bottom border-light py-3 wow animate__slideInDown ">
             <div class="container">
@@ -196,49 +199,110 @@
         </nav>
     </header>
 
-    <!-- Navigation Tabs -->
-    <div class="nav-tabs-custom sticky-top py-3" style="top: 76px; z-index: 20;">
+    <!-- Hero Banner -->
+    <section class="hero-banner py-15">
+        <div class="container hero-content">
+            <h1 class="hero-title">វីដេអូព្រះធម៌</h1>
+            <p class="hero-subtitle">
+                ស្វែងយល់ និងរៀនសូត្រព្រះធម៌គ្រប់ប្រភេទ ជាមួយនឹងការបង្រៀនដ៏ល្អឥតខ្ចោះ
+            </p>
+            <!-- CTA Buttons -->
+            <div class="hero-buttons">
+
+                <button class="btn btn-primary border-0 p-3 fs-4">
+                    ស្វែងយល់បន្ថែម
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding : 80px 0;">
         <div class="container">
-            <ul class="nav nav-tabs-custom d-flex justify-content-between align-items-center fs-5" id="videoTabs" role="tablist">
+            <!-- Stats -->
+            <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                    <div class="stats-card">
+                        <div class="stat-number" id="totalVideos">18</div>
+                        <div class="stat-label">វីដេអូទាំងអស់</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stats-card">
+                        <div class="stat-number">150K+</div>
+                        <div class="stat-label">អ្នកទស្សនា</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stats-card">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">ប្រធានបទ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+
+            <!-- Search & Sort -->
+            <div class="row g-3 mb-4">
+                <div class="col-md-8">
+                    <input type="text" id="searchInput" class="form-control search-input"
+                        placeholder="🔍 ស្វែងរកវីដេអូធម៌ទេសនា...">
+                </div>
+                <div class="col-md-4">
+                    <select id="sortSelect" class="form-select sort-select text-bg-warning">
+                        <option value="default">លំដាប់ធម្មតា</option>
+                        <option value="views-desc">ចំនួនមើលច្រើន</option>
+                        <option value="views-asc">ចំនួនមើលតិច</option>
+                        <option value="duration-desc">រយៈពេលវែង</option>
+                        <option value="duration-asc">រយៈពេលខ្លី</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <div class="nav-tabs-custom sticky-top" style="top: 76px; z-index: 20;">
+        <div class="container">
+
+            <div class="d-flex justify-content-between">
+                <h1 class="fs-1">ប្រភេទវីដេអូ</h1>
+
+                <a href="../pages/lesson1.html" class="btn-hero-primary fs-5 text-decoration-none">
+                    <span>កម្រងវីឌីអូមេរៀន</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+
+            <ul class="nav nav-tabs-custom d-flex justify-content-start align-items-center fs-5" id="videoTabs"
+                role="tablist">
                 <li class="nav-item">
-                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#all">
-                        <i class="fas fa-dharmachakra me-2"></i>ព្រះធម៌ទាំងអស់
-                    </button>
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#all">ព្រះធម៌ទាំងអស់</button>
                 </li>
                 <li class="nav-item">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#education">
-                        <i class="fas fa-graduation-cap me-2"></i>អប់រំចិត្ត
-                    </button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#education">អប់រំចិត្ត</button>
                 </li>
                 <li class="nav-item">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#ceremony">
-                        <i class="fas fa-hands-praying me-2"></i>កម្មវិធីបុណ្យ
-                    </button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#ceremony">កម្មវិធីបុណ្យ</button>
                 </li>
                 <li class="nav-item">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#vipassana">
-                        <i class="fas fa-om me-2"></i>វិបស្សនា
-                    </button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#vipassana">វិបស្សនា</button>
                 </li>
                 <li class="nav-item">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#abhidhamma">
-                        <i class="fas fa-book-reader me-2"></i>អភិធម្ម
-                    </button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#abhidhamma">អភិធម្ម</button>
                 </li>
                 <li class="nav-item">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#sutta">
-                        <i class="fas fa-scroll me-2"></i>សូត្រ
-                    </button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#sutta">សូត្រ</button>
                 </li>
                 <li class="nav-item">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#vinaya">
-                        <i class="fas fa-balance-scale me-2"></i>វិន័យ
-                    </button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#vinaya">វិន័យ</button>
                 </li>
                 <li class="nav-item">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#favorites">
-                        <i class="fas fa-heart me-2"></i>សំណព្វ
-                    </button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#favorites">សំណព្វ</button>
                 </li>
             </ul>
         </div>
@@ -247,99 +311,56 @@
     <!-- Main Content -->
     <main class="container">
         <div class="tab-content" id="videoTabsContent">
-            <!-- All Videos Tab -->
+
+            <!-- All Videos -->
             <div class="tab-pane fade show active" id="all">
-                <h2 class="section-title text-center my-5">ព្រះធម៌ទាំងអស់</h2>
-
-                <!-- Stats -->
-                <div class="row g-3 mb-4">
-                    <div class="col-md-4">
-                        <div class="stats-card">
-                            <div class="stat-number" id="totalVideos">18</div>
-                            <div class="stat-label">វីដេអូទាំងអស់</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="stats-card">
-                            <div class="stat-number">150K+</div>
-                            <div class="stat-label">អ្នកទស្សនា</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="stats-card">
-                            <div class="stat-number">6</div>
-                            <div class="stat-label">ប្រធានបទ</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Search & Sort -->
-                <div class="row g-3 mb-4">
-                    <div class="col-md-8">
-                        <input type="text" id="searchInput" class="form-control search-input" placeholder="🔍 ស្វែងរកវីដេអូធម៌ទេសនា...">
-                    </div>
-                    <div class="col-md-4">
-                        <select id="sortSelect" class="form-select sort-select">
-                            <option value="default">លំដាប់ធម្មតា</option>
-                            <option value="views-desc">ចំនួនមើលច្រើន</option>
-                            <option value="views-asc">ចំនួនមើលតិច</option>
-                            <option value="duration-desc">រយៈពេលវែង</option>
-                            <option value="duration-asc">រយៈពេលខ្លី</option>
-                        </select>
-                    </div>
-                </div>
-
                 <div class="row g-5" id="allVideos"></div>
-            </div>         
+            </div>
 
-            <!-- Education Tab -->
+            <!-- Education -->
             <div class="tab-pane fade" id="education">
-                <h1 class="section-title">អប់រំចិត្ត</h1>
                 <div class="row g-4" id="educationVideos"></div>
             </div>
 
-            <!-- Ceremony Tab -->
+            <!-- Ceremony -->
             <div class="tab-pane fade" id="ceremony">
-                <h1 class="section-title">កម្មវិធីបុណ្យនានា</h1>
                 <div class="row g-4" id="ceremonyVideos"></div>
             </div>
 
-            <!-- Vipassana Tab -->
+            <!-- Vipassana -->
             <div class="tab-pane fade" id="vipassana">
-                <h1 class="section-title">វិបស្សនាកម្មដ្ឋាន</h1>
                 <div class="row g-4" id="vipassanaVideos"></div>
             </div>
 
-            <!-- Abhidhamma Tab -->
+            <!-- Abhidhamma -->
             <div class="tab-pane fade" id="abhidhamma">
-                <h1 class="section-title">ព្រះអភិធម្ម</h1>
                 <div class="row g-4" id="abhidhammaVideos"></div>
             </div>
 
-            <!-- Sutta Tab -->
+            <!-- Sutta -->
             <div class="tab-pane fade" id="sutta">
-                <h1 class="section-title">ព្រះសូត្រ</h1>
                 <div class="row g-4" id="suttaVideos"></div>
             </div>
 
-            <!-- Vinaya Tab -->
+            <!-- Vinaya -->
             <div class="tab-pane fade" id="vinaya">
-                <h1 class="section-title">ព្រះវិន័យ</h1>
                 <div class="row g-4" id="vinayaVideos"></div>
             </div>
 
-            <!-- Favorites Tab -->
+            <!-- Favorites -->
             <div class="tab-pane fade" id="favorites">
-                <h1 class="section-title">វីដេអូសំណព្វ</h1>
                 <div class="row g-4" id="favoritesVideos">
                     <div class="col-12 text-center py-5">
-                        <i class="fas fa-heart" style="font-size: 3rem; opacity: 0.3; color: var(--text-secondary);"></i>
+                        <i class="fas fa-heart"
+                            style="font-size: 3rem; opacity: 0.3; color: var(--text-secondary);"></i>
                         <p class="mt-3" style="color: var(--text-secondary);">មិនមានវីដេអូសំណព្វនៅឡើយទេ</p>
                     </div>
                 </div>
             </div>
+
         </div>
     </main>
+
 
 
     <!-- ═══════════ FOOTER ═══════════ -->
@@ -480,11 +501,11 @@
             { url: "https://www.youtube.com/watch?v=nLo-YzuxmeU", title: "ពិធីបុណ្យភ្ជុំបិណ្ឌ", category: "ceremony", views: 38000, duration: 48, rating: 0 },
             { url: "https://www.youtube.com/watch?v=4KbvnQfHgM0", title: "បុណ្យកឋិនទាន", category: "ceremony", views: 52000, duration: 60, rating: 0 },
             { url: "https://www.youtube.com/watch?v=F2Rt8iFh8fo", title: "បុណ្យវិសាខបូជា", category: "ceremony", views: 48000, duration: 52, rating: 0 },
-            
+
             { url: "https://www.youtube.com/watch?v=U-K-20PJ8Kg", title: "បឋមវិបស្សនា", category: "vipassana", views: 29000, duration: 46, rating: 0 },
             { url: "https://www.youtube.com/watch?v=EL0FM3jGzgU", title: "របៀបធ្វើសមាធិ", category: "vipassana", views: 32000, duration: 44, rating: 0 },
             { url: "https://www.youtube.com/watch?v=P9gUidMLodc", title: "អានាបាណស្សតិ", category: "vipassana", views: 27000, duration: 48, rating: 0 },
-            
+
             { url: "https://www.youtube.com/watch?v=4TMvhyHOVDY", title: "សិក្សាព្រះអភិធម្ម (ភាគ ០២)", category: "abhidhamma", views: 18000, duration: 58, rating: 0 },
             { url: "https://www.youtube.com/watch?v=fWlIEDejCtc", title: "សិក្សាព្រះអភិធម្ម (ភាគ ០៣)", category: "abhidhamma", views: 16000, duration: 52, rating: 0 },
             { url: "https://www.youtube.com/watch?v=Jg6y9HA0ZeE", title: "បដិបត្តិ ព្រះអភិធម្ម", category: "abhidhamma", views: 24000, duration: 70, rating: 0 },
@@ -501,21 +522,21 @@
         let favorites = [];
         let currentSort = 'default';
 
-        function formatViews(v) { return v >= 1000 ? (v/1000).toFixed(0) + 'K' : v; }
+        function formatViews(v) { return v >= 1000 ? (v / 1000).toFixed(0) + 'K' : v; }
 
         function getCatLabel(c) {
-            const l = {education:'អប់រំចិត្ត',ceremony:'កម្មវិធីបុណ្យ',vipassana:'វិបស្សនាកម្មដ្ឋាន',abhidhamma:'ព្រះអភិធម្ម',sutta:'ព្រះសូត្រ',vinaya:'ព្រះវិន័យ'};
-            return l[c]||c;
+            const l = { education: 'អប់រំចិត្ត', ceremony: 'កម្មវិធីបុណ្យ', vipassana: 'វិបស្សនាកម្មដ្ឋាន', abhidhamma: 'ព្រះអភិធម្ម', sutta: 'ព្រះសូត្រ', vinaya: 'ព្រះវិន័យ' };
+            return l[c] || c;
         }
 
         function createCard(video, idx) {
             const isFav = favorites.includes(idx);
             const embedUrl = getYouTubeEmbedUrl(video.url);
-            
+
             return `
                 <div class="col-md-6 col-lg-4">
                     <div class="video-card">
-                        <i class="fas fa-heart favorite-icon ${isFav?'favorited':''}" onclick="toggleFav(${idx})" id="fav-${idx}"></i>
+                        <i class="fas fa-heart favorite-icon ${isFav ? 'favorited' : ''}" onclick="toggleFav(${idx})" id="fav-${idx}"></i>
                         <div class="video-container">
                             <iframe src="${embedUrl}" allowfullscreen loading="lazy"></iframe>
                         </div>
@@ -526,7 +547,7 @@
                             <span><i class="fas fa-clock me-1"></i>${video.duration} នាទី</span>
                         </div>
                         <div class="mb-2">
-                            ${[1,2,3,4,5].map(s=>`<i class="fas fa-star star ${s<=video.rating?'active':''}" onclick="rate(${idx},${s})"></i>`).join('')}
+                            ${[1, 2, 3, 4, 5].map(s => `<i class="fas fa-star star ${s <= video.rating ? 'active' : ''}" onclick="rate(${idx},${s})"></i>`).join('')}
                         </div>
                         <button class="btn share-btn btn-sm w-100" onclick="share(${idx})">
                             <i class="fas fa-share-alt me-1"></i>ចែករំលែក
@@ -537,14 +558,14 @@
         }
 
         function toggleFav(idx) {
-            favorites = favorites.includes(idx) ? favorites.filter(f=>f!==idx) : [...favorites, idx];
+            favorites = favorites.includes(idx) ? favorites.filter(f => f !== idx) : [...favorites, idx];
             updateBadge();
             updateIcons();
-            if(document.getElementById('favorites').classList.contains('active')) renderFavs();
+            if (document.getElementById('favorites').classList.contains('active')) renderFavs();
         }
 
         function updateIcons() {
-            videos.forEach((v,i) => {
+            videos.forEach((v, i) => {
                 document.querySelectorAll(`#fav-${i}`).forEach(icon => {
                     icon.classList.toggle('favorited', favorites.includes(i));
                 });
@@ -559,30 +580,30 @@
 
         function render(containerId, vids) {
             const container = document.getElementById(containerId);
-            if(vids.length === 0) {
+            if (vids.length === 0) {
                 container.innerHTML = '<div class="col-12 text-center py-5"><i class="fas fa-video-slash" style="font-size:3rem;opacity:0.3;color:var(--text-secondary);"></i><p class="mt-3" style="color:var(--text-secondary);">មិនមានវីដេអូនៅឡើយទេ</p></div>';
                 return;
             }
-            
+
             let sorted = [...vids];
-            if(currentSort !== 'default') {
-                sorted.sort((a,b) => {
-                    if(currentSort==='views-desc') return b.views-a.views;
-                    if(currentSort==='views-asc') return a.views-b.views;
-                    if(currentSort==='duration-desc') return b.duration-a.duration;
-                    if(currentSort==='duration-asc') return a.duration-b.duration;
+            if (currentSort !== 'default') {
+                sorted.sort((a, b) => {
+                    if (currentSort === 'views-desc') return b.views - a.views;
+                    if (currentSort === 'views-asc') return a.views - b.views;
+                    if (currentSort === 'duration-desc') return b.duration - a.duration;
+                    if (currentSort === 'duration-asc') return a.duration - b.duration;
                     return 0;
                 });
             }
-            container.innerHTML = sorted.map((v,i)=>createCard(v,v.originalIndex!==undefined?v.originalIndex:i)).join('');
+            container.innerHTML = sorted.map((v, i) => createCard(v, v.originalIndex !== undefined ? v.originalIndex : i)).join('');
         }
 
         function renderFavs() {
             const container = document.getElementById('favoritesVideos');
-            if(favorites.length === 0) {
+            if (favorites.length === 0) {
                 container.innerHTML = '<div class="col-12 text-center py-5"><i class="fas fa-heart" style="font-size:3rem;opacity:0.3;color:var(--text-secondary);"></i><p class="mt-3" style="color:var(--text-secondary);">មិនមានវីដេអូសំណព្វនៅឡើយទេ</p></div>';
             } else {
-                const favVids = favorites.map(i=>({...videos[i],originalIndex:i}));
+                const favVids = favorites.map(i => ({ ...videos[i], originalIndex: i }));
                 render('favoritesVideos', favVids);
             }
         }
@@ -595,8 +616,8 @@
 
         function share(idx) {
             const v = videos[idx];
-            if(navigator.share) {
-                navigator.share({title:v.title, url:window.location.href}).catch(()=>{});
+            if (navigator.share) {
+                navigator.share({ title: v.title, url: window.location.href }).catch(() => { });
             } else {
                 navigator.clipboard.writeText(window.location.href);
                 showNotif('បានចម្លងតំណភ្ជាប់');
@@ -613,21 +634,21 @@
 
         function renderAll() {
             render('allVideos', videos);
-            ['education','ceremony','vipassana','abhidhamma','sutta','vinaya'].forEach(cat => {
-                render(cat+'Videos', videos.filter(v=>v.category===cat).map((v,i)=>({...v,originalIndex:videos.indexOf(v)})));
+            ['education', 'ceremony', 'vipassana', 'abhidhamma', 'sutta', 'vinaya'].forEach(cat => {
+                render(cat + 'Videos', videos.filter(v => v.category === cat).map((v, i) => ({ ...v, originalIndex: videos.indexOf(v) })));
             });
         }
 
         document.getElementById('searchInput').addEventListener('input', e => {
             const term = e.target.value.toLowerCase();
-            const filtered = term ? videos.filter(v=>v.title.toLowerCase().includes(term)).map((v,i)=>({...v,originalIndex:videos.indexOf(v)})) : videos;
+            const filtered = term ? videos.filter(v => v.title.toLowerCase().includes(term)).map((v, i) => ({ ...v, originalIndex: videos.indexOf(v) })) : videos;
             render('allVideos', filtered);
         });
 
         document.getElementById('sortSelect').addEventListener('change', e => {
             currentSort = e.target.value;
             const term = document.getElementById('searchInput').value.toLowerCase();
-            const filtered = term ? videos.filter(v=>v.title.toLowerCase().includes(term)).map((v,i)=>({...v,originalIndex:videos.indexOf(v)})) : videos;
+            const filtered = term ? videos.filter(v => v.title.toLowerCase().includes(term)).map((v, i) => ({ ...v, originalIndex: videos.indexOf(v) })) : videos;
             render('allVideos', filtered);
         });
 
@@ -640,4 +661,5 @@
         updateBadge();
     </script>
 </body>
+
 </html>

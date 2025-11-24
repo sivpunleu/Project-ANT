@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Khmer&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 :root {
   --primary-color: #b87707;
   --secondary-color: #dc2626;
@@ -10,9 +11,9 @@
   --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   --card-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
   --bg-event-day: #fff3e0;
-  --box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+  --box-shadow: none; 
+  --text-color:rgb(27, 26, 26);
 }
-
 [data-theme="dark"] {
   --bg-primary: #1f2937;
   --text-primary: #ffffff;
@@ -24,11 +25,13 @@
   --card-shadow: 0 4px 15px rgba(255, 255, 255, 0.08);
   --card-shadow-hover: 0 8px 25px rgba(255, 255, 255, 0.15);
   --bg-event-day: #fff3e0;
+  --text-color:rgb(214, 213, 213);
 }
 [data-theme="dark"] body {
   background: var(--bg-primary);
   color: var(--text-primary);
 }
+
 *{
   margin: 0;
   padding: 0;
@@ -37,13 +40,17 @@
 }
 
 * {
-  font-family: "Battambang", sans-serif;
+ font-family: "Kantumruy Pro", sans-serif;
 }
 
 body {
   background: var(--bg-primary);
   color: var(--text-primary);
   transition: all 0.3s ease;
+}
+/* mao my */
+::placeholder {
+  color: var(--text-color) !important;
 }
 
 /* navbar */
@@ -200,11 +207,10 @@ body {
   color: var(--text-secondary) !important;
 }
 .user-profile {
-  width: 51px;
-  height: 51px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   object-fit: cover;
-
 }
 .user-profile img {
   width: 51px;
@@ -215,7 +221,8 @@ body {
 .user-profile:hover {
   transform: scale(1.1);
   transition: all 0.5s;
-} 
+}
+
 @media (max-width: 575px) {
   .navbar-brand {
       display: flex;
@@ -279,8 +286,6 @@ footer a:hover {
   margin-top: 40px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-
-
 
 /* Mobile Menu Toggle */
 .navbar-toggler {

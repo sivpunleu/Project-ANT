@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Khmer&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 :root {
   --primary-color: #b87707;
   --secondary-color: #dc2626;
@@ -28,6 +30,9 @@
   --card-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.3);
   --bg-event-day: #4b3b24;
   --box-shadow: 0px 10px 15px 0px rgba(255, 255, 255, 0.1);
+}
+* {
+ font-family: "Kantumruy Pro", sans-serif;
 }
 
 /* Page Header */
