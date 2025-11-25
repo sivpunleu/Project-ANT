@@ -384,8 +384,8 @@
     transition:0.5s all ease-in-out;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
-    background-color: #0d4cc9 !important;
-    color:white !important;
+    background-color: #9b9a9a !important;
+    color:var(--primary-color) !important;
     left: 50%;
     transform: translateX(-50%);
 
@@ -533,12 +533,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
+   /* background: 
         radial-gradient(circle at 20% 50%, rgba(190, 134, 94, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 50%, rgba(160, 82, 45, 0.1) 0%, transparent 50%);
+        radial-gradient(circle at 80% 50%, rgba(160, 82, 45, 0.1) 0%, transparent 50%); */
+    background-color: var(--bg-primary) !important;
     pointer-events: none;
 }
-
+ 
 /* Border Accent */
 .timeline-content::after {
     content: '';
@@ -577,7 +578,7 @@
 .timeline-content p {
     margin: 0;
     line-height: 1.8;
-    color: #e8e8e8;
+    color:var(--text-color) !important;
     position: relative;
     z-index: 1;
     font-size: 1.05rem;
