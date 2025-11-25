@@ -5,10 +5,8 @@
 }
 
 .overlay-container {
-  background: rgba(0, 0, 0, 0.4);
-  /* ពណ៌ខ្មៅកម្រិត 40% */
+  /* background: rgba(0, 0, 0, 0.156); */
   z-index: 10;
-  /* នៅពីលើរូបភាព */
 }
 
 .typing-text {
