@@ -1,4 +1,4 @@
-.hero {
+/* .hero {
   z-index: 10;
   overflow: hidden;
 }
@@ -6,7 +6,7 @@
 .hero-content {
   max-width: 900px;
   padding: 20px;
-}
+} */
 
 .typing::after {
   content: '|';
@@ -77,7 +77,7 @@ img {
     padding: 20px 10px;
     max-width: 95%;
     left: 5%;
-    top: -200px;
+    /* top: -200px; */
     font-size: 1.0rem !important;
   }
 
@@ -189,11 +189,11 @@ img{
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 1px solid #d1d5db;
+  /* border: 1px solid #d1d5db; */
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white;
+  /* background: white; */
   transition: all 0.2s;
 }
 
