@@ -223,7 +223,7 @@
 }
 
 .btn-event:hover {
-  background: var(--secondary-color);
+  background: var(--primary-color);
   transform: scale(1.05);
   /* FIX: Use variable for text on dark background */
   color: var(--text-secondary);
