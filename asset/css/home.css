@@ -1,59 +1,77 @@
-/* .hero {
-  z-index: 10;
-  overflow: hidden;
-}
-
-.hero-content {
-  max-width: 900px;
-  padding: 20px;
-} */
-
-.typing::after {
-  content: '|';
-  animation:
-    blink 0.7s infinite,
-    typing 3.5s steps(40, end);
-}
-
-img {
-  width: 100%;
-  height: 100%;
+.object-fit-cover {
   object-fit: cover;
+  /* កាត់រូបភាពឲ្យពេញប្រអប់ដោយមិនខូចទ្រង់ទ្រាយ */
+  object-position: center;
 }
 
-@keyframes blink {
+.overlay-container {
+  background: rgba(0, 0, 0, 0.4);
+  /* ពណ៌ខ្មៅកម្រិត 40% */
+  z-index: 10;
+  /* នៅពីលើរូបភាព */
+}
 
-  from,
-  to {
-    border-color: transparent
+.typing-text {
+  font-size: clamp(1.2rem, 4vw, 3.5rem) !important;
+  line-height: 1.3;
+}
+
+.slogan-text {
+  font-size: clamp(1rem, 2.5vw, 2rem) !important;
+  line-height: 1.5;
+}
+
+.sub-slogan {
+  font-size: clamp(1.1rem, 3vw, 2.5rem) !important;
+
+}
+
+/* 1. RESPONSIVE FONT SIZES (Clamp) */
+/* អក្សរធំតូចតាមអេក្រង់ស្វ័យប្រវត្តិ */
+.typing-text {
+  font-size: clamp(1.2rem, 3.5vw, 3.5rem) !important;
+  /* តូចបំផុត 1.2rem, ធំបំផុត 3.5rem */
+}
+
+.responsive-h2 {
+  font-size: clamp(1rem, 2.5vw, 2rem) !important;
+  line-height: 1.6;
+}
+
+.responsive-h3 {
+  font-size: clamp(1.2rem, 3vw, 2.5rem) !important;
+}
+
+/* 2. TYPING ANIMATION (សម្រាប់តែ Desktop/Tablet) */
+@media (min-width: 992px) {
+  .typing-text {
+    display: inline-block;
+    /* ធ្វើឲ្យប្រអប់អក្សររួញមកស្មើអក្សរ ដើម្បីកុំឲ្យ cursor រត់ហួស */
+    overflow: hidden;
+    white-space: nowrap;
+    /* ហាមចុះបន្ទាត់ពេលកំពុង Type */
+    border-right: 4px solid #ff8c00;
+    /* Cursor */
+    width: 0;
+    /* ចាប់ផ្តើមពី 0 */
+
+    /* Animation: ដើរ 5 វិនាទី, ទៅហើយមកវិញ (alternate), មិនឈប់ (infinite) */
+    animation: typing 5s steps(40, end) infinite alternate,
+      blink 0.7s step-end infinite;
   }
-
-  50% {
-    border-color: white
-  }
 }
 
-.typing {
-  border-right: 3px solid #00d0ff;
-  white-space: nowrap;
-  padding: 10px;
-  overflow: hidden;
-  display: inline-block;
-  width: 0;
-  
-  font-size: 50px;
-  animation: typing 8s steps(50, end) infinite alternate,
-    blink 0.8s step-end infinite;
-}
-
+/* Keyframes */
 @keyframes typing {
   from {
-    width: 30%;
+    width: 0;
   }
 
   to {
-    width: 115%;
+    width: 100%;
   }
+
+  /* 100% នៃ inline-block (គឺស្មើនឹងតួអក្សរល្មម) */
 }
 
 @keyframes blink {
@@ -63,85 +81,68 @@ img {
     border-color: transparent;
   }
 
-  70% {
-    border-color: #e67e22;
+  55% {
+    border-color: #c48506;
   }
 }
 
-@media (max-width: 767.98px) {
+/* 3. MOBILE FIXES (សម្រាប់ទូរស័ព្ទ) */
+@media (max-width: 991px) {
+  .typing-text {
+    /* នៅលើទូរស័ព្ទ យើងបិទ Animation ចោល ដើម្បីឲ្យអក្សរធ្លាក់បន្ទាត់បាន */
+    white-space: normal !important;
+    border-right: none !important;
+    animation: none !important;
+    width: auto !important;
+    display: block !important;
+  }
+
+  .carousel-item img {
+    height: 100vh;
+    /* រូបពេញអេក្រង់ជានិច្ច */
+  }
+}
+
+h1 {
+  font-size: clamp(1.5rem, 5vw, 3.5rem) !important;
+}
+
+h2 {
+  font-size: clamp(1rem, 3vw, 2rem) !important;
+}
+
+/* Mobile Specific Fixes */
+@media (max-width: 768px) {
   .typing {
-    font-size: 1.5rem;
+    white-space: normal;
+    /* លើទូរស័ព្ទឲ្យវាធ្លាក់បន្ទាត់ */
+    border-right: none;
+    animation: none;
+    /* បិទ animation លើទូរស័ព្ទកុំឲ្យខូច */
+    width: auto;
   }
 
-  .hero-content {
-    padding: 20px 10px;
-    max-width: 95%;
-    left: 5%;
-    /* top: -200px; */
-    font-size: 1.0rem !important;
-  }
-
-  .hero-content a.btn-primary {
-    margin-left: 0 !important;
-  }
-.carousel-item{
-  height: 400px;
-  overflow: hidden;
-
-}
-img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-}
-  .hero-content h2 {
-    line-height: 1.4 !important;
-    font-size: 1.4rem !important;
-  }
-
-  .hero {
-    top: 700px;
-  }
-
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-
-    to {
-      width: 100%;
-    }
+  .carousel-item img {
+    height: 100vh;
+    /* ពេញអេក្រង់ទូរស័ព្ទ */
   }
 }
 
-/* ipad */
-@media only screen and (min-width: 758px) and (max-width: 1024px) and (orientation: portrait) {
-  .hero-content {
-    padding: 40px 20px;
-    max-width: 80%;
-    left: 10%;
-    font-size: 1.25rem !important;
+@media (max-width: 576px) {
+
+  /* ទូរស័ព្ទតូចៗ */
+  .hero-content h1 {
+    font-size: 1.8rem !important;
+    /* កំណត់ទំហំជាក់លាក់សម្រាប់អេក្រង់តូច */
   }
 
-  .hero-content h2 {
-    line-height: 1.5 !important;
-    font-size: 1.75rem !important;
-  }
-
-  .hero {
-    top: 450px;
-  }
-
-  .typing {
-    font-size: 2.0rem;
+  .btn-primary {
+    width: 100%;
+    /* ប៊ូតុងពេញអេក្រង់នៅពេលមើលលើទូរស័ព្ទ */
   }
 }
 
 /* end ipad */
-.mt-5 {
-  margin-top: 60px !important;
-}
 
 .filter-bar-new {
   width: 90% !important;
@@ -361,6 +362,7 @@ img{
   /* ពណ៌មាស */
   margin: 10px auto 0;
 }
+
 .stat-item {
   text-align: center;
   padding: 20px;
@@ -505,6 +507,7 @@ img{
   /* ខៀវ */
   color: #ffffff;
 }
+
 .testimonial-card {
   background-color: #ffffff;
   border: none;
@@ -546,17 +549,17 @@ img{
   color: #777;
 }
 
-    /* padding 80px */
-    /* សម្រាប់អេក្រង់ទូទៅ (ទូរស័ព្ទ/អេក្រង់តូច) */
-    .mission-section {
-      padding: 40px 0 !important;
-      /* ដាក់ត្រឹម 40px បានហើយកុំឱ្យចង្អៀតពេក */
-    }
+/* padding 80px */
+/* សម្រាប់អេក្រង់ទូទៅ (ទូរស័ព្ទ/អេក្រង់តូច) */
+.mission-section {
+  padding: 40px 0 !important;
+  /* ដាក់ត្រឹម 40px បានហើយកុំឱ្យចង្អៀតពេក */
+}
 
-    /* សម្រាប់អេក្រង់ធំ (ចាប់ពី Tablet ឬ PC ឡើងទៅ) */
-    @media (min-width: 768px) {
-      .mission-section {
-        padding: 80px 0 !important;
-        /* ដាក់ 80px វិញពេលអេក្រង់ធំ */
-      }
-    }
+/* សម្រាប់អេក្រង់ធំ (ចាប់ពី Tablet ឬ PC ឡើងទៅ) */
+@media (min-width: 768px) {
+  .mission-section {
+    padding: 80px 0 !important;
+    /* ដាក់ 80px វិញពេលអេក្រង់ធំ */
+  }
+}
