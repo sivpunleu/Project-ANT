@@ -1,108 +1,109 @@
-        html,
         body {
-            overflow-x: hidden;
-            /* បិទមិនឱ្យមានការហៀរទៅខាងឆ្វេង ឬស្តាំ */
-            width: 100%;
-            max-width: 100%;
+          overflow-x: hidden;
+          /* បិទមិនឱ្យមានការហៀរទៅខាងឆ្វេង ឬស្តាំ */
+          width: 100%;
+          max-width: 100%;
         }
 
         .card {
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 100%;
+          border: none;
+          border-radius: 10px;
+          box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          height: 100%;
 
 
         }
 
         .card-icon {
-            font-size: 2.5rem;
-            color: #d4af37;
+          font-size: 2.5rem;
+          color: #d4af37;
 
-            margin-bottom: 1rem;
+          margin-bottom: 1rem;
         }
 
         img {
-            width: 100%;
-            height: 100%;
+          width: 100%;
+          height: 100%;
 
         }
 
         @media (max-width: 767.98px) {
-            .section-title {
-                width: 60% !important;
+          .section-title {
+            width: 60% !important;
 
-            }
+          }
 
-            .section-title1 {
-                width: 55% !important;
-            }
+          .section-title1 {
+            width: 55% !important;
+          }
 
         }
 
-        
-.slide {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
-}
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.641);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* border-radius: 10px; */
-  padding: 20px;
-}
+        .slide {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+          display: block;
+        }
 
-.over-slide {
-  color: white;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-align: center;
-  padding: 20px;
-  line-height: 1.7;
-}
+        .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.641);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          /* border-radius: 10px; */
+          padding: 20px;
+        }
 
-.over-slide strong {
-  color: #b87707cd;
-  font-size: 1.3rem;
-  display: block;
-  margin-bottom: 15px;
-}
-@media (min-width: 992px) {
-    .over-slide {
-        font-size: 1.4rem;
-        max-width: 700px; /* កំណត់ទទឹងអក្សរឱ្យស្អាត */
-        margin-top: 250px;
-    }
+        .over-slide {
+          color: white;
+          font-size: 1.1rem;
+          font-weight: 600;
+          text-align: center;
+          padding: 20px;
+          line-height: 1.7;
+        }
 
-    .over-slide strong {
-        font-size: 3rem;
-        margin-bottom: 20px;
-    }
-}
+        .over-slide strong {
+          color: #b87707cd;
+          font-size: 1.3rem;
+          display: block;
+          margin-bottom: 15px;
+        }
 
-    /* padding 80px */
-    /* សម្រាប់អេក្រង់ទូទៅ (ទូរស័ព្ទ/អេក្រង់តូច) */
-    .mission-section {
-      padding: 40px 0;
-      /* ដាក់ត្រឹម 40px បានហើយកុំឱ្យចង្អៀតពេក */
-    }
+        @media (min-width: 992px) {
+          .over-slide {
+            font-size: 1.4rem;
+            max-width: 700px;
+            /* កំណត់ទទឹងអក្សរឱ្យស្អាត */
+            margin-top: 250px;
+          }
 
-    /* សម្រាប់អេក្រង់ធំ (ចាប់ពី Tablet ឬ PC ឡើងទៅ) */
-    @media (min-width: 768px) {
-      .mission-section {
-        padding: 80px 0;
-        /* ដាក់ 80px វិញពេលអេក្រង់ធំ */
-      }
-    }
+          .over-slide strong {
+            font-size: 3rem;
+            margin-bottom: 20px;
+          }
+        }
+
+        /* padding 80px */
+        /* សម្រាប់អេក្រង់ទូទៅ (ទូរស័ព្ទ/អេក្រង់តូច) */
+        .mission-section {
+          padding: 40px 0 !important;
+          /* ដាក់ត្រឹម 40px បានហើយកុំឱ្យចង្អៀតពេក */
+        }
+
+        /* សម្រាប់អេក្រង់ធំ (ចាប់ពី Tablet ឬ PC ឡើងទៅ) */
+        @media (min-width: 768px) {
+          .mission-section {
+            padding: 80px 0 !important;
+            /* ដាក់ 80px វិញពេលអេក្រង់ធំ */
+          }
+        }

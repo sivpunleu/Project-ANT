@@ -19,6 +19,17 @@
     margin-bottom: 30px;
     font-weight: bold;
 }
+.text-title {
+    font-size: 54px;
+    font-weight: bold;
+    color: var(--text-secondary);
+}
+.text-body {
+    font-size: 30px;
+    color: var(--text-secondary);
+    opacity: 80%;
+    padding: 25px 0;
+}
 
 .card {
     transition: transform 0.3s, box-shadow 0.3s;

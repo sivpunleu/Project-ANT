@@ -83,17 +83,12 @@
  /* ═══════════ HERO SECTION (រក្សាទុកស្ទើរតែទាំងអស់) ═══════════ */
  /* ═══════════ HERO SECTION (បានកែសម្រួល) ═══════════ */
  .hero {
-     /* បានកែសម្រួល៖ ដាក់ Gradient ថ្លា នៅពីលើរូបភាព */
      background: linear-gradient(180deg, rgba(0, 26, 51, 0.85) 0%, rgba(0, 53, 102, 0.85) 100%),
-         url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHX4j9UWfzWTt7UhfYiUY-aGbrbC2nQRJJdvmKH0Em-HsKj2A7lUsa-bRIzYHfDnetVKge6qcPPXdssStTkA3GP1qgC4gXQ0N9ubCVL5FMS7KKFKe-TjtIGzrh_L4kwwaIg9Uojp4vBqdi/s1600/nature_frm_3.png");
-
-     /* បានបន្ថែម៖ ដើម្បីឲ្យរូបភាព background មើលទៅស្អាត */
+         url('../images/vannda_img/indexphoto.jpg');
      background-size: cover;
      background-position: center center;
      background-attachment: fixed;
-     /* ធ្វើឲ្យមាន Parallax Effect ស្អាត */
-
-     /* រចនាប័ទ្មចាស់ (រក្សាទុក) */
+     height: 500px;
      padding: 100px 0;
      display: flex;
      align-items: center;
@@ -101,7 +96,9 @@
      color: #fff;
      position: relative;
      overflow: hidden;
+     background-position: center top;
  }
+
 
  .herosection {
      /* បានកែសម្រួល៖ ដាក់ Gradient ថ្លា នៅពីលើរូបភាព */
@@ -273,7 +270,7 @@
  /* ═══════════ STATS SECTION ═══════════ */
  .stats {
      padding: 60px 0;
-     background: linear-gradient(135deg, #003566 0%, #004080 100%);
+     /* background: linear-gradient(135deg, #003566 0%, #004080 100%); */
      color: #fff;
  }
 
@@ -298,7 +295,7 @@
  /* ═══════════ CTA SECTION ═══════════ */
  .cta {
      padding: 80px 0;
-     background: linear-gradient(135deg, #f59e0b, #d97706);
+     background: linear-gradient(135deg, #8b5800, #9d5401);
      color: #fff;
      text-align: center;
  }
@@ -337,3 +334,17 @@
 .feature-card h3 {
     transition: 0.3s ease; 
 }
+    /* padding 80px */
+    /* សម្រាប់អេក្រង់ទូទៅ (ទូរស័ព្ទ/អេក្រង់តូច) */
+    .mission-section {
+      padding: 40px 0 !important;
+      /* ដាក់ត្រឹម 40px បានហើយកុំឱ្យចង្អៀតពេក */
+    }
+
+    /* សម្រាប់អេក្រង់ធំ (ចាប់ពី Tablet ឬ PC ឡើងទៅ) */
+    @media (min-width: 768px) {
+      .mission-section {
+        padding: 80px 0 !important;
+        /* ដាក់ 80px វិញពេលអេក្រង់ធំ */
+      }
+    }
