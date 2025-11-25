@@ -1,9 +1,9 @@
 .top-25 {
-    top: 12% !important;
+    top: 11% !important;
 }
 
-.py-5 {
-    padding: 80px 0 !important;
+.margin-80 {
+    margin: 80px 0 !important;
 }
 .mb-40 {
     margin-bottom: 40px !important;
@@ -137,7 +137,7 @@
     margin: 0 auto 20px;
     color: var(--text-secondary);
     font-size: 24px;
-}
+} 
 
 .step-number {
     width: 40px;
@@ -197,4 +197,7 @@
     height: 25px;
     border-radius: 15px;
     background: var(--bg-secondary);
+}
+.accordion-item .accordion-button, .accordion-body {
+    border: 2px solid var(--bg-primary) !important;
 }

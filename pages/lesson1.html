@@ -30,7 +30,7 @@
         body {
             font-family: 'Battambang', sans-serif !important;
             font-weight: 400 !important;
-            background-color: #f8f9fa !important;
+            background-color: var(--bg-primary) !important;
         }
 
 
@@ -40,15 +40,22 @@
 
         .card {
             text-decoration: none !important;
+            color: var(--text-primary) !important;
+            background-color: var(--bg-primary);
         }
 
         .card * {
             text-decoration: none !important;
         }
+        .card-title {
+            color: var(--primary-color) !important;
+        }
+
+        
     </style>
 </head>
 
-<body>
+<body >
     <header class=" sticky-top">
         <!-- ═══════════ MAIN NAVBAR ═══════════ -->
         <nav class="navbar navbar-expand-lg  border-bottom border-light py-3 wow animate__slideInDown ">
@@ -214,6 +221,23 @@
             </div>
         </nav>
     </header>
+
+   <section class="hero-banner py-15"
+    style="background-image: url('/asset/images/kimhak/f814bf892709aeb4d7f17de7ffa3fb62listen.jpg'); background-size: cover; height: 400px;">
+    <div class="overlay"></div>
+
+    <div class="container hero-content">
+        <h1 class="hero-title" style="color: var(--primary-color);">បច្ចិមវាចា</h1>
+        <p class="hero-subtitle">
+            ម្នាលអានន្ទ សភាវៈឯណាគឺព្រះធម៌ក្តី ព្រះវិន័យក្តី ដែលតថាគតបានសំដែងហើយ បាន
+            បញ្ញត្តិហើយ ដល់អ្នកទាំងឡាយ សភាវៈគឺព្រះធម៌និងព្រះវិន័យនោះ លុះអំណើះឥតពី
+            តថាគតទៅហើយ នឹងបានជាគ្រូបង្រៀនប្រៀនប្រដៅនូវអ្នកទាំងឡាយ ។
+        </p>
+    </div>
+</section>
+
+
+
 
     <section class="pb-5">
         <main>
