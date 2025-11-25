@@ -1,3 +1,4 @@
+
 document.querySelectorAll('button').forEach(btn => {
     if (btn.textContent.includes('ចុះឈ្មោះ') || btn.textContent.includes('ចូលរួម')) {
         btn.setAttribute('data-bs-toggle', 'modal');
@@ -192,20 +193,6 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Back to top button
-const backToTopBtn = document.createElement('button');
-backToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
-backToTopBtn.className = 'btn btn-primary rounded-circle';
-backToTopBtn.style.cssText = 'position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px; display: none; z-index: 999; box-shadow: 0 4px 10px rgba(0,0,0,0.3);';
-document.body.appendChild(backToTopBtn);
-
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 300) {
-        backToTopBtn.style.display = 'block';
-    } else {
-        backToTopBtn.style.display = 'none';
-    }
-});
 
 backToTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
