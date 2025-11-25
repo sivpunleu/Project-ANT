@@ -214,47 +214,48 @@
 
     <!-- ═══════════ HERO SECTION ═══════════ -->
     <main>
-        <section>
+        <section class="position-relative w-100 vh-100 overflow-hidden mb-5">
 
-            <div class="position-relative">
-
-                <div class="container-fluid p-0">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide vh-100" data-bs-ride="carousel">
-                        <div class="carousel-inner ">
-                            <div class="carousel-item active ">
-                                <img src="asset/images/vannda_img/ព្រះសង្ឃ.svg" class="d-block object-fit-cover"
-                                    alt="...">
-                            </div>
-                            <div class="carousel-item ">
-                                <img src="asset/images/vannda_img/ព្រះធម៌.svg" class="d-block  object-fit-cover"
-                                    alt="...">
-                            </div>
-                            <div class="carousel-item ">
-                                <img src="asset/images/vannda_img/ព្រះពុទ្ធ.svg" class="d-block object-fit-cover"
-                                    alt="...">
-                            </div>
-                        </div>
+            <div id="heroCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active h-100" data-bs-interval="4000">
+                        <img src="asset/images/vannda_img/ព្រះសង្ឃ.svg" class="d-block w-100 h-100"
+                            style="object-fit: cover;" alt="Monk">
+                    </div>
+                    <div class="carousel-item h-100" data-bs-interval="4000">
+                        <img src="asset/images/vannda_img/ព្រះធម៌.svg" class="d-block w-100 h-100"
+                            style="object-fit: cover;" alt="Dhamma">
+                    </div>
+                    <div class="carousel-item h-100" data-bs-interval="4000">
+                        <img src="asset/images/vannda_img/ព្រះពុទ្ធ.svg" class="d-block w-100 h-100"
+                            style="object-fit: cover;" alt="Buddha">
                     </div>
                 </div>
-                <div class="hero position-absolute top-50 start-50 translate-middle w-100 h-auto" style="z-index: 10;">
-                    <div class="hero-content text-center">
+            </div>
 
-                        <h1 class="display-4 fw-bold text-warning typing">
-                            សូមស្វាគមន៍មកកាន់គេហទំព័រ
-                            ពុទ្ធសាសនា​ និង​​
-                            សង្គម
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center"
+                style="background: rgba(0,0,0,0.4); z-index: 10;">
+                <div class="container text-center text-white px-3">
+
+                    <div class="d-inline-block mb-3">
+                        <h1 class="typing-text fw-bold text-warning m-0">
+                            សូមស្វាគមន៍មកកាន់គេហទំព័រ ពុទ្ធសាសនា​ និង​​ សង្គម
                         </h1>
-
-                        <h2 class="fw-bold fs-3 text-light px-2 mt-3">
-                            ការអប់រំផ្លូវចិត្តគឺជាកត្តាចាំបាច់សម្រាប់
-                            <br class="d-md-none">ដោះស្រាយបញ្ញាក្នុងជីវិតប្រចាំថ្ងៃ
-                        </h2>
-
-                        <h2 class="text-light fw-bold mt-3 px-2 mb-5">សីល សមាធិ បញ្ញា</h2>
-                        <a href="pages/Sila.html" class="btn-primary mt-4 ms-2 text-decoration-none text-light">
-                            ចាប់ផ្តើមឥឡូវនេះ
-                        </a>
                     </div>
+
+                    <h2 class="fw-bold mt-2 responsive-h2">
+                        ការអប់រំផ្លូវចិត្តគឺជាកត្តាចាំបាច់សម្រាប់ <br class="d-none d-md-block">
+                        ដោះស្រាយបញ្ហាក្នុងជីវិតប្រចាំថ្ងៃ
+                    </h2>
+
+                    <h3 class="fw-bold text-warning mt-3 mb-4 responsive-h3">
+                        សីល សមាធិ បញ្ញា
+                    </h3>
+
+                    <a href="pages/Sila.html" class="btn btn-outline-primary rounded-pill px-5 py-3 shadow">
+                        ចាប់ផ្តើមឥឡូវនេះ
+                    </a>
+
                 </div>
             </div>
         </section>
@@ -652,13 +653,15 @@
                 <!-- Navigation buttons -->
                 <div class="d-flex justify-content-end gap-3 mt-4">
 
-                    <button class="btn-nav btn-outline-primary" id="prevBtn" type="button" data-bs-target="#eventCarousel"
-                        data-bs-slide="prev" style="background-color: var(--bg-secondary);">
+                    <button class="btn-nav btn-outline-primary" id="prevBtn" type="button"
+                        data-bs-target="#eventCarousel" data-bs-slide="prev"
+                        style="background-color: var(--bg-secondary);">
                         <i class="bi bi-arrow-left"></i>
                     </button>
 
-                    <button class="btn-nav btn-outline-primary" id="nextBtn" type="button" data-bs-target="#eventCarousel"
-                        data-bs-slide="next" style="background-color: var(--bg-secondary);">
+                    <button class="btn-nav btn-outline-primary" id="nextBtn" type="button"
+                        data-bs-target="#eventCarousel" data-bs-slide="next"
+                        style="background-color: var(--bg-secondary);">
                         <i class="bi bi-arrow-right"></i>
                     </button>
 
@@ -802,8 +805,9 @@
                                 <p class="card-text opacity-75" style="color: var(--text-primary);">
                                     កម្មវិធីអប់រំចិត្ត និងបណ្តុះសតិរយៈពេលមួយសប្តាហ៍ សម្រាប់អ្នកចង់ស្វែងរកក្តីស្ងប់។</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="" class="text-decoration-none opacity-75 m-0" style="color: var(--text-primary);"><i
-                                            class="fa-solid fa-location-dot" ></i> វត្តនិគ្រោធវ័ន (វត្ត​គល់ទទឹង)
+                                    <a href="" class="text-decoration-none opacity-75 m-0"
+                                        style="color: var(--text-primary);"><i class="fa-solid fa-location-dot"></i>
+                                        វត្តនិគ្រោធវ័ន (វត្ត​គល់ទទឹង)
                                     </a>
                                     <a href="pages/meditation-detail.html" class="btn btn-outline-warning m-0"
                                         style="color: var(--text-primary);">មើលព័ត៌មានលម្អិត</a>
@@ -822,8 +826,9 @@
                                 <p class="card-text opacity-75" style="color: var(--text-primary);">
                                     ប្រមូលផ្តុំសៀវភៅធម៌ និងឯកសារសិក្សាទាក់ទងនឹងពុទ្ធសាសនាសម្រាប់អាននិងស្រាវជ្រាវ។</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="" class="text-decoration-none opacity-75 m-0" style="color: var(--text-primary);"><i
-                                            class="fa-solid fa-location-dot"></i> ក្រសួងធម្មការនិងសាសនា</a>
+                                    <a href="" class="text-decoration-none opacity-75 m-0"
+                                        style="color: var(--text-primary);"><i class="fa-solid fa-location-dot"></i>
+                                        ក្រសួងធម្មការនិងសាសនា</a>
                                     <a href="pages/media-library.html" class="btn btn-outline-warning m-0"
                                         style="color: var(--text-primary);">មើលព័ត៌មានលម្អិត</a>
                                 </div>
@@ -842,8 +847,9 @@
                                     រូប និងនិព្វាន
                                     ក្នុងទស្សនវិជ្ជាព្រះពុទ្ធសាសនា។</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="" class="text-decoration-none  opacity-75 m-0" style="color: var(--text-primary); "><i
-                                            class="fa-solid fa-location-dot"></i> ពុទ្ធិកវិទ្យាល័យព្រះសុរាម្រឹត</a>
+                                    <a href="" class="text-decoration-none  opacity-75 m-0"
+                                        style="color: var(--text-primary); "><i class="fa-solid fa-location-dot"></i>
+                                        ពុទ្ធិកវិទ្យាល័យព្រះសុរាម្រឹត</a>
                                     <a href="pages/lesson1.html" class="btn btn-outline-warning m-0"
                                         style="color: var(--text-primary);">មើលព័ត៌មានលម្អិត</a>
                                 </div>
@@ -903,7 +909,7 @@
                                 <i class="fas fa-hands-helping" style="color: var(--text-primary);"></i>
                             </div>
                             <div class="card text-center border-0 shadow-sm rounded-4 p-4"
-                                style="background-color: var(--bg-secondary); box-shadow: var(--box-shadow)" >
+                                style="background-color: var(--bg-secondary); box-shadow: var(--box-shadow)">
                                 <span class="counter " data-target="300" style="color: var(--text-primary);">0</span>
                                 <p class="fs-5  mb-0" style="color: var(--text-primary);">អ្នកស្ម័គ្រចិត្ត</p>
                             </div>
