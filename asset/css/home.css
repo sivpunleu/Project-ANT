@@ -301,9 +301,7 @@ img{
   color: #ffffff;
 }
 
-.stats-section.bg-light {
-  background-color: #f4f7fc !important;
-}
+
 
 .stat-item {
   padding-top: 30px;
@@ -363,13 +361,6 @@ img{
   /* ពណ៌មាស */
   margin: 10px auto 0;
 }
-
-
-.stats-section {
-  background-color: #ffffff;
-  padding: 60px 0;
-}
-
 .stat-item {
   text-align: center;
   padding: 20px;
