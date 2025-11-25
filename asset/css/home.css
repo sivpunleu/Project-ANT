@@ -189,11 +189,11 @@ img{
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 1px solid #d1d5db;
+  /* border: 1px solid #d1d5db; */
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white;
+  /* background: white; */
   transition: all 0.2s;
 }
 
