@@ -197,10 +197,16 @@
         <!-- Hero Banner -->
         <section class="hero-banner py-15">
             <div class="container">
-                <h1 class="hero-title">សំឡេងព្រះធម៌</h1>
-                <p class="hero-subtitle">
-                    ស្ដាប់ព្រះធម៌ដើម្បីអភិវឌ្ឍន៍ចិត្ត និងបង្កើននូវប្រាជ្ញា
-                </p>
+                <div class="row">
+                    <div class="col-6 mx-auto">
+                        <div class="hero-title">
+                            <h1 class="title">សំឡេងព្រះធម៌</h1>
+                            <h4 class="subtitle">
+                                ស្ដាប់ព្រះធម៌ដើម្បីអភិវឌ្ឍន៍ចិត្ត និងបង្កើននូវប្រាជ្ញា
+                            </h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -209,61 +215,79 @@
             <div class="container my-5">
                 <div class="mb-5">
                     <h2 class="section-title"><i class="fas fa-graduation-cap me-2"></i>អប់រំចិត្ត</h2>
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <div class="col-md-6 col-lg-4 audio-item" data-title="ព្យាបាល ជម្ងឺ ផ្លូវចិត្ត">
-                            <div class="audio-card position-relative">
+                            <div class="audio-card">
                                 <div class="audio-icon">
-                                    <i class="fas fa-microphone-alt"></i></div>
-                                <div class="d-flex align-items-center justify-content-between">
+                                    <img src="../asset/images/tong_img/5392267d4227b2664fb068c8728e5b4a.jpg" alt="Mental Health">
+                                    <i class="fas fa-microphone-alt"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
                                     <h5 class="audio-title">ព្យាបាល ជម្ងឺ ផ្លូវចិត្ត</h5>
                                     <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
                                 </div>
                                 <span class="badge-category mb-2">អប់រំចិត្ត</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
+                                <audio controls id="audioPlayer">
+                                    <source src="../asset/audio/video6134303434402175703 (1).mp4" type="audio/mpeg">
                                 </audio>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>42:00</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                    <small class="text-secondary">
+                                        <i class="fas fa-clock me-1"></i>
+                                        <span id="duration">42:00</span>
+                                    </small>
+                                    <button class="btn btn-sm btn-download" onclick="showDownloadMessage()">
+                                        <i class="fas fa-download me-1"></i>ទាញយក
+                                    </button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 audio-item" data-title="ស្ដាប់ធម៌អប់រំផ្លូវចិត្ត">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">ស្ដាប់ធម៌អប់រំផ្លូវចិត្ត</h5>
+                            <div class="audio-card">
+                                <div class="audio-icon">
+                                    <img src="../asset/images/tong_img/28620241545front.jpg" alt="Mental Health">
+                                    <i class="fas fa-microphone-alt"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h5 class="audio-title">ស្ដាប់ធម៌អប់រំផ្លូវចិត្ត</h5>
+                                    <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                </div>
                                 <span class="badge-category mb-2">អប់រំចិត្ត</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
+                                <audio controls id="audioPlayer2">
+                                    <source src="../asset/audio/video6134303434402175703 (1).mp4" type="audio/mpeg">
                                 </audio>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>35:20</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                    <small class="text-secondary">
+                                        <i class="fas fa-clock me-1"></i>
+                                        <span id="duration1">42:00</span>
+                                    </small>
+                                    <button class="btn btn-sm btn-download" onclick="showDownloadMessage()">
+                                        <i class="fas fa-download me-1"></i>ទាញយក
+                                    </button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 audio-item" data-title="កាត់ចិត្តចំពោះរឿងកន្លងហួស">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">កាត់ចិត្តចំពោះរឿងកន្លងហួស</h5>
+                            <div class="audio-card">
+                                <div class="audio-icon">
+                                    <img src="../asset/images/tong_img/image-1131-1024x682.png" alt="Mental Health">
+                                    <i class="fas fa-microphone-alt"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h5 class="audio-title">កាត់ចិត្តចំពោះរឿងកន្លងហួស</h5>
+                                    <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                </div>
                                 <span class="badge-category mb-2">អប់រំចិត្ត</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
+                                <audio controls id="audioPlayer1">
+                                    <source src="../asset/audio/video6134303434402175703 (1).mp4" type="audio/mpeg">
                                 </audio>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>28:15</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                    <small class="text-secondary">
+                                        <i class="fas fa-clock me-1"></i>
+                                        <span id="duration2">42:00</span>
+                                    </small>
+                                    <button class="btn btn-sm btn-download" onclick="showDownloadMessage()">
+                                        <i class="fas fa-download me-1"></i>ទាញយក
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -272,118 +296,162 @@
 
                 <div class="mb-5">
                     <h2 class="section-title"><i class="fas fa-hands-praying me-2"></i>កម្មវិធីបុណ្យនានា</h2>
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <div class="col-md-6 col-lg-4 audio-item" data-title="ពិធីបុណ្យចូលឆ្នាំខ្មែរ">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">ពិធីបុណ្យចូលឆ្នាំខ្មែរ</h5>
-                                <span class="badge-category mb-2">កម្មវិធីបុណ្យ</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
+                            <div class="audio-card">
+                                <div class="audio-icon">
+                                    <img src="../asset/images/tong_img/5392267d4227b2664fb068c8728e5b4a.jpg" alt="Mental Health">
+                                    <i class="fas fa-microphone-alt"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h5 class="audio-title">ពិធីបុណ្យចូលឆ្នាំខ្មែរ</h5>
+                                    <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                </div>
+                                <span class="badge-category mb-2">កម្មវិធីបុណ្យនានា</span>
+                                <audio controls id="audioPlayer3">
+                                    <source src="../asset/audio/video6134303434402175703 (1).mp4" type="audio/mpeg">
                                 </audio>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>55:30</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                    <small class="text-secondary">
+                                        <i class="fas fa-clock me-1"></i>
+                                        <span id="duration3">42:00</span>
+                                    </small>
+                                    <button class="btn btn-sm btn-download" onclick="showDownloadMessage()">
+                                        <i class="fas fa-download me-1"></i>ទាញយក
+                                    </button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 audio-item" data-title="ពិធីបុណ្យភ្ជុំបិណ្ឌ">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">ពិធីបុណ្យភ្ជុំបិណ្ឌ</h5>
-                                <span class="badge-category mb-2">កម្មវិធីបុណ្យ</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
+                            <div class="audio-card">
+                                <div class="audio-icon">
+                                    <img src="../asset/images/tong_img/28620241545front.jpg" alt="Mental Health">
+                                    <i class="fas fa-microphone-alt"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h5 class="audio-title">ពិធីបុណ្យភ្ជុំបិណ្ឌ</h5>
+                                    <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                </div>
+                                <span class="badge-category mb-2">កម្មវិធីបុណ្យនានា</span>
+                                <audio controls id="audioPlayer4">
+                                    <source src="../asset/audio/video6134303434402175703 (1).mp4" type="audio/mpeg">
                                 </audio>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>48:20</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                    <small class="text-secondary">
+                                        <i class="fas fa-clock me-1"></i>
+                                        <span id="duration4">42:00</span>
+                                    </small>
+                                    <button class="btn btn-sm btn-download" onclick="showDownloadMessage()">
+                                        <i class="fas fa-download me-1"></i>ទាញយក
+                                    </button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 audio-item" data-title="បុណ្យកឋិនទាន">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">បុណ្យកឋិនទាន</h5>
-                                <span class="badge-category mb-2">កម្មវិធីបុណ្យ</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
+                            <div class="audio-card">
+                                <div class="audio-icon">
+                                    <img src="../asset/images/tong_img/hq720 (1).jpg" alt="Mental Health">
+                                    <i class="fas fa-microphone-alt"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h5 class="audio-title">បុណ្យកឋិនទាន</h5>
+                                    <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                </div>
+                                <span class="badge-category mb-2">កម្មវិធីបុណ្យនានា</span>
+                                <audio controls id="audioPlayer5">
+                                    <source src="../asset/audio/video6134303434402175703 (1).mp4" type="audio/mpeg">
                                 </audio>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>60:00</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                    <small class="text-secondary">
+                                        <i class="fas fa-clock me-1"></i>
+                                        <span id="duration5">42:00</span>
+                                    </small>
+                                    <button class="btn btn-sm btn-download" onclick="showDownloadMessage()">
+                                        <i class="fas fa-download me-1"></i>ទាញយក
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                    
+
                 <div class="mb-5">
                     <h2 class="section-title"><i class="fas fa-om me-2"></i>វិបស្សនាកម្មដ្ឋាន</h2>
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <div class="col-md-6 col-lg-4 audio-item" data-title="ជឿលើអំពើខ្លួនឯង">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">ជឿលើអំពើខ្លួនឯង</h5>
+                            <div class="audio-card">
+                                <div class="audio-icon">
+                                    <img src="../asset/images/tong_img/5392267d4227b2664fb068c8728e5b4a.jpg" alt="Mental Health">
+                                    <i class="fas fa-microphone-alt"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h5 class="audio-title">ជឿលើអំពើខ្លួនឯង</h5>
+                                    <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                </div>
                                 <span class="badge-category mb-2">វិបស្សនាកម្មដ្ឋាន</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
+                                <audio controls id="audioPlayer6">
+                                    <source src="../asset/audio/video6134303434402175703 (1).mp4" type="audio/mpeg">
                                 </audio>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>50:00</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                    <small class="text-secondary">
+                                        <i class="fas fa-clock me-1"></i>
+                                        <span id="duration6">42:00</span>
+                                    </small>
+                                    <button class="btn btn-sm btn-download" onclick="showDownloadMessage()">
+                                        <i class="fas fa-download me-1"></i>ទាញយក
+                                    </button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 audio-item" data-title="ដឹងខ្យល់">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">ដឹងខ្យល់</h5>
+                            <div class="audio-card">
+                                <div class="audio-icon">
+                                    <img src="../asset/images/tong_img/ecbf6962f7453de15e59a606e7922ce6-1.jpg" alt="Mental Health">
+                                    <i class="fas fa-microphone-alt"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h5 class="audio-title">ដឹងខ្យល់</h5>
+                                    <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                </div>
                                 <span class="badge-category mb-2">វិបស្សនាកម្មដ្ឋាន</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
+                                <audio controls id="audioPlayer7">
+                                    <source src="../asset/audio/video6134303434402175703 (1).mp4" type="audio/mpeg">
                                 </audio>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>46:15</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                    <small class="text-secondary">
+                                        <i class="fas fa-clock me-1"></i>
+                                        <span id="duration7">42:00</span>
+                                    </small>
+                                    <button class="btn btn-sm btn-download" onclick="showDownloadMessage()">
+                                        <i class="fas fa-download me-1"></i>ទាញយក
+                                    </button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 audio-item" data-title="របៀបធ្វើសមាធិ">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">របៀបធ្វើសមាធិ</h5>
+                            <div class="audio-card">
+                                <div class="audio-icon">
+                                    <img src="../asset/images/tong_img/image-1131-1024x682.png" alt="Mental Health">
+                                    <i class="fas fa-microphone-alt"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h5 class="audio-title">របៀបធ្វើសមាធិ</h5>
+                                    <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                </div>
                                 <span class="badge-category mb-2">វិបស្សនាកម្មដ្ឋាន</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
+                                <audio controls id="audioPlayer8">
+                                    <source src="../asset/audio/video6134303434402175703 (1).mp4" type="audio/mpeg">
                                 </audio>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>44:00</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                    <small class="text-secondary">
+                                        <i class="fas fa-clock me-1"></i>
+                                        <span id="duration8">42:00</span>
+                                    </small>
+                                    <button class="btn btn-sm btn-download" onclick="showDownloadMessage()">
+                                        <i class="fas fa-download me-1"></i>ទាញយក
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -392,58 +460,79 @@
 
                 <div class="mb-5">
                     <h2 class="section-title"><i class="fas fa-book-reader me-2"></i>ព្រះអភិធម្ម</h2>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4 audio-item" data-title="សិក្សាព្រះអភិធម្ម">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">សិក្សាព្រះអភិធម្ម (ភាគ១)</h5>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="សិក្សាព្រះអភិធម្ម (ភាគ១)">
+                            <div class="audio-card">
+                                <div class="audio-icon">
+                                    <img src="../asset/images/tong_img/5392267d4227b2664fb068c8728e5b4a.jpg" alt="Mental Health">
+                                    <i class="fas fa-microphone-alt"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h5 class="audio-title">សិក្សាព្រះអភិធម្ម (ភាគ១)</h5>
+                                    <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                </div>
                                 <span class="badge-category mb-2">ព្រះអភិធម្ម</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
+                                <audio controls id="audioPlayer9">
+                                    <source src="../asset/audio/video6134303434402175703 (1).mp4" type="audio/mpeg">
                                 </audio>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>65:00</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                    <small class="text-secondary">
+                                        <i class="fas fa-clock me-1"></i>
+                                        <span id="duration9">42:00</span>
+                                    </small>
+                                    <button class="btn btn-sm btn-download" onclick="showDownloadMessage()">
+                                        <i class="fas fa-download me-1"></i>ទាញយក
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 audio-item" data-title="បដិបត្តិព្រះអភិធម្ម">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">បដិបត្តិព្រះអភិធម្ម</h5>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="សិក្សាព្រះអភិធម្ម (ភាគ២)">
+                            <div class="audio-card">
+                                <div class="audio-icon">
+                                    <img src="../asset/images/tong_img/28620241545front.jpg" alt="Mental Health">
+                                    <i class="fas fa-microphone-alt"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h5 class="audio-title">សិក្សាព្រះអភិធម្ម (ភាគ២)</h5>
+                                    <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                </div>
                                 <span class="badge-category mb-2">ព្រះអភិធម្ម</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
+                                <audio controls id="audioPlayer10">
+                                    <source src="../asset/audio/video6134303434402175703 (1).mp4" type="audio/mpeg">
                                 </audio>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>70:00</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                    <small class="text-secondary">
+                                        <i class="fas fa-clock me-1"></i>
+                                        <span id="duration10">42:00</span>
+                                    </small>
+                                    <button class="btn btn-sm btn-download" onclick="showDownloadMessage()">
+                                        <i class="fas fa-download me-1"></i>ទាញយក
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 audio-item" data-title="យល់ពីជីវិតពិត">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">យល់ពីជីវិតពិតតាមអភិធម្ម</h5>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="សិក្សាព្រះអភិធម្ម (ភាគ៣)">
+                            <div class="audio-card">
+                                <div class="audio-icon">
+                                    <img src="../asset/images/tong_img/image-1131-1024x682.png" alt="Mental Health">
+                                    <i class="fas fa-microphone-alt"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h5 class="audio-title">សិក្សាព្រះអភិធម្ម (ភាគ៣)</h5>
+                                    <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                </div>
                                 <span class="badge-category mb-2">ព្រះអភិធម្ម</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
+                                <audio controls id="audioPlayer11">
+                                    <source src="../asset/audio/video6134303434402175703 (1).mp4" type="audio/mpeg">
                                 </audio>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>52:00</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                    <small class="text-secondary">
+                                        <i class="fas fa-clock me-1"></i>
+                                        <span id="duration11">42:00</span>
+                                    </small>
+                                    <button class="btn btn-sm btn-download" onclick="showDownloadMessage()">
+                                        <i class="fas fa-download me-1"></i>ទាញយក
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -452,297 +541,160 @@
 
                 <div class="mb-5">
                     <h2 class="section-title"><i class="fas fa-scroll me-2"></i>ព្រះសូត្រ</h2>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4 audio-item" data-title="សិក្សាព្រះសូត្រ">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">សិក្សាព្រះសូត្រ ភាគ១</h5>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="សិក្សាព្រះសូត្រ ភាគ១">
+                            <div class="audio-card">
+                                <div class="audio-icon">
+                                    <img src="../asset/images/tong_img/5392267d4227b2664fb068c8728e5b4a.jpg" alt="Mental Health">
+                                    <i class="fas fa-microphone-alt"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h5 class="audio-title">សិក្សាព្រះសូត្រ ភាគ១</h5>
+                                    <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                </div>
                                 <span class="badge-category mb-2">ព្រះសូត្រ</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
+                                <audio controls id="audioPlayer12">
+                                    <source src="../asset/audio/video6134303434402175703 (1).mp4" type="audio/mpeg">
                                 </audio>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>35:00</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                    <small class="text-secondary">
+                                        <i class="fas fa-clock me-1"></i>
+                                        <span id="duration12">42:00</span>
+                                    </small>
+                                    <button class="btn btn-sm btn-download" onclick="showDownloadMessage()">
+                                        <i class="fas fa-download me-1"></i>ទាញយក
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 audio-item" data-title="មង្គល ៣៨ ប្រការ">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">មង្គល ៣៨ ប្រការ</h5>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="សិក្សាព្រះសូត្រ ភាគ២">
+                            <div class="audio-card">
+                                <div class="audio-icon">
+                                    <img src="../asset/images/tong_img/28620241545front.jpg" alt="Mental Health">
+                                    <i class="fas fa-microphone-alt"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h5 class="audio-title">សិក្សាព្រះសូត្រ ភាគ២</h5>
+                                    <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                </div>
                                 <span class="badge-category mb-2">ព្រះសូត្រ</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
+                                <audio controls id="audioPlayer13">
+                                    <source src="../asset/audio/video6134303434402175703 (1).mp4" type="audio/mpeg">
                                 </audio>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>38:00</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                    <small class="text-secondary">
+                                        <i class="fas fa-clock me-1"></i>
+                                        <span id="duration13">42:00</span>
+                                    </small>
+                                    <button class="btn btn-sm btn-download" onclick="showDownloadMessage()">
+                                        <i class="fas fa-download me-1"></i>ទាញយក
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 audio-item" data-title="ទេសនាអំពីមង្គលគាថា">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">ទេសនាអំពីមង្គលគាថា</h5>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="សិក្សាព្រះសូត្រ ភាគ៣">
+                            <div class="audio-card">
+                                <div class="audio-icon">
+                                    <img src="../asset/images/tong_img/ecbf6962f7453de15e59a606e7922ce6-1.jpg" alt="Mental Health">
+                                    <i class="fas fa-microphone-alt"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h5 class="audio-title">សិក្សាព្រះសូត្រ ភាគ៣</h5>
+                                    <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                </div>
                                 <span class="badge-category mb-2">ព្រះសូត្រ</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
+                                <audio controls id="audioPlayer14">
+                                    <source src="../asset/audio/video6134303434402175703 (1).mp4" type="audio/mpeg">
                                 </audio>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>42:30</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                    <small class="text-secondary">
+                                        <i class="fas fa-clock me-1"></i>
+                                        <span id="duration14">42:00</span>
+                                    </small>
+                                    <button class="btn btn-sm btn-download" onclick="showDownloadMessage()">
+                                        <i class="fas fa-download me-1"></i>ទាញយក
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>            
 
                 <div class="mb-5">
                     <h2 class="section-title"><i class="fas fa-balance-scale me-2"></i>ព្រះវិន័យ</h2>
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <div class="col-md-6 col-lg-4 audio-item" data-title="សិក្សាព្រះវិន័យ">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">សិក្សាព្រះវិន័យ ភាគ១</h5>
+                            <div class="audio-card">
+                                <div class="audio-icon">
+                                    <img src="../asset/images/tong_img/5392267d4227b2664fb068c8728e5b4a.jpg" alt="Mental Health">
+                                    <i class="fas fa-microphone-alt"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h5 class="audio-title">សិក្សាព្រះវិន័យ ភាគ១</h5>
+                                    <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                </div>
                                 <span class="badge-category mb-2">ព្រះវិន័យ</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
+                                <audio controls id="audioPlayer15">
+                                    <source src="../asset/audio/video6134303434402175703 (1).mp4" type="audio/mpeg">
                                 </audio>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>58:00</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                    <small class="text-secondary">
+                                        <i class="fas fa-clock me-1"></i>
+                                        <span id="duration15">42:00</span>
+                                    </small>
+                                    <button class="btn btn-sm btn-download" onclick="showDownloadMessage()">
+                                        <i class="fas fa-download me-1"></i>ទាញយក
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 audio-item" data-title="បដិបត្តិព្រះវិន័យ">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">បដិបត្តិព្រះវិន័យ</h5>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="សិក្សាព្រះវិន័យ">
+                            <div class="audio-card">
+                                <div class="audio-icon">
+                                    <img src="../asset/images/tong_img/28620241545front.jpg" alt="Mental Health">
+                                    <i class="fas fa-microphone-alt"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h5 class="audio-title">សិក្សាព្រះវិន័យ ភាគ២</h5>
+                                    <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                </div>
                                 <span class="badge-category mb-2">ព្រះវិន័យ</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
+                                <audio controls id="audioPlayer16">
+                                    <source src="../asset/audio/video6134303434402175703 (1).mp4" type="audio/mpeg">
                                 </audio>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>62:00</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                    <small class="text-secondary">
+                                        <i class="fas fa-clock me-1"></i>
+                                        <span id="duration16">42:00</span>
+                                    </small>
+                                    <button class="btn btn-sm btn-download" onclick="showDownloadMessage()">
+                                        <i class="fas fa-download me-1"></i>ទាញយក
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 audio-item" data-title="យល់ពីជីវិតពិត">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">យល់ពីជីវិតពិតតាមវិន័យ</h5>
+                        <div class="col-md-6 col-lg-4 audio-item" data-title="សិក្សាព្រះវិន័យ">
+                            <div class="audio-card">
+                                <div class="audio-icon">
+                                    <img src="../asset/images/tong_img/5392267d4227b2664fb068c8728e5b4a.jpg" alt="Mental Health">
+                                    <i class="fas fa-microphone-alt"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h5 class="audio-title">សិក្សាព្រះវិន័យ ភាគ១</h5>
+                                    <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+                                </div>
                                 <span class="badge-category mb-2">ព្រះវិន័យ</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
+                                <audio controls id="audioPlayer17">
+                                    <source src="../asset/audio/video6134303434402175703 (1).mp4" type="audio/mpeg">
                                 </audio>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>54:00</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mb-5">
-                    <h2 class="section-title"><i class="fas fa-leaf me-2"></i>ធម្មជាតិ និងបរិស្ថាន</h2>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4 audio-item" data-title="ការគោរពធម្មជាតិ">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">ការគោរពធម្មជាតិ</h5>
-                                <span class="badge-category mb-2">ធម្មជាតិ</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
-                                </audio>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>30:00</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 audio-item" data-title="ការអភិរក្សបរិស្ថាន">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">ការអភិរក្សបរិស្ថាន</h5>
-                                <span class="badge-category mb-2">ធម្មជាតិ</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
-                                </audio>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>33:45</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 audio-item" data-title="ការគោរពសត្វ">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">ការគោរពសត្វ</h5>
-                                <span class="badge-category mb-2">ធម្មជាតិ</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
-                                </audio>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>29:30</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mb-5">
-                    <h2 class="section-title"><i class="fas fa-heartbeat me-2"></i>សុខភាព និងចិត្តសាស្ត្រ</h2>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4 audio-item" data-title="សុខភាព និងចិត្តសាស្ត្រ">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">សុខភាព និងចិត្តសាស្ត្រ</h5>
-                                <span class="badge-category mb-2">សុខភាព</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
-                                </audio>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>40:00</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 audio-item" data-title="ចិត្តសាស្ត្រ និងការគ្រប់គ្រងស្ត្រេស">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">ចិត្តសាស្ត្រ និងការគ្រប់គ្រងស្ត្រេស</h5>
-                                <span class="badge-category mb-2">សុខភាព</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
-                                </audio>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>45:15</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 audio-item" data-title="ការថែរក្សាសុខភាពចិត្ត">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">ការថែរក្សាសុខភាពចិត្ត</h5>
-                                <span class="badge-category mb-2">សុខភាព</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
-                                </audio>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>38:40</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-5">
-                    <h2 class="section-title"><i class="fas fa-thumbs-up me-2"></i>សំឡេងធម៌ពេញនិយម</h2>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4 audio-item" data-title="សំឡេងធម៌ពេញនិយម ១">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">សំឡេងធម៌ពេញនិយម ១</h5>
-                                <span class="badge-category mb-2">ពេញនិយម</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
-                                </audio>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>48:00</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 audio-item" data-title="សំឡេងធម៌ពេញនិយម ២">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">សំឡេងធម៌ពេញនិយម ២</h5>
-                                <span class="badge-category mb-2">ពេញនិយម</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
-                                </audio>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>52:30</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 audio-item" data-title="សំឡេងធម៌ពេញនិយម ៣">
-                            <div class="audio-card position-relative">
-                                <i class="fas fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-                                <div class="audio-icon"><i class="fas fa-microphone-alt"></i></div>
-                                <h5 class="audio-title">សំឡេងធម៌ពេញនិយម ៣</h5>
-                                <span class="badge-category mb-2">ពេញនិយម</span>
-                                <audio controls>
-                                    <source src="../asset/audio/video6134303434402175703 (1).mp4"
-                                        type="audio/mpeg">
-                                </audio>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-secondary"><i class="fas fa-clock me-1"></i>45:15</small>
-                                    <button class="btn btn-sm" style="background: var(--primary-color); color: white;"
-                                        onclick="showDownloadMessage()"><i
-                                            class="fas fa-download me-1"></i>ទាញយក</button>
+                                    <small class="text-secondary">
+                                        <i class="fas fa-clock me-1"></i>
+                                        <span id="duration17">42:00</span>
+                                    </small>
+                                    <button class="btn btn-sm btn-download" onclick="showDownloadMessage()">
+                                        <i class="fas fa-download me-1"></i>ទាញយក
+                                    </button>
                                 </div>
                             </div>
                         </div>
