@@ -1,3 +1,44 @@
+// JS: update BOTH images and allow clicking small profile to open file dialog
+const avatarInput = document.getElementById('avatarInput');
+const avatarImg = document.getElementById('avatarImg');         // large avatar
+const smallProfileImg = document.getElementById('smallProfileImg'); // small profile picture
+const profileLink = document.getElementById('profileLink');
+const cameraBtn = document.getElementById('cameraBtn');
+
+function updateBothImagesFromFile(file) {
+    if (!file) return;
+    // Use FileReader for broad compatibility and to easily revoke object URL later
+    const reader = new FileReader();
+    reader.onload = function (e) {
+        const dataUrl = e.target.result;
+        avatarImg.src = dataUrl;
+        smallProfileImg.src = dataUrl;
+    };
+    reader.readAsDataURL(file);
+}
+
+// When user selects a file
+avatarInput.addEventListener('change', function () {
+    const file = this.files && this.files[0];
+    if (file) {
+        updateBothImagesFromFile(file);
+    }
+    // Optional: clear input so selecting same file again still triggers change
+    this.value = '';
+});
+
+// Make clicking the small profile image open the same file dialog
+profileLink.addEventListener('click', function (e) {
+    e.preventDefault();           // prevent navigation
+    avatarInput.click();
+});
+
+// Also allow clicking the camera label (already associated) if you want explicit handler
+cameraBtn.addEventListener('click', function (e) {
+    // label for=file already opens dialog; this handler is optional
+    // avatarInput.click();
+});
+
 // Set default theme
 document.documentElement.setAttribute('data-theme', 'light');
 let currentTheme = 'light'; // Keep track of manually selected theme
