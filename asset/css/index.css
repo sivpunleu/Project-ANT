@@ -9,8 +9,9 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     font-family: 'Battambang', sans-serif;
+     font-family: "Kantumruy Pro", sans-serif;
  }
+
  /* ═══════════ NAVBAR (បានកែសម្រួលសម្រាប់ Bootstrap) ═══════════ */
  .navbar {
      /* background: linear-gradient(135deg, #003566 0%, #004080 100%); */
@@ -63,6 +64,10 @@
 
  .nav-link:hover::after {
      width: 60%;
+ }
+
+ .login:hover {
+     color: #fff !important;
  }
 
  .btn-header {
@@ -180,6 +185,13 @@
      /* បានបន្ថែម margin សម្រាប់ mobile */
  }
 
+ .cater {
+     padding: 15px 40px;
+     font-size: 20px;
+     font-weight: 700;
+     border-radius: 30px;
+ }
+
  .btn-cta:hover {
      transform: translateY(-5px);
      box-shadow: 0 12px 30px rgba(245, 158, 11, 0.5);
@@ -205,7 +217,7 @@
 
  .section-title {
      font-size: 2.5rem;
-     font-weight: 900;
+     font-weight: 700;
      margin-bottom: 50px;
      text-align: center;
      color: var(--dark);
@@ -248,14 +260,14 @@
  /* ═══════════ ABOUT SECTION (បានកែសម្រួល) ═══════════ */
  .about {
      padding: 80px 0;
-     background: #fff;
+     /* background: #fff; */
  }
 
  /* បានលុប .about-content grid; ឥឡូវ Bootstrap .row គ្រប់គ្រងវា */
 
  .about-text h2 {
      font-size: 2.2rem;
-     font-weight: 900;
+     font-weight: 700;
      margin-bottom: 20px;
      color: var(--dark);
  }
@@ -311,40 +323,44 @@
      margin-bottom: 30px;
  }
 
-/* card ខ្លឹមសារសំខាន់ៗ */
-.card-link-wrapper {
-    text-decoration: none; 
-    color: inherit; 
-}
-.feature-card {
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    border-bottom: 3px solid transparent;
-    transition: 0.3s ease; 
-}
+ /* card ខ្លឹមសារសំខាន់ៗ */
+ .card-link-wrapper {
+     text-decoration: none;
+     color: inherit;
+ }
 
-.feature-card:hover {
-    box-shadow: 0 10px 30px rgba(184, 119, 7, 0.3); 
-    border-bottom: 3px solid var(--primary); 
-}
-.feature-card:hover .feature-icon,
-.feature-card:hover h3 {
-    color: var(--primary); 
-}
-.feature-card .feature-icon,
-.feature-card h3 {
-    transition: 0.3s ease; 
-}
-    /* padding 80px */
-    /* សម្រាប់អេក្រង់ទូទៅ (ទូរស័ព្ទ/អេក្រង់តូច) */
-    .mission-section {
-      padding: 40px 0 !important;
-      /* ដាក់ត្រឹម 40px បានហើយកុំឱ្យចង្អៀតពេក */
-    }
+ .feature-card {
+     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+     border-bottom: 3px solid transparent;
+     transition: 0.3s ease;
+ }
 
-    /* សម្រាប់អេក្រង់ធំ (ចាប់ពី Tablet ឬ PC ឡើងទៅ) */
-    @media (min-width: 768px) {
-      .mission-section {
-        padding: 80px 0 !important;
-        /* ដាក់ 80px វិញពេលអេក្រង់ធំ */
-      }
-    }
+ .feature-card:hover {
+     box-shadow: 0 10px 30px rgba(184, 119, 7, 0.3);
+     border-bottom: 3px solid var(--primary);
+ }
+
+ .feature-card:hover .feature-icon,
+ .feature-card:hover h3 {
+     color: var(--primary);
+ }
+
+ .feature-card .feature-icon,
+ .feature-card h3 {
+     transition: 0.3s ease;
+ }
+
+ /* padding 80px */
+ /* សម្រាប់អេក្រង់ទូទៅ (ទូរស័ព្ទ/អេក្រង់តូច) */
+ .mission-section {
+     padding: 40px 0 !important;
+     /* ដាក់ត្រឹម 40px បានហើយកុំឱ្យចង្អៀតពេក */
+ }
+
+ /* សម្រាប់អេក្រង់ធំ (ចាប់ពី Tablet ឬ PC ឡើងទៅ) */
+ @media (min-width: 768px) {
+     .mission-section {
+         padding: 80px 0 !important;
+         /* ដាក់ 80px វិញពេលអេក្រង់ធំ */
+     }
+ }

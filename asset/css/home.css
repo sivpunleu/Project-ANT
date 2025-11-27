@@ -95,7 +95,7 @@
     display: block !important;
   }
 
-  .carousel-item img {
+  .photo img {
     height: 100vh;
     /* រូបពេញអេក្រង់ជានិច្ច */
   }
@@ -120,7 +120,7 @@ h2 {
     width: auto;
   }
 
-  .carousel-item img {
+  .photo img {
     height: 100vh;
     /* ពេញអេក្រង់ទូរស័ព្ទ */
   }
