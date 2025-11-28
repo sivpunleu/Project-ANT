@@ -24,7 +24,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../../asset/css/admin.css">
     <link rel="stylesheet" href="../../asset/css/style.css">
-    
+
 
 </head>
 
@@ -211,8 +211,8 @@
                     <!-- Profile Header -->
                     <div class="profile-header">
                         <div class="avatar-wrapper">
-                            <img src="../../asset/images/img-profile/user-profile.png"
-                                alt="Avatar" class="avatar-img" id="avatarImg">
+                            <img src="../../asset/images/img-profile/user-profile.png" alt="Avatar" class="avatar-img"
+                                id="avatarImg">
                             <label for="avatarInput" class="avatar-upload">
                                 <i class="fas fa-camera"></i>
                             </label>
@@ -238,29 +238,9 @@
                                         type="button">
                                         <i class="fas fa-user me-2"></i> ព័ត៌មានផ្ទាល់ខ្លួន
                                     </button>
-                                    <button class="nav-link text-start" data-bs-toggle="pill"
-                                        data-bs-target="#permissions" type="button">
-                                        <i class="fas fa-user-shield me-2"></i> សិទ្ធិចូលប្រើ
-                                    </button>
                                     <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#password"
                                         type="button">
                                         <i class="fas fa-lock me-2"></i> ពាក្យសម្ងាត់
-                                    </button>
-                                    <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#security"
-                                        type="button">
-                                        <i class="fas fa-shield-alt me-2"></i> សុវត្ថិភាព
-                                    </button>
-                                    <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#audit"
-                                        type="button">
-                                        <i class="fas fa-clipboard-list me-2"></i> ប្រវត្តិសកម្មភាព
-                                    </button>
-                                    <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#system"
-                                        type="button">
-                                        <i class="fas fa-cogs me-2"></i> ប្រព័ន្ធ
-                                    </button>
-                                    <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#backup"
-                                        type="button">
-                                        <i class="fas fa-database me-2"></i> ទិន្នន័យ
                                     </button>
                                     <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#reports"
                                         type="button">
@@ -318,7 +298,8 @@
                                             <div class="d-flex justify-content-between">
                                                 <div>
                                                     <strong>កែប្រែសិទ្ធិអ្នកប្រើប្រាស់</strong>
-                                                    <p class="text-muted mb-0 mt-1">អ្នកបានកែប្រែសិទ្ធិរបស់ "ហង់ គិមហាក់"</p>
+                                                    <p class="text-muted mb-0 mt-1">អ្នកបានកែប្រែសិទ្ធិរបស់ "ហង់
+                                                        គិមហាក់"</p>
                                                 </div>
                                                 <small class="text-muted">1 ម៉ោងមុន</small>
                                             </div>
@@ -380,45 +361,11 @@
                                                     <option>Security</option>
                                                 </select>
                                             </div>
-                                            <button type="submit" class="btn btn-primary">
+                                            <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#saveModal">
                                                 <i class="fas fa-save me-2"></i> រក្សាទុក
                                             </button>
                                         </form>
-                                    </div>
-
-                                    <!-- Permissions Tab -->
-                                    <div class="tab-pane fade" id="permissions">
-                                        <h4><i class="fas fa-user-shield me-2"></i> សិទ្ធិចូលប្រើប្រព័ន្ធ</h4>
-
-                                        <div class="alert alert-info">
-                                            <i class="fas fa-info-circle me-2"></i>
-                                            អ្នកមានសិទ្ធិគ្រប់គ្រងពេញលេញលើប្រព័ន្ធទាំងអស់
-                                        </div>
-
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <h6 class="mb-3">ការគ្រប់គ្រងអ្នកប្រើប្រាស់</h6>
-                                                <span class="permission-badge permission-read">អាន</span>
-                                                <span class="permission-badge permission-write">សរសេរ</span>
-                                                <span class="permission-badge permission-delete">លុប</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <h6 class="mb-3">ការកំណត់ប្រព័ន្ធ</h6>
-                                                <span class="permission-badge permission-read">អាន</span>
-                                                <span class="permission-badge permission-write">សរសេរ</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h6 class="mb-3">របាយការណ៍ និងវិភាគ</h6>
-                                                <span class="permission-badge permission-read">អាន</span>
-                                                <span class="permission-badge permission-write">នាំចេញ</span>
-                                            </div>
-                                        </div>
                                     </div>
 
                                     <!-- Password Tab -->
@@ -450,438 +397,9 @@
                                         </form>
                                     </div>
 
-                                    <!-- Security Tab -->
-                                    <div class="tab-pane fade" id="security">
-                                        <h4><i class="fas fa-shield-alt me-2"></i> ការកំណត់សុវត្ថិភាព</h4>
-
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <h6>Two-Factor Authentication</h6>
-                                                        <small
-                                                            class="text-muted">បន្ថែមសុវត្ថិភាពបន្ថែមទៀតដល់គណនីរបស់អ្នក</small>
-                                                    </div>
-                                                    <div class="form-check form-switch">
-                                                        <input class="form-check-input" type="checkbox" checked
-                                                            id="twoFactorSwitch">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <h6>IP Whitelisting</h6>
-                                                        <small class="text-muted">អនុញ្ញាតតែ IP
-                                                            ដែលបានអនុម័តប៉ុណ្ណោះ</small>
-                                                    </div>
-                                                    <button class="btn btn-outline-primary btn-sm"
-                                                        data-bs-toggle="modal" data-bs-target="#ipModal">
-                                                        <i class="fas fa-cog me-1"></i> កំណត់
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <h6>Session Timeout</h6>
-                                                        <small class="text-muted">កំណត់ពេលវេលាផុតកំណត់សម័យ</small>
-                                                    </div>
-                                                    <select class="form-select w-auto">
-                                                        <option>15 នាទី</option>
-                                                        <option selected>30 នាទី</option>
-                                                        <option>1 ម៉ោង</option>
-                                                        <option>4 ម៉ោង</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <h6>ប្រវត្តិការចូល</h6>
-                                                        <small class="text-muted">មើលស្ថានភាពការចូលរបស់អ្នក</small>
-                                                    </div>
-                                                    <button class="btn btn-outline-primary btn-sm"
-                                                        data-bs-toggle="modal" data-bs-target="#loginHistoryModal">
-                                                        <i class="fas fa-eye me-1"></i> មើល
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Audit Log Tab -->
-                                    <div class="tab-pane fade" id="audit">
-                                        <h4><i class="fas fa-clipboard-list me-2"></i> ប្រវត្តិសកម្មភាពអ្នកគ្រប់គ្រង
-                                        </h4>
-
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="table-responsive">
-                                                    <table class="table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>សកម្មភាព</th>
-                                                                <th>ព័ត៌មានលម្អិត</th>
-                                                                <th>IP Address</th>
-                                                                <th>ពេលវេលា</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td><span class="badge bg-success">ចូល</span></td>
-                                                                <td>ចូលប្រើប្រាស់ប្រព័ន្ធដោយជោគជ័យ</td>
-                                                                <td>192.168.1.100</td>
-                                                                <td>2024-11-09 08:30 AM</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><span class="badge bg-warning">កែប្រែ</span></td>
-                                                                <td>កែប្រែសិទ្ធិអ្នកប្រើប្រាស់ ID: 1234</td>
-                                                                <td>192.168.1.100</td>
-                                                                <td>2024-11-09 07:45 AM</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><span class="badge bg-danger">លុប</span></td>
-                                                                <td>លុបរបាយការណ៍ចាស់ចំនួន 45</td>
-                                                                <td>192.168.1.100</td>
-                                                                <td>2024-11-09 06:20 AM</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><span class="badge bg-info">បង្កើត</span></td>
-                                                                <td>បង្កើតគណនីអ្នកប្រើប្រាស់ថ្មី</td>
-                                                                <td>192.168.1.100</td>
-                                                                <td>2024-11-08 04:15 PM</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><span class="badge bg-primary">កំណត់</span></td>
-                                                                <td>កែប្រែការកំណត់ប្រព័ន្ធ</td>
-                                                                <td>192.168.1.100</td>
-                                                                <td>2024-11-08 02:30 PM</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- System Settings Tab -->
-                                    <div class="tab-pane fade" id="system">
-                                        <h4><i class="fas fa-cogs me-2"></i> ការកំណត់ប្រព័ន្ធ</h4>
-
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <h6 class="mb-3">ព័ត៌មានប្រព័ន្ធ</h6>
-                                                <div class="row">
-                                                    <div class="col-md-6 mb-2">
-                                                        <small class="text-muted">កំណែប្រព័ន្ធ:</small>
-                                                        <strong class="d-block">v2.5.1</strong>
-                                                    </div>
-                                                    <div class="col-md-6 mb-2">
-                                                        <small class="text-muted">កាលបរិច្ឆេទធ្វើបច្ចុប្បន្នភាព:</small>
-                                                        <strong class="d-block">2024-11-01</strong>
-                                                    </div>
-                                                    <div class="col-md-6 mb-2">
-                                                        <small class="text-muted">Server Status:</small>
-                                                        <strong class="d-block text-success"><i
-                                                                class="fas fa-circle me-1"></i>Online</strong>
-                                                    </div>
-                                                    <div class="col-md-6 mb-2">
-                                                        <small class="text-muted">Database Status:</small>
-                                                        <strong class="d-block text-success"><i
-                                                                class="fas fa-circle me-1"></i>Connected</strong>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <h6 class="mb-3">ការកំណត់ទូទៅ</h6>
-
-                                                <div class="mb-3">
-                                                    <label class="form-label">ឈ្មោះប្រព័ន្ធ</label>
-                                                    <input type="text" class="form-control" value="Admin Portal System">
-                                                </div>
-
-                                                <div class="mb-3">
-                                                    <label class="form-label">Timezone</label>
-                                                    <select class="form-select">
-                                                        <option selected>Asia/Phnom_Penh (UTC+7)</option>
-                                                        <option>Asia/Bangkok (UTC+7)</option>
-                                                        <option>Asia/Singapore (UTC+8)</option>
-                                                    </select>
-                                                </div>
-
-                                                <div class="mb-3">
-                                                    <label class="form-label">ភាសាលំនាំដើម</label>
-                                                    <select class="form-select">
-                                                        <option selected>ភាសាខ្មែរ</option>
-                                                        <option>English</option>
-                                                        <option>中文</option>
-                                                    </select>
-                                                </div>
-
-                                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                                    <div>
-                                                        <strong>Maintenance Mode</strong>
-                                                        <p class="text-muted mb-0 small">
-                                                            បិទប្រព័ន្ធជាបណ្តោះអាសន្នសម្រាប់ថែទាំ</p>
-                                                    </div>
-                                                    <div class="form-check form-switch">
-                                                        <input class="form-check-input" type="checkbox"
-                                                            id="maintenanceSwitch">
-                                                    </div>
-                                                </div>
-
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <strong>Debug Mode</strong>
-                                                        <p class="text-muted mb-0 small">បង្ហាញព័ត៌មានកំហុសលម្អិត</p>
-                                                    </div>
-                                                    <div class="form-check form-switch">
-                                                        <input class="form-check-input" type="checkbox"
-                                                            id="debugSwitch">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <h6 class="mb-3">Email Configuration</h6>
-
-                                                <div class="mb-3">
-                                                    <label class="form-label">SMTP Server</label>
-                                                    <input type="text" class="form-control" value="smtp.gmail.com">
-                                                </div>
-
-                                                <div class="row mb-3">
-                                                    <div class="col-md-6">
-                                                        <label class="form-label">Port</label>
-                                                        <input type="number" class="form-control" value="587">
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label class="form-label">Encryption</label>
-                                                        <select class="form-select">
-                                                            <option>None</option>
-                                                            <option selected>TLS</option>
-                                                            <option>SSL</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-                                                <button class="btn btn-outline-primary btn-sm">
-                                                    <i class="fas fa-paper-plane me-2"></i>ផ្ញើអ៊ីមែលសាកល្បង
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h6 class="mb-3 text-danger">Danger Zone</h6>
-
-                                                <button class="btn btn-outline-warning mb-2 w-100"
-                                                    onclick="clearCache()">
-                                                    <i class="fas fa-broom me-2"></i>Clear System Cache
-                                                </button>
-
-                                                <button class="btn btn-outline-danger w-100" data-bs-toggle="modal"
-                                                    data-bs-target="#resetSystemModal">
-                                                    <i class="fas fa-redo me-2"></i>Reset System Settings
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <button class="btn btn-primary mt-3" onclick="showSystemChanges(event)">
-                                            <i class="fas fa-save me-2"></i>រក្សាទុកការកំណត់
-                                        </button>
-                                    </div>
-
-                                    <!-- Backup & Data Tab -->
-                                    <div class="tab-pane fade" id="backup">
-                                        <h4><i class="fas fa-database me-2"></i> គ្រប់គ្រងទិន្នន័យ</h4>
-
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <h6 class="mb-3">ការបម្រុងទុកទិន្នន័យ</h6>
-
-                                                <div class="alert alert-info">
-                                                    <i class="fas fa-info-circle me-2"></i>
-                                                    <strong>ការបម្រុងទុកចុងក្រោយ:</strong> 2024-11-09 06:00 AM
-                                                </div>
-
-                                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                                    <div>
-                                                        <strong>ការបម្រុងទុកស្វ័យប្រវត្តិ</strong>
-                                                        <p class="text-muted mb-0 small">បម្រុងទុកទិន្នន័យរៀងរាល់ថ្ងៃ
-                                                        </p>
-                                                    </div>
-                                                    <div class="form-check form-switch">
-                                                        <input class="form-check-input" type="checkbox" checked
-                                                            id="autoBackupSwitch">
-                                                    </div>
-                                                </div>
-
-                                                <div class="mb-3">
-                                                    <label class="form-label">ពេលវេលាបម្រុងទុក</label>
-                                                    <select class="form-select">
-                                                        <option>រៀងរាល់ 6 ម៉ោងម្តង</option>
-                                                        <option>រៀងរាល់ 12 ម៉ោងម្តង</option>
-                                                        <option selected>រៀងរាល់ថ្ងៃម្តង</option>
-                                                        <option>រៀងរាល់សប្តាហ៍ម្តង</option>
-                                                    </select>
-                                                </div>
-
-                                                <div class="d-grid gap-2">
-                                                    <button class="btn btn-primary" onclick="createBackup()">
-                                                        <i
-                                                            class="fas fa-cloud-upload-alt me-2"></i>បង្កើតការបម្រុងទុកឥឡូវនេះ
-                                                    </button>
-                                                    <button class="btn btn-outline-primary">
-                                                        <i class="fas fa-download me-2"></i>ទាញយកការបម្រុងទុក
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <h6 class="mb-3">ប្រវត្តិការបម្រុងទុក</h6>
-
-                                                <div class="table-responsive">
-                                                    <table class="table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>ឯកសារ</th>
-                                                                <th>ទំហំ</th>
-                                                                <th>កាលបរិច្ឆេទ</th>
-                                                                <th>សកម្មភាព</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td><i
-                                                                        class="fas fa-file-archive"></i>backup_2024_11_09.zip
-                                                                </td>
-                                                                <td>256 MB</td>
-                                                                <td>2024-11-09 06:00 AM</td>
-                                                                <td>
-                                                                    <button class="btn btn-sm">
-                                                                        <i class="fas fa-download"></i>
-                                                                    </button>
-                                                                    <button class="btn btn-sm">
-                                                                        <i class="fas fa-undo"></i>
-                                                                    </button>
-                                                                    <button class="btn">
-                                                                        <i class="fas fa-trash"></i>
-                                                                    </button>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><i
-                                                                        class="fas fa-file-archive"></i>backup_2024_11_08.zip
-                                                                </td>
-                                                                <td>254 MB</td>
-                                                                <td>2024-11-08 06:00 AM</td>
-                                                                <td>
-                                                                    <button class="btn btn-sm">
-                                                                        <i class="fas fa-download"></i>
-                                                                    </button>
-                                                                    <button class="btn btn-sm">
-                                                                        <i class="fas fa-undo"></i>
-                                                                    </button>
-                                                                    <button class="btn">
-                                                                        <i class="fas fa-trash"></i>
-                                                                    </button>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><i
-                                                                        class="fas fa-file-archive"></i>backup_2024_11_07.zip
-                                                                </td>
-                                                                <td>251 MB</td>
-                                                                <td>2024-11-07 06:00 AM</td>
-                                                                <td>
-                                                                    <button class="btn btn-sm">
-                                                                        <i class="fas fa-download"></i>
-                                                                    </button>
-                                                                    <button class="btn btn-sm">
-                                                                        <i class="fas fa-undo"></i>
-                                                                    </button>
-                                                                    <button class="btn">
-                                                                        <i class="fas fa-trash"></i>
-                                                                    </button>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h6 class="mb-3">ស្តារទិន្នន័យពីការបម្រុងទុក</h6>
-
-                                                <div class="alert alert-warning">
-                                                    <i class="fas fa-exclamation-triangle me-2"></i>
-                                                    <strong>ការព្រមាន:</strong>
-                                                    ការស្តារទិន្នន័យនឹងជំនួសទិន្នន័យបច្ចុប្បន្នទាំងអស់។
-                                                </div>
-
-                                                <div class="mb-3">
-                                                    <label class="form-label">ជ្រើសរើសឯកសារបម្រុងទុក</label>
-                                                    <input type="file" class="form-control" accept=".zip">
-                                                </div>
-
-                                                <button class="btn btn-warning">
-                                                    <i class="fas fa-upload me-2"></i>ស្តារទិន្នន័យ
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                     <!-- Reports Tab -->
                                     <div class="tab-pane fade" id="reports">
                                         <h4><i class="fas fa-chart-bar me-2"></i> របាយការណ៍និងស្ថិតិ</h4>
-
-                                        <div class="row mb-4">
-                                            <div class="col-md-3">
-                                                <div class="stat-card">
-                                                    <h3><i class="fas fa-eye me-2"></i>45.2K</h3>
-                                                    <p>ចំនួនមើលសរុប</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="stat-card">
-                                                    <h3><i class="fas fa-mouse-pointer me-2"></i>12.8K</h3>
-                                                    <p>ចំនួនចុច</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="stat-card">
-                                                    <h3><i class="fas fa-clock me-2"></i>8:45</h3>
-                                                    <p>ពេលវេលាមធ្យម</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="stat-card">
-                                                    <h3><i class="fas fa-percentage me-2"></i>67%</h3>
-                                                    <p>អត្រាប្រើប្រាស់</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
                                         <div class="card mb-3">
                                             <div class="card-body">
                                                 <div class="d-flex justify-content-between align-items-center mb-3">
@@ -1045,12 +563,10 @@
                                                                 <td><span class="badge bg-success">សកម្ម</span></td>
                                                                 <td>2024-01-15</td>
                                                                 <td>
-                                                                    <button class="btn btn-sm"
-                                                                        title="កែប្រែ">
+                                                                    <button class="btn btn-sm" title="កែប្រែ">
                                                                         <i class="fas fa-edit"></i>
                                                                     </button>
-                                                                    <button class="btn"
-                                                                        title="លុប">
+                                                                    <button class="btn" title="លុប">
                                                                         <i class="fas fa-trash"></i>
                                                                     </button>
                                                                 </td>
@@ -1069,12 +585,10 @@
                                                                 <td><span class="badge bg-success">សកម្ម</span></td>
                                                                 <td>2024-03-22</td>
                                                                 <td>
-                                                                    <button class="btn btn-sm"
-                                                                        title="កែប្រែ">
+                                                                    <button class="btn btn-sm" title="កែប្រែ">
                                                                         <i class="fas fa-edit"></i>
                                                                     </button>
-                                                                    <button class="btn"
-                                                                        title="លុប">
+                                                                    <button class="btn" title="លុប">
                                                                         <i class="fas fa-trash"></i>
                                                                     </button>
                                                                 </td>
@@ -1093,12 +607,10 @@
                                                                 <td><span class="badge bg-warning">រង់ចាំ</span></td>
                                                                 <td>2024-10-18</td>
                                                                 <td>
-                                                                    <button class="btn btn-sm"
-                                                                        title="កែប្រែ">
+                                                                    <button class="btn btn-sm" title="កែប្រែ">
                                                                         <i class="fas fa-edit"></i>
                                                                     </button>
-                                                                    <button class="btn"
-                                                                        title="លុប">
+                                                                    <button class="btn" title="លុប">
                                                                         <i class="fas fa-trash"></i>
                                                                     </button>
                                                                 </td>
@@ -1117,12 +629,10 @@
                                                                 <td><span class="badge bg-danger">បិទ</span></td>
                                                                 <td>2024-08-05</td>
                                                                 <td>
-                                                                    <button class="btn btn-sm"
-                                                                        title="កែប្រែ">
+                                                                    <button class="btn btn-sm" title="កែប្រែ">
                                                                         <i class="fas fa-edit"></i>
                                                                     </button>
-                                                                    <button class="btn"
-                                                                        title="លុប">
+                                                                    <button class="btn" title="លុប">
                                                                         <i class="fas fa-trash"></i>
                                                                     </button>
                                                                 </td>
@@ -1199,331 +709,55 @@
                                     </div>
                                 </div>
                             </div>
-                            <h4 class="-5 mt-5"><i class="fas fa-database me-2"></i> គ្រប់គ្រងទិន្នន័យ</h4>
 
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <h6 class="mb-3">ការបម្រុងទុកទិន្នន័យ</h6>
-
-                                    <div class="alert alert-info">
-                                        <i class="fas fa-info-circle me-2"></i>
-                                        <strong>ការបម្រុងទុកចុងក្រោយ:</strong> 2024-11-09 06:00 AM
-                                    </div>
-
-                                    <div class="d-flex justify-content-between align-items-center mb-3">
-                                        <div>
-                                            <strong>ការបម្រុងទុកស្វ័យប្រវត្តិ</strong>
-                                            <p class="text-muted mb-0 small">បម្រុងទុកទិន្នន័យរៀងរាល់ថ្ងៃ</p>
+                            <!-- Login History Modal -->
+                            <div class="modal fade" id="loginHistoryModal" tabindex="-1">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title"><i class="fas fa-history me-2"></i>ប្រវត្តិការចូល
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                         </div>
-                                        <div class="form-check form-switch">
-                                            <input class="form-check-input" type="checkbox" checked id="autoBackupSwitch">
+                                        <div class="modal-body">
+                                            <table class="table login-history-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>ឧបករណ៍</th>
+                                                        <th>ទីតាំង</th>
+                                                        <th>IP Address</th>
+                                                        <th>ពេលវេលា</th>
+                                                        <th>ស្ថានភាព</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><i class="fas fa-desktop me-2"></i>Windows PC</td>
+                                                        <td>Phnom Penh, KH</td>
+                                                        <td>192.168.1.100</td>
+                                                        <td>2024-11-09 08:30 AM</td>
+                                                        <td><span class="badge">ជោគជ័យ</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="fas fa-mobile-alt me-2"></i>iPhone 14</td>
+                                                        <td>Phnom Penh, KH</td>
+                                                        <td>192.168.1.105</td>
+                                                        <td>2024-11-08 07:15 PM</td>
+                                                        <td><span class="badge">ជោគជ័យ</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="fas fa-laptop me-2"></i>MacBook Pro</td>
+                                                        <td>Unknown</td>
+                                                        <td>103.45.67.89</td>
+                                                        <td>2024-11-08 02:45 PM</td>
+                                                        <td><span class="badge">បរាជ័យ</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
-
-                                    <div class="mb-3">
-                                        <label class="form-label">ពេលវេលាបម្រុងទុក</label>
-                                        <select class="form-select">
-                                            <option>រៀងរាល់ 6 ម៉ោងម្តង</option>
-                                            <option>រៀងរាល់ 12 ម៉ោងម្តង</option>
-                                            <option selected>រៀងរាល់ថ្ងៃម្តង</option>
-                                            <option>រៀងរាល់សប្តាហ៍ម្តង</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="d-grid gap-2">
-                                        <button class="btn btn-primary" onclick="createBackup()">
-                                            <i class="fas fa-cloud-upload-alt me-2"></i>បង្កើតការបម្រុងទុកឥឡូវនេះ
-                                        </button>
-                                        <button class="btn btn-outline-primary">
-                                            <i class="fas fa-download me-2"></i>ទាញយកការបម្រុងទុក
-                                        </button>
-                                    </div>
                                 </div>
                             </div>
-
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <h6 class="mb-3">ប្រវត្តិការបម្រុងទុក</h6>
-
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>ឯកសារ</th>
-                                                    <th>ទំហំ</th>
-                                                    <th>កាលបរិច្ឆេទ</th>
-                                                    <th>សកម្មភាព</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><i
-                                                            class="fas fa-file-archive"></i>backup_2024_11_09.zip
-                                                    </td>
-                                                    <td>256 MB</td>
-                                                    <td>2024-11-09 06:00 AM</td>
-                                                    <td>
-                                                        <button class="btn btn-sm">
-                                                            <i class="fas fa-download"></i>
-                                                        </button>
-                                                        <button class="btn btn-sm">
-                                                            <i class="fas fa-undo"></i>
-                                                        </button>
-                                                        <button class="btn">
-                                                            <i class="fas fa-trash"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><i
-                                                            class="fas fa-file-archive"></i>backup_2024_11_08.zip
-                                                    </td>
-                                                    <td>254 MB</td>
-                                                    <td>2024-11-08 06:00 AM</td>
-                                                    <td>
-                                                        <button class="btn btn-sm">
-                                                            <i class="fas fa-download"></i>
-                                                        </button>
-                                                        <button class="btn btn-sm">
-                                                            <i class="fas fa-undo"></i>
-                                                        </button>
-                                                        <button class="btn">
-                                                            <i class="fas fa-trash"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><i
-                                                            class="fas fa-file-archive"></i>backup_2024_11_07.zip
-                                                    </td>
-                                                    <td>251 MB</td>
-                                                    <td>2024-11-07 06:00 AM</td>
-                                                    <td>
-                                                        <button class="btn btn-sm">
-                                                            <i class="fas fa-download"></i>
-                                                        </button>
-                                                        <button class="btn btn-sm">
-                                                            <i class="fas fa-undo"></i>
-                                                        </button>
-                                                        <button class="btn">
-                                                            <i class="fas fa-trash"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-body">
-                                    <h6 class="mb-3">ស្តារទិន្នន័យពីការបម្រុងទុក</h6>
-
-                                    <div class="alert alert-warning">
-                                        <i class="fas fa-exclamation-triangle me-2"></i>
-                                        <strong>ការព្រមាន:</strong> ការស្តារទិន្នន័យនឹងជំនួសទិន្នន័យបច្ចុប្បន្នទាំងអស់។
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label class="form-label">ជ្រើសរើសឯកសារបម្រុងទុក</label>
-                                        <input type="file" class="form-control" accept=".zip">
-                                    </div>
-
-                                    <button class="btn btn-warning">
-                                        <i class="fas fa-upload me-2"></i>ស្តារទិន្នន័យ
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Login History Modal -->
-            <div class="modal fade" id="loginHistoryModal" tabindex="-1">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title"><i class="fas fa-history me-2"></i>ប្រវត្តិការចូល</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body">
-                            <table class="table login-history-table">
-                                <thead>
-                                    <tr>
-                                        <th>ឧបករណ៍</th>
-                                        <th>ទីតាំង</th>
-                                        <th>IP Address</th>
-                                        <th>ពេលវេលា</th>
-                                        <th>ស្ថានភាព</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><i class="fas fa-desktop me-2"></i>Windows PC</td>
-                                        <td>Phnom Penh, KH</td>
-                                        <td>192.168.1.100</td>
-                                        <td>2024-11-09 08:30 AM</td>
-                                        <td><span class="badge">ជោគជ័យ</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fas fa-mobile-alt me-2"></i>iPhone 14</td>
-                                        <td>Phnom Penh, KH</td>
-                                        <td>192.168.1.105</td>
-                                        <td>2024-11-08 07:15 PM</td>
-                                        <td><span class="badge">ជោគជ័យ</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fas fa-laptop me-2"></i>MacBook Pro</td>
-                                        <td>Unknown</td>
-                                        <td>103.45.67.89</td>
-                                        <td>2024-11-08 02:45 PM</td>
-                                        <td><span class="badge">បរាជ័យ</span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- IP Whitelist Modal -->
-            <div class="modal fade" id="ipModal" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title"><i class="fas fa-network-wired me-2"></i>គ្រប់គ្រង IP Whitelist</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="mb-3">
-                                <label class="form-label">បន្ថែម IP Address</label>
-                                <input type="text" class="form-control" placeholder="192.168.1.100">
-                            </div>
-                            <div class="alert alert-info">
-                                <strong>IP Addresses ដែលបានអនុម័ត:</strong>
-                                <ul class="mt-2 mb-0">
-                                    <li>192.168.1.100 - Office Network</li>
-                                    <li>192.168.1.105 - Mobile Network</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                            <button type="button" class="btn btn-primary">បន្ថែម IP</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Add User Modal -->
-            <div class="modal fade" id="addUserModal" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title"><i class="fas fa-user-plus me-2"></i>បន្ថែមអ្នកប្រើប្រាស់ថ្មី</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="mb-3">
-                                <label class="form-label">ឈ្មោះពេញ</label>
-                                <input type="text" class="form-control" placeholder="សុខ សំណាង">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">អ៊ីមែល</label>
-                                <input type="email" class="form-control" placeholder="user@example.com">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">តួនាទី</label>
-                                <select class="form-select">
-                                    <option>អ្នកគ្រប់គ្រង</option>
-                                    <option selected>អ្នកកែប្រែ</option>
-                                    <option>អ្នកមើល</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">ពាក្យសម្ងាត់</label>
-                                <input type="password" class="form-control" placeholder="••••••••">
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="sendEmailCheck" checked>
-                                <label class="form-check-label" for="sendEmailCheck">
-                                    ផ្ញើអ៊ីមែលស្វាគមន៍
-                                </label>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បោះបង់</button>
-                            <button type="button" class="btn btn-primary"
-                                onclick="addUser()">បន្ថែមអ្នកប្រើប្រាស់</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Changes Review Modal -->
-            <div class="modal fade" id="changesModal" tabindex="-1">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header bg-primary text-white">
-                            <h5 class="modal-title"><i class="fas fa-clipboard-check me-2"></i>ពិនិត្យមើលការផ្លាស់ប្តូរ
-                            </h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="alert alert-info">
-                                <i class="fas fa-info-circle me-2"></i>
-                                សូមពិនិត្យមើលការផ្លាស់ប្តូរមុនពេលរក្សាទុក
-                            </div>
-
-                            <div id="changesList">
-                                <!-- Changes will be dynamically added here -->
-                            </div>
-
-                            <div class="mt-3 p-3"
-                                style="background: rgba(220, 38, 38, 0.05); border-radius: 12px; border-left: 4px solid var(--primary-color);">
-                                <strong><i class="fas fa-exclamation-triangle me-2 text-warning"></i>សំខាន់:</strong>
-                                <p class="mb-0 mt-2 text-muted">
-                                    ការផ្លាស់ប្តូរទាំងនេះនឹងមានប្រសិទ្ធភាពភ្លាមៗបន្ទាប់ពីរក្សាទុក។</p>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                <i class="fas fa-times me-2"></i>បោះបង់
-                            </button>
-                            <button type="button" class="btn btn-primary" onclick="confirmSave()">
-                                <i class="fas fa-check me-2"></i>បញ្ជាក់ & រក្សាទុក
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Reset System Modal -->
-            <div class="modal fade" id="resetSystemModal" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header bg-danger text-white">
-                            <h5 class="modal-title"><i
-                                    class="fas fa-exclamation-triangle me-2"></i>បញ្ជាក់ការកំណត់ប្រព័ន្ធឡើងវិញ</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p><strong>តើអ្នកប្រាកដថាចង់កំណត់ប្រព័ន្ធឡើងវិញទេ?</strong></p>
-                            <p class="text-muted">សកម្មភាពនេះនឹង:</p>
-                            <ul class="text-muted">
-                                <li>កំណត់ការកំណត់ទាំងអស់ទៅតម្លៃលំនាំដើម</li>
-                                <li>រក្សាទុកទិន្នន័យអ្នកប្រើប្រាស់</li>
-                                <li>ចាំបាច់ការចូលឡើងវិញ</li>
-                            </ul>
-                            <div class="mb-3">
-                                <label class="form-label">វាយបញ្ចូល "RESET" ដើម្បីបញ្ជាក់</label>
-                                <input type="text" class="form-control" id="resetConfirmInput" placeholder="RESET">
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បោះបង់</button>
-                            <button type="button" class="btn btn-danger" onclick="confirmReset()">កំណត់ឡើងវិញ</button>
                         </div>
                     </div>
                 </div>
@@ -1531,7 +765,175 @@
         </section>
     </main>
 
-    
+    <!-- Modal -->
+    <div class="modal fade" id="saveModal" tabindex="-1" aria-labelledby="saveModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="saveModalLabel">
+                        <i class="fas fa-check-circle text-success me-2"></i>បញ្ជាក់ការរក្សាទុក
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>តើអ្នកពិតជាចង់រក្សាទុកទិន្នន័យនេះមែនទេ?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times me-2"></i>បោះបង់
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save me-2"></i>រក្សាទុក
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- IP Whitelist Modal -->
+    <div class="modal fade" id="ipModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fas fa-network-wired me-2"></i>គ្រប់គ្រង
+                        IP Whitelist</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">បន្ថែម IP Address</label>
+                        <input type="text" class="form-control" placeholder="192.168.1.100">
+                    </div>
+                    <div class="alert alert-info">
+                        <strong>IP Addresses ដែលបានអនុម័ត:</strong>
+                        <ul class="mt-2 mb-0">
+                            <li>192.168.1.100 - Office Network</li>
+                            <li>192.168.1.105 - Mobile Network</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                    <button type="button" class="btn btn-primary">បន្ថែម IP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add User Modal -->
+    <div class="modal fade" id="addUserModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fas fa-user-plus me-2"></i>បន្ថែមអ្នកប្រើប្រាស់ថ្មី</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">ឈ្មោះពេញ</label>
+                        <input type="text" class="form-control" placeholder="សុខ សំណាង">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">អ៊ីមែល</label>
+                        <input type="email" class="form-control" placeholder="user@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">តួនាទី</label>
+                        <select class="form-select">
+                            <option>អ្នកគ្រប់គ្រង</option>
+                            <option selected>អ្នកកែប្រែ</option>
+                            <option>អ្នកមើល</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">ពាក្យសម្ងាត់</label>
+                        <input type="password" class="form-control" placeholder="••••••••">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="sendEmailCheck" checked>
+                        <label class="form-check-label" for="sendEmailCheck">
+                            ផ្ញើអ៊ីមែលស្វាគមន៍
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បោះបង់</button>
+                    <button type="button" class="btn btn-primary" onclick="addUser()">បន្ថែមអ្នកប្រើប្រាស់</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Changes Review Modal -->
+    <div class="modal fade" id="changesModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title"><i class="fas fa-clipboard-check me-2"></i>ពិនិត្យមើលការផ្លាស់ប្តូរ
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        សូមពិនិត្យមើលការផ្លាស់ប្តូរមុនពេលរក្សាទុក
+                    </div>
+
+                    <div id="changesList">
+                        <!-- Changes will be dynamically added here -->
+                    </div>
+
+                    <div class="mt-3 p-3"
+                        style="background: rgba(220, 38, 38, 0.05); border-radius: 12px; border-left: 4px solid var(--primary-color);">
+                        <strong><i class="fas fa-exclamation-triangle me-2 text-warning"></i>សំខាន់:</strong>
+                        <p class="mb-0 mt-2 text-muted">
+                            ការផ្លាស់ប្តូរទាំងនេះនឹងមានប្រសិទ្ធភាពភ្លាមៗបន្ទាប់ពីរក្សាទុក។</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times me-2"></i>បោះបង់
+                    </button>
+                    <button type="button" class="btn btn-primary" onclick="confirmSave()">
+                        <i class="fas fa-check me-2"></i>បញ្ជាក់ & រក្សាទុក
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reset System Modal -->
+    <div class="modal fade" id="resetSystemModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title"><i
+                            class="fas fa-exclamation-triangle me-2"></i>បញ្ជាក់ការកំណត់ប្រព័ន្ធឡើងវិញ
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>តើអ្នកប្រាកដថាចង់កំណត់ប្រព័ន្ធឡើងវិញទេ?</strong></p>
+                    <p class="text-muted">សកម្មភាពនេះនឹង:</p>
+                    <ul class="text-muted">
+                        <li>កំណត់ការកំណត់ទាំងអស់ទៅតម្លៃលំនាំដើម</li>
+                        <li>រក្សាទុកទិន្នន័យអ្នកប្រើប្រាស់</li>
+                        <li>ចាំបាច់ការចូលឡើងវិញ</li>
+                    </ul>
+                    <div class="mb-3">
+                        <label class="form-label">វាយបញ្ចូល "RESET" ដើម្បីបញ្ជាក់</label>
+                        <input type="text" class="form-control" id="resetConfirmInput" placeholder="RESET">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បោះបង់</button>
+                    <button type="button" class="btn btn-danger" onclick="confirmReset()">កំណត់ឡើងវិញ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Footer -->
     <footer>
         <div class="container">

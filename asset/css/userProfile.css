@@ -1,3 +1,50 @@
+/* CSS (keep as before, small tweaks) */
+.avatar-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 20px 0;
+}
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    transition: 0.3s;
+}
+.avatar-wrapper:hover .avatar-img {
+    filter: brightness(0.8);
+    transform: scale(1.03);
+}
+.avatar-upload {
+    position: absolute;
+    bottom: 6px;
+    right: 8px;
+    background: #007bff;
+    color: white;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: 0.2s;
+}
+.avatar-upload:hover { transform: scale(1.06); background:#005dc1; }
+.avatar-upload i { font-size: 16px; }
+
+/* small profile image styles (if you want hover effect) */
+.user-profile .img-f {
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.2s;
+}
+.user-profile:hover .img-f { transform: scale(1.05); }
+
+
 .profile-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -177,7 +224,7 @@
     /* Updated */
 }
 
-.strength-weak {
+/* .strength-weak {
     background: linear-gradient(90deg, #ef4444, #dc2626);
     width: 33%;
 }
@@ -190,7 +237,7 @@
 .strength-strong {
     background: linear-gradient(90deg, #10b981, #059669);
     width: 100%;
-}
+} */
 
 .toast-container {
     position: fixed;

@@ -178,10 +178,10 @@
 
 
 
-                        <!-- User Profile -->
-                        <a href="#" class="user-profile">
-                            <img src="../../asset/images/img-profile/user-profile.png" alt="" class="img-f"
-                                style="width: 50px; " height="50px">
+                        <!-- User Profile (top-left small profile) -->
+                        <a href="#" class="user-profile" id="profileLink">
+                            <img src="../../asset/images/img-profile/user-profile.png" alt="User small" class="img-f" id="smallProfileImg"
+                                width="50" height="50" style="border-radius:50%;">
                         </a>
 
                     </div>
@@ -198,12 +198,15 @@
             <div class="container profile-container">
                 <div class="card profile-card">
                     <div class="profile-header">
+                        <!-- Avatar Upload (larger avatar with camera) -->
                         <div class="avatar-wrapper">
-                            <img src="../../asset/images/img-profile/user-profile.png" alt="Avatar" class="avatar-img"
-                                id="avatarImg">
-                            <label for="avatarInput" class="avatar-upload">
+                            <img src="../../asset/images/img-profile/user-profile.png" alt="Avatar" class="avatar-img" id="avatarImg">
+                            
+                            <label for="avatarInput" class="avatar-upload" id="cameraBtn" title="Upload avatar">
                                 <i class="fas fa-camera"></i>
                             </label>
+                            
+                            <!-- single file input used by both places -->
                             <input type="file" id="avatarInput" accept="image/*" style="display: none;">
                         </div>
                         <h3 id="userName">ឡាំ តុង</h3>
@@ -223,25 +226,9 @@
                                         type="button">
                                         <i class="fas fa-lock me-2"></i> ពាក្យសម្ងាត់
                                     </button>
-                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#security"
-                                        type="button">
-                                        <i class="fas fa-shield-alt me-2"></i> សុវត្ថិភាព
-                                    </button>
                                     <button class="nav-link" data-bs-toggle="pill"
                                         data-bs-target="#notifications" type="button">
                                         <i class="fas fa-bell me-2"></i> ការជូនដំណឹង
-                                    </button>
-                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#activity"
-                                        type="button">
-                                        <i class="fas fa-history me-2"></i> សកម្មភាព
-                                    </button>
-                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#stats"
-                                        type="button">
-                                        <i class="fas fa-chart-line me-2"></i> ស្ថិតិ
-                                    </button>
-                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#settings"
-                                        type="button">
-                                        <i class="fas fa-cog me-2"></i> ការកំណត់
                                     </button>
                                     <button class="nav-link text-danger" data-bs-toggle="pill"
                                         data-bs-target="#delete" type="button">
@@ -305,7 +292,7 @@
                                                 <textarea class="form-control" rows="3"
                                                     id="address">ភ្នំពេញ, កម្ពុជា</textarea>
                                             </div>
-                                            <button type="submit" class="btn btn-primary">
+                                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
                                                 <i class="fas fa-save me-2"></i> រក្សាទុក
                                             </button>
                                         </form>
@@ -333,42 +320,6 @@
                                                 <i class="fas fa-check me-2"></i> ផ្លាស់ប្តូរ
                                             </button>
                                         </form>
-                                    </div>
-
-                                    <!-- Security Tab -->
-                                    <div class="tab-pane fade" id="security">
-                                        <h4><i class="fas fa-shield-alt me-2"></i> ការកំណត់សុវត្ថិភាព</h4>
-
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <h6>Two-Factor Authentication</h6>
-                                                        <small
-                                                            class="text-muted">បន្ថែមសុវត្ថិភាពបន្ថែមទៀតដល់គណនីរបស់អ្នក</small>
-                                                    </div>
-                                                    <div class="form-check form-switch">
-                                                        <input class="form-check-input" type="checkbox"
-                                                            id="twoFactorSwitch">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <h6>Privacy Mode</h6>
-                                                        <small class="text-muted">លាក់ស្ថានភាពអនឡាញរបស់អ្នក</small>
-                                                    </div>
-                                                    <div class="form-check form-switch">
-                                                        <input class="form-check-input" type="checkbox"
-                                                            id="privacySwitch">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
 
                                     <!-- Notifications Tab -->
@@ -418,385 +369,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <button class="btn btn-primary mt-3" onclick="saveNotifications()">
-                                            <i class="fas fa-save me-2"></i> រក្សាទុក
-                                        </button>
-                                    </div>
-
-                                    <!-- Activity Tab -->
-                                    <div class="tab-pane fade" id="activity">
-                                        <h4><i class="fas fa-history me-2"></i> សកម្មភាពថ្មីៗ</h4>
-
-                                        <div class="activity-item">
-                                            <div class="d-flex justify-content-between">
-                                                <div>
-                                                    <strong>បានផ្លាស់ប្តូរពាក្យសម្ងាត់</strong>
-                                                    <p class="mb-0 text-muted small">
-                                                        អ្នកបានផ្លាស់ប្តូរពាក្យសម្ងាត់របស់អ្នក</p>
-                                                </div>
-                                                <small class="text-muted">២ ម៉ោងមុន</small>
-                                            </div>
-                                        </div>
-
-                                        <div class="activity-item">
-                                            <div class="d-flex justify-content-between">
-                                                <div>
-                                                    <strong>ចូលប្រើប្រាស់ថ្មី</strong>
-                                                    <p class="mb-0 text-muted small">ចូលពី Chrome on Windows</p>
-                                                </div>
-                                                <small class="text-muted">៥ ម៉ោងមុន</small>
-                                            </div>
-                                        </div>
-
-                                        <div class="activity-item">
-                                            <div class="d-flex justify-content-between">
-                                                <div>
-                                                    <strong>បានកែប្រែព័ត៌មាន</strong>
-                                                    <p class="mb-0 text-muted small">
-                                                        បានធ្វើបច្ចុប្បន្នភាពព័ត៌មានផ្ទាល់ខ្លួន</p>
-                                                </div>
-                                                <small class="text-muted">១ ថ្ងៃមុន</small>
-                                            </div>
-                                        </div>
-
-                                        <div class="activity-item">
-                                            <div class="d-flex justify-content-between">
-                                                <div>
-                                                    <strong>បានបើក Two-Factor</strong>
-                                                    <p class="mb-0 text-muted small">
-                                                        បានបើកប្រើប្រាស់ការផ្ទៀងផ្ទាត់ពីរជំហាន</p>
-                                                </div>
-                                                <small class="text-muted">២ ថ្ងៃមុន</small>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Theme Tab (This was hidden in original file but present) -->
-                                    <div class="tab-pane fade" id="theme">
-                                        <h4><i class="fas fa-palette me-2"></i> ជ្រើសរើសស្បែក</h4>
-                                        <!-- This tab's content is now in the 'settings' tab -->
-                                        <p class="text-muted">សូមប្រើការកំណត់ក្នុងផ្ទាំង "ការកំណត់"</p>
-                                    </div>
-
-                                    <!-- Stats Tab -->
-                                    <div class="tab-pane fade" id="stats">
-                                        <h4><i class="fas fa-chart-line me-2"></i> ស្ថិតិគណនី</h4>
-
-                                        <div class="row mb-4">
-                                            <div class="col-md-6 mb-3">
-                                                <div class="card text-center"
-                                                    style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); color: white;">
-                                                    <div class="card-body">
-                                                        <i class="fas fa-eye fa-3x mb-3"></i>
-                                                        <h3 class="counter" data-target="1247">5000+</h3>
-                                                        <p class="mb-0">ចំនួនមើល</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 mb-3">
-                                                <div class="card text-center"
-                                                    style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
-                                                    <div class="card-body">
-                                                        <i class="fas fa-heart fa-3x mb-3"></i>
-                                                        <h3 class="counter" data-target="892">3000+</h3>
-                                                        <p class="mb-0">ចូលចិត្ត</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 mb-3">
-                                                <div class="card text-center"
-                                                    style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white;">
-                                                    <div class="card-body">
-                                                        <i class="fas fa-comment fa-3x mb-3"></i>
-                                                        <h3 class="counter" data-target="456">1200+</h3>
-                                                        <p class="mb-0">មតិយោបល់</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 mb-3">
-                                                <div class="card text-center"
-                                                    style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: white;">
-                                                    <div class="card-body">
-                                                        <i class="fas fa-share fa-3x mb-3"></i>
-                                                        <h3 class="counter" data-target="234">200+</h3>
-                                                        <p class="mb-0">ចែករំលែក</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <h6><i class="fas fa-clock me-2"></i> សកម្មភាពប្រចាំសប្តាហ៍</h6>
-                                                <canvas id="activityChart" height="80"></canvas>
-                                            </div>
-                                        </div>
-
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h6><i class="fas fa-trophy me-2"></i> សមិទ្ធិផល</h6>
-                                                <div class="row text-center mt-3">
-                                                    <div class="col-4 mb-3">
-                                                        <div class="p-3"
-                                                            style="background: linear-gradient(135deg, #ffd700, #ffed4e); border-radius: 12px;">
-                                                            <i class="fas fa-medal fa-2x mb-2"
-                                                                style="color: #b8860b;"></i>
-                                                            <p class="mb-0 small fw-bold" style="color: #b8860b;">
-                                                                អ្នកសរសេរល្អ</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4 mb-3">
-                                                        <div class="p-3"
-                                                            style="background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 12px;">
-                                                            <i class="fas fa-star fa-2x mb-2"
-                                                                style="color: #696969;"></i>
-                                                            <p class="mb-0 small fw-bold" style="color: #696969;">
-                                                                សកម្មភាព ១០០ ថ្ងៃ</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4 mb-3">
-                                                        <div class="p-3"
-                                                            style="background: linear-gradient(135deg, #cd7f32, #e6a85c); border-radius: 12px;">
-                                                            <i class="fas fa-award fa-2x mb-2"
-                                                                style="color: #8b4513;"></i>
-                                                            <p class="mb-0 small fw-bold" style="color: #8b4513;">
-                                                                អ្នកអានពូកែ</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Settings Tab -->
-                                    <div class="tab-pane fade" id="settings">
-                                        <h4><i class="fas fa-cog me-2"></i> ការកំណត់ទូទៅ</h4>
-
-                                        <!-- Language Settings -->
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <h6><i class="fas fa-language me-2"></i> ភាសា</h6>
-                                                <p class="text-muted small mb-3">ជ្រើសរើសភាសាសម្រាប់ចំណុចប្រទាក់</p>
-                                                <select class="form-select" id="languageSelect">
-                                                    <option value="km" selected>ខ្មែរ (Khmer)</option>
-                                                    <option value="en">English</option>
-                                                    <option value="th">ไทย (Thai)</option>
-                                                    <option value="vi">Tiếng Việt (Vietnamese)</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <!-- Date & Time Settings -->
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <h6><i class="fas fa-clock me-2"></i> កាលបរិច្ឆេទ និងពេលវេលា</h6>
-                                                <div class="mb-3">
-                                                    <label class="form-label">ទ្រង់ទ្រាយកាលបរិច្ឆេទ</label>
-                                                    <select class="form-select" id="dateFormat">
-                                                        <option value="dd/mm/yyyy">DD/MM/YYYY</option>
-                                                        <option value="mm/dd/yyyy">MM/DD/YYYY</option>
-                                                        <option value="yyyy-mm-dd" selected>YYYY-MM-DD</option>
-                                                    </select>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">ទ្រង់ទ្រាយពេលវេលា</label>
-                                                    <select class="form-select" id="timeFormat">
-                                                        <option value="12h">12 ម៉ោង (AM/PM)</option>
-                                                        <option value="24h" selected>24 ម៉ោង</option>
-                                                    </select>
-                                                </div>
-                                                <div>
-                                                    <label class="form-label">តំបន់ពេលវេលា</label>
-                                                    <select class="form-select" id="timezone">
-                                                        <option value="Asia/Phnom_Penh" selected>ភ្នំពេញ (GMT+7)
-                                                        </option>
-                                                        <option value="Asia/Bangkok">Bangkok (GMT+7)</option>
-                                                        <option value="Asia/Ho_Chi_Minh">Ho Chi Minh (GMT+7)</option>
-                                                        <option value="Asia/Singapore">Singapore (GMT+8)</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Display Settings -->
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <h6><i class="fas fa-desktop me-2"></i> ការបង្ហាញ</h6>
-                                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                                    <div>
-                                                        <p class="mb-1">បង្ហាញរូបភាពដោយស្វ័យប្រវត្តិ</p>
-                                                        <small
-                                                            class="text-muted">ផ្ទុករូបភាពដោយស្វ័យប្រវត្តិនៅក្នុងមាតិកា</small>
-                                                    </div>
-                                                    <div class="form-check form-switch">
-                                                        <input class="form-check-input" type="checkbox" checked
-                                                            id="autoLoadImages">
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                                    <div>
-                                                        <p class="mb-1">បើកប្រើ Animation</p>
-                                                        <small class="text-muted">បង្ហាញចលនានិងប្រសិទ្ធិពិសេស</small>
-                                                    </div>
-                                                    <div class="form-check form-switch">
-                                                        <input class="form-check-input" type="checkbox" checked
-                                                            id="enableAnimations">
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <p class="mb-1">ទំហំអក្សរ</p>
-                                                        <small class="text-muted">កំណត់ទំហំអក្សរសម្រាប់ការអាន</small>
-                                                    </div>
-                                                    <select class="form-select w-auto" id="fontSize">
-                                                        <option value="small">តូច</option>
-                                                        <option value="medium" selected>មធ្យម</option>
-                                                        <option value="large">ធំ</option>
-                                                        <option value="xlarge">ធំបំផុត</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Privacy Settings -->
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <h6><i class="fas fa-user-secret me-2"></i> ឯកជនភាព</h6>
-                                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                                    <div>
-                                                        <p class="mb-1">បង្ហាញប្រវត្តិរូបរបស់ខ្ញុំ</p>
-                                                        <small
-                                                            class="text-muted">អនុញ្ញាតឱ្យអ្នកដទៃមើលប្រវត្តិរូបរបស់អ្នក</small>
-                                                    </div>
-                                                    <div class="form-check form-switch">
-                                                        <input class="form-check-input" type="checkbox" checked
-                                                            id="showProfile">
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                                    <div>
-                                                        <p class="mb-1">អនុញ្ញាតការស្វែងរក</p>
-                                                        <small
-                                                            class="text-muted">អនុញ្ញាតឱ្យគេស្វែងរកគណនីរបស់អ្នក</small>
-                                                    </div>
-                                                    <div class="form-check form-switch">
-                                                        <input class="form-check-input" type="checkbox" checked
-                                                            id="allowSearch">
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <p class="mb-1">តាមដានកែប្រែចុងក្រោយ</p>
-                                                        <small class="text-muted">បង្ហាញពេលវេលាចូលប្រើចុងក្រោយ</small>
-                                                    </div>
-                                                    <div class="form-check form-switch">
-                                                        <input class="form-check-input" type="checkbox"
-                                                            id="showLastSeen">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Data & Storage -->
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <h6><i class="fas fa-database me-2"></i> ទិន្នន័យ និងការរក្សាទុក</h6>
-                                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                                    <div>
-                                                        <p class="mb-1">រក្សាទុកទិន្នន័យក្នុងកម្មវិធី</p>
-                                                        <small
-                                                            class="text-muted">ប្រើប្រាស់ការរក្សាទុកក្នុងស្ថានីយ៍</small>
-                                                    </div>
-                                                    <div class="form-check form-switch">
-                                                        <input class="form-check-input" type="checkbox" checked
-                                                            id="cacheData">
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                                    <div>
-                                                        <p class="mb-1">ទំហំ Cache បច្ចុប្បន្ន</p>
-                                                        <small
-                                                            class="text-muted">កម្រិតទំហំទិន្នន័យដែលបានរក្សាទុក</small>
-                                                    </div>
-                                                    <span class="badge bg-primary">2.4 MB</span>
-                                                </div>
-                                                <button class="btn btn-outline-danger btn-sm w-100"
-                                                    onclick="clearCache()">
-                                                    <i class="fas fa-trash me-2"></i> សម្អាត Cache
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <!-- Advanced Settings -->
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <h6><i class="fas fa-sliders-h me-2"></i> ការកំណត់កម្រិតខ្ពស់</h6>
-                                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                                    <div>
-                                                        <p class="mb-1">បើកប្រើមុខងារពិសោធន៍</p>
-                                                        <small
-                                                            class="text-muted">ប្រើប្រាស់មុខងារថ្មីៗដែលកំពុងសាកល្បង</small>
-                                                    </div>
-                                                    <div class="form-check form-switch">
-                                                        <input class="form-check-input" type="checkbox"
-                                                            id="experimentalFeatures">
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                                    <div>
-                                                        <p class="mb-1">របៀបអ្នកអភិវឌ្ឍន៍</p>
-                                                        <small
-                                                            class="text-muted">បង្ហាញព័ត៌មានបន្ថែមសម្រាប់អ្នកអភិវឌ្ឍន៍</small>
-                                                    </div>
-                                                    <div class="form-check form-switch">
-                                                        <input class="form-check-input" type="checkbox"
-                                                            id="developerMode">
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <p class="mb-1">ការស្ទង់បាតុភូត</p>
-                                                        <small
-                                                            class="text-muted">ផ្ញើរបាយការណ៍បញ្ហាដោយស្វ័យប្រវត្តិ</small>
-                                                    </div>
-                                                    <div class="form-check form-switch">
-                                                        <input class="form-check-input" type="checkbox" checked
-                                                            id="crashReports">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Backup & Export -->
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <h6><i class="fas fa-download me-2"></i> បម្រុងទុក និងនាំចេញ</h6>
-                                                <p class="text-muted small mb-3">នាំចេញទិន្នន័យរបស់អ្នក
-                                                    ឬបម្រុងទុកការកំណត់</p>
-                                                <div class="d-grid gap-2">
-                                                    <button class="btn btn-outline-primary" onclick="exportData()">
-                                                        <i class="fas fa-file-export me-2"></i> នាំចេញទិន្នន័យទាំងអស់
-                                                    </button>
-                                                    <button class="btn btn-outline-secondary"
-                                                        onclick="backupSettings()">
-                                                        <i class="fas fa-save me-2"></i> បម្រុងទុកការកំណត់
-                                                    </button>
-                                                    <button class="btn btn-outline-info" onclick="importSettings()">
-                                                        <i class="fas fa-file-import me-2"></i> នាំចូលការកំណត់
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="d-flex gap-2">
-                                            <button class="btn btn-primary flex-fill" onclick="saveAllSettings()">
-                                                <i class="fas fa-save me-2"></i> រក្សាទុកការកំណត់ទាំងអស់
-                                            </button>
-                                            <button class="btn btn-outline-secondary" onclick="resetSettings()">
-                                                <i class="fas fa-undo me-2"></i> កំណត់ឡើងវិញ
-                                            </button>
-                                        </div>
                                     </div>
 
                                     <!-- Delete Account Tab -->
@@ -840,8 +412,8 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បោះបង់</button>
-                            <button type="button" class="btn btn-danger" onclick="confirmDeleteAccount()"
-                                data-bs-dismiss="modal">លុប</button>
+                            <a href="../auth/login.html" class="btn btn-warning text-decoration-none" onclick="confirmDeleteAccount()"
+                                >លុប</a>
                         </div>
                     </div>
                 </div>

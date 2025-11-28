@@ -323,3 +323,43 @@ document.querySelectorAll('.gallery-img').forEach(img => {
         lightboxModal.show();
     });
 });
+// Theme Toggle
+function toggleTheme() {
+    const html = document.documentElement;
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', newTheme);
+}
+
+// Register Logic & Ticket Generation
+function handleRegister(event) {
+    event.preventDefault();
+
+    // 1. Get Values
+    const name = document.getElementById('regName').value;
+    const phone = document.getElementById('regPhone').value;
+    const gender = document.getElementById('regGender').value;
+    const location = document.getElementById('regLocation').value;
+
+    // 2. Generate ID
+    const randomNum = Math.floor(1000 + Math.random() * 9000);
+    const ticketID = "#MED-" + randomNum;
+
+    // 3. Set Modal Content
+    document.getElementById('ticketName').textContent = name;
+    // document.getElementById('ticketPhone').textContent = phone; // Optional to show phone
+    document.getElementById('ticketGender').textContent = gender;
+    document.getElementById('ticketLocation').textContent = location;
+    document.getElementById('ticketID').textContent = ticketID;
+
+    // Short Location for alert
+    const shortLoc = location.split(' (')[0];
+    document.getElementById('ticketLocationShort').textContent = shortLoc;
+
+    // 4. Show Modal
+    const ticketModal = new bootstrap.Modal(document.getElementById('ticketModal'));
+    ticketModal.show();
+
+    // 5. Reset Form
+    document.getElementById('registrationForm').reset();
+}
