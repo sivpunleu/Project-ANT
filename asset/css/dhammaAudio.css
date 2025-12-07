@@ -1,6 +1,6 @@
 .hero-banner {
     position: relative;
-    background-image: url('https://i.pinimg.com/736x/b3/44/c8/b344c85187f8bdaf6f55a8aba334be4e.jpg');
+    background-image: url('../images/tong_img/banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -8,27 +8,39 @@
     overflow: hidden;
     height: 650px;
 }
+
 .hero-banner::before {
     content: "";
     width: 100%;
     height: 100%;
     position: absolute;
-    background: rgba(172, 3, 3, 0.052);
+    background: rgba(8, 8, 8, 0.575);
     backdrop-filter: blur(1px);
 }
 .hero-title {
-    font-size: 54px;
-    color: var(--primary-color);
-    font-weight: 600;
-    text-align: center;
-    padding: 210px 0 30px;
+    z-index: 100;
+    overflow: hidden;
 }
-.hero-subtitle {
+
+.title {
+    z-index: 100;
+    font-size: 72px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 60%;
+    padding: 200px 0 30px;
+}
+
+.subtitle {
     font-size: 30px;
     color: var(--text-secondary);
     text-align: center;
-    opacity: 70%;
+    opacity: 60%;
 }
+
 .section-title {
     color: var(--primary-color);
     font-size: 2rem;
@@ -38,94 +50,173 @@
     border-bottom: 3px solid var(--primary-color);
 }
 
+
+
 .audio-card {
-    border-radius: 1rem;
-    padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: var(--bg-primary);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 400px;
+    margin: 0 auto;
     border: 1px solid var(--border-light);
-    transition: all 0.3s ease;
 }
 
 .audio-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(184, 119, 7, 0.2);
-}
-.badge-category {
-    color: var(--text-primary);
-    position: absolute;
-    top: 60%;
-    right: 30px;
-    transform: translateY(-50%);
-    font-size: 12px !important;
-    border: 2px solid var(--bg-primary);
-    padding: 5px 10px;
-    border-radius: 15px;
-    transition: all 0.3s ease;
+    transform: translateY(-5px);
+    box-shadow: var(--card-shadow-hover);
 }
 
 .audio-icon {
-    background: var(--primary-color);
+    position: relative;
     width: 100%;
     height: 200px;
-    /* background: url(https://i.pinimg.com/736x/45//37/456037bbf7a9d529bd566e96aaf0be01.jpg); */
-    border-radius: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.audio-icon img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .audio-icon i {
-    font-size: 3.5rem;
-    color: var(--bg-primary);
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: var(--primary-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
 }
 
 .audio-title {
-    color: var(--text-primary);
-    font-size: 1.1rem;
+    font-size: 20px;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    margin: 0;
+    flex: 1;
 }
 
-.audio-title::before {
-    content: '🎵';
-    margin-right: 0.5rem;
+.favorite-icon {
+    font-size: 24px;
+    color: #cbd5e0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.favorite-icon:hover {
+    color: #fc8181;
+    transform: scale(1.2);
+}
+
+.favorite-icon.active {
+    color: #f56565;
+    animation: heartBeat 0.3s ease;
+}
+
+@keyframes heartBeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
 }
 
 .badge-category {
-    background: var(--primary-color);
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
-    padding: 0.3rem 0.8rem;
-    border-radius: 1rem;
-    font-size: 0.85rem;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 audio {
     width: 100%;
-    margin: 1rem 0;
+    margin: 20px 0;
+    border-radius: 10px;
 }
 
-.favorite-icon {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: var(--text-secondary);
+audio::-webkit-media-controls-panel {
+    background: linear-gradient(to right, #f7fafc, #edf2f7);
+}
+
+.btn-download {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 500;
     transition: all 0.3s ease;
-    z-index: 10;
-    opacity: 0.5;
-    top: 7%;
-    right: 1.9rem;
 }
 
-.favorite-icon:hover {
-    transform: scale(1.2);
+.btn-download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+    color: white;
 }
 
-.favorite-icon.favorited {
-    color: var(--secondary-color);
+.download-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--bg-primary);
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--border-light);
+    z-index: 1000;
+    animation: slideIn 0.3s ease;
+    max-width: 300px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.download-message.hide {
+    animation: slideOut 0.3s ease forwards;
+}
+
+@keyframes slideOut {
+    to {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+}
+
+.download-message i {
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.text-secondary {
+    color: var(--text-secondary) !important;
 }
 
 .search-input {
@@ -142,10 +233,12 @@ audio {
     box-shadow: 0 0 0 3px rgba(184, 119, 7, 0.1);
     outline: none;
 }
+
 @media (max-width: 768px) {
     .audio-icon {
         height: 150px;
     }
+
     .audio-card {
         padding: 1rem;
     }

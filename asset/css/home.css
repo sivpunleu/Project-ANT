@@ -561,3 +561,76 @@ h2 {
     /* ដាក់ 80px វិញពេលអេក្រង់ធំ */
   }
 }
+
+/* អ្វីដែលពួកគេនិយាយ */
+.testimonial-section {
+    padding: 3rem 0;
+}
+.testimonial-card-horizontal {
+    box-shadow: var(--card-shadow);      /* ស្រមោលកាត */
+    /* border: 1px solid var(--border-light);  */
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.testimonial-card-horizontal:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-shadow-hover); /* ស្រមោលពេល hover */
+    /* border-color: var(--primary-color);   */
+}
+
+/* ពណ៌អក្សរ */
+.testimonial-card-horizontal h6 {
+    color: var(--text-primary);
+    font-weight: bold;
+}
+
+.testimonial-card-horizontal p {
+    color: var(--text-color); /* ពណ៌អក្សរដែលបងកំណត់ */
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.testimonial-card-horizontal small {
+    color: var(--primary-color); /* ប្រើពណ៌មាស/លឿងទុំ សម្រាប់តួនាទី */
+    font-weight: 600;
+}
+
+/* រូបភាព និង Icon */
+.testimonial-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--border-light);
+}
+
+.quote-icon {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* បន្ទាត់ក្រោមចំណងជើង */
+.section-underline {
+    width: 60px; 
+    height: 4px; 
+    background-color: var(--primary-color); 
+    border-radius: 2px;
+}
+
+/* Responsive សម្រាប់ទូរស័ព្ទ */
+@media (max-width: 576px) {
+    .testimonial-card-horizontal {
+        flex-direction: column;
+        text-align: center;
+    }
+    .img-wrapper {
+        margin-right: 0 !important;
+        margin-bottom: 15px;
+    }
+}
